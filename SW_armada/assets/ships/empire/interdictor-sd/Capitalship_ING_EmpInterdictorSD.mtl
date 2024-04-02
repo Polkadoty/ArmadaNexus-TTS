@@ -1,0 +1,8 @@
+newmtl Material_1
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 8.000000
+map_Kd Capital_EMP_InterdictorSD-cl.dds
+

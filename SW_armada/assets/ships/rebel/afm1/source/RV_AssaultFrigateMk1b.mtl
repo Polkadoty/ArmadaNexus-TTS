@@ -1,0 +1,32 @@
+newmtl Material_1
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 8.000000
+map_Kd RV_Assault_FrigateMK1_CL.dds
+
+newmtl Material_2
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 8.000000
+map_Kd RV_Nebulon_B_Frigate_CL.dds
+
+newmtl Material_3
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 8.000000
+map_Kd W_Orange_Thruster_CL.dds
+
+newmtl Material_4
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+illum 2
+Ns 8.000000
+map_Kd EV_Carrier_Frigate_Thrusters_CL.dds
+
