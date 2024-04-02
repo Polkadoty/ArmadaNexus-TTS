@@ -68,15 +68,82 @@
 --     or join ArmadaTTS Server: https://discord.gg/3MrP8db
 --
 
+CUSTOM_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/assets/'
 LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
+ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 function onload()
 	printToAll("Loading SpaceNavy custom shipyard...",{1,0.5,0})
 
+    
 -- star wars
     -- empire
+    EMPIRE_SHIP = {
+        back = ASSETS_ROOT.."ships/empire/card_back.jpg",
+        faction = "Empire_SN"
+    }
+    EMPIRE_SQUAD = {
+        back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
+        faction = "Empire_SN"
+    }
+        -- interdictor sd
+        -- cantwell arrestor cruiser
+        Ship:new(MediumShip,EMPIRE_SHIP, {
+            name = "Cantwell-class Arrestor Cruiser",
+            front = CUSTOM_ASSETS.."ships/empire/cantwell/cantwell_card.png",
+            mesh = CUSTOM_ASSETS.."ships/empire/cantwell/mesh.obj",
+            diffuse = CUSTOM_ASSETS.."ships/empire/cantwell/cantwell_texture.png",
+            ruler = CUSTOM_ASSETS.."ships/empire/cantwell/ruler.obj", 
+            maneuver = {{"I"},{"I","I"}},
+            defense_tokens = {DEF_REDIRECT, DEF_BRACE, DEF_BRACE},
+            shields = {3,3,3,1}, -- Front, left, right, rear
+            cost = 62,
+            aliases = {"Cantwell-class Arrestor Cruiser"},
+            command = 2
+            })
     -- rebels
+    REBEL_SHIP = {
+        back = LEGACY_ASSETS.."ships/rebel/card_back.jpg",
+        faction = "Rebellion_SN" 
+    }
+    REBEL_SQUAD = {
+        back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
+        faction = "Rebellion_SN" 
+    }
+        -- mc80b
+        -- assault frigate mk1 a/b
+    -- republic
+    REPUBLIC_SHIP = {
+		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
+        faction = "Republic_SN"
+    }
+    REPUBLIC_SQUAD = {
+		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
+        faction = "Republic_SN"
+    }
+        -- dreadnaught
+        -- ipv-2 stealth
+        -- clone z95 sqd
+        -- eta-2 sqd
+        -- g9 rigger
+        -- laat/i gunship
     -- cis
-    -- seppies
+    SEPARATIST_SHIP = {
+        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        faction = "Separatist_SN"
+    }
+    SEPARATIST_SQUAD = {
+        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        faction = "Separatist_SN"
+    }
+        -- trident
+        -- lucrehulk
+        -- subjugator
+        -- sith infiltrator
+        -- rogue starfighter
+        -- hmp gunship
+        -- nantex sqd
+    -- old republic
+    -- sith empire
     -- new republic
     -- imp remenant
     -- first order
@@ -84,21 +151,139 @@ function onload()
 
 -- halo
     -- unsc
+        -- paris frigate
+        -- charon frigate
+        -- stalwart frigate
+        -- halcyon cruiser
+        -- marathon cruiser
+        -- epoch carrier
+        -- c709 longsword bomber sqd
+        -- c712 longsword fighter sqd
+        -- sabre fighter sqd
+        -- pelican dropship
+
+        -- MAC cannon station
+
     -- covenant
+        -- cso supercarrier
+        -- cas assault carrier
+        -- ors battlecruiser
+        -- ccs cruiser
+        -- sdv corvette
+        -- crs light cruiser
+        -- space banshee sqd
+        -- seraph sqd
+        -- phantom dropship
+        -- spirit dropship
+        
+        -- hekar taa blockade runner
+        -- cpv destroyer
+        -- adp escort
+        -- dsc support ship
+        -- rcs armored cruiser
+
     -- banished
+        -- dreadnought
+        --karve
+        --drekar
+
     -- forerunner
     -- flood
 
 -- battlestar galactica
     -- colonial
+        -- mercury battlestar
+        -- jupiter battlestar
+        -- valkyrie battlestar
+        -- adamant frigate
+        -- manticore corvette
+        -- viper mk2 sqd
+        -- viper mk7 sqd
+        -- raptor sqd
+
+        -- colonial one
+        -- colonial fleet civlian ships
+        -- bezerk frigate
+        -- defender frigate
+        -- blackbird sqd
+
     -- cylon
+        -- basestar
+        -- cerberus carrier
+        -- phobos tech cruiser
+        -- nemesis tech corvette
+        -- cerastes gunship
+        -- raider sqd
+        -- hvy raider sqd
+        -- war raider sqd
+        -- war hvy raider sqd
+
+        -- hades battlecruiser
+        -- attackstar
+        -- 
 
 -- star trek
     -- federation
+        -- galaxy
+        -- akira
+        -- excelsior
+        -- constitution refit
+        -- miranda
+        -- defiant
+
+        -- steamrunner
+        -- intrepid
+        -- sovereign
+        -- prometheus
+        -- odyssey
+        -- danube runabout
+        -- peregrine fighter
+        -- delta flyer
+        -- starbase/spacedock
+
     -- klingon
+        -- negh'var
+        -- k'tinga
+        -- d'tai
+        -- k'vort
+        -- b'rel
+        -- d'gavama
+        -- d4 class
+        -- d5 class
+        -- d7 class
+        -- vor'cha
+        -- augment raider
+    
     -- romulan
-    -- cardassian
+        -- d'deridex
+        -- v'teridex
+        -- valdore
+        -- d'vorx
+        -- lukan
+        -- bird of prey
+    
+    -- dominion
+        -- dreadnought
+        -- battleship
+        -- heavy cruiser
+        -- shrike
+        -- freighter
+        -- jem'hadar attack ship
+
     -- borg
+        -- scout sphere
+        -- probe
+        -- tactical sphere
+        -- tactical cube
+        -- assimilation cube
+        -- queen ship
+
+    -- cardassian
+        -- galor
+        -- keldon
+        -- haklon
+        -- bok'nor
+        -- hideki
 
 -- warhammer 40k / battlefleet gothic
     -- imperium
@@ -116,6 +301,13 @@ function onload()
     -- tau
         -- protector
         -- merchant
+
+-- the expanse
+    -- earth
+    -- mars
+    -- OPA
+    
+-- mass effect
 
 -- elite dangerous
 
