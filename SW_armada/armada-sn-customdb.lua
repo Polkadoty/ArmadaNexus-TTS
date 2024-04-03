@@ -250,6 +250,7 @@ function onload()
     -- colonial
         -- mercury battlestar
         -- jupiter battlestar
+        -- orion frigate
         -- valkyrie battlestar
         -- adamant frigate
         -- manticore corvette
