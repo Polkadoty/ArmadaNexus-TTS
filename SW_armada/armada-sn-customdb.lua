@@ -50,7 +50,7 @@ function onload()
         faction = "Empire_SN"
     }
     EMPIRE_SQUAD = {
-        back = LEGACY_ASSETS.."squadrons/empire/card_back.jpg",
+        back = ASSETS_ROOT.."ships/empire/card_back.jpg",
         faction = "Empire_SN"
     }
         -- imp dreadnaught
@@ -109,11 +109,11 @@ function onload()
 
     -- rebels
     REBEL_SHIP = {
-        back = LEGACY_ASSETS.."ships/rebel/card_back.jpg",
+        back = CUSTOM_ASSETS.."ships/rebel/card_back.png",
         faction = "Rebellion_SN" 
     }
     REBEL_SQUAD = {
-        back = LEGACY_ASSETS.."squadrons/rebel/card_back.jpg",
+        back = CUSTOM_ASSETS.."ships/rebel/card_back.png",
         faction = "Rebellion_SN" 
     }
         -- mc80b
@@ -126,7 +126,7 @@ function onload()
 
     -- republic
     REPUBLIC_SHIP = {
-		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
+		back = CUSTOM_ASSETS.."ships/republic/card_back.png",
         faction = "Republic_SN"
     }
         -- dreadnaught
@@ -134,7 +134,7 @@ function onload()
         -- victory 2 frigate
 
     REPUBLIC_SQUAD = {
-		back = LEGACY_ASSETS.."ships/republic/card_back.jpg",
+		back = CUSTOM_ASSETS.."ships/republic/card_back.png",
         faction = "Republic_SN"
     }
         -- clone z95 sqd
@@ -174,11 +174,11 @@ function onload()
 
     -- cis
     SEPARATIST_SHIP = {
-        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        back =      CUSTOM_ASSETS.."ships/separatist/card_back.png",
         faction = "Separatist_SN"
     }
     SEPARATIST_SQUAD = {
-        back =      LEGACY_ASSETS.."ships/separatist/card_back.jpg",
+        back =      CUSTOM_ASSETS.."ships/separatist/card_back.png",
         faction = "Separatist_SN"
     }
         -- trident

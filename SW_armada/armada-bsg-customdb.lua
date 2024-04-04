@@ -46,11 +46,11 @@ function onload()
 -- battlestar galactica
     -- colonial
     COL_SHIP = {
-        back = ASSETS_ROOT.."ships/colonial/card_back.jpg",
+        back = CUSTOM_ASSETS.."ships/colonial/card_back.png",
         faction = "Colonial_SN"
     }
     COL_SQUAD = {
-        back = LEGACY_ASSETS.."squadrons/colonial/card_back.jpg",
+        back = CUSTOM_ASSETS.."squadrons/colonial/card_back.png",
         faction = "Colonial_SN"
     }
         -- mercury battlestar
@@ -87,7 +87,7 @@ function onload()
         front = CUSTOM_ASSETS.."ships/colonial/jupiter/mk1_card.png",
         mesh = CUSTOM_ASSETS.."ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk1_diffuse.png",
-        ruler = CUSTOM_ASSETS.."ships/colonial/jupiter/ruler.obj", 
+        ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
         maneuver = {{"II"},{"I","-"}},
         defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_BARRAGE},
         shields = {2,3,3,1}, -- Front, left, right, rear
@@ -100,7 +100,7 @@ function onload()
         front = CUSTOM_ASSETS.."ships/colonial/jupiter/mk2_card.png",
         mesh = CUSTOM_ASSETS.."ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk2_diffuse.png",
-        ruler = CUSTOM_ASSETS.."ships/colonial/jupiter/ruler.obj", 
+        ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
         maneuver = {{"II"},{"I","-"}},
         defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_BARRAGE},
         shields = {2,3,3,1}, -- Front, left, right, rear
@@ -108,7 +108,34 @@ function onload()
         command = 3,
         aliases = {"Jupiter-class Battlestar Mk2"}
     })
+
         -- orion frigate
+    Ship:new(SmallShip,COL_SHIP, {
+        name = "Orion-class Stealth Battlestar",
+        front = CUSTOM_ASSETS.."ships/colonial/orion/stealth_card.png",
+        mesh = CUSTOM_ASSETS.."ships/colonial/orion/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/orion/stealth_diffuse.png",
+        ruler = CUSTOM_ASSETS.."ships/colonial/orion/ruler.obj", 
+        maneuver = {{"II"},{"II","I"},{"II","I","I"},{"I","I","I","I"}},
+        defense_tokens = {DEF_BARRAGE,DEF_EVADE,DEF_EVADE},
+        shields = {2,2,2,1}, -- Front, left, right, rear
+        cost = 54,
+        command = 2,
+        aliases = {"Orion-class Stealth Battlestar"}
+    })
+    Ship:new(SmallShip,COL_SHIP, {
+        name = "Orion-class Pocket Battlestar",
+        front = CUSTOM_ASSETS.."ships/colonial/orion/pocket_card.png",
+        mesh = CUSTOM_ASSETS.."ships/colonial/orion/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/orion/pocket_diffuse.png",
+        ruler = CUSTOM_ASSETS.."ships/colonial/orion/ruler.obj", 
+        maneuver = {{"II"},{"II","I"},{"II","I","I"},{"I","I","I","I"}},
+        defense_tokens = {DEF_BARRAGE,DEF_EVADE,DEF_EVADE},
+        shields = {2,2,2,1}, -- Front, left, right, rear
+        cost = 57,
+        command = 2,
+        aliases = {"Orion-class Pocket Battlestar"}
+    })
         -- valkyrie battlestar
         -- adamant frigate
         -- manticore corvette
@@ -159,6 +186,7 @@ function findObjectByName(name)
         if obj.getName()==name then return obj end
     end
 end
+DEF_BARRAGE = '44cf22'
 DEF_BRACE = '79d121'
 DEF_CONTAIN = '68abfc'
 DEF_EVADE = 'c09d88'
