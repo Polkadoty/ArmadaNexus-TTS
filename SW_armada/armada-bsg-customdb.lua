@@ -47,11 +47,11 @@ function onload()
     -- colonial
     COL_SHIP = {
         back = CUSTOM_ASSETS.."ships/colonial/card_back.png",
-        faction = "Colonial_SN"
+        faction = "Colonial"
     }
     COL_SQUAD = {
         back = CUSTOM_ASSETS.."squadrons/colonial/card_back.png",
-        faction = "Colonial_SN"
+        faction = "Colonial"
     }
         -- mercury battlestar
     Ship:new(LargeShip,COL_SHIP, {

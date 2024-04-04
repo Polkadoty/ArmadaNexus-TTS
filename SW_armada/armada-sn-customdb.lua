@@ -210,7 +210,7 @@ function onload()
         -- paris frigate
         -- charon frigate
         -- stalwart frigate
-        -- halcyon cruiser
+        -- halcyon cruiser/autumn class
         -- marathon cruiser
         -- epoch carrier
         -- c709 longsword bomber sqd
@@ -219,6 +219,12 @@ function onload()
         -- pelican dropship
 
         -- MAC cannon station
+        -- unsc infinity
+        -- halberd destroyer
+        -- phoenix carrier
+        -- punic supercarrier
+        -- orion carrier
+        -- valiant cruiser
 
     -- covenant
         -- cso supercarrier
@@ -237,6 +243,13 @@ function onload()
         -- adp escort
         -- dsc support ship
         -- rcs armored cruiser
+        -- lursu brigantine
+        -- rwaru carrack
+        -- mjern support
+        -- r'sikosh manowar
+        -- tarasque fighter
+        -- tick boarding craft
+        -- 
 
     -- banished
         -- dreadnought
