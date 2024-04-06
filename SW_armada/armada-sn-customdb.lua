@@ -218,6 +218,7 @@ function onload()
         -- sabre fighter sqd
         -- pelican dropship
 
+        -- eion carrier
         -- MAC cannon station
         -- unsc infinity
         -- halberd destroyer
@@ -238,18 +239,17 @@ function onload()
         -- phantom dropship
         -- spirit dropship
         
+        -- lursu brigantine
+        -- r'sikosh manowar
+        -- mjern support
         -- hekar taa blockade runner
         -- cpv destroyer
         -- adp escort
         -- dsc support ship
         -- rcs armored cruiser
-        -- lursu brigantine
         -- rwaru carrack
-        -- mjern support
-        -- r'sikosh manowar
         -- tarasque fighter
         -- tick boarding craft
-        -- 
 
     -- banished
         -- dreadnought
