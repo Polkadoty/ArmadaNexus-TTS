@@ -189,8 +189,8 @@ function onload()
         -- hmp gunship
         -- nantex sqd
 
+        -- dh omni supply ship
         -- diamond cruiser
-        -- core ship
     -- scum and villany
         -- marauder corvette
         -- starviper sqd
