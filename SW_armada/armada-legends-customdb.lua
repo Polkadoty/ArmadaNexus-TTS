@@ -23,6 +23,7 @@ function onload()
         cost = 125,
         command = 3,
         aliases = {"Rothana I-class Destroyer [Legends]"}
+    })
 
     Ship:new(LargeShip,REPUBLIC_SHIP, {
         name = "Rothana II-class Destroyer",
@@ -36,6 +37,7 @@ function onload()
         cost = 130,
         command = 3,
         aliases = {"Rothana II-class Destroyer [Legends]"}
+    })
 
     REPUBLIC_SQUAD = {
         back = CUSTOM_ASSETS.."ships/republic/card_back.png",
@@ -63,17 +65,17 @@ function onload()
     })
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
-        name = "Saboath-class Light Carrier",
-        front = CUSTOM_ASSETS.."ships/separatist/saboath/sabaoth_carrier.png",
-        mesh = CUSTOM_ASSETS.."ships/separatist/saboath/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/saboath/diffuse_sabaoth.png",
-        ruler = CUSTOM_ASSETS.."ships/separatist/saboath/ruler.obj", 
+        name = "Sabaoth-class Light Carrier",
+        front = CUSTOM_ASSETS.."ships/separatist/sabaoth/sabaoth_carrier.png",
+        mesh = CUSTOM_ASSETS.."ships/separatist/sabaoth/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/sabaoth/diffuse_sabaoth.png",
+        ruler = CUSTOM_ASSETS.."ships/separatist/sabaoth/ruler.obj", 
         maneuver = {{"I"},{"I","II"},{"-","I","I"}},
         defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
         shields = {4,3,3,2}, -- Front, left, right, rear
         cost = 70,
         command = 2,
-        aliases = {"Saboath-class Light Carrier [Legends]"}
+        aliases = {"Sabaoth-class Light Carrier [Legends]"}
     })
 
     SEPARATIST_SQUAD = {
@@ -100,9 +102,9 @@ function onload()
 
     Ship:new(MediumShip,REBEL_SHIP,{
         name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
-        front =     ASSETS_ROOT.."ships/empire/quasar/Rebel_Quasar.PNG",
+        front =     CUSTOM_ASSETS.."ships/empire/quasar/Rebel_Quasar.png",
         mesh =      ASSETS_ROOT.."ships/empire/quasar/mesh.obj",
-        diffuse =   ASSETS_ROOT.."ships/empire/quasar/II_diffuse.jpg",
+        diffuse =   CUSTOM_ASSETS.."ships/empire/quasar/rebel_II_diffuse.png",
         ruler =     ASSETS_ROOT.."ships/empire/quasar/ruler.obj",
         maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_BRACE,DEF_REDIRECT},
