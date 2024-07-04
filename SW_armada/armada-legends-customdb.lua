@@ -5,15 +5,124 @@ ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorInclu
 function onload()
     printToAll("Loading Armada Legends content...",{1,0.5,0})
 
+-- republic faction
+    REPUBLIC_SHIP = {
+        back = CUSTOM_ASSETS.."ships/republic/card_back.png",
+        faction = "Republic"
+    }
+
+    Ship:new(LargeShip,REPUBLIC_SHIP, {
+        name = "Rothana I-class Destroyer",
+        front = CUSTOM_ASSETS.."ships/republic/rothana/rothana_i.png",
+        mesh = CUSTOM_ASSETS.."ships/republic/rothana/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/republic/rothana/rothana_diffuse.png",
+        ruler = CUSTOM_ASSETS.."ships/republic/rothana/ruler.obj", 
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
+        shields = {5,4,4,3}, -- Front, left, right, rear
+        cost = 125,
+        command = 3,
+        aliases = {"Rothana I-class Destroyer [Legends]"}
+
+    Ship:new(LargeShip,REPUBLIC_SHIP, {
+        name = "Rothana II-class Destroyer",
+        front = CUSTOM_ASSETS.."ships/republic/rothana/rothana_ii.png",
+        mesh = CUSTOM_ASSETS.."ships/republic/rothana/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/republic/rothana/rothana_diffuse.png",
+        ruler = CUSTOM_ASSETS.."ships/republic/rothana/ruler.obj", 
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
+        shields = {5,4,4,3}, -- Front, left, right, rear
+        cost = 130,
+        command = 3,
+        aliases = {"Rothana II-class Destroyer [Legends]"}
+
+    REPUBLIC_SQUAD = {
+        back = CUSTOM_ASSETS.."ships/republic/card_back.png",
+        faction = "Republic"
+    }
+
+-- separatist faction
+    SEPARATIST_SHIP = {
+        back =      CUSTOM_ASSETS.."ships/separatist/card_back.png",
+        faction = "Separatist"
+    }
+
+    Ship:new(MediumShip,SEPARATIST_SHIP, {
+        name = "Saboath-class Destroyer",
+        front = CUSTOM_ASSETS.."ships/separatist/saboath/sabaoth_destroyer.png",
+        mesh = CUSTOM_ASSETS.."ships/separatist/saboath/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/saboath/diffuse_sabaoth.png",
+        ruler = CUSTOM_ASSETS.."ships/separatist/saboath/ruler.obj", 
+        maneuver = {{"I"},{"I","II"},{"-","I","I"}},
+        defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
+        shields = {4,3,3,2}, -- Front, left, right, rear
+        cost = 75,
+        command = 2,
+        aliases = {"Saboath-class Destroyer [Legends]"}
+    })
+
+    Ship:new(MediumShip,SEPARATIST_SHIP, {
+        name = "Saboath-class Light Carrier",
+        front = CUSTOM_ASSETS.."ships/separatist/saboath/sabaoth_carrier.png",
+        mesh = CUSTOM_ASSETS.."ships/separatist/saboath/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/saboath/diffuse_sabaoth.png",
+        ruler = CUSTOM_ASSETS.."ships/separatist/saboath/ruler.obj", 
+        maneuver = {{"I"},{"I","II"},{"-","I","I"}},
+        defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
+        shields = {4,3,3,2}, -- Front, left, right, rear
+        cost = 70,
+        command = 2,
+        aliases = {"Saboath-class Light Carrier [Legends]"}
+    })
+
+    SEPARATIST_SQUAD = {
+        back =      CUSTOM_ASSETS.."ships/separatist/card_back.png",
+        faction = "Separatist"
+    }
+
+-- empire faction
+    EMPIRE_SHIP = {
+        back = ASSETS_ROOT.."ships/empire/card_back.jpg",
+        faction = "Empire"
+    }
+
+    EMPIRE_SQUAD = {
+        back = ASSETS_ROOT.."ships/empire/card_back.jpg",
+        faction = "Empire"
+    }
+
+-- rebel faction
+    REBEL_SHIP = {
+        back = CUSTOM_ASSETS.."ships/rebel/card_back.png",
+        faction = "Rebellion" 
+    }
+
+    Ship:new(MediumShip,REBEL_SHIP,{
+        name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
+        front =     ASSETS_ROOT.."ships/empire/quasar/Rebel_Quasar.PNG",
+        mesh =      ASSETS_ROOT.."ships/empire/quasar/mesh.obj",
+        diffuse =   ASSETS_ROOT.."ships/empire/quasar/II_diffuse.jpg",
+        ruler =     ASSETS_ROOT.."ships/empire/quasar/ruler.obj",
+        maneuver = {{"II"},{"I","I"},{"-","I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_REDIRECT},
+        shields = {2,2,2,1},
+        cost = 64,
+        aliases = {"Rebel Quasar"},
+        command = 2
+    })
+
+    REBEL_SQUAD = {
+        back = CUSTOM_ASSETS.."ships/rebel/card_back.png",
+        faction = "Rebellion" 
+    }
+
 -- colonial faction
     COL_SHIP = {
         back = CUSTOM_ASSETS.."ships/colonial/card_back.png",
         faction = "Colonial"
     }
-    COL_SQUAD = {
-        back = CUSTOM_ASSETS.."squadrons/colonial/card_back.png",
-        faction = "Colonial"
-    }
+    
         -- mercury battlestar
     Ship:new(LargeShip,COL_SHIP, {
         name = "Mercury-class Battlestar Mk.1",
@@ -97,14 +206,16 @@ function onload()
         command = 2,
         aliases = {"Orion-class Pocket Battlestar [Legends]"}
     })
+    
+    COL_SQUAD = {
+        back = CUSTOM_ASSETS.."squadrons/colonial/card_back.png",
+        faction = "Colonial"
+    }
+
 
 -- cylon faction
     CYL_SHIP = {
         back = CUSTOM_ASSETS.."ships/cylon/card_back.png",
-        faction = "Cylon"
-    }
-    CYL_SQUAD = {
-        back = CUSTOM_ASSETS.."squadrons/cylon/card_back.png",
         faction = "Cylon"
     }
 
@@ -137,25 +248,25 @@ function onload()
         command = 3,
         aliases = {"Basestar Mk2 Defense Refit [Legends]"}
     })
+    
+    CYL_SQUAD = {
+        back = CUSTOM_ASSETS.."squadrons/cylon/card_back.png",
+        faction = "Cylon"
+    }
 
 -- UNSC faction
     UNSC_SHIP = {
         back = CUSTOM_ASSETS.."ships/unsc/card_back.png",
         faction = "UNSC"
     }
-    UNSC_SQUAD = {
-        back = CUSTOM_ASSETS.."squadrons/unsc/card_back.png",
-        faction = "UNSC"
-    }
-
+    
         -- paris heavy frigate
     Ship:new(SmallShip,UNSC_SHIP, {
         name = "Paris-class Heavy Frigate",
         front = CUSTOM_ASSETS.."ships/unsc/paris/paris.png",
         mesh = CUSTOM_ASSETS.."ships/unsc/paris/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/unsc/paris/diffuse_paris.png",
-        --ruler = CUSTOM_ASSETS.."ships/unsc/paris/ruler.obj", 
-        ruler = ASSETS_ROOT.."ships/rebel/hammerhead/ruler.obj", 
+        ruler = CUSTOM_ASSETS.."ships/unsc/paris/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_EVADE},
         shields = {2,1,1,1}, -- Front, left, right, rear
@@ -163,6 +274,21 @@ function onload()
         command = 1,
         aliases = {"Paris-class Heavy Frigate [Legends]"}
     })
+    
+    UNSC_SQUAD = {
+        back = CUSTOM_ASSETS.."squadrons/unsc/card_back.png",
+        faction = "UNSC"
+    }
+
+    COV_SHIP = {
+        back = CUSTOM_ASSETS.."ships/covenant/card_back.png",
+        faction = "Covenant"
+    }
+
+    COV_SQUAD = {
+        back = CUSTOM_ASSETS.."squadrons/covenant/card_back.png",
+        faction = "Covenant"
+    }
 
 end
     
