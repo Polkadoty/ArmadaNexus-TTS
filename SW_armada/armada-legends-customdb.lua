@@ -51,17 +51,17 @@ function onload()
     }
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
-        name = "Saboath-class Destroyer",
-        front = CUSTOM_ASSETS.."ships/separatist/saboath/sabaoth_destroyer.png",
-        mesh = CUSTOM_ASSETS.."ships/separatist/saboath/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/saboath/diffuse_sabaoth.png",
-        ruler = CUSTOM_ASSETS.."ships/separatist/saboath/ruler.obj", 
+        name = "Sabaoth-class Destroyer",
+        front = CUSTOM_ASSETS.."ships/separatist/sabaoth/sabaoth_destroyer.png",
+        mesh = CUSTOM_ASSETS.."ships/separatist/sabaoth/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/sabaoth/diffuse_sabaoth.png",
+        ruler = CUSTOM_ASSETS.."ships/separatist/sabaoth/ruler.obj", 
         maneuver = {{"I"},{"I","II"},{"-","I","I"}},
         defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
         shields = {4,3,3,2}, -- Front, left, right, rear
         cost = 75,
         command = 2,
-        aliases = {"Saboath-class Destroyer [Legends]"}
+        aliases = {"Sabaoth-class Destroyer [Legends]"}
     })
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
@@ -102,7 +102,7 @@ function onload()
 
     Ship:new(MediumShip,REBEL_SHIP,{
         name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
-        front =     CUSTOM_ASSETS.."ships/empire/quasar/Rebel_Quasar.png",
+        front =     CUSTOM_ASSETS.."ships/empire/quasar/Rebel_QuasarII.png",
         mesh =      ASSETS_ROOT.."ships/empire/quasar/mesh.obj",
         diffuse =   CUSTOM_ASSETS.."ships/empire/quasar/rebel_II_diffuse.png",
         ruler =     ASSETS_ROOT.."ships/empire/quasar/ruler.obj",
