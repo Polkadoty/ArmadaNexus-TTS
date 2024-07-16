@@ -265,32 +265,132 @@ function onload()
         -- paris heavy frigate
     Ship:new(SmallShip,UNSC_SHIP, {
         name = "Paris-class Heavy Frigate",
-        front = CUSTOM_ASSETS.."ships/unsc/paris/paris.png",
+        front = CUSTOM_ASSETS.."ships/unsc/paris/paris_heavy_card.png",
         mesh = CUSTOM_ASSETS.."ships/unsc/paris/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/unsc/paris/diffuse_paris.png",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/paris/diffuse_heavy_paris.png",
         ruler = CUSTOM_ASSETS.."ships/unsc/paris/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_EVADE},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 60,
+        command = 1,
+        aliases = {"Paris-class Heavy Frigate [Legends]"}
+    
+    Ship:new(SmallShip,UNSC_SHIP, {
+        name = "Paris-class Missile Frigate",
+        front = CUSTOM_ASSETS.."ships/unsc/paris/paris_missile_card.png",
+        mesh = CUSTOM_ASSETS.."ships/unsc/paris/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/paris/diffuse_missile_paris.png",
+        ruler = CUSTOM_ASSETS.."ships/unsc/paris/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","II","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 65,
+        command = 1,
+        aliases = {"Paris-class Missile Frigate [Legends]"}
+
+        --stalwart
+    Ship:new(SmallShip,UNSC_SHIP, {
+        name = "Stalwart-class Light Frigate",
+        front = CUSTOM_ASSETS.."ships/unsc/stalwart/stalwart_light_card.png",
+        mesh = CUSTOM_ASSETS.."ships/unsc/stalwart/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/stalwart/diffuse_light_stalwart.png",
+        ruler = CUSTOM_ASSETS.."ships/unsc/stalwart/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","II","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
         shields = {2,1,1,1}, -- Front, left, right, rear
         cost = 55,
         command = 1,
-        aliases = {"Paris-class Heavy Frigate [Legends]"}
+        aliases = {"Stalwart-class Light Frigate [Legends]"}
+
+    Ship:new(SmallShip,UNSC_SHIP, {
+        name = "Stalwart-class Escort Frigate",
+        front = CUSTOM_ASSETS.."ships/unsc/stalwart/stalwart_escort_card.png",
+        mesh = CUSTOM_ASSETS.."ships/unsc/stalwart/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/stalwart/diffuse_escort_stalwart.png",
+        ruler = CUSTOM_ASSETS.."ships/unsc/stalwart/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","II","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 60,
+        command = 1,
+        aliases = {"Stalwart-class Escort Frigate [Legends]"}    
+
+        --halcyon
+    Ship:new(MediumShip,UNSC_SHIP, {
+        name = "Halcyon-class Light Cruiser",
+        front = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_light_card.png",
+        mesh = CUSTOM_ASSETS.."ships/unsc/halcyon/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_light_diffuse.png",
+        ruler = CUSTOM_ASSETS.."ships/unsc/halcyon/ruler.obj", 
+        maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
+        shields = {2,2,2,1}, -- Front, left, right, rear
+        cost = 80,
+        command = 2,
+        aliases = {"Halcyon-class Light Cruiser [Legends]"}  
+        
+    Ship:new(MediumShip,UNSC_SHIP, {
+        name = "Halcyon-class Battle Refit",
+        front = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_refit_card.png",
+        mesh = CUSTOM_ASSETS.."ships/unsc/halcyon/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_refit_diffuse.png",
+        ruler = CUSTOM_ASSETS.."ships/unsc/halcyon/ruler.obj", 
+        maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
+        shields = {2,2,2,1}, -- Front, left, right, rear
+        cost = 85,
+        command = 2,
+        aliases = {"Halcyon-class Battle Refit [Legends]"}  
+
+
     })
     
     UNSC_SQUAD = {
         back = CUSTOM_ASSETS.."squadrons/unsc/card_back.png",
         faction = "UNSC"
     }
+        --longsword fighter
+
+        --longsword bomber
 
     COV_SHIP = {
         back = CUSTOM_ASSETS.."ships/covenant/card_back.png",
         faction = "Covenant"
     }
+        --ccs
+
+        --sdv
 
     COV_SQUAD = {
         back = CUSTOM_ASSETS.."squadrons/covenant/card_back.png",
         faction = "Covenant"
     }
+        --seraph
+
+        --space banshee
+
+
+    ------upgrades
+    
+    --halo    
+    UNSC = {
+        factions={"UNSC"}
+    }
+    Covenant = {
+        factions={"Covenant"}
+    }
+    Halo = {
+        factions={"UNSC","Covenant"}
+    }    
+
+    Card:new(Commander,UNSC,{name="Captain Keyes",  front = CUSTOM_ASSETS.."cards/commanders/capt_keyes_card.png", cost=30, aliases={"Captain Keyes [Legends]"}})
+    Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/commanders/capt_wallace_card.png", cost=20, aliases={"Captain Wallace [Legends]"}})
+    Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/commanders/cmdr_keyes_card.png", cost=25, aliases={"Commander Keyes [Legends]"}})
+
+    --bsg
+
+    --starwars
 
 end
     
