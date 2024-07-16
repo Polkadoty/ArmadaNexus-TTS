@@ -275,6 +275,7 @@ function onload()
         cost = 60,
         command = 1,
         aliases = {"Paris-class Heavy Frigate [Legends]"}
+    })
     
     Ship:new(SmallShip,UNSC_SHIP, {
         name = "Paris-class Missile Frigate",
@@ -288,6 +289,7 @@ function onload()
         cost = 65,
         command = 1,
         aliases = {"Paris-class Missile Frigate [Legends]"}
+    })
 
         --stalwart
     Ship:new(SmallShip,UNSC_SHIP, {
@@ -302,6 +304,7 @@ function onload()
         cost = 55,
         command = 1,
         aliases = {"Stalwart-class Light Frigate [Legends]"}
+    })
 
     Ship:new(SmallShip,UNSC_SHIP, {
         name = "Stalwart-class Escort Frigate",
@@ -314,7 +317,8 @@ function onload()
         shields = {2,1,1,1}, -- Front, left, right, rear
         cost = 60,
         command = 1,
-        aliases = {"Stalwart-class Escort Frigate [Legends]"}    
+        aliases = {"Stalwart-class Escort Frigate [Legends]"}
+    })   
 
         --halcyon
     Ship:new(MediumShip,UNSC_SHIP, {
@@ -329,6 +333,7 @@ function onload()
         cost = 80,
         command = 2,
         aliases = {"Halcyon-class Light Cruiser [Legends]"}  
+    })
         
     Ship:new(MediumShip,UNSC_SHIP, {
         name = "Halcyon-class Battle Refit",
@@ -341,9 +346,7 @@ function onload()
         shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 85,
         command = 2,
-        aliases = {"Halcyon-class Battle Refit [Legends]"}  
-
-
+        aliases = {"Halcyon-class Battle Refit [Legends]"} 
     })
     
     UNSC_SQUAD = {
@@ -351,8 +354,35 @@ function onload()
         faction = "UNSC"
     }
         --longsword fighter
+    ls_fighter = {
+        mesh = CUSTOM_ASSETS.."squadrons/unsc/longsword/fighter_mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_fighter_diffuse.png",
+        health = 6,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(ls_fighter, UNSC_SQUAD, {
+        name = "Longsword Fighter Squadron",
+        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_fght_card.png",
+        cost = 17,
+        aliases = {"Longsword Fighter Squadron [Legends]"}
+    })
 
         --longsword bomber
+    ls_bomber = {
+        mesh = CUSTOM_ASSETS.."squadrons/unsc/longsword/bomber_mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_bomber_diffuse.png",
+        health = 7,
+        move = 2,
+        defense_tokens = {}
+    }
+    Squadron:new(ls_bomber, UNSC_SQUAD, {
+        name = "Longsword Bomber Squadron",
+        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_bomb_card.png",
+        cost = 19,
+        aliases = {"Longsword Bomber Squadron [Legends]"}
+    })
+
 
     COV_SHIP = {
         back = CUSTOM_ASSETS.."ships/covenant/card_back.png",
@@ -372,6 +402,10 @@ function onload()
 
 
     ------upgrades
+    Commander = {
+    type="Commander",
+    back = CUSTOM_ASSETS.."/cards/commanders/back.png"
+    }
     
     --halo    
     UNSC = {
