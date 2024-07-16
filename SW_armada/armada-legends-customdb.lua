@@ -406,6 +406,10 @@ function onload()
     type="Commander",
     back = CUSTOM_ASSETS.."/cards/commanders/back.png"
     }
+    Title = {
+        type="Title",
+        back = LEGACY_ASSETS.."/cards/titles/back.png"
+    }
     
     --halo    
     UNSC = {
@@ -421,6 +425,7 @@ function onload()
     Card:new(Commander,UNSC,{name="Captain Keyes",  front = CUSTOM_ASSETS.."cards/commanders/capt_keyes_card.png", cost=30, aliases={"Captain Keyes [Legends]"}})
     Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/commanders/capt_wallace_card.png", cost=20, aliases={"Captain Wallace [Legends]"}})
     Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/commanders/cmdr_keyes_card.png", cost=25, aliases={"Commander Keyes [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Pillar of Autumn", front = CUSTOM_ASSETS.."cards/titles/titles_halcyon_poa.png", cost=10, aliases={"UNSC Pillar of Autumn [Legends]"}})   
 
     --bsg
 
