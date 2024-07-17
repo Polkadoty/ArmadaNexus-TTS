@@ -385,7 +385,7 @@ function onload()
 
 
     COV_SHIP = {
-        back = CUSTOM_ASSETS.."ships/covenant/card_back.png",
+        back = CUSTOM_ASSETS.."ships/covenant/back.jpg",
         faction = "Covenant"
     }
         --ccs
@@ -401,6 +401,7 @@ function onload()
             cost = 85,
             command = 3,
             aliases = {"CCS-class Battle Cruiser [Legends]"} 
+        })
 
         --sdv
         Ship:new(MediumShip,COV_SHIP, {
@@ -415,13 +416,40 @@ function onload()
             cost = 85,
             command = 2,
             aliases = {"SDV-class Heavy Corvette [Legends]"} 
+        })
 
         --cas
+        Ship:new(MassiveShip,COV_SHIP, {
+            name = "SDV-class Heavy Corvette",
+            front = CUSTOM_ASSETS.."ships/covenant/cas/cas_assault_card.png",
+            mesh = CUSTOM_ASSETS.."ships/covenant/cas/mesh.obj",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/cas/diffuse_cas.png",
+            ruler = CUSTOM_ASSETS.."ships/covenant/cas/ruler.obj", 
+            maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+            defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_REDIRECT},
+            shields = {2,2,2,1}, -- Front, left, right, rear
+            cost = 85,
+            command = 2,
+            aliases = {"SDV-class Heavy Corvette [Legends]"}
+        }) 
 
         --crs
+        Ship:new(SmallShip,COV_SHIP, {
+            name = "CRS-class Light Cruiser",
+            front = CUSTOM_ASSETS.."ships/covenant/crs/crs_light_card.png",
+            mesh = CUSTOM_ASSETS.."ships/covenant/crs/mesh.obj",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/crs/diffuse_crs.png",
+            ruler = CUSTOM_ASSETS.."ships/covenant/crs/ruler.obj", 
+            maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+            defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
+            shields = {2,2,2,1}, -- Front, left, right, rear
+            cost = 85,
+            command = 2,
+            aliases = {"CRS-class Light Cruiser [Legends]"} 
+        })
 
     COV_SQUAD = {
-        back = CUSTOM_ASSETS.."ships/covenant/card_back.png",
+        back = CUSTOM_ASSETS.."ships/covenant/back.jpg",
         faction = "Covenant"
     }
         --space banshee
@@ -449,7 +477,7 @@ function onload()
     }
     Squadron:new(seraph, COV_SQUAD, {
         name = "Seraph Squadron",
-        front = CUSTOM_ASSETS.."squadrons/covenant/banshee/seraph_card.png",
+        front = CUSTOM_ASSETS.."squadrons/covenant/seraph/seraph_card.png",
         cost = 15,
         aliases = {"Seraph Squadron [Legends]"}
     })
@@ -457,12 +485,12 @@ function onload()
 
     ------upgrades
     Commander = {
-    type="Commander",
-    back = CUSTOM_ASSETS.."/cards/commanders/back.png"
+        type="Commander",
+        back = CUSTOM_ASSETS.."/cards/commanders/back.png"
     }
     Title = {
         type="Title",
-        back = LEGACY_ASSETS.."/cards/titles/back.png"
+        back = CUSTOM_ASSETS.."/cards/titles/back.png"
     }
     
     --halo    
@@ -543,6 +571,7 @@ end
     SmallShip = { collider = ASSETS_ROOT..'misc/bases/small.obj' } --"http://paste.ee/r/eDbf1"
     MediumShip = { collider = ASSETS_ROOT..'misc/bases/medium.obj' } --"http://paste.ee/r/6LYTT"
     LargeShip = { collider = ASSETS_ROOT..'misc/bases/large.obj'} --"http://paste.ee/r/a7mfW"
+    MassiveShip = { collider = LEGACY_ASSETS..'dev/wave3/ships/subjugator/massive_base_mesh.obj'} --https://pastebin.com/raw/FbinX7mf
     HugeShip = { collider = ASSETS_ROOT..'misc/bases/huge.obj' } --"http://paste.ee/r/ClCL3"
     Squadron = { collider = ASSETS_ROOT..'misc/bases/squad.obj', convex = false, type = 1, --"http://paste.ee/r/ZKM7E" --http://paste.ee/r/nAMCQ
         material = 1, health = 0, move = 0, defense_tokens = {}, cost = 0,
