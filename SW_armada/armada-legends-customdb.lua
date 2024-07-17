@@ -420,7 +420,7 @@ function onload()
 
         --cas
         Ship:new(MassiveShip,COV_SHIP, {
-            name = "SDV-class Heavy Corvette",
+            name = "CAS-class Assault Carrier",
             front = CUSTOM_ASSETS.."ships/covenant/cas/cas_assault_card.png",
             mesh = CUSTOM_ASSETS.."ships/covenant/cas/mesh.obj",
             diffuse = CUSTOM_ASSETS.."ships/covenant/cas/diffuse_cas.png",
@@ -429,8 +429,8 @@ function onload()
             defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_REDIRECT},
             shields = {2,2,2,1}, -- Front, left, right, rear
             cost = 85,
-            command = 2,
-            aliases = {"SDV-class Heavy Corvette [Legends]"}
+            command = 4,
+            aliases = {"CAS-class Assault Carrier [Legends]"}
         }) 
 
         --crs
@@ -444,7 +444,7 @@ function onload()
             defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
             shields = {2,2,2,1}, -- Front, left, right, rear
             cost = 85,
-            command = 2,
+            command = 1,
             aliases = {"CRS-class Light Cruiser [Legends]"} 
         })
 
