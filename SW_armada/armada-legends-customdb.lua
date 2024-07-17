@@ -40,7 +40,7 @@ function onload()
     })
 
     REPUBLIC_SQUAD = {
-        back = CUSTOM_ASSETS.."ships/republic/card_back.png",
+        back = CUSTOM_ASSETS.."squadrons/republic/card_back.png",
         faction = "Republic"
     }
 
@@ -79,7 +79,7 @@ function onload()
     })
 
     SEPARATIST_SQUAD = {
-        back =      CUSTOM_ASSETS.."ships/separatist/card_back.png",
+        back =      CUSTOM_ASSETS.."squadrons/separatist/card_back.png",
         faction = "Separatist"
     }
 
@@ -90,7 +90,7 @@ function onload()
     }
 
     EMPIRE_SQUAD = {
-        back = ASSETS_ROOT.."ships/empire/card_back.jpg",
+        back = ASSETS_ROOT.."squadrons/empire/card_back.jpg",
         faction = "Empire"
     }
 
@@ -115,7 +115,7 @@ function onload()
     })
 
     REBEL_SQUAD = {
-        back = CUSTOM_ASSETS.."ships/rebel/card_back.png",
+        back = CUSTOM_ASSETS.."squadrons/rebel/card_back.png",
         faction = "Rebellion" 
     }
 
@@ -210,7 +210,7 @@ function onload()
     })
     
     COL_SQUAD = {
-        back = CUSTOM_ASSETS.."squadrons/colonial/card_back.png",
+        back = CUSTOM_ASSETS.."ships/colonial/card_back.png",
         faction = "Colonial"
     }
 
@@ -252,7 +252,7 @@ function onload()
     })
     
     CYL_SQUAD = {
-        back = CUSTOM_ASSETS.."squadrons/cylon/card_back.png",
+        back = CUSTOM_ASSETS.."ships/cylon/card_back.png",
         faction = "Cylon"
     }
 
@@ -350,7 +350,7 @@ function onload()
     })
     
     UNSC_SQUAD = {
-        back = CUSTOM_ASSETS.."squadrons/unsc/card_back.png",
+        back = CUSTOM_ASSETS.."ships/unsc/card_back.png",
         faction = "UNSC"
     }
         --longsword fighter
@@ -389,16 +389,70 @@ function onload()
         faction = "Covenant"
     }
         --ccs
+        Ship:new(LargeShip,COV_SHIP, {
+            name = "CCS-class Battle Cruiser",
+            front = CUSTOM_ASSETS.."ships/covenant/ccs/ccs_battle_card.png",
+            mesh = CUSTOM_ASSETS.."ships/covenant/ccs/mesh.obj",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/ccs/diffuse_ccs.png",
+            ruler = CUSTOM_ASSETS.."ships/covenant/ccs/ruler.obj", 
+            maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+            defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
+            shields = {2,2,2,1}, -- Front, left, right, rear
+            cost = 85,
+            command = 3,
+            aliases = {"CCS-class Battle Cruiser [Legends]"} 
 
         --sdv
+        Ship:new(MediumShip,COV_SHIP, {
+            name = "SDV-class Heavy Corvette",
+            front = CUSTOM_ASSETS.."ships/covenant/sdv/sdv_heavy_card.png",
+            mesh = CUSTOM_ASSETS.."ships/covenant/sdv/mesh.obj",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/sdv/diffuse_sdv.png",
+            ruler = CUSTOM_ASSETS.."ships/covenant/sdv/ruler.obj", 
+            maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+            defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
+            shields = {2,2,2,1}, -- Front, left, right, rear
+            cost = 85,
+            command = 2,
+            aliases = {"SDV-class Heavy Corvette [Legends]"} 
+
+        --cas
+
+        --crs
 
     COV_SQUAD = {
-        back = CUSTOM_ASSETS.."squadrons/covenant/card_back.png",
+        back = CUSTOM_ASSETS.."ships/covenant/card_back.png",
         faction = "Covenant"
     }
-        --seraph
-
         --space banshee
+    banshee = {
+        mesh = CUSTOM_ASSETS.."squadrons/covenant/banshee/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/covenant/banshee/diffuse_banshee.png",
+        health = 3,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(banshee, COV_SQUAD, {
+        name = "Banshee Squadron",
+        front = CUSTOM_ASSETS.."squadrons/covenant/banshee/banshee_card.png",
+        cost = 8,
+        aliases = {"Banshee Squadron [Legends]"}
+    })
+
+        --seraph
+    seraph = {
+        mesh = CUSTOM_ASSETS.."squadrons/covenant/seraph/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/covenant/seraph/diffuse_seraph.png",
+        health = 5,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(seraph, COV_SQUAD, {
+        name = "Seraph Squadron",
+        front = CUSTOM_ASSETS.."squadrons/covenant/banshee/seraph_card.png",
+        cost = 15,
+        aliases = {"Seraph Squadron [Legends]"}
+    })
 
 
     ------upgrades
@@ -426,6 +480,12 @@ function onload()
     Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/commanders/capt_wallace_card.png", cost=20, aliases={"Captain Wallace [Legends]"}})
     Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/commanders/cmdr_keyes_card.png", cost=25, aliases={"Commander Keyes [Legends]"}})
     Card:new(Title,UNSC,{name="UNSC Pillar of Autumn", front = CUSTOM_ASSETS.."cards/titles/titles_halcyon_poa.png", cost=10, aliases={"UNSC Pillar of Autumn [Legends]"}})   
+    Card:new(Title,UNSC,{name="UNSC Constantinople", front = CUSTOM_ASSETS.."cards/titles/titles_halcyon_const.png", cost=5, aliases={"UNSC Constantinople [Legends]"}})   
+    Card:new(Title,UNSC,{name="UNSC Roman Blue", front = CUSTOM_ASSETS.."cards/titles/titles_halcyon_roman.png", cost=2, aliases={"UNSC Roman Blue [Legends]"}})   
+    Card:new(Title,UNSC,{name="UNSC Savannah", front = CUSTOM_ASSETS.."cards/titles/title_paris_savannah.png", cost=7, aliases={"UNSC Savannah [Legends]"}})   
+    Card:new(Title,UNSC,{name="UNSC Commonwealth", front = CUSTOM_ASSETS.."cards/titles/title_paris_commonwealth.png", cost=5, aliases={"UNSC Commonwealth [Legends]"}})   
+    Card:new(Title,UNSC,{name="UNSC In Amber Clad", front = CUSTOM_ASSETS.."cards/titles/titles_stalwart_iac.png", cost=7, aliases={"UNSC In Amber Clad [Legends]"}})   
+    Card:new(Title,UNSC,{name="UNSC Meriweather Lewis", front = CUSTOM_ASSETS.."cards/titles/titles_stalwart_merilew.png", cost=2, aliases={"UNSC Meriweather Lewis [Legends]"}})   
 
     --bsg
 
