@@ -301,7 +301,7 @@ function onload()
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 55,
+        cost = 45,
         command = 1,
         aliases = {"Stalwart-class Light Frigate [Legends]"}
     })
@@ -315,7 +315,7 @@ function onload()
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
         defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 60,
+        cost = 50,
         command = 1,
         aliases = {"Stalwart-class Escort Frigate [Legends]"}
     })   
@@ -330,7 +330,7 @@ function onload()
         maneuver = {{"I"},{"-","I"},{"-","I","I"}},
         defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
         shields = {2,2,2,1}, -- Front, left, right, rear
-        cost = 80,
+        cost = 78,
         command = 2,
         aliases = {"Halcyon-class Light Cruiser [Legends]"}  
     })
@@ -344,7 +344,7 @@ function onload()
         maneuver = {{"I"},{"-","I"},{"-","I","I"}},
         defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
         shields = {2,2,2,1}, -- Front, left, right, rear
-        cost = 85,
+        cost = 82,
         command = 2,
         aliases = {"Halcyon-class Battle Refit [Legends]"} 
     })
