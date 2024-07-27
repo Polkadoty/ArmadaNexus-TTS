@@ -8,7 +8,7 @@ function onload()
 -- republic faction
     REPUBLIC_SHIP = {
         back = CUSTOM_ASSETS.."ships/republic/card_back.png",
-        faction = "Republic"
+        faction = "!Republic"
     }
 
     Ship:new(LargeShip,REPUBLIC_SHIP, {
@@ -41,13 +41,13 @@ function onload()
 
     REPUBLIC_SQUAD = {
         back = CUSTOM_ASSETS.."squadrons/republic/card_back.png",
-        faction = "Republic"
+        faction = "!Republic"
     }
 
 -- separatist faction
     SEPARATIST_SHIP = {
         back =      CUSTOM_ASSETS.."ships/separatist/card_back.png",
-        faction = "Separatist"
+        faction = "!Separatist"
     }
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
@@ -79,18 +79,18 @@ function onload()
 
     SEPARATIST_SQUAD = {
         back =      CUSTOM_ASSETS.."squadrons/separatist/card_back.png",
-        faction = "Separatist"
+        faction = "!Separatist"
     }
 
 -- empire faction
     EMPIRE_SHIP = {
         back = ASSETS_ROOT.."ships/empire/card_back.jpg",
-        faction = "Empire"
+        faction = "!Empire"
     }
 
     EMPIRE_SQUAD = {
         back = ASSETS_ROOT.."squadrons/empire/card_back.jpg",
-        faction = "Empire"
+        faction = "!Empire"
     }
 
     --cx dagger
@@ -119,13 +119,13 @@ function onload()
 -- rebel faction
     REBEL_SHIP = {
         back = CUSTOM_ASSETS.."ships/rebel/card_back.png",
-        faction = "Rebellion" 
+        faction = "!Rebellion" 
     }
 
     Ship:new(MediumShip,REBEL_SHIP,{
         name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
         front =     CUSTOM_ASSETS.."ships/rebel/reb_quasar/Rebel_QuasarII.png",
-        mesh =      ASSETS_ROOT.."ships/rebel/reb_quasar/mesh.obj",
+        mesh =      ASSETS_ROOT.."ships/empire/quasar/mesh.obj",
         diffuse =   CUSTOM_ASSETS.."ships/rebel/reb_quasar/rebel_II_diffuse.png",
         ruler =     ASSETS_ROOT.."ships/rebel/reb_quasar/ruler.obj",
         maneuver = {{"II"},{"I","I"},{"-","I","I"}},
@@ -138,7 +138,7 @@ function onload()
 
     REBEL_SQUAD = {
         back = CUSTOM_ASSETS.."squadrons/rebel/card_back.png",
-        faction = "Rebellion" 
+        faction = "!Rebellion" 
     }
 
 -- colonial faction
@@ -383,7 +383,7 @@ function onload()
     Squadron:new(ls_fighter, UNSC_SQUAD, {
         name = "Longsword Fighter Squadron",
         front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_fighter_card.png",
-        cost = 17,
+        cost = 15,
         aliases = {"Longsword Fighter Squadron [Legends]"}
     })
     Squadron:new(ls_fighter, UNSC_SQUAD, {
@@ -406,10 +406,10 @@ function onload()
     Squadron:new(ls_bomber, UNSC_SQUAD, {
         name = "Longsword Bomber Squadron",
         front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_bomber_card.png",
-        cost = 19,
+        cost = 17,
         aliases = {"Longsword Bomber Squadron [Legends]"}
     })
-    Squadron:new(ls_fighter, UNSC_SQUAD, {
+    Squadron:new(ls_bomber, UNSC_SQUAD, {
         name = "Master Chief",
         front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_bomber_chief.png",
         diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/diffuse_ls_ace_bomber.png", 
@@ -554,7 +554,7 @@ function onload()
     Squadron:new(seraph, COV_SQUAD, {
         name = "Seraph Squadron",
         front = CUSTOM_ASSETS.."squadrons/covenant/seraph/seraph_card.png",
-        cost = 15,
+        cost = 14,
         aliases = {"Seraph Squadron [Legends]"}
     })
     Squadron:new(seraph, COV_SQUAD, {
@@ -564,7 +564,7 @@ function onload()
         defense_tokens = {DEF_BRACE,DEF_EVADE},
         cost = 20,
         aliases = {"Ferko [Legends]"}
-
+    })
 
     ------upgrades
     Commander = {type="Commander", back = CUSTOM_ASSETS.."/cards/commander/back.png"}
@@ -589,43 +589,43 @@ function onload()
         factions={"UNSC","Covenant"}
     }    
 
-    Card:new(Commander,UNSC,{name="Captain Keyes",  front = CUSTOM_ASSETS.."cards/#halo/com_capt_keyes.png", cost=30, aliases={"Captain Keyes [Legends]"}})
-    Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/#halo/com_capt_wallace.png", cost=20, aliases={"Captain Wallace [Legends]"}})
-    Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/#halo/com_cmdr_keyes.png", cost=25, aliases={"Commander Keyes [Legends]"}})
-    Card:new(Commander,UNSC,{name="Lord Hood",  front = CUSTOM_ASSETS.."cards/#halo/com_lordhood.png", cost=30, aliases={"Lord Hood [Legends]"}})
-    Card:new(Commander,Covenant,{name="Ardo Moretumee",  front = CUSTOM_ASSETS.."cards/#halo/com_ardomoretumee.png", cost=20, aliases={"Ardo Moretumee [Legends]"}})
-    Card:new(Commander,Covenant,{name="Atriox",  front = CUSTOM_ASSETS.."cards/#halo/com_atriox.png", cost=35, aliases={"Atriox [Legends]"}})
-    Card:new(Commander,Covenant,{name="Prophet of Truth",  front = CUSTOM_ASSETS.."cards/#halo/com_prophettruth.png", cost=30, aliases={"Prophet of Truth [Legends]"}})
-    Card:new(Commander,Covenant,{name="Thel Vadamee",  front = CUSTOM_ASSETS.."cards/#halo/com_thelvadamee.png", cost=25, aliases={"Thel Vadamee [Legends]"}})
+    Card:new(Commander,UNSC,{name="Captain Keyes",  front = CUSTOM_ASSETS.."cards/~halo/com_capt_keyes.png", cost=30, aliases={"Captain Keyes [Legends]"}})
+    Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/~halo/com_capt_wallace.png", cost=20, aliases={"Captain Wallace [Legends]"}})
+    Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/~halo/com_cmdr_keyes.png", cost=25, aliases={"Commander Keyes [Legends]"}})
+    Card:new(Commander,UNSC,{name="Lord Hood",  front = CUSTOM_ASSETS.."cards/~halo/com_lordhood.png", cost=30, aliases={"Lord Hood [Legends]"}})
+    Card:new(Commander,Covenant,{name="Ardo Moretumee",  front = CUSTOM_ASSETS.."cards/~halo/com_ardomoretumee.png", cost=20, aliases={"Ardo Moretumee [Legends]"}})
+    Card:new(Commander,Covenant,{name="Atriox",  front = CUSTOM_ASSETS.."cards/~halo/com_atriox.png", cost=35, aliases={"Atriox [Legends]"}})
+    Card:new(Commander,Covenant,{name="Prophet of Truth",  front = CUSTOM_ASSETS.."cards/~halo/com_prophettruth.png", cost=30, aliases={"Prophet of Truth [Legends]"}})
+    Card:new(Commander,Covenant,{name="Thel Vadamee",  front = CUSTOM_ASSETS.."cards/~halo/com_thelvadamee.png", cost=25, aliases={"Thel Vadamee [Legends]"}})
 
-    Card:new(DefensiveRetrofit,UNSC,{name="Emergency Thrusters",  front = CUSTOM_ASSETS.."cards/#halo/dr_emergthrusters.png", cost=6, aliases={"Emergency Thrusters [Legends]"}})
-    Card:new(DefensiveRetrofit,UNSC,{name="Titanium Armor Plating",  front = CUSTOM_ASSETS.."cards/#halo/dr_titarmor.png", cost=4, aliases={"Titanium Armor Plating [Legends]"}})
-    Card:new(DefensiveRetrofit,Covenant,{name="Reliable Shields",  front = CUSTOM_ASSETS.."cards/#halo/dr_reliableshields.png", cost=9, aliases={"Reliable Shields [Legends]"}})
+    Card:new(DefensiveRetrofit,UNSC,{name="Emergency Thrusters",  front = CUSTOM_ASSETS.."cards/~halo/dr_emergthrusters.png", cost=6, aliases={"Emergency Thrusters [Legends]"}})
+    Card:new(DefensiveRetrofit,UNSC,{name="Titanium Armor Plating",  front = CUSTOM_ASSETS.."cards/~halo/dr_titarmor.png", cost=4, aliases={"Titanium Armor Plating [Legends]"}})
+    Card:new(DefensiveRetrofit,Covenant,{name="Reliable Shields",  front = CUSTOM_ASSETS.."cards/~halo/dr_reliableshields.png", cost=9, aliases={"Reliable Shields [Legends]"}})
 
-    Card:new(FleetCommand,Covenant,{name="Jiralhanae Brutality",  front = CUSTOM_ASSETS.."cards/#halo/fc_jirabrutal.png", cost=7, aliases={"Jiralhanae Brutality [Legends]"}})
-    Card:new(FleetCommand,Covenant,{name="Sangehili Honor",  front = CUSTOM_ASSETS.."cards/#halo/fc_sanghonor.png", cost=6, aliases={"Sangehili Honor [Legends]"}})
-    Card:new(FleetCommand,Covenant,{name="Will of the Prophets",  front = CUSTOM_ASSETS.."cards/#halo/fc_wotp.png", cost=8, aliases={"Will of the Prophets [Legends]"}})
+    Card:new(FleetCommand,Covenant,{name="Jiralhanae Brutality",  front = CUSTOM_ASSETS.."cards/~halo/fc_jirabrutal.png", cost=7, aliases={"Jiralhanae Brutality [Legends]"}})
+    Card:new(FleetCommand,Covenant,{name="Sangehili Honor",  front = CUSTOM_ASSETS.."cards/~halo/fc_sanghonor.png", cost=6, aliases={"Sangehili Honor [Legends]"}})
+    Card:new(FleetCommand,Covenant,{name="Will of the Prophets",  front = CUSTOM_ASSETS.."cards/~halo/fc_wotp.png", cost=8, aliases={"Will of the Prophets [Legends]"}})
 
-    Card:new(IonCannons,Covenant,{name="Overcharged Plasma Cells",  front = CUSTOM_ASSETS.."cards/#halo/ic_overplascells.png", cost=9, aliases={"Overcharged Plasma Cells [Legends]"}})
+    Card:new(IonCannons,Covenant,{name="Overcharged Plasma Cells",  front = CUSTOM_ASSETS.."cards/~halo/ic_overplascells.png", cost=9, aliases={"Overcharged Plasma Cells [Legends]"}})
 
-    Card:new(OffensiveRetrofit,UNSC,{name="Quick-Charge Capacitors",  front = CUSTOM_ASSETS.."cards/#halo/or_qccaps.png", cost=6, aliases={"Quick-Charge Capacitors [Legends]"}})
-    Card:new(OffensiveRetrofit,UNSC,{name="Sustain Motor Missiles",  front = CUSTOM_ASSETS.."cards/#halo/or_sustainmissiles.png", cost=6, aliases={"Sustain Motor Missiles [Legends]"}})
-    Card:new(OffensiveRetrofit,Covenant,{name="Plasma Lance",  front = CUSTOM_ASSETS.."cards/#halo/or_plasmalance.png", cost=10, aliases={"Plasma Lance [Legends]"}})
+    Card:new(OffensiveRetrofit,UNSC,{name="Quick-Charge Capacitors",  front = CUSTOM_ASSETS.."cards/~halo/or_qccaps.png", cost=6, aliases={"Quick-Charge Capacitors [Legends]"}})
+    Card:new(OffensiveRetrofit,UNSC,{name="Sustain Motor Missiles",  front = CUSTOM_ASSETS.."cards/~halo/or_sustainmissiles.png", cost=6, aliases={"Sustain Motor Missiles [Legends]"}})
+    Card:new(OffensiveRetrofit,Covenant,{name="Plasma Lance",  front = CUSTOM_ASSETS.."cards/~halo/or_plasmalance.png", cost=10, aliases={"Plasma Lance [Legends]"}})
 
-    Card:new(Officer,Halo,{name="Combat Coordinator", front = CUSTOM_ASSETS.."cards/#halo/off_combatcoord.png", cost=5, aliases={"Combat Coordinator [Legends]"}})
-    Card:new(Officer,Halo,{name="Logistics Coordinator", front = CUSTOM_ASSETS.."cards/#halo/off_logicoord.png", cost=5, aliases={"Logistics Coordinator [Legends]"}})
-    Card:new(Officer,UNSC,{name="Cortana (Officer)", front = CUSTOM_ASSETS.."cards/#halo/off_cortana.png", cost=8, aliases={"Cortana (Officer) [Legends]"}})
-    Card:new(Officer,UNSC,{name="Avery Johnson (Officer)", front = CUSTOM_ASSETS.."cards/#halo/off_johnson.png", cost=5, aliases={"Avery Johnson (Officer) [Legends]"}})
-    Card:new(Officer,UNSC,{name="Kristof Jen", front = CUSTOM_ASSETS.."cards/#halo/off_kristofjen.png", cost=5, aliases={"Kristof Jen [Legends]"}})
-    Card:new(Officer,UNSC,{name="Master Chief (Officer)", front = CUSTOM_ASSETS.."cards/#halo/off_masterchief.png", cost=3, aliases={"Master Chief (Officer) [Legends]"}})
-    Card:new(Officer,UNSC,{name="Antonio Silva", front = CUSTOM_ASSETS.."cards/#halo/off_silva.png", cost=6, aliases={"Antonio Silva [Legends]"}})
-    Card:new(Officer,UNSC,{name="Smart AI", front = CUSTOM_ASSETS.."cards/#halo/off_smartai.png", cost=5 aliases={"Smart AI [Legends]"}})
-    Card:new(Officer,Covenant,{name="Lat Ravamee", front = CUSTOM_ASSETS.."cards/#halo/off_latravamee.png", cost=9, aliases={"Lat Ravamee [Legends]"}})
-    Card:new(Officer,Covenant,{name="Maccabeus", front = CUSTOM_ASSETS.."cards/#halo/off_maccabeus.png", cost=9, aliases={"Maccabeus [Legends]"}})
-    Card:new(Officer,Covenant,{name="Prophet of Stewardship", front = CUSTOM_ASSETS.."cards/#halo/off_prophetsteward.png", cost=2, aliases={"Prophet of Stewardship [Legends]"}})
-    Card:new(Officer,Covenant,{name="Rtas Vadumee", front = CUSTOM_ASSETS.."cards/#halo/off_rtasvadumee.png", cost=4, aliases={"Rtas Vadumee [Legends]"}})
+    Card:new(Officer,Halo,{name="Combat Coordinator", front = CUSTOM_ASSETS.."cards/~halo/off_combatcoord.png", cost=5, aliases={"Combat Coordinator [Legends]"}})
+    Card:new(Officer,Halo,{name="Logistics Coordinator", front = CUSTOM_ASSETS.."cards/~halo/off_logicoord.png", cost=5, aliases={"Logistics Coordinator [Legends]"}})
+    Card:new(Officer,UNSC,{name="Cortana (Officer)", front = CUSTOM_ASSETS.."cards/~halo/off_cortana.png", cost=8, aliases={"Cortana (Officer) [Legends]"}})
+    Card:new(Officer,UNSC,{name="Avery Johnson (Officer)", front = CUSTOM_ASSETS.."cards/~halo/off_johnson.png", cost=5, aliases={"Avery Johnson (Officer) [Legends]"}})
+    Card:new(Officer,UNSC,{name="Kristof Jen", front = CUSTOM_ASSETS.."cards/~halo/off_kristofjen.png", cost=5, aliases={"Kristof Jen [Legends]"}})
+    Card:new(Officer,UNSC,{name="Master Chief (Officer)", front = CUSTOM_ASSETS.."cards/~halo/off_masterchief.png", cost=3, aliases={"Master Chief (Officer) [Legends]"}})
+    Card:new(Officer,UNSC,{name="Antonio Silva", front = CUSTOM_ASSETS.."cards/~halo/off_silva.png", cost=6, aliases={"Antonio Silva [Legends]"}})
+    Card:new(Officer,UNSC,{name="Smart AI", front = CUSTOM_ASSETS.."cards/~halo/off_smartai.png", cost=5, aliases={"Smart AI [Legends]"}})
+    Card:new(Officer,Covenant,{name="Lat Ravamee", front = CUSTOM_ASSETS.."cards/~halo/off_latravamee.png", cost=9, aliases={"Lat Ravamee [Legends]"}})
+    Card:new(Officer,Covenant,{name="Maccabeus", front = CUSTOM_ASSETS.."cards/~halo/off_maccabeus.png", cost=9, aliases={"Maccabeus [Legends]"}})
+    Card:new(Officer,Covenant,{name="Prophet of Stewardship", front = CUSTOM_ASSETS.."cards/~halo/off_prophetsteward.png", cost=2, aliases={"Prophet of Stewardship [Legends]"}})
+    Card:new(Officer,Covenant,{name="Rtas Vadumee", front = CUSTOM_ASSETS.."cards/~halo/off_rtasvadumee.png", cost=4, aliases={"Rtas Vadumee [Legends]"}})
 
-    Card:new(SupportTeam,Covenant,{name="Huragok Engineer Team",  front = CUSTOM_ASSETS.."cards/#halo/st_huragokeng.png", cost=3, aliases={"Huragok Engineer Team [Legends]"}})
+    Card:new(SupportTeam,Covenant,{name="Huragok Engineer Team",  front = CUSTOM_ASSETS.."cards/~halo/st_huragokeng.png", cost=3, aliases={"Huragok Engineer Team [Legends]"}})
 
     Card:new(Title,UNSC,{name="UNSC Pillar of Autumn", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_poa.png", cost=7, aliases={"UNSC Pillar of Autumn [Legends]"}})
     Card:new(Title,UNSC,{name="UNSC Constantinople", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_const.png", cost=3, aliases={"UNSC Constantinople [Legends]"}})
@@ -639,26 +639,26 @@ function onload()
     Card:new(Title,Covenant,{name="Ardent Prayer", front = CUSTOM_ASSETS.."ships/covenant/sdv/title_sdv_ardentprayer.png", cost=4, aliases={"Ardent Prayer [Legends]"}})
     Card:new(Title,Covenant,{name="Elegy's Lament", front = CUSTOM_ASSETS.."ships/covenant/sdv/title_sdv_elegylament.png", cost=3, aliases={"Elegy's Lament [Legends]"}})
 
-    Card:new(WeaponsTeam,UNSC,{name="Cortana (WT)", front = CUSTOM_ASSETS.."cards/#halo/wt_cortana.png", cost=7, aliases={"Cortana (WT) [Legends]"}})
-    Card:new(WeaponsTeam,UNSC,{name="UNSC Gunners", front = CUSTOM_ASSETS.."cards/#halo/wt_unscgunners.png", cost=6, aliases={"UNSC Gunners [Legends]"}})
+    Card:new(WeaponsTeam,UNSC,{name="Cortana (WT)", front = CUSTOM_ASSETS.."cards/~halo/wt_cortana.png", cost=7, aliases={"Cortana (WT) [Legends]"}})
+    Card:new(WeaponsTeam,UNSC,{name="UNSC Gunners", front = CUSTOM_ASSETS.."cards/~halo/wt_unscgunners.png", cost=6, aliases={"UNSC Gunners [Legends]"}})
 
     --bsg
 
     --starwars
     Empire = {
-        factions={"Empire"}
+        factions={"!Empire"}
     }
     Rebel = {
-        factions={"Rebellion"}
+        factions={"!Rebellion"}
     }
     Republic = {
-        factions={"Republic"}
+        factions={"!Republic"}
     }
     Separatist = {
-        factions={"Separatist"}
+        factions={"!Separatist"}
     }
     CloneWars = {
-        factions={"Republic","Separatist"}
+        factions={"!Republic","!Separatist"}
     }
 
     Card:new(Title,Rebel,{name="Phoenix Home", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"Phoenix Home [Legends]"}})
