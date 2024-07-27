@@ -52,23 +52,22 @@ function onload()
 
     Ship:new(MediumShip,SEPARATIST_SHIP, {
         name = "Sabaoth-class Destroyer",
-        front = CUSTOM_ASSETS.."ships/separatist/sabaoth/sabaoth_destroyer.png",
+        front = CUSTOM_ASSETS.."ships/separatist/sabaoth/sabaoth_dest_card.png",
         mesh = CUSTOM_ASSETS.."ships/separatist/sabaoth/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/sabaoth/diffuse_sabaoth.png",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/sabaoth/diffuse_dest_sabaoth.png",
         ruler = CUSTOM_ASSETS.."ships/separatist/sabaoth/ruler.obj", 
         maneuver = {{"I"},{"I","II"},{"-","I","I"}},
         defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
         shields = {4,3,3,2}, -- Front, left, right, rear
-        cost = 75,
+        cost = 73,
         command = 2,
         aliases = {"Sabaoth-class Destroyer [Legends]"}
     })
-
     Ship:new(MediumShip,SEPARATIST_SHIP, {
         name = "Sabaoth-class Light Carrier",
-        front = CUSTOM_ASSETS.."ships/separatist/sabaoth/sabaoth_carrier.png",
+        front = CUSTOM_ASSETS.."ships/separatist/sabaoth/sabaoth_carrier_card.png",
         mesh = CUSTOM_ASSETS.."ships/separatist/sabaoth/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/sabaoth/diffuse_sabaoth.png",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/sabaoth/diffuse_carrier_sabaoth.png",
         ruler = CUSTOM_ASSETS.."ships/separatist/sabaoth/ruler.obj", 
         maneuver = {{"I"},{"I","II"},{"-","I","I"}},
         defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
@@ -94,6 +93,29 @@ function onload()
         faction = "Empire"
     }
 
+    --cx dagger
+    cx_dagger = {
+        mesh = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/diffuse_cx.png",
+        health = 5,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(cx_dagger, EMPIRE_SQUAD, {
+        name = "CX Dagger Vessel",
+        front = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/cx_card.png",
+        cost = 18,
+        aliases = {"CX Dagger Vessel [Legends]"}
+    })
+    Squadron:new(cx_dagger, EMPIRE_SQUAD, {
+        name = "CX-2",
+        front = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/cx2_card.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/diffuse_ace_cx.png", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 25,
+        aliases = {"CX-2 [Legends]"}
+    })
+
 -- rebel faction
     REBEL_SHIP = {
         back = CUSTOM_ASSETS.."ships/rebel/card_back.png",
@@ -102,10 +124,10 @@ function onload()
 
     Ship:new(MediumShip,REBEL_SHIP,{
         name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
-        front =     CUSTOM_ASSETS.."ships/empire/quasar/Rebel_QuasarII.png",
-        mesh =      ASSETS_ROOT.."ships/empire/quasar/mesh.obj",
-        diffuse =   CUSTOM_ASSETS.."ships/empire/quasar/rebel_II_diffuse.png",
-        ruler =     ASSETS_ROOT.."ships/empire/quasar/ruler.obj",
+        front =     CUSTOM_ASSETS.."ships/rebel/reb_quasar/Rebel_QuasarII.png",
+        mesh =      ASSETS_ROOT.."ships/rebel/reb_quasar/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."ships/rebel/reb_quasar/rebel_II_diffuse.png",
+        ruler =     ASSETS_ROOT.."ships/rebel/reb_quasar/ruler.obj",
         maneuver = {{"II"},{"I","I"},{"-","I","I"}},
         defense_tokens = {DEF_BRACE,DEF_REDIRECT},
         shields = {2,2,2,1},
@@ -261,6 +283,33 @@ function onload()
         back = CUSTOM_ASSETS.."ships/unsc/card_back.png",
         faction = "UNSC"
     }
+        --halcyon
+    Ship:new(MediumShip,UNSC_SHIP, {
+        name = "Halcyon-class Light Cruiser",
+        front = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_light_card.png",
+        mesh = CUSTOM_ASSETS.."ships/unsc/halcyon/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/halcyon/diffuse_light_halcyon.png",
+        ruler = CUSTOM_ASSETS.."ships/unsc/halcyon/ruler.obj", 
+        maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
+        shields = {2,2,2,1}, -- Front, left, right, rear
+        cost = 78,
+        command = 2,
+        aliases = {"Halcyon-class Light Cruiser [Legends]"}  
+    })
+    Ship:new(MediumShip,UNSC_SHIP, {
+        name = "Halcyon-class Battle Refit",
+        front = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_refit_card.png",
+        mesh = CUSTOM_ASSETS.."ships/unsc/halcyon/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/unsc/halcyon/diffuse_refit_halcyon.png",
+        ruler = CUSTOM_ASSETS.."ships/unsc/halcyon/ruler.obj", 
+        maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
+        shields = {2,2,2,1}, -- Front, left, right, rear
+        cost = 82,
+        command = 2,
+        aliases = {"Halcyon-class Battle Refit [Legends]"} 
+    })
     
         -- paris heavy frigate
     Ship:new(SmallShip,UNSC_SHIP, {
@@ -270,13 +319,12 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/unsc/paris/diffuse_heavy_paris.png",
         ruler = CUSTOM_ASSETS.."ships/unsc/paris/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
+        defense_tokens = {DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 60,
+        cost = 55,
         command = 1,
         aliases = {"Paris-class Heavy Frigate [Legends]"}
-    })
-    
+    })   
     Ship:new(SmallShip,UNSC_SHIP, {
         name = "Paris-class Missile Frigate",
         front = CUSTOM_ASSETS.."ships/unsc/paris/paris_missile_card.png",
@@ -284,9 +332,9 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/unsc/paris/diffuse_missile_paris.png",
         ruler = CUSTOM_ASSETS.."ships/unsc/paris/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
+        defense_tokens = {DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
         shields = {2,1,1,1}, -- Front, left, right, rear
-        cost = 65,
+        cost = 60,
         command = 1,
         aliases = {"Paris-class Missile Frigate [Legends]"}
     })
@@ -299,13 +347,12 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/unsc/stalwart/diffuse_light_stalwart.png",
         ruler = CUSTOM_ASSETS.."ships/unsc/stalwart/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
+        defense_tokens = {DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
         shields = {2,1,1,1}, -- Front, left, right, rear
         cost = 45,
         command = 1,
         aliases = {"Stalwart-class Light Frigate [Legends]"}
     })
-
     Ship:new(SmallShip,UNSC_SHIP, {
         name = "Stalwart-class Escort Frigate",
         front = CUSTOM_ASSETS.."ships/unsc/stalwart/stalwart_escort_card.png",
@@ -313,41 +360,13 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/unsc/stalwart/diffuse_escort_stalwart.png",
         ruler = CUSTOM_ASSETS.."ships/unsc/stalwart/ruler.obj", 
         maneuver = {{"II"},{"I","I"},{"-","II","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
+        defense_tokens = {DEF_CONTAIN,DEF_EVADE,DEF_BRACE},
         shields = {2,1,1,1}, -- Front, left, right, rear
         cost = 50,
         command = 1,
         aliases = {"Stalwart-class Escort Frigate [Legends]"}
     })   
 
-        --halcyon
-    Ship:new(MediumShip,UNSC_SHIP, {
-        name = "Halcyon-class Light Cruiser",
-        front = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_light_card.png",
-        mesh = CUSTOM_ASSETS.."ships/unsc/halcyon/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_light_diffuse.png",
-        ruler = CUSTOM_ASSETS.."ships/unsc/halcyon/ruler.obj", 
-        maneuver = {{"I"},{"-","I"},{"-","I","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
-        shields = {2,2,2,1}, -- Front, left, right, rear
-        cost = 78,
-        command = 2,
-        aliases = {"Halcyon-class Light Cruiser [Legends]"}  
-    })
-        
-    Ship:new(MediumShip,UNSC_SHIP, {
-        name = "Halcyon-class Battle Refit",
-        front = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_refit_card.png",
-        mesh = CUSTOM_ASSETS.."ships/unsc/halcyon/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/unsc/halcyon/halcyon_refit_diffuse.png",
-        ruler = CUSTOM_ASSETS.."ships/unsc/halcyon/ruler.obj", 
-        maneuver = {{"I"},{"-","I"},{"-","I","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_CONTAIN,DEF_BRACE,DEF_BRACE},
-        shields = {2,2,2,1}, -- Front, left, right, rear
-        cost = 82,
-        command = 2,
-        aliases = {"Halcyon-class Battle Refit [Legends]"} 
-    })
     
     UNSC_SQUAD = {
         back = CUSTOM_ASSETS.."ships/unsc/card_back.png",
@@ -356,31 +375,47 @@ function onload()
         --longsword fighter
     ls_fighter = {
         mesh = CUSTOM_ASSETS.."squadrons/unsc/longsword/fighter_mesh.obj",
-        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_fighter_diffuse.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/diffuse_ls_fighter.png",
         health = 6,
         move = 3,
         defense_tokens = {}
     }
     Squadron:new(ls_fighter, UNSC_SQUAD, {
         name = "Longsword Fighter Squadron",
-        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_fght_card.png",
+        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_fighter_card.png",
         cost = 17,
         aliases = {"Longsword Fighter Squadron [Legends]"}
+    })
+    Squadron:new(ls_fighter, UNSC_SQUAD, {
+        name = "Knife 26",
+        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_fighter_knife26.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/diffuse_ls_ace_fighter.png", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 18,
+        aliases = {"Knife 26 [Legends]"}
     })
 
         --longsword bomber
     ls_bomber = {
         mesh = CUSTOM_ASSETS.."squadrons/unsc/longsword/bomber_mesh.obj",
-        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_bomber_diffuse.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/diffuse_ls_bomber.png",
         health = 7,
         move = 2,
         defense_tokens = {}
     }
     Squadron:new(ls_bomber, UNSC_SQUAD, {
         name = "Longsword Bomber Squadron",
-        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/longsword_bomb_card.png",
+        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_bomber_card.png",
         cost = 19,
         aliases = {"Longsword Bomber Squadron [Legends]"}
+    })
+    Squadron:new(ls_fighter, UNSC_SQUAD, {
+        name = "Master Chief",
+        front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_bomber_chief.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/diffuse_ls_ace_bomber.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 19,
+        aliases = {"Master Chief (LS) [Legends]"}
     })
 
 
@@ -393,14 +428,27 @@ function onload()
             name = "CCS-class Battle Cruiser",
             front = CUSTOM_ASSETS.."ships/covenant/ccs/ccs_battle_card.png",
             mesh = CUSTOM_ASSETS.."ships/covenant/ccs/mesh.obj",
-            diffuse = CUSTOM_ASSETS.."ships/covenant/ccs/diffuse_ccs.png",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/ccs/diffuse_battle_ccs.png",
             ruler = CUSTOM_ASSETS.."ships/covenant/ccs/ruler.obj", 
-            maneuver = {{"I"},{"-","I"},{"-","I","I"}},
+            maneuver = {{"I"},{"I","I"},{"I","-","I"}},
             defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
-            shields = {2,2,2,1}, -- Front, left, right, rear
-            cost = 85,
+            shields = {3,4,4,3}, -- Front, left, right, rear
+            cost = 115,
             command = 3,
             aliases = {"CCS-class Battle Cruiser [Legends]"} 
+        })
+        Ship:new(LargeShip,COV_SHIP, {
+            name = "CCS-class Command Cruiser",
+            front = CUSTOM_ASSETS.."ships/covenant/ccs/ccs_command_card.png",
+            mesh = CUSTOM_ASSETS.."ships/covenant/ccs/mesh.obj",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/ccs/diffuse_command_ccs.png",
+            ruler = CUSTOM_ASSETS.."ships/covenant/ccs/ruler.obj", 
+            maneuver = {{"I"},{"I","I"},{"I","-","I"}},
+            defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
+            shields = {3,4,4,3}, -- Front, left, right, rear
+            cost = 105,
+            command = 3,
+            aliases = {"CCS-class Command Cruiser [Legends]"} 
         })
 
         --sdv
@@ -408,19 +456,32 @@ function onload()
             name = "SDV-class Heavy Corvette",
             front = CUSTOM_ASSETS.."ships/covenant/sdv/sdv_heavy_card.png",
             mesh = CUSTOM_ASSETS.."ships/covenant/sdv/mesh.obj",
-            diffuse = CUSTOM_ASSETS.."ships/covenant/sdv/diffuse_sdv.png",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/sdv/diffuse_heavy_sdv.png",
             ruler = CUSTOM_ASSETS.."ships/covenant/sdv/ruler.obj", 
-            maneuver = {{"I"},{"-","I"},{"-","I","I"}},
-            defense_tokens = {DEF_REDIRECT,DEF_SALVO,DEF_BRACE,DEF_REDIRECT},
-            shields = {2,2,2,1}, -- Front, left, right, rear
-            cost = 85,
+            maneuver = {{"II"},{"I","I"},{"I","I","-"}},
+            defense_tokens = {DEF_REDIRECT,DEF_EVADE,DEF_BRACE},
+            shields = {3,3,3,2}, -- Front, left, right, rear
+            cost = 80,
             command = 2,
             aliases = {"SDV-class Heavy Corvette [Legends]"} 
+        })
+        Ship:new(MediumShip,COV_SHIP, {
+            name = "SDV-class Assault Corvette",
+            front = CUSTOM_ASSETS.."ships/covenant/sdv/sdv_assault_card.png",
+            mesh = CUSTOM_ASSETS.."ships/covenant/sdv/mesh.obj",
+            diffuse = CUSTOM_ASSETS.."ships/covenant/sdv/diffuse_assault_sdv.png",
+            ruler = CUSTOM_ASSETS.."ships/covenant/sdv/ruler.obj", 
+            maneuver = {{"II"},{"I","I"},{"I","I","-"}},
+            defense_tokens = {DEF_REDIRECT,DEF_EVADE,DEF_BRACE},
+            shields = {3,3,3,2}, -- Front, left, right, rear
+            cost = 75,
+            command = 2,
+            aliases = {"SDV-class Assault Corvette [Legends]"} 
         })
 
         --cas
         Ship:new(MassiveShip,COV_SHIP, {
-            name = "CAS-class Assault Carrier",
+            name = "(WIP)CAS-class Assault Carrier",
             front = CUSTOM_ASSETS.."ships/covenant/cas/cas_assault_card.png",
             mesh = CUSTOM_ASSETS.."ships/covenant/cas/mesh.obj",
             diffuse = CUSTOM_ASSETS.."ships/covenant/cas/diffuse_cas.png",
@@ -435,7 +496,7 @@ function onload()
 
         --crs
         Ship:new(SmallShip,COV_SHIP, {
-            name = "CRS-class Light Cruiser",
+            name = "(WIP)CRS-class Light Cruiser",
             front = CUSTOM_ASSETS.."ships/covenant/crs/crs_light_card.png",
             mesh = CUSTOM_ASSETS.."ships/covenant/crs/mesh.obj",
             diffuse = CUSTOM_ASSETS.."ships/covenant/crs/diffuse_crs.png",
@@ -466,6 +527,21 @@ function onload()
         cost = 8,
         aliases = {"Banshee Squadron [Legends]"}
     })
+    Squadron:new(banshee, COV_SQUAD, {
+        name = "Dalamenee",
+        front = CUSTOM_ASSETS.."squadrons/covenant/banshee/banshee_dalamenee.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/covenant/banshee/diffuse_ace_banshee.png", 
+        defense_tokens = {DEF_SCATTER,DEF_EVADE},
+        cost = 14,
+        aliases = {"Dalamenee [Legends]"}
+    })
+    Squadron:new(banshee, COV_SQUAD, {
+        name = "Wraith Wing",
+        front = CUSTOM_ASSETS.."squadrons/covenant/banshee/banshee_wraith.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/covenant/banshee/diffuse_sqd_banshee.png", 
+        cost = 10,
+        aliases = {"Wraith Wing [Legends]"}
+    })
 
         --seraph
     seraph = {
@@ -481,17 +557,26 @@ function onload()
         cost = 15,
         aliases = {"Seraph Squadron [Legends]"}
     })
+    Squadron:new(seraph, COV_SQUAD, {
+        name = "Ferko",
+        front = CUSTOM_ASSETS.."squadrons/covenant/seraph/seraph_ferko.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/covenant/seraph/diffuse_ace_seraph.png", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 20,
+        aliases = {"Ferko [Legends]"}
 
 
     ------upgrades
-    Commander = {
-        type="Commander",
-        back = CUSTOM_ASSETS.."/cards/commanders/back.png"
-    }
-    Title = {
-        type="Title",
-        back = CUSTOM_ASSETS.."/cards/titles/back.png"
-    }
+    Commander = {type="Commander", back = CUSTOM_ASSETS.."/cards/commander/back.png"}
+    DefensiveRetrofit = {type="DefensiveRetrofit", back = CUSTOM_ASSETS.."/cards/defretro/back.png"}
+    FleetCommand = {type="FleetCommand", back = CUSTOM_ASSETS.."/cards/fleetcom/back.png"}
+    IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."/cards/iono/back.png"}
+    OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."/cards/offretro/back.png"}
+    Officer = {type="Officer", back = CUSTOM_ASSETS.."/cards/officer/back.png"}
+    SupportTeam = {type="SupportTeam", back = CUSTOM_ASSETS.."/cards/support/back.png"}
+    Title = {type="Title", back = CUSTOM_ASSETS.."/cards/title/back.png"}
+    WeaponsTeam = {type="WeaponsTeam", back = CUSTOM_ASSETS.."/cards/wepteam/back.png"}
+    -- = {type=""}
     
     --halo    
     UNSC = {
@@ -504,20 +589,84 @@ function onload()
         factions={"UNSC","Covenant"}
     }    
 
-    Card:new(Commander,UNSC,{name="Captain Keyes",  front = CUSTOM_ASSETS.."cards/commanders/capt_keyes_card.png", cost=30, aliases={"Captain Keyes [Legends]"}})
-    Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/commanders/capt_wallace_card.png", cost=20, aliases={"Captain Wallace [Legends]"}})
-    Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/commanders/cmdr_keyes_card.png", cost=25, aliases={"Commander Keyes [Legends]"}})
-    Card:new(Title,UNSC,{name="UNSC Pillar of Autumn", front = CUSTOM_ASSETS.."cards/titles/titles_halcyon_poa.png", cost=10, aliases={"UNSC Pillar of Autumn [Legends]"}})   
-    Card:new(Title,UNSC,{name="UNSC Constantinople", front = CUSTOM_ASSETS.."cards/titles/titles_halcyon_const.png", cost=5, aliases={"UNSC Constantinople [Legends]"}})   
-    Card:new(Title,UNSC,{name="UNSC Roman Blue", front = CUSTOM_ASSETS.."cards/titles/titles_halcyon_roman.png", cost=2, aliases={"UNSC Roman Blue [Legends]"}})   
-    Card:new(Title,UNSC,{name="UNSC Savannah", front = CUSTOM_ASSETS.."cards/titles/title_paris_savannah.png", cost=7, aliases={"UNSC Savannah [Legends]"}})   
-    Card:new(Title,UNSC,{name="UNSC Commonwealth", front = CUSTOM_ASSETS.."cards/titles/title_paris_commonwealth.png", cost=5, aliases={"UNSC Commonwealth [Legends]"}})   
-    Card:new(Title,UNSC,{name="UNSC In Amber Clad", front = CUSTOM_ASSETS.."cards/titles/titles_stalwart_iac.png", cost=7, aliases={"UNSC In Amber Clad [Legends]"}})   
-    Card:new(Title,UNSC,{name="UNSC Meriweather Lewis", front = CUSTOM_ASSETS.."cards/titles/titles_stalwart_merilew.png", cost=2, aliases={"UNSC Meriweather Lewis [Legends]"}})   
+    Card:new(Commander,UNSC,{name="Captain Keyes",  front = CUSTOM_ASSETS.."cards/#halo/com_capt_keyes.png", cost=30, aliases={"Captain Keyes [Legends]"}})
+    Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/#halo/com_capt_wallace.png", cost=20, aliases={"Captain Wallace [Legends]"}})
+    Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/#halo/com_cmdr_keyes.png", cost=25, aliases={"Commander Keyes [Legends]"}})
+    Card:new(Commander,UNSC,{name="Lord Hood",  front = CUSTOM_ASSETS.."cards/#halo/com_lordhood.png", cost=30, aliases={"Lord Hood [Legends]"}})
+    Card:new(Commander,Covenant,{name="Ardo Moretumee",  front = CUSTOM_ASSETS.."cards/#halo/com_ardomoretumee.png", cost=20, aliases={"Ardo Moretumee [Legends]"}})
+    Card:new(Commander,Covenant,{name="Atriox",  front = CUSTOM_ASSETS.."cards/#halo/com_atriox.png", cost=35, aliases={"Atriox [Legends]"}})
+    Card:new(Commander,Covenant,{name="Prophet of Truth",  front = CUSTOM_ASSETS.."cards/#halo/com_prophettruth.png", cost=30, aliases={"Prophet of Truth [Legends]"}})
+    Card:new(Commander,Covenant,{name="Thel Vadamee",  front = CUSTOM_ASSETS.."cards/#halo/com_thelvadamee.png", cost=25, aliases={"Thel Vadamee [Legends]"}})
+
+    Card:new(DefensiveRetrofit,UNSC,{name="Emergency Thrusters",  front = CUSTOM_ASSETS.."cards/#halo/dr_emergthrusters.png", cost=6, aliases={"Emergency Thrusters [Legends]"}})
+    Card:new(DefensiveRetrofit,UNSC,{name="Titanium Armor Plating",  front = CUSTOM_ASSETS.."cards/#halo/dr_titarmor.png", cost=4, aliases={"Titanium Armor Plating [Legends]"}})
+    Card:new(DefensiveRetrofit,Covenant,{name="Reliable Shields",  front = CUSTOM_ASSETS.."cards/#halo/dr_reliableshields.png", cost=9, aliases={"Reliable Shields [Legends]"}})
+
+    Card:new(FleetCommand,Covenant,{name="Jiralhanae Brutality",  front = CUSTOM_ASSETS.."cards/#halo/fc_jirabrutal.png", cost=7, aliases={"Jiralhanae Brutality [Legends]"}})
+    Card:new(FleetCommand,Covenant,{name="Sangehili Honor",  front = CUSTOM_ASSETS.."cards/#halo/fc_sanghonor.png", cost=6, aliases={"Sangehili Honor [Legends]"}})
+    Card:new(FleetCommand,Covenant,{name="Will of the Prophets",  front = CUSTOM_ASSETS.."cards/#halo/fc_wotp.png", cost=8, aliases={"Will of the Prophets [Legends]"}})
+
+    Card:new(IonCannons,Covenant,{name="Overcharged Plasma Cells",  front = CUSTOM_ASSETS.."cards/#halo/ic_overplascells.png", cost=9, aliases={"Overcharged Plasma Cells [Legends]"}})
+
+    Card:new(OffensiveRetrofit,UNSC,{name="Quick-Charge Capacitors",  front = CUSTOM_ASSETS.."cards/#halo/or_qccaps.png", cost=6, aliases={"Quick-Charge Capacitors [Legends]"}})
+    Card:new(OffensiveRetrofit,UNSC,{name="Sustain Motor Missiles",  front = CUSTOM_ASSETS.."cards/#halo/or_sustainmissiles.png", cost=6, aliases={"Sustain Motor Missiles [Legends]"}})
+    Card:new(OffensiveRetrofit,Covenant,{name="Plasma Lance",  front = CUSTOM_ASSETS.."cards/#halo/or_plasmalance.png", cost=10, aliases={"Plasma Lance [Legends]"}})
+
+    Card:new(Officer,Halo,{name="Combat Coordinator", front = CUSTOM_ASSETS.."cards/#halo/off_combatcoord.png", cost=5, aliases={"Combat Coordinator [Legends]"}})
+    Card:new(Officer,Halo,{name="Logistics Coordinator", front = CUSTOM_ASSETS.."cards/#halo/off_logicoord.png", cost=5, aliases={"Logistics Coordinator [Legends]"}})
+    Card:new(Officer,UNSC,{name="Cortana (Officer)", front = CUSTOM_ASSETS.."cards/#halo/off_cortana.png", cost=8, aliases={"Cortana (Officer) [Legends]"}})
+    Card:new(Officer,UNSC,{name="Avery Johnson (Officer)", front = CUSTOM_ASSETS.."cards/#halo/off_johnson.png", cost=5, aliases={"Avery Johnson (Officer) [Legends]"}})
+    Card:new(Officer,UNSC,{name="Kristof Jen", front = CUSTOM_ASSETS.."cards/#halo/off_kristofjen.png", cost=5, aliases={"Kristof Jen [Legends]"}})
+    Card:new(Officer,UNSC,{name="Master Chief (Officer)", front = CUSTOM_ASSETS.."cards/#halo/off_masterchief.png", cost=3, aliases={"Master Chief (Officer) [Legends]"}})
+    Card:new(Officer,UNSC,{name="Antonio Silva", front = CUSTOM_ASSETS.."cards/#halo/off_silva.png", cost=6, aliases={"Antonio Silva [Legends]"}})
+    Card:new(Officer,UNSC,{name="Smart AI", front = CUSTOM_ASSETS.."cards/#halo/off_smartai.png", cost=5 aliases={"Smart AI [Legends]"}})
+    Card:new(Officer,Covenant,{name="Lat Ravamee", front = CUSTOM_ASSETS.."cards/#halo/off_latravamee.png", cost=9, aliases={"Lat Ravamee [Legends]"}})
+    Card:new(Officer,Covenant,{name="Maccabeus", front = CUSTOM_ASSETS.."cards/#halo/off_maccabeus.png", cost=9, aliases={"Maccabeus [Legends]"}})
+    Card:new(Officer,Covenant,{name="Prophet of Stewardship", front = CUSTOM_ASSETS.."cards/#halo/off_prophetsteward.png", cost=2, aliases={"Prophet of Stewardship [Legends]"}})
+    Card:new(Officer,Covenant,{name="Rtas Vadumee", front = CUSTOM_ASSETS.."cards/#halo/off_rtasvadumee.png", cost=4, aliases={"Rtas Vadumee [Legends]"}})
+
+    Card:new(SupportTeam,Covenant,{name="Huragok Engineer Team",  front = CUSTOM_ASSETS.."cards/#halo/st_huragokeng.png", cost=3, aliases={"Huragok Engineer Team [Legends]"}})
+
+    Card:new(Title,UNSC,{name="UNSC Pillar of Autumn", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_poa.png", cost=7, aliases={"UNSC Pillar of Autumn [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Constantinople", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_const.png", cost=3, aliases={"UNSC Constantinople [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Roman Blue", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_roman.png", cost=2, aliases={"UNSC Roman Blue [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Savannah", front = CUSTOM_ASSETS.."ships/unsc/paris/title_paris_savannah.png", cost=6, aliases={"UNSC Savannah [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Commonwealth", front = CUSTOM_ASSETS.."ships/unsc/paris/title_paris_commonwealth.png", cost=5, aliases={"UNSC Commonwealth [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC In Amber Clad", front = CUSTOM_ASSETS.."ships/unsc/stalwart/title_stalwart_iac.png", cost=6, aliases={"UNSC In Amber Clad [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Meriweather Lewis", front = CUSTOM_ASSETS.."ships/unsc/stalwart/title_stalwart_merilew.png", cost=1, aliases={"UNSC Meriweather Lewis [Legends]"}})
+    Card:new(Title,Covenant,{name="Truth and Reconciliation", front = CUSTOM_ASSETS.."ships/covenant/ccs/title_ccs_truthandreco.png", cost=6, aliases={"Truth and Reconciliation [Legends]"}})
+    Card:new(Title,Covenant,{name="Purity of Spirit", front = CUSTOM_ASSETS.."ships/covenant/ccs/title_ccs_purityspirit.png", cost=5, aliases={"Purity of Spirit [Legends]"}})
+    Card:new(Title,Covenant,{name="Ardent Prayer", front = CUSTOM_ASSETS.."ships/covenant/sdv/title_sdv_ardentprayer.png", cost=4, aliases={"Ardent Prayer [Legends]"}})
+    Card:new(Title,Covenant,{name="Elegy's Lament", front = CUSTOM_ASSETS.."ships/covenant/sdv/title_sdv_elegylament.png", cost=3, aliases={"Elegy's Lament [Legends]"}})
+
+    Card:new(WeaponsTeam,UNSC,{name="Cortana (WT)", front = CUSTOM_ASSETS.."cards/#halo/wt_cortana.png", cost=7, aliases={"Cortana (WT) [Legends]"}})
+    Card:new(WeaponsTeam,UNSC,{name="UNSC Gunners", front = CUSTOM_ASSETS.."cards/#halo/wt_unscgunners.png", cost=6, aliases={"UNSC Gunners [Legends]"}})
 
     --bsg
 
     --starwars
+    Empire = {
+        factions={"Empire"}
+    }
+    Rebel = {
+        factions={"Rebellion"}
+    }
+    Republic = {
+        factions={"Republic"}
+    }
+    Separatist = {
+        factions={"Separatist"}
+    }
+    CloneWars = {
+        factions={"Republic","Separatist"}
+    }
+
+    Card:new(Title,Rebel,{name="Phoenix Home", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"Phoenix Home [Legends]"}})
+    Card:new(Title,Rebel,{name="Phoenix Nest", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_pn.png", cost=6, aliases={"Phoenix Nest [Legends]"}})
+    Card:new(Title,Republic,{name="Righteous Indignation", front = CUSTOM_ASSETS.."ships/republic/rothana/right_indig.png", cost=4, aliases={"Righteous Indignation [Legends]"}})
+    --Card:new(Title,Republic,{name="Deliverance", front = CUSTOM_ASSETS.."ships/republic/rothana/right_indig.png", cost=7, aliases={"Deliverance [Legends]"}})
+    Card:new(Title,Separatist,{name="Reaver", front = CUSTOM_ASSETS.."ships/separatist/sabaoth/title_sabaoth_reaver.png", cost=5, aliases={"Reaver [Legends]"}})
+    Card:new(Title,Separatist,{name="Parting Handshake", front = CUSTOM_ASSETS.."ships/separatist/sabaoth/title_sabaoth_parthand.png", cost=5, aliases={"Parting Handshake [Legends]"}})
 
 end
     
