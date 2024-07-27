@@ -567,16 +567,41 @@ function onload()
     })
 
     ------upgrades
-    Commander = {type="Commander", back = CUSTOM_ASSETS.."/cards/commander/back.png"}
-    DefensiveRetrofit = {type="DefensiveRetrofit", back = CUSTOM_ASSETS.."/cards/defretro/back.png"}
-    FleetCommand = {type="FleetCommand", back = CUSTOM_ASSETS.."/cards/fleetcom/back.png"}
-    IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."/cards/iono/back.png"}
-    OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."/cards/offretro/back.png"}
-    Officer = {type="Officer", back = CUSTOM_ASSETS.."/cards/officer/back.png"}
-    SupportTeam = {type="SupportTeam", back = CUSTOM_ASSETS.."/cards/support/back.png"}
-    Title = {type="Title", back = CUSTOM_ASSETS.."/cards/title/back.png"}
-    WeaponsTeam = {type="WeaponsTeam", back = CUSTOM_ASSETS.."/cards/wepteam/back.png"}
+    Commander = {type="Commander", back = CUSTOM_ASSETS.."cards/commander/back.png"}
+    DefensiveRetrofit = {type="DefensiveRetrofit", back = CUSTOM_ASSETS.."cards/defretro/back.png"}
+    FleetCommand = {type="FleetCommand", back = CUSTOM_ASSETS.."cards/fleetcom/back.png"}
+    IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."cards/ion/back.png"}
+    OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."cards/offretro/back.png"}
+    Officer = {type="Officer", back = CUSTOM_ASSETS.."cards/officer/back.png"}
+    SupportTeam = {type="SupportTeam", back = CUSTOM_ASSETS.."cards/support/back.png"}
+    Title = {type="Title", back = CUSTOM_ASSETS.."cards/title/back.png"}
+    WeaponsTeam = {type="WeaponsTeam", back = CUSTOM_ASSETS.."cards/wepteam/back.png"}
     -- = {type=""}
+    
+    --starwars
+    Empire = {
+        factions={"!Empire"}
+    }
+    Rebel = {
+        factions={"!Rebellion"}
+    }
+    Republic = {
+        factions={"!Republic"}
+    }
+    Separatist = {
+        factions={"!Separatist"}
+    }
+    CloneWars = {
+        factions={"!Republic","!Separatist"}
+    }
+    
+    Card:new(Title,Empire,{name="placeholderemp", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"placeholderemp [Legends]"}})
+    Card:new(Title,Rebel,{name="Phoenix Home", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"Phoenix Home [Legends]"}})
+    Card:new(Title,Rebel,{name="Phoenix Nest", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_pn.png", cost=6, aliases={"Phoenix Nest [Legends]"}})
+    Card:new(Title,Republic,{name="Righteous Indignation", front = CUSTOM_ASSETS.."ships/republic/rothana/right_indig.png", cost=4, aliases={"Righteous Indignation [Legends]"}})
+    --Card:new(Title,Republic,{name="Deliverance", front = CUSTOM_ASSETS.."ships/republic/rothana/right_indig.png", cost=7, aliases={"Deliverance [Legends]"}})
+    Card:new(Title,Separatist,{name="Reaver", front = CUSTOM_ASSETS.."ships/separatist/sabaoth/title_sabaoth_reaver.png", cost=5, aliases={"Reaver [Legends]"}})
+    Card:new(Title,Separatist,{name="Parting Handshake", front = CUSTOM_ASSETS.."ships/separatist/sabaoth/title_sabaoth_parthand.png", cost=5, aliases={"Parting Handshake [Legends]"}})
     
     --halo    
     UNSC = {
@@ -643,30 +668,19 @@ function onload()
     Card:new(WeaponsTeam,UNSC,{name="UNSC Gunners", front = CUSTOM_ASSETS.."cards/~halo/wt_unscgunners.png", cost=6, aliases={"UNSC Gunners [Legends]"}})
 
     --bsg
+    Colonial = {
+        factions={"Colonial"}
+    }
+    Cylon = {
+        factions={"Cylon"}
+    }
+    BSG = {
+        factions={"Colonial","Cylon"}
+    }   
 
-    --starwars
-    Empire = {
-        factions={"!Empire"}
-    }
-    Rebel = {
-        factions={"!Rebellion"}
-    }
-    Republic = {
-        factions={"!Republic"}
-    }
-    Separatist = {
-        factions={"!Separatist"}
-    }
-    CloneWars = {
-        factions={"!Republic","!Separatist"}
-    }
+    Card:new(Title,Colonial,{name="placeholdercol", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"placeholdercol [Legends]"}})
+    Card:new(Title,Cylon,{name="placeholdercyl", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"placeholdercyl [Legends]"}})
 
-    Card:new(Title,Rebel,{name="Phoenix Home", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"Phoenix Home [Legends]"}})
-    Card:new(Title,Rebel,{name="Phoenix Nest", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_pn.png", cost=6, aliases={"Phoenix Nest [Legends]"}})
-    Card:new(Title,Republic,{name="Righteous Indignation", front = CUSTOM_ASSETS.."ships/republic/rothana/right_indig.png", cost=4, aliases={"Righteous Indignation [Legends]"}})
-    --Card:new(Title,Republic,{name="Deliverance", front = CUSTOM_ASSETS.."ships/republic/rothana/right_indig.png", cost=7, aliases={"Deliverance [Legends]"}})
-    Card:new(Title,Separatist,{name="Reaver", front = CUSTOM_ASSETS.."ships/separatist/sabaoth/title_sabaoth_reaver.png", cost=5, aliases={"Reaver [Legends]"}})
-    Card:new(Title,Separatist,{name="Parting Handshake", front = CUSTOM_ASSETS.."ships/separatist/sabaoth/title_sabaoth_parthand.png", cost=5, aliases={"Parting Handshake [Legends]"}})
 
 end
     
