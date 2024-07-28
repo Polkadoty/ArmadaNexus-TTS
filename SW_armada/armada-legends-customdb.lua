@@ -104,7 +104,7 @@ function onload()
     Squadron:new(cx_dagger, EMPIRE_SQUAD, {
         name = "CX Dagger Vessel",
         front = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/cx_card.png",
-        cost = 18,
+        cost = 15,
         aliases = {"CX Dagger Vessel [Legends]"}
     })
     Squadron:new(cx_dagger, EMPIRE_SQUAD, {
@@ -112,7 +112,7 @@ function onload()
         front = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/cx2_card.png",
         diffuse = CUSTOM_ASSETS.."squadrons/empire/cx_dagger/diffuse_ace_cx.png", 
         defense_tokens = {DEF_BRACE,DEF_EVADE},
-        cost = 25,
+        cost = 24,
         aliases = {"CX-2 [Legends]"}
     })
 
@@ -573,6 +573,7 @@ function onload()
     IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."cards/ion/back.png"}
     OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."cards/offretro/back.png"}
     Officer = {type="Officer", back = CUSTOM_ASSETS.."cards/officer/back.png"}
+    SuperWeapon = {type="SuperWeapon"}
     SupportTeam = {type="SupportTeam", back = CUSTOM_ASSETS.."cards/support/back.png"}
     Title = {type="Title", back = CUSTOM_ASSETS.."cards/title/back.png"}
     WeaponsTeam = {type="WeaponsTeam", back = CUSTOM_ASSETS.."cards/wepteam/back.png"}
@@ -633,10 +634,9 @@ function onload()
 
     Card:new(IonCannons,Covenant,{name="Overcharged Plasma Cells",  front = CUSTOM_ASSETS.."cards/~halo/ic_overplascells.png", cost=9, aliases={"Overcharged Plasma Cells [Legends]"}})
 
-    Card:new(OffensiveRetrofit,UNSC,{name="Quick-Charge Capacitors",  front = CUSTOM_ASSETS.."cards/~halo/or_qccaps.png", cost=6, aliases={"Quick-Charge Capacitors [Legends]"}})
     Card:new(OffensiveRetrofit,UNSC,{name="Sustain Motor Missiles",  front = CUSTOM_ASSETS.."cards/~halo/or_sustainmissiles.png", cost=6, aliases={"Sustain Motor Missiles [Legends]"}})
     Card:new(OffensiveRetrofit,Covenant,{name="Plasma Lance",  front = CUSTOM_ASSETS.."cards/~halo/or_plasmalance.png", cost=10, aliases={"Plasma Lance [Legends]"}})
-
+    
     Card:new(Officer,Halo,{name="Combat Coordinator", front = CUSTOM_ASSETS.."cards/~halo/off_combatcoord.png", cost=5, aliases={"Combat Coordinator [Legends]"}})
     Card:new(Officer,Halo,{name="Logistics Coordinator", front = CUSTOM_ASSETS.."cards/~halo/off_logicoord.png", cost=5, aliases={"Logistics Coordinator [Legends]"}})
     Card:new(Officer,UNSC,{name="Cortana (Officer)", front = CUSTOM_ASSETS.."cards/~halo/off_cortana.png", cost=8, aliases={"Cortana (Officer) [Legends]"}})
@@ -649,7 +649,9 @@ function onload()
     Card:new(Officer,Covenant,{name="Maccabeus", front = CUSTOM_ASSETS.."cards/~halo/off_maccabeus.png", cost=9, aliases={"Maccabeus [Legends]"}})
     Card:new(Officer,Covenant,{name="Prophet of Stewardship", front = CUSTOM_ASSETS.."cards/~halo/off_prophetsteward.png", cost=2, aliases={"Prophet of Stewardship [Legends]"}})
     Card:new(Officer,Covenant,{name="Rtas Vadumee", front = CUSTOM_ASSETS.."cards/~halo/off_rtasvadumee.png", cost=4, aliases={"Rtas Vadumee [Legends]"}})
-
+    
+    Card:new(SuperWeapon,UNSC,{name="Quick-Charge Capacitors",  front = CUSTOM_ASSETS.."cards/~halo/sw_qccaps.png", cost=6, aliases={"Quick-Charge Capacitors [Legends]"}})
+    
     Card:new(SupportTeam,Covenant,{name="Huragok Engineer Team",  front = CUSTOM_ASSETS.."cards/~halo/st_huragokeng.png", cost=3, aliases={"Huragok Engineer Team [Legends]"}})
 
     Card:new(Title,UNSC,{name="UNSC Pillar of Autumn", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_poa.png", cost=7, aliases={"UNSC Pillar of Autumn [Legends]"}})
