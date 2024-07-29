@@ -236,6 +236,75 @@ function onload()
         faction = "Colonial"
     }
 
+    --viper mk2
+    viper_mk2 = {
+        mesh = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/diffuse_mk2.png",
+        health = 3,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(viper_mk2, COL_SQUAD, {
+        name = "Viper MkII Squadron",
+        front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/vipermk2_card.png",
+        cost = 9,
+        aliases = {"Viper MkII Squadron [Legends]"}
+    })
+    Squadron:new(viper_mk2, COL_SQUAD, {
+        name = "Kara Thrace",
+        front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/vipermk2_kara.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/diffuse_ace_mk2.png", 
+        defense_tokens = {DEF_SCATTER,DEF_SCATTER},
+        cost = 19,
+        aliases = {"Kara Thrace [Legends]"}
+    })
+
+    --viper mk7
+    viper_mk7 = {
+        mesh = CUSTOM_ASSETS.."squadrons/colonial/viper_mk7/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk7/diffuse_mk7.png",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(viper_mk7, COL_SQUAD, {
+        name = "Viper MkVII Squadron",
+        front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk7/vipermk7_card.png",
+        cost = 13,
+        aliases = {"Viper MkVII Squadron [Legends]"}
+    })
+    Squadron:new(viper_mk7, COL_SQUAD, {
+        name = "Lee Adama",
+        front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk7/vipermk7_apollo.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk7/diffuse_ace_mk7.png", 
+        defense_tokens = {DEF_SCATTER,DEF_BRACE},
+        cost = 22,
+        aliases = {"Lee Adama [Legends]"}
+    })
+
+    --raptor
+    raptor = {
+        mesh = CUSTOM_ASSETS.."squadrons/colonial/raptor/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/raptor/diffuse_raptor.png",
+        health = 5,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(raptor, COL_SQUAD, {
+        name = "Assault Raptor Squadron",
+        front = CUSTOM_ASSETS.."squadrons/colonial/raptor/assault_raptor_card.png",
+        cost = 12,
+        aliases = {"Assault Raptor Squadron [Legends]"}
+    })
+    Squadron:new(raptor, COL_SQUAD, {
+        name = "Racetrack",
+        front = CUSTOM_ASSETS.."squadrons/colonial/raptor/racetrack_raptor.png",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/raptor/diffuse_ace_raptor.png", 
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 17,
+        aliases = {"Racetrack [Legends]"}
+    })
+
 
 -- cylon faction
     CYL_SHIP = {
@@ -573,11 +642,11 @@ function onload()
     IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."cards/ion/back.png"}
     OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."cards/offretro/back.png"}
     Officer = {type="Officer", back = CUSTOM_ASSETS.."cards/officer/back.png"}
-    SuperWeapon = {type="SuperWeapon"}
+    SuperWeapon = {type="SuperWeapon", back = CUSTOM_ASSETS.."cards/super/back.png"}
     SupportTeam = {type="SupportTeam", back = CUSTOM_ASSETS.."cards/support/back.png"}
     Title = {type="Title", back = CUSTOM_ASSETS.."cards/title/back.png"}
     WeaponsTeam = {type="WeaponsTeam", back = CUSTOM_ASSETS.."cards/wepteam/back.png"}
-    -- = {type=""}
+    -- = {type="", back = CUSTOM_ASSETS.."cards//back.png"}
     
     --starwars
     Empire = {
