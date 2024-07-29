@@ -639,6 +639,7 @@ function onload()
     Commander = {type="Commander", back = CUSTOM_ASSETS.."cards/commander/back.png"}
     DefensiveRetrofit = {type="DefensiveRetrofit", back = CUSTOM_ASSETS.."cards/defretro/back.png"}
     FleetCommand = {type="FleetCommand", back = CUSTOM_ASSETS.."cards/fleetcom/back.png"}
+    FleetSupport = {type="FleetSupport", back = CUSTOM_ASSETS.."cards/fleetsup/back.png"}
     IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."cards/ion/back.png"}
     OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."cards/offretro/back.png"}
     Officer = {type="Officer", back = CUSTOM_ASSETS.."cards/officer/back.png"}
@@ -749,7 +750,49 @@ function onload()
         factions={"Colonial","Cylon"}
     }   
 
-    Card:new(Title,Colonial,{name="placeholdercol", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"placeholdercol [Legends]"}})
+    Card:new(Commander,Colonial,{name="Helena Cain", front = CUSTOM_ASSETS.."cards/~bsg/cain_commander.png", cost=34, aliases={"Helena Cain [Legends]"}})
+    Card:new(Commander,Colonial,{name="Commander Ozar", front = CUSTOM_ASSETS.."cards/~bsg/ozar_commander.png", cost=29, aliases={"Commander Ozar [Legends]"}})
+    Card:new(Commander,Colonial,{name="William Adama", front = CUSTOM_ASSETS.."cards/~bsg/willadama_commander.png", cost=20, aliases={"William Adama [Legends]"}})
+
+    Card:new(DefensiveRetrofit,Colonial,{name="DRADIS", front = CUSTOM_ASSETS.."cards/~bsg/dradis_defretro.png", cost=4, aliases={"DRADIS [Legends]"}})
+    Card:new(DefensiveRetrofit,Colonial,{name="Integrated Computer Network", front = CUSTOM_ASSETS.."cards/~bsg/intcomnet_defretro.png", cost=4, aliases={"Integrated Computer Network [Legends]"}})
+    Card:new(DefensiveRetrofit,Colonial,{name="Layered Point-Defense", front = CUSTOM_ASSETS.."cards/~bsg/layerpd_defretro.png", cost=10, aliases={"Layered Point-Defense [Legends]"}})
+    Card:new(DefensiveRetrofit,Colonial,{name="Networked Point-Defense", front = CUSTOM_ASSETS.."cards/~bsg/netpd_defretro.png", cost=6, aliases={"Networked Point-Defense [Legends]"}})
+
+    Card:new(FleetCommand,Colonial,{name="So Say We All", front = CUSTOM_ASSETS.."cards/~bsg/sswa_fleetcom.png", cost=7, aliases={"So Say We All [Legends]"}})
+    Card:new(FleetCommand,Colonial,{name="Suppression Barrage Execute", front = CUSTOM_ASSETS.."cards/~bsg/supbar_fleetcom.png", cost=6, aliases={"Suppression Barrage Execute [Legends]"}})
+
+    Card:new(FleetSupport,Colonial,{name="Missile Pods", front = CUSTOM_ASSETS.."cards/~bsg/missilepods_fleetsup.png", cost=4, aliases={"Missile Pods [Legends]"}})
+    Card:new(FleetSupport,Colonial,{name="Strike Munitions", front = CUSTOM_ASSETS.."cards/~bsg/strike_mun_fleetsup.png", cost=8, aliases={"Strike Munitions [Legends]"}})
+
+    Card:new(Officer,Colonial,{name="Jack Fisk", front = CUSTOM_ASSETS.."cards/~bsg/fisk_officer.png", cost=2, aliases={"Jack Fisk [Legends]"}})
+    Card:new(Officer,Colonial,{name="Felix Gaeta", front = CUSTOM_ASSETS.."cards/~bsg/gaeta_officer.png", cost=6, aliases={"Felix Gaeta [Legends]"}})
+    Card:new(Officer,Colonial,{name="Lee Adama", front = CUSTOM_ASSETS.."cards/~bsg/leeadama_officer.png", cost=7, aliases={"Lee Adama [Legends]"}})
+    Card:new(Officer,Colonial,{name="Saul Tigh", front = CUSTOM_ASSETS.."cards/~bsg/tigh_officer.png", cost=5, aliases={"Saul Tigh [Legends]"}})
+
+    Card:new(SuperWeapon,Colonial,{name="Chrome-Composite Stealth Plating", front = CUSTOM_ASSETS.."cards/~bsg/chrome_stealth_super.png", cost=10, aliases={"Chrome-Composite Stealth Plating [Legends]"}})
+
+    Card:new(SupportTeam,Colonial,{name="Damage Control Teams", front = CUSTOM_ASSETS.."cards/~bsg/dmgctrl_sup.png", cost=4, aliases={"Damage Control Teams [Legends]"}})
+    Card:new(SupportTeam,Colonial,{name="Galen Tyrol", front = CUSTOM_ASSETS.."cards/~bsg/tyrol_sup.png", cost=5, aliases={"Galen Tyrol [Legends]"}})
+
+    Card:new(Title,Colonial,{name="Acheron", front = CUSTOM_ASSETS.."cards/~bsg/acheron_title.png", cost=7, aliases={"Acheron [Legends]"}})
+    Card:new(Title,Colonial,{name="Demeter", front = CUSTOM_ASSETS.."cards/~bsg/demeter_title.png", cost=4, aliases={"Demeter [Legends]"}})
+    Card:new(Title,Colonial,{name="Galactica", front = CUSTOM_ASSETS.."cards/~bsg/galactica_title.png", cost=4, aliases={"Galactica [Legends]"}})
+    Card:new(Title,Colonial,{name="Osiris", front = CUSTOM_ASSETS.."cards/~bsg/osiris_title.png", cost=9, aliases={"Osiris [Legends]"}})
+    Card:new(Title,Colonial,{name="Pegasus", front = CUSTOM_ASSETS.."cards/~bsg/pegasus_title.png", cost=6, aliases={"Pegasus [Legends]"}})
+    Card:new(Title,Colonial,{name="Triton", front = CUSTOM_ASSETS.."cards/~bsg/triton_title.png", cost=5, aliases={"Triton [Legends]"}})
+
+    Card:new(OffensiveRetrofit,Colonial,{name="Archer Missiles",  front = CUSTOM_ASSETS.."cards/~bsg/archerm_offretro.png", cost=7, aliases={"Archer Missiles [Legends]"}})
+    Card:new(OffensiveRetrofit,Colonial,{name="Bombing Run",  front = CUSTOM_ASSETS.."cards/~bsg/bombrun_offretro.png", cost=4, aliases={"Bombing Run [Legends]"}})
+    Card:new(OffensiveRetrofit,Colonial,{name="Dual-Purpose KEW",  front = CUSTOM_ASSETS.."cards/~bsg/dualKEW_offretro.png", cost=7, aliases={"Dual-Purpose KEW [Legends]"}})
+    Card:new(OffensiveRetrofit,Colonial,{name="Indiscriminate Firing Solution",  front = CUSTOM_ASSETS.."cards/~bsg/indisfire_offretro.png", cost=4, aliases={"Indiscriminate Firing Solution [Legends]"}})
+    Card:new(OffensiveRetrofit,Colonial,{name="Magnetic Launch Tubes",  front = CUSTOM_ASSETS.."cards/~bsg/magtubes_offretro.png", cost=7, aliases={"Magnetic Launch Tubes [Legends]"}})
+    Card:new(OffensiveRetrofit,Colonial,{name="Networked Fire Control",  front = CUSTOM_ASSETS.."cards/~bsg/netfirecon_offretro.png", cost=5, aliases={"Networked Fire Control [Legends]"}})
+
+    Card:new(WeaponsTeam,Colonial,{name="Colonial Gunners", front = CUSTOM_ASSETS.."cards/~bsg/colgunner_wep.png", cost=5, aliases={"Colonial Gunners [Legends]"}})
+    Card:new(WeaponsTeam,Colonial,{name="Gunnery Sergeant", front = CUSTOM_ASSETS.."cards/~bsg/gunsgt_wep.png", cost=6, aliases={"Gunnery Sergeant [Legends]"}})
+    Card:new(WeaponsTeam,Colonial,{name="Reactive Gunners", front = CUSTOM_ASSETS.."cards/~bsg/reactgun_wep.png", cost=4, aliases={"Reactive Gunners [Legends]"}})
+
     Card:new(Title,Cylon,{name="placeholdercyl", front = CUSTOM_ASSETS.."ships/rebel/reb_quasar/title_rebquasar_ph.png", cost=4, aliases={"placeholdercyl [Legends]"}})
 
 
