@@ -155,7 +155,7 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/colonial/mercury/mk1_diffuse.png",
         ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
         maneuver = {{"I"},{"I","-"},{"I","-","I"}},
-        defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
+        defense_tokens = {DEF_SALVO,DEF_BARRAGE,DEF_BRACE,DEF_BARRAGE},
         shields = {3,4,4,2}, -- Front, left, right, rear
         cost = 140,
         command = 4,
@@ -168,7 +168,7 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/colonial/mercury/mk2_diffuse.png",
         ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
         maneuver = {{"I"},{"I","-"},{"I","-","I"}},
-        defense_tokens = {DEF_SALVO,DEF_CONTAIN,DEF_BRACE,DEF_CONTAIN},
+        defense_tokens = {DEF_SALVO,DEF_BARRAGE,DEF_BRACE,DEF_BARRAGE},
         shields = {3,4,4,2}, -- Front, left, right, rear
         cost = 135,
         command = 4,
@@ -183,7 +183,7 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk1_diffuse.png",
         ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
         maneuver = {{"II"},{"I","-"}},
-        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_CONTAIN},
+        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_BARRAGE},
         shields = {2,3,3,1}, -- Front, left, right, rear
         cost = 100,
         command = 3,
@@ -196,7 +196,7 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk2_diffuse.png",
         ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
         maneuver = {{"II"},{"I","-"}},
-        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_CONTAIN},
+        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_BARRAGE},
         shields = {2,3,3,1}, -- Front, left, right, rear
         cost = 103,
         command = 3,
@@ -211,7 +211,7 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/colonial/orion/stealth_diffuse.png",
         ruler = CUSTOM_ASSETS.."ships/colonial/orion/ruler.obj", 
         maneuver = {{"II"},{"II","I"},{"II","I","I"},{"I","I","I","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_EVADE,DEF_EVADE},
+        defense_tokens = {DEF_BARRAGE,DEF_EVADE,DEF_EVADE},
         shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 54,
         command = 2,
@@ -224,7 +224,7 @@ function onload()
         diffuse = CUSTOM_ASSETS.."ships/colonial/orion/pocket_diffuse.png",
         ruler = CUSTOM_ASSETS.."ships/colonial/orion/ruler.obj", 
         maneuver = {{"II"},{"II","I"},{"II","I","I"},{"I","I","I","I"}},
-        defense_tokens = {DEF_CONTAIN,DEF_EVADE,DEF_EVADE},
+        defense_tokens = {DEF_BARRAGE,DEF_EVADE,DEF_EVADE},
         shields = {2,2,2,1}, -- Front, left, right, rear
         cost = 57,
         command = 2,
@@ -824,6 +824,7 @@ end
     DEF_REDIRECT = '36f595'
     DEF_SCATTER = '895e91'
     DEF_SALVO = '5028b2'
+    DEF_BARRAGE = '44cf22'
     Ship = { collider = "", convex = true, type = 1, material = 3, maneuver = {},
         defense_tokens = {}, shields = {1,1,1,1,1,1}, cost = 0, name = "",
         front = "", back = "", aliases = {}, faction = "" }
