@@ -460,7 +460,7 @@ function onload()
         front = CUSTOM_ASSETS.."squadrons/unsc/longsword/ls_fighter_knife26.png",
         diffuse = CUSTOM_ASSETS.."squadrons/unsc/longsword/diffuse_ls_ace_fighter.png", 
         defense_tokens = {DEF_BRACE,DEF_EVADE},
-        cost = 18,
+        cost = 20,
         aliases = {"Knife 26 [Legends]"}
     })
 
@@ -687,7 +687,7 @@ function onload()
 
     Card:new(Commander,UNSC,{name="Captain Keyes",  front = CUSTOM_ASSETS.."cards/~halo/com_capt_keyes.png", cost=30, aliases={"Captain Keyes [Legends]"}})
     Card:new(Commander,UNSC,{name="Captain Wallace",  front = CUSTOM_ASSETS.."cards/~halo/com_capt_wallace.png", cost=20, aliases={"Captain Wallace [Legends]"}})
-    Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/~halo/com_cmdr_keyes.png", cost=25, aliases={"Commander Keyes [Legends]"}})
+    Card:new(Commander,UNSC,{name="Commander Keyes",  front = CUSTOM_ASSETS.."cards/~halo/com_cmdr_keyes.png", cost=27, aliases={"Commander Keyes [Legends]"}})
     Card:new(Commander,UNSC,{name="Lord Hood",  front = CUSTOM_ASSETS.."cards/~halo/com_lordhood.png", cost=30, aliases={"Lord Hood [Legends]"}})
     Card:new(Commander,Covenant,{name="Ardo Moretumee",  front = CUSTOM_ASSETS.."cards/~halo/com_ardomoretumee.png", cost=20, aliases={"Ardo Moretumee [Legends]"}})
     Card:new(Commander,Covenant,{name="Atriox",  front = CUSTOM_ASSETS.."cards/~halo/com_atriox.png", cost=35, aliases={"Atriox [Legends]"}})
@@ -703,8 +703,8 @@ function onload()
     Card:new(FleetCommand,Covenant,{name="Will of the Prophets",  front = CUSTOM_ASSETS.."cards/~halo/fc_wotp.png", cost=8, aliases={"Will of the Prophets [Legends]"}})
 
     Card:new(IonCannons,Covenant,{name="Overcharged Plasma Cells",  front = CUSTOM_ASSETS.."cards/~halo/ic_overplascells.png", cost=9, aliases={"Overcharged Plasma Cells [Legends]"}})
+    Card:new(IonCannons,UNSC,{name="Sustain Motor Missiles",  front = CUSTOM_ASSETS.."cards/~halo/ic_sustainmissiles.png", cost=6, aliases={"Sustain Motor Missiles [Legends]"}})
 
-    Card:new(OffensiveRetrofit,UNSC,{name="Sustain Motor Missiles",  front = CUSTOM_ASSETS.."cards/~halo/or_sustainmissiles.png", cost=6, aliases={"Sustain Motor Missiles [Legends]"}})
     Card:new(OffensiveRetrofit,Covenant,{name="Plasma Lance",  front = CUSTOM_ASSETS.."cards/~halo/or_plasmalance.png", cost=10, aliases={"Plasma Lance [Legends]"}})
     
     Card:new(Officer,Halo,{name="Combat Coordinator", front = CUSTOM_ASSETS.."cards/~halo/off_combatcoord.png", cost=5, aliases={"Combat Coordinator [Legends]"}})
@@ -727,9 +727,9 @@ function onload()
     Card:new(Title,UNSC,{name="UNSC Pillar of Autumn", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_poa.png", cost=7, aliases={"UNSC Pillar of Autumn [Legends]"}})
     Card:new(Title,UNSC,{name="UNSC Constantinople", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_const.png", cost=3, aliases={"UNSC Constantinople [Legends]"}})
     Card:new(Title,UNSC,{name="UNSC Roman Blue", front = CUSTOM_ASSETS.."ships/unsc/halcyon/title_halcyon_roman.png", cost=2, aliases={"UNSC Roman Blue [Legends]"}})
-    Card:new(Title,UNSC,{name="UNSC Savannah", front = CUSTOM_ASSETS.."ships/unsc/paris/title_paris_savannah.png", cost=6, aliases={"UNSC Savannah [Legends]"}})
-    Card:new(Title,UNSC,{name="UNSC Commonwealth", front = CUSTOM_ASSETS.."ships/unsc/paris/title_paris_commonwealth.png", cost=5, aliases={"UNSC Commonwealth [Legends]"}})
-    Card:new(Title,UNSC,{name="UNSC In Amber Clad", front = CUSTOM_ASSETS.."ships/unsc/stalwart/title_stalwart_iac.png", cost=6, aliases={"UNSC In Amber Clad [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Savannah", front = CUSTOM_ASSETS.."ships/unsc/paris/title_paris_savannah.png", cost=9, aliases={"UNSC Savannah [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC Commonwealth", front = CUSTOM_ASSETS.."ships/unsc/paris/title_paris_commonwealth.png", cost=7, aliases={"UNSC Commonwealth [Legends]"}})
+    Card:new(Title,UNSC,{name="UNSC In Amber Clad", front = CUSTOM_ASSETS.."ships/unsc/stalwart/title_stalwart_iac.png", cost=8, aliases={"UNSC In Amber Clad [Legends]"}})
     Card:new(Title,UNSC,{name="UNSC Meriweather Lewis", front = CUSTOM_ASSETS.."ships/unsc/stalwart/title_stalwart_merilew.png", cost=1, aliases={"UNSC Meriweather Lewis [Legends]"}})
     Card:new(Title,Covenant,{name="Truth and Reconciliation", front = CUSTOM_ASSETS.."ships/covenant/ccs/title_ccs_truthandreco.png", cost=6, aliases={"Truth and Reconciliation [Legends]"}})
     Card:new(Title,Covenant,{name="Purity of Spirit", front = CUSTOM_ASSETS.."ships/covenant/ccs/title_ccs_purityspirit.png", cost=5, aliases={"Purity of Spirit [Legends]"}})
