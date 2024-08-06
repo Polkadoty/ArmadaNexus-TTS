@@ -699,7 +699,7 @@ function onload()
     Card:new(DefensiveRetrofit,Covenant,{name="Reliable Shields",  front = CUSTOM_ASSETS.."cards/~halo/dr_reliableshields.png", cost=9, aliases={"Reliable Shields [Legends]"}})
 
     Card:new(FleetCommand,Covenant,{name="Jiralhanae Brutality",  front = CUSTOM_ASSETS.."cards/~halo/fc_jirabrutal.png", cost=7, aliases={"Jiralhanae Brutality [Legends]"}})
-    Card:new(FleetCommand,Covenant,{name="Sangehili Honor",  front = CUSTOM_ASSETS.."cards/~halo/fc_sanghonor.png", cost=6, aliases={"Sangehili Honor [Legends]"}})
+    Card:new(FleetCommand,Covenant,{name="Sangheili Honor",  front = CUSTOM_ASSETS.."cards/~halo/fc_sanghonor.png", cost=6, aliases={"Sangehili Honor [Legends]"}})
     Card:new(FleetCommand,Covenant,{name="Will of the Prophets",  front = CUSTOM_ASSETS.."cards/~halo/fc_wotp.png", cost=8, aliases={"Will of the Prophets [Legends]"}})
 
     Card:new(IonCannons,Covenant,{name="Overcharged Plasma Cells",  front = CUSTOM_ASSETS.."cards/~halo/ic_overplascells.png", cost=9, aliases={"Overcharged Plasma Cells [Legends]"}})
