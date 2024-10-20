@@ -182,12 +182,12 @@ function onload()
         mesh = CUSTOM_ASSETS.."ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk1_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
-        maneuver = {{"II"},{"I","-"}},
-        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_BARRAGE},
-        shields = {2,3,3,1}, -- Front, left, right, rear
-        cost = 100,
+        maneuver = {{"I"},{"I","I"},{"-","-","I"}},
+        defense_tokens = {DEF_BRACE,DEF_BRACE,DEF_CONTAIN,DEF_SALVO},
+        shields = {3,4,4,2}, -- Front, left, right, rear
+        cost = 112,
         command = 3,
-        aliases = {"Jupiter-class Battlestar Mk1 [Legends]"}
+        aliases = {"Jupiter-class Battlestar Mk.1 [Legends]"}
     })
     Ship:new(LargeShip,COL_SHIP, {
         name = "Jupiter-class Battlestar Mk.2",
@@ -195,12 +195,96 @@ function onload()
         mesh = CUSTOM_ASSETS.."ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk2_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/colonial/mercury/ruler.obj", 
-        maneuver = {{"II"},{"I","-"}},
-        defense_tokens = {DEF_CONTAIN,DEF_SALVO,DEF_BRACE,DEF_BARRAGE},
-        shields = {2,3,3,1}, -- Front, left, right, rear
-        cost = 103,
+        maneuver = {{"I"},{"I","I"},{"-","-","I"}},
+        defense_tokens = {DEF_BRACE,DEF_BRACE,DEF_CONTAIN,DEF_SALVO},
+        shields = {3,4,4,2}, -- Front, left, right, rear
+        cost = 124,
         command = 3,
-        aliases = {"Jupiter-class Battlestar Mk2 [Legends]"}
+        aliases = {"Jupiter-class Battlestar Mk.2 [Legends]"}
+    })
+
+        --manticore corvette
+    Ship:new(SmallShip,COL_SHIP, {
+        name = "Manticore-class Attack Corvette",
+        front = CUSTOM_ASSETS.."ships/colonial/manticore/manticore_attack_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/colonial/manticore/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/manticore/manticore_attack_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/colonial/manticore/ruler.obj", 
+        maneuver = {{"II"},{"I","II"},{"I","-","-"}},
+        defense_tokens = {DEF_EVADE,DEF_EVADE,DEF_CONTAIN},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 44,
+        command = 1,
+        aliases = {"Manticore-class Attack Corvette [Legends]"}
+    })
+    Ship:new(SmallShip,COL_SHIP, {
+        name = "Manticore-class Patrol Corvette",
+        front = CUSTOM_ASSETS.."ships/colonial/manticore/manticore_patrol_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/colonial/manticore/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/manticore/manticore_patrol_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/colonial/manticore/ruler.obj", 
+        maneuver = {{"II"},{"I","II"},{"I","-","-"}},
+        defense_tokens = {DEF_EVADE,DEF_EVADE,DEF_CONTAIN},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 42,
+        command = 1,
+        aliases = {"Manticore-class Patrol Corvette [Legends]"}
+    })
+
+        --adamant carrier-cruiser
+    Ship:new(MediumShip,COL_SHIP, {
+        name = "Adamant-class Light Carrier",
+        front = CUSTOM_ASSETS.."ships/colonial/adamant/adamant_carrier_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/colonial/adamant/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/adamant/adamant_carrier_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/colonial/adamant/ruler.obj", 
+        maneuver = {{"I"},{"I","-"},{"-","I","-"}},
+        defense_tokens = {DEF_BRACE,DEF_CONTAIN,DEF_SALVO},
+        shields = {1,3,3,1}, -- Front, left, right, rear
+        cost = 62,
+        command = 3,
+        aliases = {"Adamant-class Light Carrier [Legends]"}
+    })
+    Ship:new(MediumShip,COL_SHIP, {
+        name = "Adamant-class Light Frigate",
+        front = CUSTOM_ASSETS.."ships/colonial/adamant/adamant_frigate_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/colonial/adamant/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/adamant/adamant_frigate_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/colonial/adamant/ruler.obj", 
+        maneuver = {{"I"},{"I","-"},{"-","I","-"}},
+        defense_tokens = {DEF_BRACE,DEF_CONTAIN,DEF_SALVO},
+        shields = {1,3,3,1}, -- Front, left, right, rear
+        cost = 68,
+        command = 3,
+        aliases = {"Adamant-class Light Frigate [Legends]"}
+    })
+
+        --minotaur heavy cruiser
+    Ship:new(MediumShip,COL_SHIP, {
+        name = "Minotaur-class Heavy Assault Cruiser",
+        front = CUSTOM_ASSETS.."ships/colonial/minotaur/minotaur_assault_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/colonial/minotaur/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/minotaur/minotaur_assault_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/colonial/minotaur/ruler.obj", 
+        maneuver = {{"I"},{"I","I"},{"-","-","I"}},
+        defense_tokens = {DEF_BRACE,DEF_CONTAIN,DEF_SALVO},
+        shields = {2,3,3,2}, -- Front, left, right, rear
+        cost = 90,
+        command = 3,
+        aliases = {"Minotaur-class Heavy Assault Cruiser [Legends]"}
+    })
+    Ship:new(MediumShip,COL_SHIP, {
+        name = "Minotaur-class Heavy Command Cruiser",
+        front = CUSTOM_ASSETS.."ships/colonial/minotaur/minotaur_command_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/colonial/minotaur/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/colonial/minotaur/minotaur_command_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/colonial/minotaur/ruler.obj", 
+        maneuver = {{"I"},{"I","I"},{"-","-","I"}},
+        defense_tokens = {DEF_BRACE,DEF_CONTAIN,DEF_SALVO},
+        shields = {2,3,3,2}, -- Front, left, right, rear
+        cost = 80,
+        command = 3,
+        aliases = {"Minotaur-class Heavy Command Cruiser [Legends]"}
     })
 
         -- orion frigate
@@ -311,6 +395,117 @@ function onload()
         back = CUSTOM_ASSETS.."ships/cylon/card_back.jpg",
         faction = "Cylon"
     }
+        -- cylon war basestar
+    Ship:new(LargeShip,CYL_SHIP, {
+        name = "War Basestar Mk.1",
+        front = CUSTOM_ASSETS.."ships/cylon/basestar_war/basestar_mk1_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/basestar_war/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/basestar_war/basestar_mk1_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/basestar_war/ruler.obj", 
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_CONTAIN,DEF_CONTAIN,DEF_SALVO},
+        shields = {3,3,3,3}, -- Front, left, right, rear
+        cost = 110,
+        command = 3,
+        aliases = {"War Basestar Mk.1 [Legends]"}
+    })
+    Ship:new(LargeShip,CYL_SHIP, {
+        name = "War Basestar Mk.2",
+        front = CUSTOM_ASSETS.."ships/cylon/basestar_war/basestar_mk2_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/basestar_war/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/basestar_war/basestar_mk2_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/basestar_war/ruler.obj", 
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_CONTAIN,DEF_CONTAIN,DEF_SALVO},
+        shields = {3,3,3,3}, -- Front, left, right, rear
+        cost = 97,
+        command = 3,
+        aliases = {"War Basestar Mk.2 [Legends]"}
+    })
+
+        -- arachne cruiser
+    Ship:new(MediumShip,CYL_SHIP, {
+        name = "Arachne Missile Cruiser",
+        front = CUSTOM_ASSETS.."ships/cylon/arachne/arachne_missile_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/arachne/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/arachne/arachne_missile_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/arachne/ruler.obj", 
+        maneuver = {{"I"},{"I","I"},{"I","II","-"}},
+        defense_tokens = {DEF_BRACE,DEF_EVADE,DEF_SALVO},
+        shields = {3,3,3,1}, -- Front, left, right, rear
+        cost = 79,
+        command = 3,
+        aliases = {"Arachne Missile Cruiser [Legends]"}
+    })
+    Ship:new(MediumShip,CYL_SHIP, {
+        name = "Arachne Carrier Cruiser",
+        front = CUSTOM_ASSETS.."ships/cylon/arachne/arachne_carrier_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/arachne/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/arachne/arachne_carrier_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/arachne/ruler.obj", 
+        maneuver = {{"I"},{"I","I"},{"I","II","-"}},
+        defense_tokens = {DEF_BRACE,DEF_EVADE,DEF_SALVO},
+        shields = {3,3,3,1}, -- Front, left, right, rear
+        cost = 73,
+        command = 3,
+        aliases = {"Arachne Carrier Cruiser [Legends]"}
+    })
+
+        -- talon frigate
+    Ship:new(MediumShip,CYL_SHIP, {
+        name = "Talon Light Frigate",
+        front = CUSTOM_ASSETS.."ships/cylon/talon/talon_frigate_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/talon/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/talon/talon_frigate_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/talon/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_EVADE,DEF_CONTAIN},
+        shields = {1,3,3,1}, -- Front, left, right, rear
+        cost = 56,
+        command = 2,
+        aliases = {"Talon Light Frigate [Legends]"}
+    })
+    Ship:new(MediumShip,CYL_SHIP, {
+        name = "Talon Light Carrier",
+        front = CUSTOM_ASSETS.."ships/cylon/talon/talon_carrier_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/talon/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/talon/talon_carrier_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/talon/ruler.obj", 
+        maneuver = {{"II"},{"I","I"},{"-","I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_EVADE,DEF_CONTAIN},
+        shields = {1,3,3,1}, -- Front, left, right, rear
+        cost = 64,
+        command = 2,
+        aliases = {"Talon Light Carrier [Legends]"}
+    })
+
+        -- nemesis corvette
+    Ship:new(SmallShip,CYL_SHIP, {
+        name = "Nemesis Attack Corvette",
+        front = CUSTOM_ASSETS.."ships/cylon/nemesis/nemesis_attack_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/nemesis/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/nemesis/nemesis_attack_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/nemesis/ruler.obj", 
+        maneuver = {{"II"},{"II","-"},{"I","I","I"},{"I","I","-","I"}},
+        defense_tokens = {DEF_EVADE,DEF_EVADE,DEF_CONTAIN},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 42,
+        command = 1,
+        aliases = {"Nemesis Attack Corvette [Legends]"}
+    })
+    Ship:new(SmallShip,CYL_SHIP, {
+        name = "Nemesis Tech Corvette",
+        front = CUSTOM_ASSETS.."ships/cylon/nemesis/nemesis_tech_card.jpg",
+        mesh = CUSTOM_ASSETS.."ships/cylon/nemesis/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/cylon/nemesis/nemesis_tech_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/cylon/nemesis/ruler.obj", 
+        maneuver = {{"II"},{"II","-"},{"I","I","I"},{"I","I","-","I"}},
+        defense_tokens = {DEF_EVADE,DEF_EVADE,DEF_CONTAIN},
+        shields = {2,1,1,1}, -- Front, left, right, rear
+        cost = 40,
+        command = 1,
+        aliases = {"Nemesis Tech Corvette [Legends]"}
+    })
 
         -- cylon modern basestar
     Ship:new(LargeShip,CYL_SHIP, {
