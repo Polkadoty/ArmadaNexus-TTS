@@ -366,7 +366,7 @@ function onload()
         aliases = {"Viper MkVII Squadron [Legends]"}
     })
     Squadron:new(viper_mk7, COL_SQUAD, {
-        name = "Lee Adama",
+        name = "Lee \"Apollo\" Adama",
         front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk7/vipermk7_apollo.jpg",
         diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk7/diffuse_ace_mk7.jpg", 
         defense_tokens = {DEF_SCATTER,DEF_BRACE},
@@ -389,7 +389,7 @@ function onload()
         aliases = {"Raptor Squadron [Legends]"}
     })
     Squadron:new(raptor, COL_SQUAD, {
-        name = "Athena",
+        name = "Sharon \"Athena\" Valeri",
         front = CUSTOM_ASSETS.."squadrons/colonial/raptor/athena_raptor_squadron_card.jpg",
         diffuse = CUSTOM_ASSETS.."squadrons/colonial/raptor/diffuse_ace_raptor.jpg", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -412,7 +412,7 @@ function onload()
         aliases = {"Assault Raptor Squadron [Legends]"}
     })
     Squadron:new(ass_raptor, COL_SQUAD, {
-        name = "Racetrack",
+        name = "\"Racetrack\"",
         front = CUSTOM_ASSETS.."squadrons/colonial/ass_raptor/racetrack_ass_raptor_squadron_card.jpg",
         diffuse = CUSTOM_ASSETS.."squadrons/colonial/ass_raptor/diffuse_ace_ass_raptor.jpg", 
         defense_tokens = {DEF_BRACE,DEF_EVADE},
@@ -587,7 +587,7 @@ function onload()
         cost = 10,
         aliases = {"War Raider Squadron [Legends]"}
     })
-    Squadron:new(war_raider, COL_SQUAD, {
+    Squadron:new(war_raider, CYL_SQUAD, {
         name = "Silverfish",
         front = CUSTOM_ASSETS.."squadrons/cylon/war_raider/silverfish_war-raider-squadron_card.jpg",
         diffuse = CUSTOM_ASSETS.."squadrons/cylon/war_raider/ace_diffuse.jpg", 
@@ -595,7 +595,7 @@ function onload()
         cost = 23,
         aliases = {"Silverfish [Legends]"}
     })
-    Squadron:new(war_raider, COL_SQUAD, {
+    Squadron:new(war_raider, CYL_SQUAD, {
         name = "Liberator",
         front = CUSTOM_ASSETS.."squadrons/cylon/war_raider/liberator_war-raider-squadron_card.jpg",
         diffuse = CUSTOM_ASSETS.."squadrons/cylon/war_raider/ace_diffuse.jpg", 
