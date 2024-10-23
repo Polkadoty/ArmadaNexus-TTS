@@ -149,7 +149,7 @@ function onload()
     
         -- mercury battlestar
     Ship:new(LargeShip,COL_SHIP, {
-        name = "Mercury-class Battlestar Mk.1",
+        name = "Mercury-class Battlestar MkI",
         front = CUSTOM_ASSETS.."ships/colonial/mercury/mk1_card.jpg",
         mesh = CUSTOM_ASSETS.."ships/colonial/mercury/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/mercury/mk1_diffuse.jpg",
@@ -159,10 +159,10 @@ function onload()
         shields = {3,4,4,2}, -- Front, left, right, rear
         cost = 140,
         command = 4,
-        aliases = {"Mercury Battlestar Mk1 [Legends]"}
+        aliases = {"Mercury Battlestar MkI [Legends]"}
     })
     Ship:new(LargeShip,COL_SHIP, {
-        name = "Mercury-class Battlestar Mk.2",
+        name = "Mercury-class Battlestar MkII",
         front = CUSTOM_ASSETS.."ships/colonial/mercury/mk2_card.jpg",
         mesh = CUSTOM_ASSETS.."ships/colonial/mercury/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/mercury/mk2_diffuse.jpg",
@@ -177,7 +177,7 @@ function onload()
       
         -- jupiter battlestar
     Ship:new(LargeShip,COL_SHIP, {
-        name = "Jupiter-class Battlestar Mk.1",
+        name = "Jupiter-class Battlestar MkI",
         front = CUSTOM_ASSETS.."ships/colonial/jupiter/mk1_card.jpg",
         mesh = CUSTOM_ASSETS.."ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk1_diffuse.jpg",
@@ -187,10 +187,10 @@ function onload()
         shields = {3,4,4,2}, -- Front, left, right, rear
         cost = 112,
         command = 3,
-        aliases = {"Jupiter-class Battlestar Mk.1 [Legends]"}
+        aliases = {"Jupiter-class Battlestar MkI [Legends]"}
     })
     Ship:new(LargeShip,COL_SHIP, {
-        name = "Jupiter-class Battlestar Mk.2",
+        name = "Jupiter-class Battlestar MkII",
         front = CUSTOM_ASSETS.."ships/colonial/jupiter/mk2_card.jpg",
         mesh = CUSTOM_ASSETS.."ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/colonial/jupiter/mk2_diffuse.jpg",
@@ -200,7 +200,7 @@ function onload()
         shields = {3,4,4,2}, -- Front, left, right, rear
         cost = 124,
         command = 3,
-        aliases = {"Jupiter-class Battlestar Mk.2 [Legends]"}
+        aliases = {"Jupiter-class Battlestar MkII [Legends]"}
     })
 
         --manticore corvette
@@ -325,22 +325,30 @@ function onload()
         mesh = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/mesh.obj",
         diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/diffuse_mk2.jpg",
         health = 3,
-        move = 3,
+        move = 5,
         defense_tokens = {}
     }
     Squadron:new(viper_mk2, COL_SQUAD, {
         name = "Viper MkII Squadron",
         front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/vipermk2_card.jpg",
-        cost = 9,
+        cost = 11,
         aliases = {"Viper MkII Squadron [Legends]"}
     })
     Squadron:new(viper_mk2, COL_SQUAD, {
-        name = "Kara Thrace",
-        front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/vipermk2_kara.jpg",
+        name = "Kara \"Starbuck\" Thrace",
+        front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/kara_vipermk2_card.jpg",
         diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/diffuse_ace_mk2.jpg", 
-        defense_tokens = {DEF_SCATTER,DEF_SCATTER},
-        cost = 19,
-        aliases = {"Kara Thrace [Legends]"}
+        defense_tokens = {DEF_SCATTER,DEF_EVADE},
+        cost = 22,
+        aliases = {"Kara \"Starbuck\" Thrace [Legends]"}
+    })
+    Squadron:new(viper_mk2, COL_SQUAD, {
+        name = "\"Hotdog\"",
+        front = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/hotdog_vipermk2_card.jpg",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/viper_mk2/diffuse_ace_mk2.jpg", 
+        defense_tokens = {DEF_SCATTER,DEF_EVADE},
+        cost = 20,
+        aliases = {"\"Hotdog\" [Legends]"}
     })
 
     --viper mk7
@@ -370,22 +378,45 @@ function onload()
     raptor = {
         mesh = CUSTOM_ASSETS.."squadrons/colonial/raptor/mesh.obj",
         diffuse = CUSTOM_ASSETS.."squadrons/colonial/raptor/diffuse_raptor.jpg",
-        health = 5,
-        move = 3,
+        health = 4,
+        move = 4,
         defense_tokens = {}
     }
     Squadron:new(raptor, COL_SQUAD, {
-        name = "Assault Raptor Squadron",
-        front = CUSTOM_ASSETS.."squadrons/colonial/raptor/assault_raptor_card.jpg",
-        cost = 12,
-        aliases = {"Assault Raptor Squadron [Legends]"}
+        name = "Raptor Squadron",
+        front = CUSTOM_ASSETS.."squadrons/colonial/raptor/raptor_squadron_card.jpg",
+        cost = 15,
+        aliases = {"Raptor Squadron [Legends]"}
     })
     Squadron:new(raptor, COL_SQUAD, {
-        name = "Racetrack",
-        front = CUSTOM_ASSETS.."squadrons/colonial/raptor/racetrack_raptor.jpg",
+        name = "Athena",
+        front = CUSTOM_ASSETS.."squadrons/colonial/raptor/athena_raptor_squadron_card.jpg",
         diffuse = CUSTOM_ASSETS.."squadrons/colonial/raptor/diffuse_ace_raptor.jpg", 
         defense_tokens = {DEF_BRACE,DEF_BRACE},
-        cost = 17,
+        cost = 20,
+        aliases = {"Athena [Legends]"}
+    })
+
+    --assault raptor
+    ass_raptor = {
+        mesh = CUSTOM_ASSETS.."squadrons/colonial/ass_raptor/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/ass_raptor/diffuse_ass_raptor.jpg",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(ass_raptor, COL_SQUAD, {
+        name = "Assault Raptor Squadron",
+        front = CUSTOM_ASSETS.."squadrons/colonial/ass_raptor/ass_raptor_squadron_card.jpg",
+        cost = 14,
+        aliases = {"Assault Raptor Squadron [Legends]"}
+    })
+    Squadron:new(ass_raptor, COL_SQUAD, {
+        name = "Racetrack",
+        front = CUSTOM_ASSETS.."squadrons/colonial/ass_raptor/racetrack_ass_raptor_squadron_card.jpg",
+        diffuse = CUSTOM_ASSETS.."squadrons/colonial/ass_raptor/diffuse_ace_ass_raptor.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 23,
         aliases = {"Racetrack [Legends]"}
     })
 
@@ -410,7 +441,7 @@ function onload()
         aliases = {"War Basestar Mk.1 [Legends]"}
     })
     Ship:new(LargeShip,CYL_SHIP, {
-        name = "War Basestar Mk.2",
+        name = "War Basestar MkII",
         front = CUSTOM_ASSETS.."ships/cylon/basestar_war/basestar_mk2_card.jpg",
         mesh = CUSTOM_ASSETS.."ships/cylon/basestar_war/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/cylon/basestar_war/basestar_mk2_diffuse.jpg",
@@ -420,7 +451,7 @@ function onload()
         shields = {3,3,3,3}, -- Front, left, right, rear
         cost = 97,
         command = 3,
-        aliases = {"War Basestar Mk.2 [Legends]"}
+        aliases = {"War Basestar MkII [Legends]"}
     })
 
         -- arachne cruiser
@@ -541,6 +572,83 @@ function onload()
         back = CUSTOM_ASSETS.."ships/cylon/card_back.jpg",
         faction = "Cylon"
     }
+
+    -- war raider
+    war_raider = {
+        mesh = CUSTOM_ASSETS.."squadrons/cylon/war_raider/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/cylon/war_raider/diffuse.jpg",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(war_raider, CYL_SQUAD, {
+        name = "War Raider Squadron",
+        front = CUSTOM_ASSETS.."squadrons/cylon/war_raider/war-raider-squadron_card.jpg",
+        cost = 10,
+        aliases = {"War Raider Squadron [Legends]"}
+    })
+    Squadron:new(war_raider, COL_SQUAD, {
+        name = "Silverfish",
+        front = CUSTOM_ASSETS.."squadrons/cylon/war_raider/silverfish_war-raider-squadron_card.jpg",
+        diffuse = CUSTOM_ASSETS.."squadrons/cylon/war_raider/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 23,
+        aliases = {"Silverfish [Legends]"}
+    })
+    Squadron:new(war_raider, COL_SQUAD, {
+        name = "Liberator",
+        front = CUSTOM_ASSETS.."squadrons/cylon/war_raider/liberator_war-raider-squadron_card.jpg",
+        diffuse = CUSTOM_ASSETS.."squadrons/cylon/war_raider/ace_diffuse.jpg", 
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 26,
+        aliases = {"Liberator [Legends]"}
+    })
+
+    -- wardriver
+    wardriver = {
+        mesh = CUSTOM_ASSETS.."squadrons/cylon/wardriver/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/cylon/wardriver/diffuse.jpg",
+        health = 4,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(wardriver, CYL_SQUAD, {
+        name = "Wardriver Squadron",
+        front = CUSTOM_ASSETS.."squadrons/cylon/wardriver/wardriver_card.jpg",
+        cost = 16,
+        aliases = {"Wardriver Squadron [Legends]"}
+    })
+    Squadron:new(wardriver, CYL_SQUAD, {
+        name = "E-47",
+        front = CUSTOM_ASSETS.."squadrons/cylon/wardriver/e47_wardriver_card.jpg",
+        diffuse = CUSTOM_ASSETS.."squadrons/cylon/wardriver/ace_diffuse.jpg", 
+        defense_tokens = {DEF_EVADE,DEF_SCATTER},
+        cost = 26,
+        aliases = {"E-47 [Legends]"}
+    })
+    
+    -- vespid bomber
+    vespid = {
+        mesh = CUSTOM_ASSETS.."squadrons/cylon/vespid/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."squadrons/cylon/vespid/diffuse.jpg",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(vespid, CYL_SQUAD, {
+        name = "Vespid Bomber Squadron",
+        front = CUSTOM_ASSETS.."squadrons/cylon/vespid/vespid_card.jpg",
+        cost = 12,
+        aliases = {"Vespid Bomber Squadron [Legends]"}
+    })
+    Squadron:new(vespid, CYL_SQUAD, {
+        name = "Helios-07",
+        front = CUSTOM_ASSETS.."squadrons/cylon/vespid/helios07_vespid_card.jpg",
+        diffuse = CUSTOM_ASSETS.."squadrons/cylon/vespid/ace_diffuse.jpg", 
+        defense_tokens = {DEF_EVADE,DEF_SCATTER},
+        cost = 26,
+        aliases = {"Helios-07 [Legends]"}
+    })
 
 -- UNSC faction
     UNSC_SHIP = {
