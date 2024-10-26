@@ -1746,14 +1746,14 @@ end
 SHIPS_BY_FACTION = {}
 CARDS_BY_CATEGORY = {}
 function API_CacheShip(o)
-    printToAll("Sideloading Ship: ["..o.name.." ("..o.cost..")]",{.5, 1,.5})
+    -- printToAll("Sideloading Ship: ["..o.name.." ("..o.cost..")]",{.5, 1,.5})
     Cache(SHIPS,o)
 end
 function API_CacheCard(o)
-    -- if o.cost == nil then
-    --     printToAll("Sideloading Card: ["..o.name.."]",{.5, 1,.5})
+                            -- if o.cost == nil then
+                            --              printToAll("Sideloading Card: ["..o.name.."]",{.5, 1,.5})  --this was already commented out
     -- else
-        printToAll("Sideloading Card: ["..o.name.." ("..tostring(o.cost)..")]",{.5, 1,.5})
+        -- printToAll("Sideloading Card: ["..o.name.." ("..tostring(o.cost)..")]",{.5, 1,.5})
     -- end
     Cache(CARDS,o)
 end

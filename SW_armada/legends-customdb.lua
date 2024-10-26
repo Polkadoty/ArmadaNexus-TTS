@@ -295,9 +295,9 @@ SEPARATIST_SHIP = {back = CUSTOM_ASSETS.."ships/separatist/card_back.jpg",factio
 
     Ship:new(ShortHugeShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Prototype",
-        front = CUSTOM_ASSETS.."ships/separatist/subjugator/Subjugator_prototype.png",
+        front = CUSTOM_ASSETS.."ships/separatist/subjugator/Subjugator_prototype.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/subjugator/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/subjugator/diffuse_proto.png",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/subjugator/diffuse_proto.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/subjugator/ruler.obj", 
         maneuver = {{"I"},{"-","I"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO},
@@ -309,9 +309,9 @@ SEPARATIST_SHIP = {back = CUSTOM_ASSETS.."ships/separatist/card_back.jpg",factio
 
     Ship:new(ShortHugeShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Heavy Cruiser",
-        front = CUSTOM_ASSETS.."ships/separatist/subjugator/Subjugator_Heavy_cruiser.png",
+        front = CUSTOM_ASSETS.."ships/separatist/subjugator/Subjugator_Heavy_cruiser.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/subjugator/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/subjugator/diffuse_heavy.png",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/subjugator/diffuse_heavy.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/subjugator/ion_ruler.obj", 
         maneuver = {{"I"},{"-","I"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO},
@@ -323,9 +323,9 @@ SEPARATIST_SHIP = {back = CUSTOM_ASSETS.."ships/separatist/card_back.jpg",factio
 
     Ship:new(ShortHugeShip,SEPARATIST_SHIP, {
         name = "Subjugator-class Testbed",
-        front = CUSTOM_ASSETS.."ships/separatist/subjugator/Subjugator_testbed.png",
+        front = CUSTOM_ASSETS.."ships/separatist/subjugator/Subjugator_testbed.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/subjugator/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/subjugator/diffuse_testbed.png",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/subjugator/diffuse_testbed.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/subjugator/beam_ruler.obj", 
         maneuver = {{"I"},{"-","I"}},
         defense_tokens = {DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO},

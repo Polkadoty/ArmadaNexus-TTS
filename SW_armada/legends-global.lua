@@ -1,6 +1,8 @@
 ----#include TTS_armada/src/Global
 --italia table: https://i.imgur.com/ZH3BOIY.jpg
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
+CUSTOM_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
+
 local SQUAD_MOVE_RULER = 1
 local SQUAD_ATTACK_RULER = 2
 local SQUAD_ATTACK_CLOSE_RULER = 3
@@ -20,7 +22,7 @@ local SHIPS = {
     {ASSETS_ROOT..'misc/bases/small.obj',"http://paste.ee/r/eDbf1"},
     {ASSETS_ROOT..'misc/bases/medium.obj',"http://paste.ee/r/6LYTT"},
     {ASSETS_ROOT..'misc/bases/large.obj',"http://paste.ee/r/a7mfW"},
-    {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"}}
+    {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"},
     {CUSTOM_ASSETS..'misc/bases/shorthuge_collider.obj',"https://pastebin.com/raw/EnRBX4Lb"}} --custom massive/shortHuge
     -- "https://paste.ee/r/eDbf1",
     -- "https://paste.ee/r/6LYTT",
@@ -1103,8 +1105,8 @@ shield_pos = {
     {1.028,0,1.835,-1.835}, --med
     {1.323,0,2.377,-2.377}, --large
     {1.323,0,2.377,2.539*2+2.377+3.68}, --huge (=11.135)
-    --{1.055,0,1.835,6.4} --custom massive doublemed / sides mirror offset, zero, rear offset, front offset
-    {1.4,0,2.45,8.2} --custom massive shortHuge / sides mirror offset, zero, rear offset, front offset
+    --{1.055,0,1.835,6.4} --custom massive doublemed / shields sides mirror offset, zero, rear offset, front offset
+    {1.4,0,2.45,8.6} --custom massive shortHuge / shields sides mirror offset, zero, rear offset, front offset
 }
 function spawnShields(ship)
     --    local pos = ship.getPosition()
@@ -1120,13 +1122,13 @@ function spawnShields(ship)
             {0,0,-math.abs(o[3])},
         }
         if size==4 then --huge size, array 4 in ships[]
-            table.insert(offsets,{-math.abs(o[1]),0,2.539*2+3.68}) --front left
-            table.insert(offsets,{math.abs(o[1]),0,2.539*2+3.68}) --front right
+            table.insert(offsets,{-math.abs(o[1]),0,2.539*2+3.68}) --huge front left shield offset
+            table.insert(offsets,{math.abs(o[1]),0,2.539*2+3.68}) --huge front right shield offset
         elseif size==5 then --custom massive size, array 5 in ships[] 
-            --table.insert(offsets,{-math.abs(o[1]),0,4.50}) --doublemed
-            --table.insert(offsets,{math.abs(o[1]),0,4.50}) --doublemed
-            table.insert(offsets,{-math.abs(o[1]),0,5.75}) --shortHuge
-            table.insert(offsets,{math.abs(o[1]),0,5.75}) --shortHuge
+            --table.insert(offsets,{-math.abs(o[1]),0,4.50}) --doublemed front left shield offset
+            --table.insert(offsets,{math.abs(o[1]),0,4.50}) --doublemed front right shield offset
+            table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
+            table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
     
         end
 
