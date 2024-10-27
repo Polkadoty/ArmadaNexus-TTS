@@ -1,7 +1,7 @@
 ----#include TTS_armada/src/Global
 --italia table: https://i.imgur.com/ZH3BOIY.jpg
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
-CUSTOM_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
+CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
 
 local SQUAD_MOVE_RULER = 1
 local SQUAD_ATTACK_RULER = 2

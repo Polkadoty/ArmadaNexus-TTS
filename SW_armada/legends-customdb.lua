@@ -1,5 +1,5 @@
-CUSTOM_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
-LEGACY_ASSETS = 'https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
+CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
+LEGACY_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
 ARMADA_ASSETS = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 CARDS_LEGACY = 'https://raw.githubusercontent.com/eldrxdevelop/ArmadaLegacy/main/'
 
@@ -450,7 +450,7 @@ SEPARATIST_SQUAD = {back = CUSTOM_ASSETS.."squadrons/separatist/card_back.jpg",f
     })
 
 -- empire faction
-EMPIRE_SHIP = {back = ARMADA_ASSETS.."ships/empire/card_back.jpg",faction = "!Empire"}
+EMPIRE_SHIP = {back = CUSTOM_ASSETS.."ships/empire/card_back.jpg",faction = "!Empire"}
 
     Ship:new(MediumShip,EMPIRE_SHIP, {
         name = "Dreadnaught-class Imperial Refit",
@@ -511,7 +511,7 @@ EMPIRE_SHIP = {back = ARMADA_ASSETS.."ships/empire/card_back.jpg",faction = "!Em
     --UpdateCard("Interdictor Combat Refit",93,{front = CARDS_LEGACY.."ships/empire/interdictor/interdictor-combat-refit_rebalance.png",aliases = {"Interdictor Combat Refit [OldLegacy]"},cost = 88})
     --UpdateCard("Victory II-class Star Destroyer",85,{cost = 80,aliases={"Victory II Star Destroyer [OldLegacy]"}})
 
-EMPIRE_SQUAD = {back = ARMADA_ASSETS.."squadrons/empire/card_back.jpg",faction = "!Empire"}
+EMPIRE_SQUAD = {back = CUSTOM_ASSETS.."squadrons/empire/card_back.jpg",faction = "!Empire"}
 
     TIE_ADV = GetDefinition("TIE Advanced Squadron",12)
     TIE_FIG = GetDefinition("TIE Fighter Squadron",8)
@@ -1486,16 +1486,35 @@ COV_SQUAD = {back = CUSTOM_ASSETS.."ships/covenant/back.jpg",faction = "Covenant
 
     ------upgrades
 Commander = {type="Commander", back = CUSTOM_ASSETS.."cards/commander/back.jpg"}
+
 DefensiveRetrofit = {type="DefensiveRetrofit", back = CUSTOM_ASSETS.."cards/defretro/back.jpg"}
+
 FleetCommand = {type="FleetCommand", back = CUSTOM_ASSETS.."cards/fleetcom/back.jpg"}
+
 FleetSupport = {type="FleetSupport", back = CUSTOM_ASSETS.."cards/fleetsup/back.jpg"}
+
 IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."cards/ion/back.jpg"}
+
 OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."cards/offretro/back.jpg"}
+
 Officer = {type="Officer", back = CUSTOM_ASSETS.."cards/officer/back.jpg"}
+        Card:new(Officer,Separatist,{name="Sai Sircu", front = CUSTOM_ASSETS.."cards/officers/sai-sircu-officer.jpg", cost=9, aliases={"Sai Sircu [Legends]"}})
+
 SuperWeapon = {type="SuperWeapon", back = CUSTOM_ASSETS.."cards/super/back.jpg"}
+        Card:new(SuperWeapon,Separatist,{name="Ion Pulse Emitter", front = CUSTOM_ASSETS.."cards/officers/Superweapon_Ion_Pulse_Emitter.jpg", cost=7, aliases={"Ion Pulse Emitter [Legends]"}})
+        Card:new(SuperWeapon,Separatist,{name="Ionic Plasma Rotors", front = CUSTOM_ASSETS.."cards/officers/Superweapon_Ionic_plasma_rotors.jpg", cost=6, aliases={"Ionic Plasma Rotors [Legends]"}})
+        Card:new(SuperWeapon,Separatist,{name="Kyber Beam Cannon", front = CUSTOM_ASSETS.."cards/officers/Superweapon_Kyber_ion_canon.jpg", cost=10, aliases={"Kyber Beam Cannon [Legends]"}})
+
 SupportTeam = {type="SupportTeam", back = CUSTOM_ASSETS.."cards/support/back.jpg"}
+
 Title = {type="Title", back = CUSTOM_ASSETS.."cards/title/back.jpg"}
+        Card:new(Title,Separatist,{name="Devastation", front = CUSTOM_ASSETS.."cards/officers/Title_Devastation.jpg", cost=5, aliases={"Devastation [Legends]"}})
+        Card:new(Title,Separatist,{name="Malevolence", front = CUSTOM_ASSETS.."cards/officers/Title_Malevolence.jpg", cost=7, aliases={"Malevolence [Legends]"}})
+        Card:new(Title,Separatist,{name="Subjugator", front = CUSTOM_ASSETS.."cards/officers/Title_Subjugator.jpg", cost=3, aliases={"Subjugator [Legends]"}})
+
 WeaponsTeam = {type="WeaponsTeam", back = CUSTOM_ASSETS.."cards/wepteam/back.jpg"}
+
+
 -- = {type="", back = CUSTOM_ASSETS.."cards//back.jpg"}
     
     --starwars (new content factions)
@@ -1505,7 +1524,8 @@ Republic = {factions={"!Republic"}}
 Separatist = {factions={"!Separatist"}}
 CloneWars = {factions={"!Republic","!Separatist"}}
 
-    -- Armada Legacy (Old)
+
+-- Armada Legacy (Old)
     Card:new(Commander,Republic,{name="Admiral Coburn",  front = LEGACY_ASSETS.."cards/commanders/admiral-coburn.jpg", cost=25, aliases={"Admiral Coburn [OldLegacy]"}})
     Card:new(Commander,Republic,{name="Yoda",  front = LEGACY_ASSETS.."cards/commanders/yoda.jpg", cost=27, aliases={"Yoda [OldLegacy]"}})
     Card:new(Commander,Separatist,{name="Riff Tamson",  front = LEGACY_ASSETS.."cards/commanders/riff-tamson.jpg", cost=32, aliases={"Riff Tamson [OldLegacy]"}})
