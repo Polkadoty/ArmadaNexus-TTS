@@ -1484,7 +1484,17 @@ COV_SQUAD = {back = CUSTOM_ASSETS.."ships/covenant/back.jpg",faction = "Covenant
         aliases = {"Ferko - Seraph Squadron [Legends]"}
     })
 
-    ------upgrades
+------upgrades
+
+-- = {type="", back = CUSTOM_ASSETS.."cards//back.jpg"}
+
+--starwars (new content factions)
+    Empire = {factions={"!Empire"}}
+    Rebel = {factions={"!Rebellion"}}
+    Republic = {factions={"!Republic"}}
+    Separatist = {factions={"!Separatist"}}
+    CloneWars = {factions={"!Republic","!Separatist"}}
+
 Commander = {type="Commander", back = CUSTOM_ASSETS.."cards/commander/back.jpg"}
 
 DefensiveRetrofit = {type="DefensiveRetrofit", back = CUSTOM_ASSETS.."cards/defretro/back.jpg"}
@@ -1498,32 +1508,21 @@ IonCannons = {type="IonCannons", back = CUSTOM_ASSETS.."cards/ion/back.jpg"}
 OffensiveRetrofit = {type="OffensiveRetrofit", back = CUSTOM_ASSETS.."cards/offretro/back.jpg"}
 
 Officer = {type="Officer", back = CUSTOM_ASSETS.."cards/officer/back.jpg"}
-        Card:new(Officer,Separatist,{name="Sai Sircu", front = CUSTOM_ASSETS.."cards/officers/sai-sircu-officer.jpg", cost=9, aliases={"Sai Sircu [Legends]"}})
+        Card:new(Officer,Separatist,{name="Sai Sircu", front = CUSTOM_ASSETS.."cards/officer/sai-sircu-officer.jpg", cost=9, aliases={"Sai Sircu [Legends]"}})
 
 SuperWeapon = {type="SuperWeapon", back = CUSTOM_ASSETS.."cards/super/back.jpg"}
-        Card:new(SuperWeapon,Separatist,{name="Ion Pulse Emitter", front = CUSTOM_ASSETS.."cards/officers/Superweapon_Ion_Pulse_Emitter.jpg", cost=7, aliases={"Ion Pulse Emitter [Legends]"}})
-        Card:new(SuperWeapon,Separatist,{name="Ionic Plasma Rotors", front = CUSTOM_ASSETS.."cards/officers/Superweapon_Ionic_plasma_rotors.jpg", cost=6, aliases={"Ionic Plasma Rotors [Legends]"}})
-        Card:new(SuperWeapon,Separatist,{name="Kyber Beam Cannon", front = CUSTOM_ASSETS.."cards/officers/Superweapon_Kyber_ion_canon.jpg", cost=10, aliases={"Kyber Beam Cannon [Legends]"}})
+        Card:new(SuperWeapon,Separatist,{name="Ion Pulse Emitter", front = CUSTOM_ASSETS.."cards/super/Superweapon_Ion_Pulse_Emitter.jpg", cost=7, aliases={"Ion Pulse Emitter [Legends]"}})
+        Card:new(SuperWeapon,Separatist,{name="Ionic Plasma Rotors", front = CUSTOM_ASSETS.."cards/super/Superweapon_Ionic_plasma_rotors.jpg", cost=6, aliases={"Ionic Plasma Rotors [Legends]"}})
+        Card:new(SuperWeapon,Separatist,{name="Kyber Beam Cannon", front = CUSTOM_ASSETS.."cards/super/Superweapon_Kyber_ion_canon.jpg", cost=10, aliases={"Kyber Beam Cannon [Legends]"}})
 
 SupportTeam = {type="SupportTeam", back = CUSTOM_ASSETS.."cards/support/back.jpg"}
 
 Title = {type="Title", back = CUSTOM_ASSETS.."cards/title/back.jpg"}
-        Card:new(Title,Separatist,{name="Devastation", front = CUSTOM_ASSETS.."cards/officers/Title_Devastation.jpg", cost=5, aliases={"Devastation [Legends]"}})
-        Card:new(Title,Separatist,{name="Malevolence", front = CUSTOM_ASSETS.."cards/officers/Title_Malevolence.jpg", cost=7, aliases={"Malevolence [Legends]"}})
-        Card:new(Title,Separatist,{name="Subjugator", front = CUSTOM_ASSETS.."cards/officers/Title_Subjugator.jpg", cost=3, aliases={"Subjugator [Legends]"}})
+        Card:new(Title,Separatist,{name="Devastation", front = CUSTOM_ASSETS.."cards/title/Title_Devastation.jpg", cost=5, aliases={"Devastation [Legends]"}})
+        Card:new(Title,Separatist,{name="Malevolence", front = CUSTOM_ASSETS.."cards/title/Title_Malevolence.jpg", cost=7, aliases={"Malevolence [Legends]"}})
+        Card:new(Title,Separatist,{name="Subjugator", front = CUSTOM_ASSETS.."cards/title/Title_Subjugator.jpg", cost=3, aliases={"Subjugator [Legends]"}})
 
 WeaponsTeam = {type="WeaponsTeam", back = CUSTOM_ASSETS.."cards/wepteam/back.jpg"}
-
-
--- = {type="", back = CUSTOM_ASSETS.."cards//back.jpg"}
-    
-    --starwars (new content factions)
-Empire = {factions={"!Empire"}}
-Rebel = {factions={"!Rebellion"}}
-Republic = {factions={"!Republic"}}
-Separatist = {factions={"!Separatist"}}
-CloneWars = {factions={"!Republic","!Separatist"}}
-
 
 -- Armada Legacy (Old)
     Card:new(Commander,Republic,{name="Admiral Coburn",  front = LEGACY_ASSETS.."cards/commanders/admiral-coburn.jpg", cost=25, aliases={"Admiral Coburn [OldLegacy]"}})
