@@ -1610,8 +1610,6 @@ end
 
 CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
 LEGACY_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
-CARDS_LEGACY = 'https://raw.githubusercontent.com/eldrxdevelop/ArmadaLegacy/main/'
-ARMADA_ASSETS = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 
 DEF_BRACE = '79d121'
@@ -5009,7 +5007,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         mesh = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/diffuse_assault.jpg",
         --ruler = CUSTOM_ASSETS.."ships/cylon/basestar_modern/ruler.obj",
-        ruler = ARMADA_ASSETS .. "ships/empire/imperial/ruler.obj",
+        ruler = ASSETS_ROOT .. "ships/empire/imperial/ruler.obj",
         maneuver = { { "II" }, { "-", "I" } },
         defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_EVADE },
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
@@ -5023,7 +5021,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         mesh = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/diffuse_def.jpg",
         --ruler = CUSTOM_ASSETS.."ships/cylon/basestar_modern/ruler.obj",
-        ruler = ARMADA_ASSETS .. "ships/empire/imperial/ruler.obj",
+        ruler = ASSETS_ROOT .. "ships/empire/imperial/ruler.obj",
         maneuver = { { "II" }, { "-", "I" } },
         defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_EVADE },
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
@@ -5602,9 +5600,9 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
-    mesh = ARMADA_ASSETS .. "ships/empire/quasar/mesh.obj",
+    mesh = ASSETS_ROOT .. "ships/empire/quasar/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/rebel_II_diffuse.jpg",
-    ruler = ARMADA_ASSETS .. "ships/rebel/reb_quasar/ruler.obj",
+    ruler = ASSETS_ROOT .. "ships/rebel/reb_quasar/ruler.obj",
     maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
     defense_tokens = { DEF_BRACE, DEF_REDIRECT },
     shields = { 2, 2, 2, 1 },
