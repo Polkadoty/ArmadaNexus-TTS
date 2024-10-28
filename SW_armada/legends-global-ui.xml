@@ -94,7 +94,7 @@ width="400" -->
                 <Text fontSize="16" alignment="MiddleCenter"> <textcolor color="#0080FF"><b>Pro Tip</b></textcolor>  </Text>
                 <Text fontSize="16" alignment="MiddleLeft" horizontalOverflow="wrap"> Unfound rows marked  in <textcolor color="red"><b>RED</b></textcolor> </Text>
                 <Text fontSize="16" alignment="MiddleLeft"> Click ? on that line to deep search </Text>
-                <Text fontSize="16" alignment="MiddleLeft"> Also, copy paste that line and post in discord or steam workshop to notify Valadian! </Text>
+                <Text fontSize="16" alignment="MiddleLeft"> Also, copy paste that line and post in discord or steam workshop to notify SpaceNavy! </Text>
             </VerticalLayout>
             <!-- <Button text="Dismiss" preferredHeight="30" onClick="030220/onClick_dismiss_commandPopup"  color="#008000" /> -->
             <Button text="X" rectAlignment="UpperRight" width="30" height="30" tooltip="Close Popup" ignoreLayout="true" onClick="030220/onClick_dismiss_fleetHelp"  color="#FF0000" />
@@ -1141,7 +1141,7 @@ width="400" -->
             <Text alignment="MiddleLeft"> Click the page numbers below to explore recent features </Text>
         </HorizontalLayout>
         <HorizontalLayout preferredHeight="20" padding="20 0 0 0">
-            <Text alignment="MiddleLeft"> Join discord : https://discord.gg/MXFgPq68gR </Text>
+            <Text alignment="MiddleLeft"> Join the Armada Legends discord : https://discord.gg/gyCxmDDdJH </Text>
         </HorizontalLayout>
         <Text fontStyle="bold" fontSize="24" alignment="MiddleLeft" color="yellow" padding="20 20 3 3"> How to get started? </Text>
         <HorizontalLayout preferredHeight="20" padding="20 0 0 0">

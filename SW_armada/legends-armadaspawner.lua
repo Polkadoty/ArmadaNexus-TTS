@@ -4491,8 +4491,8 @@ Squadron:new(rogue_fighter, SEPARATIST_L_SQUAD, {
 Ship:new(MediumShip, EMPIRE_L_SHIP, {
     name = "Dreadnaught-class Imperial Refit",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-imperial-refit-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/empire/dread/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/empire/dread/dread_imp_texture.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_imp_texture.jpg",
     ruler = LEGACY_ASSETS .. "ships/empire/dread/ruler.obj",
     maneuver = { { "I" }, { "I", "I" } },
     defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
@@ -4505,8 +4505,8 @@ Ship:new(MediumShip, EMPIRE_L_SHIP, {
 Ship:new(MediumShip, EMPIRE_L_SHIP, {
     name = "Dreadnaught-class Katana Refit",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-katana-refit-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/empire/dread/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/empire/dread/dread_katana_texture.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_katana_texture.jpg",
     ruler = LEGACY_ASSETS .. "ships/empire/dread/ruler.obj",
     maneuver = { { "I" }, { "I", "I" } },
     defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
@@ -5008,22 +5008,22 @@ Ship:new(MediumShip, COV_L_SHIP, {
 
 --cas
 Ship:new(ShortHugeShip, COV_L_SHIP, {
-    name = "(WIP)CAS-class Assault Carrier",
+    name = "CAS-class Assault Carrier (WIP)",
     front = CUSTOM_ASSETS .. "ships/covenant/cas/cas_assault_card.jpg",
     mesh = CUSTOM_ASSETS .. "ships/covenant/cas/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/covenant/cas/diffuse_cas.jpg",
     ruler = CUSTOM_ASSETS .. "ships/covenant/cas/ruler.obj",
-    maneuver = { { "I" }, { "-", "I" }, { "-", "I", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_REDIRECT },
-    shields = { 2, 2, 2, 1 }, -- Front, left, right, rear
-    cost = 85,
-    command = 4,
-    aliases = { "CAS-class Assault Carrier [Legends]" }
+    maneuver = { { "-" }, { "I", "-" } },
+    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE, DEF_SALVO },
+    shields = { 4, 3, 3, 2, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
+    cost = 185,
+    aliases = { "CAS-class Assault Carrier [Legends]" },
+    command = 4
 })
 
 --crs
 Ship:new(SmallShip, COV_L_SHIP, {
-    name = "(WIP)CRS-class Light Cruiser",
+    name = "CRS-class Light Cruiser (WIP)",
     front = CUSTOM_ASSETS .. "ships/covenant/crs/crs_light_card.jpg",
     mesh = CUSTOM_ASSETS .. "ships/covenant/crs/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/covenant/crs/diffuse_crs.jpg",
@@ -5091,7 +5091,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
 })
 
 --bsg content
---colonial ships/squadrons
+--colonial ships
 
     -- mercury battlestar
     Ship:new(LargeShip, COL_L_SHIP, {
@@ -5261,6 +5261,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         aliases = { "Orion-class Pocket Battlestar [Legends]" }
     })
 
+--colonial squadrons
     --viper mk2
     viper_mk2 = {
         mesh = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/mesh.obj",
@@ -5362,7 +5363,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
 
 
---cylon ships/squadrons
+--cylon ships
     -- cylon war basestar
     Ship:new(LargeShip, CYL_L_SHIP, {
         name = "War Basestar Mk.1",

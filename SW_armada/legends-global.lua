@@ -2013,7 +2013,7 @@ function moveRuler(ship, direction, player_clicker_color,reversed)
     local size = ship.getVar('size')
     if size==nil then
         printToAll("Error: Cannot find ship size for: "..ship.getName(),{1,0,0})
-        printToAll("This should not happen, report to Valadian",{1,0,0})
+        printToAll("This should not happen, report to SpaceNavy",{1,0,0})
         return
     end
     local b_pos = ship_size[size]
@@ -2037,7 +2037,7 @@ function moveRuler(ship, direction, player_clicker_color,reversed)
     myruler.setVar('ship',ship)
     if ship.getTable('maneuver')==nil or #ship.getTable('maneuver')==0 then
         printToAll("Warning: Ship has no maneuver table: "..ship.getName(),{1,1,0})
-        printToAll("This should not happen, report to Valadian",{1,1,0})
+        printToAll("This should not happen, report to SpaceNavy",{1,1,0})
     end
     myruler.setTable('maneuver',ship.getTable('maneuver'))
 end
