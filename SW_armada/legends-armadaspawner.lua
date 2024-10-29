@@ -2172,6 +2172,7 @@ function onload()
     self.interactable = false
 
 --GCW armada ships
+--TODO: fix diffuse textures with better quality base scans
 ----#include defs/rebel/ships
 REBEL_SHIP = {
     back =      ASSETS_ROOT.."ships/rebel/card_back.jpg",
@@ -2852,14 +2853,16 @@ Squadron:new(bwing, REBEL_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/rebel/bwing/ten_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 19
+    cost = 19,
+    aliases = {"Ten Numb - B-wing Squadron"}
 })
 Squadron:new(bwing, REBEL_SQUAD, {
 	name = "Dagger Squadron",
     front =     ASSETS_ROOT.."squadrons/rebel/bwing/dagger_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/bwing/bo_sw_model.obj",
-    cost = 15
+    cost = 15,
+    aliases = {"Dagger Squadron - B-wing Squadron"}
 })
 ywing = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_he_model.obj",
@@ -2879,7 +2882,7 @@ Squadron:new(ywing, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 16,
-    aliases = {"Dutch Vander"}
+    aliases = {"Dutch Vander - Y-wing Squadron", "Dutch Vander"}
 })
 Squadron:new(ywing, REBEL_SQUAD, {
 	name = 'Norra Wexley',
@@ -2887,14 +2890,16 @@ Squadron:new(ywing, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 17
+    cost = 17,
+    aliases = {"Norra Wexley - Y-wing Squadron"}
 })
 Squadron:new(ywing, REBEL_SQUAD, {
 	name = 'Gold Squadron',
     front =     ASSETS_ROOT.."squadrons/rebel/ywing/gold_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_model.obj",
-    cost = 12
+    cost = 12,
+    aliases = {"Gold Squadron - Y-wing Squadron"}
 })
 awing = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/awing/co_model.obj",
@@ -2913,21 +2918,24 @@ Squadron:new(awing, REBEL_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/rebel/awing/tycho_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 16
+    cost = 16,
+    aliases = {"Tycho Celchu - A-wing Squadron"}
 })
 Squadron:new(awing, REBEL_SQUAD, {
 	name = "Shara Bey",
     front =     ASSETS_ROOT.."squadrons/rebel/awing/shara_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 17
+    cost = 17,
+    aliases = {"Shara Bey - A-wing Squadron"}
 })
 Squadron:new(awing, REBEL_SQUAD, {
 	name = "Green Squadron",
     front =     ASSETS_ROOT.."squadrons/rebel/awing/green_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/awing/bo_co_model.obj",
-    cost = 12
+    cost = 12,
+    aliases = {"Green Squadron - A-wing Squadron"}
 })
 xwing = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/xwing/bo_es_model.obj",
@@ -2946,21 +2954,24 @@ Squadron:new(xwing, REBEL_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/rebel/xwing/luke_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 20
+    cost = 20,
+    aliases = {"Luke Skywalker - X-wing Squadron"}
 })
 Squadron:new(xwing, REBEL_SQUAD, {
 	name = "Wedge Antilles",
     front =     ASSETS_ROOT.."squadrons/rebel/xwing/wedge_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 19
+    cost = 19,
+    aliases = {"Wedge Antilles - X-wing Squadron"}
 })
 Squadron:new(xwing, REBEL_SQUAD, {
 	name = "Biggs Darklighter",
     front =     ASSETS_ROOT.."squadrons/rebel/xwing/biggs_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 19
+    cost = 19,
+    aliases = {"Biggs Darklighter - X-wing Squadron"}
 })
 Squadron:new(xwing, REBEL_SQUAD, {
 	name = "Hera Syndulla",
@@ -2969,14 +2980,15 @@ Squadron:new(xwing, REBEL_SQUAD, {
     mesh =      ASSETS_ROOT.."squadrons/rebel/xwing/bo_do_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 23,
-    aliases = {'Hera Syndulla (xwing)','Hera Syndulla (X-wing)'}
+    aliases = {'Hera Syndulla (xwing)','Hera Syndulla (X-wing)',"Hera Syndulla - X-wing Squadron"}
 })
 Squadron:new(xwing, REBEL_SQUAD, {
 	name = "Rogue Squadron",
     front =     ASSETS_ROOT.."squadrons/rebel/xwing/rogue_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/xwing/bo_ro_model.obj",
-    cost = 14
+    cost = 14,
+    aliases = {"Rogue Squadron - X-wing Squadron"}
 })
 yt2400 = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt2400/ro_model.obj",
@@ -2996,7 +3008,8 @@ Squadron:new(yt2400, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/yt2400/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt2400/bo_ro_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 24
+    cost = 24,
+    aliases = {"Dash Rendar - Outrider"}
 })
 Squadron:new(yt2400, REBEL_SQUAD, {
 	name = "Mart Mattin",
@@ -3004,7 +3017,8 @@ Squadron:new(yt2400, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/yt2400/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt2400/gr_ro_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 22
+    cost = 22,
+    aliases = {"Mart Mattin - Sato's Hammer"}
 })
 yt1300 = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/co_es_model.obj",
@@ -3025,7 +3039,8 @@ Squadron:new(yt1300, REBEL_SQUAD, {
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
     move = 3,
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 26
+    cost = 26,
+    aliases = {"Han Solo - Millennium Falcon"}
 })
 Squadron:new(yt1300, REBEL_SQUAD, {
 	name = "Lando Calrissian",
@@ -3034,7 +3049,8 @@ Squadron:new(yt1300, REBEL_SQUAD, {
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
     move = 3,
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 23
+    cost = 23,
+    aliases = {"Lando Calrissian - Millennium Falcon"}
 })
 hwk = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/hwk/co_in_model.obj",
@@ -3053,7 +3069,8 @@ Squadron:new(hwk, REBEL_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/rebel/hwk/jan_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/hwk/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 19
+    cost = 19,
+    aliases = {"Jan Ors - Moldy Crow"}
 })
 Squadron:new(hwk, REBEL_SQUAD, {
 	name = "Kanan Jarrus",
@@ -3061,7 +3078,8 @@ Squadron:new(hwk, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/hwk/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/hwk/as_cl_ro_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 19
+    cost = 19,
+    aliases = {"Kanan Jarrus - HWK-290"}
 })
 scurrg = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/scurrg/bo_gr_he_model.obj",
@@ -3080,7 +3098,8 @@ Squadron:new(scurrg, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/scurrg/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/scurrg/bo_gr_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 21
+    cost = 21,
+    aliases = {"Nym - Havoc"}
 })
 Squadron:new(scurrg, REBEL_SQUAD, {
 	name = "Malee Hurra",
@@ -3088,7 +3107,8 @@ Squadron:new(scurrg, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/scurrg/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/scurrg/bo_gr_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 26
+    cost = 26,
+    aliases = {"Malee Hurra - Scurrg H-6 Bomber"}
 })
 z95 = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/z95/sw_model.obj",
@@ -3108,7 +3128,7 @@ Squadron:new(z95, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/z95/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 14,
-    aliases = {'Lietenant Blount'}
+    aliases = {"Lieutenant Blount - Z-95 Headhunter Squadron",'Lietenant Blount'}
 })
 ewing = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_sn_model.obj",
@@ -3128,7 +3148,8 @@ Squadron:new(ewing, REBEL_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
         mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 22
+    cost = 22,
+    aliases = {"Corran Horn - E-wing Squadron"}
 })
 vcx = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/vcx/he_re_st_model.obj",
@@ -3149,7 +3170,7 @@ Squadron:new(vcx, REBEL_SQUAD, {
     mesh =      ASSETS_ROOT.."squadrons/rebel/vcx/gr_ro_model.obj",
     defense_tokens = {DEF_BRACE},
     cost = 28,
-    aliases = {'Hera Syndulla (Ghost)'}
+    aliases = {'Hera Syndulla (Ghost)',"Hera Syndulla - Ghost"}
 })
 lancer = {
     mesh =      ASSETS_ROOT.."squadrons/rebel/lancer/bo_gr_ro_model.obj",
@@ -3168,7 +3189,8 @@ Squadron:new(lancer, REBEL_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/rebel/lancer/ketsu_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/lancer/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 22
+    cost = 22,
+    aliases = {"Ketsu Onyo - Shadow Caster"}
 })
 
 gauntlet = {
@@ -3181,7 +3203,8 @@ Squadron:new(gauntlet, REBEL_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/rebel/guantlet/fenn_card_v2_1.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/guantlet/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE},
-    cost = 24
+    cost = 24,
+    aliases = {"Fenn Rau - Mandalorian Gauntlet Fighter"}
 })
 
 ----#include defs/rebel/squadrons
@@ -3208,7 +3231,7 @@ Squadron:new(tie, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 15,
-    aliases = {"Mauler Mithel"}
+    aliases = {"Mauler Mithel - TIE Fighter Squadron", "Mauler Mithel"}
 })
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = '"Howlrunner"',
@@ -3216,21 +3239,23 @@ Squadron:new(tie, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 16,
-    aliases = {"Howlrunner"}
+    aliases = {"Howlrunner - TIE Fighter Squadron","Howlrunner"}
 })
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = 'Valen Rudor',
     front =     ASSETS_ROOT.."squadrons/empire/tie/valen_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 13
+    cost = 13,
+    aliases = {"Valen Rudor - TIE Fighter Squadron"}
 })
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = 'Black Squadron',
     front =     ASSETS_ROOT.."squadrons/empire/tie/black_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/tie/co_es_model.obj",
-    cost = 9
+    cost = 9,
+    aliases = {"Black Squadron - TIE Fighter Squadron"}
 })
 int = {
     mesh =      ASSETS_ROOT.."squadrons/empire/int/co_sw_model.obj",
@@ -3249,28 +3274,32 @@ Squadron:new(int, EMPIRE_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/empire/int/soontir_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/int/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 18
+    cost = 18,
+    aliases = {"Soontir Fel - TIE Interceptor Squadron"}
 })
 Squadron:new(int, EMPIRE_SQUAD, {
 	name = "Ciena Ree",
     front =     ASSETS_ROOT.."squadrons/empire/int/ciena_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/int/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 17
+    cost = 17,
+    aliases = {"Ciena Ree - TIE Interceptor Squadron"}
 })
 Squadron:new(int, EMPIRE_SQUAD, {
 	name = "Vult Skerris",
     front =     ASSETS_ROOT.."squadrons/empire/int/vult_card_v2_1.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/int/ace_diffuse.jpg",
     defense_tokens = {DEF_SCATTER,DEF_BRACE},
-    cost = 18
+    cost = 18,
+    aliases = {"Vult Skerris - TIE Interceptor Squadron"}
 })
 Squadron:new(int, EMPIRE_SQUAD, {
 	name = "Saber Squadron",
     front =     ASSETS_ROOT.."squadrons/empire/int/saber_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/int/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/int/sn_sw_model.obj",
-    cost = 12
+    cost = 12,
+    aliases = {"Saber Squadron - TIE Interceptor Squadron"}
 })
 bom = {
     mesh =      ASSETS_ROOT.."squadrons/empire/bom/bo_he_model.obj",
@@ -3289,7 +3318,8 @@ Squadron:new(bom, EMPIRE_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/empire/bom/rhymer_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/bom/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 16
+    cost = 16,
+    aliases = {"Major Rhymer - TIE Bomber Squadron"}
 })
 Squadron:new(bom, EMPIRE_SQUAD, {
 	name = "Captain Jonus",
@@ -3297,14 +3327,16 @@ Squadron:new(bom, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/bom/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/bom/bo_gr_he_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 16
+    cost = 16,
+    aliases = {"Captain Jonus - TIE Bomber Squadron"}
 })
 Squadron:new(bom, EMPIRE_SQUAD, {
 	name = "Gamma Squadron",
     front =     ASSETS_ROOT.."squadrons/empire/bom/gamma_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/bom/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/bom/bo_gr_model.obj",
-    cost = 10
+    cost = 10,
+    aliases = {"Gamma Squadron - TIE Bomber Squadron"}
 })
 adv = {
     mesh =      ASSETS_ROOT.."squadrons/empire/adv/es_model.obj",
@@ -3324,21 +3356,23 @@ Squadron:new(adv, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 21,
-    aliases = {'Darth Vader (TIE Advanced)'}
+    aliases = {'Darth Vader (TIE Advanced)',"Darth Vader - TIE Advanced Squadron"}
 })
 Squadron:new(adv, EMPIRE_SQUAD, {
 	name = "Zertik Strom",
     front =     ASSETS_ROOT.."squadrons/empire/adv/zertik_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 15
+    cost = 15,
+    aliases = {"Zertik Strom - TIE Advanced Squadron"}
 })
 Squadron:new(adv, EMPIRE_SQUAD, {
 	name = "Tempest Squadron",
     front =     ASSETS_ROOT.."squadrons/empire/adv/tempest_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/adv/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/adv/bo_es_model.obj",
-    cost = 13
+    cost = 13,
+    aliases = {"Tempest Squadron - TIE Advanced Squadron"}
 })
 firespray = {
     mesh =      ASSETS_ROOT.."squadrons/empire/firespray/bo_ro_model.obj",
@@ -3357,7 +3391,8 @@ Squadron:new(firespray, EMPIRE_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/empire/firespray/fett_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 26
+    cost = 26,
+    aliases = {"Boba Fett - Slave I"}
 })
 Squadron:new(firespray, EMPIRE_SQUAD, {
 	name = "Hondo Ohnaka",
@@ -3365,7 +3400,8 @@ Squadron:new(firespray, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/firespray/bo_gr_ro_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 24
+    cost = 24,
+    aliases = {"Hondo Ohnaka - Slave I"}
 })
 jumpmaster = {
     mesh =      ASSETS_ROOT.."squadrons/empire/jumpmaster/in_sw_model.obj",
@@ -3383,7 +3419,8 @@ Squadron:new(jumpmaster, EMPIRE_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/empire/jumpmaster/dengar_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 20
+    cost = 20,
+    aliases = {"Dengar - Punishing One"}
 })
 Squadron:new(jumpmaster, EMPIRE_SQUAD, {
 	name = "Tel Trevura",
@@ -3391,7 +3428,8 @@ Squadron:new(jumpmaster, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/jumpmaster/gr_ro_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 17
+    cost = 17,
+    aliases = {"Tel Trevura - JumpMaster 5000"}
 })
 aggressor = {
     mesh =      ASSETS_ROOT.."squadrons/empire/aggressor/co_ro_model.obj",
@@ -3411,7 +3449,8 @@ Squadron:new(aggressor, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/ace_diffuse.jpg",
     move = 5,
     defense_tokens = {DEF_SCATTER},
-    cost = 21
+    cost = 21,
+    aliases = {"IG-88 - IG-2000"}
 })
 Squadron:new(aggressor, EMPIRE_SQUAD, {
 	name = "IG-88B",
@@ -3419,7 +3458,8 @@ Squadron:new(aggressor, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/ace_diffuse.jpg",
     move = 5,
     defense_tokens = {DEF_SCATTER},
-    cost = 21
+    cost = 21,
+    aliases = {"IG-88B - IG-2000B"}
 })
 yv666 = {
     mesh =      ASSETS_ROOT.."squadrons/empire/yv666/gr_he_ro_model.obj",
@@ -3440,7 +3480,8 @@ Squadron:new(yv666, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/yv666/ace_diffuse.jpg",
     move = 3,
     defense_tokens = {DEF_BRACE},
-    cost = 23
+    cost = 23,
+    aliases = {"Bossk - Hound's Tooth"}
 })
 Squadron:new(yv666, EMPIRE_SQUAD, {
 	name = "Moralo Eval",
@@ -3449,7 +3490,8 @@ Squadron:new(yv666, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/yv666/ace_diffuse.jpg",
     move = 3,
     defense_tokens = {DEF_BRACE},
-    cost = 22
+    cost = 22,
+    aliases = {"Moralo Eval - YV-666"}
 })
 phantom = {
     mesh =      ASSETS_ROOT.."squadrons/empire/pha/cl_model.obj",
@@ -3469,7 +3511,7 @@ Squadron:new(phantom, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/pha/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 20,
-    aliases = {"Whisper"}
+    aliases = {"Whisper","Whisper - TIE Phantom Squadron"}
 })
 defender = {
     mesh =      ASSETS_ROOT.."squadrons/empire/def/bo_model.obj",
@@ -3489,7 +3531,8 @@ Squadron:new(defender, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/def/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/def/bo_gr_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 21
+    cost = 21,
+    aliases = {"Maarek Stele - TIE Defender Squadron"}
 })
 Squadron:new(defender, EMPIRE_SQUAD, {
 	name = 'Darth Vader',
@@ -3498,7 +3541,7 @@ Squadron:new(defender, EMPIRE_SQUAD, {
     mesh =      ASSETS_ROOT.."squadrons/empire/def/ad_bo_ro_model.obj",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 25,
-    aliases = {'Darth Vader (defender)','Darth Vader (TIE Defender)'}
+    aliases = {'Darth Vader (defender)','Darth Vader (TIE Defender)',"Darth Vader - TIE Defender Squadron"}
 })
 lambda = {
     mesh =      ASSETS_ROOT.."squadrons/empire/lambda/he_re_st_model.obj",
@@ -3518,7 +3561,8 @@ Squadron:new(lambda, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/lambda/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/lambda/he_re_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 20
+    cost = 20,
+    aliases = {"Colonel Jendon - Lambda-class Shuttle"}
 })
 decimator = {
     mesh =      ASSETS_ROOT.."squadrons/empire/decimator/co_he_ro_model.obj",
@@ -3538,7 +3582,8 @@ Squadron:new(decimator, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/decimator/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/decimator/co_ro_model.obj",
     defense_tokens = {DEF_BRACE},
-    cost = 27
+    cost = 27,
+    aliases = {"Morna Kee - VT-49 Decimator"}
 })
 gauntlet = {
     mesh =      ASSETS_ROOT.."squadrons/empire/guantlet/as_ro_model.obj",
@@ -3557,7 +3602,8 @@ Squadron:new(gauntlet, EMPIRE_SQUAD, {
     front =     ASSETS_ROOT.."squadrons/empire/guantlet/saxon_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/guantlet/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE},
-    cost = 23
+    cost = 23,
+    aliases = {"Gar Saxon - Mandalorian Gauntlet Fighter"}
 })
 
 
@@ -3846,7 +3892,7 @@ Ship:new(SmallShip,SEPARATIST_SHIP,{
 
 ----#include defs/republic/squadrons
 REPUBLIC_SQUAD = {
-    back =      ASSETS_ROOT.."ships/republic/card_back.jpg", --TODO: Replace Long Ship version
+    back =      CUSTOM_ASSETS.."squadrons/republic/card_back.jpg",
     faction = "Republic"
 }
 v19 = {
@@ -3869,7 +3915,7 @@ Squadron:new(v19, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 17,
-    aliases = {"Axe"}
+    aliases = {"Axe - V-19 Torrent Squadron","Axe"}
 })
 
 -- Escort, Swarm
@@ -3879,7 +3925,7 @@ Squadron:new(v19, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 16,
-    aliases = {"Kickback"}
+    aliases = {"Kickback - V-19 Torrent Squadron","Kickback"}
 })
 
 delta = {
@@ -3903,7 +3949,8 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/ahsoka_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_gr_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 23
+    cost = 23,
+    aliases = {"Ahsoka Tano - Delta-7 Aethersprite Squadron"}
 })
 -- Adept, Counter
 Squadron:new(delta, REPUBLIC_SQUAD, {
@@ -3912,7 +3959,8 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/luminara_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 23
+    cost = 23,
+    aliases = {"Luminara Unduli - Delta-7 Aethersprite Squadron"}
 })
 -- Adept, Counter, Intel
 Squadron:new(delta, REPUBLIC_SQUAD, {
@@ -3921,7 +3969,8 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/kit_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_in_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 26
+    cost = 26,
+    aliases = {"Kit Fisto - Delta-7 Aethersprite Squadron"}
 })
 -- Adept, Counter
 Squadron:new(delta, REPUBLIC_SQUAD, {
@@ -3930,7 +3979,8 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/plo_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 24
+    cost = 24,
+    aliases = {"Plo Koon - Delta-7 Aethersprite Squadron"}
 })
 --Adept, Counter 2, Dodge 1
 Squadron:new(delta, REPUBLIC_SQUAD, {
@@ -3940,7 +3990,7 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_do_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 24,
-    aliases = {'Anakin Skywalker (delta)', 'Anakin Skywalker (Delta-7)'}
+    aliases = {"Anakin Skywalker - Delta-7 Aethersprite Squadron",'Anakin Skywalker (delta)', 'Anakin Skywalker (Delta-7)'}
 })
 
 ywing_gar = {
@@ -3964,7 +4014,7 @@ Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
     mesh =      ASSETS_ROOT.."squadrons/republic/ywing/ad_bo_he_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 19,
-    aliases = {'Anakin Skywalker (BTL-B)'}
+    aliases = {"Anakin Skywalker - BTL-B Y-Wing Squadron",'Anakin Skywalker (BTL-B)'}
 })
 -- Bomber, Heavy
 Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
@@ -3973,7 +4023,7 @@ Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 16,
-    aliases = {'\"Matchstick\"'}
+    aliases = {"Matchstick - BTL-B Y-Wing Squadron",'\"Matchstick\"'}
 })
 
 arc = {
@@ -3996,13 +4046,13 @@ Squadron:new(arc, REPUBLIC_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/arc/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 23,
-    aliases = {"Odd Ball", "Oddball"}
+    aliases = {"Odd Ball - ARC-170 Starfighter Squadron","Odd Ball", "Oddball"}
 })
 
 ----#include defs/republic/squadrons
 ----#include defs/separatist/squadrons
 SEPARATIST_SQUAD = {
-    back =      ASSETS_ROOT.."ships/separatist/card_back.jpg", --TODO: Replace Long Ship version
+    back =      CUSTOM_ASSETS.."squadrons/separatist/card_back.jpg",
     faction = "Separatist"
 }
 vulture = {
@@ -4024,14 +4074,16 @@ vulture.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 Squadron:new(vulture, SEPARATIST_SQUAD, {
 	name = "Haor Chall Prototypes",
     front =     ASSETS_ROOT.."squadrons/separatist/vulture/haor_card.jpg",
-    cost = 16
+    cost = 16,
+    aliases = {"Haor Chall Prototypes - Vulture-class Droid Fighter Squadron"}
 })
 -- AI: Anti-Squadron, Swarm, Intel
 Squadron:new(vulture, SEPARATIST_SQUAD, {
 	name = "DFS-311",
     front =     ASSETS_ROOT.."squadrons/separatist/vulture/dfs_card.jpg",
     mesh =      ASSETS_ROOT.."squadrons/separatist/vulture/ai_in_sw_model.obj",
-    cost = 18
+    cost = 18,
+    aliases = {"DFS-311 - Vulture-class Droid Fighter Squadron"}
 })
 
 hyena = {
@@ -4055,13 +4107,14 @@ Squadron:new(hyena, SEPARATIST_SQUAD, {
 	name = "Baktoid Prototypes",
     front =     ASSETS_ROOT.."squadrons/separatist/hyena/baktoid_card.jpg",
     cost = 16,
-    aliases = {"Baktoid Prototype"}
+    aliases = {"Baktoid Prototypes - Hyena-class Droid Bomber Squadron","Baktoid Prototype"}
 })
 --  AI: Battery, Bomber, Heavy
 Squadron:new(hyena, SEPARATIST_SQUAD, {
 	name = "DBS-404",
     front =     ASSETS_ROOT.."squadrons/separatist/hyena/dbs_card.jpg",
-    cost = 17
+    cost = 17,
+    aliases = {"DBS-404 - Hyena-class Droid Bomber Squadron"}
 })
 
 tri = {
@@ -4083,14 +4136,16 @@ tri.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "Phlac-Arphocc Prototypes",
     front =     ASSETS_ROOT.."squadrons/separatist/tri/phlacc_card.jpg",
-    cost = 19
+    cost = 19,
+    aliases = {"Phlac-Arphocc Prototype - Droid Tri-Fighter Squadron","Phlac-Arphocc Prototypes - Droid Tri-Fighter Squadron"}
 })
 --  Counter, Swarm, AI:Anti-squadron, snipe 3
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "DIS-T81",
     front =     ASSETS_ROOT.."squadrons/separatist/tri/dis_card.jpg",
     mesh =      ASSETS_ROOT.."squadrons/separatist/tri/ai_co_sn_sw_model.obj",
-    cost = 17
+    cost = 17,
+    aliases = {"DIS-T81 - Droid Tri-Fighter Squadron"}
 })
 
 belbullab = {
@@ -5586,10 +5641,13 @@ Squadron:new(seraph, COV_L_SQUAD, {
 
 ----#include defs/separatist/squadrons
 
+-- Base Armada Upgrades
+---CUSTOM_ASSETS.."cards/.updated/upgrades/.jpg"
+
 ----#include defs/cards/commanders
 Commander = {
     type="Commander",
-    back = "https://i.imgur.com/fMJMaYo.png"
+    back = CUSTOM_ASSETS.."cards/commander/back.jpg"
 }
 --rebel
 Rebel = {
@@ -5632,10 +5690,10 @@ Republic = {
 --republic
 Card:new(Commander,Republic,{name="Bail Organa",  front="https://i.imgur.com/SBYa2yD.jpeg", cost=28})
 Card:new(Commander,Republic,{name="Obi-Wan Kenobi",  front="https://i.imgur.com/xkfBnRw.jpeg", cost=28, aliases = {"Obi Wan Kenobi"}})
-Card:new(Commander,Republic,{name="Luminara Unduli",  front="https://i.imgur.com/SlkHtHE.png", cost=25})
-Card:new(Commander,Republic,{name="Admiral Tarkin",  front="https://i.imgur.com/mJplVe5.png", cost=30})
-Card:new(Commander,Republic,{name="Admiral Yularen", front="https://i.imgur.com/QloblZJ.jpeg", cost=24})
-Card:new(Commander,Republic,{name="Plo Koon", front="https://i.imgur.com/RY01HsT.jpg", cost=26})
+Card:new(Commander,Republic,{name="Luminara Unduli",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/luminara-unduli-commander.jpg", cost=25})
+Card:new(Commander,Republic,{name="Admiral Tarkin",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-tarkin-commander.jpg", cost=30})
+Card:new(Commander,Republic,{name="Admiral Yularen", front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-yularen-commander.jpg", cost=24})
+Card:new(Commander,Republic,{name="Plo Koon", front=CUSTOM_ASSETS.."cards/.updated/upgrades/plo-koon-commander.jpg", cost=26})
 Card:new(Commander,Republic,{name="Anakin Skywalker",  front=ASSETS_ROOT.."cards/commanders/anakin_skywalker_v2_1.jpg", cost=31})
 
 Separatist = {
@@ -5644,21 +5702,21 @@ Separatist = {
 --separatist
 Card:new(Commander,Separatist,{name="Count Dooku",  front="https://i.imgur.com/YOm4LIi.jpeg", cost=30})
 Card:new(Commander,Separatist,{name="Kraken",  front="https://i.imgur.com/zLNsrOo.jpeg", cost=30})
-Card:new(Commander,Separatist,{name="General Grievous",  front="https://i.imgur.com/xLHg92l.png", cost=20})
-Card:new(Commander,Separatist,{name="Admiral Trench", front="https://i.imgur.com/eOaryOm.png", cost=36})
-Card:new(Commander,Separatist,{name="Mar Tuuk", front="https://i.imgur.com/POTMBXQ.png", cost=28})
-Card:new(Commander,Separatist,{name="TF-1726", front="https://i.imgur.com/aptrDok.png", cost=26})
+Card:new(Commander,Separatist,{name="General Grievous",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/general-grievous-commander.jpg", cost=20})
+Card:new(Commander,Separatist,{name="Admiral Trench", front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-trench-commander.jpg", cost=36})
+Card:new(Commander,Separatist,{name="Mar Tuuk", front=CUSTOM_ASSETS.."cards/.updated/upgrades/mar-tuuk-commander.jpg", cost=28})
+Card:new(Commander,Separatist,{name="TF-1726", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tf-1726-commander.jpg", cost=26})
 
 ----#include defs/cards/commanders
 ----#include defs/cards/defensive_retrofit
 DefensiveRetrofit = {
     type="DefensiveRetrofit",
-    back = "https://i.imgur.com/WXkUkKe.png"
+    back = CUSTOM_ASSETS.."cards/defretro/back.jpg"
 }
 CloneWars = {
     factions={"Republic","Separatist"}
 }
-Card:new(DefensiveRetrofit,CloneWars,{name="Thermal Shields", front="https://i.imgur.com/ih2D2Zz.png", cost=5})
+Card:new(DefensiveRetrofit,CloneWars,{name="Thermal Shields", front=CUSTOM_ASSETS.."cards/.updated/upgrades/thermal-shields.jpg", cost=5})
 
 Card:new(DefensiveRetrofit,{name="Advanced Projectors", front="https://i.imgur.com/fREeP77.jpg", cost=6})
 Card:new(DefensiveRetrofit,{name="Cluster Bombs", front="https://i.imgur.com/Ngqc1s9.jpg", cost=5})
@@ -5672,7 +5730,7 @@ Card:new(DefensiveRetrofit,{name="Reinforced Blast Doors", front="https://i.imgu
 ----#include defs/cards/experimental_retrofit
 ExperimentalRetrofit = {
     type="ExperimentalRetrofit",
-    back = "https://i.imgur.com/SAnzYjF.png"
+    back = CUSTOM_ASSETS.."cards/exp/back.jpg"
 }
 Card:new(ExperimentalRetrofit,{name="G-8 Experimental Projector", front="https://i.imgur.com/DUzGkon.jpg", cost=8})
 Card:new(ExperimentalRetrofit,{name="G7-X Grav Well Projector", front="https://i.imgur.com/BaMEJzl.jpg", cost=2})
@@ -5683,7 +5741,7 @@ Card:new(ExperimentalRetrofit,{name="Targeting Scrambler", front="https://i.imgu
 ----#include defs/cards/fleet_command
 FleetCommand = {
     type="FleetCommand",
-    back = "https://i.imgur.com/etN596C.png" --TODO: Fix this less awful image
+    back = CUSTOM_ASSETS.."cards/fleetcom/back.jpg"
 }
 CloneWars = {
     factions={"Republic","Separatist"}
@@ -5694,15 +5752,15 @@ Card:new(FleetCommand,{name="Intensify Firepower!", front="https://i.imgur.com/X
 Card:new(FleetCommand,{name="Shields to Maximum!", front="https://i.imgur.com/2I3JN7G.jpg", cost=6})
 Card:new(FleetCommand,{name="Take Evasive Action!", front="https://i.imgur.com/Grqrp2Y.jpg", cost=6})
 
-Card:new(FleetCommand,Republic,{name="Mercy Mission", front="https://i.imgur.com/G5WinB0.png", cost=0})
+Card:new(FleetCommand,Republic,{name="Mercy Mission", front=CUSTOM_ASSETS.."cards/.updated/upgrades/mercy-mission.jpg", cost=0})
 Card:new(FleetCommand,Separatist,{name="Jedi Hostage", front="https://i.imgur.com/rtdHtYX.png", cost=3})
-Card:new(FleetCommand,CloneWars,{name="Hot Landing", front="https://i.imgur.com/Gst4AaJ.png", cost=3})
+Card:new(FleetCommand,CloneWars,{name="Hot Landing", front=CUSTOM_ASSETS.."cards/.updated/upgrades/hot-landing.jpg", cost=3})
 
 ----#include defs/cards/fleet_command
 ----#include defs/cards/fleet_support
 FleetSupport = {
     type="FleetSupport",
-    back = "https://i.imgur.com/bH1FR0J.png"
+    back = CUSTOM_ASSETS.."cards/fleetsup/back.jpg"
 }
 Card:new(FleetSupport,{name="Bomber Command Center", front="https://i.imgur.com/slRsjXp.jpg", cost=8})
 Card:new(FleetSupport,{name="Comms Net", front="https://i.imgur.com/56EgYe9.jpg", cost=2})
@@ -5716,7 +5774,7 @@ Card:new(FleetSupport,{name="Slicer Tools", front="https://i.imgur.com/f3pcTt5.j
 ----#include defs/cards/ion_cannons
 IonCannons = {
     type="IonCannons",
-    back = "https://i.imgur.com/CzYiC1u.png"
+    back = CUSTOM_ASSETS.."cards/ion/back.jpg"
 }
 Card:new(IonCannons,{name="Heavy Ion Emplacements", front="https://i.imgur.com/S82y39J.jpg", cost=9})
 Card:new(IonCannons,{name="High-Capacity Ion Turbines", front="https://i.imgur.com/sNFD2X4.jpg", cost=8})
@@ -5726,21 +5784,21 @@ Card:new(IonCannons,{name="MS-1 Ion Cannons", front="https://i.imgur.com/WJpPDTH
 Card:new(IonCannons,{name="NK-7 Ion Cannons", front="https://i.imgur.com/pw7KB1o.jpg", cost=10})
 Card:new(IonCannons,{name="Overload Pulse", front="https://i.imgur.com/93yRQdH.jpg", cost=8})
 Card:new(IonCannons,{name="SW-7 Ion Batteries", front="https://i.imgur.com/rL77eki.jpg", cost=5})
-Card:new(IonCannons,{name="Point Defense Ion Cannons", front="https://i.imgur.com/Ed6N3bM.png", cost=4})
+Card:new(IonCannons,{name="Point Defense Ion Cannons", front=CUSTOM_ASSETS.."cards/.updated/upgrades/point-defense-ion-cannons.jpg", cost=4})
 
 ----#include defs/cards/ion_cannons
 ----#include defs/cards/offensive_retrofit
 OffensiveRetrofit = {
     type="OffensiveRetrofit",
-    back = "https://i.imgur.com/FSY3Hkx.png"
+    back = CUSTOM_ASSETS.."cards/offretro/back.jpg"
 }
 --republic
 Card:new(OffensiveRetrofit,Republic,{name="Hyperspace Rings", front="https://i.imgur.com/GCSZ4Wy.jpeg", cost=3})
-Card:new(OffensiveRetrofit,Republic,{name="SPHA-T", front="https://i.imgur.com/uIvMeUJ.png", cost=7})
+Card:new(OffensiveRetrofit,Republic,{name="SPHA-T", front=CUSTOM_ASSETS.."cards/.updated/upgrades/spha-t.jpg", cost=7})
 
 --separatist
 Card:new(OffensiveRetrofit,Separatist,{name="Hyperwave Signal Boost", front="https://i.imgur.com/NJQuMpr.jpeg", cost=3})
-Card:new(OffensiveRetrofit,Separatist,{name="B2 Rocket Troopers", front="https://i.imgur.com/cK6wUox.png", cost=7})
+Card:new(OffensiveRetrofit,Separatist,{name="B2 Rocket Troopers", front=CUSTOM_ASSETS.."cards/.updated/upgrades/b2-rocket-troopers.jpg", cost=7})
 
 --generic
 Card:new(OffensiveRetrofit,{name="Advanced Transponder Net", front="https://i.imgur.com/vm6HKV1.jpg", cost=5}) --modification)
@@ -5755,13 +5813,13 @@ Card:new(OffensiveRetrofit,{name="Proximity Mines", front="https://i.imgur.com/e
 Card:new(OffensiveRetrofit,{name="Quad Laser Turrets", front="https://i.imgur.com/HKfQx0O.jpg", cost=5})
 Card:new(OffensiveRetrofit,{name="Rapid Launch Bays", front="https://i.imgur.com/PHiQ5fk.jpg", cost=6})
 Card:new(OffensiveRetrofit,{name="Reserve Hangar Deck", front="https://i.imgur.com/CuuMCQr.jpg", cost=3})
-Card:new(OffensiveRetrofit,{name="Flak Guns", front="https://i.imgur.com/pRgw74R.png", cost=3})
+Card:new(OffensiveRetrofit,{name="Flak Guns", front=CUSTOM_ASSETS.."cards/.updated/upgradesflak-guns.jpg", cost=3})
 
 ----#include defs/cards/offensive_retrofit
 ----#include defs/cards/officer
 Officer = {
     type="Officer",
-    back = "https://i.imgur.com/QvnjHpd.png"
+    back = CUSTOM_ASSETS.."cards/officer/back.jpg"
 }
 -- Rebels
 Card:new(Officer,Rebel,{name="Adar Tallon", front="http://i.imgur.com/htbjXKu.jpg", cost=10})
@@ -5821,11 +5879,11 @@ Card:new(Officer,Republic,{name="Ahsoka Tano", front="https://i.imgur.com/SVAWnr
 Card:new(Officer,Separatist,{name="Rune Haako", front="https://i.imgur.com/aEgMSwp.jpg", cost=4})
 Card:new(Officer,Separatist,{name="Wat Tambor", front=ASSETS_ROOT.."cards/officers/wat_tambor_v2_1.jpg", cost=9})
 Card:new(Officer,Separatist,{name="T-Series Tactical Droid", front="https://i.imgur.com/8H1wATK.jpeg", cost=4})
-Card:new(Officer,Separatist,{name="Shu Mai", front="https://i.imgur.com/8dG1YpO.png", cost=4})
-Card:new(Officer,Separatist,{name="TI-99", front="https://i.imgur.com/V9CYOEU.png", cost=4})
-Card:new(Officer,Separatist,{name="Tikkes", front="https://i.imgur.com/l7G05tI.png", cost=2})
-Card:new(Officer,Separatist,{name="San Hill", front="https://i.imgur.com/AcVqv40.png", cost=3})
-Card:new(Officer,Separatist,{name="Passel Argente", front="https://i.imgur.com/fVSYbCJ.png", cost=6})
+Card:new(Officer,Separatist,{name="Shu Mai", front=CUSTOM_ASSETS.."cards/.updated/upgrades/shu-mai-officer.jpg", cost=4})
+Card:new(Officer,Separatist,{name="TI-99", front=CUSTOM_ASSETS.."cards/.updated/upgrades/ti-99-officer.jpg", cost=4})
+Card:new(Officer,Separatist,{name="Tikkes", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tikkes-officer.jpg", cost=2})
+Card:new(Officer,Separatist,{name="San Hill", front=CUSTOM_ASSETS.."cards/.updated/upgrades/san-hill-officer.jpg", cost=3})
+Card:new(Officer,Separatist,{name="Passel Argente", front=CUSTOM_ASSETS.."cards/.updated/upgrades/passel-argente-officer.jpg", cost=6})
 Card:new(Officer,Separatist,{name="Asajj Ventress", front=ASSETS_ROOT.."cards/officers/asajj_ventress_v2_1.jpg", cost=4})
 
 --generic
@@ -5850,7 +5908,7 @@ Card:new(Officer,{name="Wing Commander", front="https://i.imgur.com/FjHlkZC.jpg"
 ----#include defs/cards/ordnance
 Ordnance = {
     type="Ordnance",
-    back = "https://i.imgur.com/6SrNHUo.png"
+    back = CUSTOM_ASSETS.."cards/ord/back.jpg"
 }
 Card:new(Ordnance,{name="Assault Concussion Missiles", front="https://i.imgur.com/iuWMfEx.jpg", cost=5})
 Card:new(Ordnance,{name="Assault Proton Torpedoes", front="https://i.imgur.com/ZHMQWZr.jpg", cost=4})
@@ -5865,7 +5923,7 @@ Card:new(Ordnance,{name="Wide-Area Barrage", front="https://i.imgur.com/HA96Xmz.
 ----#include defs/cards/superweapon
 SuperWeapon = {
     type="SuperWeapon",
-    back = "https://i.imgur.com/wAfp2ow.jpeg"
+    back = CUSTOM_ASSETS.."cards/super/back.jpg"
 }
 Card:new(SuperWeapon,Rebel,{name="Magnite Crystal Tractor Beam Array", front="https://i.imgur.com/2YpzXNT.jpg", cost=10})
 Card:new(SuperWeapon,Empire,{name="Orbital Bombardment Particle Cannons", front="https://i.imgur.com/t9VRV0n.jpg", cost=5}) --modification)
@@ -5875,7 +5933,7 @@ Card:new(SuperWeapon,Empire,{name="Superheavy Composite Beam Turbolasers", front
 ----#include defs/cards/support_team
 SupportTeam = {
     type="SupportTeam",
-    back = "https://i.imgur.com/WjGbQ3t.png"
+    back = CUSTOM_ASSETS.."cards/support/back.jpg"
 }
 --separatist
 Card:new(SupportTeam,Separatist,{name="Battle Droid Reserves", front="https://i.imgur.com/ffhsdrO.jpeg", cost=4})
@@ -5893,7 +5951,7 @@ Card:new(SupportTeam,{name="Projection Experts", front="https://i.imgur.com/0hPA
 ----#include defs/cards/title
 Title = {
     type="Title",
-    back = "https://i.imgur.com/oBU2CKS.png"
+    back = CUSTOM_ASSETS.."cards/title/back.jpg"
 }
 --rebel
 Card:new(Title,Rebel,{name="Bright Hope", front="https://i.imgur.com/ppRWBhH.jpg", cost=2})
@@ -5993,26 +6051,26 @@ Card:new(Title,Separatist,{name="Foreman's Labor", front="https://i.imgur.com/cf
 Card:new(Title,Separatist,{name="Sa Nalaor", front="https://i.imgur.com/o0RS5kE.jpg", cost=5})
 Card:new(Title,Separatist,{name="Tide of Progress XII", front="https://i.imgur.com/rcXW6sg.jpeg", cost=2})
 
-Card:new(Title,Separatist,{name="Invisible Hand", front="https://i.imgur.com/gW84lFN.png", cost=9, aliases = {"Invisible-hand"}})
-Card:new(Title,Separatist,{name="Invincible", front="https://i.imgur.com/NcS65Gb.png", cost=5})
-Card:new(Title,Separatist,{name="Lucid Voice", front="https://i.imgur.com/b5i7cIW.png", cost=8})
+Card:new(Title,Separatist,{name="Invisible Hand", front=CUSTOM_ASSETS.."cards/.updated/upgrades/invisible-hand-title.jpg", cost=9, aliases = {"Invisible-hand"}})
+Card:new(Title,Separatist,{name="Invincible", front=CUSTOM_ASSETS.."cards/.updated/upgrades/invincible-title.jpg", cost=5})
+Card:new(Title,Separatist,{name="Lucid Voice", front=CUSTOM_ASSETS.."cards/.updated/upgrades/lucid-voice-title.jpg", cost=8})
 
-Card:new(Title,Separatist,{name="Patriot Fist", front="https://i.imgur.com/032w54v.png", cost=6})
-Card:new(Title,Separatist,{name="Nova Defiant", front="https://i.imgur.com/baLcwQJ.png", cost=4})
-Card:new(Title,Separatist,{name="Gilded Aegis", front="https://i.imgur.com/wbFFUaq.png", cost=5})
+Card:new(Title,Separatist,{name="Patriot Fist", front=CUSTOM_ASSETS.."cards/.updated/upgrades/patriot-fist-title.jpg", cost=6})
+Card:new(Title,Separatist,{name="Nova Defiant", front=CUSTOM_ASSETS.."cards/.updated/upgrades/nova-defiant-title.jpg", cost=4})
+Card:new(Title,Separatist,{name="Gilded Aegis", front=CUSTOM_ASSETS.."cards/.updated/upgrades/gilded-aegis-title.jpg", cost=5})
 
-Card:new(Title,Republic,{name="TB-73", front="https://i.imgur.com/IONCQi6.png", cost=5})
-Card:new(Title,Republic,{name="FB-88", front="https://i.imgur.com/l5LNFSR.png", cost=4})
+Card:new(Title,Republic,{name="TB-73", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tb-73-title.jpg", cost=5})
+Card:new(Title,Republic,{name="FB-88", front=CUSTOM_ASSETS.."cards/.updated/upgrades/fb-88-title.jpg", cost=4})
 
 Card:new(Title,Republic,{name="Tranquility", front=ASSETS_ROOT.."cards/titles/tranquility_v2_1.jpg", cost=7})
-Card:new(Title,Republic,{name="Triumphant", front="https://i.imgur.com/OTgslNK.png", cost=5})
-Card:new(Title,Republic,{name="Resolute", front="https://i.imgur.com/TVoRURO.png", cost=6})
+Card:new(Title,Republic,{name="Triumphant", front=CUSTOM_ASSETS.."cards/.updated/upgrades/triumphant-title.jpg", cost=5})
+Card:new(Title,Republic,{name="Resolute", front=CUSTOM_ASSETS.."cards/.updated/upgrades/resolute-title.jpg", cost=6})
 
 ----#include defs/cards/title
 ----#include defs/cards/turbolaser
 Turbolaser = {
     type="Turbolaser",
-    back = "https://i.imgur.com/YwrHjHG.png"
+    back = CUSTOM_ASSETS.."cards/turbo/back.jpg"
 }
 CloneWars = {
     factions={"Republic","Separatist"}
@@ -6034,13 +6092,13 @@ Card:new(Turbolaser,{name="Spinal Armament", front="https://i.imgur.com/0eLX7ML.
 Card:new(Turbolaser,{name="Turbolaser Reroute Circuits", front="https://i.imgur.com/6faOpzf.jpg", cost=7})
 Card:new(Turbolaser,{name="XI7 Turbolasers", front="https://i.imgur.com/leeZbxw.jpg", cost=6})
 Card:new(Turbolaser,{name="XX-9 Turbolasers", front="https://i.imgur.com/ttbae06.jpg", cost=5})
-Card:new(Turbolaser,{name="DBY-827 Heavy Turbolaser", front="https://i.imgur.com/wNkyRDb.png", cost=3, aliases = {"DBY-827 Heavy Turbolasers"}})
+Card:new(Turbolaser,{name="DBY-827 Heavy Turbolaser", front=CUSTOM_ASSETS.."cards/.updated/upgrades/dby-827-heavy-turbolasers.jpg", cost=3, aliases = {"DBY-827 Heavy Turbolasers"}})
 
 ----#include defs/cards/turbolaser
 ----#include defs/cards/weapons_team_and_offensive_retrofit
 WeaponsTeamAndOffensiveRetrofit = {
     type="WeaponsTeamAndOffensiveRetrofit",
-    back = "https://i.imgur.com/mPu7lfL.png"
+    back = CUSTOM_ASSETS.."cards/wepoff/back.jpg"
 }
 --rebel
 Card:new(WeaponsTeamAndOffensiveRetrofit,Rebel,{name="Cham Syndulla", front="https://i.imgur.com/1UBq5nW.jpg", cost=5})
@@ -6058,7 +6116,7 @@ Card:new(WeaponsTeamAndOffensiveRetrofit,{name="Boarding Troopers", front="https
 ----#include defs/cards/weapons_team
 WeaponsTeam = {
     type="WeaponsTeam",
-    back = "https://i.imgur.com/GhAHc4B.png"
+    back = CUSTOM_ASSETS.."cards/wepteam/back.jpg"
 }
 
 --rebel
@@ -6097,17 +6155,17 @@ Colonial = { factions = { "Colonial" } }
 Cylon = { factions = { "Cylon" } }
 BSG = { factions = { "Colonial", "Cylon" } }
 
-Commander = { type = "Commander", back = CUSTOM_ASSETS .. "cards/commander/back.jpg" }
-DefensiveRetrofit = { type = "DefensiveRetrofit", back = CUSTOM_ASSETS .. "cards/defretro/back.jpg" }
-FleetCommand = { type = "FleetCommand", back = CUSTOM_ASSETS .. "cards/fleetcom/back.jpg" }
-FleetSupport = { type = "FleetSupport", back = CUSTOM_ASSETS .. "cards/fleetsup/back.jpg" }
-IonCannons = { type = "IonCannons", back = CUSTOM_ASSETS .. "cards/ion/back.jpg" }
-OffensiveRetrofit = { type = "OffensiveRetrofit", back = CUSTOM_ASSETS .. "cards/offretro/back.jpg" }
-Officer = { type = "Officer", back = CUSTOM_ASSETS .. "cards/officer/back.jpg" }
-SuperWeapon = { type = "SuperWeapon", back = CUSTOM_ASSETS .. "cards/super/back.jpg" }
-SupportTeam = { type = "SupportTeam", back = CUSTOM_ASSETS .. "cards/support/back.jpg" }
-Title = { type = "Title", back = CUSTOM_ASSETS .. "cards/title/back.jpg" }
-WeaponsTeam = { type = "WeaponsTeam", back = CUSTOM_ASSETS .. "cards/wepteam/back.jpg" }
+-- Commander = { type = "Commander", back = CUSTOM_ASSETS .. "cards/commander/back.jpg" }
+-- DefensiveRetrofit = { type = "DefensiveRetrofit", back = CUSTOM_ASSETS .. "cards/defretro/back.jpg" }
+-- FleetCommand = { type = "FleetCommand", back = CUSTOM_ASSETS .. "cards/fleetcom/back.jpg" }
+-- FleetSupport = { type = "FleetSupport", back = CUSTOM_ASSETS .. "cards/fleetsup/back.jpg" }
+-- IonCannons = { type = "IonCannons", back = CUSTOM_ASSETS .. "cards/ion/back.jpg" }
+-- OffensiveRetrofit = { type = "OffensiveRetrofit", back = CUSTOM_ASSETS .. "cards/offretro/back.jpg" }
+-- Officer = { type = "Officer", back = CUSTOM_ASSETS .. "cards/officer/back.jpg" }
+-- SuperWeapon = { type = "SuperWeapon", back = CUSTOM_ASSETS .. "cards/super/back.jpg" }
+-- SupportTeam = { type = "SupportTeam", back = CUSTOM_ASSETS .. "cards/support/back.jpg" }
+-- Title = { type = "Title", back = CUSTOM_ASSETS .. "cards/title/back.jpg" }
+-- WeaponsTeam = { type = "WeaponsTeam", back = CUSTOM_ASSETS .. "cards/wepteam/back.jpg" }
 
 
 -- Armada Legends Upgrades
@@ -6935,7 +6993,7 @@ OPPONENTCOLORS = {
     ['Purple'] = {'Red','Yellow','White','Orange','Pink'}
 }
 
-DAMAGE_FACE = "http://i.imgur.com/l2lA0hL.jpg"
+DAMAGE_FACE = CUSTOM_ASSETS.."cards/.updated/damage/armada_damage_deck.png"
 function onClick_RefreshScore(player, _, idValue)
     findObjective()
     updateAllScores()

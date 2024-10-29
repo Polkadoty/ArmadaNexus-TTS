@@ -760,9 +760,64 @@ width="400" -->
             <Button id="ship46" class="shipCard"></Button>
             <Button id="ship47" class="shipCard"></Button>
             <Button id="ship48" class="shipCard"></Button>
+            <!-- <Button id="ship49" class="shipCard"></Button>
+            <Button id="ship50" class="shipCard"></Button>
+            <Button id="ship51" class="shipCard"></Button>
+            <Button id="ship52" class="shipCard"></Button>
+            <Button id="ship53" class="shipCard"></Button>
+            <Button id="ship54" class="shipCard"></Button>
+            <Button id="ship55" class="shipCard"></Button>
+            <Button id="ship56" class="shipCard"></Button>
+            <Button id="ship57" class="shipCard"></Button>
+            <Button id="ship58" class="shipCard"></Button>
+            <Button id="ship59" class="shipCard"></Button>
+            <Button id="ship60" class="shipCard"></Button>
+            <Button id="ship61" class="shipCard"></Button>
+            <Button id="ship62" class="shipCard"></Button>
+            <Button id="ship63" class="shipCard"></Button>
+            <Button id="ship64" class="shipCard"></Button>
+            <Button id="ship65" class="shipCard"></Button>
+            <Button id="ship66" class="shipCard"></Button>
+            <Button id="ship67" class="shipCard"></Button>
+            <Button id="ship68" class="shipCard"></Button>
+            <Button id="ship69" class="shipCard"></Button>
+            <Button id="ship70" class="shipCard"></Button>
+            <Button id="ship71" class="shipCard"></Button>
+            <Button id="ship72" class="shipCard"></Button>
+            <Button id="ship73" class="shipCard"></Button>
+            <Button id="ship74" class="shipCard"></Button>
+            <Button id="ship75" class="shipCard"></Button>
+            <Button id="ship76" class="shipCard"></Button>
+            <Button id="ship77" class="shipCard"></Button>
+            <Button id="ship78" class="shipCard"></Button>
+            <Button id="ship79" class="shipCard"></Button>
+            <Button id="ship80" class="shipCard"></Button>
+            <Button id="ship81" class="shipCard"></Button>
+            <Button id="ship82" class="shipCard"></Button>
+            <Button id="ship83" class="shipCard"></Button>
+            <Button id="ship84" class="shipCard"></Button>
+            <Button id="ship85" class="shipCard"></Button>
+            <Button id="ship86" class="shipCard"></Button>
+            <Button id="ship87" class="shipCard"></Button>
+            <Button id="ship88" class="shipCard"></Button>
+            <Button id="ship89" class="shipCard"></Button>
+            <Button id="ship90" class="shipCard"></Button>
+            <Button id="ship91" class="shipCard"></Button>
+            <Button id="ship92" class="shipCard"></Button>
+            <Button id="ship93" class="shipCard"></Button>
+            <Button id="ship94" class="shipCard"></Button>
+            <Button id="ship95" class="shipCard"></Button>
+            <Button id="ship96" class="shipCard"></Button>
+            <Button id="ship97" class="shipCard"></Button>
+            <Button id="ship98" class="shipCard"></Button>
+            <Button id="ship99" class="shipCard"></Button>
+            <Button id="ship100" class="shipCard"></Button> -->
+
             
         </GridLayout>
         <Button text="Spawn All" preferredHeight="40" onClick="030220/onClick_spawn_all_ships"  color="#008000" />
+        <!--TODO: Replace long spawn all button with up/down arrow keys to navigate longer spawn menu. -->
+
     </VerticalLayout>
 </Panel>
 
@@ -845,9 +900,64 @@ width="400" -->
             <Button id="upgrade46" class="upgradeCard"></Button>
             <Button id="upgrade47" class="upgradeCard"></Button>
             <Button id="upgrade48" class="upgradeCard"></Button>
+            <!-- <Button id="upgrade49" class="upgradeCard"></Button>
+            <Button id="upgrade50" class="upgradeCard"></Button>
+            <Button id="upgrade51" class="upgradeCard"></Button>
+            <Button id="upgrade52" class="upgradeCard"></Button>
+            <Button id="upgrade53" class="upgradeCard"></Button>
+            <Button id="upgrade54" class="upgradeCard"></Button>
+            <Button id="upgrade55" class="upgradeCard"></Button>
+            <Button id="upgrade56" class="upgradeCard"></Button>
+            <Button id="upgrade57" class="upgradeCard"></Button>
+            <Button id="upgrade58" class="upgradeCard"></Button>
+            <Button id="upgrade59" class="upgradeCard"></Button>
+            <Button id="upgrade60" class="upgradeCard"></Button>
+            <Button id="upgrade61" class="upgradeCard"></Button>
+            <Button id="upgrade62" class="upgradeCard"></Button>
+            <Button id="upgrade63" class="upgradeCard"></Button>
+            <Button id="upgrade64" class="upgradeCard"></Button>
+            <Button id="upgrade65" class="upgradeCard"></Button>
+            <Button id="upgrade66" class="upgradeCard"></Button>
+            <Button id="upgrade67" class="upgradeCard"></Button>
+            <Button id="upgrade68" class="upgradeCard"></Button>
+            <Button id="upgrade69" class="upgradeCard"></Button>
+            <Button id="upgrade70" class="upgradeCard"></Button>
+            <Button id="upgrade71" class="upgradeCard"></Button>
+            <Button id="upgrade72" class="upgradeCard"></Button>
+            <Button id="upgrade73" class="upgradeCard"></Button>
+            <Button id="upgrade74" class="upgradeCard"></Button>
+            <Button id="upgrade75" class="upgradeCard"></Button>
+            <Button id="upgrade76" class="upgradeCard"></Button>
+            <Button id="upgrade77" class="upgradeCard"></Button>
+            <Button id="upgrade78" class="upgradeCard"></Button>
+            <Button id="upgrade79" class="upgradeCard"></Button>
+            <Button id="upgrade80" class="upgradeCard"></Button>
+            <Button id="upgrade81" class="upgradeCard"></Button>
+            <Button id="upgrade82" class="upgradeCard"></Button>
+            <Button id="upgrade83" class="upgradeCard"></Button>
+            <Button id="upgrade84" class="upgradeCard"></Button>
+            <Button id="upgrade85" class="upgradeCard"></Button>
+            <Button id="upgrade86" class="upgradeCard"></Button>
+            <Button id="upgrade87" class="upgradeCard"></Button>
+            <Button id="upgrade88" class="upgradeCard"></Button>
+            <Button id="upgrade89" class="upgradeCard"></Button>
+            <Button id="upgrade90" class="upgradeCard"></Button>
+            <Button id="upgrade91" class="upgradeCard"></Button>
+            <Button id="upgrade92" class="upgradeCard"></Button>
+            <Button id="upgrade93" class="upgradeCard"></Button>
+            <Button id="upgrade94" class="upgradeCard"></Button>
+            <Button id="upgrade95" class="upgradeCard"></Button>
+            <Button id="upgrade96" class="upgradeCard"></Button>
+            <Button id="upgrade97" class="upgradeCard"></Button>
+            <Button id="upgrade98" class="upgradeCard"></Button>
+            <Button id="upgrade99" class="upgradeCard"></Button>
+            <Button id="upgrade100" class="upgradeCard"></Button> -->
+
             
         </GridLayout>
         <Button text="Spawn All" preferredHeight="40" onClick="030220/onClick_spawn_all_upgrades"  color="#008000" />
+        <!--TODO: Replace long spawn all button with up/down arrow keys to navigate longer spawn menu. -->
+        
     </VerticalLayout>
 </Panel>
 
