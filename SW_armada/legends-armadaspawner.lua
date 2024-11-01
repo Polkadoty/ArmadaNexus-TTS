@@ -5386,7 +5386,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         aliases = { "Raptor Squadron [Legends]" }
     })
     Squadron:new(raptor, COL_L_SQUAD, {
-        name = "Sharon \"Athena\" Valeri",
+        name = "\"Athena\"",
         front = CUSTOM_ASSETS .. "squadrons/colonial/raptor/athena_raptor.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/raptor/diffuse_ace_raptor.jpg",
         defense_tokens = { DEF_BRACE, DEF_SCATTER },
@@ -6335,7 +6335,7 @@ Card:new(DefensiveRetrofit, Colonial,
 { name = "System Reset", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_sys_reset.jpg", cost = 3, aliases = { "System Reset [Legends]" } })
 
 Card:new(Title, Colonial,
-{ name = "Galactica", front = CUSTOM_ASSETS .. "cards/.bsg/galactica_title.jpg", cost = 4, aliases = { "Galactica [Legends]" } })
+{ name = "Galactica", front = CUSTOM_ASSETS .. "cards/.bsg/title_galactica.jpg", cost = 4, aliases = { "Galactica [Legends]" } })
 Card:new(Title, Colonial,
 { name = "Columbia", front = CUSTOM_ASSETS .. "cards/.bsg/title_columbia.jpg", cost = 5, aliases = { "Columbia [Legends]" } })
 Card:new(Title, Colonial,
