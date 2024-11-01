@@ -5179,27 +5179,27 @@ Squadron:new(seraph, COV_L_SQUAD, {
     -- jupiter battlestar
     Ship:new(LargeShip, COL_L_SHIP, {
         name = "Jupiter-class Battlestar MkI",
-        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk1_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter_mk1.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk1_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/mercury/ruler.obj",
         maneuver = { { "I" }, { "I", "I" }, { "-", "-", "I" } },
         defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_CONTAIN, DEF_SALVO },
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
-        cost = 112,
+        cost = 120,
         command = 3,
         aliases = { "Jupiter-class Battlestar MkI [Legends]" }
     })
     Ship:new(LargeShip, COL_L_SHIP, {
         name = "Jupiter-class Battlestar MkII",
-        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk2_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter_mk2.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk2_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/mercury/ruler.obj",
         maneuver = { { "I" }, { "I", "I" }, { "-", "-", "I" } },
         defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_CONTAIN, DEF_SALVO },
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
-        cost = 124,
+        cost = 126,
         command = 3,
         aliases = { "Jupiter-class Battlestar MkII [Legends]" }
     })
@@ -5207,7 +5207,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --manticore corvette
     Ship:new(SmallShip, COL_L_SHIP, {
         name = "Manticore-class Attack Corvette",
-        front = CUSTOM_ASSETS .. "ships/colonial/manticore/manticore_attack_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/manticore/manticore_attack.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/manticore/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/manticore/manticore_attack_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/manticore/ruler.obj",
@@ -5220,7 +5220,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, COL_L_SHIP, {
         name = "Manticore-class Patrol Corvette",
-        front = CUSTOM_ASSETS .. "ships/colonial/manticore/manticore_patrol_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/manticore/manticore_patrol.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/manticore/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/manticore/manticore_patrol_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/manticore/ruler.obj",
@@ -5235,27 +5235,27 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --adamant carrier-cruiser
     Ship:new(MediumShip, COL_L_SHIP, {
         name = "Adamant-class Light Carrier",
-        front = CUSTOM_ASSETS .. "ships/colonial/adamant/adamant_carrier_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/adamant/adamant_carrier.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/adamant/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/adamant/adamant_carrier_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/adamant/ruler.obj",
         maneuver = { { "I" }, { "I", "-" }, { "-", "I", "-" } },
         defense_tokens = { DEF_BRACE, DEF_CONTAIN, DEF_SALVO },
-        shields = { 1, 3, 3, 1 }, -- Front, left, right, rear
-        cost = 62,
+        shields = { 2, 3, 3, 1 }, -- Front, left, right, rear
+        cost = 56,
         command = 3,
         aliases = { "Adamant-class Light Carrier [Legends]" }
     })
     Ship:new(MediumShip, COL_L_SHIP, {
         name = "Adamant-class Light Frigate",
-        front = CUSTOM_ASSETS .. "ships/colonial/adamant/adamant_frigate_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/adamant/adamant_frigate.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/adamant/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/adamant/adamant_frigate_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/adamant/ruler.obj",
         maneuver = { { "I" }, { "I", "-" }, { "-", "I", "-" } },
         defense_tokens = { DEF_BRACE, DEF_CONTAIN, DEF_SALVO },
-        shields = { 1, 3, 3, 1 }, -- Front, left, right, rear
-        cost = 68,
+        shields = { 2, 3, 3, 1 }, -- Front, left, right, rear
+        cost = 62,
         command = 3,
         aliases = { "Adamant-class Light Frigate [Legends]" }
     })
@@ -5263,7 +5263,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --minotaur heavy cruiser
     Ship:new(MediumShip, COL_L_SHIP, {
         name = "Minotaur-class Heavy Assault Cruiser",
-        front = CUSTOM_ASSETS .. "ships/colonial/minotaur/minotaur_assault_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/minotaur/minotaur_assault.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/minotaur/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/minotaur/minotaur_assault_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/minotaur/ruler.obj",
@@ -5276,7 +5276,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(MediumShip, COL_L_SHIP, {
         name = "Minotaur-class Heavy Command Cruiser",
-        front = CUSTOM_ASSETS .. "ships/colonial/minotaur/minotaur_command_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/minotaur/minotaur_command.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/minotaur/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/minotaur/minotaur_command_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/minotaur/ruler.obj",
@@ -5327,21 +5327,21 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(viper_mk2, COL_L_SQUAD, {
         name = "Viper MkII Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/vipermk2_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/viper_mk2.jpg",
         cost = 11,
         aliases = { "Viper MkII Squadron [Legends]" }
     })
     Squadron:new(viper_mk2, COL_L_SQUAD, {
         name = "Kara \"Starbuck\" Thrace",
-        front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/kara_vipermk2_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/kara_viper_mk2.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/diffuse_ace_mk2.jpg",
         defense_tokens = { DEF_SCATTER, DEF_EVADE },
-        cost = 22,
+        cost = 18,
         aliases = { "Kara \"Starbuck\" Thrace - Viper MkII Squadron [Legends]" }
     })
     Squadron:new(viper_mk2, COL_L_SQUAD, {
         name = "\"Hotdog\"",
-        front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/hotdog_vipermk2_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/hotdog_viper_mk2.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/diffuse_ace_mk2.jpg",
         defense_tokens = { DEF_SCATTER, DEF_EVADE },
         cost = 20,
@@ -5381,15 +5381,15 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(raptor, COL_L_SQUAD, {
         name = "Raptor Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/colonial/raptor/raptor_L_SQUADron_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/colonial/raptor/raptor.jpg",
         cost = 15,
         aliases = { "Raptor Squadron [Legends]" }
     })
     Squadron:new(raptor, COL_L_SQUAD, {
         name = "Sharon \"Athena\" Valeri",
-        front = CUSTOM_ASSETS .. "squadrons/colonial/raptor/athena_raptor_L_SQUADron_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/colonial/raptor/athena_raptor.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/raptor/diffuse_ace_raptor.jpg",
-        defense_tokens = { DEF_BRACE, DEF_BRACE },
+        defense_tokens = { DEF_BRACE, DEF_SCATTER },
         cost = 20,
         aliases = { "Athena - Raptor Squadron [Legends]" }
     })
@@ -5404,13 +5404,13 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(ass_raptor, COL_L_SQUAD, {
         name = "Assault Raptor Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/colonial/ass_raptor/ass_raptor_L_SQUADron_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/colonial/ass_raptor/ass_raptor.jpg",
         cost = 14,
         aliases = { "Assault Raptor Squadron [Legends]" }
     })
     Squadron:new(ass_raptor, COL_L_SQUAD, {
         name = "\"Racetrack\"",
-        front = CUSTOM_ASSETS .. "squadrons/colonial/ass_raptor/racetrack_ass_raptor_L_SQUADron_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/colonial/ass_raptor/racetrack_ass_raptor.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/ass_raptor/diffuse_ace_ass_raptor.jpg",
         defense_tokens = { DEF_BRACE, DEF_EVADE },
         cost = 23,
@@ -5422,52 +5422,52 @@ Squadron:new(seraph, COV_L_SQUAD, {
     -- cylon war basestar
     Ship:new(LargeShip, CYL_L_SHIP, {
         name = "War Basestar Mk.1",
-        front = CUSTOM_ASSETS .. "ships/cylon/basestar_war/basestar_mk1_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/cylon/basestar_war/war_basestar_mk1.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/basestar_war/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/basestar_war/basestar_mk1_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/basestar_war/ruler.obj",
-        maneuver = { { "I" }, { "I", "I" } },
+        maneuver = { { "I" }, { "-", "I" } },
         defense_tokens = { DEF_BRACE, DEF_CONTAIN, DEF_CONTAIN, DEF_SALVO },
         shields = { 3, 3, 3, 3 }, -- Front, left, right, rear
-        cost = 110,
+        cost = 100,
         command = 3,
         aliases = { "War Basestar Mk.1 [Legends]" }
     })
     Ship:new(LargeShip, CYL_L_SHIP, {
-        name = "War Basestar MkII",
-        front = CUSTOM_ASSETS .. "ships/cylon/basestar_war/basestar_mk2_card.jpg",
+        name = "War Basestar Mk.2",
+        front = CUSTOM_ASSETS .. "ships/cylon/basestar_war/war_basestar_mk2.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/basestar_war/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/basestar_war/basestar_mk2_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/basestar_war/ruler.obj",
-        maneuver = { { "I" }, { "I", "I" } },
+        maneuver = { { "I" }, { "-", "I" } },
         defense_tokens = { DEF_BRACE, DEF_CONTAIN, DEF_CONTAIN, DEF_SALVO },
         shields = { 3, 3, 3, 3 }, -- Front, left, right, rear
-        cost = 97,
+        cost = 106,
         command = 3,
-        aliases = { "War Basestar MkII [Legends]" }
+        aliases = { "War Basestar Mk.2 [Legends]" }
     })
 
     -- arachne cruiser
     Ship:new(MediumShip, CYL_L_SHIP, {
         name = "Arachne Missile Cruiser",
-        front = CUSTOM_ASSETS .. "ships/cylon/arachne/arachne_missile_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/cylon/arachne/arachne_missile.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/arachne/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/arachne/arachne_missile_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/arachne/ruler.obj",
-        maneuver = { { "I" }, { "I", "I" }, { "I", "II", "-" } },
+        maneuver = { { "I" }, { "I", "I" }, { "I", "I", "-" } },
         defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_SALVO },
         shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
-        cost = 79,
+        cost = 75,
         command = 3,
         aliases = { "Arachne Missile Cruiser [Legends]" }
     })
     Ship:new(MediumShip, CYL_L_SHIP, {
         name = "Arachne Carrier Cruiser",
-        front = CUSTOM_ASSETS .. "ships/cylon/arachne/arachne_carrier_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/cylon/arachne/arachne_carrier.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/arachne/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/arachne/arachne_carrier_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/arachne/ruler.obj",
-        maneuver = { { "I" }, { "I", "I" }, { "I", "II", "-" } },
+        maneuver = { { "I" }, { "I", "I" }, { "I", "I", "-" } },
         defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_SALVO },
         shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
         cost = 73,
@@ -5478,7 +5478,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     -- talon frigate
     Ship:new(MediumShip, CYL_L_SHIP, {
         name = "Talon Light Frigate",
-        front = CUSTOM_ASSETS .. "ships/cylon/talon/talon_frigate_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/cylon/talon/talon_frigate.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/talon/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/talon/talon_frigate_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/talon/ruler.obj",
@@ -5491,14 +5491,14 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(MediumShip, CYL_L_SHIP, {
         name = "Talon Light Carrier",
-        front = CUSTOM_ASSETS .. "ships/cylon/talon/talon_carrier_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/cylon/talon/talon_carrier.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/talon/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/talon/talon_carrier_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/talon/ruler.obj",
         maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
         defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_CONTAIN },
         shields = { 1, 3, 3, 1 }, -- Front, left, right, rear
-        cost = 64,
+        cost = 60,
         command = 2,
         aliases = { "Talon Light Carrier [Legends]" }
     })
@@ -5506,7 +5506,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     -- nemesis corvette
     Ship:new(SmallShip, CYL_L_SHIP, {
         name = "Nemesis Attack Corvette",
-        front = CUSTOM_ASSETS .. "ships/cylon/nemesis/nemesis_attack_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/cylon/nemesis/nemesis_attack.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/nemesis/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/nemesis/nemesis_attack_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/nemesis/ruler.obj",
@@ -5519,7 +5519,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, CYL_L_SHIP, {
         name = "Nemesis Tech Corvette",
-        front = CUSTOM_ASSETS .. "ships/cylon/nemesis/nemesis_tech_card.jpg",
+        front = CUSTOM_ASSETS .. "ships/cylon/nemesis/nemesis_tech.jpg",
         mesh = CUSTOM_ASSETS .. "ships/cylon/nemesis/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/nemesis/nemesis_tech_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/cylon/nemesis/ruler.obj",
@@ -5572,25 +5572,25 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(war_raider, CYL_L_SQUAD, {
         name = "War Raider Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/war-raider-squadron_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/wraider.jpg",
         cost = 10,
         aliases = { "War Raider Squadron [Legends]" }
     })
     Squadron:new(war_raider, CYL_L_SQUAD, {
         name = "Silverfish",
-        front = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/silverfish_war-raider-squadron_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/silver_wraider.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/ace_diffuse.jpg",
         defense_tokens = { DEF_BRACE, DEF_EVADE },
-        cost = 23,
+        cost = 16,
         aliases = { "Silverfish - War Raider Squadron [Legends]" }
     })
     Squadron:new(war_raider, CYL_L_SQUAD, {
-        name = "Liberator",
-        front = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/liberator_war-raider-squadron_card.jpg",
+        name = "Delta-84",
+        front = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/delta84_wraider.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/cylon/war_raider/ace_diffuse.jpg",
         defense_tokens = { DEF_BRACE, DEF_EVADE },
-        cost = 26,
-        aliases = { "Liberator - War Raider Squadron [Legends]" }
+        cost = 18,
+        aliases = { "Delta-84 - War Raider Squadron [Legends]" }
     })
 
     -- wardriver
@@ -5603,16 +5603,16 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(wardriver, CYL_L_SQUAD, {
         name = "Wardriver Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/cylon/wardriver/wardriver_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/cylon/wardriver/wardriver.jpg",
         cost = 16,
         aliases = { "Wardriver Squadron [Legends]" }
     })
     Squadron:new(wardriver, CYL_L_SQUAD, {
         name = "E-47",
-        front = CUSTOM_ASSETS .. "squadrons/cylon/wardriver/e47_wardriver_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/cylon/wardriver/e47_wardriver.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/cylon/wardriver/ace_diffuse.jpg",
         defense_tokens = { DEF_EVADE, DEF_SCATTER },
-        cost = 26,
+        cost = 21,
         aliases = { "E-47 - Wardriver Squadron [Legends]" }
     })
 
@@ -5626,16 +5626,16 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(vespid, CYL_L_SQUAD, {
         name = "Vespid Bomber Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/cylon/vespid/vespid_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/cylon/vespid/vespid.jpg",
         cost = 12,
         aliases = { "Vespid Bomber Squadron [Legends]" }
     })
     Squadron:new(vespid, CYL_L_SQUAD, {
         name = "Helios-07",
-        front = CUSTOM_ASSETS .. "squadrons/cylon/vespid/helios07_vespid_card.jpg",
+        front = CUSTOM_ASSETS .. "squadrons/cylon/vespid/helios_vespid.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/cylon/vespid/ace_diffuse.jpg",
         defense_tokens = { DEF_EVADE, DEF_SCATTER },
-        cost = 26,
+        cost = 19,
         aliases = { "Helios-07 - Vespid Bomber Squadron [Legends]" }
     })
 
@@ -6298,33 +6298,86 @@ Card:new(WeaponsTeam, UNSC,
 Card:new(WeaponsTeam, UNSC,
 { name = "UNSC Gunners", front = CUSTOM_ASSETS .. "cards/.halo/wt_unscgunners.jpg", cost = 6, aliases = { "UNSC Gunners [Legends]" } })
 
--- BSG Legends Upgrades
+    -- BSG Legends Upgrades
 Card:new(Commander, Colonial,
-{ name = "William Adama", front = CUSTOM_ASSETS .. "cards/.bsg/.old/willadama_commander.jpg", cost = 20, aliases = { "William Adama [Legends]" } })
+{ name = "William Adama", front = CUSTOM_ASSETS .. "cards/.bsg/com_william_adama.jpg", cost = 28, aliases = { "William Adama [Legends]" } })
+Card:new(Commander, Colonial,
+{ name = "Lucinda Cain", front = CUSTOM_ASSETS .. "cards/.bsg/com_luci_cain.jpg", cost = 38, aliases = { "Lucinda Cain [Legends]" } })
+Card:new(Commander, Colonial,
+{ name = "Helena Agathon", front = CUSTOM_ASSETS .. "cards/.bsg/com_helena_agathon.jpg", cost = 32, aliases = { "Helena Agathon [Legends]" } })
+Card:new(Commander, Cylon,
+{ name = "Atropos", front = CUSTOM_ASSETS .. "cards/.bsg/com_atropos.jpg", cost = 40, aliases = { "Atropos [Legends]" } })
+Card:new(Commander, Cylon,
+{ name = "Clothos", front = CUSTOM_ASSETS .. "cards/.bsg/com_clothos.jpg", cost = 26, aliases = { "Clothos [Legends]" } })
+Card:new(Commander, Cylon,
+{ name = "Lachesis", front = CUSTOM_ASSETS .. "cards/.bsg/com_lachesis.jpg", cost = 36, aliases = { "Lachesis [Legends]" } })
 
 Card:new(Officer, Colonial,
-{ name = "Felix Gaeta", front = CUSTOM_ASSETS .. "cards/.bsg/.old/gaeta_officer.jpg", cost = 6, aliases = { "Felix Gaeta [Legends]" } })
+{ name = "Felix Gaeta", front = CUSTOM_ASSETS .. "cards/.bsg/off_gaeta.jpg", cost = 8, aliases = { "Felix Gaeta [Legends]" } })
 Card:new(Officer, Colonial,
-{ name = "Lee Adama", front = CUSTOM_ASSETS .. "cards/.bsg/.old/leeadama_officer.jpg", cost = 7, aliases = { "Lee Adama [Legends]" } })
+{ name = "Lee \"Apollo\" Adama", front = CUSTOM_ASSETS .. "cards/.bsg/off_lee_adama.jpg", cost = 12, aliases = { "Lee \"Apollo\" Adama [Legends]" } })
 Card:new(Officer, Colonial,
-{ name = "Saul Tigh", front = CUSTOM_ASSETS .. "cards/.bsg/.old/tigh_officer.jpg", cost = 5, aliases = { "Saul Tigh [Legends]" } })
+{ name = "Galen Tyrol", front = CUSTOM_ASSETS .. "cards/.bsg/off_galen.jpg", cost = 5, aliases = { "Galen Tyrol [Legends]" } })
+Card:new(Officer, Colonial,
+{ name = "Saul Tigh", front = CUSTOM_ASSETS .. "cards/.bsg/off_saul_tight.jpg", cost = 8, aliases = { "Saul Tigh [Legends]" } })
+Card:new(Officer, Cylon,
+{ name = "Centurion D-7", front = CUSTOM_ASSETS .. "cards/.bsg/off_cent_d7.jpg", cost = 6, aliases = { "Centurion D-7 [Legends]" } })
+Card:new(Officer, Cylon,
+{ name = "Epsilon Y16", front = CUSTOM_ASSETS .. "cards/.bsg/off_epsilon_y16.jpg", cost = 6, aliases = { "Epsilon Y16 [Legends]" } })
+Card:new(Officer, Cylon,
+{ name = "Talos-13", front = CUSTOM_ASSETS .. "cards/.bsg/off_talos_13.jpg", cost = 3, aliases = { "Talos-13 [Legends]" } })
 
 Card:new(DefensiveRetrofit, Colonial,
-{ name = "DRADIS", front = CUSTOM_ASSETS .. "cards/.bsg/.old/dradis_defretro.jpg", cost = 4, aliases = { "DRADIS [Legends]" } })
-
-Card:new(SupportTeam, Colonial,
-{ name = "Galen Tyrol", front = CUSTOM_ASSETS .. "cards/.bsg/.old/tyrol_sup.jpg", cost = 5, aliases = { "Galen Tyrol [Legends]" } })
+{ name = "DRADIS", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_dradis.jpg", cost = 4, aliases = { "DRADIS [Legends]" } })
+Card:new(DefensiveRetrofit, Colonial,
+{ name = "Suppression Barrage", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_supp_barrage.jpg", cost = 8, aliases = { "Suppression Barrage [Legends]" } })
+Card:new(DefensiveRetrofit, Colonial,
+{ name = "System Reset", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_sys_reset.jpg", cost = 3, aliases = { "System Reset [Legends]" } })
 
 Card:new(Title, Colonial,
-{ name = "Galactica", front = CUSTOM_ASSETS .. "cards/.bsg/.old/galactica_title.jpg", cost = 4, aliases = { "Galactica [Legends]" } })
-
-Card:new(OffensiveRetrofit, Colonial,
-{ name = "Magnetic Launch Tubes", front = CUSTOM_ASSETS .. "cards/.bsg/.old/magtubes_offretro.jpg", cost = 7, aliases = { "Magnetic Launch Tubes [Legends]" } })
+{ name = "Galactica", front = CUSTOM_ASSETS .. "cards/.bsg/galactica_title.jpg", cost = 4, aliases = { "Galactica [Legends]" } })
+Card:new(Title, Colonial,
+{ name = "Columbia", front = CUSTOM_ASSETS .. "cards/.bsg/title_columbia.jpg", cost = 5, aliases = { "Columbia [Legends]" } })
+Card:new(Title, Colonial,
+{ name = "Adamant", front = CUSTOM_ASSETS .. "cards/.bsg/title_adamant.jpg", cost = 6, aliases = { "Adamant [Legends]" } })
+Card:new(Title, Colonial,
+{ name = "Hyperion", front = CUSTOM_ASSETS .. "cards/.bsg/title_hyperion.jpg", cost = 7, aliases = { "Hyperion [Legends]" } })
+Card:new(Title, Colonial,
+{ name = "Herald", front = CUSTOM_ASSETS .. "cards/.bsg/title_herald.jpg", cost = 8, aliases = { "Herald [Legends]" } })
+Card:new(Title, Colonial,
+{ name = "Icarus", front = CUSTOM_ASSETS .. "cards/.bsg/title_icarus.jpg", cost = 8, aliases = { "Icarus [Legends]" } })
 
 Card:new(Title, Cylon,
-{ name = "placeholdercyl", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "placeholdercyl [Legends]" } })
+{ name = "Arachnid", front = CUSTOM_ASSETS .. "cards/.bsg/title_arachnid.jpg", cost = 6, aliases = { "Arachnid [Legends]" } })
+Card:new(Title, Cylon,
+{ name = "Defiant", front = CUSTOM_ASSETS .. "cards/.bsg/title_defiant.jpg", cost = 4, aliases = { "Defiant [Legends]" } })
+Card:new(Title, Cylon,
+{ name = "Crucible", front = CUSTOM_ASSETS .. "cards/.bsg/title_crucible.jpg", cost = 8, aliases = { "Crucible [Legends]" } })
+Card:new(Title, Cylon,
+{ name = "Thanatos", front = CUSTOM_ASSETS .. "cards/.bsg/title_thanatos.jpg", cost = 5, aliases = { "Thanatos [Legends]" } })
+Card:new(Title, Cylon,
+{ name = "Dagger", front = CUSTOM_ASSETS .. "cards/.bsg/title_dagger.jpg", cost = 6, aliases = { "Dagger [Legends]" } })
+Card:new(Title, Cylon,
+{ name = "Falchion", front = CUSTOM_ASSETS .. "cards/.bsg/title_falchion.jpg", cost = 3, aliases = { "Falchion [Legends]" } })
 
--- Armada Legacy (Old) Upgrades
+Card:new(OffensiveRetrofit, Colonial,
+{ name = "Magnetic Launch Tubes", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_mag_tubes.jpg", cost = 9, aliases = { "Magnetic Launch Tubes [Legends]" } })
+Card:new(OffensiveRetrofit, Colonial,
+{ name = "Long Range Salvo", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_long_salvo.jpg", cost = 6, aliases = { "Long Range Salvo [Legends]" } })
+
+Card:new(SuperWeapon, Cylon,
+{ name = "Cylon Virus", front = CUSTOM_ASSETS .. "cards/.bsg/super_cylon_virus.jpg", cost = 8, aliases = { "Cylon Virus [Legends]" } })
+
+Card:new(Turbolaser, Cylon,
+{ name = "Cluster Munitions", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_cluster_munitions.jpg", cost = 7, aliases = { "Cluster Munitions [Legends]" } })
+Card:new(Turbolaser, Cylon,
+{ name = "Curved Trajectory Launch", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_curved_launch.jpg", cost = 7, aliases = { "Curved Trajectory Launch [Legends]" } })
+
+Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,
+{ name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Legends]" } })
+
+
+    -- Armada Legacy (Old) Upgrades
 Card:new(Commander, Republic_L,
     { name = "Admiral Coburn", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-coburn-commander-old-legacy.jpg", cost = 25, aliases = { "Admiral Coburn [OldLegacy]" } })
 Card:new(Commander, Republic_L,
