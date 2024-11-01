@@ -5179,7 +5179,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     -- jupiter battlestar
     Ship:new(LargeShip, COL_L_SHIP, {
         name = "Jupiter-class Battlestar MkI",
-        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter_mk1.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk1-legends.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk1_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/mercury/ruler.obj",
@@ -5192,7 +5192,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(LargeShip, COL_L_SHIP, {
         name = "Jupiter-class Battlestar MkII",
-        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter_mk2.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk2-legends.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk2_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/mercury/ruler.obj",
