@@ -1,0 +1,575 @@
+
+local Http = require('ge_tts/Http')
+Http.setProxyUrl('https://ttsarmada.herokuapp.com/forward')
+FIREBASE_COLLECTION = 'games'
+--FIREBASE_COLLECTION = 'games_vassal'
+--FIREBASE_COLLECTION = 'games_vassal_fantasy'
+
+FIRST_FLEET = nil
+SECOND_FLEET = nil
+function onClick_selectGameReporterTab(player, _, idValue)
+    onClick_ToggleUI(player, _, idValue)
+
+    onClick_refreshObjective()
+    --Autocalculate Scores?
+    updateAllScores()
+    for i, color in ipairs(Player.getColors()) do
+        UI.hide(color.."1")
+        UI.hide(color.."2")
+    end
+    for color, fleet in pairs(FLEETS) do
+        if fleet~=nil then
+            UI.show(color.."1")
+            UI.show(color.."2")
+        end
+    end
+    --Autocalculate Players
+    autoSelectFirstSecondPlayer()
+    updateScore()
+end
+function onClick_selectReportingTab(player, _, idValue)
+    UI.show("scoreTabBody")
+    UI.show("submitScore")
+    UI.hide("resultTabBody")
+end
+standingOffset = 0
+function onClick_standings_scrollUp(player, _, idValue)
+    if standingOffset>0 then
+        standingOffset = standingOffset - 10
+    end
+    updateStandingsScrollButtons()
+    updateRankings()
+end
+function onClick_standings_scrollDown(player, _, idValue)
+    if standingOffset+10<#rankings then
+        standingOffset = standingOffset + 10
+    end
+    updateStandingsScrollButtons()
+    updateRankings()
+end
+function updateStandingsScrollButtons()
+    if standingOffset==0 then
+        UI.setAttribute("parseStandingScrollUp", "iconColor", "#404040")
+    else
+        UI.setAttribute("parseStandingScrollUp", "iconColor", "#FFFFFF")
+    end
+    if standingOffset+10<#standings then
+        UI.setAttribute("parseStandingScrollDown", "iconColor", "#404040")
+    else
+        UI.setAttribute("parseStandingScrollDown", "iconColor", "#FFFFFF")
+    end
+end
+standings = nil
+function onClick_selectStandingsTab(player, _, idValue)
+    UI.show("resultTabBody")
+    UI.hide("scoreTabBody")
+    UI.hide("submitScore")
+    if standings == nil then
+        standings = {}
+        -- result_api = "https://firestore.googleapis.com/v1/projects/ttsarmada/databases/(default)/documents/players/Kelorn"
+        -- WebRequest.get(result_api, self, "loadResults")
+        ranking_api = "https://firestore.googleapis.com/v1/projects/ttsarmada/databases/(default)/documents/index/ranked"
+        WebRequest.get(ranking_api, self, "loadRanked")
+    end
+    onClick_loadMyStandings(player, _, idValue)
+end
+function onClick_loadMyStandings(player, _, idValue)
+    UI.setValue("myresultName", player.steam_name)
+    UI.setValue("myrankedresultName", player.steam_name)
+    UI.setValue("myresultGames",0)
+    UI.setValue("myrankedresultELO",1000)
+    UI.setValue("myrankedresultWins",0)
+    UI.setValue("myrankedresultGames",0)
+    UI.setValue("myrankedresultRate",0)
+    UI.setValue("myrankedresultRanking","")
+
+    if results[player.steam_name]==nil then
+        result_api = "https://firestore.googleapis.com/v1/projects/ttsarmada/databases/(default)/documents/players/"..player.steam_name
+        -- print(result_api)
+        WebRequest.get(result_api, self, "loadResults")
+    else
+        updateRankings()
+    end
+end
+rankings = {}
+function loadRanked(res)
+    if res.is_error then
+        printToAll(res.error,{1,0,0})
+    else
+        ranked = JSON.decode(res.text)
+        for i,value in ipairs(ranked['fields']['players']['arrayValue']['values']) do
+            name = value['stringValue']
+            rankings[i] = name
+            if results[name]==nil then
+                result_api = "https://firestore.googleapis.com/v1/projects/ttsarmada/databases/(default)/documents/players/"..name
+                -- print(result_api)
+                WebRequest.get(result_api, self, "loadResults")
+            end
+        end
+        updateStandingsScrollButtons()
+    end
+end
+results = {}
+function loadResults(res)
+    if res.is_error then
+        printToAll(res.error,{1,0,0})
+    else
+        standings = JSON.decode(res.text)
+
+        result = {
+            name = standings['fields']['steamname']['stringValue'],
+            elo = tonumber(standings['fields']['ranked_elo']['integerValue']),
+            unranked_elo = tonumber(standings['fields']['hidden_elo']['integerValue']),
+            winrate = 0,
+            unranked_winrate = 0
+        }
+        result.wins = tonumber(standings['fields']['ranked_won']['integerValue'])
+        result.games = tonumber(standings['fields']['ranked_played']['integerValue'])
+        result.unranked_wins = tonumber(standings['fields']['games_won']['integerValue'])
+        result.unranked_games = tonumber(standings['fields']['games_played']['integerValue'])
+        if result.games>0 then
+            result.winrate = math.floor(100*result.wins/result.games)
+        end
+        if result.unranked_games>0 then
+            result.unranked_winrate = math.floor(100*result.unranked_wins/result.unranked_games)
+        end
+        results[result.name] = result
+        -- print(res.text)
+        updateRankings()
+    end
+end
+function updateRankings()
+    local max_games = 1
+    local max_wins = 1
+    local max_elo = 1000
+    local min_elo = 1000
+    for _,ranking in pairs(results) do
+        if ranking.games>max_games then
+            max_games = ranking.games
+        end
+        if ranking.wins>max_wins then
+            max_wins = ranking.wins
+        end
+        if ranking.elo>max_elo then
+            max_elo = ranking.elo
+        end
+        if ranking.elo<min_elo then
+            min_elo = ranking.elo
+        end
+    end
+    for i=1,10 do
+        name = rankings[standingOffset+i]
+        result = results[name]
+        if result~=nil then
+            UI.show("resultRow"..i)
+            UI.setValue("resultRanking"..i,standingOffset+i)
+            UI.setValue("resultName"..i,result.name)
+            UI.setValue("resultELO"..i,result.elo)
+            UI.setAttribute("resultELO"..i, "color", "rgb(1,1,"..(1-math.pow((result.elo-min_elo)/(max_elo-min_elo),2))..")")
+            UI.setValue("resultWins"..i,result.wins)
+            UI.setAttribute("resultWins"..i, "color", "rgb("..(0.3+0.7*(1-math.pow(result.wins/max_wins,2)))..",1,"..(0.3+0.7*(1-math.pow(result.wins/max_wins,2)))..")")
+            UI.setValue("resultGames"..i,result.games)
+            UI.setAttribute("resultGames"..i, "color", "rgb("..(0.3+0.7*(1-math.pow(result.games/max_games,2)))..","..(0.3+0.7*(1-math.pow(result.games/max_games,2)))..",1)")
+            UI.setValue("resultRate"..i,result.winrate)
+            UI.setAttribute("resultRate"..i, "color", "rgb("..math.min(2*(1-result.winrate/100),1)..","..math.min(2*(result.winrate/100),1)..",0)")
+        else
+            UI.hide("resultRow"..i)
+        end
+    end
+    name = UI.getValue("myresultName")
+    result = results[name]
+    if result~=nil then
+        -- UI.setValue("myresultELO",result.unranked_elo)
+        -- UI.setAttribute("myresultELO", "color", "rgb(1,1,"..(1-math.pow((result.unranked_elo-min_elo)/(max_elo-min_elo),2))..")")
+        -- UI.setValue("myresultWins",result.unranked_wins)
+        -- UI.setAttribute("myresultWins", "color", "rgb("..(0.3+0.7*(1-math.pow(result.unranked_wins/max_wins,2)))..",1,"..(0.3+0.7*(1-math.pow(result.unranked_wins/max_wins,2)))..")")
+        UI.setValue("myresultGames",result.unranked_games)
+        UI.setAttribute("myresultGames", "color", "rgb("..(0.3+0.7*(1-math.pow(result.unranked_games/max_games,2)))..","..(0.3+0.7*(1-math.pow(result.unranked_games/max_games,2)))..",1)")
+        -- UI.setValue("myresultRate",result.unranked_winrate)
+        -- UI.setAttribute("myresultRate", "color", "rgb("..math.min(2*(1-result.unranked_winrate/100),1)..","..math.min(2*(result.unranked_winrate/100),1)..",0)")
+
+
+        UI.setValue("myrankedresultELO",result.elo)
+        UI.setAttribute("myrankedresultELO", "color", "rgb(1,1,"..(1-math.pow((result.elo-min_elo)/(max_elo-min_elo),2))..")")
+        UI.setValue("myrankedresultWins",result.wins)
+        UI.setAttribute("myrankedresultWins", "color", "rgb("..(0.3+0.7*(1-math.pow(result.wins/max_wins,2)))..",1,"..(0.3+0.7*(1-math.pow(result.wins/max_wins,2)))..")")
+        UI.setValue("myrankedresultGames",result.games)
+        UI.setAttribute("myrankedresultGames", "color", "rgb("..(0.3+0.7*(1-math.pow(result.games/max_games,2)))..","..(0.3+0.7*(1-math.pow(result.games/max_games,2)))..",1)")
+        UI.setValue("myrankedresultRate",result.winrate)
+        UI.setAttribute("myrankedresultRate", "color", "rgb("..math.min(2*(1-result.winrate/100),1)..","..math.min(2*(result.winrate/100),1)..",0)")
+
+        if result.games<5 then
+            UI.setValue("mynotes","Only "..tostring(5-result.games).." games left for Ranked Placement!")
+            UI.setAttribute("mynotes","color", "#FF8080")
+        else
+            UI.setValue("mynotes","")
+            for i,ranked_name in ipairs(rankings) do
+                if ranked_name==name then
+                    UI.setValue("mynotes","Currently Ranked: #"..tostring(i))
+                    UI.setValue("myrankedresultRanking",tostring(i))
+                    UI.setAttribute("mynotes","color", "#80FF80")
+                end
+            end
+        end
+    end
+end
+function autoSelectFirstSecondPlayer()
+    -- for _,color in ipairs(Player.getColors()) do
+    --     if FLEETS[color]~=nil then
+    --         if FLEETS[color].secondPlayer then
+    --             onClick_selectPlayer(color..2,2)
+    --             break
+    --         end
+    --     end
+    -- end
+    -- for _,color in ipairs(Player.getColors()) do
+    --     if FLEETS[color]~=nil then
+    --         if not FLEETS[color].secondPlayer then
+    --             onClick_selectPlayer(color..1,1)
+    --             break
+    --         end
+    --     end
+    -- end
+    FIRST_FLEET = nil
+    SECOND_FLEET = nil
+    for color, fleet in pairs(FLEETS) do
+        if fleet.secondPlayer then
+            -- SECOND_FLEET = fleet
+            onClick_selectPlayer(color..2,2)
+            break
+        end
+    end
+    for color, fleet in pairs(FLEETS) do
+        if not fleet.secondPlayer then
+            -- FIRST_FLEET = fleet
+            onClick_selectPlayer(color..1,1)
+            break
+        end
+    end
+end
+function onClick_refreshObjective(player, _, idValue)
+    local objective = findObjective()
+    UI.setValue("activeObjective",objective)
+    if objective=="None?" then
+        UI.setAttribute("activeObjective","color","#FF4040")
+        UI.show("objectiveWarning")
+        UI.show("objectiveRefresh")
+    else
+        UI.setAttribute("activeObjective","color","#80FF00")
+        UI.hide("objectiveWarning")
+        UI.hide("objectiveRefresh")
+    end
+end
+function flatten(fleet)
+    cards = {}
+    if fleet == nil then return cards end
+    for _,obj in ipairs(fleet.objectives) do
+        table.insert(cards,obj.def.category..": "..obj.def.name)
+    end
+    for _,ship in ipairs(fleet.ships) do
+        table.insert(cards,ship.def.name.." ("..ship.def.cost..")")
+        for _,def in ipairs(ship.upgrades) do
+            table.insert(cards," - "..def.name.." ("..def.cost..")")
+        end
+    end
+    for _,squad in ipairs(fleet.squads) do
+        if squad.count~=nil and squad.count>1 then
+            table.insert(cards," - "..squad.count.." x "..squad.def.name.." ("..(squad.def.cost*squad.count)..")")
+        else
+            table.insert(cards," - "..squad.def.name.." ("..squad.def.cost..")")
+        end
+    end
+    cardValues = {}
+    for _,str in ipairs(cards) do
+        table.insert(cardValues, {stringValue = str})
+    end
+    return cardValues
+end
+function onClick_score_submit(player, _, idValue)
+    player1 = UI.getValue("Player1name")
+    player2 = UI.getValue("Player2name")
+    --player1score
+    --player2score
+    player1points = UI.getValue("Player1points")
+    player2points = UI.getValue("Player2points")
+    objective = UI.getValue("activeObjective")
+    print("Getting fleet for player1: "..UI.getAttribute("Player1name","color"))
+    fleet = FLEETS[UI.getAttribute("Player1name","color")]
+    FIRST_FLEET = fleet
+    player1faction = nil
+    if fleet==nil then
+        print("No fleet found for Player 1!")
+        print("Please ensure players are seated on the correct side of the board, and reclick the appropriate colors for first and second player.")
+        print("If all else fails, save the game, and reload, and retry score submission")
+        return
+    end
+    if #fleet.ships > 0 then
+        player1faction = fleet.ships[1].def.faction
+    end
+    player1fleet = flatten(fleet)
+    if #player1fleet == 0 then
+        print("No fleet found for Player 1!")
+        return
+    end
+    print("Getting fleet for player2: "..UI.getAttribute("Player2name","color"))
+    fleet = FLEETS[UI.getAttribute("Player2name","color")]
+    SECOND_FLEET = fleet
+    player2faction = nil
+    if fleet==nil then
+        print("No fleet found for Player 2!")
+        print("Please ensure players are seated on the correct side of the board, and reclick the appropriate colors for first and second player.")
+        print("If all else fails, save the game, and reload, and retry score submission")
+        return
+    end
+    if #fleet.ships > 0 then
+        player2faction = fleet.ships[1].def.faction
+    end
+    player2fleet = flatten(fleet)
+    if #player2fleet == 0 then
+        print("No fleet found for Player 2!")
+        return
+    end
+    submitted = os.date("!%Y%m%dT%H%M%S").."."..string.format("%03d",math.random (999))
+    -- print(submitted)
+    broadcastToAll("Posting Game to Cloud.....", {1,1,1})
+    url = "https://firestore.googleapis.com/v1/projects/ttsarmada/databases/(default)/documents/"..FIREBASE_COLLECTION
+    -- url = "https://ttsarmada.herokuapp.com/databases/(default)/documents/games"
+    -- print(FIRST_FLEET.score)
+    -- print(SECOND_FLEET.score)
+    Http.post(url,{
+        ['fields'] = {
+            player1 = { stringValue = tostring(player1)},
+            player1SteamId = { stringValue = tostring(FIRST_FLEET.steam_id)},
+            player1fleet = { arrayValue = { values = player1fleet} },
+            player1faction = { stringValue = tostring(player1faction)},
+            player1score = { integerValue = player1score or 0},
+            player1scoreVerified = { integerValue = FIRST_FLEET.score},
+            player1points = { integerValue = player1points or 5},
+            objective = { stringValue = tostring(objective)},
+            player2 = { stringValue = tostring(player2)},
+            player2SteamId = { stringValue = tostring(SECOND_FLEET.steam_id)},
+            player2fleet = { arrayValue = { values = player2fleet}},
+            player2faction = { stringValue = tostring(player2faction)},
+            player2score = { integerValue = player2score or 0},
+            player2scoreVerified = { integerValue = SECOND_FLEET.score},
+            player2points = { integerValue = player2points or 6},
+            submitted = { stringValue = submitted},
+            ranked = { booleanValue = RANKED},
+            tournamentCode = { stringValue = TOURNAMENT_CODE or ""}
+        }
+    },{['Content-Type']="application/json"}, handle_score_submit)
+end
+function API_SET_GAMEREPORTER_COLLECTION(collection_name)
+    printToAll("Set Game Reporter Collection to: "..collection_name, {0,1,1})
+    FIREBASE_COLLECTION = collection_name
+end
+function handle_score_submit(resp, error)
+    --Resp
+    --statusCode
+    --body>error>message
+    if resp~=nil and resp['statusCode']==400 then
+        broadcastToAll("Error with posting game!", {1,0,0})
+        broadcastToAll("To fix this error: Save game, reload it, resubmit score. This will cause some objectives to score incorrectly, so double check points.", {0,1,1})
+        print(resp['body']['error']['message'])
+        return
+    end
+    -- print("Resp: ")
+    -- for k,v in pairs(resp) do
+    --     print("  ",k,":",v)
+    -- end
+    if error~=nil then
+        broadcastToAll("Error: "..tostring(error), {1,0,0})
+        broadcastToAll("To fix this error: Save game, reload it, resubmit score. This will cause some objectives to score incorrectly, so double check points.", {0,1,1})
+        return
+    end
+    broadcastToAll("Game Successfully posted!", {0,1,0})
+end
+function onClick_selectPlayer1color(player, _, idValue)
+    onClick_selectPlayer(idValue,1)
+end
+function onClick_selectPlayer2color(player, _, idValue)
+    onClick_selectPlayer(idValue,2)
+end
+-- PLAYER_HAS_FLEET = {
+--     false, false
+-- }
+function onClick_selectPlayer(idValue,i)
+    color = UI.getAttribute(idValue,"color")
+    -- printToAll(color,{1,1,1})
+    if i==1 then
+        FIRST_FLEET = FLEETS[color]
+    else
+        SECOND_FLEET = FLEETS[color]
+    end
+    if FLEETS[color]~=nil then
+        -- print(Player[color].steam_name)
+        UI.setAttribute("Player"..i.."name", "color", color)
+        -- FLEETS[color].color = color
+        if FLEETS[color].steam_name~=nil then
+            -- FLEETS[color].steam_name = Player[color].steam_name
+            -- FLEETS[color].steam_id = Player[color].steam_id
+            UI.setValue("Player"..i.."name", FLEETS[color].steam_name)
+        else
+            -- FLEETS[color].steam_name = "Unknown"
+            -- FLEETS[color].steam_id = nil
+            UI.setValue("Player"..i.."name", "Unknown?")
+        end
+        -- FLEETS[color] = buildFleetFromZone(color)
+        -- print("Stored fleet in: "..color)
+        -- PLAYER_HAS_FLEET[i] = FLEETS[color]~=nil
+        -- updateFleetCostDisplay(color)
+        UI.show("Player"..i.."listFound")
+        UI.hide("Player"..i.."listNotFound")
+    else
+        -- PLAYER_HAS_FLEET[i] = false
+        UI.setAttribute("Player"..i.."name", "color", "#FF4040") --color
+        UI.setValue("Player"..i.."name", "?")
+        UI.hide("Player"..i.."listFound")
+        UI.show("Player"..i.."listNotFound")
+    end
+    -- local p1hasfleet = PLAYER_HAS_FLEET[1]
+    -- local p2hasfleet = PLAYER_HAS_FLEET[2]
+    -- print(p1hasfleet,p2hasfleet)
+    if FIRST_FLEET~=nil and SECOND_FLEET~=nil then
+        Wait.frames(function()
+            -- local p1color = UI.getAttribute("Player1name","color")
+            -- local p2color = UI.getAttribute("Player2name","color")
+            -- print(p1color, p2color)
+            -- local p1score = FLEET_SCORE[p1color]
+            -- local p2score = FLEET_SCORE[p2color]
+            player1score = FIRST_FLEET.objective + SECOND_FLEET.totalDead
+            FIRST_FLEET.score = player1score--p2score['lost']+p1score['objective']
+
+            UI.setAttribute("player1score","outline","#80FF00")
+            player2score = SECOND_FLEET.objective + FIRST_FLEET.totalDead
+            SECOND_FLEET.score = player2score--p1score['lost']+p2score['objective']
+            UI.setAttribute("player2score","outline","#80FF00")
+            UI.setAttribute("player1score","text",FIRST_FLEET.score)
+            UI.setAttribute("player2score","text",SECOND_FLEET.score)
+            updateScore()
+        end,1)
+    end
+
+end
+function findObjective(noerror)
+    for _,object in ipairs(getAllObjects()) do
+        if  vector.length(vector.sub(object.getPosition(),{-40.66,0.97,-0.09}))<2 then
+            Action_select_objective(object)
+            return object.getName()
+        end
+    end
+    if not noerror then
+        printToAll("Click 'Choose' on Objective to move to Proper Location for auto-detection!",{1,0,0})
+    end
+    return "None?"
+end
+player1score = nil
+function onInput_player1score(player, value, idValue)
+    if value~=nil then
+        player1score = tonumber(value)
+    else
+        player1score = value
+    end
+    updateScore()
+    if value==nil then
+        UI.setAttribute("player1score","outline","#FF4040")
+    else
+        UI.setAttribute("player1score","outline","#80FF00")
+    end
+end
+player2score = nil
+function onInput_player2score(player, value, idValue)
+    if value~=nil then
+        player2score = tonumber(value)
+    else
+        player2score = value
+    end
+    updateScore()
+    if value==nil then
+        UI.setAttribute("player2score","outline","#FF4040")
+    else
+        UI.setAttribute("player2score","outline","#80FF00")
+    end
+end
+player1points=0
+player2points=0
+function updateScore()
+    margin = math.abs((player1score or 0) - (player2score or 0))
+    score1 = nil
+    score2 = nil
+    if margin>=300 then
+        score1=10
+        score2=1
+    elseif margin>=220 then
+        score1=9
+        score2=2
+    elseif margin>=140 then
+        score1=8
+        score2=3
+    elseif margin>=60 then
+        score1=7
+        score2=4
+    else
+        score1=6
+        score2=5
+    end
+    if player1score==nil or player2score==nil then
+        UI.setValue("Player1iswinner","")
+        UI.setValue("Player2iswinner","")
+        UI.setValue("Player1points","-")
+        UI.setValue("Player2points","-")
+    else
+        if player1score>player2score then
+            player1points=score1
+            player2points=score2
+            UI.setValue("Player1iswinner","Winner!")
+            UI.setValue("Player2iswinner","")
+        else
+            player1points=score2
+            player2points=score1
+            UI.setValue("Player1iswinner","")
+            UI.setValue("Player2iswinner","Winner!")
+        end
+        UI.setValue("Player1points",player1points)
+        UI.setValue("Player2points",player2points)
+    end
+end
+RANKED = false
+function onClick_casualRanked(player, _, idValue)
+    if idValue=="casual" then
+        RANKED = false
+        UI.setAttribute("casual","fontStyle","bold")
+        UI.setAttribute("casual","fontSize","18")
+        UI.setAttribute("casual","color","#C0C0C0")
+        UI.setAttribute("casual","outline","white")
+        UI.setAttribute("casual","textColor","black")
+
+        UI.setAttribute("ranked","fontStyle","Normal")
+        UI.setAttribute("ranked","fontSize","14")
+        UI.setAttribute("ranked","color","black")
+        UI.setAttribute("ranked","outline","#443B00")
+        UI.setAttribute("ranked","textColor","#443B00")
+
+        UI.hide("rankedWarning")
+    else
+        RANKED = true
+        UI.setAttribute("casual","fontStyle","Normal")
+        UI.setAttribute("casual","fontSize","14")
+        UI.setAttribute("casual","color","black")
+        UI.setAttribute("casual","outline","#404040")
+        UI.setAttribute("casual","textColor","#404040")
+
+        UI.setAttribute("ranked","fontStyle","bold")
+        UI.setAttribute("ranked","fontSize","18")
+        UI.setAttribute("ranked","color","#DAA520")
+        UI.setAttribute("ranked","outline","#FFD700")
+        UI.setAttribute("ranked","textColor","black")
+
+        UI.show("rankedWarning")
+
+    end
+end
+TOURNAMENT_CODE = nil
+function onInput_tournamentCode(player, value, idValue)
+    TOURNAMENT_CODE = value
+end

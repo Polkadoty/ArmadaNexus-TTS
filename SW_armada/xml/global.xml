@@ -1,0 +1,75 @@
+
+
+<Defaults>
+    <Button color="black" textColor="white" tooltipBackgroundColor="rgba(0,0,0,1)" />
+    <Button class="tab" onClick="030220/onClick_selectArmadaTab" height="40" width="80" color="#303030"/>
+    <Panel class="buttonPanel" color="gray" alignment="UpperLeft" showAnimation="None" hideAnimation="None" />
+    <Text color="white" />
+    <Panel class="maneuverColumn" preferredWidth="210"/>
+    <Text class="heading" fontStyle="bold" fontSize="24" alignment="MiddleLeft"/>
+    <HorizontalLayout class="row" preferredHeight="20" childForceExpandWidth="false" childForceExpandHeight="false" spacing="5" childAlignment="MiddleLeft"/>
+    <Panel class="row" preferredHeight="20" childForceExpandWidth="false" childForceExpandHeight="false" spacing="5"/>
+    <Button class="fleet" color="#FFFFFF" preferredWidth="40" minWIdth="15" tooltipPosition="Above" textAlignment="MiddleRight"/>
+    <HorizontalLayout class="fleetRow" preferredHeight="20" minHeight="20"/>
+    <InputField textColor="white" color="black" outlineSize="1 1" outline="white"></InputField>
+    <Dropdown textColor="white" itemTextColor="white" dropdownBackgroundColor="black" arrowColor="white" itemBackgroundColors="black|#303030|#303030|black" color="black" outlineSize="1 1" outline="white"></Dropdown>
+    <Button class="faction" onClick="030220/onClick_selectFaction" fontSize="16" iconWidth="10" resizeTextForBestFit="true" resizeTextMaxSize="16" outlineSize="1 1 1 0" outline="white" colors="transparent|#A0A0A0|white|transparent" color="#606060"/>
+    <Button class="shipSquadron" onClick="030220/onClick_selectShipSquadron" fontSize="14" iconWidth="10" outlineSize="1 1 1 0" outline="white" colors="transparent|#A0A0A0|white|transparent" color="#606060"/>
+    <Button class="upgradeCategory" onClick="030220/onClick_loadCategory" outlineSize="1 1 1 0" outline="white" colors="transparent|#A0A0A0|white|transparent" color="#606060" tooltipPosition="Below"/>
+    <Text class="openParen" preferredWidth="5" color="#606060" alignment="MiddleRight"/>
+    <Text class="closeParen" preferredWidth="5" color="#606060" alignment="MiddleLeft"/>
+    <Text class="cost" preferredWidth="20" />
+    <Button class="upgradeCard" onClick="030220/onClick_spawnCard" outlineSize="1 1 1 0" outline="white" colors="transparent|#A0A0A0|white|transparent" color="#606060" textColor="white" textAlignment="MiddleLeft"/>
+    <Button class="shipCard" onClick="030220/onClick_spawnCard" active="false" outlineSize="1 1 1 0" outline="white" colors="transparent|#A0A0A0|white|transparent" color="#606060" textColor="white" textAlignment="MiddleLeft"/>
+    <Button class="pagination" color="black" outlineSize="1 1 1 0" outline="#606060" onClick="030220/onClick_show_helpPage"/>
+    <Button class="paginationActive" color="yellow" textColor="black" outlineSize="1 1 1 0" outline="#606060" onClick="030220/onClick_show_helpPage"/>
+    <VerticalLayout class="helpPanel"  padding="20 20 40 20"/>
+    <HorizontalLayout class="helpHeading" padding="20 20 0 3" ignoreLayout="true" rectAlignment="UpperCenter" width="440" height="40"/>
+    <Text class="passive" color="#606060"/>
+    <Button class="rulerTurn"  outlineSize="1 1 1 0" outline="white" colors="transparent|#A0A0A0|white|transparent" color="#606060"/>
+    <Button class="map" onClick="030220/onClick_select_map" fontSize="16" iconWidth="10" resizeTextForBestFit="true" resizeTextMaxSize="16" outlineSize="1 1 1 0" outline="white" colors="transparent|#A0A0A0|white|transparent" color="#606060"/>
+
+</Defaults>
+<!-- height="800"
+width="400" -->
+<VerticalLayout color="black"
+    id="armadaDisplay"
+    height="30"
+    width="0"
+    allowDragging="true"
+    returnToOriginalPositionWhenReleased="false"
+    rectAlignment="UpperRight"
+    offsetXY="-40 -160"
+    outlineSize="1 1"
+    outline="#303030"
+    >
+    <HorizontalLayout color="transparent" preferredHeight="30" spacing="8">
+        <Text id="spawnerTitle" preferredWidth="264" alignment="MiddleCenter" active="false">Armada Fleet Spawner</Text>
+        <!-- <Text id="shortTitle" preferredWidth="80" alignment="MiddleCenter" active="false">Spawner</Text> -->
+        <VerticalLayout id="btnBar" ignoreLayout="true" offsetXY="40 0" rectAlignment="UpperRight" width="40" height="360" outlineSize="1 1" outline="#303030" color="black">
+            <Button id="minimizeBtn" color="#FFFFFF" icon="Rebel Empire" onClick="030220/onClick_ToggleUI" tooltipPosition="Left" tooltip="Show Armada Fleet Spawner" colors="transparent|#308030|#008000|transparent" />
+            <Button id="cloudBtn" color="#FFFFFF" iconColor="#FFA040" icon="PODIUM" onClick="030220/onClick_selectGameReporterTab" tooltipPosition="Left" tooltip="Show ScoreReporting" colors="transparent|#308030|#008000|transparent" />
+            <Button id="helpBtn" color="#FFFFFF" iconColor="#40A0FF" icon="Help" onClick="030220/onClick_toggle_commandPopup" tooltipPosition="Left" tooltip="Show Help" colors="transparent|#FFFFFF|#FFFFFF|transparent" />
+            <Button id="victoryBtn" color="#FFFFFF" iconColor="#FFFFFF" icon="ObjectiveToken" onClick="030220/onClick_toggle_victoryToken" tooltipPosition="Left" tooltip="Victory Token Value" colors="transparent|#808030|#808000|transparent" />
+            <Button id="destroyBtn" color="#FFFFFF" iconColor="#FFFFFF" icon="EXPLOSION" onClick="Action_ToggleDestroyShipButtons" tooltipPosition="Left" tooltip="Destroy Ships" colors="transparent|#803030|#800000|transparent" />
+            <Button id="refreshBtn" color="#FFFFFF" iconColor="#FFFF00" icon="REFRESH" onClick="030220/onClick_RefreshScore" tooltipPosition="Left" tooltip="Refresh Score Display" colors="transparent|#308030|#008000|transparent" />
+            <Button id="asteroidBtn" color="#FFFFFF" iconColor="#FFFFFF" icon="Asteroid" onClick="onClick_ToggleAsteroidBtns" tooltipPosition="Left" tooltip="Toggle Asteroid and Token Buttons" colors="transparent|#303080|#000080|transparent" />
+            <Button id="tableBtn" color="#FFFFFF" iconColor="#FFFFFF" icon="TABLE" onClick="030220/onClick_ToggleTableSelect" tooltipPosition="Left" tooltip="Select Table Textures" colors="transparent|#303080|#000080|transparent" />
+            <Button id="rulerBtn" color="#FFFFFF" iconColor="#FFFFFF" icon="RULER" onClick="onClick_ToggleRulerGUI" tooltipPosition="Left" tooltip="Toggle Ruler GUI" colors="transparent|#303080|#000080|transparent" />
+        </VerticalLayout>
+    </HorizontalLayout>
+    <HorizontalLayout id="tabContainer" active="false" preferredHeight="20">
+        <Button text="Fleet"  id="fleetSpawner"  class="tab" />
+        <Button text="Ships"  id="shipSpawner" class="tab" onClick="030220/onClick_selectShipSpawnerTab" />
+        <Button text="Upgrades"  id="upgradeSpawner"  class="tab" onClick="030220/onClick_selectUpgradeSpawnerTab"/>
+        <!-- <Button text="Cloud"  id="gameReporter"  class="tab" onClick="030220/onClick_selectGameReporterTab" /> -->
+    </HorizontalLayout>
+<Include src="fleetSpawner.xml"/>
+<Include src="shipSpawner.xml"/>
+<Include src="upgradeSpawner.xml"/>
+<Include src="gameReporter.xml"/>
+</VerticalLayout>
+<Include src="commandDialPopup.xml"/>
+<Include src="victoryTokens.xml"/>
+<Include src="mapSelector.xml"/>
+<Include src="rulerProxy.xml"/>

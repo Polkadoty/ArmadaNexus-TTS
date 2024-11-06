@@ -1,0 +1,137 @@
+REPUBLIC_SHIP = {
+    back =      ASSETS_ROOT.."ships/republic/card_back.jpg",
+    faction = "Republic"
+}
+
+Ship:new(SmallShip,REPUBLIC_SHIP,{
+	name = "Consular-class Armed Cruiser",
+    front =     ASSETS_ROOT.."ships/republic/consular/armed_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/consular/armed_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/consular/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/consular/armed_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/consular/ruler.obj",
+    maneuver = {{"II"},{"II","I"},{"I","I","I"},{"I","-","I","I"}},
+    defense_tokens = {DEF_EVADE, DEF_REDIRECT, DEF_CONTAIN},
+    shields = {2,2,2,1},
+    cost = 37,
+	aliases = {"Consular Armed Cruiser","Armed Cruiser"},
+    command = 1
+})
+Ship:new(SmallShip,REPUBLIC_SHIP,{
+	name = "Consular-class Charger c70",
+    front =     ASSETS_ROOT.."ships/republic/consular/charger_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/consular/armed_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/consular/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/consular/charger_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/consular/ruler.obj",
+    maneuver = {{"II"},{"II","I"},{"I","I","I"},{"I","-","I","I"}},
+    defense_tokens = {DEF_EVADE, DEF_REDIRECT, DEF_CONTAIN},
+    shields = {2,2,2,1},
+    cost = 45,
+	aliases = {"Consular Charger c70","Charger c70"},
+    command = 1
+})
+
+Ship:new(MediumShip,REPUBLIC_SHIP,{
+	name = "Acclamator I-class Assault Ship",
+    front =     ASSETS_ROOT.."ships/republic/acclamator/I_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/acclamator/I_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/acclamator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/acclamator/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/acclamator/ruler.obj",
+    maneuver = {{"I"},{"I","-"},{"-","I","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {4,2,2,2},
+    cost = 66,
+	aliases = {"Acclamator I Assault Ship", "Acclamator I"},
+    command = 3
+})
+Ship:new(MediumShip,REPUBLIC_SHIP,{
+	name = "Acclamator II-class Assault Ship",
+    front =     ASSETS_ROOT.."ships/republic/acclamator/II_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/acclamator/II_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/acclamator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/acclamator/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/acclamator/ruler.obj",
+    maneuver = {{"I"},{"I","-"},{"-","I","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {4,2,2,2},
+    cost = 71,
+	aliases = {"Acclamator II Assault Ship", "Acclamator II"},
+    command = 3
+})
+
+Ship:new(LargeShip,REPUBLIC_SHIP,{
+	name = "Venator I-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/republic/venator/I_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/venator/I_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/venator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/venator/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/venator/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
+    shields = {4,3,3,2},
+    cost = 90,
+	aliases = {"Venator I Star Destroyer", "Venator I"},
+    command = 3
+})
+
+--Missing upgrades & cost
+Ship:new(LargeShip,REPUBLIC_SHIP,{
+	name = "Venator II-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/republic/venator/II_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/venator/II_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/venator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/venator/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/venator/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
+    shields = {4,3,3,2},
+    cost = 100,
+	aliases = {"Venator II Star Destroyer", "Venator II"},
+    command = 3
+})
+
+Ship:new(SmallShip,REPUBLIC_SHIP,{
+	name = "Pelta-class Medical Frigate",
+    front =     ASSETS_ROOT.."ships/republic/pelta/medical_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/pelta/medical_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/pelta/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/pelta/medical_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/pelta/ruler.obj",
+    maneuver = {{"II"},{"I","I"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT},
+    shields = {3,2,2,1},
+    cost = 49,
+	aliases = {"Pelta Medical Frigate"},
+    command = 2
+})
+
+Ship:new(SmallShip,REPUBLIC_SHIP,{
+    name = "Pelta-class Transport Frigate",
+    front =     ASSETS_ROOT.."ships/republic/pelta/transport_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/pelta/transport_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/pelta/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/pelta/transport_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/pelta/ruler.obj",
+    maneuver = {{"II"},{"I","I"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT},
+    shields = {3,2,2,1},
+    cost = 45,
+    aliases = {"Pelta Transport Frigate"},
+    command = 2
+})
+Ship:new(MediumShip,REPUBLIC_SHIP,{
+	name = "Victory I-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/republic/victory/I_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/republic/victory/I_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/victory/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/victory/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/victory/ruler.obj",
+    maneuver = {{"I"},{"-","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {3,3,3,1},
+    cost = 75,
+    aliases = {"Victory I Star Destroyer","Victory I", "VSD I", "VSD 1", "Victory I-class Star Destroyer (gar)", "Victory I Star Destroyer (gar)","Victory I (gar)", "VSD I (gar)", "VSD 1 (gar)"},
+    command = 3
+})

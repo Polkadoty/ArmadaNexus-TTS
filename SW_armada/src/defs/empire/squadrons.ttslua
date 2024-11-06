@@ -1,0 +1,373 @@
+EMPIRE_SQUAD = {
+    back = ASSETS_ROOT.."squadrons/empire/card_back.jpg",
+    faction = "Empire"
+}
+tie = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/tie/sw_model.obj",
+    health = 3,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(tie, EMPIRE_SQUAD, {
+	name = "TIE Fighter Squadron",
+    front =     ASSETS_ROOT.."squadrons/empire/tie/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/tie/base_diffuse.jpg",
+    cost = 8,
+    aliases = {"TIE Fighter Squadrons", "TIE Fighter"}
+})
+Squadron:new(tie, EMPIRE_SQUAD, {
+	name = '"Mauler" Mithel',
+    front =     ASSETS_ROOT.."squadrons/empire/tie/mauler_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 15,
+    aliases = {"Mauler Mithel"}
+})
+Squadron:new(tie, EMPIRE_SQUAD, {
+	name = '"Howlrunner"',
+    front =     ASSETS_ROOT.."squadrons/empire/tie/howlrunner_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 16,
+    aliases = {"Howlrunner"}
+})
+Squadron:new(tie, EMPIRE_SQUAD, {
+	name = 'Valen Rudor',
+    front =     ASSETS_ROOT.."squadrons/empire/tie/valen_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 13
+})
+Squadron:new(tie, EMPIRE_SQUAD, {
+	name = 'Black Squadron',
+    front =     ASSETS_ROOT.."squadrons/empire/tie/black_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/tie/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/tie/co_es_model.obj",
+    cost = 9
+})
+int = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/int/co_sw_model.obj",
+    health = 3,
+    move = 5,
+    defense_tokens = {}}
+Squadron:new(int, EMPIRE_SQUAD, {
+	name = "TIE Interceptor Squadron",
+    front =     ASSETS_ROOT.."squadrons/empire/int/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/int/base_diffuse.jpg",
+    cost = 11,
+    aliases = {"TIE Interceptor Squadrons", "TIE Interceptor"}
+})
+Squadron:new(int, EMPIRE_SQUAD, {
+	name = "Soontir Fel",
+    front =     ASSETS_ROOT.."squadrons/empire/int/soontir_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/int/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 18
+})
+Squadron:new(int, EMPIRE_SQUAD, {
+	name = "Ciena Ree",
+    front =     ASSETS_ROOT.."squadrons/empire/int/ciena_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/int/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 17
+})
+Squadron:new(int, EMPIRE_SQUAD, {
+	name = "Vult Skerris",
+    front =     ASSETS_ROOT.."squadrons/empire/int/vult_card_v2_1.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/int/ace_diffuse.jpg",
+    defense_tokens = {DEF_SCATTER,DEF_BRACE},
+    cost = 18
+})
+Squadron:new(int, EMPIRE_SQUAD, {
+	name = "Saber Squadron",
+    front =     ASSETS_ROOT.."squadrons/empire/int/saber_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/int/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/int/sn_sw_model.obj",
+    cost = 12
+})
+bom = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/bom/bo_he_model.obj",
+    health = 5,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(bom, EMPIRE_SQUAD, {
+	name = "TIE Bomber Squadron",
+    front =     ASSETS_ROOT.."squadrons/empire/bom/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/bom/base_diffuse.jpg",
+    cost = 9,
+    aliases = {"TIE Bomber Squadrons", "TIE Bomber"}
+})
+Squadron:new(bom, EMPIRE_SQUAD, {
+	name = "Major Rhymer",
+    front =     ASSETS_ROOT.."squadrons/empire/bom/rhymer_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/bom/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 16
+})
+Squadron:new(bom, EMPIRE_SQUAD, {
+	name = "Captain Jonus",
+    front =     ASSETS_ROOT.."squadrons/empire/bom/jonus_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/bom/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/bom/bo_gr_he_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 16
+})
+Squadron:new(bom, EMPIRE_SQUAD, {
+	name = "Gamma Squadron",
+    front =     ASSETS_ROOT.."squadrons/empire/bom/gamma_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/bom/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/bom/bo_gr_model.obj",
+    cost = 10
+})
+adv = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/adv/es_model.obj",
+    health = 5,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(adv, EMPIRE_SQUAD, {
+	name = "TIE Advanced Squadron",
+    front =     ASSETS_ROOT.."squadrons/empire/adv/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/adv/base_diffuse.jpg",
+    cost = 12,
+    aliases = {"TIE Advanced Squadrons", "TIE Advanced"}
+})
+Squadron:new(adv, EMPIRE_SQUAD, {
+	name = "Darth Vader",
+    front =     ASSETS_ROOT.."squadrons/empire/adv/vader_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 21,
+    aliases = {'Darth Vader (TIE Advanced)'}
+})
+Squadron:new(adv, EMPIRE_SQUAD, {
+	name = "Zertik Strom",
+    front =     ASSETS_ROOT.."squadrons/empire/adv/zertik_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 15
+})
+Squadron:new(adv, EMPIRE_SQUAD, {
+	name = "Tempest Squadron",
+    front =     ASSETS_ROOT.."squadrons/empire/adv/tempest_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/adv/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/adv/bo_es_model.obj",
+    cost = 13
+})
+firespray = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/firespray/bo_ro_model.obj",
+    health = 6,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(firespray, EMPIRE_SQUAD, {
+	name = "Firespray-31",
+    front =     ASSETS_ROOT.."squadrons/empire/firespray/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/base_diffuse.jpg",
+    cost = 18,
+    aliases = {"Firespray-31s"}
+})
+Squadron:new(firespray, EMPIRE_SQUAD, {
+	name = "Boba Fett",
+    front =     ASSETS_ROOT.."squadrons/empire/firespray/fett_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 26
+})
+Squadron:new(firespray, EMPIRE_SQUAD, {
+	name = "Hondo Ohnaka",
+    front =     ASSETS_ROOT.."squadrons/empire/firespray/hondo_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/firespray/bo_gr_ro_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 24
+})
+jumpmaster = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/jumpmaster/in_sw_model.obj",
+    health = 4,
+    move = 4 }
+Squadron:new(jumpmaster, EMPIRE_SQUAD, {
+	name = "JumpMaster 5000",
+    front =     ASSETS_ROOT.."squadrons/empire/jumpmaster/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/base_diffuse.jpg",
+    cost = 12,
+    aliases = {"JumpMaster 5000s"}
+})
+Squadron:new(jumpmaster, EMPIRE_SQUAD, {
+	name = "Dengar",
+    front =     ASSETS_ROOT.."squadrons/empire/jumpmaster/dengar_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 20
+})
+Squadron:new(jumpmaster, EMPIRE_SQUAD, {
+	name = "Tel Trevura",
+    front =     ASSETS_ROOT.."squadrons/empire/jumpmaster/tel_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/jumpmaster/gr_ro_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 17
+})
+aggressor = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/aggressor/co_ro_model.obj",
+    health = 5,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(aggressor, EMPIRE_SQUAD, {
+	name = "Aggressor Assault Fighter",
+    front =     ASSETS_ROOT.."squadrons/empire/aggressor/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/base_diffuse.jpg",
+    cost = 16,
+    aliases = {"Aggressor Assault Fighters"}
+})
+Squadron:new(aggressor, EMPIRE_SQUAD, {
+	name = "IG-88",
+    front =     ASSETS_ROOT.."squadrons/empire/aggressor/ig88_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/ace_diffuse.jpg",
+    move = 5,
+    defense_tokens = {DEF_SCATTER},
+    cost = 21
+})
+Squadron:new(aggressor, EMPIRE_SQUAD, {
+	name = "IG-88B",
+    front =     ASSETS_ROOT.."squadrons/empire/aggressor/ig88b_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/ace_diffuse.jpg",
+    move = 5,
+    defense_tokens = {DEF_SCATTER},
+    cost = 21
+})
+yv666 = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/yv666/gr_he_ro_model.obj",
+    health = 7,
+    move = 2,
+    defense_tokens = {}}
+Squadron:new(yv666, EMPIRE_SQUAD, {
+	name = "YV-666",
+    front =     ASSETS_ROOT.."squadrons/empire/yv666/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/yv666/base_diffuse.jpg",
+    cost = 15,
+    aliases = {"YV-666s"}
+})
+Squadron:new(yv666, EMPIRE_SQUAD, {
+	name = "Bossk",
+    front =     ASSETS_ROOT.."squadrons/empire/yv666/bossk_card.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/yv666/gr_ro_model.obj",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/yv666/ace_diffuse.jpg",
+    move = 3,
+    defense_tokens = {DEF_BRACE},
+    cost = 23
+})
+Squadron:new(yv666, EMPIRE_SQUAD, {
+	name = "Moralo Eval",
+    front =     ASSETS_ROOT.."squadrons/empire/yv666/moralo_card.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/yv666/gr_ro_model.obj",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/yv666/ace_diffuse.jpg",
+    move = 3,
+    defense_tokens = {DEF_BRACE},
+    cost = 22
+})
+phantom = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/pha/cl_model.obj",
+    health = 4,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(phantom, EMPIRE_SQUAD, {
+	name = 'TIE Phantom Squadron',
+    front =     ASSETS_ROOT.."squadrons/empire/pha/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/pha/base_diffuse.jpg",
+    cost = 14,
+    aliases = {"TIE Phantom Squadrons", "TIE Phantom"}
+})
+Squadron:new(phantom, EMPIRE_SQUAD, {
+	name = '"Whisper"',
+    front =     ASSETS_ROOT.."squadrons/empire/pha/whisper_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/pha/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 20,
+    aliases = {"Whisper"}
+})
+defender = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/def/bo_model.obj",
+    health = 6,
+    move = 5,
+    defense_tokens = {}}
+Squadron:new(defender, EMPIRE_SQUAD, {
+	name = 'TIE Defender Squadron',
+    front =     ASSETS_ROOT.."squadrons/empire/def/base_card.jpg",
+    diffuse = "http://i.imgur.com/pXxfv23.png",
+    cost = 16,
+    aliases = {"TIE Defender Squadrons", "TIE Defender"}
+})
+Squadron:new(defender, EMPIRE_SQUAD, {
+	name = 'Maarek Stele',
+    front =     ASSETS_ROOT.."squadrons/empire/def/maarek_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/def/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/def/bo_gr_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 21
+})
+Squadron:new(defender, EMPIRE_SQUAD, {
+	name = 'Darth Vader',
+    front =     ASSETS_ROOT.."squadrons/empire/def/vader_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/def/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/def/ad_bo_ro_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_EVADE},
+    cost = 25,
+    aliases = {'Darth Vader (defender)','Darth Vader (TIE Defender)'}
+})
+lambda = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/lambda/he_re_st_model.obj",
+    health = 6,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(lambda, EMPIRE_SQUAD, {
+	name = 'Lambda-class Shuttle',
+    front =     ASSETS_ROOT.."squadrons/empire/lambda/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/lambda/base_diffuse.jpg",
+    cost = 15,
+    aliases = {'Lambda Shuttle', 'Lambda Shuttles', 'Lambda-class Shuttles'}
+})
+Squadron:new(lambda, EMPIRE_SQUAD, {
+	name = 'Colonel Jendon',
+    front =     ASSETS_ROOT.."squadrons/empire/lambda/jendon_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/lambda/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/lambda/he_re_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 20
+})
+decimator = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/decimator/co_he_ro_model.obj",
+    health = 8,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(decimator, EMPIRE_SQUAD, {
+	name = 'VT-49 Decimator',
+    front =     ASSETS_ROOT.."squadrons/empire/decimator/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/decimator/base_diffuse.jpg",
+    cost = 22,
+    aliases = {'VT-49 Decimators'}
+})
+Squadron:new(decimator, EMPIRE_SQUAD, {
+	name = 'Morna Kee',
+    front =     ASSETS_ROOT.."squadrons/empire/decimator/morna_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/decimator/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/empire/decimator/co_ro_model.obj",
+    defense_tokens = {DEF_BRACE},
+    cost = 27
+})
+gauntlet = {
+    mesh =      ASSETS_ROOT.."squadrons/empire/guantlet/as_ro_model.obj",
+    health = 7,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(gauntlet, EMPIRE_SQUAD, {
+	name = 'Mandalorian Gauntlet Fighter',
+    front =     ASSETS_ROOT.."squadrons/empire/guantlet/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/guantlet/base_diffuse.jpg",
+    cost = 20,
+    aliases = {'Mandalorian Gauntlet Fighters'}
+})
+Squadron:new(gauntlet, EMPIRE_SQUAD, {
+	name = 'Gar Saxon',
+    front =     ASSETS_ROOT.."squadrons/empire/guantlet/saxon_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/guantlet/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE},
+    cost = 23
+})

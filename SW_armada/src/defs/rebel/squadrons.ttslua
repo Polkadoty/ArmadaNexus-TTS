@@ -1,0 +1,359 @@
+REBEL_SQUAD = {
+    back =      ASSETS_ROOT.."squadrons/rebel/card_back.jpg",
+    faction = "Rebellion"
+}
+bwing = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/bwing/bo_model.obj",
+    health = 5,
+    move = 2,
+    defense_tokens = {}}
+Squadron:new(bwing, REBEL_SQUAD, {
+	name = "B-wing Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/bwing/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/base_diffuse.jpg",
+    cost = 14,
+    aliases = {'B-wing Squadrons', "B-wing"}
+})
+Squadron:new(bwing, REBEL_SQUAD, {
+	name = "Keyan Farlander",
+    front =     ASSETS_ROOT.."squadrons/rebel/bwing/keyan_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 20
+})
+Squadron:new(bwing, REBEL_SQUAD, {
+	name = "Ten Numb",
+    front =     ASSETS_ROOT.."squadrons/rebel/bwing/ten_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 19
+})
+Squadron:new(bwing, REBEL_SQUAD, {
+	name = "Dagger Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/bwing/dagger_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/bwing/bo_sw_model.obj",
+    cost = 15
+})
+ywing = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_he_model.obj",
+    health = 6,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(ywing, REBEL_SQUAD, {
+	name = "Y-wing Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/ywing/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/base_diffuse.jpg",
+    cost = 10,
+    aliases = {'Y-wing Squadrons', "Y-wing"}
+})
+Squadron:new(ywing, REBEL_SQUAD, {
+	name = '"Dutch" Vander',
+    front =     ASSETS_ROOT.."squadrons/rebel/ywing/dutch_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 16,
+    aliases = {"Dutch Vander"}
+})
+Squadron:new(ywing, REBEL_SQUAD, {
+	name = 'Norra Wexley',
+    front =     ASSETS_ROOT.."squadrons/rebel/ywing/norra_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 17
+})
+Squadron:new(ywing, REBEL_SQUAD, {
+	name = 'Gold Squadron',
+    front =     ASSETS_ROOT.."squadrons/rebel/ywing/gold_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_model.obj",
+    cost = 12
+})
+awing = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/awing/co_model.obj",
+    health = 4,
+    move = 5,
+    defense_tokens = {}}
+Squadron:new(awing, REBEL_SQUAD, {
+	name = "A-wing Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/awing/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/base_diffuse.jpg",
+    cost = 11,
+    aliases = {'A-wing Squadrons', "A-wing"}
+})
+Squadron:new(awing, REBEL_SQUAD, {
+	name = "Tycho Celchu",
+    front =     ASSETS_ROOT.."squadrons/rebel/awing/tycho_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 16
+})
+Squadron:new(awing, REBEL_SQUAD, {
+	name = "Shara Bey",
+    front =     ASSETS_ROOT.."squadrons/rebel/awing/shara_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 17
+})
+Squadron:new(awing, REBEL_SQUAD, {
+	name = "Green Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/awing/green_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/awing/bo_co_model.obj",
+    cost = 12
+})
+xwing = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/xwing/bo_es_model.obj",
+    health = 5,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(xwing, REBEL_SQUAD, {
+	name = "X-wing Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/xwing/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/base_diffuse.jpg",
+    cost = 13,
+    aliases = {'X-wing Squadrons', "X-wing"}
+})
+Squadron:new(xwing, REBEL_SQUAD, {
+	name = "Luke Skywalker",
+    front =     ASSETS_ROOT.."squadrons/rebel/xwing/luke_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 20
+})
+Squadron:new(xwing, REBEL_SQUAD, {
+	name = "Wedge Antilles",
+    front =     ASSETS_ROOT.."squadrons/rebel/xwing/wedge_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 19
+})
+Squadron:new(xwing, REBEL_SQUAD, {
+	name = "Biggs Darklighter",
+    front =     ASSETS_ROOT.."squadrons/rebel/xwing/biggs_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 19
+})
+Squadron:new(xwing, REBEL_SQUAD, {
+	name = "Hera Syndulla",
+    front =     ASSETS_ROOT.."squadrons/rebel/xwing/hera_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/xwing/bo_do_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 23,
+    aliases = {'Hera Syndulla (xwing)','Hera Syndulla (X-wing)'}
+})
+Squadron:new(xwing, REBEL_SQUAD, {
+	name = "Rogue Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/xwing/rogue_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/unique_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/xwing/bo_ro_model.obj",
+    cost = 14
+})
+yt2400 = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/yt2400/ro_model.obj",
+    health = 6,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(yt2400, REBEL_SQUAD, {
+	name = "YT-2400",
+    front =     ASSETS_ROOT.."squadrons/rebel/yt2400/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/yt2400/base_diffuse.jpg",
+    cost = 16,
+    aliases = {'YT-2400s'}
+})
+Squadron:new(yt2400, REBEL_SQUAD, {
+	name = "Dash Rendar",
+    front =     ASSETS_ROOT.."squadrons/rebel/yt2400/dash_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/yt2400/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/yt2400/bo_ro_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 24
+})
+Squadron:new(yt2400, REBEL_SQUAD, {
+	name = "Mart Mattin",
+    front =     ASSETS_ROOT.."squadrons/rebel/yt2400/mart_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/yt2400/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/yt2400/gr_ro_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 22
+})
+yt1300 = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/co_es_model.obj",
+    health = 7,
+    move = 2,
+    defense_tokens = {}}
+Squadron:new(yt1300, REBEL_SQUAD, {
+	name = "YT-1300",
+    front =     ASSETS_ROOT.."squadrons/rebel/yt1300/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/yt1300/base_diffuse.jpg",
+    cost = 13,
+    aliases = {'YT-1300s'}
+})
+Squadron:new(yt1300, REBEL_SQUAD, {
+	name = "Han Solo",
+    front =     ASSETS_ROOT.."squadrons/rebel/yt1300/han_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/yt1300/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
+    move = 3,
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 26
+})
+Squadron:new(yt1300, REBEL_SQUAD, {
+	name = "Lando Calrissian",
+    front =     ASSETS_ROOT.."squadrons/rebel/yt1300/lando_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/yt1300/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
+    move = 3,
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 23
+})
+hwk = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/hwk/co_in_model.obj",
+    health = 4,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(hwk, REBEL_SQUAD, {
+	name = "HWK-290",
+    front =     ASSETS_ROOT.."squadrons/rebel/hwk/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/hwk/base_diffuse.jpg",
+    cost = 12,
+    aliases = {'HWK-290s'}
+})
+Squadron:new(hwk, REBEL_SQUAD, {
+	name = "Jan Ors",
+    front =     ASSETS_ROOT.."squadrons/rebel/hwk/jan_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/hwk/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 19
+})
+Squadron:new(hwk, REBEL_SQUAD, {
+	name = "Kanan Jarrus",
+    front =     ASSETS_ROOT.."squadrons/rebel/hwk/kanan_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/hwk/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/hwk/as_cl_ro_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 19
+})
+scurrg = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/scurrg/bo_gr_he_model.obj",
+    health = 6,
+    move = 3 }
+Squadron:new(scurrg, REBEL_SQUAD, {
+	name = "Scurrg H-6 Bomber",
+    front =     ASSETS_ROOT.."squadrons/rebel/scurrg/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/scurrg/base_diffuse.jpg",
+    cost = 16,
+    aliases = {'Scurrg H-6 Bombers', "Scurrg H-6", "Scurrg"}
+})
+Squadron:new(scurrg, REBEL_SQUAD, {
+	name = "Nym",
+    front =     ASSETS_ROOT.."squadrons/rebel/scurrg/nym_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/scurrg/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/scurrg/bo_gr_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 21
+})
+Squadron:new(scurrg, REBEL_SQUAD, {
+	name = "Malee Hurra",
+    front =     ASSETS_ROOT.."squadrons/rebel/scurrg/malee_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/scurrg/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/scurrg/bo_gr_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 26
+})
+z95 = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/z95/sw_model.obj",
+    health = 3,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(z95, REBEL_SQUAD, {
+	name = "Z-95 Headhunter Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/z95/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/z95/base_diffuse.jpg",
+    cost = 7,
+    aliases = {'Z-95 Headhunter Squadrons', "Z-95 Headhunter", "Z-95"}
+})
+Squadron:new(z95, REBEL_SQUAD, {
+	name = "Lieutenant Blount",
+    front =     ASSETS_ROOT.."squadrons/rebel/z95/blount_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/z95/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 14,
+    aliases = {'Lietenant Blount'}
+})
+ewing = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_sn_model.obj",
+    health = 5,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(ewing, REBEL_SQUAD, {
+	name = "E-wing Squadron",
+    front =     ASSETS_ROOT.."squadrons/rebel/ewing/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/base_diffuse.jpg",
+    cost = 15,
+    aliases = {'E-wing Squadrons', "E-wing"}
+})
+Squadron:new(ewing, REBEL_SQUAD, {
+	name = "Corran Horn",
+    front =     ASSETS_ROOT.."squadrons/rebel/ewing/corran_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
+        mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 22
+})
+vcx = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/vcx/he_re_st_model.obj",
+    health = 8,
+    move = 3,
+    defense_tokens = {}}
+Squadron:new(vcx, REBEL_SQUAD, {
+	name = "VCX-100 Freighter",
+    front =     ASSETS_ROOT.."squadrons/rebel/vcx/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/vcx/base_diffuse.jpg",
+    cost = 15,
+    aliases = {'VCX-100 Freighters', "VCX-100"}
+})
+Squadron:new(vcx, REBEL_SQUAD, {
+	name = "Hera Syndulla",
+    front =     ASSETS_ROOT.."squadrons/rebel/vcx/hera_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/vcx/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/vcx/gr_ro_model.obj",
+    defense_tokens = {DEF_BRACE},
+    cost = 28,
+    aliases = {'Hera Syndulla (Ghost)'}
+})
+lancer = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/lancer/bo_gr_ro_model.obj",
+    health = 4,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(lancer, REBEL_SQUAD, {
+	name = "Lancer-class Pursuit Craft",
+    front =     ASSETS_ROOT.."squadrons/rebel/lancer/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/lancer/base_diffuse.jpg",
+    cost = 15,
+    aliases = {"Lancer Pursuit Craft","Lancer Pursuit Crafts","Lancer-class Pursuit Crafts","Lancer"}
+})
+Squadron:new(lancer, REBEL_SQUAD, {
+	name = "Ketsu Onyo",
+    front =     ASSETS_ROOT.."squadrons/rebel/lancer/ketsu_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/lancer/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 22
+})
+
+gauntlet = {
+    mesh =      ASSETS_ROOT.."squadrons/rebel/guantlet/as_es_model.obj",
+    health = 7,
+    move = 4,
+    defense_tokens = {}}
+Squadron:new(gauntlet, REBEL_SQUAD, {
+	name = 'Fenn Rau',
+    front =     ASSETS_ROOT.."squadrons/rebel/guantlet/fenn_card_v2_1.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/guantlet/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE},
+    cost = 24
+})

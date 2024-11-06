@@ -1,0 +1,1278 @@
+#include ui/fleetSpawner
+
+ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
+
+DEF_BRACE = '79d121'
+DEF_CONTAIN = '68abfc'
+DEF_EVADE = 'c09d88'
+DEF_REDIRECT = '36f595'
+DEF_SCATTER = '895e91'
+DEF_SALVO = '5028b2'
+
+ALL_DEFENSE_TOKENS = {
+    BRACE = DEF_BRACE,
+    CONTAIN = DEF_CONTAIN,
+    EVADE = DEF_EVADE,
+    REDIRECT = DEF_REDIRECT,
+    SCATTER = DEF_SCATTER,
+    SALVO = DEF_SALVO
+}
+SPEED_SOURCE = 'b75a56'
+COMMAND_SOURCE = '2516df'
+COM_ENG = ''
+COM_CON = ''
+COM_NAV = ''
+COM_SQA = ''
+COMMAND_TOKEN_SOURCES = {
+    'cc1a75',
+    'ed755e',
+    'd62f13',
+    'dea579'
+}
+
+function update()
+    for _,card in ipairs(getAllObjects()) do
+        if card.tag == 'Card' and card.getName()~=nil then
+            local cmd = card.getDescription()
+            local oldName = card.getVar('oldName')
+            card.setVar('oldName',card.getName())
+            if cmd:starts "spawn" then
+                if oldName ~= card.getName() then
+                    card.setName(oldName)
+                end
+                local count = tonumber(cmd:match "spawn%s(.*)")
+                if count == nil then count = 1 end
+                printToAll("Spawn ship '"..card.getName().."'",{0,1,1})
+                spawnShip(card.getName(),card.getPosition(),count,card.getRotation()[2])
+                card.setDescription("")
+                card.clearButtons()
+                --card.lock()
+            end
+        end
+    end
+end
+Ship = {
+    collider = "",
+    convex = true,
+    type = 1,
+    material = 3,
+    maneuver = {},
+    defense_tokens = {},
+    shields = {1,1,1,1,1,1},
+    cost = 0,
+    name = "",
+    front = "",
+    back = "",
+    aliases = {},
+    faction = ""
+}
+function Ship:new (o,...)
+    o = o or {}
+    o = table.copy(o)
+    if ... ~= nil then
+        for i,tab in ipairs({...}) do
+            for k, v in pairs(tab) do
+                o[k] = v
+            end
+        end
+    end
+    setmetatable(o, Ship)
+    Ship.__index = Ship
+    Cache(SHIPS,o)
+    return o
+end
+SmallShip = {
+    collider = ASSETS_ROOT..'misc/bases/small.obj'
+}
+MediumShip = {
+    collider = ASSETS_ROOT..'misc/bases/medium.obj'
+}
+LargeShip = {
+    collider = ASSETS_ROOT..'misc/bases/large.obj'
+}
+HugeShip = {
+    collider = ASSETS_ROOT..'misc/bases/huge.obj'
+}
+Squadron = {
+    collider = ASSETS_ROOT..'misc/bases/squad.obj', --"http://paste.ee/r/nAMCQ",
+    convex = false,
+    type = 1,
+    material = 1,
+    health = 0,
+    move = 0,
+    defense_tokens = {},
+    cost = 0,
+    name = "",
+    front = "",
+    back = "",
+    aliases = {},
+    faction = ""
+}
+function Squadron:new (o, ...)
+    o = o or {}
+    o = table.copy(o)
+    if ... ~= nil then
+        -- printToAll("Found args: "..tostring(#{...}),{0,1,1})
+        for i,tab in ipairs({...}) do
+            for k, v in pairs(tab) do
+                -- printToAll("Copying over: "..k)
+                o[k] = v
+            end
+        end
+    end
+    setmetatable(o, Squadron)
+    Squadron.__index = Squadron
+    -- if o.name == nil then
+    --     for k, v in pairs(o) do
+    --         printToAll(k..":"..tostring(v),{1,0,0})
+    --     end
+    -- end
+    -- if o.cost == nil then
+    --     printToAll(o.name.." has no cost",{1,0,0})
+    -- end
+    Cache(SHIPS,o)
+    -- if key~=key_noclass then
+    --     printToAll(key.." ~= "..key_noclass,{1,1,0})
+    -- end
+    return o
+end
+SHIPS_BY_FACTION = {}
+CARDS_BY_CATEGORY = {}
+function API_CacheShip(o)
+    printToAll("Sideloading Ship: ["..o.name.." ("..o.cost..")]",{.5, 1,.5})
+    Cache(SHIPS,o)
+end
+function API_CacheCard(o)
+    -- if o.cost == nil then
+    --     printToAll("Sideloading Card: ["..o.name.."]",{.5, 1,.5})
+    -- else
+        printToAll("Sideloading Card: ["..o.name.." ("..tostring(o.cost)..")]",{.5, 1,.5})
+    -- end
+    Cache(CARDS,o)
+end
+function API_PurgeCard(o)
+    -- if o.cost == nil then
+    --     printToAll("Manually Purging: ["..o.name.."]",{1, .5,.5})
+    -- else
+        printToAll("Manually Purging: ["..o.name.." ("..tostring(o.cost)..")]",{1, .5,.5})
+    -- end
+    -- local i = o.name
+    -- if o.cost~=nil then
+        local i = o.name.." ("..o.cost..")"
+    -- end
+    for category, arr in pairs(CARDS_BY_CATEGORY) do
+        if arr[i]~=nil then
+        -- for i,o_cached in ipairs(arr) do
+        --     if o_cached.name == o.name and o_cached.cost == o.cost then
+            printToAll("Purging existing "..category.." Card entry: ["..o.name.." ("..o.cost..")]!", {1,0,0})
+            -- PurgeNGrams(arr[i])
+            arr[i] = nil
+            return
+        --     end
+        -- end
+        end
+    end
+    for faction, arr in pairs(SHIPS_BY_FACTION) do
+        if arr[i]~=nil then
+        -- for i,o_cached in ipairs(arr) do
+        --     if o_cached.name == o.name and o_cached.cost == o.cost then
+            printToAll("Purging existing "..faction.." Ship entry: ["..o.name.." ("..o.cost..")]!", {1,0,0})
+            -- PurgeNGrams(arr[i])
+            arr[i] = nil
+            return
+                --TODO: SHIPS/CARDS still contain old ones? Aliases! Etc.
+        --     end
+        -- end
+        end
+    end
+end
+function API_UpdateCard(update)
+    -- if update.cost == nil then
+    --     printToAll("Updating Card: ["..update.name.."]",{.5,.5,1})
+    -- else
+        printToAll("Updating Card: ["..update.name.." ("..tostring(update.cost)..")]",{.5,.5,1})
+    -- end
+    -- local i = update.name
+    -- if update.cost~=nil then
+        local i = update.name.." ("..update.cost..")"
+    -- end
+    for category, arr in pairs(CARDS_BY_CATEGORY) do
+        if arr[i]~=nil then
+        -- for i,o_cached in ipairs(arr) do
+        --     if o_cached.name == update.name and o_cached.cost == update.cost then
+            for key, new_value in pairs(update.o) do
+                printToAll("Updating "..key.." for "..update.name,{0.5,0.5,0.5})
+                arr[i][key] = new_value
+            end
+            -- if update.cost ~= update.o.cost then --Change Cost?
+            --     PurgeNGrams(arr[i])
+            -- end
+            Cache(CARDS,arr[i])
+            return
+        --     end
+        -- end
+        end
+    end
+    for faction, arr in pairs(SHIPS_BY_FACTION) do
+        if arr[i]~=nil then
+        -- for i,o_cached in ipairs(arr) do
+        --     if o_cached.name == update.name and o_cached.cost == update.cost then
+            for key, new_value in pairs(update.o) do
+                printToAll("Updating "..key.." for "..update.name,{0.5,0.5,0.5})
+                arr[i][key] = new_value
+            end
+            -- if update.cost ~= update.o.cost then --Change Cost?
+            --     PurgeNGrams(arr[i])
+            -- end
+            Cache(SHIPS,arr[i])
+            return
+        --     end
+        -- end
+        end
+    end
+end
+function API_GetDefinition(o)
+    for category, arr in pairs(CARDS_BY_CATEGORY) do
+        -- local o_cached = arr[o.name]
+        -- if o.cost~=nil then
+            local o_cached = arr[o.name.." ("..o.cost..")"]
+        -- end
+        if o_cached~=nil then
+        -- for i,o_cached in ipairs(arr) do
+        --     if o_cached.name == o.name and o_cached.cost == o.cost then
+                return o_cached
+        --     end
+        -- end
+        end
+    end
+    for faction, arr in pairs(SHIPS_BY_FACTION) do
+        -- local o_cached = arr[o.name]
+        -- if o.cost~=nil then
+            local o_cached = arr[o.name.." ("..o.cost..")"]
+        -- end
+        if o_cached~=nil then
+        -- for i,o_cached in ipairs(arr) do
+        --     if o_cached.name == o.name and o_cached.cost == o.cost then
+            return o_cached
+            -- end
+        -- end
+        end
+    end
+    printToAll("No definition found of name: '"..o.name.."' with cost: "..tostring(o.cost), {1,0,0})
+    return nil
+end
+function PurgeNGrams(o)
+    if o~=nil then
+        for key,ngram in pairs(NGRAMS) do
+            for i,obj in ipairs(ngram) do
+                if obj==o then
+                    NGRAMS[key][i] = nil
+                end
+            end
+        end
+    end
+end
+function UpdateListByNameAndCost(arr,o)
+    local i = o.name
+    if o.cost~=nil then
+        i = o.name.." ("..o.cost..")"
+    end
+    if arr[i]~=nil then
+    -- for i,o_cached in ipairs(arr) do
+    --     if o_cached.name == o.name and o_cached.cost == o.cost then
+        printToAll("Overwriting existing entry: ["..o.name.." ("..o.cost..")]!", {1,0,0})
+        PurgeNGrams(arr[i])
+        arr[i] = o
+    --     end
+    -- end
+    end
+    arr[i]=o
+    -- table.insert(arr,o)
+end
+function Cache(DEFS,o)
+    if o.type~=nil and o.type~=1 then --Is a card? Models have type 1
+        if CARDS_BY_CATEGORY[o.type]==nil then
+            CARDS_BY_CATEGORY[o.type] = {}
+        end
+        UpdateListByNameAndCost(CARDS_BY_CATEGORY[o.type],o)
+        --table.insert(CARDS_BY_CATEGORY[o.type],o)
+    end
+    if o.faction~=nil and (o.move~=nil or o.maneuver~=nil) then --Is a ship or squadron?
+        if SHIPS_BY_FACTION[o.faction]==nil then
+            SHIPS_BY_FACTION[o.faction] = {}
+        end
+        UpdateListByNameAndCost(SHIPS_BY_FACTION[o.faction],o)
+        --table.insert(SHIPS_BY_FACTION[o.faction],o)
+    end
+    -- FUZZY[string.lower(o.name)] = o
+    if o.cost~=nil then
+        DEFS[string.lower(o.name.." ("..o.cost..")")] = o
+        CacheNgrams(o.name.." ("..o.cost..")")
+        DEFS[string.lower(o.name.." "..o.cost)] = o
+        CacheNgrams(o.name.." "..o.cost)
+    else
+        CacheNgrams(o.name)
+    end
+    DEFS[string.lower(o.name)] = o
+    -- CacheNgrams(o.name)
+    for _,alias in ipairs(o.aliases) do
+        if o.cost~=nil then
+            DEFS[string.lower(alias.." ("..o.cost..")")] = o
+            CacheNgrams(alias.." ("..o.cost..")")
+            DEFS[string.lower(alias.." "..o.cost)] = o
+            CacheNgrams(alias.." "..o.cost)
+        else
+            CacheNgrams(alias)
+        end
+        DEFS[string.lower(alias)] = o
+        -- CacheNgrams(alias)
+    end
+end
+NGRAMS = {}
+function CacheNgrams(name)
+    name = string.lower(name)
+    n = #name
+    s = " "..name.." "
+    -- if name=="acclamator ii" then
+    --     print("Caching Ngrams for "..name)
+    -- end
+    for i = 1,n do
+        sub = string.sub(s,i,i+2)
+        -- if name=="acclamator ii" then
+        --     print("Adding: '"..name.."' for: '"..sub.."'")
+        -- end
+        if NGRAMS[sub]==nil then
+            NGRAMS[sub]={name}
+        else
+            table.insert(NGRAMS[sub],name)
+        end
+    end
+end
+Card = {
+    cost = 0,
+    name = "",
+    type = "",
+    front = "",
+    back = "",
+    aliases = {},
+    iscard = true, -- to replace checking for "type"
+    faction = nil
+}
+function Card:new (o, ...)
+    o = o or {}
+    o = table.copy(o)
+    if ... ~= nil then
+        -- printToAll("Found args: "..tostring(#{...}),{0,1,1})
+        for i,tab in ipairs({...}) do
+            for k, v in pairs(tab) do
+                -- printToAll("Copying over: "..k)
+                o[k] = v
+            end
+        end
+    end
+    setmetatable(o, Card)
+    Card.__index = Card
+    Cache(CARDS,o)
+    return o
+end
+SHIPS = {}
+CARDS = {}
+function onObjectSpawn(object)
+    --Create a Button on the card for leaving a container
+    if object.tag ~= "Figurine" and object.getName()~=nil and (SHIPS[string.lower(object.getName())] != nil or string.starts(object.getDescription(),"Custom")) and not isDatacard(object) then
+        createSpawnButtons(object)
+    end
+
+    if CARDS[string.lower(object.getName())]~=nil and CARDS[string.lower(object.getName())].type == "Objective" then
+        -- print("Found objective: "..object.getName())
+        category = CARDS[string.lower(object.getName())].category
+        color = {0.82,0.22,0.235} --Assault
+        if category == "Defense" then
+            color = {0.992,0.922,0.031}
+        elseif category == "Navigation" then
+            color = {0.765,0.878,0.949}
+        elseif category == "Special" then
+            color = {0.267,0.678,0.459}
+        end
+        object.createButton({
+            ['click_function'] = "Action_select_objective",
+            ['function_owner'] = self,
+            ['label'] = "Choose",
+            ['position'] = {0,0.25,1.5},
+            ['rotation'] =  {0,0,0},
+            ['width'] = 800,
+            ['height'] = 240,
+            ['font_size'] = 180,
+            ['color'] = color,
+            ['font_color']={0,0,0}})
+    end
+end
+-- #include MapManager
+function Action_select_objective(card)
+    def = CARDS[string.lower(card.getName())]
+    onClick_select_victoryToken(nil, nil, "Victory_0")
+    if def~=nil then
+        if def.victory~=nil then
+            onClick_select_victoryToken(nil, nil, "Victory_"..tostring(def.victory))
+        elseif table.contains({"Most Wanted","Opening Salvo","Intel Sweep"},def.name) then
+            onClick_select_victoryToken(nil, nil, "Victory_"..def.name:gsub(" ",""))
+        end
+    end
+    card.setPositionSmooth({-40.66,0.97,-0.09}, false, false)
+    card.clearButtons()
+    Wait.time(||onClick_refreshObjective(),2,0)
+    -- TODO: Test map feature!
+    -- if MAPS["Objective: "..card.getName()]~=nil then
+    --     spawnBlankCanvas()
+    --     spawnGuides("Objective: "..card.getName())
+    -- else
+    --     resetCanvas()
+    -- end
+end
+-- function onObjectLeaveContainer(Container, object)
+--     --Create a Button on the card for leaving a container
+--     if SHIPS[object.getName()] != nil or string.starts(object.getDescription(),"Custom") then
+--         createSpawnButtons(object)
+--     end
+-- end
+function createSpawnButtons(object)
+    object.clearButtons()
+    scale = {1,1,1}
+    if string.match(object.getName(),"Star Dread") then
+        scale = {0.5,0,1}
+    end
+    object.createButton({label = "Spawn: "..object.getName(), click_function = 'Action_Spawn', rotation = {0, 0, 0},
+    position = {0, 0.3, 2}, scale = scale, width = (40 * string.len("Spawn: "..object.getName())), height = 100, font_size = 75, function_owner = self, color={0,1,0}, font_color={0,0,0}})
+    object.createButton({label = "Done", click_function = 'Action_DoneSpawn', rotation = {0, 0, 0},
+    position = {0, 0.3, 2.8}, scale = scale, width = 320, height = 100, font_size = 75, function_owner = self, color={1,0,0}, font_color={1,1,1}})
+    -- local data = SHIPS[object.getName()]
+    -- data[12] = object.getGUID()
+    -- data[13] = {}
+    -- object.setTable('Details', data)
+    if string.starts(object.getDescription(),"Custom") then
+        printToAll("Loading definition for: "..(object.getName()) , {0,1,1})
+        object.createButton({label = "Reload Custom Definition", click_function = 'createSpawnButtons', rotation = {0, 0, 0},
+        position = {0, 0.3, -2.4}, width = 900, height = 100, font_size = 75, function_owner = self, color={0,1,1}, font_color={0,0,0}})
+        -- printToAll("/begin desc",{1,1,1})
+        -- printToAll(object.getDescription(),{1,1,1})
+        -- printToAll("/end desc",{1,1,1})
+        -- Custom|Ship|Large|mesh|diffuse|ruler|II|I,II|-,I,II
+        local model_data = string.split(object.getDescription(),'\n',nil,false)
+        local ship_data = {}
+        -- printToAll(model_data[2],{1,1,1})
+        -- printToAll(string.starts(model_data[2],"Ship"),{1,1,1})
+        -- printToAll(model_data[3],{1,1,1})
+        -- printToAll(string.starts(model_data[3],"Small"),{1,1,1})
+        if string.strip(model_data[2])=="Ship" then
+            local shields = {1,1,1,1}
+            local defense_tokens = {}
+            -- 7 will be shields (F,L,R,B)
+            -- local shields = list(map(int,string:split(model_data[7],",",nil,false)))
+            -- local defense_tokens = string:split(model_data[8],",",nil,false)
+            -- 8 will be defense
+            local maneuver = {}
+            -- lolnope loadstring("maneuver = "..model_data[7])
+            if table.contains({"I","II","-"},model_data[7]) then
+                table.insert(maneuver,model_data[7]:strip():split(",",nil,false))
+                if #model_data>7 then
+                    table.insert(maneuver,model_data[8]:strip():split(",",nil,false))
+                end
+                if #model_data>8 then
+                    table.insert(maneuver,model_data[9]:strip():split(",",nil,false))
+                end
+                if #model_data>9 then
+                    table.insert(maneuver,model_data[10]:strip():split(",",nil,false))
+                end
+            else
+
+                    -- 7 will be shields (F,L,R,B)
+                shields = T(model_data[7]:strip():split(",",nil,false)):Select(|s| tonumber(s))
+                defense_tokens = T(model_data[8]:strip():split(",",nil,false)):Select(|s| ALL_DEFENSE_TOKENS[s])
+                table.insert(maneuver,model_data[9]:strip():split(",",nil,false))
+                if #model_data>9 then
+                    table.insert(maneuver,model_data[10]:strip():split(",",nil,false))
+                end
+                if #model_data>10 then
+                    table.insert(maneuver,model_data[11]:strip():split(",",nil,false))
+                end
+                if #model_data>11 then
+                    table.insert(maneuver,model_data[12]:strip():split(",",nil,false))
+                end
+                --TODO: Implement shield/defense tokens
+            end
+            ship_data = {
+                name = object.getName(),
+                cost = string.match(object.getName(),"[%s ]+%([%s ]*(%d+)[%s ]*%)$"),
+                mesh = string.strip(model_data[4]),
+                diffuse = string.strip(model_data[5]),
+                ruler = string.strip(model_data[6]),
+                maneuver = maneuver,
+                defense_tokens = defense_tokens,
+                shields = shields,
+                convex = true,
+                type = 1,
+                material = 3,
+                command = 1
+            }
+            if string.strip(model_data[3])=="Small" then
+                ship_data.collider = SmallShip.collider
+            elseif string.strip(model_data[3])=="Medium" then
+                ship_data.collider = MediumShip.collider
+            elseif string.strip(model_data[3])=="Large" then
+                ship_data.collider = LargeShip.collider
+            end
+        elseif string.strip(model_data[2])=="Squadron" then
+            -- Custom|Squadron|mesh|diffuse|health|move|defense_tokens
+            defense_tokens = {}
+            if #model_data>6 then
+                defense_tokens = T(model_data[7]:strip():split(",",nil,false)):Select(|s| ALL_DEFENSE_TOKENS[s])
+            end
+            ship_data = {
+                name = object.getName(),
+                cost = string.match(object.getName(),"[%s ]+%([%s ]*(%d+)[%s ]*%)$"),
+                mesh = string.strip(model_data[3]),
+                diffuse = string.strip(model_data[4]),
+                health =  string.strip(model_data[5]),
+                move = string.strip(model_data[6]),
+                collider = ASSETS_ROOT..'misc/bases/squad.obj', -- "http://paste.ee/r/ZKM7E", -- "http://paste.ee/r/nAMCQ",
+                convex = false,
+                type = 1,
+                material = 1,
+                defense_tokens = defense_tokens}
+        end
+        object.setTable('Custom',ship_data)
+    end
+end
+function Action_Spawn(card)
+    if card.getTable('Custom') != nil then
+        printToAll("Spawning Custom Ship",{0,1,1})
+        spawnDefinition(card.getTable('Custom'),card.getName(),card.getPosition(),1,card.getRotation()[2], card)
+    else
+        spawnShip(card.getName(),card.getPosition(),1,card.getRotation()[2],card)
+    end
+end
+function Action_DoneSpawn(card)
+    card.clearButtons()
+end
+function onload()
+    self.interactable = false
+
+#include defs/rebel/ships
+#include defs/empire/ships
+    local ship = nil
+
+#include defs/rebel/squadrons
+#include defs/empire/squadrons
+    local ship = nil
+
+#include defs/republic/ships
+#include defs/separatist/ships
+    local ship = nil
+
+#include defs/republic/squadrons
+#include defs/separatist/squadrons
+
+#include defs/cards/commanders
+#include defs/cards/defensive_retrofit
+#include defs/cards/experimental_retrofit
+#include defs/cards/fleet_command
+#include defs/cards/fleet_support
+#include defs/cards/ion_cannons
+#include defs/cards/offensive_retrofit
+#include defs/cards/officer
+#include defs/cards/ordnance
+#include defs/cards/superweapon
+#include defs/cards/support_team
+#include defs/cards/title
+#include defs/cards/turbolaser
+#include defs/cards/weapons_team_and_offensive_retrofit
+#include defs/cards/weapons_team
+
+#include defs/cards/objectives
+    setRulerMeshes()
+    findObjective(true)
+    -- drawListSpawnerButtons()
+end
+function setRulerMeshes()
+    for _,ship in ipairs(getAllObjects()) do
+        if ship.tag == 'Figurine' then
+            for key,ship_def in pairs(SHIPS) do
+                --printToAll("Checking Ship Def: "..key,{0,1,1})
+                if ship_def.mesh == ship.getCustomObject().mesh then
+                    ship.setVar("rulerMesh",ship_def.ruler)
+                    --printToAll("set ruler for: "..ship_def.ruler,{0,1,1})
+                end
+            end
+        end
+    end
+end
+-- function drawListSpawnerButtons()
+--     for _,listSpawner in ipairs(getAllObjects()) do
+--         if listSpawner.getName()=="List Spawner" then
+--             Action_CloseListSpawner(listSpawner)
+--         end
+--     end
+-- end
+-- function Action_CloseListSpawner(listSpawner)
+--     listSpawner.clearButtons()
+--     listSpawner.clearInputs()
+--     listSpawner.createButton({label = ">", click_function = 'Action_OpenListSpawner', rotation = {0, 0, 0},
+--         position = {0.4, 0.4, -5.9}, width = 400, height = 400, font_size = 300, function_owner = self, color={0,1,0}, font_color={0,0,0}})
+--
+-- end
+-- function Action_OpenListSpawner(listSpawner)
+--     listSpawner.clearButtons()
+--     listSpawner.clearInputs()
+--     listSpawner.createButton({label = "<", click_function = 'Action_CloseListSpawner', rotation = {0, 0, 0},
+--         position = {-0.4, 0.2, -5.9}, width = 400, height = 400, font_size = 300, function_owner = self, color={1,0,0}, font_color={0,0,0}})
+--     listSpawner.createInput({label = "paste list here", input_function = 'Input_UpdateList', rotation = {0, 0, 0},
+--         position = {3.2, 0.2, 0}, width = 3000, height = 6000, font_size = 85, function_owner = self, font_color={0,0,0}})
+--     listSpawner.createButton({label = "V V V     Spawn!     V V V", click_function = 'Action_SpawnListSpawner', rotation = {0, -90, 0},
+--         position = {7, 0.2, 0}, width = 6000, height = 500, font_size = 400, function_owner = self, color={0,1,0}, font_color={0,0,0}})
+--     listSpawner.createButton()
+-- end
+function Input_UpdateList(obj, color, input, stillEditing)
+    obj.setVar("list",input)
+end
+function replace(input, pattern, replace)
+    local output = string.gsub(input, pattern, replace)
+    -- if output~=input then
+    --     printToAll("Applied: '"..pattern.."'. '"..input.."' -> '"..output.."'")
+    -- end
+    return output
+end
+A_COLORS = {{1,0,0},
+            {1,0.65,0},
+            {1,1,0},
+            {0.78,0.08,0.52},
+            {0.55,0,0},
+            {0.94,0.9,0.55},
+            {0.87,0.63,0.87},
+            {1,0.63,0.87},
+            {1,0,1},
+            {0.5,0.5,0}}
+B_COLORS = {{0.1,0.1,0.44},
+            {0.5,1,0},
+            {0,0.75,1},
+            {0.86,0.86,0.86},
+            {0.18,0.55,0.34},
+            {0,0,1},
+            {0,0.98,0.6},
+            {0,1,1},
+            {0.48,0.41,0.93},
+            {0.18,0.31,0.31}}
+function inFleetSpawnArea(listSpawner, obj)
+    ll = {1.2,0,-5}
+    ur = {109,0,14}
+    if math.abs(listSpawner.getPosition()[3])>40 then
+        ur = {87, 0, 14}
+    end
+    return vector.between(listSpawner.positionToLocal(obj.getPosition()), ll, ur)
+end
+function clearSpawnArea(listSpawner)
+    for _,item in ipairs(getAllObjects()) do
+        if inFleetSpawnArea(listSpawner,item) and not isDatacard(item) and item.tag~="Scripting" and not string.match(item.getName(),"List Spawner") then
+            item.destruct()
+        end
+    end
+end
+function isDatacard(object)
+    custom = object.getCustomObject()
+    return custom ~= nil and (custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
+end
+function Action_SpawnListSpawner(player, _, idValue) --listSpawner
+    print(player.color)
+    listSpawner = findObjectByName("List Spawner ("..player.color..")")
+    clearSpawnArea(listSpawner)
+    -- local count = 0
+    -- for k,v in pairs(SHIPS) do
+    --     count = count+1
+    -- end
+    local list = listSpawner.getVar("list")
+    -- print(#list)
+    if list==nil or #list==0 then
+        printToAll("Paste in fleet to spawn",{1,1,0})
+        return
+    end
+    lines = list:split("\n")
+    -- print(#lines)
+    -- x = 6
+    -- i_y = 0
+    -- max_i_y = 3
+    -- y_offset = 3.5
+    -- x_offset = 2.5
+
+    fleet = {
+        objectives = {},
+        ships = {},
+        squads = {}
+    }
+
+    last_ship = nil
+    first_line = true
+    line_objs = {}
+    for _,line in ipairs(lines) do
+        if first_line then
+            first_line = false
+        elseif not line:starts "=" then
+            -- print("Parsing line: '"..line.."'")
+            orig = line
+            line = string.strip(line)
+            count = string.match(line, "^•%s+(%d+)%s+x%s+")
+            if count==nil then
+                count = string.match(line, "^(%d+)%s+")
+            end
+            -- if count~=nil then
+            --     print("Found count: "..tostring(count))
+            -- end
+            line = replace(line, "^Author:.*","")
+            line = replace(line, "^Faction:.*","")
+            line = replace(line, "^Commander:.*","")
+            line = replace(line, "^Points:.*","")
+            line = replace(line, "^Squadrons:.*","")
+            line = replace(line, " Objective:",":") -- Shorten "Assault Objective: " to "Assault:"
+            line = replace(line, "Assault: ","") -- Remove objective types
+            line = replace(line, "Defense: ","") -- Remove objective types
+            line = replace(line, "Navigation: ","") -- Remove objective types
+            line = replace(line, "%s%+%s%d+%:%s%d+","") -- handle Starhawk-class Mk.II (150 + 84: 234)
+            line = replace(line, "[%s ]+%(com%)","") -- remove " (com)" indicator
+            line = replace(line, "[%s ]+%(off%)","") -- remove " (off)" indicator
+            line = replace(line, "•%s+%d+%s+x%s+","") -- remove "• 2 x " for squadrons
+            line = replace(line,"^%d+[%s ]+","") -- remove "2 " for squadrons
+            line = replace(line, "^[•%-·][%s ]+","") -- remove all bullets NOTE: THAT IS NOT A NORMAL SPACE!
+            -- line = replace(line,"^%-%s+","") -- replace by above
+            line = replace(line,"[%s ]+%([%s ]*(%d+)[%s ]+points%)$"," (%1)") -- Shorten " ( 5 points)" -> " (5)"
+            line = replace(line,"%[[%s ]+flagship[%s ]+%][%s ]+","") -- remove "[ flagship ]" indicato"
+            line = replace(line,"%(%s*(%d+)%s*%)$","(%1)") -- shorten "( 5 )" to "(5)"
+            line = string.strip(line) -- remove leading/training spaces
+            line = replace(line," +"," ") -- remove all multiple spaces
+            line_nocost = string.gsub(line,"[%s ]+%([%s ]*%d+[%s ]*%)$","") -- create version without trailing cost" (5)"
+            cost = string.match(line,"[%s ]+%([%s ]*(%d+)[%s ]*%)$")
+
+            if line ~="" then
+                def = CARDS[string.lower(line)] or SHIPS[string.lower(line)] or CARDS[string.lower(line_nocost)] or SHIPS[string.lower(line_nocost)]
+                if def==nil then
+                    def = findDefinitionByName(SHIPS, line, true)
+                end
+                if def~=nil then
+                    if def.type == "Objective" then --IS OBJECTIVE
+                        table.insert(fleet.objectives, {def=obj.def})
+                    elseif def.maneuver~=nil then --IS SHIP
+                        last_ship = {def=def, upgrades = {}}
+                        table.insert(fleet.ships, last_ship)
+                    elseif def.move~=nil then
+                        table.insert(fleet.squads, {def=def, count=tonumber(count)})
+                    else --MUST BE UPGRADE????
+                        if last_ship==nil then
+                            printToAll("Cannot spawn upgrade: "..def.name.." since no ship found?",{1,0,0})
+                        else
+                            table.insert(last_ship.upgrades, def)
+                        end
+                    end
+                else
+                    -- printToAll("No definition found for: '"..line.."'",{1,0,0})
+                end
+            end
+        end
+    end
+
+    layout(nil, fleet, listSpawner.getPosition(), listSpawner.getRotation())
+end
+function createSpawningStructure(lineobjs)
+    if lineobjs==nil then return nil end
+    fleet = {
+        objectives = {},
+        ships = {},
+        squads = {}
+    }
+    last_ship = nil
+    for _,obj in ipairs(lineobjs) do
+        -- if line ~="" then
+            -- def = CARDS[string.lower(line)] or SHIPS[string.lower(line)] or CARDS[string.lower(line_nocost)] or SHIPS[string.lower(line_nocost)]
+            -- if def==nil then
+                -- def = findDefinitionByName(SHIPS, line, true)
+            -- end
+        if obj.def~=nil then
+            if obj.def.type == "Objective" then --IS OBJECTIVE
+                table.insert(fleet.objectives, {def=obj.def, card=obj.card})
+            elseif obj.def.maneuver~=nil then --IS SHIP
+                last_ship = {def=obj.def, upgrades = {}, upgradeCost=0, card=obj.card}
+                table.insert(fleet.ships, last_ship)
+            elseif obj.def.move~=nil then
+                table.insert(fleet.squads, {def=obj.def, count=tonumber(obj.count) or 1, card=obj.card})
+            else --MUST BE UPGRADE????
+                if last_ship==nil then
+                    printToAll("Cannot spawn upgrade: "..obj.def.name.." since no ship found?",{1,0,0})
+                else
+                    last_ship.upgradeCost = last_ship.upgradeCost+obj.def.cost
+                    table.insert(last_ship.upgrades, obj.def)
+                end
+            end
+        else
+            -- printToAll("No definition found for: '"..obj.original.."'",{1,0,0})
+        end
+        -- end
+    end
+    return fleet
+end
+-- lines {original="",parse="",cost="", def="",count=nil}
+function findDefinitionByName(DEFS, name, fuzzy)
+    def = DEFS[string.lower(name)]
+    if fuzzy == true then
+        printToAll("I can't find: '"..name.."'. Performing deep search...",{1,0,0})
+        bestKey = fuzzyStringSearch(name)
+        printToAll("The best I can find is: '"..tostring(bestKey).."'")
+        def = SHIPS[bestKey]
+        if def == nil then
+            def = CARDS[bestKey]
+        end
+    end
+    return def
+end
+function tablelength(T)
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
+end
+function fuzzyStringSearch(s)
+    s = string.lower(s)
+    -- print("#NGRAMS"..tablelength(NGRAMS))
+    matches = {}
+    n = #s
+    s = " "..s.." "
+    -- print("Searching: '"..s.."'")
+    for i = 1,n do
+        sub = string.sub(s,i,i+2)
+        -- print("Looking for: '"..sub.."'")
+        if NGRAMS[sub]~=nil then
+            -- print("Potential "..#(NGRAMS[sub]).." matches for: "..sub)
+            for _,match in ipairs(NGRAMS[sub]) do
+                -- if match=="tie fighter squadron (8)" or match=="hyena-class droid bomber squadron (11)" then
+                --     print(sub.." "..match)
+                -- end
+                if matches[match]==nil then
+                    matches[match] = 1
+                else
+                    matches[match] = matches[match]+1
+                end
+            end
+        end
+    end
+    bestCount = 0
+    best = nil
+    for k,v in pairs(matches) do
+        if v>bestCount then
+            -- print(k.." "..v.." NGRAM matches")
+            bestCount=v
+            best = k
+        end
+    end
+    return best
+end
+--{
+--    objectives={def,def,def}
+--    ships={{def, upgrades:{def, def, def, def, def},{def, upgrades:{def, def, def, def, def}}
+--    squads={{def:def, count:1}}
+--}
+function donothing() end
+function layout(player, fleet, pos, rot, base_x, spawn)
+    if base_x==nil then
+        base_x=0
+    end
+    if spawn==nil then
+        spawn=true
+    end
+    local x = base_x --9
+    local i_y = 0
+    local MAX_I_Y = 3
+    local Y_OFFSET = 3.5
+    local X_OFFSET = 3
+    local OBJ_X_GAP = 4.5
+    local SHIP_PRE_X_GAP = 2.5
+    local SHIP_POST_X_GAP = 7
+    local SQUAD_X_GAP = 5.5
+    if spacing=="Compact" then --(#fleet.ships * 2 + #fleet.squads) >12 then
+        local x = base_x --8
+        OBJ_X_GAP = 3.5
+        X_OFFSET = 2.1
+        SHIP_PRE_X_GAP = 1
+        SHIP_POST_X_GAP = 4
+        SQUAD_X_GAP = 4
+    end
+    local MAX_X = 104
+    -- print(x)
+    for i,obj in ipairs(fleet.objectives) do
+        -- printToAll("Objective: "..def.name,{1,1,1})
+        if spawn then
+            spawnCard(obj.def, pos, {x,0,4-(i-1)*Y_OFFSET}, vector.add(rot,{0,0,180}))
+        end
+    end
+    x = x+OBJ_X_GAP
+
+    if spawn then
+        source = getObjectFromGUID(COMMAND_SOURCE)
+        command_source_poses = {
+            Vector(-1,0,1),
+            Vector(1,0,1),
+            Vector(1,0,-1),
+            Vector(-1,0,-1)
+        }
+        command_source_rots = { 0, 90, 180, 270 }
+        command_source_guids = {
+            'e0b0d2',
+            'b83199',
+            '630f97',
+            '0795c1'
+        }
+        CMD_COLORS = {
+            {0.4,0.8,0.4,1.11}, --repair
+            {0.8,0.4,0.4,1.11}, --concentrate
+            {0.2, 0.4, 0.8,1.11}, --navigate
+            {0.8,0.4,0.8,1.11} --squadron
+        }
+        --CMD_MESHES
+        for i=1,4 do
+            local obj_parameters = {}
+            obj_parameters.position = vector.add(pos,vector.rotate(vector.add(command_source_poses[i],{x-4,4,9.5}),rot[2])) --{x-2,5,9.5}
+            -- print(obj_parameters.position[1],",",obj_parameters.position[2],",",obj_parameters.position[3])
+            source = getObjectFromGUID(command_source_guids[i])
+            command_source = source.clone(obj_parameters)
+
+            command_source.setRotation(vector.add(rot,{0,i*90 + 45,180}))
+            command_source.setScale({0.65,0.65,0.65})
+            command_source.setColorTint({0.5,0.5,0.5})
+            command_source.createButton({label = i, click_function="donothing", font_size=2000, position=vector.add({0,-0.5,0},{0,0,0.6}), rotation={180,-(i*90+45),0}, color={0,0,0,0.9}, font_color=CMD_COLORS[i], width=0, height=0})
+            if i==1 then
+                command_source.createButton({label = "Press 1-4\nto switch\nCommands", click_function="donothing", font_size=200, position={0,-0.5,2.1}, rotation={180,225,0}, color={0,0,0}, font_color={1,1,1}, width=0, height=0})
+            end
+        end
+
+        for i,source_guid in ipairs(COMMAND_TOKEN_SOURCES) do
+            source = getObjectFromGUID(source_guid)
+            local obj_parameters = {}
+            obj_parameters.position = vector.add(pos,vector.rotate(vector.add(vector.scale(command_source_poses[i],2.2),{x-4,-1,9.5}),rot[2]))
+            -- obj_parameters.position = vector.add(pos,vector.rotate({x,-1,7.5-i*3},rot[2]-180))
+            token_source = source.clone(obj_parameters)
+            token_source.setRotation(rot+Vector(0,180,0))
+        end
+    end
+    x = x+OBJ_X_GAP
+    -- print(x)
+    for i,ship in ipairs(fleet.ships) do
+        if #ship.def.shields==6 then -- SSD GAP
+            x = math.min(x+2, MAX_X)
+        end
+        i_y = 0
+        -- printToAll("Ship: "..ship.def.name,{0,1,1})
+        if spawn then
+            spawnCard(ship.def, pos, {x,0,3.3}, rot, 1)
+        end
+        x = math.min(x+SHIP_PRE_X_GAP, MAX_X)
+        if #ship.def.shields==6 then -- SSD GAP
+            x = math.min(x+2, MAX_X)
+        end
+        for _,def in ipairs(ship.upgrades) do
+            if i_y==0 then x = math.min(x+X_OFFSET, MAX_X) end
+            -- printToAll("Upgrade: "..def.name,{1,1,0})
+            -- print("("..x..","..i_y..")")
+            if spawn then
+                spawnCard(def, pos, {x,0,4-i_y*Y_OFFSET}, rot, nil)
+            end
+            -- print("math.mod("..i_y.."+1, "..MAX_I_Y..") = "..math.mod(i_y+1,MAX_I_Y))
+            i_y = math.mod(i_y+1,MAX_I_Y)
+        end
+        if #ship.upgrades==0 then
+            x = math.min(x+2, MAX_X)
+        end
+        x = math.min(x+SHIP_POST_X_GAP, MAX_X)
+    end
+    -- print(x)
+    for i,squad in ipairs(fleet.squads) do
+        -- if squad.count!=nil and squad.count>1 then
+        --     printToAll("Squadron: "..squad.count.."x "..squad.def.name,{0,1,0})
+        -- else
+        --     printToAll("Squadron: "..squad.def.name,{0,1,0})
+        -- end
+        if spawn then
+            spawnCard(squad.def, pos, {x,0,3.3}, rot, squad.count)
+        end
+        x = math.min(x+SQUAD_X_GAP, MAX_X)
+    end
+    -- print(x)
+    return x
+end
+function isShipOrSquad(ship)
+    name = string.gsub(ship.getName(),"^%d+ x ","")
+    def = SHIPS[string.lower(name)]
+    return def~=nil
+end
+
+function buildFleetFromZone(color)
+    local zone = getObjectFromGUID(FLEETZONES[color])
+    local listSpawner = findObjectByName("List Spawner ("..color..")")
+    local fleetCards = T(zone.getObjects())
+                        :Where(|c| c.tag=="Card" and c.getCustomObject().face~=DAMAGE_FACE)
+                        :OrderBy(|c| listSpawner.positionToLocal(c.getPosition())[1] - listSpawner.positionToLocal(c.getPosition())[3]/100)
+    local lineobjs = linesToLineobjs(fleetCards:Select(|c| c.getName()))
+    for i, obj in ipairs(lineobjs) do
+        obj['card'] = fleetCards[i]
+    end
+    local fleet = createSpawningStructure(lineobjs)
+    fleet.datacard = T(zone.getObjects()):Where(isDatacard):FirstOrNil()
+    if #fleet.ships==0 then
+        fleet = nil
+    end
+    return fleet
+end
+#include Armada_Spawner/ScoreManager
+-- function onObjectEnterScriptingZone_spawner(params) -- zone, object
+--     onObjectChangeScriptingZone_ScoreManager(params.zone, params.object)
+-- end
+-- function onObjectLeaveScriptingZone_spawner(params) -- zone, object
+--     onObjectChangeScriptingZone_ScoreManager(params.zone, params.object)
+-- end
+function spawnCard(def, pos, offset, rot, count, spawnModel)
+    if spawnModel==nil then spawnModel=true end
+    pos =  vector.add(pos,vector.rotate(offset, rot[2]))
+    -- scale = {1.37,1,1.37}
+    scale = {1,1,1}
+    if def.maneuver~=nil then
+        scale = {1.88,1,1.88}
+    end
+    if def.move~=nil then
+        scale = {1.37,1,1.37}
+    end
+    nick = def.name.." ("..def.cost..")"
+    if count~=nil and count > 1 then
+        nick = count .. " x " .. nick
+    end
+    if def.type == "Objective" then
+        nick = def.name
+    end
+    local jsonRepresentation = {
+      Name = "CardCustom",
+      Transform = {
+        posX = pos[1],
+        posY = pos[2],
+        posZ = pos[3],
+        rotX = rot[1],
+        rotY = rot[2]+180,
+        rotZ = rot[3],
+        scaleX = scale[1],
+        scaleY = scale[2],
+        scaleZ = scale[3]
+      },
+      Nickname = nick,
+      Hands = false,
+      CardID = 2111,
+      CustomDeck = {
+        ["21"] = {
+          FaceURL = def.front,
+          BackURL = def.back,
+          NumWidth = 1,
+          NumHeight = 1,
+          BackIsHidden = true,
+          UniqueBack = false,
+          Type = 0
+        }
+      }
+    }
+    -- if count~=nil and count>1 then
+    --     jsonRepresentation['Nickname'] = "["..count.."]"..jsonRepresentation['Nickname']
+    -- end
+    -- if count~=nil and count>1 then
+    --     jsonRepresentation['Description'] = "spawn "..count
+    -- elseif  count~=nil and count==1 then
+    --     jsonRepresentation['Description'] = "spawn"
+    -- end
+    if spawnModel then
+        spawnObjectJSON({
+            json = JSON.encode(jsonRepresentation),
+            callback_function = setCardDescriptionToSpawn
+        })
+    else
+        spawnObjectJSON({
+            json = JSON.encode(jsonRepresentation),
+            -- callback_function = lockCard
+        })
+    end
+end
+-- function lockCard(card)
+--     card.lock()
+-- end
+function setCardDescriptionToSpawn(card)
+    -- card.lock()
+    count = string.match(card.getName(), "^(%d+) x ")
+    if count~=nil then
+        count = tonumber(count)
+        name = string.gsub(card.getName(),"^%d+ x ","")
+        -- card.setName(name)
+        -- card.clearButtons()
+    else
+        name = card.getName()
+        count = 1
+    end
+    if SHIPS[string.lower(name)]~=nil then
+        Wait.frames(function() card.clearButtons() end, 2)
+        spawnShip(name,card.getPosition(),count,card.getRotation()[2],card)
+    end
+end
+function spawnShip(name,pos,count,rotation, card)
+    -- printToAll("Spawning: "..name,{1,0,0})
+    local ship_def = SHIPS[string.lower(name)]
+    spawnDefinition(ship_def,name,pos,count,rotation, card)
+end
+-- token_offsets = {{-0.86,0,-3.64},{0.86,0,-3.64},{-0.86,0,-4.94},{0.86,0,-4.94},{-0.86,0,-6.24},{0.86,0,-6.24}}
+token_offsets = {{-0.86,0,3.54},{0.86,0,3.54},{-0.86,0,4.84},{0.86,0,4.84},{-0.86,0,6.14},{0.86,0,6.14}}
+function addSpawn(card, ship)
+    Wait.frames(function()
+        cardspawns = card.getTable('spawns') or {}
+        table.insert(cardspawns,ship.getGUID())
+        card.setTable('spawns',cardspawns)
+    end, 1)
+end
+function spawnDefinition(ship_def, name, pos,count,y_rotation, card)
+    --local ship_def = SHIPS[name]
+    if ship_def~=nil then
+    --for _,ship_def in ipairs(SHIPS) do
+    --    if ship_def.name == name then
+        rotation_offset = 180
+        if ship_def.health~=nil and ship_def.move~=nil then
+            name = "("..ship_def.health.."/"..ship_def.health..") ["..ship_def.move.."] "..name
+            rotation_offset = 0
+        end
+        local last_ship = nil
+        for i=1, count, 1 do
+            local obj_parameters = {}
+            obj_parameters.type = 'Custom_Model'
+            obj_parameters.position = vector.add({pos[1],1+(i-1)*0.3,pos[3]},vector.rotate({0,0,8},y_rotation-180))
+            obj_parameters.rotation = {0,y_rotation-rotation_offset,0 }
+            local ship = spawnObject(obj_parameters)
+            local custom = {}
+            custom.mesh = ship_def.mesh
+            custom.collider = ship_def.collider
+            custom.diffuse = ship_def.diffuse
+            custom.convex = ship_def.convex
+            custom.type = ship_def.type
+            -- print(ship_def.material)
+            custom.material = ship_def.material or 1
+            ship.setCustomObject(custom)
+
+            ship.setName(name)
+            ship.setVar("rulerMesh",ship_def.ruler)
+            ship.setTable("maneuver",ship_def.maneuver)
+            ship.setTable("shields",ship_def.shields)
+            if card~=nil then
+                addSpawn(card, ship)
+                ship.setVar('card',card.getGUID())
+            end
+            last_ship = ship
+            wait_then_storeInitialPosition(ship)
+        end
+        if ship_def.defense_tokens~=nil then
+            for i,source_guid in ipairs(ship_def.defense_tokens) do
+                source = getObjectFromGUID(source_guid)
+                offset = token_offsets[i]
+                local obj_parameters = {}
+                obj_parameters.position = vector.sub(pos,vector.rotate(offset,y_rotation))
+                obj_parameters.rotation = {0,y_rotation+90,0}
+                source.takeObject(obj_parameters)
+            end
+        end
+        if ship_def.maneuver~=nil then
+            -- for i,source_guid in ipairs(COMMAND_TOKEN_SOURCES) do
+            --     source = getObjectFromGUID(source_guid)
+            --     offset = {token_offsets[i][1],0,-token_offsets[i][3]*1.1}
+            --     local obj_parameters = {}
+            --     obj_parameters.position = vector.sub(pos,vector.rotate(offset,y_rotation))
+            --     obj_parameters.rotation = {0,y_rotation+90,0}
+            --     source.takeObject(obj_parameters)
+            -- end
+
+            source = getObjectFromGUID(SPEED_SOURCE)
+            offset = {3.44,0,4.19}
+            local obj_parameters = {}
+            obj_parameters.position = vector.sub(pos,vector.rotate(offset,y_rotation))
+            obj_parameters.rotation = {0,y_rotation,0}
+            source.takeObject(obj_parameters)
+
+
+            --Spawn Command Base
+            local obj_parameters = {}
+            obj_parameters.type = 'Custom_Model'
+            obj_parameters.position = vector.sub(pos,vector.rotate({3.44,0,7.5},y_rotation))
+            obj_parameters.rotation = {0,y_rotation-rotation_offset,0 }
+            obj_parameters.scale = {0.43,0.25,0.43}
+            local custom = {}
+            local base = spawnObject(obj_parameters)
+            base.setColorTint({0,0,0})
+            custom.mesh = ASSETS_ROOT.."misc/command_base.obj"
+            custom.collider = ASSETS_ROOT.."misc/command_base_collider.obj"
+            custom.convex = true
+            custom.type = 1
+            custom.material = 2 --metal?
+            base.setCustomObject(custom)
+            base.setName(ship_def.name.."\nCommand Base")
+            base.lock()
+            Wait.frames(|| SetCmdBaseGUIDonShip(base, last_ship), 1)
+
+        end
+
+        if ship_def.command~=nil then
+            for i=1,ship_def.command do
+                source = getObjectFromGUID(COMMAND_SOURCE)
+                offset = {3.44,-i*0.5,9.5}
+                local obj_parameters = {}
+                obj_parameters.position = vector.sub(pos,vector.rotate(offset,y_rotation))
+                obj_parameters.rotation = {0,y_rotation,180}
+                source.takeObject(obj_parameters)
+            end
+        end
+    --    end
+    --end
+    end
+end
+function wait_then_storeInitialPosition(ship)
+    Wait.frames(|| storeInitialPosition(ship), 10)
+end
+function SetCmdBaseGUIDonShip(base, ship)
+    -- print("Ship: "..ship.getGUID())
+    -- print("Base: "..base.getGUID())
+    ship.setVar("cmdBaseGUID",base.getGUID())
+end
+function storeInitialPosition(ship)
+    ship.setTable("InitialPosition",ship.getPosition())
+end
+#include ../../util/vector
+#include ../../util/table
+-- function math.mod(a, b)
+--     return a-b*math.floor(a/b)
+-- end
+-- function math.round(x)
+--     return x>=0 and math.floor(x+0.5) or math.ceil(x-0.5)
+-- end
+-- vector={}
+-- function vector.add(pos, offset)
+--     return {pos[1] + offset[1],pos[2] + offset[2],pos[3] + offset[3]}
+-- end
+-- function vector.sub(pos, offset)
+--     return {pos[1] - offset[1],pos[2] - offset[2],pos[3] - offset[3]}
+-- end
+-- function vector.length(v)
+--     return math.sqrt(v[1]*v[1]+v[2]*v[2]+v[3]*v[3])
+-- end
+-- function vector.rotate(direction, yRotation)
+--
+--     local rotval = math.round(yRotation)
+--     local radrotval = math.rad(rotval)
+--     local xDistance = math.cos(radrotval) * direction[1] + math.sin(radrotval) * direction[3]
+--     local zDistance = math.sin(radrotval) * direction[1] * -1 + math.cos(radrotval) * direction[3]
+--     return {xDistance, direction[2], zDistance}
+-- end
+
+#include ../../util/string
+function findObjectByName(name)
+    for i,obj in ipairs(getAllObjects()) do
+        if obj.getName()==name then return obj end
+    end
+end

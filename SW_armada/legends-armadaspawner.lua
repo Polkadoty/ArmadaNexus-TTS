@@ -5160,7 +5160,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
         cost = 140,
         command = 4,
-        aliases = { "Mercury Battlestar MkI [Legends]" }
+        aliases = { "Mercury Battlestar Mark I [Legends]" }
     })
     Ship:new(LargeShip, COL_L_SHIP, {
         name = "Mercury-class Battlestar MkII",
@@ -5173,12 +5173,12 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
         cost = 135,
         command = 4,
-        aliases = { "Mercury Battlestar Mk2 [Legends]" }
+        aliases = { "Mercury Battlestar Mark II [Legends]" }
     })
 
     -- jupiter battlestar
     Ship:new(LargeShip, COL_L_SHIP, {
-        name = "Jupiter-class Battlestar MkI",
+        name = "Jupiter-class Battlestar Mark I",
         front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk1-legends.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk1_diffuse.jpg",
@@ -5188,10 +5188,10 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
         cost = 120,
         command = 3,
-        aliases = { "Jupiter-class Battlestar MkI [Legends]" }
+        aliases = { "Jupiter-class Battlestar Mark I [Legends]" }
     })
     Ship:new(LargeShip, COL_L_SHIP, {
-        name = "Jupiter-class Battlestar MkII",
+        name = "Jupiter-class Battlestar Mark II",
         front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk2-legends.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk2_diffuse.jpg",
@@ -5201,7 +5201,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
         cost = 126,
         command = 3,
-        aliases = { "Jupiter-class Battlestar MkII [Legends]" }
+        aliases = { "Jupiter-class Battlestar Mark II [Legends]" }
     })
 
     --manticore corvette
@@ -5813,7 +5813,7 @@ Card:new(OffensiveRetrofit,{name="Proximity Mines", front="https://i.imgur.com/e
 Card:new(OffensiveRetrofit,{name="Quad Laser Turrets", front="https://i.imgur.com/HKfQx0O.jpg", cost=5})
 Card:new(OffensiveRetrofit,{name="Rapid Launch Bays", front="https://i.imgur.com/PHiQ5fk.jpg", cost=6})
 Card:new(OffensiveRetrofit,{name="Reserve Hangar Deck", front="https://i.imgur.com/CuuMCQr.jpg", cost=3})
-Card:new(OffensiveRetrofit,{name="Flak Guns", front=CUSTOM_ASSETS.."cards/.updated/upgradesflak-guns.jpg", cost=3})
+Card:new(OffensiveRetrofit,{name="Flak Guns", front=CUSTOM_ASSETS.."cards/.updated/upgrades/flak-guns.jpg", cost=3})
 
 ----#include defs/cards/offensive_retrofit
 ----#include defs/cards/officer
@@ -6505,51 +6505,51 @@ Objective = {
 }
 
 Assault = { category = "Assault" }
-Card:new(Assault, Objective, {name="Advanced Gunnery", front="https://i.imgur.com/3dV3CQL.png"})
-Card:new(Assault, Objective, {name="Blockade Run", front="https://i.imgur.com/uy3nABn.png", victory=20})
-Card:new(Assault, Objective, {name="Close-Range Intel Scan", front="https://i.imgur.com/metfsL6.png", victory=10})
-Card:new(Assault, Objective, {name="Ion Storm", front="https://i.imgur.com/EvRHvo6.png", victory=15})
-Card:new(Assault, Objective, {name="Marked for Destruction", front="https://i.imgur.com/Jl513DV.png", victory=15})
-Card:new(Assault, Objective, {name="Most Wanted", front="https://i.imgur.com/AYUAvDe.png"})
-Card:new(Assault, Objective, {name="Opening Salvo", front="https://i.imgur.com/mU3mg9Y.png"})
-Card:new(Assault, Objective, {name="Precision Strike", front="https://i.imgur.com/5PrHKKV.png", victory=15})
-Card:new(Assault, Objective, {name="Rift Assault", front="https://i.imgur.com/h0sCMti.png", victory=10})
-Card:new(Assault, Objective, {name="Station Assault", front="https://i.imgur.com/RZQ6WiC.png", victory=40})
-Card:new(Assault, Objective, {name="[Ship Card] Unarmed Station", front="https://i.imgur.com/pr34PEA.jpeg"})
-Card:new(Assault, Objective, {name="Surprise Attack", front="https://i.imgur.com/WAg0yAC.png"})
-Card:new(Assault, Objective, {name="Targeting Beacons", front="https://i.imgur.com/hkF4kTT.png"})
+Card:new(Assault, Objective, {name="Advanced Gunnery", front=CUSTOM_ASSETS.."cards/.updated/objective/advanced-gunnery.jpg"})
+Card:new(Assault, Objective, {name="Blockade Run", front=CUSTOM_ASSETS.."cards/.updated/objective/blockade-run.jpg", victory=20})
+Card:new(Assault, Objective, {name="Close-Range Intel Scan", front=CUSTOM_ASSETS.."cards/.updated/objective/close-range-intel-scan.jpg", victory=10})
+Card:new(Assault, Objective, {name="Ion Storm", front=CUSTOM_ASSETS.."cards/.updated/objective/ion-storm.jpg", victory=15})
+Card:new(Assault, Objective, {name="Marked for Destruction", front=CUSTOM_ASSETS.."cards/.updated/objective/marked-for-destruction.jpg", victory=15})
+Card:new(Assault, Objective, {name="Most Wanted", front=CUSTOM_ASSETS.."cards/.updated/objective/most-wanted.jpg"})
+Card:new(Assault, Objective, {name="Opening Salvo", front=CUSTOM_ASSETS.."cards/.updated/objective/opening-salvo.jpg"})
+Card:new(Assault, Objective, {name="Precision Strike", front=CUSTOM_ASSETS.."cards/.updated/objective/precision-strike.jpg", victory=15})
+Card:new(Assault, Objective, {name="Rift Assault", front=CUSTOM_ASSETS.."cards/.updated/objective/rift-assault.jpg", victory=10})
+Card:new(Assault, Objective, {name="Station Assault", front=CUSTOM_ASSETS.."cards/.updated/objective/station-assault.jpg", victory=40})
+Card:new(Assault, Objective, {name="[Ship Card] Unarmed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/unarmed-station.jpg"})
+Card:new(Assault, Objective, {name="Surprise Attack", front=CUSTOM_ASSETS.."cards/.updated/objective/surprise-attack.jpg"})
+Card:new(Assault, Objective, {name="Targeting Beacons", front=CUSTOM_ASSETS.."cards/.updated/objective/targeting-beacons.jpg"})
 
 Defense = { category = "Defense" }
-Card:new(Defense, Objective, {name="Abandoned Mining Facility", front="https://i.imgur.com/FisDnrA.png", victory=10})
-Card:new(Defense, Objective, {name="Asteroid Tactics", front="https://i.imgur.com/FDqrQoA.png"})
-Card:new(Defense, Objective, {name="Capture the VIP", front="https://i.imgur.com/LKfjSzk.png", victory=50})
-Card:new(Defense, Objective, {name="Contested Outpost", front="https://i.imgur.com/Ksycqqu.png", victory=20})
-Card:new(Defense, Objective, {name="Fighter Ambush", front="https://i.imgur.com/QcWcYBQ.png", victory=15})
-Card:new(Defense, Objective, {name="Fire Lanes", front="https://i.imgur.com/1d7wzLM.png", victory=15})
-Card:new(Defense, Objective, {name="Fleet Ambush", front="https://i.imgur.com/vm9LLJo.png"})
-Card:new(Defense, Objective, {name="Fleet in Being", front="https://i.imgur.com/GIX4wWL.png", victory=15})
-Card:new(Defense, Objective, {name="Hyperspace Assault", front="https://i.imgur.com/GqjQIK3.png"})
-Card:new(Defense, Objective, {name="Jamming Barrier", front="https://i.imgur.com/hNJ6INI.png"})
-Card:new(Defense, Objective, {name="Planetary Ion Cannon", front="https://i.imgur.com/psjZcZb.png"})
-Card:new(Defense, Objective, {name="Rift Ambush", front="https://i.imgur.com/a2rih6q.png"})
+Card:new(Defense, Objective, {name="Abandoned Mining Facility", front=CUSTOM_ASSETS.."cards/.updated/objective/abandoned-mining-facility.jpg", victory=10})
+Card:new(Defense, Objective, {name="Asteroid Tactics", front=CUSTOM_ASSETS.."cards/.updated/objective/asteroid-tactics.jpg"})
+Card:new(Defense, Objective, {name="Capture the VIP", front=CUSTOM_ASSETS.."cards/.updated/objective/capture-the-vip.jpg", victory=50})
+Card:new(Defense, Objective, {name="Contested Outpost", front=CUSTOM_ASSETS.."cards/.updated/objective/contested-outpost.jpg", victory=20})
+Card:new(Defense, Objective, {name="Fighter Ambush", front=CUSTOM_ASSETS.."cards/.updated/objective/fighter-ambush.jpg", victory=15})
+Card:new(Defense, Objective, {name="Fire Lanes", front=CUSTOM_ASSETS.."cards/.updated/objective/fire-lanes.jpg", victory=15})
+Card:new(Defense, Objective, {name="Fleet Ambush", front=CUSTOM_ASSETS.."cards/.updated/objective/fleet-ambush.jpg"})
+Card:new(Defense, Objective, {name="Fleet in Being", front=CUSTOM_ASSETS.."cards/.updated/objective/fleet-in-being.jpg", victory=15})
+Card:new(Defense, Objective, {name="Hyperspace Assault", front=CUSTOM_ASSETS.."cards/.updated/objective/hyperspace-assault.jpg"})
+Card:new(Defense, Objective, {name="Jamming Barrier", front=CUSTOM_ASSETS.."cards/.updated/objective/jamming-barrier.jpg"})
+Card:new(Defense, Objective, {name="Planetary Ion Cannon", front=CUSTOM_ASSETS.."cards/.updated/objective/planetary-ion-cannon.jpg"})
+Card:new(Defense, Objective, {name="Rift Ambush", front=CUSTOM_ASSETS.."cards/.updated/objective/rift-ambush.jpg"})
 
 Navigation = { category = "Navigation" }
-Card:new(Navigation, Objective, {name="Dangerous Territory", front="https://i.imgur.com/DIlMCHD.png", victory=15})
-Card:new(Navigation, Objective, {name="Doomed Station", front="https://i.imgur.com/SZ8kaLu.png", victory=20})
-Card:new(Navigation, Objective, {name="Hyperspace Migration", front="https://i.imgur.com/oQO2QV0.png", victory=20})
-Card:new(Navigation, Objective, {name="Infested Fields", front="https://i.imgur.com/FrULG6O.png", victory=15})
-Card:new(Navigation, Objective, {name="Intel Sweep", front="https://i.imgur.com/whvJxjk.png"})
-Card:new(Navigation, Objective, {name="Minefields", front="https://i.imgur.com/9HOIdHa.png"})
-Card:new(Navigation, Objective, {name="Navigational Hazards", front="https://i.imgur.com/FaFVElY.png", victory=15})
-Card:new(Navigation, Objective, {name="Salvage Run", front="https://i.imgur.com/VLUPsmd.png", victory=20})
-Card:new(Navigation, Objective, {name="Sensor Net", front="https://i.imgur.com/tLdaZPu.png", victory=15})
-Card:new(Navigation, Objective, {name="Solar Corona", front="https://i.imgur.com/7YfXYte.png"})
-Card:new(Navigation, Objective, {name="Superior Positions", front="https://i.imgur.com/eL4Ow8N.png", victory=15})
-Card:new(Navigation, Objective, {name="Volatile Deposits", front="https://i.imgur.com/tiR18cD.png", victory=15})
+Card:new(Navigation, Objective, {name="Dangerous Territory", front=CUSTOM_ASSETS.."cards/.updated/objective/dangerous-territory.jpg", victory=15})
+Card:new(Navigation, Objective, {name="Doomed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/doomed-station.jpg", victory=20})
+Card:new(Navigation, Objective, {name="Hyperspace Migration", front=CUSTOM_ASSETS.."cards/.updated/objective/hyperspace-migration.jpg", victory=20})
+Card:new(Navigation, Objective, {name="Infested Fields", front=CUSTOM_ASSETS.."cards/.updated/objective/infested-fields.jpg", victory=15})
+Card:new(Navigation, Objective, {name="Intel Sweep", front=CUSTOM_ASSETS.."cards/.updated/objective/intel-sweep.jpg"})
+Card:new(Navigation, Objective, {name="Minefields", front=CUSTOM_ASSETS.."cards/.updated/objective/minefields.jpg"})
+Card:new(Navigation, Objective, {name="Navigational Hazards", front=CUSTOM_ASSETS.."cards/.updated/objective/navigational-hazards.jpg", victory=15})
+Card:new(Navigation, Objective, {name="Salvage Run", front=CUSTOM_ASSETS.."cards/.updated/objective/salvage-run.jpg", victory=20})
+Card:new(Navigation, Objective, {name="Sensor Net", front=CUSTOM_ASSETS.."cards/.updated/objective/sensor-net.jpg", victory=15})
+Card:new(Navigation, Objective, {name="Solar Corona", front=CUSTOM_ASSETS.."cards/.updated/objective/solar-corona.jpg"})
+Card:new(Navigation, Objective, {name="Superior Positions", front=CUSTOM_ASSETS.."cards/.updated/objective/superior-positions.jpg", victory=15})
+Card:new(Navigation, Objective, {name="Volatile Deposits", front=CUSTOM_ASSETS.."cards/.updated/objective/volatile-deposits.jpg", victory=15})
 
 Special = { category = "Special" }
-Card:new(Special, Objective, {name="Base Defense: Armed Station", front="https://i.imgur.com/uuS6Bgr.png"})
-Card:new(Special, Objective, {name="[Ship Card] Armed Station", front="https://i.imgur.com/8bxI1du.jpeg"})
+Card:new(Special, Objective, {name="Base Defense: Armed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/armed-station.jpg})
+Card:new(Special, Objective, {name="[Ship Card] Armed Station", front="https://i.imgur.com/8bxI1du.jpeg"}) 
 Card:new(Special, Objective, {name="Base Defense: Fighter Wing", front="https://i.imgur.com/HSGDnta.png"})
 Card:new(Special, Objective, {name="Base Defense: Ion Cannon", front="https://i.imgur.com/qpZfp8c.png"})
 Card:new(Special, Objective, {name="Hyperlane Raid", front="https://i.imgur.com/vqS5veh.png", victory=15})

@@ -1,0 +1,336 @@
+EMPIRE_SHIP = {
+    back = ASSETS_ROOT.."ships/empire/card_back.jpg",
+    faction = "Empire"
+}
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Gozanti-class Cruisers",
+    front =     ASSETS_ROOT.."ships/empire/gozanti/cruiser_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/gozanti/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/gozanti/cruiser_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/gozanti/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"I","I","-"}},
+    defense_tokens = {DEF_SCATTER, DEF_EVADE},
+    shields = {1,1,1,1},
+    cost = 23,
+    aliases = {"Gozanti Cruisers"},
+    command = 1
+})
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Gozanti-class Assault Carriers",
+    front =     ASSETS_ROOT.."ships/empire/gozanti/assault_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/gozanti/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/gozanti/assault_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/gozanti/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"I","I","-"}},
+    defense_tokens = {DEF_SCATTER, DEF_EVADE},
+    shields = {1,1,1,1},
+    cost = 28,
+    aliases = {"Gozanti Assault Carriers"},
+    command = 1
+})
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Raider I-class Corvette",
+    front =     ASSETS_ROOT.."ships/empire/raider/I_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/raider/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/raider/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/raider/ruler.obj",
+    maneuver = {{"II"},{"II","II"},{"-","I","I"},{"-","I","I","I"}},
+    defense_tokens = {DEF_EVADE,DEF_EVADE,DEF_BRACE},
+    shields = {2,2,2,2},
+    cost = 44,
+    aliases = {"Raider I","Raider I Corvette"},
+    command = 1
+})
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Raider II-class Corvette",
+    front =     ASSETS_ROOT.."ships/empire/raider/II_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/raider/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/raider/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/raider/ruler.obj",
+    maneuver = {{"II"},{"II","II"},{"-","I","I"},{"-","I","I","I"}},
+    defense_tokens = {DEF_EVADE,DEF_EVADE,DEF_BRACE},
+    shields = {2,2,2,2},
+    cost = 48,
+    aliases = {"Raider II","Raider II Corvette"},
+    command = 1
+})
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Gladiator I-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/empire/gladiator/I_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/gladiator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/gladiator/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/gladiator/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT},
+    shields = {3,2,2,1},
+    cost = 56,
+    aliases = {"Gladiator I","Gladiator I Star Destroyer"},
+    command = 2
+})
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Gladiator II-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/empire/gladiator/II_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/gladiator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/gladiator/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/gladiator/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT},
+    shields = {3,2,2,1},
+    cost = 62,
+    aliases = {"Gladiator II","Gladiator II Star Destroyer"},
+    command = 2
+})
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Arquitens-class Light Cruiser",
+    front =     ASSETS_ROOT.."ships/empire/arquitens/light_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/arquitens/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/arquitens/light_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/arquitens/ruler.obj",
+    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    defense_tokens = {DEF_EVADE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
+    shields = {2,2,2,2},
+    cost = 54,
+    aliases = {"Arquitens Light Cruiser"},
+    command = 2
+})
+Ship:new(SmallShip,EMPIRE_SHIP,{
+	name = "Arquitens-class Command Cruiser",
+    front =     ASSETS_ROOT.."ships/empire/arquitens/command_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/arquitens/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/arquitens/command_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/arquitens/ruler.obj",
+    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    defense_tokens = {DEF_EVADE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
+    shields = {2,2,2,2},
+    cost = 59,
+    aliases = {"Arquitens Command Cruiser"},
+    command = 2
+    --maneuver = "II|-,II|-,-,II"
+})
+Ship:new(MediumShip,EMPIRE_SHIP,{
+	name = "Victory I-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/empire/victory/I_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/victory/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/victory/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/victory/ruler.obj",
+    maneuver = {{"I"},{"-","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT},
+    shields = {3,3,3,1},
+    cost = 73,
+    aliases = {"Victory I Star Destroyer","Victory I", "VSD I", "VSD 1"},
+    command = 3
+})
+Ship:new(MediumShip,EMPIRE_SHIP,{
+	name = "Victory II-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/empire/victory/II_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/victory/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/victory/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/victory/ruler.obj",
+    maneuver = {{"I"},{"-","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT},
+    shields = {3,3,3,1},
+    cost = 85,
+    aliases = {"Victory II Star Destroyer","Victory II", "VSD II", "VSD 2"},
+    command = 3
+})
+Ship:new(MediumShip,EMPIRE_SHIP,{
+	name = "Interdictor Suppression Refit",
+    front =     ASSETS_ROOT.."ships/empire/interdictor/suppression_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/interdictor/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/interdictor/suppression_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/interdictor/ruler.obj",
+    maneuver = {{"I"},{"I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+    shields = {3,2,2,2},
+    cost = 90,
+    aliases = {"Interdictor-class Suppression Refit"},
+    command = 2
+})
+Ship:new(MediumShip,EMPIRE_SHIP,{
+	name = "Interdictor Combat Refit",
+    front =     ASSETS_ROOT.."ships/empire/interdictor/combat_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/interdictor/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/interdictor/combat_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/interdictor/ruler.obj",
+    maneuver = {{"I"},{"I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+    shields = {3,2,2,2},
+    cost = 93,
+    aliases = {"Interdictor-class Combat Refit"},
+    command = 2
+})
+Ship:new(MediumShip,EMPIRE_SHIP,{
+	name = "Quasar Fire I-class Cruiser-Carrier",
+    front =     ASSETS_ROOT.."ships/empire/quasar/I_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/quasar/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/quasar/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/quasar/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT},
+    shields = {2,2,2,1},
+    cost = 54,
+    aliases = {"Quasar Fire I Cruiser-Carrier","Quasar Fire I", "Quasar I"},
+    command = 2
+})
+Ship:new(MediumShip,EMPIRE_SHIP,{
+	name = "Quasar Fire II-class Cruiser-Carrier",
+    front =     ASSETS_ROOT.."ships/empire/quasar/II_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/quasar/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/quasar/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/quasar/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT},
+    shields = {2,2,2,1},
+    cost = 61,
+    aliases = {"Quasar Fire II Cruiser-Carrier","Quasar Fire II", "Quasar II"},
+    command = 2
+})
+
+Ship:new(LargeShip,EMPIRE_SHIP,{
+	name = "Imperial I-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/empire/imperial/I_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/imperial/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/imperial/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
+    shields = {4,3,3,2},
+    cost = 110,
+    aliases = {"Imperial I Star Destroyer","Imperial I", "ISD I", "ISD 1"},
+    command = 3
+})
+Ship:new(LargeShip,EMPIRE_SHIP,{
+	name = "Imperial Star Destroyer Kuat Refit",
+    front =     ASSETS_ROOT.."ships/empire/imperial/kuat_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/imperial/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/imperial/kuat_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
+    shields = {4,3,3,2},
+    cost = 112,
+    aliases = {"Imperial Kuat Refit","Kuat Refit", "ISD Kuat Refit"},
+    command = 3
+})
+Ship:new(LargeShip,EMPIRE_SHIP,{
+	name = "Imperial II-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/empire/imperial/II_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/imperial/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/imperial/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
+    shields = {4,3,3,2},
+    cost = 120,
+    aliases = {"Imperial II Star Destroyer","Imperial II", "ISD II", "ISD 2"},
+    command = 3
+})
+Ship:new(LargeShip,EMPIRE_SHIP,{
+	name = "Imperial Star Destroyer Cymoon 1 Refit",
+    front =     ASSETS_ROOT.."ships/empire/imperial/cymoon_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/imperial/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/imperial/cymoon_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
+    shields = {4,3,3,2},
+    cost = 112,
+    aliases = {"Imperial Cymoon 1 Refit","Cymoon 1 Refit", "ISD Cymoon 1 Refit", "ISD Cymoon"},
+    command = 3
+})
+
+Ship:new(HugeShip,EMPIRE_SHIP,{
+	name = "Star Dreadnought Command Prototype",
+    front =     ASSETS_ROOT.."ships/empire/ssd/command_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/ssd/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/ssd/command_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/ssd/ruler.obj",
+    maneuver = {{"-"},{"-","-"}},
+    defense_tokens = {DEF_BRACE,DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+    shields = {6,3,3,2,3,3},
+    cost = 220,
+    aliases = {"SSD Command Prototype","Command Prototype"},
+    command = 4,
+    hull = 22
+})
+Ship:new(HugeShip,EMPIRE_SHIP,{
+	name = "Star Dreadnought Assault Prototype",
+    front =     ASSETS_ROOT.."ships/empire/ssd/assault_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/ssd/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/ssd/assault_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/ssd/ruler.obj",
+    maneuver = {{"-"},{"-","-"}},
+    defense_tokens = {DEF_BRACE,DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+    shields = {6,3,3,2,3,3},
+    cost = 250,
+    aliases = {"SSD Assault Prototype","Assault Prototype"},
+    command = 4,
+    hull = 22
+})
+Ship:new(HugeShip,EMPIRE_SHIP,{
+	name = "Executor I-class Star Dreadnought",
+    front =     ASSETS_ROOT.."ships/empire/ssd/executor_I_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/ssd/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/ssd/executor_I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/ssd/ruler.obj",
+    maneuver = {{"-"},{"-","-"}},
+    defense_tokens = {DEF_BRACE,DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+    shields = {6,5,5,3,5,5},
+    cost = 381,
+    aliases = {"Executor I Star Dreadnought", "Executor I SSD","Executor I"},
+    command = 4,
+    hull = 33
+})
+Ship:new(HugeShip,EMPIRE_SHIP,{
+	name = "Executor II-class Star Dreadnought",
+    front =     ASSETS_ROOT.."ships/empire/ssd/executor_II_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/ssd/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/ssd/executor_II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/ssd/ruler.obj",
+    maneuver = {{"-"},{"-","-"}},
+    defense_tokens = {DEF_BRACE,DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+    shields = {6,5,5,3,5,5},
+    cost = 411,
+    aliases = {"Executor II Star Dreadnought", "Executor II SSD","Executor II"},
+    command = 4,
+    hull = 33
+})
+Ship:new(LargeShip,EMPIRE_SHIP,{
+	name = "Onager-class Testbed",
+    front =     ASSETS_ROOT.."ships/empire/onager/testbed_card_v2_1.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/onager/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/onager/testbed_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/onager/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"I","I",'-'}},
+    defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_SALVO},
+    shields = {5,2,2,1},
+    cost = 116,
+    aliases = {"Onager Testbed"},
+    command = 3
+})
+Ship:new(LargeShip,EMPIRE_SHIP,{
+	name = "Onager-class Star Destroyer",
+    front =     ASSETS_ROOT.."ships/empire/onager/sd_card_v2_1.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/onager/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/onager/sd_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/onager/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"I","I",'-'}},
+    defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_SALVO},
+    shields = {5,2,2,1},
+    cost = 120,
+    aliases = {"Onager Star Destroyer"},
+    command = 3
+})
+Ship:new(LargeShip,EMPIRE_SHIP,{
+	name = "Venator II-class Star Destroyer (imp)",
+    front =     ASSETS_ROOT.."ships/empire/venator/II_card.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/venator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/venator/II_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/venator/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
+    shields = {4,3,3,2},
+    cost = 100,
+	aliases = {"Venator II Star Destroyer (imp)", "Venator II (imp)"},
+    command = 3
+})

@@ -1,0 +1,15 @@
+SupportTeam = {
+    type="SupportTeam",
+    back = "https://i.imgur.com/WjGbQ3t.png"
+}
+--separatist
+Card:new(SupportTeam,Separatist,{name="Battle Droid Reserves", front="https://i.imgur.com/ffhsdrO.jpeg", cost=4})
+
+--generic
+Card:new(SupportTeam,{name="Auxiliary Shields Team", front="https://i.imgur.com/SkNnm5P.jpg", cost=3})
+Card:new(SupportTeam,{name="Engine Techs", front="https://i.imgur.com/5oEvYoq.jpg", cost=8})
+Card:new(SupportTeam,{name="Engineering Team", front="https://i.imgur.com/ZmpFl4q.jpg", cost=5})
+Card:new(SupportTeam,{name="Fighter Coordination Team", front="https://i.imgur.com/wKI96Sb.jpg", cost=3})
+Card:new(SupportTeam,{name="Medical Team", front="https://i.imgur.com/jwf6kLG.jpg", cost=1})
+Card:new(SupportTeam,{name="Nav Team", front="https://i.imgur.com/GdjIeBj.jpg", cost=4})
+Card:new(SupportTeam,{name="Projection Experts", front="https://i.imgur.com/0hPAHTI.jpg", cost=6})

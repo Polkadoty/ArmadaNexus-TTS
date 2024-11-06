@@ -1,0 +1,11 @@
+FleetSupport = {
+    type="FleetSupport",
+    back = "https://i.imgur.com/bH1FR0J.png"
+}
+Card:new(FleetSupport,{name="Bomber Command Center", front="https://i.imgur.com/slRsjXp.jpg", cost=8})
+Card:new(FleetSupport,{name="Comms Net", front="https://i.imgur.com/56EgYe9.jpg", cost=2})
+Card:new(FleetSupport,{name="Jamming Field", front="https://i.imgur.com/YjACVRj.jpg", cost=2})
+Card:new(FleetSupport,{name="Munitions Resupply", front="https://i.imgur.com/IEHG2uc.jpeg", cost=3})
+Card:new(FleetSupport,{name="Parts Resupply", front="https://i.imgur.com/trKTRFt.jpg", cost=3})
+Card:new(FleetSupport,{name="Repair Crews", front="https://i.imgur.com/sFnhtzi.jpg", cost=4})
+Card:new(FleetSupport,{name="Slicer Tools", front="https://i.imgur.com/f3pcTt5.jpg", cost=7})

@@ -1,0 +1,134 @@
+SEPARATIST_SHIP = {
+    back =      ASSETS_ROOT.."ships/separatist/card_back.jpg",
+    faction = "Separatist"
+}
+Ship:new(SmallShip,SEPARATIST_SHIP,{
+	name = "Hardcell-class Transport",
+    front =     ASSETS_ROOT.."ships/separatist/hardcell/transport_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/hardcell/transport_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/hardcell/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/hardcell/transport_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/hardcell/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"I","I","-"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT},
+    shields = {3,1,1,2},
+    cost = 47,
+	aliases = {"Hardcell Transport"},
+    command = 1
+})
+Ship:new(SmallShip,SEPARATIST_SHIP,{
+	name = "Hardcell-class Battle Refit",
+    front =     ASSETS_ROOT.."ships/separatist/hardcell/battle_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/hardcell/battle_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/hardcell/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/hardcell/battle_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/hardcell/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"I","I","-"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT},
+    shields = {3,1,1,2},
+    cost = 52,
+	aliases = {"Hardcell Battle Refit"},
+    command = 1
+})
+
+Ship:new(MediumShip,SEPARATIST_SHIP,{
+	name = "Munificent-class Comms Frigate",
+    front =     ASSETS_ROOT.."ships/separatist/munificent/comms_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/munificent/comms_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/munificent/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/munificent/comms_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/munificent/ruler.obj",
+    maneuver = {{"I"},{"I","II"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {4,3,3,2},
+    cost = 70,
+	aliases = {"Munificent Comms Frigate"},
+    command = 2
+})
+Ship:new(MediumShip,SEPARATIST_SHIP,{
+	name = "Munificent-class Star Frigate",
+    front =     ASSETS_ROOT.."ships/separatist/munificent/star_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/munificent/star_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/munificent/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/munificent/star_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/munificent/ruler.obj",
+    maneuver = {{"I"},{"I","II"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {4,3,3,2},
+    cost = 73,
+	aliases = {"Munificent Star Frigate"},
+    command = 2
+})
+
+Ship:new(LargeShip,SEPARATIST_SHIP,{
+    name = "Recusant-class Light Destroyer",
+    front =     ASSETS_ROOT.."ships/separatist/recusant/light_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/recusant/light_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/recusant/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/recusant/light_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/recusant/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","II","I"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {3,3,3,2},
+    cost = 85,
+    aliases = {"Recusant Light Destroyer"},
+    command = 3
+})
+Ship:new(LargeShip,SEPARATIST_SHIP,{
+	name = "Recusant-class Support Destroyer",
+    front =     ASSETS_ROOT.."ships/separatist/recusant/support_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/recusant/support_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/recusant/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/recusant/support_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/recusant/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","II","I"}},
+    defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {3,3,3,2},
+    cost = 90,
+	aliases = {"Recusant Support Destroyer"},
+    command = 3
+})
+
+Ship:new(LargeShip,SEPARATIST_SHIP,{
+	name = "Providence-class Carrier",
+    front =     ASSETS_ROOT.."ships/separatist/providence/carrier_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/providence/carrier_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/providence/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/providence/carrier_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/providence/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"I","-","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
+    shields = {5,3,3,2},
+    cost = 105,
+	aliases = {"Providence Carrier"},
+    command = 3
+})
+
+Ship:new(LargeShip,SEPARATIST_SHIP,{
+	name = "Providence-class Dreadnought",
+    front =     ASSETS_ROOT.."ships/separatist/providence/dreadnought_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/providence/dreadnought_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/providence/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/providence/dreadnought_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/providence/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"I","-","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
+    shields = {5,3,3,2},
+    cost = 105,
+	aliases = {"Providence Dreadnought"},
+    command = 3
+})
+Ship:new(SmallShip,SEPARATIST_SHIP,{
+	name = "Gozanti-class Cruisers",
+    front =     ASSETS_ROOT.."ships/separatist/gozanti/cruiser_card.jpg",
+    -- back =      ASSETS_ROOT.."ships/separatist/gozanti/cruiser_card_orig_back.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/gozanti/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/gozanti/cruiser_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/gozanti/ruler.obj",
+    maneuver = {{"II"},{"I","I"},{"I","I","-"}},
+    defense_tokens = {DEF_SCATTER, DEF_EVADE},
+    shields = {1,1,1,1},
+    cost = 27,
+    aliases = {"Gozanti Cruisers", "Gozanti-class Cruisers (cis)", "Gozanti Cruisers (cis)"},
+    command = 1
+})

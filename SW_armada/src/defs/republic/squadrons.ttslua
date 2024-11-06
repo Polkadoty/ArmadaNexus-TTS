@@ -1,0 +1,153 @@
+REPUBLIC_SQUAD = {
+    back =      ASSETS_ROOT.."ships/republic/card_back.jpg", --TODO: Replace Long Ship version
+    faction = "Republic"
+}
+v19 = {
+    mesh =      ASSETS_ROOT.."squadrons/republic/v19/es_sw_model.obj",
+    health = 5,
+    move = 3,
+    defense_tokens = {}}
+-- Escort, Swarm
+Squadron:new(v19, REPUBLIC_SQUAD, {
+	name = "V-19 Torrent Squadron",
+    front =     ASSETS_ROOT.."squadrons/republic/v19/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/v19/base_diffuse.jpg",
+    cost = 12,
+    aliases = {'V-19 Torrent Squadrons', "V-19", "V-19 Torrent"}
+})
+-- Escort, Swarm
+Squadron:new(v19, REPUBLIC_SQUAD, {
+	name = '\"Axe\"',
+    front =     ASSETS_ROOT.."squadrons/republic/v19/axe_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_EVADE},
+    cost = 17,
+    aliases = {"Axe"}
+})
+
+-- Escort, Swarm
+Squadron:new(v19, REPUBLIC_SQUAD, {
+	name = '\"Kickback\"',
+    front =     ASSETS_ROOT.."squadrons/republic/v19/kickback_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 16,
+    aliases = {"Kickback"}
+})
+
+delta = {
+    mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_do_model.obj",
+    health = 4,
+    move = 4,
+    defense_tokens = {}}
+-- Adept, Counter, Dodge
+Squadron:new(delta, REPUBLIC_SQUAD, {
+	name = "Delta-7 Aethersprite Squadron",
+    front =     ASSETS_ROOT.."squadrons/republic/delta/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/delta/base_diffuse.jpg",
+    cost = 17,
+    aliases = {'Delta-7 Aethersprite Squadrons', "Delta-7 Aethersprite", "Delta-7"}
+})
+-- ship.diffuse = ""
+-- Adept, Counter, Grit
+Squadron:new(delta, REPUBLIC_SQUAD, {
+	name = "Ahsoka Tano",
+    front =     ASSETS_ROOT.."squadrons/republic/delta/ahsoka_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/delta/ahsoka_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_gr_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 23
+})
+-- Adept, Counter
+Squadron:new(delta, REPUBLIC_SQUAD, {
+	name = "Luminara Unduli",
+    front =     ASSETS_ROOT.."squadrons/republic/delta/luminara_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/delta/luminara_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 23
+})
+-- Adept, Counter, Intel
+Squadron:new(delta, REPUBLIC_SQUAD, {
+	name = "Kit Fisto",
+    front =     ASSETS_ROOT.."squadrons/republic/delta/kit_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/delta/kit_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_in_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 26
+})
+-- Adept, Counter
+Squadron:new(delta, REPUBLIC_SQUAD, {
+	name = "Plo Koon",
+    front =     ASSETS_ROOT.."squadrons/republic/delta/plo_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/delta/plo_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 24
+})
+--Adept, Counter 2, Dodge 1
+Squadron:new(delta, REPUBLIC_SQUAD, {
+	name = "Anakin Skywalker",
+    front =     ASSETS_ROOT.."squadrons/republic/delta/anakin_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/delta/anakin_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_do_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 24,
+    aliases = {'Anakin Skywalker (delta)', 'Anakin Skywalker (Delta-7)'}
+})
+
+ywing = {
+    mesh =      ASSETS_ROOT.."squadrons/republic/ywing/bo_he_model.obj",
+    health = 6,
+    move = 3,
+    defense_tokens = {}}
+-- Bomber, Heavy
+Squadron:new(ywing, REPUBLIC_SQUAD, {
+	name = "BTL-B Y-Wing Squadron",
+    front =     ASSETS_ROOT.."squadrons/republic/ywing/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/base_diffuse.jpg",
+    cost = 10,
+    aliases = {'BTL-B Y-Wing Squadrons', "BTL-B Y-Wing",'BLT-B Y-Wing Squadrons'}
+})
+-- Adept, Bomber, Heavy
+Squadron:new(ywing, REPUBLIC_SQUAD, {
+	name = "Anakin Skywalker",
+    front =     ASSETS_ROOT.."squadrons/republic/ywing/anakin_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/republic/ywing/ad_bo_he_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 19,
+    aliases = {'Anakin Skywalker (BTL-B)'}
+})
+-- Bomber, Heavy
+Squadron:new(ywing, REPUBLIC_SQUAD, {
+	name = "Matchstick",
+    front =     ASSETS_ROOT.."squadrons/republic/ywing/matchstick_card_v2_1.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 16,
+    aliases = {'\"Matchstick\"'}
+})
+
+arc = {
+    mesh =      ASSETS_ROOT.."squadrons/republic/arc/bo_co_model.obj",
+    health = 7,
+    move = 2,
+    defense_tokens = {}}
+-- Bomber, Counter
+Squadron:new(arc, REPUBLIC_SQUAD, {
+	name = "ARC-170 Starfighter Squadron",
+    front =     ASSETS_ROOT.."squadrons/republic/arc/base_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/arc/base_diffuse.jpg",
+    cost = 15,
+    aliases = {'ARC-170 Starfighter Squadrons', "ARC-170 Starfighter", "ARC-170"}
+})
+-- Bomber, Counter
+Squadron:new(arc, REPUBLIC_SQUAD, {
+	name = '\"Odd Ball\"',
+    front =     ASSETS_ROOT.."squadrons/republic/arc/oddball_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/republic/arc/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_EVADE},
+    cost = 23,
+    aliases = {"Odd Ball", "Oddball"}
+})

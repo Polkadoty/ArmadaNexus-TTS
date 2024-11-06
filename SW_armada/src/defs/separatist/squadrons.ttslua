@@ -1,0 +1,122 @@
+SEPARATISTS_SQUAD = {
+    back =      ASSETS_ROOT.."ships/separatist/card_back.jpg", --TODO: Replace Long Ship version
+    faction = "Separatist"
+}
+vulture = {
+    diffuse =   ASSETS_ROOT.."squadrons/separatist/vulture/base_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/separatist/vulture/ai_sw_model.obj",
+    health = 3,
+    move = 4,
+    defense_tokens = {}}
+-- AI: Anti-Squadron, Swarm
+Squadron:new(vulture, SEPARATISTS_SQUAD, {
+	name = "Vulture-class Droid Fighter Squadron",
+    front =     ASSETS_ROOT.."squadrons/separatist/vulture/base_card.jpg",
+    cost = 8,
+    aliases = {'Vulture-class Droid Fighter Squadrons', 'Vulture Droid Fighter Squadron', 'Vulture Droid Fighter Squadrons', "Vultere Droid Fighter", "Vulture", 'Vulture Droid Squadron'}
+})
+vulture.diffuse = ASSETS_ROOT.."squadrons/separatist/vulture/ace_diffuse.jpg"
+vulture.defense_tokens = {DEF_BRACE,DEF_SCATTER}
+-- AI: Anti-Squadron, Swarm
+Squadron:new(vulture, SEPARATISTS_SQUAD, {
+	name = "Haor Chall Prototypes",
+    front =     ASSETS_ROOT.."squadrons/separatist/vulture/haor_card.jpg",
+    cost = 16
+})
+-- AI: Anti-Squadron, Swarm, Intel
+Squadron:new(vulture, SEPARATISTS_SQUAD, {
+	name = "DFS-311",
+    front =     ASSETS_ROOT.."squadrons/separatist/vulture/dfs_card.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/separatist/vulture/ai_in_sw_model.obj",
+    cost = 18
+})
+
+hyena = {
+    diffuse =   ASSETS_ROOT.."squadrons/separatist/hyena/base_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/separatist/hyena/ai_bo_he_model.obj",
+    health = 4,
+    move = 4,
+    defense_tokens = {}}
+--  AI: Battery, Bomber, Heavy
+Squadron:new(hyena, SEPARATISTS_SQUAD, {
+	name = "Hyena-class Droid Bomber Squadron",
+    front =     ASSETS_ROOT.."squadrons/separatist/hyena/base_card.jpg",
+    cost = 11,
+    aliases = {'Hyena-class Droid Bomber Squadrons','Hyena Droid Bomber Squadron','Hyena Droid Bomber Squadrons', 'Hyena Droid Bomber', 'Hyena','Hyena Bomber Squadron'}
+})
+--ALIAS
+hyena.diffuse = ASSETS_ROOT.."squadrons/separatist/hyena/ace_diffuse.jpg"
+hyena.defense_tokens = {DEF_BRACE,DEF_SCATTER}
+--  AI: Battery, Bomber, Heavy
+Squadron:new(hyena, SEPARATISTS_SQUAD, {
+	name = "Baktoid Prototypes",
+    front =     ASSETS_ROOT.."squadrons/separatist/hyena/baktoid_card.jpg",
+    cost = 16,
+    aliases = {"Baktoid Prototype"}
+})
+--  AI: Battery, Bomber, Heavy
+Squadron:new(hyena, SEPARATISTS_SQUAD, {
+	name = "DBS-404",
+    front =     ASSETS_ROOT.."squadrons/separatist/hyena/dbs_card.jpg",
+    cost = 17
+})
+
+tri = {
+    diffuse =   ASSETS_ROOT.."squadrons/separatist/tri/base_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/separatist/tri/ai_co_sw_model.obj",
+    health = 3,
+    move = 5,
+    defense_tokens = {}}
+--  Counter, Swarm, AI:Anti-squadron
+Squadron:new(tri, SEPARATISTS_SQUAD, {
+	name = "Droid Tri-Fighter Squadron",
+    front =     ASSETS_ROOT.."squadrons/separatist/tri/base_card.jpg",
+    cost = 11,
+    aliases = {'Droid Tri-Fighter Squadrons', "Droid Tri-Fighter", "Tri-Fighter"}
+})
+tri.diffuse =   ASSETS_ROOT.."squadrons/separatist/tri/ace_diffuse.jpg"
+tri.defense_tokens = {DEF_BRACE,DEF_SCATTER}
+--  Counter, Swarm, AI:Anti-squadron
+Squadron:new(tri, SEPARATISTS_SQUAD, {
+	name = "Phlac-Arphocc Prototypes",
+    front =     ASSETS_ROOT.."squadrons/separatist/tri/phlacc_card.jpg",
+    cost = 19
+})
+--  Counter, Swarm, AI:Anti-squadron, snipe 3
+Squadron:new(tri, SEPARATISTS_SQUAD, {
+	name = "DIS-T81",
+    front =     ASSETS_ROOT.."squadrons/separatist/tri/dis_card.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/separatist/tri/ai_co_sn_sw_model.obj",
+    cost = 17
+})
+
+belbullab = {
+    diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/base_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/separatist/belbullab/re_sc_model.obj",
+    health = 5,
+    move = 4,
+    defense_tokens = {}}
+--  Relay, Screen
+Squadron:new(belbullab, SEPARATISTS_SQUAD, {
+	name = "Belbullab-22 Starfighter Squadron",
+    front =     ASSETS_ROOT.."squadrons/separatist/belbullab/base_card.jpg",
+    cost = 15,
+    aliases = {'Belbullab-22 Starfighter Squadrons', "Belbullab-22 Starfighter", "Belbullab-22"}
+})
+--Relay, Screen
+Squadron:new(belbullab, SEPARATISTS_SQUAD, {
+	name = "General Grievous",
+    front =     ASSETS_ROOT.."squadrons/separatist/belbullab/grievous_card.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 22
+})
+--Escort, Relay, Screen
+Squadron:new(belbullab, SEPARATISTS_SQUAD, {
+	name = "Wat Tambor",
+    front =     ASSETS_ROOT.."squadrons/separatist/belbullab/wat_card_v2_1.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/separatist/belbullab/es_re_sc_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_EVADE},
+    cost = 18
+})
