@@ -3059,14 +3059,14 @@ hwk = {
     defense_tokens = {}}
 Squadron:new(hwk, REBEL_SQUAD, {
 	name = "HWK-290",
-    front =     ASSETS_ROOT.."squadrons/rebel/hwk/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.errata/hwk290-fix.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/hwk/base_diffuse.jpg",
     cost = 12,
     aliases = {'HWK-290s'}
 })
 Squadron:new(hwk, REBEL_SQUAD, {
 	name = "Jan Ors",
-    front =     ASSETS_ROOT.."squadrons/rebel/hwk/jan_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.errata/jan-ors-fix.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/hwk/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 19,
@@ -3409,14 +3409,14 @@ jumpmaster = {
     move = 4 }
 Squadron:new(jumpmaster, EMPIRE_SQUAD, {
 	name = "JumpMaster 5000",
-    front =     ASSETS_ROOT.."squadrons/empire/jumpmaster/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.errata/jumpmaster-5000-fix.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/base_diffuse.jpg",
     cost = 12,
     aliases = {"JumpMaster 5000s"}
 })
 Squadron:new(jumpmaster, EMPIRE_SQUAD, {
 	name = "Dengar",
-    front =     ASSETS_ROOT.."squadrons/empire/jumpmaster/dengar_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.errata/dengar-fix.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 20,
@@ -5639,6 +5639,37 @@ Squadron:new(seraph, COV_L_SQUAD, {
         aliases = { "Helios-07 - Vespid Bomber Squadron [Legends]" }
     })
 
+
+    PROXY_SHIP = { back = CUSTOM_ASSETS .. "ships/covenant/back.jpg", faction = "!Proxy" }
+
+    Ship:new(MediumShip,PROXY_SHIP,{
+        name = "Cantwell-class Arrestor Cruiser",
+        front =     CUSTOM_ASSETS.."ships/empire/cantwell/cantwell-interdictor-proxy.jpg",
+        mesh =      CUSTOM_ASSETS.."ships/empire/cantwell/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."ships/empire/cantwell/diffuse.jpg",
+        ruler =     CUSTOM_ASSETS.."ships/empire/cantwell/ruler.obj",
+        maneuver = {{"I"},{"I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+        shields = {3,2,2,2},
+        cost = 93,
+        aliases = {"Cantwell-class Arrestor Cruiser [Proxy]"},
+        command = 2
+    })
+
+    PROXY_SQUAD = { back = CUSTOM_ASSETS .. "ships/covenant/back.jpg", faction = "!Proxy" }
+    
+    Squadron:new(PROXY_SQUAD, {
+        name = "TIE Hunter Squadron",
+        front =     CUSTOM_ASSETS.."squadrons/empire/tie_hunter/tie-hunter-proxy.jpg",
+        diffuse =   CUSTOM_ASSETS.."squadrons/empire/tie_hunter/diffuse.jpg",
+        mesh =      CUSTOM_ASSETS.."squadrons/empire/tie_hunter/mesh.obj",
+        cost = 13,
+        aliases = {"TIE Hunter Squadron [Proxy]"},
+        health = 5,
+        move = 4,
+        defense_tokens = {}
+    })
+
 ----#include defs/separatist/squadrons
 
 -- Base Armada Upgrades
@@ -6515,7 +6546,7 @@ Card:new(Assault, Objective, {name="Opening Salvo", front=CUSTOM_ASSETS.."cards/
 Card:new(Assault, Objective, {name="Precision Strike", front=CUSTOM_ASSETS.."cards/.updated/objective/precision-strike.jpg", victory=15})
 Card:new(Assault, Objective, {name="Rift Assault", front=CUSTOM_ASSETS.."cards/.updated/objective/rift-assault.jpg", victory=10})
 Card:new(Assault, Objective, {name="Station Assault", front=CUSTOM_ASSETS.."cards/.updated/objective/station-assault.jpg", victory=40})
-Card:new(Assault, Objective, {name="[Ship Card] Unarmed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/unarmed-station.jpg"})
+Card:new(Assault, Objective, {name="[Ship Card] Unarmed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/unarmed-station.jpeg"})
 Card:new(Assault, Objective, {name="Surprise Attack", front=CUSTOM_ASSETS.."cards/.updated/objective/surprise-attack.jpg"})
 Card:new(Assault, Objective, {name="Targeting Beacons", front=CUSTOM_ASSETS.."cards/.updated/objective/targeting-beacons.jpg"})
 
@@ -6548,7 +6579,7 @@ Card:new(Navigation, Objective, {name="Superior Positions", front=CUSTOM_ASSETS.
 Card:new(Navigation, Objective, {name="Volatile Deposits", front=CUSTOM_ASSETS.."cards/.updated/objective/volatile-deposits.jpg", victory=15})
 
 Special = { category = "Special" }
-Card:new(Special, Objective, {name="Base Defense: Armed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/armed-station.jpg})
+Card:new(Special, Objective, {name="Base Defense: Armed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/armed-station.jpeg"})
 Card:new(Special, Objective, {name="[Ship Card] Armed Station", front="https://i.imgur.com/8bxI1du.jpeg"}) 
 Card:new(Special, Objective, {name="Base Defense: Fighter Wing", front="https://i.imgur.com/HSGDnta.png"})
 Card:new(Special, Objective, {name="Base Defense: Ion Cannon", front="https://i.imgur.com/qpZfp8c.png"})
