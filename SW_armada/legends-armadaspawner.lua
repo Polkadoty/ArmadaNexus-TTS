@@ -2594,8 +2594,8 @@ Ship:new(SmallShip,EMPIRE_SHIP,{
 Ship:new(MediumShip,EMPIRE_SHIP,{
 	name = "Victory I-class Star Destroyer",
     front =     ASSETS_ROOT.."ships/empire/victory/I_card.jpg",
-    mesh =      CUSTOM_ASSETS.."ships/empire/victory_updated/mesh.obj",
-    diffuse =   CUSTOM_ASSETS.."ships/empire/victory_updated/I_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."ships/empire/victory_update/mesh.obj",
+    diffuse =   CUSTOM_ASSETS.."ships/empire/victory_update/I_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/victory/ruler.obj",
     maneuver = {{"I"},{"-","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT},
@@ -2607,8 +2607,8 @@ Ship:new(MediumShip,EMPIRE_SHIP,{
 Ship:new(MediumShip,EMPIRE_SHIP,{
 	name = "Victory II-class Star Destroyer",
     front =     ASSETS_ROOT.."ships/empire/victory/II_card.jpg",
-    mesh =      CUSTOM_ASSETS.."ships/empire/victory_updated/mesh.obj",
-    diffuse =   CUSTOM_ASSETS.."ships/empire/victory_updated/II_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."ships/empire/victory_update/mesh.obj",
+    diffuse =   CUSTOM_ASSETS.."ships/empire/victory_update/II_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/victory/ruler.obj",
     maneuver = {{"I"},{"-","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT},
@@ -2673,8 +2673,8 @@ Ship:new(MediumShip,EMPIRE_SHIP,{
 Ship:new(LargeShip,EMPIRE_SHIP,{
 	name = "Imperial I-class Star Destroyer",
     front =     ASSETS_ROOT.."ships/empire/imperial/I_card.jpg",
-    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_updated/mesh.obj",
-    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_updated/I_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_update/mesh.obj",
+    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_update/I_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
     maneuver = {{"I"},{"I","I"},{"-","I","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
@@ -2686,8 +2686,8 @@ Ship:new(LargeShip,EMPIRE_SHIP,{
 Ship:new(LargeShip,EMPIRE_SHIP,{
 	name = "Imperial Star Destroyer Kuat Refit",
     front =     ASSETS_ROOT.."ships/empire/imperial/kuat_card.jpg",
-    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_updated/mesh.obj",
-    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_updated/kuat_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_update/mesh.obj",
+    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_update/kuat_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
     maneuver = {{"I"},{"I","I"},{"-","I","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
@@ -2699,8 +2699,8 @@ Ship:new(LargeShip,EMPIRE_SHIP,{
 Ship:new(LargeShip,EMPIRE_SHIP,{
 	name = "Imperial II-class Star Destroyer",
     front =     ASSETS_ROOT.."ships/empire/imperial/II_card.jpg",
-    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_updated/mesh.obj",
-    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_updated/II_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_update/mesh.obj",
+    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_update/II_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
     maneuver = {{"I"},{"I","I"},{"-","I","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
@@ -2712,14 +2712,14 @@ Ship:new(LargeShip,EMPIRE_SHIP,{
 Ship:new(LargeShip,EMPIRE_SHIP,{
 	name = "Imperial Star Destroyer Cymoon 1 Refit",
     front =     ASSETS_ROOT.."ships/empire/imperial/cymoon_card.jpg",
-    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_updated/mesh.obj",
-    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_updated/cymoon_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."ships/empire/imperial_update/mesh.obj",
+    diffuse =   CUSTOM_ASSETS.."ships/empire/imperial_update/cymoon_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/imperial/ruler.obj",
     maneuver = {{"I"},{"I","I"},{"-","I","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
     shields = {4,3,3,2},
     cost = 112,
-    aliases = {"Imperial Cymoon 1 Refit","Cymoon 1 Refit", "ISD Cymoon 1 Refit", "ISD Cymoon"},
+    aliases = {"Imperial Star Destroyer Cymoon 1 Refit","Imperial Cymoon 1 Refit","Cymoon 1 Refit", "ISD Cymoon 1 Refit", "ISD Cymoon"},
     command = 3
 })
 
@@ -5640,9 +5640,9 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
 
 
-    PROXY_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpeg", faction = "!Proxy" }
+    PROXY_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
 
-    Ship:new(MediumShip,EMPIRE_SHIP,{
+    Ship:new(MediumShip,PROXY_SHIP,{
         name = "Ton-Falk-class Escort Carrier",
         front =     CUSTOM_ASSETS.."ships/empire/ton-falk/ton-falk-card.jpg",
         mesh =      CUSTOM_ASSETS.."ships/empire/ton-falk/mesh.obj",
@@ -5695,7 +5695,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         command = 3
     })
 
-    PROXY_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpeg", faction = "!Proxy" }
+    PROXY_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
     
     Squadron:new(PROXY_SQUAD, {
         name = "TIE Hunter Squadron",
