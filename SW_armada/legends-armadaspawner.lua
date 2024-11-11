@@ -4695,20 +4695,6 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
     command = 3
 })
 
-Ship:new(MediumShip, REBEL_L_SHIP, {
-    name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
-    front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
-    mesh = ASSETS_ROOT .. "ships/empire/quasar/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/rebel_II_diffuse.jpg",
-    ruler = ASSETS_ROOT .. "ships/rebel/reb_quasar/ruler.obj",
-    maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
-    defense_tokens = { DEF_BRACE, DEF_REDIRECT },
-    shields = { 2, 2, 2, 1 },
-    cost = 64,
-    aliases = { "Rebel Quasar" },
-    command = 2
-})
-
 Squadron:new(awing, REBEL_L_SQUAD, {
     name = "Arvel Crynyo",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/arvel-crynyd-a-wing-squadron-old-legacy.jpg",
@@ -4790,6 +4776,20 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     cost = 225,
     aliases = { "Subjugator-class Testbed [Legends]" },
     command = 4
+})
+
+Ship:new(MediumShip, REBEL_L_SHIP, {
+    name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
+    front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
+    mesh = ASSETS_ROOT .. "ships/empire/quasar/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/rebel_II_diffuse.jpg",
+    ruler = ASSETS_ROOT .. "ships/rebel/reb_quasar/ruler.obj",
+    maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_BRACE, DEF_REDIRECT },
+    shields = { 2, 2, 2, 1 },
+    cost = 64,
+    aliases = { "Rebel Quasar","Quasar Fire II-class Cruiser-Carrier (Rebel) [Legends]" },
+    command = 2
 })
 
 Ship:new(MediumShip, SEPARATIST_L_SHIP, {
