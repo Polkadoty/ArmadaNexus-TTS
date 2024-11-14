@@ -5345,7 +5345,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/diffuse_ace_mk2.jpg",
         defense_tokens = { DEF_SCATTER, DEF_EVADE },
         cost = 20,
-        aliases = { "\"Hotdog\" - Viper MkII Squadron [Legends]" }
+        aliases = { "\"Hotdog\" - Viper MkII Squadron [Legends]", "Hotdog - Viper MkII Squadron [Legends]" }
     })
 
     --viper mk7
@@ -6434,9 +6434,8 @@ Card:new(OffensiveRetrofit, Colonial,
 { name = "Magnetic Launch Tubes", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_mag_tubes.jpg", cost = 9, aliases = { "Magnetic Launch Tubes [Legends]" } })
 Card:new(OffensiveRetrofit, Colonial,
 { name = "Long Range Salvo", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_long_salvo.jpg", cost = 6, aliases = { "Long Range Salvo [Legends]" } })
-
-Card:new(SuperWeapon, Cylon,
-{ name = "Cylon Virus", front = CUSTOM_ASSETS .. "cards/.bsg/super_cylon_virus.jpg", cost = 8, aliases = { "Cylon Virus [Legends]" } })
+Card:new(OffensiveRetrofit, Cylon,
+{ name = "Cylon Virus", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_cylon_virus.jpg", cost = 8, aliases = { "Cylon Virus [Legends]" } })
 
 Card:new(Turbolaser, Cylon,
 { name = "Cluster Munitions", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_cluster_munitions.jpg", cost = 7, aliases = { "Cluster Munitions [Legends]" } })
