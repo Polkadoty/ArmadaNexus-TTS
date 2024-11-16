@@ -5182,7 +5182,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk1-legends.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk1_diffuse.jpg",
-        ruler = CUSTOM_ASSETS .. "ships/colonial/mercury/ruler.obj",
+        ruler = CUSTOM_ASSETS .. "ships/colonial/jupiter/ruler.obj",
         maneuver = { { "I" }, { "I", "I" }, { "-", "-", "I" } },
         defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_CONTAIN, DEF_SALVO },
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
@@ -5195,7 +5195,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk2-legends.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk2_diffuse.jpg",
-        ruler = CUSTOM_ASSETS .. "ships/colonial/mercury/ruler.obj",
+        ruler = CUSTOM_ASSETS .. "ships/colonial/jupiter/ruler.obj",
         maneuver = { { "I" }, { "I", "I" }, { "-", "-", "I" } },
         defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_CONTAIN, DEF_SALVO },
         shields = { 3, 4, 4, 2 }, -- Front, left, right, rear
@@ -5345,7 +5345,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/diffuse_ace_mk2.jpg",
         defense_tokens = { DEF_SCATTER, DEF_EVADE },
         cost = 20,
-        aliases = { "\"Hotdog\" - Viper MkII Squadron [Legends]", "Hotdog - Viper MkII Squadron [Legends]" }
+        aliases = { "Hotdog - Viper MkII Squadron [Legends]" }
     })
 
     --viper mk7
@@ -6412,6 +6412,8 @@ Card:new(Title, Colonial,
 { name = "Adamant", front = CUSTOM_ASSETS .. "cards/.bsg/title_adamant.jpg", cost = 6, aliases = { "Adamant [Legends]" } })
 Card:new(Title, Colonial,
 { name = "Hyperion", front = CUSTOM_ASSETS .. "cards/.bsg/title_hyperion.jpg", cost = 7, aliases = { "Hyperion [Legends]" } })
+Card:new(Title, Colonial,
+{ name = "Hesperides", front = CUSTOM_ASSETS .. "cards/.bsg/title_hesperides.jpg", cost = 1, aliases = { "Hesperides [Legends]" } })
 Card:new(Title, Colonial,
 { name = "Herald", front = CUSTOM_ASSETS .. "cards/.bsg/title_herald.jpg", cost = 8, aliases = { "Herald [Legends]" } })
 Card:new(Title, Colonial,
