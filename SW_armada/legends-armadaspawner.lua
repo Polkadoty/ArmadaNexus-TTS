@@ -4773,7 +4773,7 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     maneuver = { { "I" }, { "-", "I" } },
     defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO },
     shields = { 4, 3, 3, 1, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
-    cost = 225,
+    cost = 210,
     aliases = { "Subjugator-class Testbed [Legends]" },
     command = 4
 })
@@ -5328,7 +5328,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     Squadron:new(viper_mk2, COL_L_SQUAD, {
         name = "Viper MkII Squadron",
         front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/viper_mk2.jpg",
-        cost = 11,
+        cost = 12,
         aliases = { "Viper MkII Squadron [Legends]" }
     })
     Squadron:new(viper_mk2, COL_L_SQUAD, {
@@ -5336,7 +5336,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         front = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/kara_viper_mk2.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/colonial/viper_mk2/diffuse_ace_mk2.jpg",
         defense_tokens = { DEF_SCATTER, DEF_EVADE },
-        cost = 18,
+        cost = 22,
         aliases = { "Kara \"Starbuck\" Thrace - Viper MkII Squadron [Legends]" }
     })
     Squadron:new(viper_mk2, COL_L_SQUAD, {
@@ -5470,7 +5470,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         maneuver = { { "I" }, { "I", "I" }, { "I", "I", "-" } },
         defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_SALVO },
         shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
-        cost = 73,
+        cost = 69,
         command = 3,
         aliases = { "Arachne Carrier Cruiser [Legends]" }
     })
@@ -6374,13 +6374,13 @@ Card:new(Commander, Colonial,
 Card:new(Commander, Colonial,
 { name = "Lucinda Cain", front = CUSTOM_ASSETS .. "cards/.bsg/com_luci_cain.jpg", cost = 38, aliases = { "Lucinda Cain [Legends]" } })
 Card:new(Commander, Colonial,
-{ name = "Helena Agathon", front = CUSTOM_ASSETS .. "cards/.bsg/com_helena_agathon.jpg", cost = 32, aliases = { "Helena Agathon [Legends]" } })
+{ name = "Helena Agathon", front = CUSTOM_ASSETS .. "cards/.bsg/com_helena_agathon.jpg", cost = 26, aliases = { "Helena Agathon [Legends]" } })
 Card:new(Commander, Cylon,
-{ name = "Atropos", front = CUSTOM_ASSETS .. "cards/.bsg/com_atropos.jpg", cost = 40, aliases = { "Atropos [Legends]" } })
+{ name = "Atropos", front = CUSTOM_ASSETS .. "cards/.bsg/com_atropos.jpg", cost = 30, aliases = { "Atropos [Legends]" } })
 Card:new(Commander, Cylon,
 { name = "Clothos", front = CUSTOM_ASSETS .. "cards/.bsg/com_clothos.jpg", cost = 26, aliases = { "Clothos [Legends]" } })
 Card:new(Commander, Cylon,
-{ name = "Lachesis", front = CUSTOM_ASSETS .. "cards/.bsg/com_lachesis.jpg", cost = 36, aliases = { "Lachesis [Legends]" } })
+{ name = "Lachesis", front = CUSTOM_ASSETS .. "cards/.bsg/com_lachesis.jpg", cost = 24, aliases = { "Lachesis [Legends]" } })
 
 Card:new(Officer, Colonial,
 { name = "Felix Gaeta", front = CUSTOM_ASSETS .. "cards/.bsg/off_gaeta.jpg", cost = 8, aliases = { "Felix Gaeta [Legends]" } })
@@ -6389,7 +6389,7 @@ Card:new(Officer, Colonial,
 Card:new(Officer, Colonial,
 { name = "Galen Tyrol", front = CUSTOM_ASSETS .. "cards/.bsg/off_galen.jpg", cost = 5, aliases = { "Galen Tyrol [Legends]" } })
 Card:new(Officer, Colonial,
-{ name = "Saul Tigh", front = CUSTOM_ASSETS .. "cards/.bsg/off_saul_tight.jpg", cost = 8, aliases = { "Saul Tigh [Legends]" } })
+{ name = "Saul Tigh", front = CUSTOM_ASSETS .. "cards/.bsg/off_saul_tigh.jpg", cost = 8, aliases = { "Saul Tigh [Legends]" } })
 Card:new(Officer, Cylon,
 { name = "Centurion D-7", front = CUSTOM_ASSETS .. "cards/.bsg/off_cent_d7.jpg", cost = 6, aliases = { "Centurion D-7 [Legends]" } })
 Card:new(Officer, Cylon,
@@ -6415,7 +6415,7 @@ Card:new(Title, Colonial,
 Card:new(Title, Colonial,
 { name = "Hesperides", front = CUSTOM_ASSETS .. "cards/.bsg/title_hesperides.jpg", cost = 1, aliases = { "Hesperides [Legends]" } })
 Card:new(Title, Colonial,
-{ name = "Herald", front = CUSTOM_ASSETS .. "cards/.bsg/title_herald.jpg", cost = 8, aliases = { "Herald [Legends]" } })
+{ name = "Herald", front = CUSTOM_ASSETS .. "cards/.bsg/title_herald.jpg", cost = 6, aliases = { "Herald [Legends]" } })
 Card:new(Title, Colonial,
 { name = "Icarus", front = CUSTOM_ASSETS .. "cards/.bsg/title_icarus.jpg", cost = 8, aliases = { "Icarus [Legends]" } })
 
@@ -6424,11 +6424,11 @@ Card:new(Title, Cylon,
 Card:new(Title, Cylon,
 { name = "Defiant", front = CUSTOM_ASSETS .. "cards/.bsg/title_defiant.jpg", cost = 4, aliases = { "Defiant [Legends]" } })
 Card:new(Title, Cylon,
-{ name = "Crucible", front = CUSTOM_ASSETS .. "cards/.bsg/title_crucible.jpg", cost = 8, aliases = { "Crucible [Legends]" } })
+{ name = "Crucible", front = CUSTOM_ASSETS .. "cards/.bsg/title_crucible.jpg", cost = 5, aliases = { "Crucible [Legends]" } })
 Card:new(Title, Cylon,
 { name = "Thanatos", front = CUSTOM_ASSETS .. "cards/.bsg/title_thanatos.jpg", cost = 5, aliases = { "Thanatos [Legends]" } })
 Card:new(Title, Cylon,
-{ name = "Dagger", front = CUSTOM_ASSETS .. "cards/.bsg/title_dagger.jpg", cost = 6, aliases = { "Dagger [Legends]" } })
+{ name = "Dagger", front = CUSTOM_ASSETS .. "cards/.bsg/title_dagger.jpg", cost = 3, aliases = { "Dagger [Legends]" } })
 Card:new(Title, Cylon,
 { name = "Falchion", front = CUSTOM_ASSETS .. "cards/.bsg/title_falchion.jpg", cost = 3, aliases = { "Falchion [Legends]" } })
 
@@ -6442,7 +6442,7 @@ Card:new(OffensiveRetrofit, Cylon,
 Card:new(Turbolaser, Cylon,
 { name = "Cluster Munitions", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_cluster_munitions.jpg", cost = 7, aliases = { "Cluster Munitions [Legends]" } })
 Card:new(Turbolaser, Cylon,
-{ name = "Curved Trajectory Launch", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_curved_launch.jpg", cost = 7, aliases = { "Curved Trajectory Launch [Legends]" } })
+{ name = "Curved Trajectory Launch", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_curved_launch.jpg", cost = 6, aliases = { "Curved Trajectory Launch [Legends]" } })
 
 Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,
 { name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Legends]" } })
