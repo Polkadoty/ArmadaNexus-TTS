@@ -4939,7 +4939,7 @@ Ship:new(SmallShip, UNSC_L_SHIP, {
     maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
     defense_tokens = { DEF_CONTAIN, DEF_EVADE, DEF_BRACE },
     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 45,
+    cost = 53,
     command = 1,
     aliases = { "Stalwart-class Light Frigate [Legends]" }
 })
@@ -4952,7 +4952,7 @@ Ship:new(SmallShip, UNSC_L_SHIP, {
     maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
     defense_tokens = { DEF_CONTAIN, DEF_EVADE, DEF_BRACE },
     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 50,
+    cost = 49,
     command = 1,
     aliases = { "Stalwart-class Escort Frigate [Legends]" }
 })
@@ -4977,7 +4977,7 @@ Squadron:new(ls_fighter, UNSC_L_SQUAD, {
     front = CUSTOM_ASSETS .. "squadrons/unsc/longsword/ls_fighter_knife26.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/unsc/longsword/diffuse_ls_ace_fighter.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE },
-    cost = 20,
+    cost = 21,
     aliases = { "Knife 26 - Longsword Fighter Squadron [Legends]" }
 })
 
@@ -5000,7 +5000,7 @@ Squadron:new(ls_bomber, UNSC_L_SQUAD, {
     front = CUSTOM_ASSETS .. "squadrons/unsc/longsword/ls_bomber_chief.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/unsc/longsword/diffuse_ls_ace_bomber.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
-    cost = 19,
+    cost = 21,
     aliases = { "Master Chief - Longsword Bomber Squadron [Legends]" }
 })
 
@@ -5043,7 +5043,7 @@ Ship:new(MediumShip, COV_L_SHIP, {
     maneuver = { { "II" }, { "I", "I" }, { "I", "I", "-" } },
     defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_BRACE },
     shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 80,
+    cost = 65,
     command = 2,
     aliases = { "SDV-class Heavy Corvette [Legends]" }
 })
@@ -5056,7 +5056,7 @@ Ship:new(MediumShip, COV_L_SHIP, {
     maneuver = { { "II" }, { "I", "I" }, { "I", "I", "-" } },
     defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_BRACE },
     shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 75,
+    cost = 62,
     command = 2,
     aliases = { "SDV-class Assault Corvette [Legends]" }
 })
@@ -5103,7 +5103,7 @@ banshee = {
 Squadron:new(banshee, COV_L_SQUAD, {
     name = "Banshee Squadron",
     front = CUSTOM_ASSETS .. "squadrons/covenant/banshee/banshee_card.jpg",
-    cost = 8,
+    cost = 9,
     aliases = { "Banshee Squadron [Legends]" }
 })
 Squadron:new(banshee, COV_L_SQUAD, {
@@ -5111,7 +5111,7 @@ Squadron:new(banshee, COV_L_SQUAD, {
     front = CUSTOM_ASSETS .. "squadrons/covenant/banshee/banshee_dalamenee.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/covenant/banshee/diffuse_ace_banshee.jpg",
     defense_tokens = { DEF_SCATTER, DEF_EVADE },
-    cost = 14,
+    cost = 16,
     aliases = { "Dalamenee - Banshee Squadron [Legends]" }
 })
 Squadron:new(banshee, COV_L_SQUAD, {
@@ -5133,7 +5133,7 @@ seraph = {
 Squadron:new(seraph, COV_L_SQUAD, {
     name = "Seraph Squadron",
     front = CUSTOM_ASSETS .. "squadrons/covenant/seraph/seraph_card.jpg",
-    cost = 14,
+    cost = 13,
     aliases = { "Seraph Squadron [Legends]" }
 })
 Squadron:new(seraph, COV_L_SQUAD, {
@@ -6351,9 +6351,9 @@ Card:new(Title, UNSC,
 Card:new(Title, UNSC,
 { name = "UNSC Commonwealth", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_commonwealth.jpg", cost = 7, aliases = { "UNSC Commonwealth [Legends]" } })
 Card:new(Title, UNSC,
-{ name = "UNSC In Amber Clad", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_iac.jpg", cost = 8, aliases = { "UNSC In Amber Clad [Legends]" } })
+{ name = "UNSC In Amber Clad", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_iac.jpg", cost = 10, aliases = { "UNSC In Amber Clad [Legends]" } })
 Card:new(Title, UNSC,
-{ name = "UNSC Meriweather Lewis", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_merilew.jpg", cost = 1, aliases = { "UNSC Meriweather Lewis [Legends]" } })
+{ name = "UNSC Meriweather Lewis", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_merilew.jpg", cost = 3, aliases = { "UNSC Meriweather Lewis [Legends]" } })
 Card:new(Title, Covenant,
 { name = "Truth and Reconciliation", front = CUSTOM_ASSETS .. "ships/covenant/ccs/title_ccs_truthandreco.jpg", cost = 6, aliases = { "Truth and Reconciliation [Legends]" } })
 Card:new(Title, Covenant,
