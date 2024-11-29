@@ -1,9 +1,0 @@
-If you use this, you must credit me, Lokgroa.
-
-This is the Imperial Dropship from The Mandalorian converted from the Galaxy of Heroes game.
-
-I've included a flyable ship version and a open door prop model version.
-
-I've edited the camera angles and speed to match the show and work in game, if it isn't what you want, you can change it.
-I think I included everything to get it in game but if not the ship stuff is using the stock Tie Fighter and troop transport odfs.
-

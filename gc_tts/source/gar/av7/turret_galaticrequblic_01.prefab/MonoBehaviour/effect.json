@@ -1,0 +1,184 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 313813759784674073
+  },
+  "m_Name": "effect",
+  "signalDatas": [
+    {
+      "_type": 0,
+      "_animation": "atk01",
+      "_frames": "3",
+      "_param": "atk01",
+      "_forced": 1
+    },
+    {
+      "_type": 0,
+      "_animation": "die01",
+      "_frames": "0",
+      "_param": "die01",
+      "_forced": 1
+    },
+    {
+      "_type": 0,
+      "_animation": "skill01",
+      "_frames": "0",
+      "_param": "skill01",
+      "_forced": 1
+    }
+  ],
+  "eventDatas": [
+    {
+      "name": "atk01",
+      "offset": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "randomPRS": {
+        "_position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "_rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "_minScale": 1.0,
+        "_maxScale": 1.0
+      },
+      "target": 3,
+      "follow": 0,
+      "followNode": "FxWeapon",
+      "targetFollow": 0,
+      "targetFollowNode": "",
+      "worldRotation": 0,
+      "applyParentScale": 0,
+      "noneFollowRotation": 0,
+      "afterTreatment": 0,
+      "fxDisableType": 0,
+      "fsmMessage": "",
+      "pathHitEffect": {
+        "pathObject": "Assets/_Bundle/GameResource/FX/ChracterFx/turret_GalaticRequblic/turret_GalaticRequblic_atk01.prefab",
+        "_guid": "7e67cf73929bd71489226f1f8b079233"
+      },
+      "realOwner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "useInverseFromEnemy": 0
+    },
+    {
+      "name": "die01",
+      "offset": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 90.0,
+          "z": 0.0
+        }
+      },
+      "randomPRS": {
+        "_position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "_rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "_minScale": 1.0,
+        "_maxScale": 1.0
+      },
+      "target": 3,
+      "follow": 0,
+      "followNode": "",
+      "targetFollow": 0,
+      "targetFollowNode": "",
+      "worldRotation": 0,
+      "applyParentScale": 0,
+      "noneFollowRotation": 0,
+      "afterTreatment": 0,
+      "fxDisableType": 0,
+      "fsmMessage": "",
+      "pathHitEffect": {
+        "pathObject": "Assets/_Bundle/GameResource/FX/FxPrefabs/All_Common_Fx/Turret_Explosion_FX.prefab",
+        "_guid": "5575d0cbfe6bd1749b493ef819f04fcc"
+      },
+      "realOwner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "useInverseFromEnemy": 0
+    },
+    {
+      "name": "skill01",
+      "offset": {
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "randomPRS": {
+        "_position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "_rotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "_minScale": 1.0,
+        "_maxScale": 1.0
+      },
+      "target": 3,
+      "follow": 0,
+      "followNode": "FxWeapon",
+      "targetFollow": 0,
+      "targetFollowNode": "",
+      "worldRotation": 0,
+      "applyParentScale": 0,
+      "noneFollowRotation": 0,
+      "afterTreatment": 0,
+      "fxDisableType": 0,
+      "fsmMessage": "",
+      "pathHitEffect": {
+        "pathObject": "Assets/_Bundle/GameResource/FX/ChracterFx/turret_GalaticRequblic/turret_GalaticRequblic_atk01.prefab",
+        "_guid": "7e67cf73929bd71489226f1f8b079233"
+      },
+      "realOwner": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      },
+      "useInverseFromEnemy": 0
+    }
+  ]
+}

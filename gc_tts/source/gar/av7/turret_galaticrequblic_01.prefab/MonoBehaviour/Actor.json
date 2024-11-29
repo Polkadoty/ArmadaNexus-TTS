@@ -1,0 +1,57 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 3253964055264561272
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": -2918509113981683938
+  },
+  "m_Name": "",
+  "hitShader": 1,
+  "createSound": {
+    "name": "",
+    "clip": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "listnerVolumeCurve": {
+      "m_Curve": [],
+      "m_PreInfinity": 2,
+      "m_PostInfinity": 2,
+      "m_RotationOrder": 4
+    },
+    "curveTime": 0.0,
+    "useUISoundOnSelf": 0
+  },
+  "prefab_lod1": {
+    "m_FileID": 0,
+    "m_PathID": 1841442046124963074
+  },
+  "lookAtItems": [
+    {
+      "Node": "Tower_Y",
+      "activeX": 1,
+      "activeY": 0,
+      "activeZ": 1,
+      "skillID": [],
+      "limitDegreeMin": 0.0,
+      "limitDegreeMax": 0.0
+    },
+    {
+      "Node": "Tower_X",
+      "activeX": 0,
+      "activeY": 0,
+      "activeZ": 0,
+      "skillID": [],
+      "limitDegreeMin": 0.0,
+      "limitDegreeMax": 0.0
+    }
+  ],
+  "smoothLookAtTime": 0.0,
+  "callMessageEvent": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  }
+}

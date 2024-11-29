@@ -1,0 +1,9 @@
+[GameObjectClass]		
+
+ClassLabel		=	"prop"
+GeometryName	=	"imp_dropshipopenprop.msh"
+
+[Properties]		
+
+GeometryName	=	"imp_dropshipopenprop"
+FoleyFXGroup	=	"metal_foley"
