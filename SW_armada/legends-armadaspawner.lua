@@ -4773,7 +4773,7 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     maneuver = { { "I" }, { "-", "I" } },
     defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO },
     shields = { 4, 3, 3, 1, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
-    cost = 210,
+    cost = 200,
     aliases = { "Subjugator-class Testbed [Legends]" },
     command = 4
 })
@@ -6244,13 +6244,13 @@ Card:new(SuperWeapon, Separatist_L,
 Card:new(SuperWeapon, Separatist_L,
     { name = "Ionic Plasma Rotors", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ionic_plasma_rotors.jpg", cost = 6, aliases = { "Ionic Plasma Rotors [Legends]" } })
 Card:new(SuperWeapon, Separatist_L,
-    { name = "Kyber Beam Cannon", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Kyber_ion_canon.jpg", cost = 10, aliases = { "Kyber Beam Cannon [Legends]" } })
+    { name = "Kyber Beam Cannon", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Kyber_beam_cannon.jpg", cost = 5, aliases = { "Kyber Beam Cannon [Legends]" } })
 Card:new(Title, Separatist_L,
     { name = "Devastation", front = CUSTOM_ASSETS .. "cards/title/Title_Devastation.jpg", cost = 5, aliases = { "Devastation [Legends]" } })
 Card:new(Title, Separatist_L,
     { name = "Malevolence", front = CUSTOM_ASSETS .. "cards/title/Title_Malevolence.jpg", cost = 7, aliases = { "Malevolence [Legends]" } })
 Card:new(Title, Separatist_L,
-    { name = "Subjugator", front = CUSTOM_ASSETS .. "cards/title/Title_Subjugator.jpg", cost = 3, aliases = { "Subjugator [Legends]" } })
+    { name = "Subjugator", front = CUSTOM_ASSETS .. "cards/title/Title_Subjugator.jpg", cost = 5, aliases = { "Subjugator [Legends]" } })
 Card:new(Officer, Separatist_L,
     { name = "Sai Sircu", front = CUSTOM_ASSETS .. "cards/officer/sai-sircu-officer.jpg", cost = 9, aliases = { "Sai Sircu [Legends]" } })
 
