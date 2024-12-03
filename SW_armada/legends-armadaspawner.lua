@@ -4778,6 +4778,34 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     command = 4
 })
 
+Ship:new(MediumShip, REPUBLIC_L_SHIP, {
+    name = "Dreadnaught-class Heavy Cruiser",
+    front = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-heavy-legends.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-heavy-diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" } },
+    defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+    shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+    cost = 58,
+    aliases = { "Dreadnaught-class Heavy Cruiser [Legends]" },
+    command = 3
+})
+
+Ship:new(MediumShip, REPUBLIC_L_SHIP, {
+    name = "Dreadnaught-class Judicial Cruiser",
+    front = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-judicial-legends.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-judicial-diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" } },
+    defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+    shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+    cost = 55,
+    aliases = { "Dreadnaught-class Judicial Cruiser [Legends]" },
+    command = 3
+})
+
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
@@ -6239,6 +6267,7 @@ BSG = { factions = { "Colonial", "Cylon" } }
 
 
 -- Armada Legends Upgrades
+--11-2024 dev cycle
 Card:new(SuperWeapon, Separatist_L,
     { name = "Ion Pulse Emitter", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ion_Pulse_Emitter.jpg", cost = 7, aliases = { "Ion Pulse Emitter [Legends]" } })
 Card:new(SuperWeapon, Separatist_L,
@@ -6251,10 +6280,26 @@ Card:new(Title, Separatist_L,
     { name = "Malevolence", front = CUSTOM_ASSETS .. "cards/title/Title_Malevolence.jpg", cost = 7, aliases = { "Malevolence [Legends]" } })
 Card:new(Title, Separatist_L,
     { name = "Subjugator", front = CUSTOM_ASSETS .. "cards/title/Title_Subjugator.jpg", cost = 5, aliases = { "Subjugator [Legends]" } })
-Card:new(Officer, Separatist_L,
-    { name = "Sai Sircu", front = CUSTOM_ASSETS .. "cards/officer/sai-sircu-officer.jpg", cost = 9, aliases = { "Sai Sircu [Legends]" } })
+--12-2024 dev cycle
+Card:new(Title, Republic_L,
+    { name = "Judicial Fleet", front = CUSTOM_ASSETS .. "cards/title/judicial-fleet-title.jpg", cost = 2, aliases = { "Judicial Fleet [Legends]" } })
+Card:new(Title, Republic_L,
+    { name = "Katana Fleet 1", front = CUSTOM_ASSETS .. "cards/title/katana-fleet1-title.jpg", cost = 4, aliases = { "Katana Fleet 1 [Legends]" } })
+Card:new(Title, Republic_L,
+    { name = "Katana Fleet 2", front = CUSTOM_ASSETS .. "cards/title/katana-fleet2-title.jpg", cost = 2, aliases = { "Katana Fleet 2 [Legends]" } })
+Card:new(Title, Republic_L,
+    { name = "Rendili Defender", front = CUSTOM_ASSETS .. "cards/title/rendili-defender-title.jpg", cost = 1, aliases = { "Rendili Defender [Legends]" } })
+Card:new(Title, Rebel_L,
+    { name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
+Card:new(Officer, Empire_L,
+    { name = "Flak Officer", front = CUSTOM_ASSETS .. "cards/officer/flak-officer.jpg", cost = 2, aliases = { "Flak Officer [Legends]" } })
+Card:new(OffensiveRetrofit, Separatist_L,
+    { name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/offretro/ext-droid-storage.jpg", cost = 4, aliases = { "External Droid Storage [Legends]" } })
+Card:new(WeaponsTeamAndOffensiveRetrofit, Republic_L,
+    { name = "AT-TE Assault Brigade", front = CUSTOM_ASSETS .. "cards/wepoff/atte-boarding-team.jpg", cost = 4, aliases = { "AT-TE Assault Brigade [Legends]" } })
 
 
+    ----non-approved
 Card:new(Title, Empire,
     { name = "placeholderemp", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "placeholderemp [Legends]" } })
 Card:new(Title, Rebel,
