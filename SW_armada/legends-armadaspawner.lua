@@ -3633,7 +3633,7 @@ Ship:new(SmallShip,REPUBLIC_SHIP,{
 })
 Ship:new(SmallShip,REPUBLIC_SHIP,{
 	name = "Consular-class Charger c70",
-    front =     ASSETS_ROOT.."ships/republic/consular/charger_card.jpg",
+    front =     CUSTOM_ASSETS.."ships/republic/consular/charger_card.jpg",
     -- back =      ASSETS_ROOT.."ships/republic/consular/armed_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/republic/consular/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/republic/consular/charger_diffuse.jpg",
@@ -4193,6 +4193,9 @@ EMPIRE_L_SHIP = { back = CUSTOM_ASSETS .. "ships/empire/card_back.jpg", faction 
 EMPIRE_L_SQUAD = { back = CUSTOM_ASSETS .. "squadrons/empire/card_back.jpg", faction = "!Empire" }
 REBEL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/rebel/card_back.jpg", faction = "!Rebellion" }
 REBEL_L_SQUAD = { back = CUSTOM_ASSETS .. "squadrons/rebel/card_back.jpg", faction = "!Rebellion" }
+
+SCUM_L_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "Scum" }
+SCUM_L_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "Scum" }
 
 COL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 COL_L_SQUAD = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
