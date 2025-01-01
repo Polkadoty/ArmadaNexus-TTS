@@ -4899,6 +4899,7 @@ Ship:new(MediumShip, REPUBLIC_L_SHIP, {
     command = 3
 })
 
+-- unapproved legends ships
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
@@ -4969,6 +4970,7 @@ Ship:new(LargeShip, REPUBLIC_L_SHIP, {
 })
 
 -- Legends squadrons
+--unapproved legends squadrons
 --cx dagger
 cx_dagger = {
     mesh = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/mesh.obj",
@@ -4991,6 +4993,79 @@ Squadron:new(cx_dagger, EMPIRE_L_SQUAD, {
     cost = 24,
     aliases = { "CX-2 - CX Dagger Vessel [Legends]" }
 })
+
+
+----scum ships
+--neutron star
+
+--interceptor iv
+
+--corona
+
+--action vi
+
+
+----scum squadrons
+--kihraxz
+kihraxz = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(kihraxz, SCUM_L_SQUAD, {
+    name = "Kihraxz Fighter Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/kihraxz.jpg",
+    cost = 12,
+    aliases = { "Kihraxz Fighter Squadron [Legends]" }
+})
+
+--rihkxyrk
+rihkxyrk = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
+    name = "rihkxyrk Fighter Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk.jpg",
+    cost = 12,
+    aliases = { "rihkxyrk Fighter Squadron [Legends]" }
+})
+
+--aeg-77 vigo
+aeg77_vigo = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/aeg77_vigo/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77_vigo/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(aeg77_vigo, SCUM_L_SQUAD, {
+    name = "aeg77_vigo Fighter Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/scum/aeg77_vigo/aeg77_vigo.jpg",
+    cost = 12,
+    aliases = { "aeg77_vigo Fighter Squadron [Legends]" }
+})
+
+--ugly fighter
+uglies_fighter = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/uglies/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/uglies/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(uglies_fighter, SCUM_L_SQUAD, {
+    name = "Kihraxz Fighter Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/scum/uglies/kihraxz.jpg",
+    cost = 12,
+    aliases = { "Kihraxz Fighter Squadron [Legends]" }
+})
+
 
 ----halo ships/squadrons
 --unsc ships
