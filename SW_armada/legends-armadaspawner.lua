@@ -4356,23 +4356,23 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     aliases = { "Hawk -LAAT/i Gunship [OldLegacy]" }
 })
 
-g9_rigger = {
-    mesh = LEGACY_ASSETS .. "squadrons/republic/g9-rigger/plain_mesh.obj",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_texture.jpg",
+g9_rigger_old = {
+    mesh = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/plain_mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_texture.jpg",
     health = 7,
     move = 2,
     defense_tokens = {}
 }
-Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
+Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
     name = "G9 Rigger-class Freighter",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/g9-rigger-old-old-legacy.jpg",
     cost = 13,
     aliases = { "G9 Rigger-class Freighter [OldLegacy]" }
 })
-Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
+Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
     name = "Anakin Skywalker (G9)",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-twilight-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_ace_texture.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_ace_texture.jpg",
     defense_tokens = { DEF_BRACE },
     cost = 27,
     aliases = { "Anakin Skywalker - G9 Rigger-class Freighter [OldLegacy]" }
@@ -4737,6 +4737,96 @@ Squadron:new(ywing, REBEL_L_SQUAD, {
     cost = 18,
     aliases = { "Horton Salm - Y-wing Squadron [OldLegacy]" }
 })
+
+-- Armada Legacy (New) ships/squadrons
+star_courier = {
+    mesh = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse.jpg",
+    health = 7,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
+    name = "Star Courier",
+    front = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/star-courier.jpg",
+    cost = 18,
+    aliases = { "Star Courier [Legacy]" }
+})
+Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
+    name = "Darth Maul",
+    front = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/darth-maul.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
+    defense_tokens = { DEF_BRACE },
+    cost = 24,
+    aliases = { "Darth Maul - Scimitar [Legacy]" }
+})
+
+sheathipede = {
+    mesh = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse.jpg",
+    health = 5,
+    move = 2,
+    defense_tokens = {}
+}
+Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
+    name = "Sheathipede-class Shuttle",
+    front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/sheathipede.jpg",
+    cost = 15,
+    aliases = {"Sheathipede-class Shuttle [Legacy]"}
+})
+Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
+    name = "Kalani",
+    front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/Kalani.jpg",
+    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse_ace.jpg", 
+    defense_tokens = {DEF_BRACE, DEF_BRACE},
+    cost = 24,
+    aliases = {"Kalani - Sheathipede-class Shuttle [Legacy]"}
+})
+
+nu_shuttle = {
+    mesh = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse.jpg",
+    health = 7,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
+    name = "Nu-class Transport Shuttle",
+    front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/nu_shuttle.jpg",
+    cost = 15,
+    aliases = {"Nu-class Transport Shuttle [Legacy]"}
+})
+Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
+    name = "Delta Squad",
+    front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/delta_squad.jpg",
+    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse_ace.jpg", 
+    defense_tokens = {DEF_BRACE},
+    cost = 24,
+    aliases = {"Delta Squad - Nu-class Transport Shuttle [Legacy]"}
+})
+
+g9_rigger = {
+    mesh = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse.jpg",
+    health = 7,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
+    name = "G9 Rigger-class Freighter",
+    front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9-freighter.jpg",
+    cost = 13,
+    aliases = { "G9 Rigger-class Freighter [Legacy]" }
+})
+Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
+    name = "Anakin Skywalker",
+    front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9_twilight.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
+    defense_tokens = { DEF_BRACE, DEF_EVADE },
+    cost = 24,
+    aliases = { "Anakin Skywalker - Twilight [Legacy]" }
+})
+
 
 --armada legends ships
 Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
@@ -6247,6 +6337,7 @@ Rebel_L = { factions = { "!Rebellion" } }
 Republic_L = { factions = { "!Republic" } }
 Separatist_L = { factions = { "!Separatist" } }
 CloneWars_L = { factions = { "!Republic", "!Separatist" } }
+Scum_L = { factions = { "!Scum" } }
 
 UNSC = { factions = { "UNSC" } }
 Covenant = { factions = { "Covenant" } }
@@ -6494,6 +6585,11 @@ Card:new(Turbolaser, Cylon,
 
 Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,
 { name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Legends]" } })
+
+
+    -- Armada Legacy (New) Upgrades
+Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/commander/daultay_dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
+Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/commander/ki-adi-mundi.jpg", cost=28, aliases={"Ki-Adi-Mundi [Legacy]"}})
 
 
     -- Armada Legacy (Old) Upgrades
