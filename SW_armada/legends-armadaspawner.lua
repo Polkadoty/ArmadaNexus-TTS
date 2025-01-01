@@ -6511,7 +6511,7 @@ Card:new(Title, Republic_L,
 Card:new(Title, Rebel_L,
     { name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
 Card:new(Officer, Empire_L,
-    { name = "General Romodi", front = CUSTOM_ASSETS .. "cards/officer/romodi-officer.jpg", cost = 5, aliases = { "General Romodi [Legends]" } })
+    { name = "General Romodi (Officer)", front = CUSTOM_ASSETS .. "cards/officer/romodi-officer.jpg", cost = 5, aliases = { "General Romodi [Legends]" } })
 Card:new(OffensiveRetrofit, Separatist_L,
     { name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/offretro/ext-droid-storage.jpg", cost = 4, aliases = { "External Droid Storage [Legends]" } })
 Card:new(OffensiveRetrofit, Republic_L,
