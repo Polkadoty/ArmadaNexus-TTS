@@ -4194,8 +4194,8 @@ EMPIRE_L_SQUAD = { back = CUSTOM_ASSETS .. "squadrons/empire/card_back.jpg", fac
 REBEL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/rebel/card_back.jpg", faction = "!Rebellion" }
 REBEL_L_SQUAD = { back = CUSTOM_ASSETS .. "squadrons/rebel/card_back.jpg", faction = "!Rebellion" }
 
-SCUM_L_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "Scum" }
-SCUM_L_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "Scum" }
+SCUM_L_SHIP = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "Scum" }
+SCUM_L_SQUAD = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "Scum" }
 
 COL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 COL_L_SQUAD = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
@@ -4899,6 +4899,7 @@ Ship:new(MediumShip, REPUBLIC_L_SHIP, {
     command = 3
 })
 
+-- unapproved legends ships
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
@@ -4969,6 +4970,7 @@ Ship:new(LargeShip, REPUBLIC_L_SHIP, {
 })
 
 -- Legends squadrons
+--unapproved legends squadrons
 --cx dagger
 cx_dagger = {
     mesh = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/mesh.obj",
@@ -4991,6 +4993,131 @@ Squadron:new(cx_dagger, EMPIRE_L_SQUAD, {
     cost = 24,
     aliases = { "CX-2 - CX Dagger Vessel [Legends]" }
 })
+
+
+----scum ships
+--neutron star
+Ship:new(MediumShip, SCUM_L_SHIP, {
+    name = "Neutron Star-class Bulk Cruiser",
+    front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron_star.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/scum/neutron_star/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/scum/neutron_star/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/scum/neutron_star/ruler.obj",
+    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+    cost = 70,
+    command = 2,
+    aliases = { "Neutron Star-class Bulk Cruiser [Legends]" }
+})
+
+--interceptor iv
+Ship:new(SmallShip, SCUM_L_SHIP, {
+    name = "Interceptor IV-class Frigate",
+    front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor_iv.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
+    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+    cost = 70,
+    command = 2,
+    aliases = { "Interceptor IV-class Frigate [Legends]" }
+})
+
+--corona frigate
+Ship:new(SmallShip, SCUM_L_SHIP, {
+    name = "Corona-class Frigate",
+    front = CUSTOM_ASSETS .. "ships/scum/corona/corona.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/scum/corona/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/scum/corona/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/scum/corona/ruler.obj",
+    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+    cost = 70,
+    command = 2,
+    aliases = { "Corona-class Frigate [Legends]" }
+})
+
+--action vi
+Ship:new(SmallShip, SCUM_L_SHIP, {
+    name = "Action VI Bulk Transports",
+    front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
+    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+    cost = 70,
+    command = 2,
+    aliases = { "Action VI Bulk Transports [Legends]" }
+})
+
+
+----scum squadrons
+--kihraxz
+kihraxz = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(kihraxz, SCUM_L_SQUAD, {
+    name = "Kihraxz Fighter Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/kihraxz.jpg",
+    cost = 12,
+    aliases = { "Kihraxz Fighter Squadron [Legends]" }
+})
+
+--rihkxyrk
+rihkxyrk = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
+    name = "Rihkxyrk Assault Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk.jpg",
+    cost = 12,
+    aliases = { "Rihkxyrk Assault Squadron [Legends]" }
+})
+
+--aeg-77 vigo
+aeg77 = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/aeg77/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(aeg77, SCUM_L_SQUAD, {
+    name = "AEG-77 Vigo",
+    front = CUSTOM_ASSETS .. "squadrons/scum/aeg77/aeg77.jpg",
+    cost = 12,
+    aliases = { "AEG-77 Vigo [Legends]" }
+})
+
+--ugly fighter
+uglies = {
+    mesh = CUSTOM_ASSETS .. "squadrons/scum/uglies/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/scum/uglies/diffuse.jpg",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(uglies, SCUM_L_SQUAD, {
+    name = "Ugly Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/scum/uglies/kihraxz.jpg",
+    cost = 12,
+    aliases = { "Ugly Squadron [Legends]" }
+})
+
 
 ----halo ships/squadrons
 --unsc ships
@@ -6378,19 +6505,17 @@ Card:new(Title, Separatist_L,
 Card:new(Title, Republic_L,
     { name = "Judicial Fleet", front = CUSTOM_ASSETS .. "cards/title/judicial-fleet-title.jpg", cost = 2, aliases = { "Judicial Fleet [Legends]" } })
 Card:new(Title, Republic_L,
-    { name = "Katana Fleet 1", front = CUSTOM_ASSETS .. "cards/title/katana-fleet1-title.jpg", cost = 4, aliases = { "Katana Fleet 1 [Legends]" } })
-Card:new(Title, Republic_L,
-    { name = "Katana Fleet 2", front = CUSTOM_ASSETS .. "cards/title/katana-fleet2-title.jpg", cost = 2, aliases = { "Katana Fleet 2 [Legends]" } })
+    { name = "Katana Fleet", front = CUSTOM_ASSETS .. "cards/title/katana-fleet-title.jpg", cost = 2, aliases = { "Katana Fleet [Legends]" } })
 Card:new(Title, Republic_L,
     { name = "Rendili Defender", front = CUSTOM_ASSETS .. "cards/title/rendili-defender-title.jpg", cost = 1, aliases = { "Rendili Defender [Legends]" } })
 Card:new(Title, Rebel_L,
     { name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
 Card:new(Officer, Empire_L,
-    { name = "Flak Officer", front = CUSTOM_ASSETS .. "cards/officer/flak-officer.jpg", cost = 2, aliases = { "Flak Officer [Legends]" } })
+    { name = "General Romodi", front = CUSTOM_ASSETS .. "cards/officer/romodi-officer.jpg", cost = 5, aliases = { "General Romodi [Legends]" } })
 Card:new(OffensiveRetrofit, Separatist_L,
     { name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/offretro/ext-droid-storage.jpg", cost = 4, aliases = { "External Droid Storage [Legends]" } })
-Card:new(WeaponsTeamAndOffensiveRetrofit, Republic_L,
-    { name = "AT-TE Assault Brigade", front = CUSTOM_ASSETS .. "cards/wepoff/atte-boarding-team.jpg", cost = 4, aliases = { "AT-TE Assault Brigade [Legends]" } })
+Card:new(OffensiveRetrofit, Republic_L,
+    { name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
 
 
     ----non-approved

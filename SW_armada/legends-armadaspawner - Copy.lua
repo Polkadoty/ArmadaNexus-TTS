@@ -4194,6 +4194,9 @@ EMPIRE_L_SQUAD = { back = CUSTOM_ASSETS .. "squadrons/empire/card_back.jpg", fac
 REBEL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/rebel/card_back.jpg", faction = "!Rebellion" }
 REBEL_L_SQUAD = { back = CUSTOM_ASSETS .. "squadrons/rebel/card_back.jpg", faction = "!Rebellion" }
 
+SCUM_L_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "Scum" }
+SCUM_L_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "Scum" }
+
 COL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 COL_L_SQUAD = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 CYL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/cylon/card_back.jpg", faction = "Cylon" }
@@ -4353,23 +4356,23 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     aliases = { "Hawk -LAAT/i Gunship [OldLegacy]" }
 })
 
-g9_rigger = {
-    mesh = LEGACY_ASSETS .. "squadrons/republic/g9-rigger/plain_mesh.obj",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_texture.jpg",
+g9_rigger_old = {
+    mesh = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/plain_mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_texture.jpg",
     health = 7,
     move = 2,
     defense_tokens = {}
 }
-Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
-    name = "G9 Rigger-class Freighter",
+Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
+    name = "G9 Rigger-class Freighter (OldLegacy)",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/g9-rigger-old-old-legacy.jpg",
     cost = 13,
     aliases = { "G9 Rigger-class Freighter [OldLegacy]" }
 })
-Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
-    name = "Anakin Skywalker (G9)",
+Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
+    name = "Anakin Skywalker (G9) (OldLegacy)",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-twilight-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_ace_texture.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_ace_texture.jpg",
     defense_tokens = { DEF_BRACE },
     cost = 27,
     aliases = { "Anakin Skywalker - G9 Rigger-class Freighter [OldLegacy]" }
@@ -4734,6 +4737,96 @@ Squadron:new(ywing, REBEL_L_SQUAD, {
     cost = 18,
     aliases = { "Horton Salm - Y-wing Squadron [OldLegacy]" }
 })
+
+-- Armada Legacy (New) ships/squadrons
+star_courier = {
+    mesh = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse.jpg",
+    health = 7,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
+    name = "Star Courier",
+    front = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/star-courier.jpg",
+    cost = 18,
+    aliases = { "Star Courier [Legacy]" }
+})
+Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
+    name = "Darth Maul",
+    front = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/darth-maul.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
+    defense_tokens = { DEF_BRACE },
+    cost = 24,
+    aliases = { "Darth Maul - Scimitar [Legacy]" }
+})
+
+sheathipede = {
+    mesh = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse.jpg",
+    health = 5,
+    move = 2,
+    defense_tokens = {}
+}
+Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
+    name = "Sheathipede-class Shuttle",
+    front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/sheathipede.jpg",
+    cost = 15,
+    aliases = {"Sheathipede-class Shuttle [Legacy]"}
+})
+Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
+    name = "Kalani",
+    front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/Kalani.jpg",
+    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse_ace.jpg", 
+    defense_tokens = {DEF_BRACE, DEF_BRACE},
+    cost = 24,
+    aliases = {"Kalani - Sheathipede-class Shuttle [Legacy]"}
+})
+
+nu_shuttle = {
+    mesh = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse.jpg",
+    health = 7,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
+    name = "Nu-class Transport Shuttle",
+    front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/nu_shuttle.jpg",
+    cost = 15,
+    aliases = {"Nu-class Transport Shuttle [Legacy]"}
+})
+Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
+    name = "Delta Squad",
+    front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/delta_squad.jpg",
+    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse_ace.jpg", 
+    defense_tokens = {DEF_BRACE},
+    cost = 24,
+    aliases = {"Delta Squad - Nu-class Transport Shuttle [Legacy]"}
+})
+
+g9_rigger = {
+    mesh = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse.jpg",
+    health = 7,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
+    name = "G9 Rigger-class Freighter",
+    front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9-freighter.jpg",
+    cost = 13,
+    aliases = { "G9 Rigger-class Freighter [Legacy]" }
+})
+Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
+    name = "Anakin Skywalker (Twilight)",
+    front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9_twilight.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
+    defense_tokens = { DEF_BRACE, DEF_EVADE },
+    cost = 24,
+    aliases = { "Anakin Skywalker - Twilight [Legacy]" }
+})
+
 
 --armada legends ships
 Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
@@ -5742,7 +5835,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
 -- Base Armada Upgrades
 ---CUSTOM_ASSETS.."cards/.updated/upgrades/.jpg"
 
-----#include defs/cards/commanders
+----#include defs/cards/commander
 Commander = {
     type="Commander",
     back = CUSTOM_ASSETS.."cards/commander/back.jpg"
@@ -5759,10 +5852,10 @@ Card:new(Commander,Rebel,{name="General Cracken",  front="http://i.imgur.com/0NH
 Card:new(Commander,Rebel,{name="General Dodonna",  front="http://i.imgur.com/MsS9AN8.jpg", cost=20})
 Card:new(Commander,Rebel,{name="General Madine",  front="http://i.imgur.com/ePeK8Ok.jpg", cost=30})
 Card:new(Commander,Rebel,{name="General Rieekan",  front="http://i.imgur.com/Q6pSiLj.jpg", cost=34})
-Card:new(Commander,Rebel,{name="Kyrsta Agate",  front=ASSETS_ROOT.."cards/commanders/kyrsta_agate_v2_1.jpg", cost=25})
+Card:new(Commander,Rebel,{name="Kyrsta Agate",  front=ASSETS_ROOT.."cards/commander/kyrsta_agate_v2_1.jpg", cost=25})
 Card:new(Commander,Rebel,{name="Leia Organa",  front="http://i.imgur.com/Xsqh5f0.jpg", cost=28})
 Card:new(Commander,Rebel,{name="Mon Mothma",  front="http://i.imgur.com/ZK3rQeb.jpg", cost=27})
-Card:new(Commander,Rebel,{name="General Draven",  front=ASSETS_ROOT.."cards/commanders/general_draven_v2_1.jpg", cost=28})
+Card:new(Commander,Rebel,{name="General Draven",  front=ASSETS_ROOT.."cards/commander/general_draven_v2_1.jpg", cost=28})
 
 Empire = {
     factions={"Empire"}
@@ -5776,7 +5869,7 @@ Card:new(Commander,Empire,{name="Admiral Screed",  front="http://i.imgur.com/DUT
 Card:new(Commander,Empire,{name="Admiral Sloane",  front="http://i.imgur.com/rzZtf8B.jpg", cost=24})
 Card:new(Commander,Empire,{name="Darth Vader",  front="http://i.imgur.com/ysyfpEF.jpg", cost=36})
 Card:new(Commander,Empire,{name="Emperor Palpatine",  front="http://i.imgur.com/KBY36Qs.jpg", cost=35})
-Card:new(Commander,Empire,{name="General Romodi",  front=ASSETS_ROOT.."cards/commanders/general_romodi_v2_1.jpg", cost=28})
+Card:new(Commander,Empire,{name="General Romodi",  front=ASSETS_ROOT.."cards/commander/general_romodi_v2_1.jpg", cost=28})
 Card:new(Commander,Empire,{name="General Tagge",  front="http://i.imgur.com/LduHiR8.jpg", cost=25})
 Card:new(Commander,Empire,{name="Grand Admiral Thrawn",  front="http://i.imgur.com/FSpE1gl.jpg", cost=32})
 Card:new(Commander,Empire,{name="Grand Moff Tarkin",  front="http://i.imgur.com/OxvHWmA.jpg", cost=28})
@@ -5792,7 +5885,7 @@ Card:new(Commander,Republic,{name="Luminara Unduli",  front=CUSTOM_ASSETS.."card
 Card:new(Commander,Republic,{name="Admiral Tarkin",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-tarkin-commander.jpg", cost=30})
 Card:new(Commander,Republic,{name="Admiral Yularen", front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-yularen-commander.jpg", cost=24})
 Card:new(Commander,Republic,{name="Plo Koon", front=CUSTOM_ASSETS.."cards/.updated/upgrades/plo-koon-commander.jpg", cost=26})
-Card:new(Commander,Republic,{name="Anakin Skywalker",  front=ASSETS_ROOT.."cards/commanders/anakin_skywalker_v2_1.jpg", cost=31})
+Card:new(Commander,Republic,{name="Anakin Skywalker",  front=ASSETS_ROOT.."cards/commander/anakin_skywalker_v2_1.jpg", cost=31})
 
 Separatist = {
     factions={"Separatist"}
@@ -5805,7 +5898,7 @@ Card:new(Commander,Separatist,{name="Admiral Trench", front=CUSTOM_ASSETS.."card
 Card:new(Commander,Separatist,{name="Mar Tuuk", front=CUSTOM_ASSETS.."cards/.updated/upgrades/mar-tuuk-commander.jpg", cost=28})
 Card:new(Commander,Separatist,{name="TF-1726", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tf-1726-commander.jpg", cost=26})
 
-----#include defs/cards/commanders
+----#include defs/cards/commander
 ----#include defs/cards/defensive_retrofit
 DefensiveRetrofit = {
     type="DefensiveRetrofit",
@@ -5962,7 +6055,7 @@ Card:new(Officer,Empire,{name="Reeva Demesne", front="https://i.imgur.com/hPWCUb
 Card:new(Officer,Empire,{name="Taskmaster Grint", front="https://i.imgur.com/9U4hKcc.jpg", cost=5})
 Card:new(Officer,Empire,{name="The Grand Inquisitor", front="https://i.imgur.com/xzcI49o.jpg", cost=4})
 Card:new(Officer,Empire,{name="Wulff Yularen", front="https://i.imgur.com/dvWsOm8.jpg", cost=7})
-Card:new(Officer,Empire,{name="Governor Pryce", front=ASSETS_ROOT.."cards/officers/governor_pryce.jpg", cost=7})
+Card:new(Officer,Empire,{name="Governor Pryce", front=ASSETS_ROOT.."cards/officer/governor_pryce.jpg", cost=7})
 
 --republic
 Card:new(Officer,Republic,{name="Clone Captain Zak", front="https://i.imgur.com/A1FePh3.jpeg", cost=5})
@@ -5975,14 +6068,14 @@ Card:new(Officer,Republic,{name="Ahsoka Tano", front="https://i.imgur.com/SVAWnr
 
 --separatist
 Card:new(Officer,Separatist,{name="Rune Haako", front="https://i.imgur.com/aEgMSwp.jpg", cost=4})
-Card:new(Officer,Separatist,{name="Wat Tambor", front=ASSETS_ROOT.."cards/officers/wat_tambor_v2_1.jpg", cost=9})
+Card:new(Officer,Separatist,{name="Wat Tambor", front=ASSETS_ROOT.."cards/officer/wat_tambor_v2_1.jpg", cost=9})
 Card:new(Officer,Separatist,{name="T-Series Tactical Droid", front="https://i.imgur.com/8H1wATK.jpeg", cost=4})
 Card:new(Officer,Separatist,{name="Shu Mai", front=CUSTOM_ASSETS.."cards/.updated/upgrades/shu-mai-officer.jpg", cost=4})
 Card:new(Officer,Separatist,{name="TI-99", front=CUSTOM_ASSETS.."cards/.updated/upgrades/ti-99-officer.jpg", cost=4})
 Card:new(Officer,Separatist,{name="Tikkes", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tikkes-officer.jpg", cost=2})
 Card:new(Officer,Separatist,{name="San Hill", front=CUSTOM_ASSETS.."cards/.updated/upgrades/san-hill-officer.jpg", cost=3})
 Card:new(Officer,Separatist,{name="Passel Argente", front=CUSTOM_ASSETS.."cards/.updated/upgrades/passel-argente-officer.jpg", cost=6})
-Card:new(Officer,Separatist,{name="Asajj Ventress", front=ASSETS_ROOT.."cards/officers/asajj_ventress_v2_1.jpg", cost=4})
+Card:new(Officer,Separatist,{name="Asajj Ventress", front=ASSETS_ROOT.."cards/officer/asajj_ventress_v2_1.jpg", cost=4})
 
 --generic
 Card:new(Officer,{name="Chart Officer", front="https://i.imgur.com/HVWr1Ru.jpg", cost=2})
@@ -6177,7 +6270,7 @@ CloneWars = {
 Card:new(Turbolaser,CloneWars,{name="Swivel-Mount Batteries", front="https://i.imgur.com/QyfrQ24.jpeg", cost=8}) --modification)
 
 --generic
-Card:new(Turbolaser,{name="Dual Turbolaser Turrets", front="https://i.imgur.com/RfHrc24.jpg", cost=5}) --modification)
+Card:new(Turbolaser,{name="Dual Turbolaser Turrets", front=CUSTOM_ASSETS.."cards/.updated/upgrades/dual-turbolaser-turrets.jpg", cost=5}) --modification)
 Card:new(Turbolaser,{name="Enhanced Armament", front="https://i.imgur.com/fixRACB.jpg", cost=10}) --modification)
 Card:new(Turbolaser,{name="H9 Turbolasers", front="https://i.imgur.com/vPAmdyc.jpg", cost=8}) --modification)
 Card:new(Turbolaser,{name="Heavy Fire Zone", front="https://i.imgur.com/f0phD19.jpg", cost=4})
@@ -6244,6 +6337,7 @@ Rebel_L = { factions = { "!Rebellion" } }
 Republic_L = { factions = { "!Republic" } }
 Separatist_L = { factions = { "!Separatist" } }
 CloneWars_L = { factions = { "!Republic", "!Separatist" } }
+Scum_L = { factions = { "!Scum" } }
 
 UNSC = { factions = { "UNSC" } }
 Covenant = { factions = { "Covenant" } }
@@ -6491,6 +6585,11 @@ Card:new(Turbolaser, Cylon,
 
 Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,
 { name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Legends]" } })
+
+
+    -- Armada Legacy (New) Upgrades
+Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/commander/daultay_dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
+Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/commander/ki-adi-mundi.jpg", cost=28, aliases={"Ki-Adi-Mundi [Legacy]"}})
 
 
     -- Armada Legacy (Old) Upgrades
