@@ -4815,7 +4815,7 @@ g9_rigger = {
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "G9 Rigger-class Freighter",
     front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9-freighter.jpg",
-    cost = 13,
+    cost = 16,
     aliases = { "G9 Rigger-class Freighter [Legacy]" }
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
@@ -4969,155 +4969,53 @@ Ship:new(LargeShip, REPUBLIC_L_SHIP, {
     aliases = { "Rothana II-class Destroyer [Legends]" }
 })
 
--- Legends squadrons
---unapproved legends squadrons
---cx dagger
-cx_dagger = {
-    mesh = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/diffuse_cx.jpg",
-    health = 5,
-    move = 4,
-    defense_tokens = {}
-}
-Squadron:new(cx_dagger, EMPIRE_L_SQUAD, {
-    name = "CX Dagger Vessel",
-    front = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/cx_card.jpg",
-    cost = 15,
-    aliases = { "CX Dagger Vessel [Legends]" }
-})
-Squadron:new(cx_dagger, EMPIRE_L_SQUAD, {
-    name = "CX-2",
-    front = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/cx2_card.jpg",
-    diffuse = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/diffuse_ace_cx.jpg",
-    defense_tokens = { DEF_BRACE, DEF_EVADE },
-    cost = 24,
-    aliases = { "CX-2 - CX Dagger Vessel [Legends]" }
-})
+-- Armada Legends squadrons
+    --alpha starwing
+    alpha_sw = {
+        mesh = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/diffuse.jpg",
+        health = 5,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(alpha_sw, EMPIRE_L_SQUAD, {
+        name = "Alpha-class Star Wing Squadron",
+        front = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/alpha-starwing.jpg",
+        cost = 14,
+        aliases = { "Alpha-class Star Wing Squadron [Legends]" }
+    })
+    Squadron:new(alpha_sw, EMPIRE_L_SQUAD, {
+        name = "Lieutenant Karsabi",
+        front = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/alpha-starwing-karsabi.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/diffuse_ace.jpg",
+        defense_tokens = { DEF_BRACE, DEF_BRACE },
+        cost = 21,
+        aliases = { "Lieutenant Karsabi - Alpha-class Star Wing Squadron [Legends]" }
+    })
 
-
-----scum ships
---neutron star
-Ship:new(MediumShip, SCUM_L_SHIP, {
-    name = "Neutron Star-class Bulk Cruiser",
-    front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron_star.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/scum/neutron_star/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/scum/neutron_star/diffuse.jpg",
-    ruler = CUSTOM_ASSETS .. "ships/scum/neutron_star/ruler.obj",
-    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 70,
-    command = 2,
-    aliases = { "Neutron Star-class Bulk Cruiser [Legends]" }
-})
-
---interceptor iv
-Ship:new(SmallShip, SCUM_L_SHIP, {
-    name = "Interceptor IV-class Frigate",
-    front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor_iv.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
-    ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
-    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 70,
-    command = 2,
-    aliases = { "Interceptor IV-class Frigate [Legends]" }
-})
-
---corona frigate
-Ship:new(SmallShip, SCUM_L_SHIP, {
-    name = "Corona-class Frigate",
-    front = CUSTOM_ASSETS .. "ships/scum/corona/corona.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/scum/corona/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/scum/corona/diffuse.jpg",
-    ruler = CUSTOM_ASSETS .. "ships/scum/corona/ruler.obj",
-    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 70,
-    command = 2,
-    aliases = { "Corona-class Frigate [Legends]" }
-})
-
---action vi
-Ship:new(SmallShip, SCUM_L_SHIP, {
-    name = "Action VI Bulk Transports",
-    front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
-    ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
-    maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-    defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 70,
-    command = 2,
-    aliases = { "Action VI Bulk Transports [Legends]" }
-})
-
-
-----scum squadrons
---kihraxz
-kihraxz = {
-    mesh = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/diffuse.jpg",
-    health = 4,
-    move = 4,
-    defense_tokens = {}
-}
-Squadron:new(kihraxz, SCUM_L_SQUAD, {
-    name = "Kihraxz Fighter Squadron",
-    front = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/kihraxz.jpg",
-    cost = 12,
-    aliases = { "Kihraxz Fighter Squadron [Legends]" }
-})
-
---rihkxyrk
-rihkxyrk = {
-    mesh = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse.jpg",
-    health = 4,
-    move = 4,
-    defense_tokens = {}
-}
-Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
-    name = "Rihkxyrk Assault Squadron",
-    front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk.jpg",
-    cost = 12,
-    aliases = { "Rihkxyrk Assault Squadron [Legends]" }
-})
-
---aeg-77 vigo
-aeg77 = {
-    mesh = CUSTOM_ASSETS .. "squadrons/scum/aeg77/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77/diffuse.jpg",
-    health = 4,
-    move = 4,
-    defense_tokens = {}
-}
-Squadron:new(aeg77, SCUM_L_SQUAD, {
-    name = "AEG-77 Vigo",
-    front = CUSTOM_ASSETS .. "squadrons/scum/aeg77/aeg77.jpg",
-    cost = 12,
-    aliases = { "AEG-77 Vigo [Legends]" }
-})
-
---ugly fighter
-uglies = {
-    mesh = CUSTOM_ASSETS .. "squadrons/scum/uglies/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "squadrons/scum/uglies/diffuse.jpg",
-    health = 4,
-    move = 4,
-    defense_tokens = {}
-}
-Squadron:new(uglies, SCUM_L_SQUAD, {
-    name = "Ugly Squadron",
-    front = CUSTOM_ASSETS .. "squadrons/scum/uglies/kihraxz.jpg",
-    cost = 12,
-    aliases = { "Ugly Squadron [Legends]" }
-})
-
+    --unapproved legends squadrons
+    --cx dagger
+    cx_dagger = {
+        mesh = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/diffuse_cx.jpg",
+        health = 5,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(cx_dagger, EMPIRE_L_SQUAD, {
+        name = "CX Dagger Vessel",
+        front = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/cx_card.jpg",
+        cost = 15,
+        aliases = { "CX Dagger Vessel [Legends]" }
+    })
+    Squadron:new(cx_dagger, EMPIRE_L_SQUAD, {
+        name = "CX-2",
+        front = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/cx2_card.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/diffuse_ace_cx.jpg",
+        defense_tokens = { DEF_BRACE, DEF_EVADE },
+        cost = 24,
+        aliases = { "CX-2 - CX Dagger Vessel [Legends]" }
+    })
 
 ----halo ships/squadrons
 --unsc ships
@@ -5888,6 +5786,131 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
 
 
+----scum ships
+    --neutron star
+    Ship:new(MediumShip, SCUM_L_SHIP, {
+        name = "Neutron Star-class Bulk Cruiser",
+        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron_star.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/neutron_star/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/neutron_star/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/neutron_star/ruler.obj",
+        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+        cost = 70,
+        command = 2,
+        aliases = { "Neutron Star-class Bulk Cruiser [Legends]" }
+    })
+
+    --interceptor iv
+    Ship:new(SmallShip, SCUM_L_SHIP, {
+        name = "Interceptor IV-class Frigate",
+        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor_iv.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
+        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+        cost = 70,
+        command = 2,
+        aliases = { "Interceptor IV-class Frigate [Legends]" }
+    })
+
+    --corona frigate
+    Ship:new(SmallShip, SCUM_L_SHIP, {
+        name = "Corona-class Frigate",
+        front = CUSTOM_ASSETS .. "ships/scum/corona/corona.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/corona/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/corona/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/corona/ruler.obj",
+        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+        cost = 70,
+        command = 2,
+        aliases = { "Corona-class Frigate [Legends]" }
+    })
+
+    --action vi
+    Ship:new(SmallShip, SCUM_L_SHIP, {
+        name = "Action VI Bulk Transports",
+        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
+        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+        cost = 70,
+        command = 2,
+        aliases = { "Action VI Bulk Transports [Legends]" }
+    })
+
+
+----scum squadrons
+    --kihraxz
+    kihraxz = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/diffuse.jpg",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(kihraxz, SCUM_L_SQUAD, {
+        name = "Kihraxz Fighter Squadron",
+        front = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/kihraxz.jpg",
+        cost = 12,
+        aliases = { "Kihraxz Fighter Squadron [Legends]" }
+    })
+
+    --rihkxyrk
+    rihkxyrk = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse.jpg",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
+        name = "Rihkxyrk Assault Squadron",
+        front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk.jpg",
+        cost = 12,
+        aliases = { "Rihkxyrk Assault Squadron [Legends]" }
+    })
+
+    --aeg-77 vigo
+    aeg77 = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/aeg77/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77/diffuse.jpg",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(aeg77, SCUM_L_SQUAD, {
+        name = "AEG-77 Vigo",
+        front = CUSTOM_ASSETS .. "squadrons/scum/aeg77/aeg77.jpg",
+        cost = 12,
+        aliases = { "AEG-77 Vigo [Legends]" }
+    })
+
+    --ugly fighter
+    uglies = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/uglies/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/uglies/diffuse.jpg",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(uglies, SCUM_L_SQUAD, {
+        name = "Ugly Squadron",
+        front = CUSTOM_ASSETS .. "squadrons/scum/uglies/kihraxz.jpg",
+        cost = 12,
+        aliases = { "Ugly Squadron [Legends]" }
+    })
+
+
+----proxy ships/squadrons
     PROXY_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
 
     Ship:new(MediumShip,PROXY_SHIP,{
