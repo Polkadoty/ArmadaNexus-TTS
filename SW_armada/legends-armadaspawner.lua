@@ -3903,7 +3903,7 @@ v19 = {
 -- Escort, Swarm
 Squadron:new(v19, REPUBLIC_SQUAD, {
 	name = "V-19 Torrent Squadron",
-    front =     ASSETS_ROOT.."squadrons/republic/v19/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/v-19-torrent-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/v19/base_diffuse.jpg",
     cost = 12,
     aliases = {'V-19 Torrent Squadrons', "V-19", "V-19 Torrent"}
@@ -3911,7 +3911,7 @@ Squadron:new(v19, REPUBLIC_SQUAD, {
 -- Escort, Swarm
 Squadron:new(v19, REPUBLIC_SQUAD, {
 	name = '\"Axe\"',
-    front =     ASSETS_ROOT.."squadrons/republic/v19/axe_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/axe-v-19-torrent-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 17,
@@ -3921,7 +3921,7 @@ Squadron:new(v19, REPUBLIC_SQUAD, {
 -- Escort, Swarm
 Squadron:new(v19, REPUBLIC_SQUAD, {
 	name = '\"Kickback\"',
-    front =     ASSETS_ROOT.."squadrons/republic/v19/kickback_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/kickback-v-19-torrent-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 16,
@@ -3936,7 +3936,7 @@ delta = {
 -- Adept, Counter, Dodge
 Squadron:new(delta, REPUBLIC_SQUAD, {
 	name = "Delta-7 Aethersprite Squadron",
-    front =     ASSETS_ROOT.."squadrons/republic/delta/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/delta-7-aethersprite-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/base_diffuse.jpg",
     cost = 17,
     aliases = {'Delta-7 Aethersprite Squadrons', "Delta-7 Aethersprite", "Delta-7"}
@@ -3945,7 +3945,7 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
 -- Adept, Counter, Grit
 Squadron:new(delta, REPUBLIC_SQUAD, {
 	name = "Ahsoka Tano",
-    front =     ASSETS_ROOT.."squadrons/republic/delta/ahsoka_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/ahsoka-tano-delta-7-aethersprite-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/ahsoka_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_gr_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
@@ -3955,7 +3955,7 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
 -- Adept, Counter
 Squadron:new(delta, REPUBLIC_SQUAD, {
 	name = "Luminara Unduli",
-    front =     ASSETS_ROOT.."squadrons/republic/delta/luminara_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/luminara-unduli-delta-7-aethersprite-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/luminara_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
@@ -3965,7 +3965,7 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
 -- Adept, Counter, Intel
 Squadron:new(delta, REPUBLIC_SQUAD, {
 	name = "Kit Fisto",
-    front =     ASSETS_ROOT.."squadrons/republic/delta/kit_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/kit-fisto-delta-7-aethersprite-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/kit_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_in_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -3975,7 +3975,7 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
 -- Adept, Counter
 Squadron:new(delta, REPUBLIC_SQUAD, {
 	name = "Plo Koon",
-    front =     ASSETS_ROOT.."squadrons/republic/delta/plo_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/plo-koon-delta-7-aethersprite-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/plo_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
@@ -3985,7 +3985,7 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
 --Adept, Counter 2, Dodge 1
 Squadron:new(delta, REPUBLIC_SQUAD, {
 	name = "Anakin Skywalker",
-    front =     ASSETS_ROOT.."squadrons/republic/delta/anakin_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/anakin-skywalker-delta-7-aethersprite-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/anakin_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_do_model.obj",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
@@ -4001,7 +4001,7 @@ ywing_gar = {
 -- Bomber, Heavy
 Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 	name = "BTL-B Y-Wing Squadron",
-    front =     ASSETS_ROOT.."squadrons/republic/ywing/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/btl-b-y-wing-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/base_diffuse.jpg",
     cost = 10,
     aliases = {'BTL-B Y-Wing Squadrons', "BTL-B Y-Wing",'BLT-B Y-Wing Squadrons'}
@@ -4009,7 +4009,7 @@ Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 -- Adept, Bomber, Heavy
 Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 	name = "Anakin Skywalker",
-    front =     ASSETS_ROOT.."squadrons/republic/ywing/anakin_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/anakin-skywalker-btl-b-y-wing-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/ywing/ad_bo_he_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -4019,7 +4019,7 @@ Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 -- Bomber, Heavy
 Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 	name = "Matchstick",
-    front =     ASSETS_ROOT.."squadrons/republic/ywing/matchstick_card_v2_1.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/matchstick-btl-b-y-wing-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 16,
@@ -4034,7 +4034,7 @@ arc = {
 -- Bomber, Counter
 Squadron:new(arc, REPUBLIC_SQUAD, {
 	name = "ARC-170 Starfighter Squadron",
-    front =     ASSETS_ROOT.."squadrons/republic/arc/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/arc-170-starfighter-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/arc/base_diffuse.jpg",
     cost = 15,
     aliases = {'ARC-170 Starfighter Squadrons', "ARC-170 Starfighter", "ARC-170"}
@@ -4042,7 +4042,7 @@ Squadron:new(arc, REPUBLIC_SQUAD, {
 -- Bomber, Counter
 Squadron:new(arc, REPUBLIC_SQUAD, {
 	name = '\"Odd Ball\"',
-    front =     ASSETS_ROOT.."squadrons/republic/arc/oddball_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/oddball-arc170-starfighter-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/arc/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 23,
@@ -4064,7 +4064,7 @@ vulture = {
 -- AI: Anti-Squadron, Swarm
 Squadron:new(vulture, SEPARATIST_SQUAD, {
 	name = "Vulture-class Droid Fighter Squadron",
-    front =     ASSETS_ROOT.."squadrons/separatist/vulture/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/vulture-droid-squadron.jpg",
     cost = 8,
     aliases = {'Vulture-class Droid Fighter Squadrons', 'Vulture Droid Fighter Squadron', 'Vulture Droid Fighter Squadrons', "Vultere Droid Fighter", "Vulture", 'Vulture Droid Squadron'}
 })
@@ -4073,14 +4073,14 @@ vulture.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 -- AI: Anti-Squadron, Swarm
 Squadron:new(vulture, SEPARATIST_SQUAD, {
 	name = "Haor Chall Prototypes",
-    front =     ASSETS_ROOT.."squadrons/separatist/vulture/haor_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/haor-chall-vulture-droid-squadron.jpg",
     cost = 16,
     aliases = {"Haor Chall Prototypes - Vulture-class Droid Fighter Squadron"}
 })
 -- AI: Anti-Squadron, Swarm, Intel
 Squadron:new(vulture, SEPARATIST_SQUAD, {
 	name = "DFS-311",
-    front =     ASSETS_ROOT.."squadrons/separatist/vulture/dfs_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/dfs-311-vulture-droid-squadron.jpg",
     mesh =      ASSETS_ROOT.."squadrons/separatist/vulture/ai_in_sw_model.obj",
     cost = 18,
     aliases = {"DFS-311 - Vulture-class Droid Fighter Squadron"}
@@ -4095,7 +4095,7 @@ hyena = {
 --  AI: Battery, Bomber, Heavy
 Squadron:new(hyena, SEPARATIST_SQUAD, {
 	name = "Hyena-class Droid Bomber Squadron",
-    front =     ASSETS_ROOT.."squadrons/separatist/hyena/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/hyena-droid-bomber-squadron.jpg",
     cost = 11,
     aliases = {'Hyena-class Droid Bomber Squadrons','Hyena Droid Bomber Squadron','Hyena Droid Bomber Squadrons', 'Hyena Droid Bomber', 'Hyena','Hyena Bomber Squadron'}
 })
@@ -4105,14 +4105,14 @@ hyena.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 --  AI: Battery, Bomber, Heavy
 Squadron:new(hyena, SEPARATIST_SQUAD, {
 	name = "Baktoid Prototypes",
-    front =     ASSETS_ROOT.."squadrons/separatist/hyena/baktoid_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/baktoid-hyena-droid-bomber-squadron.jpg",
     cost = 16,
     aliases = {"Baktoid Prototypes - Hyena-class Droid Bomber Squadron","Baktoid Prototype"}
 })
 --  AI: Battery, Bomber, Heavy
 Squadron:new(hyena, SEPARATIST_SQUAD, {
 	name = "DBS-404",
-    front =     ASSETS_ROOT.."squadrons/separatist/hyena/dbs_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/dbs-404-hyena-droid-bomber-squadron.jpg",
     cost = 17,
     aliases = {"DBS-404 - Hyena-class Droid Bomber Squadron"}
 })
@@ -4126,7 +4126,7 @@ tri = {
 --  Counter, Swarm, AI:Anti-squadron
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "Droid Tri-Fighter Squadron",
-    front =     ASSETS_ROOT.."squadrons/separatist/tri/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/droid-tri-fighter-squadron.jpg",
     cost = 11,
     aliases = {'Droid Tri-Fighter Squadrons', "Droid Tri-Fighter", "Tri-Fighter"}
 })
@@ -4135,14 +4135,14 @@ tri.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 --  Counter, Swarm, AI:Anti-squadron
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "Phlac-Arphocc Prototypes",
-    front =     ASSETS_ROOT.."squadrons/separatist/tri/phlacc_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/phlac-arphocc-droid-tri-fighter-squadron.jpg",
     cost = 19,
     aliases = {"Phlac-Arphocc Prototype - Droid Tri-Fighter Squadron","Phlac-Arphocc Prototypes - Droid Tri-Fighter Squadron"}
 })
 --  Counter, Swarm, AI:Anti-squadron, snipe 3
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "DIS-T81",
-    front =     ASSETS_ROOT.."squadrons/separatist/tri/dis_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/dis-t81-droid-tri-fighter-squadron.jpg",
     mesh =      ASSETS_ROOT.."squadrons/separatist/tri/ai_co_sn_sw_model.obj",
     cost = 17,
     aliases = {"DIS-T81 - Droid Tri-Fighter Squadron"}
@@ -4157,14 +4157,14 @@ belbullab = {
 --  Relay, Screen
 Squadron:new(belbullab, SEPARATIST_SQUAD, {
 	name = "Belbullab-22 Starfighter Squadron",
-    front =     ASSETS_ROOT.."squadrons/separatist/belbullab/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/belbullab-22-squadron.jpg",
     cost = 15,
     aliases = {'Belbullab-22 Starfighter Squadrons', "Belbullab-22 Starfighter", "Belbullab-22"}
 })
 --Relay, Screen
 Squadron:new(belbullab, SEPARATIST_SQUAD, {
 	name = "General Grievous",
-    front =     ASSETS_ROOT.."squadrons/separatist/belbullab/grievous_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/general-grievous-belbullab-22-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 22,
@@ -4173,7 +4173,7 @@ Squadron:new(belbullab, SEPARATIST_SQUAD, {
 --Escort, Relay, Screen
 Squadron:new(belbullab, SEPARATIST_SQUAD, {
 	name = "Wat Tambor",
-    front =     ASSETS_ROOT.."squadrons/separatist/belbullab/wat_card_v2_1.jpg",
+    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/wat-tambor-belbullab-22-squadron.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/separatist/belbullab/es_re_sc_model.obj",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
