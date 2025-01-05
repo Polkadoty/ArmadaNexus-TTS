@@ -4815,7 +4815,7 @@ g9_rigger = {
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "G9 Rigger-class Freighter",
     front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9-freighter.jpg",
-    cost = 16,
+    cost = 15,
     aliases = { "G9 Rigger-class Freighter [Legacy]" }
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
@@ -6002,10 +6002,10 @@ Card:new(Commander,Rebel,{name="General Cracken",  front="http://i.imgur.com/0NH
 Card:new(Commander,Rebel,{name="General Dodonna",  front="http://i.imgur.com/MsS9AN8.jpg", cost=20})
 Card:new(Commander,Rebel,{name="General Madine",  front="http://i.imgur.com/ePeK8Ok.jpg", cost=30})
 Card:new(Commander,Rebel,{name="General Rieekan",  front="http://i.imgur.com/Q6pSiLj.jpg", cost=34})
-Card:new(Commander,Rebel,{name="Kyrsta Agate",  front=ASSETS_ROOT.."cards/commander/kyrsta_agate_v2_1.jpg", cost=25})
+Card:new(Commander,Rebel,{name="Kyrsta Agate",  front=CUSTOM_ASSETS.."cards/commander/kyrsta_agate_v2_1.jpg", cost=25})
 Card:new(Commander,Rebel,{name="Leia Organa",  front="http://i.imgur.com/Xsqh5f0.jpg", cost=28})
 Card:new(Commander,Rebel,{name="Mon Mothma",  front="http://i.imgur.com/ZK3rQeb.jpg", cost=27})
-Card:new(Commander,Rebel,{name="General Draven",  front=ASSETS_ROOT.."cards/commander/general_draven_v2_1.jpg", cost=28})
+Card:new(Commander,Rebel,{name="General Draven",  front=CUSTOM_ASSETS.."cards/commander/general_draven_v2_1.jpg", cost=28})
 
 Empire = {
     factions={"Empire"}
@@ -6019,7 +6019,7 @@ Card:new(Commander,Empire,{name="Admiral Screed",  front="http://i.imgur.com/DUT
 Card:new(Commander,Empire,{name="Admiral Sloane",  front="http://i.imgur.com/rzZtf8B.jpg", cost=24})
 Card:new(Commander,Empire,{name="Darth Vader",  front="http://i.imgur.com/ysyfpEF.jpg", cost=36})
 Card:new(Commander,Empire,{name="Emperor Palpatine",  front="http://i.imgur.com/KBY36Qs.jpg", cost=35})
-Card:new(Commander,Empire,{name="General Romodi",  front=ASSETS_ROOT.."cards/commander/general_romodi_v2_1.jpg", cost=28})
+Card:new(Commander,Empire,{name="General Romodi",  front=CUSTOM_ASSETS.."cards/commander/general_romodi_v2_1.jpg", cost=28})
 Card:new(Commander,Empire,{name="General Tagge",  front="http://i.imgur.com/LduHiR8.jpg", cost=25})
 Card:new(Commander,Empire,{name="Grand Admiral Thrawn",  front="http://i.imgur.com/FSpE1gl.jpg", cost=32})
 Card:new(Commander,Empire,{name="Grand Moff Tarkin",  front="http://i.imgur.com/OxvHWmA.jpg", cost=28})
@@ -6035,7 +6035,7 @@ Card:new(Commander,Republic,{name="Luminara Unduli",  front=CUSTOM_ASSETS.."card
 Card:new(Commander,Republic,{name="Admiral Tarkin",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-tarkin-commander.jpg", cost=30})
 Card:new(Commander,Republic,{name="Admiral Yularen", front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-yularen-commander.jpg", cost=24})
 Card:new(Commander,Republic,{name="Plo Koon", front=CUSTOM_ASSETS.."cards/.updated/upgrades/plo-koon-commander.jpg", cost=26})
-Card:new(Commander,Republic,{name="Anakin Skywalker",  front=ASSETS_ROOT.."cards/commander/anakin_skywalker_v2_1.jpg", cost=31})
+Card:new(Commander,Republic,{name="Anakin Skywalker",  front=CUSTOM_ASSETS.."cards/commander/anakin_skywalker_v2_1.jpg", cost=31})
 
 Separatist = {
     factions={"Separatist"}

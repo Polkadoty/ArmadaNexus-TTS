@@ -151,35 +151,35 @@ function drawButtons()
     self.clearButtons()
     local z = 0.3
     if #cmds<4 then
-        self.createButton(buildButton('+',{click_function='Action_AddRuler',position={-0.2,z,0.9}}))
+        self.createButton(buildButton('+',{click_function='Action_AddRuler',position={-0.2,z,1.05},width=200,height=200}))
     end
     self.createButton(buildButton('Done',{click_function='Action_ClearRuler',position={0,z,0.7},width=300}))
 
     local ship = self.getVar('ship')
     if ship~=nil and self.getVar('moved')~=true and (#cmds>0 or self.getRotation()[2]~=ship.getRotation()[2]) then
-        self.createButton(buildButton('Move',{position={0,z,0.5},width=300}))
+        self.createButton(buildButton('Move',{position={0,z,0.4},width=300}))
     end
     if #cmds>0 then
-        self.createButton(buildButton('-',{click_function='Action_RemoveRuler',position={0.2,z,0.9}}))
+        self.createButton(buildButton('-',{click_function='Action_RemoveRuler',position={0.2,z,1.05},width=200,height=200}))
     end
     if ship~=nil then
         local prev_transforms = ship.getTable('prev_transforms')
         if prev_transforms~=nil and #prev_transforms>0 then--last_pos~=nil and last_rot~=nil and last_moved~=nil then
             if self.getVar('moved') then
-                self.createButton(buildButton('Undo',{position={0,z,0.3},width=300}))
+                self.createButton(buildButton('Undo',{position={0,z,0.1},width=300}))
             elseif self.getVar('confirm') then
-                self.createButton(buildButton('Oops!',{click_function='Toggle_Undo',position={0,z,0.3},width=300,color={0.8,0,0},font_color={1,1,1}}))
+                self.createButton(buildButton('Oops!',{click_function='Toggle_Undo',position={0,z,0.1},width=300,color={0.8,0,0},font_color={1,1,1}}))
                 self.createButton(buildButton('Confirm!',{click_function='Action_Undo',position={0,z,-0.1},width=300,color={0,0.8,0},font_color={1,1,1}}))
             else
-                self.createButton(buildButton('Undo',{click_function='Toggle_Undo',position={0,z,0.3},width=300,color={0.8,0,0},font_color={1,1,1}}))
+                self.createButton(buildButton('Undo',{click_function='Toggle_Undo',position={0,z,0.1},width=300,color={0.8,0,0},font_color={1,1,1}}))
             end
         end
     end
     local y = 1.1
     if #cmds==0 then
-        self.createButton(buildButton('<',{click_function='Action_RulerLeft0',position={0.2,z,y}}))
-        self.createButton(buildButton('0',{click_function='DoNothing',position={0,z,y},color={0.8,0,0},font_color={1,1,1}}))
-        self.createButton(buildButton('>',{click_function='Action_RulerRight0',position={-0.2,z,y}}))
+        self.createButton(buildButton('<',{click_function='Action_RulerLeft0',position={0.2,z,y+0.4}}))
+        self.createButton(buildButton('0',{click_function='DoNothing',position={0,z,y+0.4},color={0.8,0,0},font_color={1,1,1}}))
+        self.createButton(buildButton('>',{click_function='Action_RulerRight0',position={-0.2,z,y+0.4}}))
 
     end
     y = y + 0.25
