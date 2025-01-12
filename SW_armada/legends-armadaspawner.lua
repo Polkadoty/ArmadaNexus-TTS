@@ -5790,61 +5790,100 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --neutron star
     Ship:new(MediumShip, SCUM_L_SHIP, {
         name = "Neutron Star-class Bulk Cruiser",
-        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron_star.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron-cruiser.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/neutron_star/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/neutron_star/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/neutron_star/ruler.obj",
-        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-        cost = 70,
-        command = 2,
+        maneuver = { { "I" }, { "I", "I" }, { "I", "-", "-" } },
+        defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT },
+        shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 87,
+        command = 3,
         aliases = { "Neutron Star-class Bulk Cruiser [Legends]" }
+    })
+    Ship:new(MediumShip, SCUM_L_SHIP, {
+        name = "Neutron Star-class Bulk Carrier",
+        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron-carrier.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/neutron_star/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/neutron_star/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/neutron_star/ruler.obj",
+        maneuver = { { "I" }, { "I", "I" }, { "I", "-", "-" } },
+        defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT },
+        shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 83,
+        command = 3,
+        aliases = { "Neutron Star-class Bulk Carrier [Legends]" }
     })
 
     --interceptor iv
     Ship:new(SmallShip, SCUM_L_SHIP, {
-        name = "Interceptor IV-class Frigate",
-        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor_iv.jpg",
+        name = "Interceptor IV-class Attack Frigate",
+        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor-iv-attack.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
-        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-        cost = 70,
+        maneuver = { { "II" }, { "I", "-" }, { "I", "-", "II" } },
+        defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+        shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 65,
         command = 2,
-        aliases = { "Interceptor IV-class Frigate [Legends]" }
+        aliases = { "Interceptor IV-class Attack Frigate [Legends]" }
+    })
+    Ship:new(SmallShip, SCUM_L_SHIP, {
+        name = "Interceptor IV-class Missile Frigate",
+        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor-iv-missile.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
+        maneuver = { { "II" }, { "I", "-" }, { "I", "-", "II" } },
+        defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+        shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 62,
+        command = 2,
+        aliases = { "Interceptor IV-class Attack Frigate [Legends]" }
     })
 
     --corona frigate
-    Ship:new(SmallShip, SCUM_L_SHIP, {
-        name = "Corona-class Frigate",
-        front = CUSTOM_ASSETS .. "ships/scum/corona/corona.jpg",
-        mesh = CUSTOM_ASSETS .. "ships/scum/corona/mesh.obj",
-        diffuse = CUSTOM_ASSETS .. "ships/scum/corona/diffuse.jpg",
-        ruler = CUSTOM_ASSETS .. "ships/scum/corona/ruler.obj",
-        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-        cost = 70,
-        command = 2,
-        aliases = { "Corona-class Frigate [Legends]" }
-    })
+    -- Ship:new(SmallShip, SCUM_L_SHIP, {
+    --     name = "Corona-class Frigate",
+    --     front = CUSTOM_ASSETS .. "ships/scum/corona/corona.jpg",
+    --     mesh = CUSTOM_ASSETS .. "ships/scum/corona/mesh.obj",
+    --     diffuse = CUSTOM_ASSETS .. "ships/scum/corona/diffuse.jpg",
+    --     ruler = CUSTOM_ASSETS .. "ships/scum/corona/ruler.obj",
+    --     maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
+    --     defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
+    --     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+    --     cost = 70,
+    --     command = 2,
+    --     aliases = { "Corona-class Frigate [Legends]" }
+    -- })
 
     --action vi
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Action VI Bulk Transports",
-        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi_bulk.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
-        maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-        defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-        cost = 70,
-        command = 2,
+        maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_SCATTER, DEF_EVADE },
+        shields = { 1, 1, 1, 1 }, -- Front, left, right, rear
+        cost = 21,
+        command = 1,
         aliases = { "Action VI Bulk Transports [Legends]" }
+    })
+    Ship:new(SmallShip, SCUM_L_SHIP, {
+        name = "Action VI Armed Transports",
+        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi_armed.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
+        maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_SCATTER, DEF_EVADE },
+        shields = { 1, 1, 1, 1 }, -- Front, left, right, rear
+        cost = 26,
+        command = 1,
+        aliases = { "Action VI Armed Transports [Legends]" }
     })
 
 
