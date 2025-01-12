@@ -5815,6 +5815,34 @@ Squadron:new(seraph, COV_L_SQUAD, {
         aliases = { "Neutron Star-class Bulk Carrier [Legends]" }
     })
 
+    --marauder
+    Ship:new(SmallShip, SCUM_L_SHIP, {
+        name = "Marauder Artillery Corvette",
+        front = CUSTOM_ASSETS .. "ships/scum/marauder/marauder_arty.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
+        maneuver = { { "II" }, { "I", "I" }, { "I", "-", "I" } },
+        defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT, DEF_SALVO},
+        shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
+        cost = 60,
+        command = 2,
+        aliases = { "Marauder Artillery Corvette [Legends]" }
+    })
+    Ship:new(SmallShip, SCUM_L_SHIP, {
+        name = "Marauder Picket Corvette",
+        front = CUSTOM_ASSETS .. "ships/scum/marauder/marauder_picket.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
+        maneuver = { { "II" }, { "I", "I" }, { "I", "-", "I" } },
+        defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT, DEF_SALVO},
+        shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
+        cost = 55,
+        command = 2,
+        aliases = { "Marauder Picket Corvette [Legends]" }
+    })
+
     --interceptor iv
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Attack Frigate",
@@ -5907,14 +5935,14 @@ Squadron:new(seraph, COV_L_SQUAD, {
     rihkxyrk = {
         mesh = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse.jpg",
-        health = 4,
-        move = 4,
+        health = 5,
+        move = 3,
         defense_tokens = {}
     }
     Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
         name = "Rihkxyrk Assault Squadron",
         front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk.jpg",
-        cost = 12,
+        cost = 13,
         aliases = { "Rihkxyrk Assault Squadron [Legends]" }
     })
 
@@ -5922,30 +5950,31 @@ Squadron:new(seraph, COV_L_SQUAD, {
     aeg77 = {
         mesh = CUSTOM_ASSETS .. "squadrons/scum/aeg77/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77/diffuse.jpg",
-        health = 4,
-        move = 4,
+        health = 8,
+        move = 3,
         defense_tokens = {}
     }
     Squadron:new(aeg77, SCUM_L_SQUAD, {
         name = "AEG-77 Vigo",
         front = CUSTOM_ASSETS .. "squadrons/scum/aeg77/aeg77.jpg",
-        cost = 12,
+        cost = 23,
         aliases = { "AEG-77 Vigo [Legends]" }
     })
 
-    --ugly fighter
-    uglies = {
-        mesh = CUSTOM_ASSETS .. "squadrons/scum/uglies/mesh.obj",
-        diffuse = CUSTOM_ASSETS .. "squadrons/scum/uglies/diffuse.jpg",
-        health = 4,
+    --ugly squadrons
+    ugly_sqd = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/diffuse.jpg",
+        health = 6,
         move = 4,
-        defense_tokens = {}
     }
-    Squadron:new(uglies, SCUM_L_SQUAD, {
-        name = "Ugly Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/scum/uglies/kihraxz.jpg",
-        cost = 12,
-        aliases = { "Ugly Squadron [Legends]" }
+    Squadron:new(ugly_sqd, SCUM_L_SQUAD, {
+        name = "Ugly Squadrons",
+        front = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/ugly_squadrons.jpg",
+        cost = 21,
+        defense_tokens = {DEF_SCATTER, DEF_EVADE},
+        aliases = { "Ugly Squadrons [Legends]" }
+
     })
 
 
