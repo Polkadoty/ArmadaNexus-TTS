@@ -4749,7 +4749,7 @@ star_courier = {
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Star Courier",
     front = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/star-courier.jpg",
-    cost = 18,
+    cost = 17,
     aliases = { "Star Courier [Legacy]" }
 })
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
@@ -4765,13 +4765,13 @@ sheathipede = {
     mesh = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/mesh.obj",
     diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse.jpg",
     health = 5,
-    move = 2,
     defense_tokens = {}
 }
 Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
     name = "Sheathipede-class Shuttle",
     front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/sheathipede.jpg",
     cost = 15,
+    move = 2,
     aliases = {"Sheathipede-class Shuttle [Legacy]"}
 })
 Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
@@ -4780,6 +4780,7 @@ Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
     diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse_ace.jpg", 
     defense_tokens = {DEF_BRACE, DEF_BRACE},
     cost = 24,
+    move = 3,
     aliases = {"Kalani - Sheathipede-class Shuttle [Legacy]"}
 })
 
@@ -4787,13 +4788,13 @@ nu_shuttle = {
     mesh = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/mesh.obj",
     diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse.jpg",
     health = 7,
-    move = 3,
     defense_tokens = {}
 }
 Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
     name = "Nu-class Transport Shuttle",
     front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/nu_shuttle.jpg",
     cost = 15,
+    move = 2,
     aliases = {"Nu-class Transport Shuttle [Legacy]"}
 })
 Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
@@ -4802,6 +4803,7 @@ Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
     diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse_ace.jpg", 
     defense_tokens = {DEF_BRACE},
     cost = 24,
+    move = 3,
     aliases = {"Delta Squad - Nu-class Transport Shuttle [Legacy]"}
 })
 
