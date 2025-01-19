@@ -4197,6 +4197,9 @@ REBEL_L_SQUAD = { back = CUSTOM_ASSETS .. "squadrons/rebel/card_back.jpg", facti
 SCUM_L_SHIP = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "Scum" }
 SCUM_L_SQUAD = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "Scum" }
 
+NR_L_SHIP = { back = CUSTOM_ASSETS .. "new_rep_back.jpg", faction = "New Republic" }
+NR_L_SQUAD = { back = CUSTOM_ASSETS .. "new_rep_back.jpg", faction = "New Republic" }
+
 COL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 COL_L_SQUAD = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 CYL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/cylon/card_back.jpg", faction = "Cylon" }
@@ -5976,9 +5979,177 @@ Squadron:new(seraph, COV_L_SQUAD, {
         cost = 21,
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         aliases = { "Ugly Squadrons [Legends]" }
-
     })
 
+----new republic ships
+Ship:new(SmallShip, NR_L_SHIP, {
+    name = "Corona-class Escort Frigate",
+    front = CUSTOM_ASSETS .. "ships/new_rep/corona/corona-escort-frigate.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/new_rep/corona/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/new_rep/corona/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/new_rep/corona/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" }, { "I", "-", "I" } },
+    defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
+    shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+    cost = 52,
+    command = 2,
+    aliases = { "Corona-class Escort Frigate [Legends]" }
+})
+Ship:new(SmallShip, NR_L_SHIP, {
+    name = "Corona-class Support Frigate",
+    front = CUSTOM_ASSETS .. "ships/new_rep/corona/corona-support-frigate.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/new_rep/corona/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/new_rep/corona/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/new_rep/corona/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" }, { "I", "-", "I" } },
+    defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_BRACE},
+    shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+    cost = 50,
+    command = 2,
+    aliases = { "Corona-class Support Frigate [Legends]" }
+})
+
+Ship:new(LargeShip, NR_L_SHIP, {
+    name = "Endurance-class Fleet Carrier",
+    front = CUSTOM_ASSETS .. "ships/new_rep/endurance/endurance-fleet-carrier.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/new_rep/endurance/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/new_rep/endurance/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/new_rep/endurance/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_REDIRECT},
+    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+    cost = 95,
+    command = 3,
+    aliases = { "Endurance-class Fleet Carrier [Legends]" }
+})
+Ship:new(LargeShip, NR_L_SHIP, {
+    name = "Nebula-class Star Destroyer",
+    front = CUSTOM_ASSETS .. "ships/new_rep/nebula/nebula-star-destroyer.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/new_rep/nebula/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/new_rep/nebula/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/new_rep/nebula/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_REDIRECT},
+    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+    cost = 105,
+    command = 3,
+    aliases = { "Nebula-class Star Destroyer [Legends]" }
+})
+
+Ship:new(LargeShip, NR_L_SHIP, {
+    name = "MC90 Battle Cruiser",
+    front = CUSTOM_ASSETS .. "ships/new_rep/mc90/mc90-battle-cruiser.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/new_rep/mc90/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/new_rep/mc90/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/new_rep/mc90/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" } },
+    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+    shields = { 5, 4, 4, 3 }, -- Front, left, right, rear
+    cost = 120,
+    command = 3,
+    aliases = { "MC90 Battle Cruiser [Legends]" }
+})
+Ship:new(LargeShip, NR_L_SHIP, {
+    name = "MC90 Command Cruiser",
+    front = CUSTOM_ASSETS .. "ships/new_rep/mc90/mc90-command-cruiser.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/new_rep/mc90/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/new_rep/mc90/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/new_rep/mc90/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" } },
+    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+    shields = { 5, 4, 4, 3 }, -- Front, left, right, rear
+    cost = 115,
+    command = 3,
+    aliases = { "MC90 Command Cruiser [Legends]" }
+})
+
+----new republic squadrons
+kwing = {
+    mesh = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/diffuse.jpg",
+    health = 7,
+    move = 2,
+    defense_tokens = {}
+}
+Squadron:new(kwing, NR_L_SQUAD, {
+    name = "K-wing Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/kwing.jpg",
+    cost = 18,
+    aliases = { "K-wing Squadron [Legends]" }
+})
+Squadron:new(kwing, NR_L_SQUAD, {
+    name = "Miranda Doni",
+    front = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/miranda-doni.jpg",
+    cost = 27,
+    aliases = { "Miranda Doni - K-wing Squadron [Legends]" },
+    defense_tokens = {DEF_BRACE, DEF_BRACE}
+})
+
+Squadron:new(xwing, NR_L_SQUAD, {
+	name = "X-wing Squadron (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/base_diffuse.jpg",
+    cost = 13,
+    aliases = {'X-wing Squadron (NR) [Legends]'}
+})
+Squadron:new(xwing, NR_L_SQUAD, {
+	name = "Wedge Antilles (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/wedge-antilles-nr.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 20,
+    aliases = {"Wedge Antilles - X-wing Squadron (NR) [Legends]"}
+})
+Squadron:new(xwing, NR_L_SQUAD, {
+	name = "Tycho Celchu (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/tycho-celchu-nr.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 19,
+    aliases = {"Tycho Celchu - X-wing Squadron (NR) [Legends]"}
+})
+
+Squadron:new(ewing, NR_L_SQUAD, {
+	name = "E-wing Squadron (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/base_diffuse.jpg",
+    cost = 15,
+    aliases = {'E-wing Squadron (NR) [Legends]'}
+})
+Squadron:new(ewing, NR_L_SQUAD, {
+	name = "Corran Horn (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/corran-horn-nr.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
+        mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 24,
+    aliases = {"Corran Horn - E-wing Squadron (NR) [Legends]"}
+})
+Squadron:new(ewing, NR_L_SQUAD, {
+	name = "Gavin Darklighter (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/gavin-darklighter.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
+        mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 22,
+    aliases = {"Gavin Darklighter - E-wing Squadron (NR) [Legends]"}
+})
+
+Squadron:new(bwing, NR_L_SQUAD, {
+	name = "B-wing Squadron (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/base_diffuse.jpg",
+    cost = 14,
+    aliases = {'B-wing Squadron (NR) [Legends]'}
+})
+
+Squadron:new(awing, NR_L_SQUAD, {
+	name = "A-wing Squadron (NR)",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/awing.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/base_diffuse.jpg",
+    cost = 11,
+    aliases = {'A-wing Squadron (NR) [Legends]'}
+})
 
 ----proxy ships/squadrons
     PROXY_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
@@ -6557,7 +6728,8 @@ Rebel_L = { factions = { "!Rebellion" } }
 Republic_L = { factions = { "!Republic" } }
 Separatist_L = { factions = { "!Separatist" } }
 CloneWars_L = { factions = { "!Republic", "!Separatist" } }
-Scum_L = { factions = { "!Scum" } }
+Scum_L = { factions = { "Scum" } }
+NR_L = { factions = { "New Republic" } }
 
 UNSC = { factions = { "UNSC" } }
 Covenant = { factions = { "Covenant" } }
@@ -6609,7 +6781,7 @@ Card:new(OffensiveRetrofit, Separatist_L,
     { name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/offretro/ext-droid-storage.jpg", cost = 4, aliases = { "External Droid Storage [Legends]" } })
 Card:new(OffensiveRetrofit, Republic_L,
     { name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
-
+--02-2024 dev cycle
 
     ----non-approved
 Card:new(Title, Empire,
@@ -6624,6 +6796,15 @@ Card:new(Title, Separatist,
     { name = "Reaver", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_reaver.jpg", cost = 5, aliases = { "Reaver [Legends]" } })
 Card:new(Title, Separatist,
     { name = "Parting Handshake", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_parthand.jpg", cost = 5, aliases = { "Parting Handshake [Legends]" } })
+
+----Scum Upgrades
+
+----New Republic Upgrades
+Card:new(Commander, NR_L,{ name = "Admiral Ackbar (NR)", front = CUSTOM_ASSETS .. "cards/.nr/admiral-ackbar-nr.jpg", cost = 38, aliases = { "Admiral Ackbar [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Etahn A'baht (NR)", front = CUSTOM_ASSETS .. "cards/.nr/etahn-abaht.jpg", cost = 28, aliases = { "Etahn A'baht [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Garm Bel Iblis (NR)", front = CUSTOM_ASSETS .. "cards/.nr/garm-nr.jpg", cost = 30, aliases = { "Garm Bel Iblis [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Wedge Antilles (NR)", front = CUSTOM_ASSETS .. "cards/.nr/wedge-antilles-commander.jpg", cost = 30, aliases = { "Wedge Antilles [Legends]" } })
+Card:new(Officer, NR_L,{ name = "Areta Bell (NR)", front = CUSTOM_ASSETS .. "cards/.nr/areta-bell.jpg", cost = 6, aliases = { "Areta Bell [Legends]" } })
 
 
 -- Halo Legends Upgrades
