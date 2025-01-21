@@ -2338,14 +2338,14 @@ Ship:new(SmallShip,REBEL_SHIP,{
 
 Ship:new(MediumShip,REBEL_SHIP,{
 	name = "Assault Frigate Mark II A",
-    front =     ASSETS_ROOT.."ships/rebel/afm2/A_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/afm2a.jpg",
     mesh =      ASSETS_ROOT.."ships/rebel/afm2/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/afm2/A_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/afm2/ruler.obj",
     maneuver = {{"I"},{"I","I"},{"-","I","I"}},
     defense_tokens = {DEF_EVADE, DEF_BRACE, DEF_REDIRECT},
     shields = {4,3,3,2},
-    cost = 81,
+    cost = 77,
     aliases = {"Assault Frigate Mk.II A","Assault Frigate MkII A","Assault Frigate Mk2 A"},
     command = 3
 })
@@ -2364,26 +2364,26 @@ Ship:new(MediumShip,REBEL_SHIP,{
 })
 Ship:new(LargeShip,REBEL_SHIP,{
 	name = "MC80 Command Cruiser",
-    front =     ASSETS_ROOT.."ships/rebel/mc80/command_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/mc80-command.jpg",
     mesh =      ASSETS_ROOT.."ships/rebel/mc80/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/mc80/command_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/mc80/ruler.obj",
     maneuver = {{"I"},{"I","I"}},
     defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_CONTAIN},
     shields = {4,4,4,3},
-    cost = 106,
+    cost = 102,
     command = 3
 })
 Ship:new(LargeShip,REBEL_SHIP,{
 	name = "MC80 Assault Cruiser",
-    front =     ASSETS_ROOT.."ships/rebel/mc80/assault_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/mc80-assault.jpg",
     mesh =      ASSETS_ROOT.."ships/rebel/mc80/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/mc80/assault_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/mc80/ruler.obj",
     maneuver = {{"I"},{"I","I"}},
     defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_CONTAIN},
     shields = {4,4,4,3},
-    cost = 114,
+    cost = 110,
     aliases = {},
     command = 3
 })
@@ -2415,27 +2415,27 @@ Ship:new(LargeShip,REBEL_SHIP,{
 })
 Ship:new(LargeShip,REBEL_SHIP,{
 	name = "MC75 Ordnance Cruiser",
-    front =     ASSETS_ROOT.."ships/rebel/mc75/ordnance_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/mc75-ord.jpg",
     mesh =      ASSETS_ROOT.."ships/rebel/mc75/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/mc75/ordnance_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/mc75/ruler.obj",
     maneuver = {{"II"},{"I","I"},{"-","I","I"}},
     defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_CONTAIN},
     shields = {4,3,3,3},
-    cost = 100,
+    cost = 95,
     aliases = {},
     command = 3
 })
 Ship:new(LargeShip,REBEL_SHIP,{
 	name = "MC75 Armored Cruiser",
-    front =     ASSETS_ROOT.."ships/rebel/mc75/armored_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/mc75-armored.jpg",
     mesh =      ASSETS_ROOT.."ships/rebel/mc75/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/mc75/armored_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/mc75/ruler.obj",
     maneuver = {{"II"},{"I","I"},{"-","I","I"}},
     defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_CONTAIN},
     shields = {4,3,3,3},
-    cost = 104,
+    cost = 99,
     aliases = {},
     command = 3
 })
@@ -2501,7 +2501,7 @@ Ship:new(SmallShip,EMPIRE_SHIP,{
 })
 Ship:new(SmallShip,EMPIRE_SHIP,{
 	name = "Gozanti-class Assault Carriers",
-    front =     ASSETS_ROOT.."ships/empire/gozanti/assault_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/gozanti-assault.jpg",
     mesh =      ASSETS_ROOT.."ships/empire/gozanti/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/empire/gozanti/assault_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/gozanti/ruler.obj",
@@ -2579,14 +2579,14 @@ Ship:new(SmallShip,EMPIRE_SHIP,{
 })
 Ship:new(SmallShip,EMPIRE_SHIP,{
 	name = "Arquitens-class Command Cruiser",
-    front =     ASSETS_ROOT.."ships/empire/arquitens/command_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/arq-command.jpg",
     mesh =      ASSETS_ROOT.."ships/empire/arquitens/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/empire/arquitens/command_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/arquitens/ruler.obj",
     maneuver = {{"II"},{"-","II"},{"-","-","II"}},
     defense_tokens = {DEF_EVADE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
     shields = {2,2,2,2},
-    cost = 59,
+    cost = 55,
     aliases = {"Arquitens Command Cruiser"},
     command = 2
     --maneuver = "II|-,II|-,-,II"
@@ -2606,14 +2606,14 @@ Ship:new(MediumShip,EMPIRE_SHIP,{
 })
 Ship:new(MediumShip,EMPIRE_SHIP,{
 	name = "Victory II-class Star Destroyer",
-    front =     ASSETS_ROOT.."ships/empire/victory/II_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/victory2.jpg",
     mesh =      CUSTOM_ASSETS.."ships/empire/victory_update/mesh.obj",
     diffuse =   CUSTOM_ASSETS.."ships/empire/victory_update/II_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/victory/ruler.obj",
     maneuver = {{"I"},{"-","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_REDIRECT},
     shields = {3,3,3,1},
-    cost = 85,
+    cost = 80,
     aliases = {"Victory II Star Destroyer","Victory II", "VSD II", "VSD 2"},
     command = 3
 })
@@ -2842,10 +2842,10 @@ Squadron:new(bwing, REBEL_SQUAD, {
 })
 Squadron:new(bwing, REBEL_SQUAD, {
 	name = "Keyan Farlander",
-    front =     ASSETS_ROOT.."squadrons/rebel/bwing/keyan_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/keyan-bwing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 20,
+    cost = 18,
     aliases = {'Keyan Farlander - B-Wing Squadron'}
 })
 Squadron:new(bwing, REBEL_SQUAD, {
@@ -2975,7 +2975,7 @@ Squadron:new(xwing, REBEL_SQUAD, {
 })
 Squadron:new(xwing, REBEL_SQUAD, {
 	name = "Hera Syndulla",
-    front =     ASSETS_ROOT.."squadrons/rebel/xwing/hera_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/hera-xwing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/xwing/bo_do_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -3034,7 +3034,7 @@ Squadron:new(yt1300, REBEL_SQUAD, {
 })
 Squadron:new(yt1300, REBEL_SQUAD, {
 	name = "Han Solo",
-    front =     ASSETS_ROOT.."squadrons/rebel/yt1300/han_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/solo-falcon.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/yt1300/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
     move = 3,
@@ -3044,12 +3044,12 @@ Squadron:new(yt1300, REBEL_SQUAD, {
 })
 Squadron:new(yt1300, REBEL_SQUAD, {
 	name = "Lando Calrissian",
-    front =     ASSETS_ROOT.."squadrons/rebel/yt1300/lando_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/lando-falcon.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/yt1300/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
     move = 3,
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 23,
+    cost = 24,
     aliases = {"Lando Calrissian - Millennium Falcon"}
 })
 hwk = {
@@ -3103,11 +3103,11 @@ Squadron:new(scurrg, REBEL_SQUAD, {
 })
 Squadron:new(scurrg, REBEL_SQUAD, {
 	name = "Malee Hurra",
-    front =     ASSETS_ROOT.."squadrons/rebel/scurrg/malee_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/malee-scurrg.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/scurrg/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/scurrg/bo_gr_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 26,
+    cost = 21,
     aliases = {"Malee Hurra - Scurrg H-6 Bomber"}
 })
 z95 = {
@@ -3137,9 +3137,9 @@ ewing = {
     defense_tokens = {}}
 Squadron:new(ewing, REBEL_SQUAD, {
 	name = "E-wing Squadron",
-    front =     ASSETS_ROOT.."squadrons/rebel/ewing/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/ewing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/base_diffuse.jpg",
-    cost = 15,
+    cost = 14,
     aliases = {'E-wing Squadrons', "E-wing"}
 })
 Squadron:new(ewing, REBEL_SQUAD, {
@@ -3179,9 +3179,9 @@ lancer = {
     defense_tokens = {}}
 Squadron:new(lancer, REBEL_SQUAD, {
 	name = "Lancer-class Pursuit Craft",
-    front =     ASSETS_ROOT.."squadrons/rebel/lancer/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/lancer.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/lancer/base_diffuse.jpg",
-    cost = 15,
+    cost = 14,
     aliases = {"Lancer Pursuit Craft","Lancer Pursuit Crafts","Lancer-class Pursuit Crafts","Lancer"}
 })
 Squadron:new(lancer, REBEL_SQUAD, {
@@ -3388,10 +3388,10 @@ Squadron:new(firespray, EMPIRE_SQUAD, {
 })
 Squadron:new(firespray, EMPIRE_SQUAD, {
 	name = "Boba Fett",
-    front =     ASSETS_ROOT.."squadrons/empire/firespray/fett_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/bobafett.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 26,
+    cost = 24,
     aliases = {"Boba Fett - Slave I"}
 })
 Squadron:new(firespray, EMPIRE_SQUAD, {
@@ -3440,21 +3440,21 @@ Squadron:new(aggressor, EMPIRE_SQUAD, {
 	name = "Aggressor Assault Fighter",
     front =     ASSETS_ROOT.."squadrons/empire/aggressor/base_card.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/base_diffuse.jpg",
-    cost = 16,
+    cost = 15,
     aliases = {"Aggressor Assault Fighters"}
 })
 Squadron:new(aggressor, EMPIRE_SQUAD, {
 	name = "IG-88",
-    front =     ASSETS_ROOT.."squadrons/empire/aggressor/ig88_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/ig88-2000.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/ace_diffuse.jpg",
     move = 5,
     defense_tokens = {DEF_SCATTER},
-    cost = 21,
+    cost = 19,
     aliases = {"IG-88 - IG-2000"}
 })
 Squadron:new(aggressor, EMPIRE_SQUAD, {
 	name = "IG-88B",
-    front =     ASSETS_ROOT.."squadrons/empire/aggressor/ig88b_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/ig88b-2000b.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/ace_diffuse.jpg",
     move = 5,
     defense_tokens = {DEF_SCATTER},
@@ -3507,10 +3507,10 @@ Squadron:new(phantom, EMPIRE_SQUAD, {
 })
 Squadron:new(phantom, EMPIRE_SQUAD, {
 	name = '"Whisper"',
-    front =     ASSETS_ROOT.."squadrons/empire/pha/whisper_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/whisper-tiephan.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/pha/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
-    cost = 20,
+    cost = 18,
     aliases = {"Whisper","Whisper - TIE Phantom Squadron"}
 })
 defender = {
@@ -3557,11 +3557,11 @@ Squadron:new(lambda, EMPIRE_SQUAD, {
 })
 Squadron:new(lambda, EMPIRE_SQUAD, {
 	name = 'Colonel Jendon',
-    front =     ASSETS_ROOT.."squadrons/empire/lambda/jendon_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/jendon.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/lambda/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/lambda/he_re_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 20,
+    cost = 23,
     aliases = {"Colonel Jendon - Lambda-class Shuttle"}
 })
 decimator = {
@@ -3592,17 +3592,17 @@ gauntlet = {
     defense_tokens = {}}
 Squadron:new(gauntlet, EMPIRE_SQUAD, {
 	name = 'Mandalorian Gauntlet Fighter',
-    front =     ASSETS_ROOT.."squadrons/empire/guantlet/base_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/mando-gaunt.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/guantlet/base_diffuse.jpg",
-    cost = 20,
+    cost = 18,
     aliases = {'Mandalorian Gauntlet Fighters'}
 })
 Squadron:new(gauntlet, EMPIRE_SQUAD, {
 	name = 'Gar Saxon',
-    front =     ASSETS_ROOT.."squadrons/empire/guantlet/saxon_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/saxon.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/empire/guantlet/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE},
-    cost = 23,
+    cost = 20,
     aliases = {"Gar Saxon - Mandalorian Gauntlet Fighter"}
 })
 
@@ -3633,7 +3633,7 @@ Ship:new(SmallShip,REPUBLIC_SHIP,{
 })
 Ship:new(SmallShip,REPUBLIC_SHIP,{
 	name = "Consular-class Charger c70",
-    front =     CUSTOM_ASSETS.."ships/republic/consular/charger_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/con-c70.jpg",
     -- back =      ASSETS_ROOT.."ships/republic/consular/armed_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/republic/consular/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/republic/consular/charger_diffuse.jpg",
@@ -3648,7 +3648,7 @@ Ship:new(SmallShip,REPUBLIC_SHIP,{
 
 Ship:new(MediumShip,REPUBLIC_SHIP,{
 	name = "Acclamator I-class Assault Ship",
-    front =     ASSETS_ROOT.."ships/republic/acclamator/I_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/acclam1.jpg",
     -- back =      ASSETS_ROOT.."ships/republic/acclamator/I_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/republic/acclamator/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/republic/acclamator/I_diffuse.jpg",
@@ -3737,7 +3737,7 @@ Ship:new(SmallShip,REPUBLIC_SHIP,{
 })
 Ship:new(MediumShip,REPUBLIC_SHIP,{
 	name = "Victory I-class Star Destroyer",
-    front =     ASSETS_ROOT.."ships/republic/victory/I_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/vic1-gar.jpg",
     -- back =      ASSETS_ROOT.."ships/republic/victory/I_card_orig_back.jpg",
     mesh =      CUSTOM_ASSETS.."ships/empire/victory_update/mesh.obj",
     diffuse =   CUSTOM_ASSETS.."ships/republic/victory/I_diffuse_GAR.jpg",
@@ -3758,7 +3758,7 @@ SEPARATIST_SHIP = {
 }
 Ship:new(SmallShip,SEPARATIST_SHIP,{
 	name = "Hardcell-class Transport",
-    front =     ASSETS_ROOT.."ships/separatist/hardcell/transport_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/hardcell-battle.jpg",
     -- back =      ASSETS_ROOT.."ships/separatist/hardcell/transport_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/hardcell/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/hardcell/transport_diffuse.jpg",
@@ -3845,7 +3845,7 @@ Ship:new(LargeShip,SEPARATIST_SHIP,{
 
 Ship:new(LargeShip,SEPARATIST_SHIP,{
 	name = "Providence-class Carrier",
-    front =     ASSETS_ROOT.."ships/separatist/providence/carrier_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/prov-carrier.jpg",
     -- back =      ASSETS_ROOT.."ships/separatist/providence/carrier_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/providence/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/providence/carrier_diffuse.jpg",
@@ -3860,7 +3860,7 @@ Ship:new(LargeShip,SEPARATIST_SHIP,{
 
 Ship:new(LargeShip,SEPARATIST_SHIP,{
 	name = "Providence-class Dreadnought",
-    front =     ASSETS_ROOT.."ships/separatist/providence/dreadnought_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/prov-dread.jpg",
     -- back =      ASSETS_ROOT.."ships/separatist/providence/dreadnought_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/providence/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/providence/dreadnought_diffuse.jpg",
@@ -3874,7 +3874,7 @@ Ship:new(LargeShip,SEPARATIST_SHIP,{
 })
 Ship:new(SmallShip,SEPARATIST_SHIP,{
 	name = "Gozanti-class Cruisers",
-    front =     ASSETS_ROOT.."ships/separatist/gozanti/cruiser_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/gozanti-cis.jpg",
     -- back =      ASSETS_ROOT.."ships/separatist/gozanti/cruiser_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/gozanti/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/gozanti/cruiser_diffuse.jpg",
@@ -3965,11 +3965,11 @@ Squadron:new(delta, REPUBLIC_SQUAD, {
 -- Adept, Counter, Intel
 Squadron:new(delta, REPUBLIC_SQUAD, {
 	name = "Kit Fisto",
-    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/kit-fisto-delta-7-aethersprite-squadron.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/fisto-delta7.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/delta/kit_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/delta/ad_co_in_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 26,
+    cost = 24,
     aliases = {"Kit Fisto - Delta-7 Aethersprite Squadron"}
 })
 -- Adept, Counter
@@ -4009,11 +4009,11 @@ Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 -- Adept, Bomber, Heavy
 Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 	name = "Anakin Skywalker",
-    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/anakin-skywalker-btl-b-y-wing-squadron.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/anakin-ywing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/ywing/ad_bo_he_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 19,
+    cost = 18,
     aliases = {"Anakin Skywalker - BTL-B Y-Wing Squadron",'Anakin Skywalker (BTL-B)'}
 })
 -- Bomber, Heavy
@@ -4042,10 +4042,10 @@ Squadron:new(arc, REPUBLIC_SQUAD, {
 -- Bomber, Counter
 Squadron:new(arc, REPUBLIC_SQUAD, {
 	name = '\"Odd Ball\"',
-    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/oddball-arc170-starfighter-squadron.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/oddball-arc.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/republic/arc/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
-    cost = 23,
+    cost = 20,
     aliases = {"Odd Ball - ARC-170 Starfighter Squadron","Odd Ball", "Oddball"}
 })
 
@@ -4080,9 +4080,9 @@ Squadron:new(vulture, SEPARATIST_SQUAD, {
 -- AI: Anti-Squadron, Swarm, Intel
 Squadron:new(vulture, SEPARATIST_SQUAD, {
 	name = "DFS-311",
-    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/dfs-311-vulture-droid-squadron.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/dfs-vulture.jpg",
     mesh =      ASSETS_ROOT.."squadrons/separatist/vulture/ai_in_sw_model.obj",
-    cost = 18,
+    cost = 16,
     aliases = {"DFS-311 - Vulture-class Droid Fighter Squadron"}
 })
 
@@ -4135,8 +4135,8 @@ tri.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 --  Counter, Swarm, AI:Anti-squadron
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "Phlac-Arphocc Prototypes",
-    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/phlac-arphocc-droid-tri-fighter-squadron.jpg",
-    cost = 19,
+    front =     CUSTOM_ASSETS.."cards/.amg2025/phlac-tri.jpg",
+    cost = 18,
     aliases = {"Phlac-Arphocc Prototype - Droid Tri-Fighter Squadron","Phlac-Arphocc Prototypes - Droid Tri-Fighter Squadron"}
 })
 --  Counter, Swarm, AI:Anti-squadron, snipe 3
@@ -6236,56 +6236,56 @@ Rebel = {
     factions={"Rebellion"}
 }
 Card:new(Commander,Rebel,{name="Admiral Ackbar",  front="http://i.imgur.com/HFVv48K.jpg", cost=38})
-Card:new(Commander,Rebel,{name="Admiral Raddus",  front="http://i.imgur.com/2IPtau4.jpg", cost=26})
-Card:new(Commander,Rebel,{name="Commander Sato",  front="http://i.imgur.com/ir6QixK.jpg", cost=27})
-Card:new(Commander,Rebel,{name="Garm Bel Iblis",  front="http://i.imgur.com/fmlXop3.jpg", cost=25})
+Card:new(Commander,Rebel,{name="Admiral Raddus",  front=CUSTOM_ASSETS.."cards/.amg2025/raddus.jpg", cost=26})
+Card:new(Commander,Rebel,{name="Commander Sato",  front=CUSTOM_ASSETS.."cards/.amg2025/sato.jpg", cost=27})
+Card:new(Commander,Rebel,{name="Garm Bel Iblis",  front=CUSTOM_ASSETS.."cards/.amg2025/garm-commander.jpg", cost=25})
 Card:new(Commander,Rebel,{name="General Cracken",  front="http://i.imgur.com/0NHwrEL.jpg", cost=26})
 Card:new(Commander,Rebel,{name="General Dodonna",  front="http://i.imgur.com/MsS9AN8.jpg", cost=20})
-Card:new(Commander,Rebel,{name="General Madine",  front="http://i.imgur.com/ePeK8Ok.jpg", cost=30})
-Card:new(Commander,Rebel,{name="General Rieekan",  front="http://i.imgur.com/Q6pSiLj.jpg", cost=34})
-Card:new(Commander,Rebel,{name="Kyrsta Agate",  front=CUSTOM_ASSETS.."cards/commander/kyrsta_agate_v2_1.jpg", cost=25})
-Card:new(Commander,Rebel,{name="Leia Organa",  front="http://i.imgur.com/Xsqh5f0.jpg", cost=28})
-Card:new(Commander,Rebel,{name="Mon Mothma",  front="http://i.imgur.com/ZK3rQeb.jpg", cost=27})
-Card:new(Commander,Rebel,{name="General Draven",  front=CUSTOM_ASSETS.."cards/commander/general_draven_v2_1.jpg", cost=28})
+Card:new(Commander,Rebel,{name="General Madine",  front=CUSTOM_ASSETS.."cards/.amg2025/madine.jpg", cost=30})
+Card:new(Commander,Rebel,{name="General Rieekan",  front=CUSTOM_ASSETS.."cards/.amg2025/rieekan-commander.jpg", cost=34})
+Card:new(Commander,Rebel,{name="Kyrsta Agate",  front=CUSTOM_ASSETS.."cards/.amg2025/agate-commander.jpg", cost=25})
+Card:new(Commander,Rebel,{name="Leia Organa",  front=CUSTOM_ASSETS.."cards/.amg2025/leia-commander.jpg", cost=28})
+Card:new(Commander,Rebel,{name="Mon Mothma",  front=CUSTOM_ASSETS.."cards/.amg2025/mon-mothma.jpg", cost=27})
+Card:new(Commander,Rebel,{name="General Draven",  front=CUSTOM_ASSETS.."cards/.amg2025/draven-commander.jpg", cost=20})
 
 Empire = {
     factions={"Empire"}
 }
 --imperial
-Card:new(Commander,Empire,{name="Admiral Konstantine",  front="http://i.imgur.com/ONoTDBL.jpg", cost=23})
+Card:new(Commander,Empire,{name="Admiral Konstantine",  front=CUSTOM_ASSETS.."cards/.amg2025/kosnt.jpg", cost=23})
 Card:new(Commander,Empire,{name="Admiral Motti",  front="http://i.imgur.com/rkMe17G.jpg", cost=24})
 Card:new(Commander,Empire,{name="Admiral Ozzel",  front="http://i.imgur.com/v0nThwx.jpg", cost=20})
 Card:new(Commander,Empire,{name="Admiral Piett",  front="http://i.imgur.com/2D3DgQS.jpg", cost=22})
-Card:new(Commander,Empire,{name="Admiral Screed",  front="http://i.imgur.com/DUToctV.jpg", cost=26})
+Card:new(Commander,Empire,{name="Admiral Screed",  front=CUSTOM_ASSETS.."cards/.amg2025/screed.jpg", cost=24})
 Card:new(Commander,Empire,{name="Admiral Sloane",  front="http://i.imgur.com/rzZtf8B.jpg", cost=24})
-Card:new(Commander,Empire,{name="Darth Vader",  front="http://i.imgur.com/ysyfpEF.jpg", cost=36})
+Card:new(Commander,Empire,{name="Darth Vader",  front=CUSTOM_ASSETS.."cards/.amg2025/vader-commander.jpg", cost=34})
 Card:new(Commander,Empire,{name="Emperor Palpatine",  front="http://i.imgur.com/KBY36Qs.jpg", cost=35})
 Card:new(Commander,Empire,{name="General Romodi",  front=CUSTOM_ASSETS.."cards/commander/general_romodi_v2_1.jpg", cost=28})
-Card:new(Commander,Empire,{name="General Tagge",  front="http://i.imgur.com/LduHiR8.jpg", cost=25})
-Card:new(Commander,Empire,{name="Grand Admiral Thrawn",  front="http://i.imgur.com/FSpE1gl.jpg", cost=32})
-Card:new(Commander,Empire,{name="Grand Moff Tarkin",  front="http://i.imgur.com/OxvHWmA.jpg", cost=28})
-Card:new(Commander,Empire,{name="Moff Jerjerrod",  front="http://i.imgur.com/qZAVH6a.jpg", cost=23})
+Card:new(Commander,Empire,{name="General Tagge",  front=CUSTOM_ASSETS.."cards/.amg2025/tagge.jpg", cost=25})
+Card:new(Commander,Empire,{name="Grand Admiral Thrawn",  front=CUSTOM_ASSETS.."cards/.amg2025/thrawn-commander.jpg", cost=32})
+Card:new(Commander,Empire,{name="Grand Moff Tarkin",  front=CUSTOM_ASSETS.."cards/.amg2025/tarkin-commander.jpg", cost=28})
+Card:new(Commander,Empire,{name="Moff Jerjerrod",  front=CUSTOM_ASSETS.."cards/.amg2025/jerjerrod-commander.jpg", cost=23})
 
 Republic = {
     factions={"Republic"}
 }
 --republic
 Card:new(Commander,Republic,{name="Bail Organa",  front="https://i.imgur.com/SBYa2yD.jpeg", cost=28})
-Card:new(Commander,Republic,{name="Obi-Wan Kenobi",  front="https://i.imgur.com/xkfBnRw.jpeg", cost=28, aliases = {"Obi Wan Kenobi"}})
+Card:new(Commander,Republic,{name="Obi-Wan Kenobi",  front=CUSTOM_ASSETS.."cards/.amg2025/obi-wan-commander.jpg", cost=22, aliases = {"Obi Wan Kenobi"}})
 Card:new(Commander,Republic,{name="Luminara Unduli",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/luminara-unduli-commander.jpg", cost=25})
 Card:new(Commander,Republic,{name="Admiral Tarkin",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-tarkin-commander.jpg", cost=30})
 Card:new(Commander,Republic,{name="Admiral Yularen", front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-yularen-commander.jpg", cost=24})
 Card:new(Commander,Republic,{name="Plo Koon", front=CUSTOM_ASSETS.."cards/.updated/upgrades/plo-koon-commander.jpg", cost=26})
-Card:new(Commander,Republic,{name="Anakin Skywalker",  front=CUSTOM_ASSETS.."cards/commander/anakin_skywalker_v2_1.jpg", cost=31})
+Card:new(Commander,Republic,{name="Anakin Skywalker",  front=CUSTOM_ASSETS.."cards/.amg2025/anakin-commander.jpg", cost=27})
 
 Separatist = {
     factions={"Separatist"}
 }
 --separatist
-Card:new(Commander,Separatist,{name="Count Dooku",  front="https://i.imgur.com/YOm4LIi.jpeg", cost=30})
+Card:new(Commander,Separatist,{name="Count Dooku",  front=CUSTOM_ASSETS.."cards/.amg2025/dooku-commander.jpg", cost=27})
 Card:new(Commander,Separatist,{name="Kraken",  front="https://i.imgur.com/zLNsrOo.jpeg", cost=30})
 Card:new(Commander,Separatist,{name="General Grievous",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/general-grievous-commander.jpg", cost=20})
-Card:new(Commander,Separatist,{name="Admiral Trench", front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-trench-commander.jpg", cost=36})
+Card:new(Commander,Separatist,{name="Admiral Trench", front=CUSTOM_ASSETS.."cards/.amg2025/trench.jpg", cost=32})
 Card:new(Commander,Separatist,{name="Mar Tuuk", front=CUSTOM_ASSETS.."cards/.updated/upgrades/mar-tuuk-commander.jpg", cost=28})
 Card:new(Commander,Separatist,{name="TF-1726", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tf-1726-commander.jpg", cost=26})
 
@@ -6303,7 +6303,7 @@ Card:new(DefensiveRetrofit,CloneWars,{name="Thermal Shields", front=CUSTOM_ASSET
 Card:new(DefensiveRetrofit,{name="Advanced Projectors", front="https://i.imgur.com/fREeP77.jpg", cost=6})
 Card:new(DefensiveRetrofit,{name="Cluster Bombs", front="https://i.imgur.com/Ngqc1s9.jpg", cost=5})
 Card:new(DefensiveRetrofit,{name="Early Warning System", front="https://i.imgur.com/PBh5gdb.jpg", cost=7})
-Card:new(DefensiveRetrofit,{name="Electronic Countermeasures", front="https://i.imgur.com/LF2AEZT.jpg", cost=7})
+Card:new(DefensiveRetrofit,{name="Electronic Countermeasures", front=CUSTOM_ASSETS.."cards/.amg2025/ecm.jpg", cost=7})
 Card:new(DefensiveRetrofit,{name="Reactive Gunnery", front="https://i.imgur.com/rKp36un.jpg", cost=4})
 Card:new(DefensiveRetrofit,{name="Redundant Shields", front="https://i.imgur.com/3CmOh4B.jpg", cost=8})
 Card:new(DefensiveRetrofit,{name="Reinforced Blast Doors", front="https://i.imgur.com/OVWDAVK.jpg", cost=5})
@@ -6316,7 +6316,7 @@ ExperimentalRetrofit = {
 }
 Card:new(ExperimentalRetrofit,{name="G-8 Experimental Projector", front="https://i.imgur.com/DUzGkon.jpg", cost=8})
 Card:new(ExperimentalRetrofit,{name="G7-X Grav Well Projector", front="https://i.imgur.com/BaMEJzl.jpg", cost=2})
-Card:new(ExperimentalRetrofit,{name="Grav Shift Reroute", front="https://i.imgur.com/QipiGSD.jpg", cost=2})
+Card:new(ExperimentalRetrofit,{name="Grav Shift Reroute", front=CUSTOM_ASSETS.."cards/.amg2025/gsr.jpg", cost=2})
 Card:new(ExperimentalRetrofit,{name="Targeting Scrambler", front="https://i.imgur.com/KoUrM8N.jpg", cost=5})
 
 ----#include defs/cards/experimental_retrofit
@@ -6334,7 +6334,7 @@ Card:new(FleetCommand,{name="Intensify Firepower!", front="https://i.imgur.com/X
 Card:new(FleetCommand,{name="Shields to Maximum!", front="https://i.imgur.com/2I3JN7G.jpg", cost=6})
 Card:new(FleetCommand,{name="Take Evasive Action!", front="https://i.imgur.com/Grqrp2Y.jpg", cost=6})
 
-Card:new(FleetCommand,Republic,{name="Mercy Mission", front=CUSTOM_ASSETS.."cards/.updated/upgrades/mercy-mission.jpg", cost=0})
+Card:new(FleetCommand,Republic,{name="Mercy Mission", front=CUSTOM_ASSETS.."cards/.amg2025/mercy-mission.jpg", cost=5})
 Card:new(FleetCommand,Separatist,{name="Jedi Hostage", front="https://i.imgur.com/rtdHtYX.png", cost=3})
 Card:new(FleetCommand,CloneWars,{name="Hot Landing", front=CUSTOM_ASSETS.."cards/.updated/upgrades/hot-landing.jpg", cost=3})
 
@@ -6344,13 +6344,13 @@ FleetSupport = {
     type="FleetSupport",
     back = CUSTOM_ASSETS.."cards/fleetsup/back.jpg"
 }
-Card:new(FleetSupport,{name="Bomber Command Center", front="https://i.imgur.com/slRsjXp.jpg", cost=8})
+Card:new(FleetSupport,{name="Bomber Command Center", front=CUSTOM_ASSETS.."cards/.amg2025/bcc.jpg", cost=8})
 Card:new(FleetSupport,{name="Comms Net", front="https://i.imgur.com/56EgYe9.jpg", cost=2})
-Card:new(FleetSupport,{name="Jamming Field", front="https://i.imgur.com/YjACVRj.jpg", cost=2})
+Card:new(FleetSupport,{name="Jamming Field", front=CUSTOM_ASSETS.."cards/.amg2025/jamming-field.jpg", cost=2})
 Card:new(FleetSupport,{name="Munitions Resupply", front="https://i.imgur.com/IEHG2uc.jpeg", cost=3})
 Card:new(FleetSupport,{name="Parts Resupply", front="https://i.imgur.com/trKTRFt.jpg", cost=3})
-Card:new(FleetSupport,{name="Repair Crews", front="https://i.imgur.com/sFnhtzi.jpg", cost=4})
-Card:new(FleetSupport,{name="Slicer Tools", front="https://i.imgur.com/f3pcTt5.jpg", cost=7})
+Card:new(FleetSupport,{name="Repair Crews", front=CUSTOM_ASSETS.."cards/.amg2025/repair-crews.jpg", cost=3})
+Card:new(FleetSupport,{name="Slicer Tools", front=CUSTOM_ASSETS.."cards/.amg2025/slicer-tools.jpg", cost=7})
 
 ----#include defs/cards/fleet_support
 ----#include defs/cards/ion_cannons
@@ -6358,15 +6358,15 @@ IonCannons = {
     type="IonCannons",
     back = CUSTOM_ASSETS.."cards/ion/back.jpg"
 }
-Card:new(IonCannons,{name="Heavy Ion Emplacements", front="https://i.imgur.com/S82y39J.jpg", cost=9})
-Card:new(IonCannons,{name="High-Capacity Ion Turbines", front="https://i.imgur.com/sNFD2X4.jpg", cost=8})
+Card:new(IonCannons,{name="Heavy Ion Emplacements", front=CUSTOM_ASSETS.."cards/.amg2025/hie.jpg", cost=9})
+Card:new(IonCannons,{name="High-Capacity Ion Turbines", front=CUSTOM_ASSETS.."cards/.amg2025/hcit.jpg", cost=6})
 Card:new(IonCannons,{name="Ion Cannon Batteries", front="https://i.imgur.com/ygkNbuk.jpg", cost=5})
-Card:new(IonCannons,{name="Leading Shots", front="https://i.imgur.com/0wvdKHN.jpg", cost=6})
+Card:new(IonCannons,{name="Leading Shots", front=CUSTOM_ASSETS.."cards/.amg2025/leading-shots.jpg", cost=5})
 Card:new(IonCannons,{name="MS-1 Ion Cannons", front="https://i.imgur.com/WJpPDTH.jpg", cost=2, aliases={"MS-1 Ion Cannon"}})
-Card:new(IonCannons,{name="NK-7 Ion Cannons", front="https://i.imgur.com/pw7KB1o.jpg", cost=10})
-Card:new(IonCannons,{name="Overload Pulse", front="https://i.imgur.com/93yRQdH.jpg", cost=8})
+Card:new(IonCannons,{name="NK-7 Ion Cannons", front=CUSTOM_ASSETS.."cards/.amg2025/nk7-ion.jpg", cost=6})
+Card:new(IonCannons,{name="Overload Pulse", front=CUSTOM_ASSETS.."cards/.amg2025/overload-pulse.jpg", cost=6})
 Card:new(IonCannons,{name="SW-7 Ion Batteries", front="https://i.imgur.com/rL77eki.jpg", cost=5})
-Card:new(IonCannons,{name="Point Defense Ion Cannons", front=CUSTOM_ASSETS.."cards/.updated/upgrades/point-defense-ion-cannons.jpg", cost=4})
+Card:new(IonCannons,{name="Point Defense Ion Cannons", front=CUSTOM_ASSETS.."cards/.amg2025/pdic.jpg", cost=6})
 
 ----#include defs/cards/ion_cannons
 ----#include defs/cards/offensive_retrofit
@@ -6393,8 +6393,8 @@ Card:new(OffensiveRetrofit,{name="Phylon Q7 Tractor Beams", front="https://i.img
 Card:new(OffensiveRetrofit,{name="Point-Defense Reroute", front="https://i.imgur.com/IAIYK4H.jpg", cost=5})
 Card:new(OffensiveRetrofit,{name="Proximity Mines", front="https://i.imgur.com/e93H1wf.jpg", cost=4})
 Card:new(OffensiveRetrofit,{name="Quad Laser Turrets", front="https://i.imgur.com/HKfQx0O.jpg", cost=5})
-Card:new(OffensiveRetrofit,{name="Rapid Launch Bays", front="https://i.imgur.com/PHiQ5fk.jpg", cost=6})
-Card:new(OffensiveRetrofit,{name="Reserve Hangar Deck", front="https://i.imgur.com/CuuMCQr.jpg", cost=3})
+Card:new(OffensiveRetrofit,{name="Rapid Launch Bays", front=CUSTOM_ASSETS.."cards/.amg2025/rlb.jpg", cost=6})
+Card:new(OffensiveRetrofit,{name="Reserve Hangar Deck", front=CUSTOM_ASSETS.."cards/.amg2025/rhd.jpg", cost=4})
 Card:new(OffensiveRetrofit,{name="Flak Guns", front=CUSTOM_ASSETS.."cards/.updated/upgrades/flak-guns.jpg", cost=3})
 
 ----#include defs/cards/offensive_retrofit
@@ -6426,14 +6426,14 @@ Card:new(Officer,Empire,{name="Admiral Montferrat", front="https://i.imgur.com/Y
 Card:new(Officer,Empire,{name="Admiral Ozzel", front="https://i.imgur.com/hPkP4Nf.jpeg", cost=2})
 Card:new(Officer,Empire,{name="Admiral Titus", front="https://i.imgur.com/Rm0hVoL.jpeg", cost=2})
 Card:new(Officer,Empire,{name="Agent Kallus", front="https://i.imgur.com/Wuz7UVA.jpeg", cost=3})
-Card:new(Officer,Empire,{name="Captain Brunson", front="https://i.imgur.com/KJFYNXO.jpg", cost=9})
+Card:new(Officer,Empire,{name="Captain Brunson", front=CUSTOM_ASSETS.."cards/.amg2025/brunson.jpg", cost=9})
 Card:new(Officer,Empire,{name="Captain Needa", front="https://i.imgur.com/qeUR8rK.jpeg", cost=2})
 Card:new(Officer,Empire,{name="Commandant Aresko", front="https://i.imgur.com/3md8wnE.jpeg", cost=7})
 Card:new(Officer,Empire,{name="Commander Beck", front="https://i.imgur.com/VPsl8a9.jpeg", cost=3})
 Card:new(Officer,Empire,{name="Commander Gherant", front="https://i.imgur.com/IAt9Puz.jpeg", cost=2})
 Card:new(Officer,Empire,{name="Commander Vanto", front="https://i.imgur.com/vyMS9Vl.jpeg", cost=7})
 Card:new(Officer,Empire,{name="Commander Woldar", front="https://i.imgur.com/nsUrWcO.jpeg", cost=4})
-Card:new(Officer,Empire,{name="Darth Vader", front="https://i.imgur.com/wUS7LNn.jpg", cost=1})
+Card:new(Officer,Empire,{name="Darth Vader", front=CUSTOM_ASSETS.."cards/.amg2025/vader-officer.jpg", cost=4})
 Card:new(Officer,Empire,{name="Director Isard", front="https://i.imgur.com/2OKtNz1.jpg", cost=3})
 Card:new(Officer,Empire,{name="Director Krennic", front="https://i.imgur.com/MWbTBAg.jpg", cost=8})
 Card:new(Officer,Empire,{name="Emperor Palpatine", front="https://i.imgur.com/SAJT8HA.jpg", cost=3})
@@ -6443,10 +6443,10 @@ Card:new(Officer,Empire,{name="Instructor Goran", front="https://i.imgur.com/Zpx
 Card:new(Officer,Empire,{name="Lira Wessex", front="https://i.imgur.com/A9ZQ2mz.jpg", cost=2})
 Card:new(Officer,Empire,{name="Minister Tua", front="https://i.imgur.com/oBLlFVB.jpg", cost=2})
 Card:new(Officer,Empire,{name="Reeva Demesne", front="https://i.imgur.com/hPWCUbI.jpg", cost=4})
-Card:new(Officer,Empire,{name="Taskmaster Grint", front="https://i.imgur.com/9U4hKcc.jpg", cost=5})
+Card:new(Officer,Empire,{name="Taskmaster Grint", front=CUSTOM_ASSETS.."cards/.amg2025/grint.jpg", cost=5})
 Card:new(Officer,Empire,{name="The Grand Inquisitor", front="https://i.imgur.com/xzcI49o.jpg", cost=4})
 Card:new(Officer,Empire,{name="Wulff Yularen", front="https://i.imgur.com/dvWsOm8.jpg", cost=7})
-Card:new(Officer,Empire,{name="Governor Pryce", front=ASSETS_ROOT.."cards/officer/governor_pryce.jpg", cost=7})
+Card:new(Officer,Empire,{name="Governor Pryce", front=CUSTOM_ASSETS.."cards/.amg2025/pryce.jpg", cost=6})
 
 --republic
 Card:new(Officer,Republic,{name="Clone Captain Zak", front="https://i.imgur.com/A1FePh3.jpeg", cost=5})
@@ -6454,23 +6454,23 @@ Card:new(Officer,Republic,{name="Clone Navigation Officer", front="https://i.img
 Card:new(Officer,Republic,{name="Barriss Offee", front="https://i.imgur.com/TK5hk9G.png", cost=6})
 Card:new(Officer,Republic,{name="Adi Gallia", front="https://i.imgur.com/NtfCKwG.jpeg", cost=3})
 Card:new(Officer,Republic,{name="Clone Captain Silver", front="https://i.imgur.com/VzHNQTY.jpg", cost=4})
-Card:new(Officer,Republic,{name="Clone Cmdr. Wolffe", front="https://i.imgur.com/pb3QjZp.jpg", cost=6})
+Card:new(Officer,Republic,{name="Clone Cmdr. Wolffe", front=CUSTOM_ASSETS.."cards/.amg2025/wolffe.jpg", cost=6})
 Card:new(Officer,Republic,{name="Ahsoka Tano", front="https://i.imgur.com/SVAWnrZ.jpeg", cost=6})
 
 --separatist
 Card:new(Officer,Separatist,{name="Rune Haako", front="https://i.imgur.com/aEgMSwp.jpg", cost=4})
-Card:new(Officer,Separatist,{name="Wat Tambor", front=ASSETS_ROOT.."cards/officer/wat_tambor_v2_1.jpg", cost=9})
+Card:new(Officer,Separatist,{name="Wat Tambor", front=CUSTOM_ASSETS.."cards/.amg2025/tambor-officer.jpg", cost=9})
 Card:new(Officer,Separatist,{name="T-Series Tactical Droid", front="https://i.imgur.com/8H1wATK.jpeg", cost=4})
 Card:new(Officer,Separatist,{name="Shu Mai", front=CUSTOM_ASSETS.."cards/.updated/upgrades/shu-mai-officer.jpg", cost=4})
 Card:new(Officer,Separatist,{name="TI-99", front=CUSTOM_ASSETS.."cards/.updated/upgrades/ti-99-officer.jpg", cost=4})
 Card:new(Officer,Separatist,{name="Tikkes", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tikkes-officer.jpg", cost=2})
-Card:new(Officer,Separatist,{name="San Hill", front=CUSTOM_ASSETS.."cards/.updated/upgrades/san-hill-officer.jpg", cost=3})
+Card:new(Officer,Separatist,{name="San Hill", front=CUSTOM_ASSETS.."cards/.amg2025/san-hill.jpg", cost=3})
 Card:new(Officer,Separatist,{name="Passel Argente", front=CUSTOM_ASSETS.."cards/.updated/upgrades/passel-argente-officer.jpg", cost=6})
-Card:new(Officer,Separatist,{name="Asajj Ventress", front=ASSETS_ROOT.."cards/officer/asajj_ventress_v2_1.jpg", cost=4})
+Card:new(Officer,Separatist,{name="Asajj Ventress", front=CUSTOM_ASSETS.."cards/.amg2025/ventress-officer.jpg", cost=2})
 
 --generic
 Card:new(Officer,{name="Chart Officer", front="https://i.imgur.com/HVWr1Ru.jpg", cost=2})
-Card:new(Officer,{name="Damage Control Officer", front="https://i.imgur.com/jsuMjsT.jpg", cost=5})
+Card:new(Officer,{name="Damage Control Officer", front=CUSTOM_ASSETS.."cards/.amg2025/dco.jpg", cost=3})
 Card:new(Officer,{name="Defense Liaison", front="https://i.imgur.com/FqhDYBp.jpg", cost=3})
 Card:new(Officer,{name="Engineering Captain", front="https://i.imgur.com/gOLEgHZ.jpg", cost=6})
 Card:new(Officer,{name="Expert Shield Tech", front="https://i.imgur.com/bB1tz0h.jpg", cost=5})
@@ -6480,9 +6480,9 @@ Card:new(Officer,{name="Intel Officer", front="https://i.imgur.com/VvdtHvv.jpg",
 Card:new(Officer,{name="Navigation Officer", front="https://i.imgur.com/VKrSVRL.jpg", cost=6})
 Card:new(Officer,{name="Skilled First Officer", front="https://i.imgur.com/6ipZf4i.jpg", cost=1})
 -- Card:new(Officer,{name="Strategic Adviser", front=""})
-Card:new(Officer,{name="Support Officer", front="https://i.imgur.com/fEdzGRr.jpg", cost=4})
+Card:new(Officer,{name="Support Officer", front=CUSTOM_ASSETS.."cards/.amg2025/support-officer.jpg", cost=2})
 Card:new(Officer,{name="Tactical Expert", front="https://i.imgur.com/aAvvHM6.jpg", cost=6})
-Card:new(Officer,{name="Veteran Captain", front="https://i.imgur.com/GCmA53j.jpg", cost=3})
+Card:new(Officer,{name="Veteran Captain", front=CUSTOM_ASSETS.."cards/.amg2025/veteran-captain.jpg", cost=2})
 Card:new(Officer,{name="Weapons Liaison", front="https://i.imgur.com/XxbObBi.jpg", cost=3})
 Card:new(Officer,{name="Wing Commander", front="https://i.imgur.com/FjHlkZC.jpg", cost=6})
 
@@ -6492,13 +6492,13 @@ Ordnance = {
     type="Ordnance",
     back = CUSTOM_ASSETS.."cards/ord/back.jpg"
 }
-Card:new(Ordnance,{name="Assault Concussion Missiles", front="https://i.imgur.com/iuWMfEx.jpg", cost=5})
-Card:new(Ordnance,{name="Assault Proton Torpedoes", front="https://i.imgur.com/ZHMQWZr.jpg", cost=4})
-Card:new(Ordnance,{name="Expanded Launchers", front="https://i.imgur.com/PrpF5Sh.jpg", cost=13})
-Card:new(Ordnance,{name="External Racks", front="https://i.imgur.com/0nzMm68.jpg", cost=4})
+Card:new(Ordnance,{name="Assault Concussion Missiles", front=CUSTOM_ASSETS.."cards/.amg2025/acm.jpg", cost=5})
+Card:new(Ordnance,{name="Assault Proton Torpedoes", front=CUSTOM_ASSETS.."cards/.amg2025/apt.jpg", cost=4})
+Card:new(Ordnance,{name="Expanded Launchers", front=CUSTOM_ASSETS.."cards/.amg2025/expanded-launchers.jpg", cost=8})
+Card:new(Ordnance,{name="External Racks", front=CUSTOM_ASSETS.."cards/.amg2025/external-racks.jpg", cost=4})
 Card:new(Ordnance,{name="Flechette Torpedoes", front="https://i.imgur.com/ENBODz0.jpg", cost=3})
 Card:new(Ordnance,{name="Ordnance Pods", front="https://i.imgur.com/bxshsaj.jpg", cost=3})
-Card:new(Ordnance,{name="Rapid Reload", front="https://i.imgur.com/gX8DdhB.jpg", cost=8})
+Card:new(Ordnance,{name="Rapid Reload", front=CUSTOM_ASSETS.."cards/.amg2025/rapid-reload.jpg", cost=4})
 Card:new(Ordnance,{name="Wide-Area Barrage", front="https://i.imgur.com/HA96Xmz.jpg", cost=2})
 
 ----#include defs/cards/ordnance
@@ -6521,12 +6521,12 @@ SupportTeam = {
 Card:new(SupportTeam,Separatist,{name="Battle Droid Reserves", front="https://i.imgur.com/ffhsdrO.jpeg", cost=4})
 
 --generic
-Card:new(SupportTeam,{name="Auxiliary Shields Team", front="https://i.imgur.com/SkNnm5P.jpg", cost=3})
-Card:new(SupportTeam,{name="Engine Techs", front="https://i.imgur.com/5oEvYoq.jpg", cost=8})
-Card:new(SupportTeam,{name="Engineering Team", front="https://i.imgur.com/ZmpFl4q.jpg", cost=5})
+Card:new(SupportTeam,{name="Auxiliary Shields Team", front=CUSTOM_ASSETS.."cards/.amg2025/ast.jpg", cost=3})
+Card:new(SupportTeam,{name="Engine Techs", front=CUSTOM_ASSETS.."cards/.amg2025/engine-techs.jpg", cost=8})
+Card:new(SupportTeam,{name="Engineering Team", front=CUSTOM_ASSETS.."cards/.amg2025/engineering-team.jpg", cost=3})
 Card:new(SupportTeam,{name="Fighter Coordination Team", front="https://i.imgur.com/wKI96Sb.jpg", cost=3})
 Card:new(SupportTeam,{name="Medical Team", front="https://i.imgur.com/jwf6kLG.jpg", cost=1})
-Card:new(SupportTeam,{name="Nav Team", front="https://i.imgur.com/GdjIeBj.jpg", cost=4})
+Card:new(SupportTeam,{name="Nav Team", front=CUSTOM_ASSETS.."cards/.amg2025/navteam.jpg", cost=4})
 Card:new(SupportTeam,{name="Projection Experts", front="https://i.imgur.com/0hPAHTI.jpg", cost=6})
 
 ----#include defs/cards/support_team
@@ -6539,8 +6539,8 @@ Title = {
 Card:new(Title,Rebel,{name="Bright Hope", front="https://i.imgur.com/ppRWBhH.jpg", cost=2})
 Card:new(Title,Rebel,{name="Quantum Storm", front="https://i.imgur.com/Zvki0aa.jpg", cost=1})
 
-Card:new(Title,Rebel,{name="Dodonna's Pride", front="https://i.imgur.com/XoROjrp.jpg", cost=6, aliases={"Dodonnas Pride"}})
-Card:new(Title,Rebel,{name="Jaina's Light", front="https://i.imgur.com/v5gczKg.jpg", cost=2, aliases={"Jainas Light"}})
+Card:new(Title,Rebel,{name="Dodonna's Pride", front=CUSTOM_ASSETS.."cards/.amg2025/dodonna-pride.jpg", cost=4, aliases={"Dodonnas Pride"}})
+Card:new(Title,Rebel,{name="Jaina's Light", front=CUSTOM_ASSETS.."cards/.amg2025/jainas-light.jpg", cost=5, aliases={"Jainas Light"}})
 Card:new(Title,Rebel,{name="Liberator", front="https://i.imgur.com/zPLLjv2.jpg", cost=2})
 Card:new(Title,Rebel,{name="Tantive IV", front="https://i.imgur.com/THWav9j.jpg", cost=3})
 
@@ -6548,26 +6548,26 @@ Card:new(Title,Rebel,{name="Garel's Honor", front="https://i.imgur.com/tl2VV0J.j
 Card:new(Title,Rebel,{name="Task Force Antilles", front="https://i.imgur.com/NWw9f29.jpg", cost=3})
 Card:new(Title,Rebel,{name="Task Force Organa", front="https://i.imgur.com/FwbIwpU.jpg", cost=1})
 
-Card:new(Title,Rebel,{name="Redemption", front="https://i.imgur.com/Dp0ayI3.jpg", cost=8})
+Card:new(Title,Rebel,{name="Redemption", front=CUSTOM_ASSETS.."cards/.amg2025/redemeption.jpg", cost=5})
 Card:new(Title,Rebel,{name="Salvation", front="https://i.imgur.com/xjIXfVD.jpg", cost=7})
 Card:new(Title,Rebel,{name="Vanguard", front="https://i.imgur.com/4a6la8P.jpg", cost=4})
-Card:new(Title,Rebel,{name="Yavaris", front="https://i.imgur.com/qtHU4B2.jpg", cost=5})
+Card:new(Title,Rebel,{name="Yavaris", front=CUSTOM_ASSETS.."cards/.amg2025/yavaris.jpg", cost=5})
 
 Card:new(Title,Rebel,{name="Phoenix Home", front="https://i.imgur.com/4pKVy0F.jpg", cost=3})
 
-Card:new(Title,Rebel,{name="Admonition", front="https://i.imgur.com/rRIV5mH.jpg", cost=6})
-Card:new(Title,Rebel,{name="Foresight", front="https://i.imgur.com/HpSit4j.jpg", cost=8})
+Card:new(Title,Rebel,{name="Admonition", front=CUSTOM_ASSETS.."cards/.amg2025/admonition.jpg", cost=10})
+Card:new(Title,Rebel,{name="Foresight", front=CUSTOM_ASSETS.."cards/.amg2025/foresight.jpg", cost=10})
 
-Card:new(Title,Rebel,{name="Gallant Haven", front="https://i.imgur.com/Foap6UL.jpg", cost=8})
+Card:new(Title,Rebel,{name="Gallant Haven", front=CUSTOM_ASSETS.."cards/.amg2025/gallant-haven.jpg", cost=8})
 Card:new(Title,Rebel,{name="Paragon", front="https://i.imgur.com/1lMOUvu.jpg", cost=5})
 
 Card:new(Title,Rebel,{name="Defiance", front="https://i.imgur.com/cBm6bOA.jpg", cost=5})
-Card:new(Title,Rebel,{name="Home One", front="https://i.imgur.com/ao1aUWd.jpg", cost=7})
+Card:new(Title,Rebel,{name="Home One", front=CUSTOM_ASSETS.."cards/.amg2025/homeone.jpg", cost=5})
 Card:new(Title,Rebel,{name="Independence", front="https://i.imgur.com/eeJ4K4e.jpg", cost=8})
 
 Card:new(Title,Rebel,{name="Endeavor", front="https://i.imgur.com/YQO9jve.jpg", cost=4})
 Card:new(Title,Rebel,{name="Liberty", front="https://i.imgur.com/gnoxT5J.jpg", cost=3})
-Card:new(Title,Rebel,{name="Mon Karren", front="https://i.imgur.com/JbMnQpC.jpg", cost=6})
+Card:new(Title,Rebel,{name="Mon Karren", front=CUSTOM_ASSETS.."cards/.amg2025/mon-karren.jpg", cost=6})
 
 Card:new(Title,Rebel,{name="Aspiration", front="https://i.imgur.com/O0n3gY9.jpg", cost=3})
 Card:new(Title,Rebel,{name="Profundity", front="https://i.imgur.com/P0LQ9NC.jpg", cost=7})
@@ -6586,17 +6586,17 @@ Card:new(Title,Empire,{name="Instigator", front="https://i.imgur.com/dht3fJ6.jpg
 Card:new(Title,Empire,{name="Corvus", front="https://i.imgur.com/huKZyhu.jpg", cost=2})
 
 Card:new(Title,Empire,{name="Centicore", front="https://i.imgur.com/y41PoZy.jpg", cost=3})
-Card:new(Title,Empire,{name="Hand of Justice", front="https://i.imgur.com/gfeIVpM.jpg", cost=4})
+Card:new(Title,Empire,{name="Hand of Justice", front=CUSTOM_ASSETS.."cards/.amg2025/handofjustice.jpg", cost=2})
 
-Card:new(Title,Empire,{name="Demolisher", front="https://i.imgur.com/lIICVGX.jpg", cost=10})
+Card:new(Title,Empire,{name="Demolisher", front=CUSTOM_ASSETS.."cards/.amg2025/demolisher.jpg", cost=10})
 Card:new(Title,Empire,{name="Insidious", front="https://i.imgur.com/lJU1Qr0.jpg", cost=3})
 
 Card:new(Title,Empire,{name="Pursuant", front="https://i.imgur.com/8971Me7.jpg", cost=2})
-Card:new(Title,Empire,{name="Squall", front="https://i.imgur.com/IPQVSGM.jpg", cost=3})
-Card:new(Title,Empire,{name="Stronghold", front="https://i.imgur.com/1UwT76i.jpg", cost=3})
+Card:new(Title,Empire,{name="Squall", front=CUSTOM_ASSETS.."cards/.amg2025/squall.jpg", cost=7})
+Card:new(Title,Empire,{name="Stronghold", front=CUSTOM_ASSETS.."cards/.amg2025/stronghold.jpg", cost=3})
 
-Card:new(Title,Empire,{name="Corrupter", front="https://i.imgur.com/n8Plm1g.jpg", cost=5})
-Card:new(Title,Empire,{name="Dominator", front="https://i.imgur.com/d03SuuK.jpg", cost=12})
+Card:new(Title,Empire,{name="Corrupter", front=CUSTOM_ASSETS.."cards/.amg2025/corrupter.jpg", cost=3})
+Card:new(Title,Empire,{name="Dominator", front=CUSTOM_ASSETS.."cards/.amg2025/dominator.jpg", cost=7})
 Card:new(Title,Empire,{name="Harrow", front="https://i.imgur.com/2j7zspi.jpg", cost=3})
 Card:new(Title,Empire,{name="Warlord", front="https://i.imgur.com/E8oYSJj.jpg", cost=8})
 
@@ -6606,7 +6606,7 @@ Card:new(Title,Empire,{name="Cataclysm", front="https://i.imgur.com/BJwwHvW.jpg"
 Card:new(Title,Empire,{name="Rakehell", front="https://i.imgur.com/R3NVdce.jpg", cost=4})
 Card:new(Title,Empire,{name="Sunder", front="https://i.imgur.com/qs97P5O.jpg", cost=10})
 
-Card:new(Title,Empire,{name="Avenger", front="https://i.imgur.com/UOIKPqu.jpg", cost=5})
+Card:new(Title,Empire,{name="Avenger", front=CUSTOM_ASSETS.."cards/.amg2025/avenger.jpg", cost=5})
 Card:new(Title,Empire,{name="Chimaera", front="https://i.imgur.com/o5AtxcG.jpg", cost=4})
 Card:new(Title,Empire,{name="Devastator", front="https://i.imgur.com/nKieVmI.jpg", cost=10})
 Card:new(Title,Empire,{name="Relentless", front="https://i.imgur.com/AT9rKe4.jpg", cost=3})
@@ -6628,14 +6628,14 @@ Card:new(Title,Republic,{name="Nevoota Bee", front="https://i.imgur.com/bBFNBzc.
 
 --separatist
 Card:new(Title,Separatist,{name="Beast of Burden", front="https://i.imgur.com/0dOnlMq.jpeg", cost=6})
-Card:new(Title,Separatist,{name="Foreman's Labor", front="https://i.imgur.com/cfJ004t.jpeg", cost=5, aliases = {"Foremans Labor"}})
+Card:new(Title,Separatist,{name="Foreman's Labor", front=CUSTOM_ASSETS.."cards/.amg2025/foremans-labor.jpg", cost=5, aliases = {"Foremans Labor"}})
 
 Card:new(Title,Separatist,{name="Sa Nalaor", front="https://i.imgur.com/o0RS5kE.jpg", cost=5})
 Card:new(Title,Separatist,{name="Tide of Progress XII", front="https://i.imgur.com/rcXW6sg.jpeg", cost=2})
 
-Card:new(Title,Separatist,{name="Invisible Hand", front=CUSTOM_ASSETS.."cards/.updated/upgrades/invisible-hand-title.jpg", cost=9, aliases = {"Invisible-hand"}})
+Card:new(Title,Separatist,{name="Invisible Hand", front=CUSTOM_ASSETS.."cards/.amg2025/invisible-hand.jpg", cost=8, aliases = {"Invisible-hand"}})
 Card:new(Title,Separatist,{name="Invincible", front=CUSTOM_ASSETS.."cards/.updated/upgrades/invincible-title.jpg", cost=5})
-Card:new(Title,Separatist,{name="Lucid Voice", front=CUSTOM_ASSETS.."cards/.updated/upgrades/lucid-voice-title.jpg", cost=8})
+Card:new(Title,Separatist,{name="Lucid Voice", front=CUSTOM_ASSETS.."cards/.amg2025/lucid-voice.jpg", cost=6})
 
 Card:new(Title,Separatist,{name="Patriot Fist", front=CUSTOM_ASSETS.."cards/.updated/upgrades/patriot-fist-title.jpg", cost=6})
 Card:new(Title,Separatist,{name="Nova Defiant", front=CUSTOM_ASSETS.."cards/.updated/upgrades/nova-defiant-title.jpg", cost=4})
@@ -6644,9 +6644,9 @@ Card:new(Title,Separatist,{name="Gilded Aegis", front=CUSTOM_ASSETS.."cards/.upd
 Card:new(Title,Republic,{name="TB-73", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tb-73-title.jpg", cost=5})
 Card:new(Title,Republic,{name="FB-88", front=CUSTOM_ASSETS.."cards/.updated/upgrades/fb-88-title.jpg", cost=4})
 
-Card:new(Title,Republic,{name="Tranquility", front=ASSETS_ROOT.."cards/titles/tranquility_v2_1.jpg", cost=7})
+Card:new(Title,Republic,{name="Tranquility", front=CUSTOM_ASSETS.."cards/.amg2025/tranq.jpg", cost=7})
 Card:new(Title,Republic,{name="Triumphant", front=CUSTOM_ASSETS.."cards/.updated/upgrades/triumphant-title.jpg", cost=5})
-Card:new(Title,Republic,{name="Resolute", front=CUSTOM_ASSETS.."cards/.updated/upgrades/resolute-title.jpg", cost=6})
+Card:new(Title,Republic,{name="Resolute", front=CUSTOM_ASSETS.."cards/.amg2025/resolute.jpg", cost=4})
 
 ----#include defs/cards/title
 ----#include defs/cards/turbolaser
@@ -6661,19 +6661,19 @@ CloneWars = {
 Card:new(Turbolaser,CloneWars,{name="Swivel-Mount Batteries", front="https://i.imgur.com/QyfrQ24.jpeg", cost=8}) --modification)
 
 --generic
-Card:new(Turbolaser,{name="Dual Turbolaser Turrets", front=CUSTOM_ASSETS.."cards/.updated/upgrades/dual-turbolaser-turrets.jpg", cost=5}) --modification)
+Card:new(Turbolaser,{name="Dual Turbolaser Turrets", front=CUSTOM_ASSETS.."cards/.amg2025/dtt.jpg", cost=4}) --modification)
 Card:new(Turbolaser,{name="Enhanced Armament", front="https://i.imgur.com/fixRACB.jpg", cost=10}) --modification)
-Card:new(Turbolaser,{name="H9 Turbolasers", front="https://i.imgur.com/vPAmdyc.jpg", cost=8}) --modification)
-Card:new(Turbolaser,{name="Heavy Fire Zone", front="https://i.imgur.com/f0phD19.jpg", cost=4})
-Card:new(Turbolaser,{name="Heavy Turbolaser Turrets", front="https://i.imgur.com/1BzH8yv.jpg", cost=6})
-Card:new(Turbolaser,{name="Linked Turbolaser Towers", front="https://i.imgur.com/Zxt5U1V.jpg", cost=7})
+Card:new(Turbolaser,{name="H9 Turbolasers", front=CUSTOM_ASSETS.."cards/.amg2025/h9-tl.jpg", cost=8}) --modification)
+Card:new(Turbolaser,{name="Heavy Fire Zone", front=CUSTOM_ASSETS.."cards/.amg2025/hfz.jpg", cost=2})
+Card:new(Turbolaser,{name="Heavy Turbolaser Turrets", front=CUSTOM_ASSETS.."cards/.amg2025/htt.jpg", cost=4})
+Card:new(Turbolaser,{name="Linked Turbolaser Towers", front=CUSTOM_ASSETS.."cards/.amg2025/ltt.jpg", cost=7})
 Card:new(Turbolaser,{name="Quad Battery Turrets", front="https://i.imgur.com/OpE4elu.jpg", cost=5}) --modification)
-Card:new(Turbolaser,{name="Quad Turbolaser Cannons", front="https://i.imgur.com/QdRydD8.jpg", cost=10}) --modification)
+Card:new(Turbolaser,{name="Quad Turbolaser Cannons", front=CUSTOM_ASSETS.."cards/.amg2025/qtc.jpg", cost=10}) --modification)
 Card:new(Turbolaser,{name="Slaved Turrets", front="https://i.imgur.com/J9NmUDb.jpg", cost=6}) --modification)
 Card:new(Turbolaser,{name="Spinal Armament", front="https://i.imgur.com/0eLX7ML.jpg", cost=9}) --modification)
-Card:new(Turbolaser,{name="Turbolaser Reroute Circuits", front="https://i.imgur.com/6faOpzf.jpg", cost=7})
-Card:new(Turbolaser,{name="XI7 Turbolasers", front="https://i.imgur.com/leeZbxw.jpg", cost=6})
-Card:new(Turbolaser,{name="XX-9 Turbolasers", front="https://i.imgur.com/ttbae06.jpg", cost=5})
+Card:new(Turbolaser,{name="Turbolaser Reroute Circuits", front=CUSTOM_ASSETS.."cards/.amg2025/trc.jpg", cost=7})
+Card:new(Turbolaser,{name="XI7 Turbolasers", front=CUSTOM_ASSETS.."cards/.amg2025/xi7.jpg", cost=6})
+Card:new(Turbolaser,{name="XX-9 Turbolasers", front=CUSTOM_ASSETS.."cards/.amg2025/xx9.jpg", cost=2})
 Card:new(Turbolaser,{name="DBY-827 Heavy Turbolaser", front=CUSTOM_ASSETS.."cards/.updated/upgrades/dby-827-heavy-turbolasers.jpg", cost=3, aliases = {"DBY-827 Heavy Turbolasers"}})
 
 ----#include defs/cards/turbolaser
@@ -6683,9 +6683,9 @@ WeaponsTeamAndOffensiveRetrofit = {
     back = CUSTOM_ASSETS.."cards/wepoff/back.jpg"
 }
 --rebel
-Card:new(WeaponsTeamAndOffensiveRetrofit,Rebel,{name="Cham Syndulla", front="https://i.imgur.com/1UBq5nW.jpg", cost=5})
+Card:new(WeaponsTeamAndOffensiveRetrofit,Rebel,{name="Cham Syndulla", front=CUSTOM_ASSETS.."cards/.amg2025/cham.jpg", cost=5})
 Card:new(WeaponsTeamAndOffensiveRetrofit,Rebel,{name="Jyn Erso", front="https://i.imgur.com/PJTbNuK.jpg", cost=4})
-Card:new(WeaponsTeamAndOffensiveRetrofit,Rebel,{name="Shriv Suurgav", front="https://i.imgur.com/0y9SkmF.jpg", cost=6})
+Card:new(WeaponsTeamAndOffensiveRetrofit,Rebel,{name="Shriv Suurgav", front=CUSTOM_ASSETS.."cards/.amg2025/shriv.jpg", cost=4})
 
 --imperial
 Card:new(WeaponsTeamAndOffensiveRetrofit,Empire,{name="Darth Vader", front="https://i.imgur.com/8Xu7fJp.jpg", cost=3})
@@ -6708,18 +6708,18 @@ Card:new(WeaponsTeam,Rebel,{name="Caitken and Shollan", front="https://i.imgur.c
 Card:new(WeaponsTeam,Empire,{name="Gunnery Chief Varnillian", front="https://i.imgur.com/JG9I88l.jpg", cost=6})
 
 --republic
-Card:new(WeaponsTeam,Republic,{name="Clone Gunners", front="https://i.imgur.com/8Rr4vE5.jpeg", cost=4})
+Card:new(WeaponsTeam,Republic,{name="Clone Gunners", front=CUSTOM_ASSETS.."cards/.amg2025/clonegunners.jpg", cost=4})
 
 --generic
 Card:new(WeaponsTeam,{name="Fire-Control Team", front="https://i.imgur.com/VFlRiDL.jpg", cost=2})
-Card:new(WeaponsTeam,{name="Flight Controllers", front="https://i.imgur.com/3WO48B6.jpg", cost=6})
-Card:new(WeaponsTeam,{name="Gunnery Team", front="https://i.imgur.com/Jw2Qhgz.jpg", cost=7})
+Card:new(WeaponsTeam,{name="Flight Controllers", front=CUSTOM_ASSETS.."cards/.amg2025/flight-controllers.jpg", cost=6})
+Card:new(WeaponsTeam,{name="Gunnery Team", front=CUSTOM_ASSETS.."cards/.amg2025/gunnery-team.jpg", cost=7})
 Card:new(WeaponsTeam,{name="Local Fire Control", front="https://i.imgur.com/OepfCdw.jpg", cost=4})
-Card:new(WeaponsTeam,{name="Ordnance Experts", front="https://i.imgur.com/3SpyXDz.jpg", cost=4})
+Card:new(WeaponsTeam,{name="Ordnance Experts", front=CUSTOM_ASSETS.."cards/.amg2025/ordnance-experts.jpg", cost=4})
 Card:new(WeaponsTeam,{name="Ruthless Strategists", front="https://i.imgur.com/2mDorqh.jpg", cost=4})
 Card:new(WeaponsTeam,{name="Sensor Team", front="https://i.imgur.com/pnn0pOz.jpg", cost=5})
 Card:new(WeaponsTeam,{name="Veteran Gunners", front="https://i.imgur.com/mYGP8R6.jpg", cost=5})
-Card:new(WeaponsTeam,{name="Weapons Battery Techs", front="https://i.imgur.com/wQ6S57i.jpg", cost=5})
+Card:new(WeaponsTeam,{name="Weapons Battery Techs", front=CUSTOM_ASSETS.."cards/.amg2025/wbt.jpg", cost=4})
 
 -- CUSTOM CONTENT
 
@@ -7124,7 +7124,7 @@ Card:new(Assault, Objective, {name="Blockade Run", front=CUSTOM_ASSETS.."cards/.
 Card:new(Assault, Objective, {name="Close-Range Intel Scan", front=CUSTOM_ASSETS.."cards/.updated/objective/close-range-intel-scan.jpg", victory=10})
 Card:new(Assault, Objective, {name="Ion Storm", front=CUSTOM_ASSETS.."cards/.updated/objective/ion-storm.jpg", victory=15})
 Card:new(Assault, Objective, {name="Marked for Destruction", front=CUSTOM_ASSETS.."cards/.updated/objective/marked-for-destruction.jpg", victory=15})
-Card:new(Assault, Objective, {name="Most Wanted", front=CUSTOM_ASSETS.."cards/.updated/objective/most-wanted.jpg"})
+Card:new(Assault, Objective, {name="Most Wanted", front=CUSTOM_ASSETS.."cards/.amg2025/most-wanted.jpg"})
 Card:new(Assault, Objective, {name="Opening Salvo", front=CUSTOM_ASSETS.."cards/.updated/objective/opening-salvo.jpg"})
 Card:new(Assault, Objective, {name="Precision Strike", front=CUSTOM_ASSETS.."cards/.updated/objective/precision-strike.jpg", victory=15})
 Card:new(Assault, Objective, {name="Rift Assault", front=CUSTOM_ASSETS.."cards/.updated/objective/rift-assault.jpg", victory=10})
@@ -7143,14 +7143,14 @@ Card:new(Defense, Objective, {name="Fire Lanes", front=CUSTOM_ASSETS.."cards/.up
 Card:new(Defense, Objective, {name="Fleet Ambush", front=CUSTOM_ASSETS.."cards/.updated/objective/fleet-ambush.jpg"})
 Card:new(Defense, Objective, {name="Fleet in Being", front=CUSTOM_ASSETS.."cards/.updated/objective/fleet-in-being.jpg", victory=15})
 Card:new(Defense, Objective, {name="Hyperspace Assault", front=CUSTOM_ASSETS.."cards/.updated/objective/hyperspace-assault.jpg"})
-Card:new(Defense, Objective, {name="Jamming Barrier", front=CUSTOM_ASSETS.."cards/.updated/objective/jamming-barrier.jpg"})
+Card:new(Defense, Objective, {name="Jamming Barrier", front=CUSTOM_ASSETS.."cards/.amg2025/jamming-barrier.jpg"})
 Card:new(Defense, Objective, {name="Planetary Ion Cannon", front=CUSTOM_ASSETS.."cards/.updated/objective/planetary-ion-cannon.jpg"})
 Card:new(Defense, Objective, {name="Rift Ambush", front=CUSTOM_ASSETS.."cards/.updated/objective/rift-ambush.jpg"})
 
 Navigation = { category = "Navigation" }
 Card:new(Navigation, Objective, {name="Dangerous Territory", front=CUSTOM_ASSETS.."cards/.updated/objective/dangerous-territory.jpg", victory=15})
 Card:new(Navigation, Objective, {name="Doomed Station", front=CUSTOM_ASSETS.."cards/.updated/objective/doomed-station.jpg", victory=20})
-Card:new(Navigation, Objective, {name="Hyperspace Migration", front=CUSTOM_ASSETS.."cards/.updated/objective/hyperspace-migration.jpg", victory=20})
+Card:new(Navigation, Objective, {name="Hyperspace Migration", front=CUSTOM_ASSETS.."cards/.amg2025/hyperspace-migration.jpg", victory=20})
 Card:new(Navigation, Objective, {name="Infested Fields", front=CUSTOM_ASSETS.."cards/.updated/objective/infested-fields.jpg", victory=15})
 Card:new(Navigation, Objective, {name="Intel Sweep", front=CUSTOM_ASSETS.."cards/.updated/objective/intel-sweep.jpg"})
 Card:new(Navigation, Objective, {name="Minefields", front=CUSTOM_ASSETS.."cards/.updated/objective/minefields.jpg"})
@@ -7166,12 +7166,12 @@ Card:new(Special, Objective, {name="Base Defense: Armed Station", front=CUSTOM_A
 Card:new(Special, Objective, {name="[Ship Card] Armed Station", front="https://i.imgur.com/8bxI1du.jpeg"}) 
 Card:new(Special, Objective, {name="Base Defense: Fighter Wing", front="https://i.imgur.com/HSGDnta.png"})
 Card:new(Special, Objective, {name="Base Defense: Ion Cannon", front="https://i.imgur.com/qpZfp8c.png"})
-Card:new(Special, Objective, {name="Hyperlane Raid", front="https://i.imgur.com/vqS5veh.png", victory=15})
+Card:new(Special, Objective, {name="Hyperlane Raid", front=CUSTOM_ASSETS.."cards/.amg2025/hyperlane-raid.jpg", victory=15})
 Card:new(Special, Objective, {name="Show of Force", front="https://i.imgur.com/GJvRA00.png", victory=20})
 --Corellian Conflict
 Card:new(Special, Objective, {name="Asteroids", front="https://i.imgur.com/u27Su4O.png"})
 Card:new(Special, Objective, {name="Independent Station", front="https://i.imgur.com/I08mCTY.png"})
-Card:new(Special, Objective, {name="Nebula Outskirts", front="https://i.imgur.com/60jSGex.png"})
+Card:new(Special, Objective, {name="Nebula Outskirts", front=CUSTOM_ASSETS.."cards/.amg2025/nebula-outskirts.jpg"})
 --Rebellion in the Rim
 Card:new(Special, Objective, {name="Double Agent", front="https://i.imgur.com/gsxsug1.png", victory=20})
 Card:new(Special, Objective, {name="Hired Scum", front="https://i.imgur.com/uSeL1Iv.png"})
