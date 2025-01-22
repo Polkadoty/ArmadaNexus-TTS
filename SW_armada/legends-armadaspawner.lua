@@ -4185,7 +4185,7 @@ Squadron:new(belbullab, SEPARATIST_SQUAD, {
 Squadron:new(firespray, SEPARATIST_SQUAD, {
 	name = "Jango Fett",
     front =     CUSTOM_ASSETS.."cards/.amg2025/jango.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/empire/firespray/jango_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 22,
     aliases = {"Jango Fett - Modified Firespray-31"}
@@ -4894,7 +4894,7 @@ Ship:new(MediumShip, REPUBLIC_L_SHIP, {
     maneuver = { { "I" }, { "I", "I" } },
     defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
     shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
-    cost = 58,
+    cost = 56,
     aliases = { "Dreadnaught-class Heavy Cruiser [Legends]" },
     command = 3
 })
@@ -4908,7 +4908,7 @@ Ship:new(MediumShip, REPUBLIC_L_SHIP, {
     maneuver = { { "I" }, { "I", "I" } },
     defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
     shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
-    cost = 55,
+    cost = 58,
     aliases = { "Dreadnaught-class Judicial Cruiser [Legends]" },
     command = 3
 })
@@ -6777,7 +6777,7 @@ Card:new(Title, Separatist_L,
     { name = "Subjugator", front = CUSTOM_ASSETS .. "cards/title/Title_Subjugator.jpg", cost = 5, aliases = { "Subjugator [Legends]" } })
 --12-2024 dev cycle
 Card:new(Title, Republic_L,
-    { name = "Judicial Fleet", front = CUSTOM_ASSETS .. "cards/title/judicial-fleet-title.jpg", cost = 2, aliases = { "Judicial Fleet [Legends]" } })
+    { name = "Judicial Fleet", front = CUSTOM_ASSETS .. "cards/title/judicial-fleet-title.jpg", cost = 4, aliases = { "Judicial Fleet [Legends]" } })
 Card:new(Title, Republic_L,
     { name = "Katana Fleet", front = CUSTOM_ASSETS .. "cards/title/katana-fleet-title.jpg", cost = 2, aliases = { "Katana Fleet [Legends]" } })
 Card:new(Title, Republic_L,
