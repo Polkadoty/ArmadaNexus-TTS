@@ -4182,6 +4182,15 @@ Squadron:new(belbullab, SEPARATIST_SQUAD, {
 
 })
 
+Squadron:new(firespray, SEPARATIST_SQUAD, {
+	name = "Jango Fett",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/jango.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 22,
+    aliases = {"Jango Fett - Modified Firespray-31"}
+})
+
 
 -- CUSTOM CONTENT
 
