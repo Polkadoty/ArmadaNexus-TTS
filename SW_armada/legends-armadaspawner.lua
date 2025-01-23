@@ -3758,7 +3758,7 @@ SEPARATIST_SHIP = {
 }
 Ship:new(SmallShip,SEPARATIST_SHIP,{
 	name = "Hardcell-class Transport",
-    front =     CUSTOM_ASSETS.."cards/.amg2025/hardcell-battle.jpg",
+    front =     CUSTOM_ASSETS.."ships/separatist/hardcell/transport_card.jpg",
     -- back =      ASSETS_ROOT.."ships/separatist/hardcell/transport_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/hardcell/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/hardcell/transport_diffuse.jpg",
@@ -4188,7 +4188,7 @@ Squadron:new(firespray, SEPARATIST_SQUAD, {
     diffuse =   CUSTOM_ASSETS.."squadrons/empire/firespray/jango_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 22,
-    aliases = {"Jango Fett - Modified Firespray-31"}
+    aliases = {"Jango Fett - Modified Firespray-31", "Jango Fett - Slave I", "Jango Fett - Slave 1"}
 })
 
 
