@@ -2508,7 +2508,7 @@ Ship:new(SmallShip,EMPIRE_SHIP,{
     maneuver = {{"II"},{"I","I"},{"I","I","-"}},
     defense_tokens = {DEF_SCATTER, DEF_EVADE},
     shields = {1,1,1,1},
-    cost = 28,
+    cost = 26,
     aliases = {"Gozanti Assault Carriers"},
     command = 1
 })
@@ -2566,14 +2566,14 @@ Ship:new(SmallShip,EMPIRE_SHIP,{
 })
 Ship:new(SmallShip,EMPIRE_SHIP,{
 	name = "Arquitens-class Light Cruiser",
-    front =     ASSETS_ROOT.."ships/empire/arquitens/light_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/arq-light.jpg",
     mesh =      ASSETS_ROOT.."ships/empire/arquitens/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/empire/arquitens/light_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/arquitens/ruler.obj",
     maneuver = {{"II"},{"-","II"},{"-","-","II"}},
     defense_tokens = {DEF_EVADE,DEF_REDIRECT,DEF_REDIRECT,DEF_CONTAIN},
     shields = {2,2,2,2},
-    cost = 54,
+    cost = 52,
     aliases = {"Arquitens Light Cruiser"},
     command = 2
 })
@@ -3458,7 +3458,7 @@ Squadron:new(aggressor, EMPIRE_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/empire/aggressor/ace_diffuse.jpg",
     move = 5,
     defense_tokens = {DEF_SCATTER},
-    cost = 21,
+    cost = 19,
     aliases = {"IG-88B - IG-2000B"}
 })
 yv666 = {
@@ -3641,7 +3641,7 @@ Ship:new(SmallShip,REPUBLIC_SHIP,{
     maneuver = {{"II"},{"II","I"},{"I","I","I"},{"I","-","I","I"}},
     defense_tokens = {DEF_EVADE, DEF_REDIRECT, DEF_CONTAIN},
     shields = {2,2,2,1},
-    cost = 45,
+    cost = 42,
 	aliases = {"Consular Charger c70","Charger c70"},
     command = 1
 })
@@ -3656,7 +3656,7 @@ Ship:new(MediumShip,REPUBLIC_SHIP,{
     maneuver = {{"I"},{"I","-"},{"-","I","-"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
     shields = {4,2,2,2},
-    cost = 66,
+    cost = 64,
 	aliases = {"Acclamator I Assault Ship", "Acclamator I"},
     command = 3
 })
@@ -3745,7 +3745,7 @@ Ship:new(MediumShip,REPUBLIC_SHIP,{
     maneuver = {{"I"},{"-","I"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
     shields = {3,3,3,1},
-    cost = 75,
+    cost = 73,
     aliases = {"Victory I Star Destroyer","Victory I", "VSD I", "VSD 1", "Victory I-class Star Destroyer (gar)", "Victory I Star Destroyer (gar)","Victory I (gar)", "VSD I (gar)", "VSD 1 (gar)"},
     command = 3
 })
@@ -3772,7 +3772,7 @@ Ship:new(SmallShip,SEPARATIST_SHIP,{
 })
 Ship:new(SmallShip,SEPARATIST_SHIP,{
 	name = "Hardcell-class Battle Refit",
-    front =     ASSETS_ROOT.."ships/separatist/hardcell/battle_card.jpg",
+    front =     CUSTOM_ASSETS.."cards/.amg2025/hardcell-battle.jpg",
     -- back =      ASSETS_ROOT.."ships/separatist/hardcell/battle_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/hardcell/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/hardcell/battle_diffuse.jpg",
@@ -3780,7 +3780,7 @@ Ship:new(SmallShip,SEPARATIST_SHIP,{
     maneuver = {{"II"},{"I","I"},{"I","I","-"}},
     defense_tokens = {DEF_EVADE,DEF_BRACE,DEF_REDIRECT},
     shields = {3,1,1,2},
-    cost = 52,
+    cost = 50,
 	aliases = {"Hardcell Battle Refit"},
     command = 1
 })
@@ -3853,7 +3853,7 @@ Ship:new(LargeShip,SEPARATIST_SHIP,{
     maneuver = {{"II"},{"I","I"},{"I","-","-"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
     shields = {5,3,3,2},
-    cost = 105,
+    cost = 102,
 	aliases = {"Providence Carrier"},
     command = 3
 })
@@ -3868,7 +3868,7 @@ Ship:new(LargeShip,SEPARATIST_SHIP,{
     maneuver = {{"II"},{"I","I"},{"I","-","-"}},
     defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
     shields = {5,3,3,2},
-    cost = 105,
+    cost = 97,
 	aliases = {"Providence Dreadnought"},
     command = 3
 })
