@@ -6095,69 +6095,69 @@ Squadron:new(kwing, NR_L_SQUAD, {
 })
 
 Squadron:new(xwing, NR_L_SQUAD, {
-	name = "X-wing Squadron (NR)",
+	name = "X-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/base_diffuse.jpg",
     cost = 13,
-    aliases = {'X-wing Squadron (NR) [Legends]'}
+    aliases = {'X-wing Squadron {NR} [Legends]'}
 })
 Squadron:new(xwing, NR_L_SQUAD, {
-	name = "Wedge Antilles (NR)",
+	name = "Wedge Antilles {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/wedge-antilles-nr.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 20,
-    aliases = {"Wedge Antilles - X-wing Squadron (NR) [Legends]"}
+    aliases = {"Wedge Antilles - X-wing Squadron {NR} [Legends]"}
 })
 Squadron:new(xwing, NR_L_SQUAD, {
-	name = "Tycho Celchu (NR)",
+	name = "Tycho Celchu {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/tycho-celchu-nr.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 19,
-    aliases = {"Tycho Celchu - X-wing Squadron (NR) [Legends]"}
+    aliases = {"Tycho Celchu - X-wing Squadron {NR} [Legends]"}
 })
 
 Squadron:new(ewing, NR_L_SQUAD, {
-	name = "E-wing Squadron (NR)",
+	name = "E-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/base_diffuse.jpg",
     cost = 15,
-    aliases = {'E-wing Squadron (NR) [Legends]'}
+    aliases = {'E-wing Squadron {NR} [Legends]'}
 })
 Squadron:new(ewing, NR_L_SQUAD, {
-	name = "Corran Horn (NR)",
+	name = "Corran Horn {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/corran-horn-nr.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
         mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 24,
-    aliases = {"Corran Horn - E-wing Squadron (NR) [Legends]"}
+    aliases = {"Corran Horn - E-wing Squadron {NR} [Legends]"}
 })
 Squadron:new(ewing, NR_L_SQUAD, {
-	name = "Gavin Darklighter (NR)",
+	name = "Gavin Darklighter {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/gavin-darklighter.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
         mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 22,
-    aliases = {"Gavin Darklighter - E-wing Squadron (NR) [Legends]"}
+    aliases = {"Gavin Darklighter - E-wing Squadron {NR} [Legends]"}
 })
 
 Squadron:new(bwing, NR_L_SQUAD, {
-	name = "B-wing Squadron (NR)",
+	name = "B-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/base_diffuse.jpg",
     cost = 14,
-    aliases = {'B-wing Squadron (NR) [Legends]'}
+    aliases = {'B-wing Squadron {NR} [Legends]'}
 })
 
 Squadron:new(awing, NR_L_SQUAD, {
-	name = "A-wing Squadron (NR)",
+	name = "A-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/awing.jpg",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/base_diffuse.jpg",
     cost = 11,
-    aliases = {'A-wing Squadron (NR) [Legends]'}
+    aliases = {'A-wing Squadron {NR} [Legends]'}
 })
 
 ----proxy ships/squadrons
@@ -6809,11 +6809,12 @@ Card:new(Title, Separatist,
 ----Scum Upgrades
 
 ----New Republic Upgrades
-Card:new(Commander, NR_L,{ name = "Admiral Ackbar (NR)", front = CUSTOM_ASSETS .. "cards/.nr/admiral-ackbar-nr.jpg", cost = 38, aliases = { "Admiral Ackbar [Legends]" } })
-Card:new(Commander, NR_L,{ name = "Etahn A'baht (NR)", front = CUSTOM_ASSETS .. "cards/.nr/etahn-abaht.jpg", cost = 28, aliases = { "Etahn A'baht [Legends]" } })
-Card:new(Commander, NR_L,{ name = "Garm Bel Iblis (NR)", front = CUSTOM_ASSETS .. "cards/.nr/garm-nr.jpg", cost = 30, aliases = { "Garm Bel Iblis [Legends]" } })
-Card:new(Commander, NR_L,{ name = "Wedge Antilles (NR)", front = CUSTOM_ASSETS .. "cards/.nr/wedge-antilles-commander.jpg", cost = 30, aliases = { "Wedge Antilles [Legends]" } })
-Card:new(Officer, NR_L,{ name = "Areta Bell (NR)", front = CUSTOM_ASSETS .. "cards/.nr/areta-bell.jpg", cost = 6, aliases = { "Areta Bell [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Admiral Ackbar {NR}", front = CUSTOM_ASSETS .. "cards/.nr/admiral-ackbar-nr.jpg", cost = 38, aliases = { "Admiral Ackbar {NR} [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Etahn A'baht {NR}", front = CUSTOM_ASSETS .. "cards/.nr/etahn-abaht.jpg", cost = 28, aliases = { "Etahn A'baht {NR} [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Garm Bel Iblis {NR}", front = CUSTOM_ASSETS .. "cards/.nr/garm-nr.jpg", cost = 30, aliases = { "Garm Bel Iblis {NR} [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Wedge Antilles {NR}", front = CUSTOM_ASSETS .. "cards/.nr/wedge-antilles-commander.jpg", cost = 30, aliases = { "Wedge Antilles {NR} [Legends]" } })
+Card:new(Officer, NR_L,{ name = "Areta Bell {NR}", front = CUSTOM_ASSETS .. "cards/.nr/areta-bell.jpg", cost = 6, aliases = { "Areta Bell {NR} [Legends]" } })
+Card:new(Title, NR_L,{ name = "Endurance {NR}", front = CUSTOM_ASSETS .. "cards/.nr/sabaoth/endurance.jpg", cost = 2, aliases = { "Endurance {NR} [Legends]" } })
 
 
 -- Halo Legends Upgrades
