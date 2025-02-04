@@ -4917,7 +4917,7 @@ Ship:new(MediumShip, REBEL_L_SHIP, {
     diffuse = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a_light_diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/rebel/mc40a/ruler.obj",
     maneuver = { { "II" }, { "I", "I" }, { "I", "-", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+    defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
     shields = { 4, 2, 2, 2 }, -- Front, left, right, rear
     cost = 70,
     aliases = { "MC40a Light Cruiser [Legends]" },
@@ -4930,9 +4930,9 @@ Ship:new(MediumShip, REBEL_L_SHIP, {
     diffuse = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a_escort_diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/rebel/mc40a/ruler.obj",
     maneuver = { { "II" }, { "I", "I" }, { "I", "-", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+    defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
     shields = { 4, 2, 2, 2 }, -- Front, left, right, rear
-    cost = 70,
+    cost = 68,
     aliases = { "MC40a Escort Carrier [Legends]" },
     command = 3
 })
