@@ -6553,7 +6553,7 @@ Card:new(Officer,Republic,{name="Clone Navigation Officer", front="https://i.img
 Card:new(Officer,Republic,{name="Barriss Offee", front="https://i.imgur.com/TK5hk9G.png", cost=6})
 Card:new(Officer,Republic,{name="Adi Gallia", front="https://i.imgur.com/NtfCKwG.jpeg", cost=3})
 Card:new(Officer,Republic,{name="Clone Captain Silver", front="https://i.imgur.com/VzHNQTY.jpg", cost=4})
-Card:new(Officer,Republic,{name="Clone Cmdr. Wolffe", front=CUSTOM_ASSETS.."cards/.amg2025/wolffe.jpg", cost=6})
+Card:new(Officer,Republic,{name="Clone Cmdr. Wolffe", front=CUSTOM_ASSETS.."cards/.amg2025/wolffe.jpg", cost=6, aliases={"Clone Commander Wolffe"}})
 Card:new(Officer,Republic,{name="Ahsoka Tano", front="https://i.imgur.com/SVAWnrZ.jpeg", cost=6})
 
 --separatist
@@ -6881,7 +6881,7 @@ Card:new(OffensiveRetrofit, Separatist_L,
 Card:new(OffensiveRetrofit, Republic_L,
     { name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
 --02-2024 dev cycle
-Card:new(Title, Empire_L,{ name = "Octuple Turbolasers", front = CUSTOM_ASSETS .. "cards/turbo/octuple-turbos.jpg", cost = 10, aliases = { "Octuple Turbolasers [Legends]" } })
+Card:new(Turbolaser, Empire_L,{ name = "Octuple Turbolasers", front = CUSTOM_ASSETS .. "cards/turbo/octuple-turbos.jpg", cost = 5, aliases = { "Octuple Turbolasers [Legends]" } })
 --Card:new(Title, Rebel_L,{ name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
 
 
@@ -7378,7 +7378,7 @@ function clearSpawnArea(listSpawner)
 end
 function isDatacard(object)
     custom = object.getCustomObject()
-    return custom ~= nil and (custom.mesh == CUSTOM_ASSETS.."misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
+    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
 end
 function Action_SpawnListSpawner(player, _, idValue) --listSpawner
     print(player.color)
