@@ -5837,7 +5837,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 87,
         command = 3,
-        aliases = { "Neutron Star-class Bulk Cruiser [Legends]" }
+        aliases = { "Neutron Star-class Bulk Cruiser {SCUM} [Legends]" }
     })
     Ship:new(MediumShip, SCUM_L_SHIP, {
         name = "Neutron Star-class Bulk Carrier",
@@ -5850,7 +5850,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 83,
         command = 3,
-        aliases = { "Neutron Star-class Bulk Carrier [Legends]" }
+        aliases = { "Neutron Star-class Bulk Carrier {SCUM} [Legends]" }
     })
 
     --marauder
@@ -5865,7 +5865,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
         cost = 60,
         command = 2,
-        aliases = { "Marauder Artillery Corvette [Legends]" }
+        aliases = { "Marauder Artillery Corvette {SCUM} [Legends]" }
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Picket Corvette",
@@ -5878,7 +5878,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
         cost = 55,
         command = 2,
-        aliases = { "Marauder Picket Corvette [Legends]" }
+        aliases = { "Marauder Picket Corvette {SCUM} [Legends]" }
     })
 
     --interceptor iv
@@ -5893,7 +5893,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 65,
         command = 2,
-        aliases = { "Interceptor IV-class Attack Frigate [Legends]" }
+        aliases = { "Interceptor IV-class Attack Frigate {SCUM} [Legends]" }
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Missile Frigate",
@@ -5906,7 +5906,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 62,
         command = 2,
-        aliases = { "Interceptor IV-class Attack Frigate [Legends]" }
+        aliases = { "Interceptor IV-class Attack Frigate {SCUM} [Legends]" }
     })
 
     --corona frigate
@@ -5936,7 +5936,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 1, 1, 1, 1 }, -- Front, left, right, rear
         cost = 21,
         command = 1,
-        aliases = { "Action VI Bulk Transports [Legends]" }
+        aliases = { "Action VI Bulk Transports {SCUM} [Legends]" }
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Action VI Armed Transports",
@@ -5949,7 +5949,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 1, 1, 1, 1 }, -- Front, left, right, rear
         cost = 26,
         command = 1,
-        aliases = { "Action VI Armed Transports [Legends]" }
+        aliases = { "Action VI Armed Transports {SCUM} [Legends]" }
     })
 
 
@@ -5966,7 +5966,15 @@ Squadron:new(seraph, COV_L_SQUAD, {
         name = "Kihraxz Fighter Squadron",
         front = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/kihraxz.jpg",
         cost = 12,
-        aliases = { "Kihraxz Fighter Squadron [Legends]" }
+        aliases = { "Kihraxz Fighter Squadron {SCUM} [Legends]" }
+    })
+    Squadron:new(kihraxz, SCUM_L_SQUAD, {
+        name = "Captain Jostero (Scum)",
+        front =     CUSTOM_ASSETS.."squadrons/scum/kihraxz/kihraxz-jostero.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 15,
+        aliases = {"Captain Jostero - Kihraxz Fighter Squadron {SCUM} [Legends]"}
     })
 
     --rihkxyrk
@@ -5981,7 +5989,15 @@ Squadron:new(seraph, COV_L_SQUAD, {
         name = "Rihkxyrk Assault Squadron",
         front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk.jpg",
         cost = 13,
-        aliases = { "Rihkxyrk Assault Squadron [Legends]" }
+        aliases = { "Rihkxyrk Assault Squadron {SCUM} [Legends]" }
+    })
+    Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
+        name = "Talonbane Cobra (Scum)",
+        front =     CUSTOM_ASSETS.."squadrons/scum/rihkxyrk/Rihkxyrk-talonbane.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 15,
+        aliases = {"Talonbane Cobra - Rihkxyrk Assault Squadron {SCUM} [Legends]"}
     })
 
     --aeg-77 vigo
@@ -5996,7 +6012,15 @@ Squadron:new(seraph, COV_L_SQUAD, {
         name = "AEG-77 Vigo",
         front = CUSTOM_ASSETS .. "squadrons/scum/aeg77/aeg77.jpg",
         cost = 23,
-        aliases = { "AEG-77 Vigo [Legends]" }
+        aliases = { "AEG-77 Vigo {SCUM} [Legends]" }
+    })
+    Squadron:new(aeg77, SCUM_L_SQUAD, {
+        name = "Consigliere",
+        front =     CUSTOM_ASSETS.."squadrons/scum/aeg77/aeg77-Consigliere.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE},
+        cost = 27,
+        aliases = {"Consigliere - AEG-77 Vigo {SCUM} [Legends]"}
     })
 
     --ugly squadrons
@@ -6011,43 +6035,43 @@ Squadron:new(seraph, COV_L_SQUAD, {
         front = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/ugly_squadrons.jpg",
         cost = 21,
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
-        aliases = { "Ugly Squadrons [Legends]" }
+        aliases = { "Ugly Squadrons {SCUM} [Legends]" }
     })
 
     Squadron:new(firespray, SCUM_L_SQUAD, {
-        name = "Boba Fett {Scum}",
+        name = "Boba Fett (Scum)",
         front =     CUSTOM_ASSETS.."squadrons/scum/dup/boba-scum.jpg",
         diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 24,
-        aliases = {"Boba Fett - Slave I {SCUM}"}
+        aliases = {"Boba Fett - Slave I {SCUM} [Legends]"}
     })
     Squadron:new(firespray, SCUM_L_SQUAD, {
-        name = "Hondo Ohnaka {Scum}",
+        name = "Hondo Ohnaka (Scum)",
         front =     CUSTOM_ASSETS.."squadrons/scum/dup/hondo-scum.jpg",
         diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
         mesh =      ASSETS_ROOT.."squadrons/empire/firespray/bo_gr_ro_model.obj",
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 24,
-        aliases = {"Hondo Ohnaka - Slave I {SCUM}"}
+        aliases = {"Hondo Ohnaka - Slave I {SCUM} [Legends]"}
     })
     Squadron:new(jumpmaster, SCUM_L_SQUAD, {
-        name = "Dengar {Scum}",
+        name = "Dengar (Scum)",
         front =     CUSTOM_ASSETS.."squadrons/scum/dup/dengar-scum.jpg",
         diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/ace_diffuse.jpg",
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 20,
-        aliases = {"Dengar - Punishing One {SCUM}"}
+        aliases = {"Dengar - Punishing One {SCUM} [Legends]"}
     })
     Squadron:new(yv666, SCUM_L_SQUAD, {
-        name = "Bossk {Scum}",
+        name = "Bossk (Scum)",
         front =     CUSTOM_ASSETS.."squadrons/scum/dup/bossk-scum.jpg",
         mesh =      ASSETS_ROOT.."squadrons/empire/yv666/gr_ro_model.obj",
         diffuse =   ASSETS_ROOT.."squadrons/empire/yv666/ace_diffuse.jpg",
         move = 3,
         defense_tokens = {DEF_BRACE},
         cost = 23,
-        aliases = {"Bossk - Hound's Tooth {SCUM}"}
+        aliases = {"Bossk - Hound's Tooth {SCUM} [Legends]"}
     })
 
 ----new republic ships
@@ -6881,7 +6905,7 @@ Card:new(OffensiveRetrofit, Separatist_L,
 Card:new(OffensiveRetrofit, Republic_L,
     { name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
 --02-2024 dev cycle
-Card:new(Turbolaser, Empire_L,{ name = "Octuple Turbolasers", front = CUSTOM_ASSETS .. "cards/turbo/octuple-turbos.jpg", cost = 5, aliases = { "Octuple Turbolasers [Legends]" } })
+Card:new(Turbolaser, Empire_L,{ name = "Precision Turbolaser Turrets", front = CUSTOM_ASSETS .. "cards/turbo/precision-tls.jpg", cost = 5, aliases = { "Precision Turbolaser Turrets [Legends]" } })
 --Card:new(Title, Rebel_L,{ name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
 
 
@@ -7079,6 +7103,27 @@ Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,
 { name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Legends]" } })
 
 ----Scum Upgrades
+Card:new(Commander, Scum_L,{ name = "Hondo Ohnaka (Commander)", front = CUSTOM_ASSETS .. "cards/.scum/hondo-commander.jpg", cost = 22, aliases = { "Hondo Ohnaka {SCUM} [Legends]" } })
+Card:new(Commander, Scum_L,{ name = "Darth Maul (Commander)", front = CUSTOM_ASSETS .. "cards/.scum/maul-commander.jpg", cost = 25, aliases = { "Darth Maul {SCUM} [Legends]" } })
+Card:new(Commander, Scum_L,{ name = "Prince Xizor", front = CUSTOM_ASSETS .. "cards/.scum/xizor-commander.jpg", cost = 30, aliases = { "Prince Xizor {SCUM} [Legends]" } })
+
+Card:new(Officer, Scum_L,{ name = "Jiro", front = CUSTOM_ASSETS .. "cards/.scum/jiro-officer.jpg", cost = 7, aliases = { "Jiro {SCUM} [Legends]" } })
+Card:new(Officer, Scum_L,{ name = "Savage Oppress", front = CUSTOM_ASSETS .. "cards/.scum/savage-oppress.jpg", cost = 7, aliases = { "Savage Oppress {SCUM} [Legends]" } })
+Card:new(Officer, Scum_L,{ name = "Ziton Moj", front = CUSTOM_ASSETS .. "cards/.scum/ziton-officer.jpg", cost = 5, aliases = { "Ziton Moj {SCUM} [Legends]" } })
+
+Card:new(DefensiveRetrofit, Scum_L,{ name = "Smuggler's Cache", front = CUSTOM_ASSETS .. "cards/.scum/smuggler-cache.jpg", cost = 5, aliases = { "Smuggler's Cache {SCUM} [Legends]" } })
+Card:new(OffensiveRetrofit, Scum_L,{ name = "Boarding Grapples", front = CUSTOM_ASSETS .. "cards/.scum/boarding-grapples.jpg", cost = 2, aliases = { "Boarding Grapples {SCUM} [Legends]" } })
+Card:new(Turbolaser, Scum_L,{ name = "Tibanna Disruptors", front = CUSTOM_ASSETS .. "cards/.scum/tibanna-disruptors.jpg", cost = 5, aliases = { "Tibanna Disruptors {SCUM} [Legends]" } })
+Card:new(SupportTeam, Scum_L,{ name = "Pirate Crew", front = CUSTOM_ASSETS .. "cards/.scum/pirate-crew.jpg", cost = 5, aliases = { "Pirate Crew {SCUM} [Legends]" } })
+
+Card:new(Title, Scum_L,{ name = "Charybdis", front = CUSTOM_ASSETS .. "cards/.scum/titles/charybdis-title.jpg", cost = 5, aliases = { "Charybdis {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Flatline", front = CUSTOM_ASSETS .. "cards/.scum/titles/flatline-title.jpg", cost = 5, aliases = { "Flatline {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Omze's Incredible Traveling Starport", front = CUSTOM_ASSETS .. "cards/.scum/titles/omze-starport.jpg", cost = 7, aliases = { "Omze's Incredible Traveling Starport {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Poison Moon", front = CUSTOM_ASSETS .. "cards/.scum/titles/poison-moon-title.jpg", cost = 5, aliases = { "Poison Moon {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Redhawk", front = CUSTOM_ASSETS .. "cards/.scum/titles/redhawk-title.jpg", cost = 2, aliases = { "Redhawk {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Savrip", front = CUSTOM_ASSETS .. "cards/.scum/titles/savrip-title.jpg", cost = 6, aliases = { "Savrip {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Vanity Price", front = CUSTOM_ASSETS .. "cards/.scum/titles/vanity-price-title.jpg", cost = 6, aliases = { "Vanity Price {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Wild Karrde", front = CUSTOM_ASSETS .. "cards/.scum/titles/wild-karrde-title.jpg", cost = 10, aliases = { "Wild Karrde {SCUM} [Legends]" } })
 
 ----New Republic Upgrades
 Card:new(Commander, NR_L,{ name = "Admiral Ackbar {NR}", front = CUSTOM_ASSETS .. "cards/.nr/admiral-ackbar-nr.jpg", cost = 38, aliases = { "Admiral Ackbar {NR} [Legends]" } })
