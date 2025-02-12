@@ -4937,6 +4937,20 @@ Ship:new(MediumShip, REBEL_L_SHIP, {
     command = 3
 })
 
+Ship:new(SmallShip, EMPIRE_L_SHIP, {
+    name = "Lancer-class Escort Frigate",
+    front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-escort.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/empire/lancer/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-escort-texture.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/empire/lancer/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+    shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
+    cost = 45,
+    aliases = { "Lancer-class Escort Frigate [Legends]" },
+    command = 1
+})
+
 -------- unapproved legends ships
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
