@@ -4950,6 +4950,19 @@ Ship:new(SmallShip, EMPIRE_L_SHIP, {
     aliases = { "Lancer-class Escort Frigate [Legends]" },
     command = 1
 })
+Ship:new(SmallShip, EMPIRE_L_SHIP, {
+    name = "Lancer-class Light Frigate",
+    front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-escort.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/empire/lancer/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-escort-texture.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/empire/lancer/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+    defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+    shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
+    cost = 45,
+    aliases = { "Lancer-class Light Frigate [Legends]" },
+    command = 1
+})
 
 -------- unapproved legends ships
 Ship:new(MediumShip, REBEL_L_SHIP, {
@@ -6920,12 +6933,13 @@ Card:new(OffensiveRetrofit, Republic_L,
     { name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
 --02-2024 dev cycle
 Card:new(Turbolaser, Empire_L,{ name = "Precision Turbolaser Turrets", front = CUSTOM_ASSETS .. "cards/turbo/precision-tls.jpg", cost = 5, aliases = { "Precision Turbolaser Turrets [Legends]" } })
---Card:new(Title, Rebel_L,{ name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
-
+Card:new(Title, Rebel_L,{ name = "Condor", front = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a-condor-title.jpg", cost = 8, aliases = { "Condor [Legends]" } })
+Card:new(Title, Rebel_L,{ name = "Shadow", front = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a-shadow-title.jpg", cost = 3, aliases = { "Shadow [Legends]" } })
+--03-2024 dev cycle
+Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-furious-title.jpg", cost = 6, aliases = { "Furious [Legends]" } })
+Card:new(Title, Empire_L,{ name = "Blue Hawk", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-bluehawk-title.jpg", cost = 2, aliases = { "Blue Hawk [Legends]" } })
 
     ----non-approved
-Card:new(Title, Empire,
-    { name = "placeholderemp", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "placeholderemp [Legends]" } })
 Card:new(Title, Rebel,
     { name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Legends]" } })
 Card:new(Title, Rebel,
