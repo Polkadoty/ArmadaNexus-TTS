@@ -2836,14 +2836,14 @@ bwing = {
 Squadron:new(bwing, REBEL_SQUAD, {
 	name = "B-wing Squadron",
     front =     ASSETS_ROOT.."squadrons/rebel/bwing/base_card.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/base_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/rebel/bwing/base_diffuse.jpg",
     cost = 14,
     aliases = {'B-wing Squadrons', "B-wing"}
 })
 Squadron:new(bwing, REBEL_SQUAD, {
 	name = "Keyan Farlander",
     front =     CUSTOM_ASSETS.."cards/.amg2025/keyan-bwing.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/rebel/bwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 18,
     aliases = {'Keyan Farlander - B-Wing Squadron'}
@@ -2851,7 +2851,7 @@ Squadron:new(bwing, REBEL_SQUAD, {
 Squadron:new(bwing, REBEL_SQUAD, {
 	name = "Ten Numb",
     front =     ASSETS_ROOT.."squadrons/rebel/bwing/ten_card.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/rebel/bwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 19,
     aliases = {"Ten Numb - B-wing Squadron"}
@@ -2859,7 +2859,7 @@ Squadron:new(bwing, REBEL_SQUAD, {
 Squadron:new(bwing, REBEL_SQUAD, {
 	name = "Dagger Squadron",
     front =     ASSETS_ROOT.."squadrons/rebel/bwing/dagger_card.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/unique_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/rebel/bwing/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/bwing/bo_sw_model.obj",
     cost = 15,
     aliases = {"Dagger Squadron - B-wing Squadron"}
@@ -4952,9 +4952,9 @@ Ship:new(SmallShip, EMPIRE_L_SHIP, {
 })
 Ship:new(SmallShip, EMPIRE_L_SHIP, {
     name = "Lancer-class Light Frigate",
-    front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-escort.jpg",
+    front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-light.jpg",
     mesh = CUSTOM_ASSETS .. "ships/empire/lancer/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-escort-texture.jpg",
+    diffuse = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-light-texture.jpg",
     ruler = CUSTOM_ASSETS .. "ships/empire/lancer/ruler.obj",
     maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
     defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
@@ -6104,14 +6104,14 @@ Squadron:new(seraph, COV_L_SQUAD, {
 ----new republic ships
 Ship:new(SmallShip, NR_L_SHIP, {
     name = "CR90 Corvette A {NR}",
-    front =     CUSTOM_ASSETS.."cards/.nr/cr90-corvette-a-nr.jpg",
+    front =     CUSTOM_ASSETS.."ships/new_rep/cr90a/cr90-corvette-a-nr.jpg",
     mesh =      ASSETS_ROOT.."ships/rebel/cr90/mesh.obj",
-    diffuse =   ASSETS_ROOT.."ships/rebel/cr90/A_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."ships/new_rep/cr90a/cr90A_nr_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/cr90/ruler.obj",
     maneuver = {{"II"},{"I","II"},{"-","I","II"},{"-","I","I","II"}},
     defense_tokens = {DEF_EVADE, DEF_EVADE, DEF_REDIRECT},
     shields = {2,2,2,1},
-    cost = 45,
+    cost = 46,
     aliases = {"CR90 Corvette A {NR}","CR90 A"},
     command = 1
 })
@@ -6151,7 +6151,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
     defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_REDIRECT},
     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 95,
+    cost = 90,
     command = 3,
     aliases = { "Endurance-class Fleet Carrier [Legends]" }
 })
@@ -6178,7 +6178,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     maneuver = { { "I" }, { "I", "I" } },
     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
     shields = { 5, 4, 4, 3 }, -- Front, left, right, rear
-    cost = 120,
+    cost = 114,
     command = 3,
     aliases = { "MC90 Battle Cruiser [Legends]" }
 })
@@ -6191,7 +6191,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     maneuver = { { "I" }, { "I", "I" } },
     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
     shields = { 5, 4, 4, 3 }, -- Front, left, right, rear
-    cost = 115,
+    cost = 107,
     command = 3,
     aliases = { "MC90 Command Cruiser [Legends]" }
 })
@@ -6213,7 +6213,7 @@ Squadron:new(kwing, NR_L_SQUAD, {
 Squadron:new(kwing, NR_L_SQUAD, {
     name = "Miranda Doni",
     front = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/miranda-doni.jpg",
-    cost = 27,
+    cost = 24,
     aliases = { "Miranda Doni - K-wing Squadron [Legends]" },
     defense_tokens = {DEF_BRACE, DEF_BRACE}
 })
@@ -6221,14 +6221,14 @@ Squadron:new(kwing, NR_L_SQUAD, {
 Squadron:new(xwing, NR_L_SQUAD, {
 	name = "X-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/base_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing_diffuse.jpg",
     cost = 13,
     aliases = {'X-wing Squadron {NR} [Legends]'}
 })
 Squadron:new(xwing, NR_L_SQUAD, {
 	name = "Wedge Antilles {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/wedge-antilles-nr.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 20,
     aliases = {"Wedge Antilles - X-wing Squadron {NR} [Legends]"}
@@ -6236,15 +6236,15 @@ Squadron:new(xwing, NR_L_SQUAD, {
 Squadron:new(xwing, NR_L_SQUAD, {
 	name = "Tycho Celchu {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/tycho-celchu-nr.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 19,
+    cost = 18,
     aliases = {"Tycho Celchu - X-wing Squadron {NR} [Legends]"}
 })
 Squadron:new(xwing, NR_L_SQUAD, {
 	name = "Luke Skywalker (X-wing) {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/luke-xwing-nr.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 23,
     aliases = {"Luke Skywalker - X-wing Squadron {NR} [Legends]"}
@@ -6253,42 +6253,39 @@ Squadron:new(xwing, NR_L_SQUAD, {
 Squadron:new(ewing, NR_L_SQUAD, {
 	name = "E-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/base_diffuse.jpg",
-    cost = 15,
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing_diffuse.jpg",
+    cost = 14,
     aliases = {'E-wing Squadron {NR} [Legends]'}
 })
 Squadron:new(ewing, NR_L_SQUAD, {
 	name = "Corran Horn {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/corran-horn-nr.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
-    mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 24,
+    cost = 22,
     aliases = {"Corran Horn - E-wing Squadron {NR} [Legends]"}
 })
 Squadron:new(ewing, NR_L_SQUAD, {
 	name = "Gavin Darklighter {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/gavin-darklighter.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
-    mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 22,
+    cost = 21,
     aliases = {"Gavin Darklighter - E-wing Squadron {NR} [Legends]"}
 })
 Squadron:new(ewing, NR_L_SQUAD, {
 	name = "Luke Skywalker (E-wing) {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/luke-ewing-nr.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/ewing/ace_diffuse.jpg",
-    mesh =      ASSETS_ROOT.."squadrons/rebel/ewing/bo_ro_sn_model.obj",
+    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/luke-skywalker-ewing.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
-    cost = 25,
+    cost = 23,
     aliases = {"Luke Skywalker - E-wing Squadron {NR} [Legends]"}
 })
 
 Squadron:new(bwing, NR_L_SQUAD, {
 	name = "B-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/bwing/base_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing_diffuse.jpg",
     cost = 14,
     aliases = {'B-wing Squadron {NR} [Legends]'}
 })
@@ -6296,7 +6293,7 @@ Squadron:new(bwing, NR_L_SQUAD, {
 Squadron:new(awing, NR_L_SQUAD, {
 	name = "A-wing Squadron {NR}",
     front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/awing.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/base_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/awing_diffuse.jpg",
     cost = 11,
     aliases = {'A-wing Squadron {NR} [Legends]'}
 })
