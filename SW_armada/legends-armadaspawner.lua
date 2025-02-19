@@ -6148,7 +6148,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     mesh = CUSTOM_ASSETS .. "ships/new_rep/endurance/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/new_rep/endurance/diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/new_rep/endurance/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+    maneuver = { { "I" }, { "I", "I" } },
     defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_REDIRECT},
     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
     cost = 90,
@@ -6207,12 +6207,12 @@ kwing = {
 Squadron:new(kwing, NR_L_SQUAD, {
     name = "K-wing Squadron",
     front = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/kwing.jpg",
-    cost = 18,
+    cost = 17,
     aliases = { "K-wing Squadron [Legends]" }
 })
 Squadron:new(kwing, NR_L_SQUAD, {
     name = "Miranda Doni",
-    front = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/miranda-doni.jpg",
+    front = CUSTOM_ASSETS .. "cards/.nr/miranda-doni.jpg",
     cost = 24,
     aliases = { "Miranda Doni - K-wing Squadron [Legends]" },
     defense_tokens = {DEF_BRACE, DEF_BRACE}
@@ -6227,7 +6227,7 @@ Squadron:new(xwing, NR_L_SQUAD, {
 })
 Squadron:new(xwing, NR_L_SQUAD, {
 	name = "Wedge Antilles {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/wedge-antilles-nr.jpg",
+    front =     CUSTOM_ASSETS.."cards/.nr/wedge-antilles-nr.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 20,
@@ -6235,7 +6235,7 @@ Squadron:new(xwing, NR_L_SQUAD, {
 })
 Squadron:new(xwing, NR_L_SQUAD, {
 	name = "Tycho Celchu {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/tycho-celchu-nr.jpg",
+    front =     CUSTOM_ASSETS.."cards/.nr/tycho-celchu-nr.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 18,
@@ -6243,7 +6243,7 @@ Squadron:new(xwing, NR_L_SQUAD, {
 })
 Squadron:new(xwing, NR_L_SQUAD, {
 	name = "Luke Skywalker (X-wing) {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/luke-xwing-nr.jpg",
+    front =     CUSTOM_ASSETS.."cards/.nr/luke-skywalker-nr.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/xwing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 23,
@@ -6252,14 +6252,14 @@ Squadron:new(xwing, NR_L_SQUAD, {
 
 Squadron:new(ewing, NR_L_SQUAD, {
 	name = "E-wing Squadron {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing.jpg",
+    front =     CUSTOM_ASSETS.."cards/.nr/e-wing-squadron-b.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing_diffuse.jpg",
     cost = 14,
     aliases = {'E-wing Squadron {NR} [Legends]'}
 })
 Squadron:new(ewing, NR_L_SQUAD, {
 	name = "Corran Horn {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/corran-horn-nr.jpg",
+    front =     CUSTOM_ASSETS.."cards/.nr/corran-horn-nr.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 22,
@@ -6275,7 +6275,7 @@ Squadron:new(ewing, NR_L_SQUAD, {
 })
 Squadron:new(ewing, NR_L_SQUAD, {
 	name = "Luke Skywalker (E-wing) {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/luke-skywalker-ewing.jpg",
+    front =     CUSTOM_ASSETS.."cards/.nr/luke-skywalker-ewing.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/ewing_ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 23,
@@ -6283,11 +6283,19 @@ Squadron:new(ewing, NR_L_SQUAD, {
 })
 
 Squadron:new(bwing, NR_L_SQUAD, {
-	name = "B-wing Squadron {NR}",
-    front =     CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing.jpg",
+	name = "B-wing/E2 Squadron {NR}",
+    front =     CUSTOM_ASSETS.."cards/.nr/b-wing-squadron-b.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing_diffuse.jpg",
     cost = 14,
     aliases = {'B-wing Squadron {NR} [Legends]'}
+})
+Squadron:new(bwing, NR_L_SQUAD, {
+	name = "Keyan Farlander {NR}",
+    front =     CUSTOM_ASSETS.."cards/.nr/keyan-farlander-nr.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 18,
+    aliases = {'Keyan Farlander - B-wing/E2 Squadron {NR} [Legends]'}
 })
 
 Squadron:new(awing, NR_L_SQUAD, {
@@ -6296,6 +6304,14 @@ Squadron:new(awing, NR_L_SQUAD, {
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/awing_diffuse.jpg",
     cost = 11,
     aliases = {'A-wing Squadron {NR} [Legends]'}
+})
+Squadron:new(awing, NR_L_SQUAD, {
+	name = "Pash Cracken (A-wing) {NR}",
+    front =     CUSTOM_ASSETS.."cards/.nr/pash-cracken.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/awing_ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 16,
+    aliases = {"Pash Cracken - A-wing Squadron {NR} [Legends]"}
 })
 
 ----proxy ships/squadrons
@@ -6923,9 +6939,9 @@ Card:new(Title, Republic_L,
 Card:new(Title, Rebel_L,
     { name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
 Card:new(Officer, Empire_L,
-    { name = "General Romodi (Officer)", front = CUSTOM_ASSETS .. "cards/officer/romodi-officer.jpg", cost = 5, aliases = { "General Romodi [Legends]" } })
+    { name = "General Romodi (Officer)", front = CUSTOM_ASSETS .. "cards/.legends/General-Romodi.jpg", cost = 3, aliases = { "General Romodi [Legends]" } })
 Card:new(OffensiveRetrofit, Separatist_L,
-    { name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/offretro/ext-droid-storage.jpg", cost = 4, aliases = { "External Droid Storage [Legends]" } })
+    { name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/.legends/ext-droid-storage.jpg", cost = 5, aliases = { "External Droid Storage [Legends]" } })
 Card:new(OffensiveRetrofit, Republic_L,
     { name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
 --02-2024 dev cycle
@@ -6933,8 +6949,9 @@ Card:new(Turbolaser, Empire_L,{ name = "Precision Turbolaser Turrets", front = C
 Card:new(Title, Rebel_L,{ name = "Condor", front = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a-condor-title.jpg", cost = 8, aliases = { "Condor [Legends]" } })
 Card:new(Title, Rebel_L,{ name = "Shadow", front = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a-shadow-title.jpg", cost = 3, aliases = { "Shadow [Legends]" } })
 --03-2024 dev cycle
-Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-furious-title.jpg", cost = 6, aliases = { "Furious [Legends]" } })
+Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "cards/.legends/Furious-title-legends-2.jpg", cost = 4, aliases = { "Furious [Legends]" } })
 Card:new(Title, Empire_L,{ name = "Blue Hawk", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-bluehawk-title.jpg", cost = 2, aliases = { "Blue Hawk [Legends]" } })
+Card:new(Title, Empire_L,{ name = "Pulsar", front = CUSTOM_ASSETS .. "cards/.legends/pulsar-title-legends.jpg", cost = 4, aliases = { "Pulsar [Legends]" } })
 
     ----non-approved
 Card:new(Title, Rebel,
@@ -7141,22 +7158,38 @@ Card:new(OffensiveRetrofit, Scum_L,{ name = "Boarding Grapples", front = CUSTOM_
 Card:new(Turbolaser, Scum_L,{ name = "Tibanna Disruptors", front = CUSTOM_ASSETS .. "cards/.scum/tibanna-disruptors.jpg", cost = 5, aliases = { "Tibanna Disruptors {SCUM} [Legends]" } })
 Card:new(SupportTeam, Scum_L,{ name = "Pirate Crew", front = CUSTOM_ASSETS .. "cards/.scum/pirate-crew.jpg", cost = 5, aliases = { "Pirate Crew {SCUM} [Legends]" } })
 
-Card:new(Title, Scum_L,{ name = "Charybdis", front = CUSTOM_ASSETS .. "cards/.scum/titles/charybdis-title.jpg", cost = 5, aliases = { "Charybdis {SCUM} [Legends]" } })
-Card:new(Title, Scum_L,{ name = "Flatline", front = CUSTOM_ASSETS .. "cards/.scum/titles/flatline-title.jpg", cost = 5, aliases = { "Flatline {SCUM} [Legends]" } })
-Card:new(Title, Scum_L,{ name = "Omze's Incredible Traveling Starport", front = CUSTOM_ASSETS .. "cards/.scum/titles/omze-starport.jpg", cost = 7, aliases = { "Omze's Incredible Traveling Starport {SCUM} [Legends]" } })
-Card:new(Title, Scum_L,{ name = "Poison Moon", front = CUSTOM_ASSETS .. "cards/.scum/titles/poison-moon-title.jpg", cost = 5, aliases = { "Poison Moon {SCUM} [Legends]" } })
-Card:new(Title, Scum_L,{ name = "Redhawk", front = CUSTOM_ASSETS .. "cards/.scum/titles/redhawk-title.jpg", cost = 2, aliases = { "Redhawk {SCUM} [Legends]" } })
-Card:new(Title, Scum_L,{ name = "Savrip", front = CUSTOM_ASSETS .. "cards/.scum/titles/savrip-title.jpg", cost = 6, aliases = { "Savrip {SCUM} [Legends]" } })
-Card:new(Title, Scum_L,{ name = "Vanity Price", front = CUSTOM_ASSETS .. "cards/.scum/titles/vanity-price-title.jpg", cost = 6, aliases = { "Vanity Price {SCUM} [Legends]" } })
-Card:new(Title, Scum_L,{ name = "Wild Karrde", front = CUSTOM_ASSETS .. "cards/.scum/titles/wild-karrde-title.jpg", cost = 10, aliases = { "Wild Karrde {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Charybdis", front = CUSTOM_ASSETS .. "cards/.scum/charybdis-title.jpg", cost = 5, aliases = { "Charybdis {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Flatline", front = CUSTOM_ASSETS .. "cards/.scum/flatline-title.jpg", cost = 5, aliases = { "Flatline {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Omze's Incredible Traveling Starport", front = CUSTOM_ASSETS .. "cards/.scum/omze-starport.jpg", cost = 7, aliases = { "Omze's Incredible Traveling Starport {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Poison Moon", front = CUSTOM_ASSETS .. "cards/.scum/poison-moon-title.jpg", cost = 5, aliases = { "Poison Moon {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Redhawk", front = CUSTOM_ASSETS .. "cards/.scum/redhawk-title.jpg", cost = 2, aliases = { "Redhawk {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Savrip", front = CUSTOM_ASSETS .. "cards/.scum/savrip-title.jpg", cost = 6, aliases = { "Savrip {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Vanity Price", front = CUSTOM_ASSETS .. "cards/.scum/vanity-price-title.jpg", cost = 6, aliases = { "Vanity Price {SCUM} [Legends]" } })
+Card:new(Title, Scum_L,{ name = "Wild Karrde", front = CUSTOM_ASSETS .. "cards/.scum/wild-karrde-title.jpg", cost = 5, aliases = { "Wild Karrde {SCUM} [Legends]" } })
 
 ----New Republic Upgrades
-Card:new(Commander, NR_L,{ name = "Admiral Ackbar {NR}", front = CUSTOM_ASSETS .. "cards/.nr/admiral-ackbar-nr.jpg", cost = 38, aliases = { "Admiral Ackbar {NR} [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Admiral Ackbar {NR}", front = CUSTOM_ASSETS .. "cards/.nr/admiral-ackbar-nr.jpg", cost = 32, aliases = { "Admiral Ackbar {NR} [Legends]" } })
 Card:new(Commander, NR_L,{ name = "Etahn A'baht {NR}", front = CUSTOM_ASSETS .. "cards/.nr/etahn-abaht.jpg", cost = 28, aliases = { "Etahn A'baht {NR} [Legends]" } })
 Card:new(Commander, NR_L,{ name = "Garm Bel Iblis {NR}", front = CUSTOM_ASSETS .. "cards/.nr/garm-nr.jpg", cost = 30, aliases = { "Garm Bel Iblis {NR} [Legends]" } })
-Card:new(Commander, NR_L,{ name = "Wedge Antilles {NR}", front = CUSTOM_ASSETS .. "cards/.nr/wedge-antilles-commander.jpg", cost = 30, aliases = { "Wedge Antilles {NR} [Legends]" } })
+Card:new(Commander, NR_L,{ name = "Wedge Antilles {NR}", front = CUSTOM_ASSETS .. "cards/.nr/wedge-antilles-commander.jpg", cost = 26, aliases = { "Wedge Antilles {NR} [Legends]" } })
 Card:new(Officer, NR_L,{ name = "Areta Bell {NR}", front = CUSTOM_ASSETS .. "cards/.nr/areta-bell.jpg", cost = 6, aliases = { "Areta Bell {NR} [Legends]" } })
-Card:new(Title, NR_L,{ name = "Endurance {NR}", front = CUSTOM_ASSETS .. "cards/.nr/endurance.jpg", cost = 2, aliases = { "Endurance {NR} [Legends]" } })
+Card:new(Title, NR_L,{ name = "Endurance {NR}", front = CUSTOM_ASSETS .. "cards/.nr/endurance.jpg", cost = 8, aliases = { "Endurance {NR} [Legends]" } })
+Card:new(Officer, NR_L,{ name = "Commodore Turk Brand {NR}", front = CUSTOM_ASSETS .. "cards/.nr/turk-brand.jpg", cost = 7, aliases = { "Commodore Turk Brand {NR} [Legends]" } })
+Card:new(Officer, NR_L,{ name = "Talon Karrde {NR}", front = CUSTOM_ASSETS .. "cards/.nr/talon-karrde.jpg", cost = 5, aliases = { "Talon Karrde {NR} [Legends]" } })
+Card:new(FleetCommand, NR_L,{ name = "SLAM Refits {NR}", front = CUSTOM_ASSETS .. "cards/.nr/slam.jpg", cost = 3, aliases = { "SLAM Refits {NR} [Legends]" } })
+Card:new(FleetCommand, NR_L,{ name = "Nova Flare {NR}", front = CUSTOM_ASSETS .. "cards/.nr/nova-flare.jpg", cost = 5, aliases = { "Nova Flare {NR} [Legends]" } })
+Card:new(Officer, NR_L,{ name = "New Republic Wing Commander {NR}", front = CUSTOM_ASSETS .. "cards/.nr/new-republic-wing-commander.jpg", cost = 4, aliases = { "New Republic Wing Commander {NR} [Legends]" } })
+Card:new(WeaponsTeamAndOffensiveRetrofit, NR_L,{ name = "New Republic Infiltrators {NR}", front = CUSTOM_ASSETS .. "cards/.nr/new-republic-infiltrators.jpg", cost = 7, aliases = { "New Republic Infiltrators {NR} [Legends]" } })
+Card:new(SupportTeam, NR_L,{ name = "New Republic Fighter Techs {NR}", front = CUSTOM_ASSETS .. "cards/.nr/new-republic-fighter-techs.jpg", cost = 5, aliases = { "New Republic Fighter Techs {NR} [Legends]" } })
+Card:new(Officer, NR_L,{ name = "Leia Organa Solo {NR}", front = CUSTOM_ASSETS .. "cards/.nr/leia-organa-solo.jpg", cost = 3, aliases = { "Leia Organa Solo {NR} [Legends]" } })
+Card:new(Title, NR_L,{ name = "Intrepid {NR}", front = CUSTOM_ASSETS .. "cards/.nr/intrepid.jpg", cost = 6, aliases = { "Intrepid {NR} [Legends]" } })
+Card:new(Commander, NR_L,{ name = "General Cracken {NR}", front = CUSTOM_ASSETS .. "cards/.nr/general-cracken-nr.jpg", cost = 24, aliases = { "General Cracken {NR} [Legends]" } })
+Card:new(Title, NR_L,{ name = "Galactic Voyager {NR}", front = CUSTOM_ASSETS .. "cards/.nr/galactic-voyager.jpg", cost = 4, aliases = { "Galactic Voyager {NR} [Legends]" } })
+Card:new(Title, NR_L,{ name = "Defiance {NR}", front = CUSTOM_ASSETS .. "cards/.nr/defiance-nr.jpg", cost = 5, aliases = { "Defiance {NR} [Legends]" } })
+Card:new(Officer, NR_L,{ name = "Cilghal {NR}", front = CUSTOM_ASSETS .. "cards/.nr/cilghal.jpg", cost = 6, aliases = { "Cilghal {NR} [Legends]" } })
+Card:new(Title, NR_L,{ name = "Brilliant {NR}", front = CUSTOM_ASSETS .. "cards/.nr/brilliant.jpg", cost = 5, aliases = { "Brilliant {NR} [Legends]" } })
+Card:new(Title, NR_L,{ name = "Boldheart {NR}", front = CUSTOM_ASSETS .. "cards/.nr/boldheart.jpg", cost = 4, aliases = { "Boldheart {NR} [Legends]" } })
+
 
     -- Armada Legacy (New) Upgrades
 Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/commander/daultay_dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
