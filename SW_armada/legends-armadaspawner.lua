@@ -4346,20 +4346,20 @@ Squadron:new(clone_z95, REPUBLIC_L_SQUAD, {
     aliases = { "Stub - Clone Z-95 Squadron [OldLegacy]" }
 })
 
-laat_i = {
+laat_i_old = {
     mesh = LEGACY_ASSETS .. "squadrons/republic/laati/plain_mesh.obj",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/laati/laati_red_texture.jpg",
     health = 6,
     move = 2,
     defense_tokens = {}
 }
-Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
+Squadron:new(laat_i_old, REPUBLIC_L_SQUAD, {
     name = "LAAT/i Gunship (OldLegacy)",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/laat-i-gunship-old-legacy.jpg",
     cost = 17,
     aliases = { "LAAT/i Gunship [OldLegacy]", "LAAT/i" }
 })
-Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
+Squadron:new(laat_i_old, REPUBLIC_L_SQUAD, {
     name = "Hawk (OldLegacy)",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/hawk-laat-i-gunship-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
@@ -4476,20 +4476,20 @@ Squadron:new(nantex, SEPARATIST_L_SQUAD, {
     aliases = { "Gorgol - Nantex Starfighter Squadron [OldLegacy]" }
 })
 
-hmp_gunship = {
+hmp_gunship_old = {
     mesh = LEGACY_ASSETS .. "squadrons/separatist/hmp/plain_mesh.obj",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/hmp/hmp_texture.jpg",
     health = 5,
     move = 3,
     defense_tokens = {}
 }
-Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
+Squadron:new(hmp_gunship_old, SEPARATIST_L_SQUAD, {
     name = "HMP Droid Gunship (OldLegacy)",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/hmp-droid-gunship-old-legacy.jpg",
     cost = 16,
     aliases = { "HMP Droid Gunship [OldLegacy]" }
 })
-Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
+Squadron:new(hmp_gunship_old, SEPARATIST_L_SQUAD, {
     name = "Geonosian Prototype (OldLegacy)",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/geonosian-prototype-hmp-droid-gunship-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/hmp/hmp_ace_texture.jpg",
@@ -4760,16 +4760,16 @@ star_courier = {
 }
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Star Courier",
-    front = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/star-courier.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/star_courier.jpg",
     cost = 17,
     aliases = { "Star Courier [Legacy]" }
 })
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Darth Maul",
-    front = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/darth-maul.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/darth_maul.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
-    defense_tokens = { DEF_BRACE },
-    cost = 24,
+    defense_tokens = { DEF_BRACE, DEF_EVADE},
+    cost = 25,
     aliases = { "Darth Maul - Scimitar [Legacy]" }
 })
 
@@ -4828,19 +4828,62 @@ g9_rigger = {
 }
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "G9 Rigger-class Freighter",
-    front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9-freighter.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/g9.jpg",
     cost = 15,
     aliases = { "G9 Rigger-class Freighter [Legacy]" }
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "Anakin Skywalker (Twilight)",
-    front = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/g9_twilight.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/twilight.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE },
     cost = 24,
     aliases = { "Anakin Skywalker - Twilight [Legacy]" }
 })
 
+hmp_gunship = {
+    mesh = CUSTOM_ASSETS .. "squadrons/separatist/hmp/plain_mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/separatist/hmp/hmp_texture.jpg",
+    health = 4,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
+    name = "HMP Droid Gunship",
+    front = CUSTOM_ASSETS .. "cards/.legacy/hmp.jpg",
+    cost = 15,
+    aliases = { "HMP Droid Gunship [Legacy]" }
+})
+Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
+    name = "DGS-047",
+    front = CUSTOM_ASSETS .. "cards/.legacy/dgs_047.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/separatist/hmp/hmp_ace_texture.jpg",
+    defense_tokens = { DEF_BRACE, DEF_BRACE },
+    cost = 22,
+    aliases = { "DGS-047 - HMP Droid Gunship [Legacy]" }
+})
+
+laat_i = {
+    mesh = CUSTOM_ASSETS .. "squadrons/republic/laati/plain_mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/laati/laati_red_texture.jpg",
+    health = 6,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
+    name = "LAAT/i Gunship",
+    front = CUSTOM_ASSETS .. "cards/.legacy/laat.jpg",
+    cost = 15,
+    aliases = { "LAAT/i Gunship [Legacy]"}
+})
+Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
+    name = "Five-Seven",
+    front = CUSTOM_ASSETS .. "cards/.legacy/five_seven.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
+    defense_tokens = { DEF_BRACE, DEF_BRACE },
+    cost = 21,
+    aliases = { "Five-Seven -LAAT/i Gunship [Legacy]"}
+})
 
 ----------armada legends ships
 Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
@@ -4851,7 +4894,7 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     ruler = CUSTOM_ASSETS .. "ships/separatist/subjugator/ruler.obj",
     maneuver = { { "I" }, { "-", "I" } },
     defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO },
-    shields = { 4, 3, 3, 1, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
+    shields = { 5, 3, 3, 2, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
     cost = 240,
     aliases = { "Subjugator-class Prototype [Legends]" },
     command = 4
@@ -4864,7 +4907,7 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     ruler = CUSTOM_ASSETS .. "ships/separatist/subjugator/ion_ruler.obj",
     maneuver = { { "I" }, { "-", "I" } },
     defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO },
-    shields = { 4, 3, 3, 1, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
+    shields = { 5, 3, 3, 2, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
     cost = 225,
     aliases = { "Subjugator-class Heavy Cruiser [Legends]" },
     command = 4
@@ -4877,7 +4920,7 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     ruler = CUSTOM_ASSETS .. "ships/separatist/subjugator/beam_ruler.obj",
     maneuver = { { "I" }, { "-", "I" } },
     defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN, DEF_SALVO },
-    shields = { 4, 3, 3, 1, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
+    shields = { 5, 3, 3, 2, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
     cost = 200,
     aliases = { "Subjugator-class Testbed [Legends]" },
     command = 4
@@ -4950,19 +4993,19 @@ Ship:new(SmallShip, EMPIRE_L_SHIP, {
     aliases = { "Lancer-class Escort Frigate [Legends]" },
     command = 1
 })
-Ship:new(SmallShip, EMPIRE_L_SHIP, {
-    name = "Lancer-class Light Frigate",
-    front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-light.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/empire/lancer/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-light-texture.jpg",
-    ruler = CUSTOM_ASSETS .. "ships/empire/lancer/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
-    defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
-    shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
-    cost = 45,
-    aliases = { "Lancer-class Light Frigate [Legends]" },
-    command = 1
-})
+-- Ship:new(SmallShip, EMPIRE_L_SHIP, {
+--     name = "Lancer-class Light Frigate",
+--     front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-light.jpg",
+--     mesh = CUSTOM_ASSETS .. "ships/empire/lancer/mesh.obj",
+--     diffuse = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-light-texture.jpg",
+--     ruler = CUSTOM_ASSETS .. "ships/empire/lancer/ruler.obj",
+--     maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+--     defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+--     shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
+--     cost = 45,
+--     aliases = { "Lancer-class Light Frigate [Legends]" },
+--     command = 1
+-- })
 
 -------- unapproved legends ships
 Ship:new(MediumShip, REBEL_L_SHIP, {
@@ -5122,7 +5165,7 @@ Ship:new(SmallShip, UNSC_L_SHIP, {
     maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
     defense_tokens = { DEF_CONTAIN, DEF_EVADE, DEF_BRACE },
     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 55,
+    cost = 59,
     command = 1,
     aliases = { "Paris-class Heavy Frigate [Legends]" }
 })
@@ -5135,7 +5178,7 @@ Ship:new(SmallShip, UNSC_L_SHIP, {
     maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
     defense_tokens = { DEF_CONTAIN, DEF_EVADE, DEF_BRACE },
     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 60,
+    cost = 61,
     command = 1,
     aliases = { "Paris-class Missile Frigate [Legends]" }
 })
@@ -5864,7 +5907,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 87,
         command = 3,
-        aliases = { "Neutron Star-class Bulk Cruiser {SCUM} [Legends]" }
+        aliases = { "Neutron Star-class Bulk Cruiser {Scum} [Legends]" }
     })
     Ship:new(MediumShip, SCUM_L_SHIP, {
         name = "Neutron Star-class Bulk Carrier",
@@ -5877,7 +5920,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 83,
         command = 3,
-        aliases = { "Neutron Star-class Bulk Carrier {SCUM} [Legends]" }
+        aliases = { "Neutron Star-class Bulk Carrier {Scum} [Legends]" }
     })
 
     --marauder
@@ -5892,7 +5935,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
         cost = 60,
         command = 2,
-        aliases = { "Marauder Artillery Corvette {SCUM} [Legends]" }
+        aliases = { "Marauder Artillery Corvette {Scum} [Legends]" }
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Picket Corvette",
@@ -5905,7 +5948,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
         cost = 55,
         command = 2,
-        aliases = { "Marauder Picket Corvette {SCUM} [Legends]" }
+        aliases = { "Marauder Picket Corvette {Scum} [Legends]" }
     })
 
     --interceptor iv
@@ -5920,7 +5963,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 65,
         command = 2,
-        aliases = { "Interceptor IV-class Attack Frigate {SCUM} [Legends]" }
+        aliases = { "Interceptor IV-class Attack Frigate {Scum} [Legends]" }
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Missile Frigate",
@@ -5933,23 +5976,8 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 62,
         command = 2,
-        aliases = { "Interceptor IV-class Attack Frigate {SCUM} [Legends]" }
+        aliases = { "Interceptor IV-class Missile Frigate {Scum} [Legends]" }
     })
-
-    --corona frigate
-    -- Ship:new(SmallShip, SCUM_L_SHIP, {
-    --     name = "Corona-class Frigate",
-    --     front = CUSTOM_ASSETS .. "ships/scum/corona/corona.jpg",
-    --     mesh = CUSTOM_ASSETS .. "ships/scum/corona/mesh.obj",
-    --     diffuse = CUSTOM_ASSETS .. "ships/scum/corona/diffuse.jpg",
-    --     ruler = CUSTOM_ASSETS .. "ships/scum/corona/ruler.obj",
-    --     maneuver = { { "I" }, { "I", "II" }, { "-", "I", "I" } },
-    --     defense_tokens = { DEF_SALVO, DEF_CONTAIN, DEF_BRACE, DEF_CONTAIN },
-    --     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    --     cost = 70,
-    --     command = 2,
-    --     aliases = { "Corona-class Frigate [Legends]" }
-    -- })
 
     --action vi
     Ship:new(SmallShip, SCUM_L_SHIP, {
@@ -5963,7 +5991,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 1, 1, 1, 1 }, -- Front, left, right, rear
         cost = 21,
         command = 1,
-        aliases = { "Action VI Bulk Transports {SCUM} [Legends]" }
+        aliases = { "Action VI Bulk Transports {Scum} [Legends]" }
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Action VI Armed Transports",
@@ -5976,7 +6004,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         shields = { 1, 1, 1, 1 }, -- Front, left, right, rear
         cost = 26,
         command = 1,
-        aliases = { "Action VI Armed Transports {SCUM} [Legends]" }
+        aliases = { "Action VI Armed Transports {Scum} [Legends]" }
     })
 
 
@@ -6112,7 +6140,7 @@ Ship:new(SmallShip, NR_L_SHIP, {
     defense_tokens = {DEF_EVADE, DEF_EVADE, DEF_REDIRECT},
     shields = {2,2,2,1},
     cost = 46,
-    aliases = {"CR90 Corvette A {NR}","CR90 A"},
+    aliases = {"CR90 Corvette A {NR} [Legends]"},
     command = 1
 })
 Ship:new(SmallShip, NR_L_SHIP, {
@@ -6126,7 +6154,7 @@ Ship:new(SmallShip, NR_L_SHIP, {
     shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
     cost = 52,
     command = 2,
-    aliases = { "Corona-class Escort Frigate [Legends]" }
+    aliases = { "Corona-class Escort Frigate {NR} [Legends]" }
 })
 Ship:new(SmallShip, NR_L_SHIP, {
     name = "Corona-class Support Frigate",
@@ -6139,7 +6167,7 @@ Ship:new(SmallShip, NR_L_SHIP, {
     shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
     cost = 50,
     command = 2,
-    aliases = { "Corona-class Support Frigate [Legends]" }
+    aliases = { "Corona-class Support Frigate {NR} [Legends]" }
 })
 
 Ship:new(LargeShip, NR_L_SHIP, {
@@ -6153,7 +6181,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
     cost = 90,
     command = 3,
-    aliases = { "Endurance-class Fleet Carrier [Legends]" }
+    aliases = { "Endurance-class Fleet Carrier {NR} [Legends]" }
 })
 Ship:new(LargeShip, NR_L_SHIP, {
     name = "Nebula-class Star Destroyer",
@@ -6166,7 +6194,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
     cost = 105,
     command = 3,
-    aliases = { "Nebula-class Star Destroyer [Legends]" }
+    aliases = { "Nebula-class Star Destroyer {NR} [Legends]" }
 })
 
 Ship:new(LargeShip, NR_L_SHIP, {
@@ -6180,7 +6208,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     shields = { 5, 4, 4, 3 }, -- Front, left, right, rear
     cost = 114,
     command = 3,
-    aliases = { "MC90 Battle Cruiser [Legends]" }
+    aliases = { "MC90 Battle Cruiser {NR} [Legends]" }
 })
 Ship:new(LargeShip, NR_L_SHIP, {
     name = "MC90 Command Cruiser",
@@ -6193,7 +6221,7 @@ Ship:new(LargeShip, NR_L_SHIP, {
     shields = { 5, 4, 4, 3 }, -- Front, left, right, rear
     cost = 107,
     command = 3,
-    aliases = { "MC90 Command Cruiser [Legends]" }
+    aliases = { "MC90 Command Cruiser {NR} [Legends]" }
 })
 
 ----new republic squadrons
@@ -7044,7 +7072,7 @@ Card:new(Title, UNSC,
 Card:new(Title, UNSC,
 { name = "UNSC Roman Blue", front = CUSTOM_ASSETS .. "ships/unsc/halcyon/title_halcyon_roman.jpg", cost = 2, aliases = { "UNSC Roman Blue [Legends]" } })
 Card:new(Title, UNSC,
-{ name = "UNSC Savannah", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_savannah.jpg", cost = 9, aliases = { "UNSC Savannah [Legends]" } })
+{ name = "UNSC Savannah", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_savannah.jpg", cost = 8, aliases = { "UNSC Savannah [Legends]" } })
 Card:new(Title, UNSC,
 { name = "UNSC Commonwealth", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_commonwealth.jpg", cost = 7, aliases = { "UNSC Commonwealth [Legends]" } })
 Card:new(Title, UNSC,
@@ -7192,8 +7220,8 @@ Card:new(Title, NR_L,{ name = "Boldheart {NR}", front = CUSTOM_ASSETS .. "cards/
 
 
     -- Armada Legacy (New) Upgrades
-Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/commander/daultay_dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
-Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/commander/ki-adi-mundi.jpg", cost=28, aliases={"Ki-Adi-Mundi [Legacy]"}})
+Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/daultay_dofine.jpg", cost=29, aliases={"Daultay Dofine [Legacy]"}})
+Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/.legacy/ki_adi_mundi.jpg", cost=31, aliases={"Ki-Adi-Mundi [Legacy]"}})
 
 
     -- Armada Legacy (Old) Upgrades
