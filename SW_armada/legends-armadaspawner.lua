@@ -7202,7 +7202,7 @@ Card:new(Commander, NR_L,{ name = "Garm Bel Iblis {NR}", front = CUSTOM_ASSETS .
 Card:new(Commander, NR_L,{ name = "Wedge Antilles {NR}", front = CUSTOM_ASSETS .. "cards/.nr/wedge-antilles-commander.jpg", cost = 26, aliases = { "Wedge Antilles {NR} [Legends]" } })
 Card:new(Officer, NR_L,{ name = "Areta Bell {NR}", front = CUSTOM_ASSETS .. "cards/.nr/areta-bell.jpg", cost = 6, aliases = { "Areta Bell {NR} [Legends]" } })
 Card:new(Title, NR_L,{ name = "Endurance {NR}", front = CUSTOM_ASSETS .. "cards/.nr/endurance.jpg", cost = 8, aliases = { "Endurance {NR} [Legends]" } })
-Card:new(Officer, NR_L,{ name = "Commodore Turk Brand {NR}", front = CUSTOM_ASSETS .. "cards/.nr/turk-brand.jpg", cost = 7, aliases = { "Commodore Turk Brand {NR} [Legends]" } })
+Card:new(Officer, NR_L,{ name = "Commodore Turk Brand {NR}", front = CUSTOM_ASSETS .. "cards/.nr/turk-brand.jpg", cost = 5, aliases = { "Commodore Turk Brand {NR} [Legends]" } })
 Card:new(Officer, NR_L,{ name = "Talon Karrde {NR}", front = CUSTOM_ASSETS .. "cards/.nr/talon-karrde.jpg", cost = 5, aliases = { "Talon Karrde {NR} [Legends]" } })
 Card:new(FleetCommand, NR_L,{ name = "SLAM Refits {NR}", front = CUSTOM_ASSETS .. "cards/.nr/slam.jpg", cost = 3, aliases = { "SLAM Refits {NR} [Legends]" } })
 Card:new(FleetCommand, NR_L,{ name = "Nova Flare {NR}", front = CUSTOM_ASSETS .. "cards/.nr/nova-flare.jpg", cost = 5, aliases = { "Nova Flare {NR} [Legends]" } })
