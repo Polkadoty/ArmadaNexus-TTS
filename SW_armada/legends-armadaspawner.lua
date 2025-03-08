@@ -4882,7 +4882,7 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
     cost = 21,
-    aliases = { "Five-Seven -LAAT/i Gunship [Legacy]"}
+    aliases = { "Five-Seven - LAAT/i Gunship [Legacy]"}
 })
 
 ----------armada legends ships
@@ -4960,7 +4960,7 @@ Ship:new(MediumShip, REBEL_L_SHIP, {
     diffuse = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a_light_diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/rebel/mc40a/ruler.obj",
     maneuver = { { "II" }, { "I", "I" }, { "I", "-", "I" } },
-    defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+    defense_tokens = { DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT },
     shields = { 4, 2, 2, 2 }, -- Front, left, right, rear
     cost = 70,
     aliases = { "MC40a Light Cruiser [Legends]" },
@@ -4973,7 +4973,7 @@ Ship:new(MediumShip, REBEL_L_SHIP, {
     diffuse = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a_escort_diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/rebel/mc40a/ruler.obj",
     maneuver = { { "II" }, { "I", "I" }, { "I", "-", "I" } },
-    defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
+    defense_tokens = { DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT },
     shields = { 4, 2, 2, 2 }, -- Front, left, right, rear
     cost = 68,
     aliases = { "MC40a Escort Carrier [Legends]" },
@@ -7217,7 +7217,7 @@ Card:new(Title, NR_L,{ name = "Defiance {NR}", front = CUSTOM_ASSETS .. "cards/.
 Card:new(Officer, NR_L,{ name = "Cilghal {NR}", front = CUSTOM_ASSETS .. "cards/.nr/cilghal.jpg", cost = 6, aliases = { "Cilghal {NR} [Legends]" } })
 Card:new(Title, NR_L,{ name = "Brilliant {NR}", front = CUSTOM_ASSETS .. "cards/.nr/brilliant.jpg", cost = 5, aliases = { "Brilliant {NR} [Legends]" } })
 Card:new(Title, NR_L,{ name = "Boldheart {NR}", front = CUSTOM_ASSETS .. "cards/.nr/boldheart.jpg", cost = 4, aliases = { "Boldheart {NR} [Legends]" } })
-
+Card:new(Title, NR_L,{ name = "Resolve {NR}", front = CUSTOM_ASSETS .. "cards/.nr/resolve.jpg", cost = 3, aliases = { "Resolve {NR} [Legends]" } })
 
     -- Armada Legacy (New) Upgrades
 Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/daultay_dofine.jpg", cost=29, aliases={"Daultay Dofine [Legacy]"}})
