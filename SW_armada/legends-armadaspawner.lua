@@ -1706,6 +1706,12 @@ HugeShip = {
 ShortHugeShip = { 
     collider = CUSTOM_ASSETS..'misc/bases/shorthuge_collider.obj'
 } --https://pastebin.com/raw/EnRBX4Lb
+WideHugeShip = { 
+    collider = CUSTOM_ASSETS..'misc/bases/widehuge_collider.obj'
+}
+MegaWideHugeShip = { 
+    collider = CUSTOM_ASSETS..'misc/bases/megawidehuge_collider.obj'
+}
 
 Squadron = {
     collider = ASSETS_ROOT..'misc/bases/squad.obj', --"http://paste.ee/r/nAMCQ",
@@ -4209,6 +4215,12 @@ SCUM_L_SQUAD = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "Scum" 
 NR_L_SHIP = { back = CUSTOM_ASSETS .. "new_rep_back.jpg", faction = "New Republic" }
 NR_L_SQUAD = { back = CUSTOM_ASSETS .. "new_rep_back.jpg", faction = "New Republic" }
 
+FO_L_SHIP = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "First Order" }
+FO_L_SQUAD = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "First Order" }
+
+RESIST_L_SHIP = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "Resistance" }
+RESIST_L_SQUAD = { back = CUSTOM_ASSETS .. "scum_card_back.jpg", faction = "Resistance" }
+
 COL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 COL_L_SQUAD = { back = CUSTOM_ASSETS .. "ships/colonial/card_back.jpg", faction = "Colonial" }
 CYL_L_SHIP = { back = CUSTOM_ASSETS .. "ships/cylon/card_back.jpg", faction = "Cylon" }
@@ -5007,7 +5019,7 @@ Ship:new(SmallShip, EMPIRE_L_SHIP, {
 --     command = 1
 -- })
 
--------- unapproved legends ships
+-------- unapproved unofficial legends ships
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
@@ -5075,6 +5087,34 @@ Ship:new(LargeShip, REPUBLIC_L_SHIP, {
     cost = 130,
     command = 3,
     aliases = { "Rothana II-class Destroyer [Legends]" }
+})
+
+Ship:new(WideHugeShip, SEPARATIST_L_SHIP, {
+    name = "Lucrehulk-class Droid Control Ship (WideHuge)",
+    front = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-dcs-card.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
+    maneuver = { { "-" }, { "-", "-" } },
+    defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
+    shields = { 2, 3, 3, 2, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
+    cost = 190,
+    aliases = { "Lucrehulk-class Droid Control Ship [Legends]" },
+    command = 4
+})
+
+Ship:new(MegaWideHugeShip, FO_L_SHIP, {
+    name = "Mega-class Star Dreadnought (WideHuge)",
+    front = CUSTOM_ASSETS .. "ships/first_order/supremacy/mega-card.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/first_order/supremacy/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/first_order/supremacy/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/first_order/supremacy/ruler.obj",
+    maneuver = { { "-" }},
+    defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
+    shields = { 6, 4, 4, 2, 6, 6 }, --Front, back-left, back-right, rear, front-left, front-right
+    cost = 411,
+    aliases = { "Mega-class Star Dreadnought [Legends]" },
+    command = 4
 })
 
 -- Armada Legends squadrons
@@ -6944,6 +6984,11 @@ BSG = { factions = { "Colonial", "Cylon" } }
 
 
 ----------- Armada Legends Upgrades
+--interdictor fixes
+Card:new(ExperimentalRetrofit,{name="G-8 Experimental Projector [Legends]", front=CUSTOM_ASSETS.."cards/.legends/g8-interdictor-fix.jpg", cost=8, aliases = { "G-8 Experimental Projector [Legends]" }})
+Card:new(ExperimentalRetrofit,{name="G7-X Grav Well Projector [Legends]", front=CUSTOM_ASSETS.."cards/.legends/g7x-interdictor-fix.jpg", cost=2, aliases = { "G7-X Grav Well Projector [Legends]" }})
+Card:new(ExperimentalRetrofit,{name="Grav Shift Reroute [Legends]", front=CUSTOM_ASSETS.."cards/.legends/grav-shift-interdictor-fix.jpg", cost=2, aliases = { "Grav Shift Reroute [Legends]" }})
+
 --11-2024 dev cycle
 Card:new(SuperWeapon, Separatist_L,
     { name = "Ion Pulse Emitter", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ion_Pulse_Emitter.jpg", cost = 7, aliases = { "Ion Pulse Emitter [Legends]" } })

@@ -23,12 +23,10 @@ local SHIPS = {
     {ASSETS_ROOT..'misc/bases/medium.obj',"http://paste.ee/r/6LYTT"},
     {ASSETS_ROOT..'misc/bases/large.obj',"http://paste.ee/r/a7mfW"},
     {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"},
-    {CUSTOM_ASSETS..'misc/bases/shorthuge_collider.obj',"https://pastebin.com/raw/EnRBX4Lb"}} --custom massive/shortHuge
-    -- "https://paste.ee/r/eDbf1",
-    -- "https://paste.ee/r/6LYTT",
-    -- "https://paste.ee/r/a7mfW",
-    -- "https://paste.ee/r/ClCL3",
-    -- "https://pastebin.com/raw/EnRBX4Lb"}
+    {CUSTOM_ASSETS..'misc/bases/shorthuge_collider.obj',"https://pastebin.com/raw/EnRBX4Lb"}, --custom shortHuge
+    {CUSTOM_ASSETS..'misc/bases/widehuge_collider.obj'}, --custom wideHuge
+    {CUSTOM_ASSETS..'misc/bases/megawidehuge_collider.obj'}} --custom megaWideHuge
+
 local CMD_MESHES = {
     ASSETS_ROOT.."misc/command_dials/eng.jpg", --repair
     ASSETS_ROOT.."misc/command_dials/confire.jpg", --concentrate
@@ -1097,16 +1095,22 @@ ship_size = {
     {1.201,0,2.008}, --med
     {1.496,0,2.539}, --large
     {1.496,0,2.539,2.539*3+3.68}, --huge (=11.297)
-    --{1.201,0,2.008,9.10} --custom massive doublemed
-    {1.496,0,2.539,9.10} --custom massive shortHuge
+    --{1.201,0,2.008,9.10} --custom doublemed
+    {1.496,0,2.539,9.10}, --custom shortHuge
+    {1.496,0,2.539,9.10}, --custom wideHuge
+    {1.496,0,2.539,9.10} --custom megaWideHuge
 }
 shield_pos = {
     {0.634,0,1.176,-1.176}, --small
     {1.028,0,1.835,-1.835}, --med
     {1.323,0,2.377,-2.377}, --large
     {1.323,0,2.377,2.539*2+2.377+3.68}, --huge (=11.135)
-    --{1.055,0,1.835,6.4} --custom massive doublemed / shields sides mirror offset, zero, rear offset, front offset
-    {1.4,0,2.45,8.6} --custom massive shortHuge / shields sides mirror offset, zero, rear offset, front offset
+    {1.4,0,2.45,8.6}, --custom shortHuge / shields sides mirror offset, zero, rear offset, front offset
+    {1.4,0,2.45,8.6}, --custom wideHuge / shields sides mirror offset, zero, rear offset, front offset
+    {1.4,0,2.45,8.6}, --custom megaWideHuge / shields sides mirror offset, zero, rear offset, front offset
+    --{1.055,0,1.835,6.4} --custom doublemed / shields sides mirror offset, zero, rear offset, front offset
+    --0.37 measuring factor when measuring shields in blender
+
 }
 function spawnShields(ship)
     --    local pos = ship.getPosition()
@@ -1114,19 +1118,24 @@ function spawnShields(ship)
     --    ship.setPosition({pos[1],15,pos[3]})
         ship.lock()
         local size = getSize(ship)
-        local o = shield_pos[math.mod(size-1,5)+1]
+        local o = shield_pos[math.mod(size-1,7)+1]
         local offsets = { --front, left, right, rear
             {0,0,math.abs(o[4])},
             {-math.abs(o[1]),0,0},
             {math.abs(o[1]),0,0},
             {0,0,-math.abs(o[3])},
         }
+        --0.37 measuring factor when measuring shields in blender
         if size==4 then --huge size, array 4 in ships[]
             table.insert(offsets,{-math.abs(o[1]),0,2.539*2+3.68}) --huge front left shield offset
             table.insert(offsets,{math.abs(o[1]),0,2.539*2+3.68}) --huge front right shield offset
-        elseif size==5 then --custom massive size, array 5 in ships[] 
-            --table.insert(offsets,{-math.abs(o[1]),0,4.50}) --doublemed front left shield offset
-            --table.insert(offsets,{math.abs(o[1]),0,4.50}) --doublemed front right shield offset
+        elseif size==5 then --custom shortHuge size, array 5 in ships[] 
+            table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
+            table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
+        elseif size==6 then --custom wideHuge size, array 6 in ships[] 
+            table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
+            table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
+        elseif size==7 then --custom megaWideHuge size, array 7 in ships[] 
             table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
             table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
     
@@ -1405,14 +1414,18 @@ ATTACK_RULERS = {
     ASSETS_ROOT.."misc/rulers/ship/medium/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/huge/collider.obj",
-    CUSTOM_ASSETS.."misc/rulers/shorthuge/collider.obj" --shortHuge (same as large/huge)
+    CUSTOM_ASSETS.."misc/rulers/shorthuge/collider.obj", --shortHuge (same as large/huge)
+    CUSTOM_ASSETS.."misc/rulers/widehuge/collider.obj", --wideHuge
+    CUSTOM_ASSETS.."misc/rulers/megawidehuge/collider.obj" --megaWideHuge
 }
 RANGE_RULER_MESH = {
     ASSETS_ROOT.."misc/rulers/ship/small/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/medium/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/huge/mesh.obj",
-    CUSTOM_ASSETS.."misc/rulers/shorthuge/shorthuge_distance_ruler.obj" --custom shortHuge
+    CUSTOM_ASSETS.."misc/rulers/shorthuge/shorthuge_distance_ruler.obj", --custom shortHuge
+    CUSTOM_ASSETS.."misc/rulers/widehuge/distance_ruler.obj", --wideHuge
+    CUSTOM_ASSETS.."misc/rulers/megawidehuge/distance_ruler.obj" --megaWideHuge
 }
 function Action_cmds(ship)
     printCmds(ship)
