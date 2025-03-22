@@ -1107,7 +1107,7 @@ shield_pos = {
     {1.323,0,2.377,2.539*2+2.377+3.68}, --huge (=11.135)
     {1.4,0,2.45,8.6}, --custom shortHuge / shields sides mirror offset, zero, rear offset, front offset
     {1.4,0,2.45,8.6}, --custom wideHuge / shields sides mirror offset, zero, rear offset, front offset
-    {1.4,0,2.45,8.6}, --custom megaWideHuge / shields sides mirror offset, zero, rear offset, front offset
+    {1.4,0,2.377,-2.377}, --custom megaWideHuge / shields sides mirror offset, zero, rear offset, front offset
     --{1.055,0,1.835,6.4} --custom doublemed / shields sides mirror offset, zero, rear offset, front offset
     --0.37 measuring factor when measuring shields in blender
 
@@ -1133,11 +1133,11 @@ function spawnShields(ship)
             table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
             table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
         elseif size==6 then --custom wideHuge size, array 6 in ships[] 
-            table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
-            table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
+            table.insert(offsets,{-math.abs(o[1]),5,6.15}) --wideHuge front left shield offset
+            table.insert(offsets,{math.abs(o[1]),5,6.15}) --wideHuge front right shield offset
         elseif size==7 then --custom megaWideHuge size, array 7 in ships[] 
-            table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
-            table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
+            table.insert(offsets,{-math.abs(o[1]),-5,6.15}) --megaWideHuge front left shield offset
+            table.insert(offsets,{math.abs(o[1]),-5,6.15}) --megaWideHuge front right shield offset
     
         end
 

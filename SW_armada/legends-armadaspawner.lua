@@ -5096,9 +5096,9 @@ Ship:new(WideHugeShip, SEPARATIST_L_SHIP, {
     diffuse = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
     maneuver = { { "-" }, { "-", "-" } },
-    defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
-    shields = { 2, 3, 3, 2, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
-    cost = 190,
+    defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO, DEF_BRACE, DEF_BRACE },
+    shields = { 3, 4, 4, 3, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
+    cost = 175,
     aliases = { "Lucrehulk-class Droid Control Ship [Legends]" },
     command = 4
 })
