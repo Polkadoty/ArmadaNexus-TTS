@@ -6385,6 +6385,59 @@ Squadron:new(awing, NR_L_SQUAD, {
 ----proxy ships/squadrons
     PROXY_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
 
+    Ship:new(SmallShip,PROXY_SHIP, {
+        name = "Homebrew Small Ship",
+        front =     CUSTOM_ASSETS.."diy/DIY_ship_card.jpg",
+        mesh =      CUSTOM_ASSETS.."diy/small/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."diy/small/diffuse.jpg",
+        ruler =     CUSTOM_ASSETS.."diy/small/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"I","I","I"},{"I","I","I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_EVADE,DEF_SALVO},
+        shields = {1,1,1,1},
+        cost = 1,
+        aliases = {"Homebrew Medium Ship [Proxy]"},
+        command = 2
+    })
+    Ship:new(MediumShip,PROXY_SHIP, {
+        name = "Homebrew Medium Ship",
+        front =     CUSTOM_ASSETS.."ships/empire/cantwell/cantwell-interdictor-proxy.jpg",
+        mesh =      CUSTOM_ASSETS.."ships/empire/cantwell/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."ships/empire/cantwell/diffuse.jpg",
+        ruler =     CUSTOM_ASSETS.."ships/empire/interdictor/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"I","I","I"},{"I","I","I","I"}},
+        defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+        shields = {3,2,2,2},
+        cost = 1,
+        aliases = {"Homebrew Medium Ship [Proxy]"},
+        command = 3
+    })
+    Ship:new(LargeShip,PROXY_SHIP,{
+        name = "Homebrew Large Ship",
+        front =     CUSTOM_ASSETS.."ships/scum/aggressor/aggressor-proxy-card.jpg",
+        mesh =      CUSTOM_ASSETS.."ships/scum/aggressor/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."ships/scum/aggressor/diffuse.jpg",
+        ruler =     ASSETS_ROOT.."ships/empire/onager/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"I","I","I"},{"I","I","I","I"}},
+        defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_SALVO},
+        shields = {5,2,2,1},
+        cost = 1,
+        aliases = {"Homebrew Large Ship [Proxy]"},
+        command = 4
+    })
+    Ship:new(HugeShip,PROXY_SHIP,{
+        name = "Homebrew Huge Ship",
+        front =     CUSTOM_ASSETS.."ships/scum/aggressor/aggressor-proxy-card.jpg",
+        mesh =      CUSTOM_ASSETS.."ships/scum/aggressor/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."ships/scum/aggressor/diffuse.jpg",
+        ruler =     ASSETS_ROOT.."ships/empire/onager/ruler.obj",
+        maneuver = {{"I"},{"I","I"},{"I","I","I"},{"I","I","I","I"}},
+        defense_tokens = {DEF_BRACE, DEF_REDIRECT, DEF_SALVO},
+        shields = {1,1,1,1,1,1},
+        cost = 1,
+        aliases = {"Homebrew Huge Ship [Proxy]"},
+        command = 4
+    })
+
     Ship:new(MediumShip,PROXY_SHIP,{
         name = "Ton-Falk-class Escort Carrier",
         front =     CUSTOM_ASSETS.."ships/empire/ton-falk/ton-falk-card.jpg",
