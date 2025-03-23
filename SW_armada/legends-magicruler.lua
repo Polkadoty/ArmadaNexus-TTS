@@ -330,8 +330,8 @@ ship_size = {
     {1.496,0,2.539,2.539}, --large
     {1.496,0,2.539,2.539*3+3.68}, --huge (=11.135)
     {1.496,0,2.539,9.10}, --custom shorthuge
-    {1.496,0,2.539,9.10}, --custom widehuge
-    {1.496,0,2.539,9.10} --custom megawidehuge
+    {3.65,0,2.55,2.55}, --custom wideHuge
+    {8.3,0,2.55,2.55} --custom megaWideHuge
     --{1.201,0,2.008,9.10} --custom doublemed
 }
 -- moved_objects = {}

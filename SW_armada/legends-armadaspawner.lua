@@ -5096,7 +5096,7 @@ Ship:new(WideHugeShip, SEPARATIST_L_SHIP, {
     diffuse = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
     maneuver = { { "-" }, { "-", "-" } },
-    defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO, DEF_BRACE, DEF_BRACE },
+    defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_BRACE, DEF_BRACE, DEF_SALVO },
     shields = { 3, 4, 4, 3, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
     cost = 175,
     aliases = { "Lucrehulk-class Droid Control Ship [Legends]" },
@@ -5106,11 +5106,11 @@ Ship:new(WideHugeShip, SEPARATIST_L_SHIP, {
 Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     name = "Mega-class Star Dreadnought (WideHuge)",
     front = CUSTOM_ASSETS .. "ships/first_order/supremacy/mega-card.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/first_order/supremacy/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/first_order/supremacy/diffuse.jpg",
-    ruler = CUSTOM_ASSETS .. "ships/first_order/supremacy/ruler.obj",
+    mesh = CUSTOM_ASSETS .. "ships/first_order/supremacy/mesh.obj", --TODO
+    diffuse = CUSTOM_ASSETS .. "ships/first_order/supremacy/diffuse.jpg", --TODO
+    ruler = CUSTOM_ASSETS .. "ships/first_order/supremacy/ruler.obj", 
     maneuver = { { "-" }},
-    defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
+    defense_tokens = { DEF_CONTAIN, DEF_CONTAIN, DEF_REDIRECT, DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
     shields = { 6, 4, 4, 2, 6, 6 }, --Front, back-left, back-right, rear, front-left, front-right
     cost = 411,
     aliases = { "Mega-class Star Dreadnought [Legends]" },

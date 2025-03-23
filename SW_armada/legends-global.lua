@@ -1091,55 +1091,87 @@ function dial.name(dial)
 end
 --shieldedShip = nil
 ship_size = {
+    --half width, half height measured in inches 
+    --determines where the move tool and top buttons are placed
     {0.807,0,1.398}, --small
     {1.201,0,2.008}, --med
     {1.496,0,2.539}, --large
+    --4th value is for huge bases in which the move tool slots into the bottom half
     {1.496,0,2.539,2.539*3+3.68}, --huge (=11.297)
-    --{1.201,0,2.008,9.10} --custom doublemed
     {1.496,0,2.539,9.10}, --custom shortHuge
-    {1.496,0,2.539,9.10}, --custom wideHuge
-    {1.496,0,2.539,9.10} --custom megaWideHuge
+    {3.65,0,2.55}, --custom wideHuge
+    {8.3,0,2.55} --custom megaWideHuge
 }
-shield_pos = {
+shield_pos = { 
+    -- shields sides mirror offset, zero, rear offset, front offset
+    -- this mod and TTS use inches as the unit of measure
     {0.634,0,1.176,-1.176}, --small
     {1.028,0,1.835,-1.835}, --med
     {1.323,0,2.377,-2.377}, --large
     {1.323,0,2.377,2.539*2+2.377+3.68}, --huge (=11.135)
-    {1.4,0,2.45,8.6}, --custom shortHuge / shields sides mirror offset, zero, rear offset, front offset
-    {1.4,0,2.45,8.6}, --custom wideHuge / shields sides mirror offset, zero, rear offset, front offset
-    {1.4,0,2.377,-2.377}, --custom megaWideHuge / shields sides mirror offset, zero, rear offset, front offset
-    --{1.055,0,1.835,6.4} --custom doublemed / shields sides mirror offset, zero, rear offset, front offset
-    --0.37 measuring factor when measuring shields in blender
-
+    {1.4,0,2.45,8.6}, --custom shortHuge
+    {3.5,0,2.4,-2.377}, --custom wideHuge 
+    {8.5,0,2.4,-2.377}, --custom megaWideHuge 
 }
+
+shield_pos_overrides = {
+    --for custom ship bases with different X and Y positioning of shield dials
+    [6] = { -- wideHuge 
+        front = {0,0,2.45},
+        left  = {-3.5,0,-1.5},
+        right = {3.5,0,-1.5},
+        rear  = {0,0,-2.45},
+    },
+    [7] = { -- megaWideHuge
+        front = {0,0,2.45},
+        left  = {-6.75,0,-2.45},
+        right = {6.75,0,-2.45},
+        rear  = {0,0,-2.45},
+    },
+}
+
+custom_shield_offsets = {
+    --for huge ships with 2 extra dials, allows X and Y positioning of dials
+    [4] = { -- huge
+        frontLeft  = {-1.4, 0, 8.75},
+        frontRight = {1.4,  0, 8.75},
+    },
+    [5] = { -- shortHuge
+        frontLeft  = {-1.4, 0, 6.15},
+        frontRight = {1.4,  0, 6.15},
+    },
+    [6] = { -- wideHuge
+        frontLeft  = {-3.5, 0, 1.5},
+        frontRight = {3.5,  0, 1.5},
+    },
+    [7] = { -- megaWideHuge
+        frontLeft  = {-6.75,0, 2.45},
+        frontRight = {6.75,0, 2.45},
+    },
+}
+
 function spawnShields(ship)
-    --    local pos = ship.getPosition()
-    --    ship.unlock()
-    --    ship.setPosition({pos[1],15,pos[3]})
-        ship.lock()
-        local size = getSize(ship)
-        local o = shield_pos[math.mod(size-1,7)+1]
-        local offsets = { --front, left, right, rear
-            {0,0,math.abs(o[4])},
-            {-math.abs(o[1]),0,0},
-            {math.abs(o[1]),0,0},
-            {0,0,-math.abs(o[3])},
-        }
-        --0.37 measuring factor when measuring shields in blender
-        if size==4 then --huge size, array 4 in ships[]
-            table.insert(offsets,{-math.abs(o[1]),0,2.539*2+3.68}) --huge front left shield offset
-            table.insert(offsets,{math.abs(o[1]),0,2.539*2+3.68}) --huge front right shield offset
-        elseif size==5 then --custom shortHuge size, array 5 in ships[] 
-            table.insert(offsets,{-math.abs(o[1]),0,6.15}) --shortHuge front left shield offset
-            table.insert(offsets,{math.abs(o[1]),0,6.15}) --shortHuge front right shield offset
-        elseif size==6 then --custom wideHuge size, array 6 in ships[] 
-            table.insert(offsets,{-math.abs(o[1]),5,6.15}) --wideHuge front left shield offset
-            table.insert(offsets,{math.abs(o[1]),5,6.15}) --wideHuge front right shield offset
-        elseif size==7 then --custom megaWideHuge size, array 7 in ships[] 
-            table.insert(offsets,{-math.abs(o[1]),-5,6.15}) --megaWideHuge front left shield offset
-            table.insert(offsets,{math.abs(o[1]),-5,6.15}) --megaWideHuge front right shield offset
-    
-        end
+    ship.lock()
+    local size = getSize(ship)
+    local o = shield_pos[math.mod(size-1,7)+1]
+
+    -- Check clearly for explicit overrides:
+    local overrides = shield_pos_overrides[size]
+
+    -- Original offsets logic stays intact unless overrides exist:
+    local offsets = {
+        overrides and overrides.front or {0, o[2], math.abs(o[4])},   -- front
+        overrides and overrides.left  or {-math.abs(o[1]), o[2], 0},  -- left
+        overrides and overrides.right or {math.abs(o[1]), o[2], 0},   -- right
+        overrides and overrides.rear  or {0, o[2], -math.abs(o[3])},  -- rear
+    }
+
+    -- Insert extra custom shields exactly as before:
+    local extraShields = custom_shield_offsets[size]
+    if extraShields ~= nil then
+        table.insert(offsets, extraShields.frontLeft)
+        table.insert(offsets, extraShields.frontRight)
+    end
 
     local world = ship.getPosition()
     local ground = {world[1],1,world[3]}
@@ -1414,18 +1446,18 @@ ATTACK_RULERS = {
     ASSETS_ROOT.."misc/rulers/ship/medium/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/collider.obj",
     ASSETS_ROOT.."misc/rulers/ship/huge/collider.obj",
-    CUSTOM_ASSETS.."misc/rulers/shorthuge/collider.obj", --shortHuge (same as large/huge)
-    CUSTOM_ASSETS.."misc/rulers/widehuge/collider.obj", --wideHuge
-    CUSTOM_ASSETS.."misc/rulers/megawidehuge/collider.obj" --megaWideHuge
+    CUSTOM_ASSETS.."misc/rulers/ship/shorthuge/collider.obj", --shortHuge (same as large/huge)
+    CUSTOM_ASSETS.."misc/rulers/ship/widehuge/collider.obj", --wideHuge
+    CUSTOM_ASSETS.."misc/rulers/ship/megawidehuge/collider.obj" --megaWideHuge
 }
 RANGE_RULER_MESH = {
     ASSETS_ROOT.."misc/rulers/ship/small/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/medium/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/large/mesh.obj",
     ASSETS_ROOT.."misc/rulers/ship/huge/mesh.obj",
-    CUSTOM_ASSETS.."misc/rulers/shorthuge/shorthuge_distance_ruler.obj", --custom shortHuge
-    CUSTOM_ASSETS.."misc/rulers/widehuge/distance_ruler.obj", --wideHuge
-    CUSTOM_ASSETS.."misc/rulers/megawidehuge/distance_ruler.obj" --megaWideHuge
+    CUSTOM_ASSETS.."misc/rulers/ship/shorthuge/mesh.obj", --shortHuge
+    CUSTOM_ASSETS.."misc/rulers/ship/widehuge/mesh.obj", --wideHuge 
+    CUSTOM_ASSETS.."misc/rulers/ship/megawidehuge/mesh.obj" --megaWideHuge 
 }
 function Action_cmds(ship)
     printCmds(ship)
