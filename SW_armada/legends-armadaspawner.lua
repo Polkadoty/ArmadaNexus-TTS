@@ -4231,6 +4231,9 @@ UNSC_L_SQUAD = { back = CUSTOM_ASSETS .. "ships/unsc/card_back.jpg", faction = "
 COV_L_SHIP = { back = CUSTOM_ASSETS .. "ships/covenant/back.jpg", faction = "Covenant" }
 COV_L_SQUAD = { back = CUSTOM_ASSETS .. "ships/covenant/back.jpg", faction = "Covenant" }
 
+PROXY_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
+PROXY_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
+
 
 -- Armada Legacy (Old) Ships/Squadrons
 
@@ -6267,7 +6270,6 @@ Ship:new(LargeShip, NR_L_SHIP, {
 ----new republic squadrons
 kwing = {
     mesh = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/diffuse.jpg",
     health = 7,
     move = 2,
     defense_tokens = {}
@@ -6275,12 +6277,14 @@ kwing = {
 Squadron:new(kwing, NR_L_SQUAD, {
     name = "K-wing Squadron",
     front = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/kwing.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/diffuse.jpg",
     cost = 17,
     aliases = { "K-wing Squadron [Legends]" }
 })
 Squadron:new(kwing, NR_L_SQUAD, {
     name = "Miranda Doni",
     front = CUSTOM_ASSETS .. "cards/.nr/miranda-doni.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/ace_diffuse.jpg",
     cost = 24,
     aliases = { "Miranda Doni - K-wing Squadron [Legends]" },
     defense_tokens = {DEF_BRACE, DEF_BRACE}
@@ -6382,9 +6386,83 @@ Squadron:new(awing, NR_L_SQUAD, {
     aliases = {"Pash Cracken - A-wing Squadron {NR} [Legends]"}
 })
 
+----first order ships/squadrons
+
+Ship:new(LargeShip, FO_L_SHIP, {
+    name = "Resurgent I-class Star Destroyer",
+    front = CUSTOM_ASSETS .. "ships/first_order/resurgent/resurgent.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/first_order/resurgent/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/first_order/resurgent/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/first_order/resurgent/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" },{"-","I","I"} },
+    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_SALVO},
+    shields = { 5, 4, 4, 3 }, -- Front, left, right, rear
+    cost = 130,
+    command = 3,
+    aliases = { "Resurgent I-class Star Destroyer {FO} [Legends]" }
+})
+
+tie_fo = {
+    mesh = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/mesh.obj",
+    health = 4,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(tie_fo, FO_L_SQUAD, {
+    name = "TIE/fo Fighter Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/tie_fo.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/diffuse.jpg",
+    cost = 9,
+    aliases = { "TIE/fo Fighter Squadron {FO} [Legends]" }
+})
+Squadron:new(tie_fo, FO_L_SQUAD, {
+    name = "Commander Malarus",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/malarus.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/ace_diffuse.jpg",
+    cost = 16,
+    aliases = { "Commander Malarus - TIE/fo Fighter Squadron {FO} [Legends]" },
+    defense_tokens = {DEF_SCATTER, DEF_BRACE}
+})
+
+----resistance ships/squadrons
+
+Ship:new(LargeShip, RESIST_L_SHIP, {
+    name = "MC85 Star Cruiser",
+    front = CUSTOM_ASSETS .. "ships/resist/mc85/mc85.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/resist/mc85/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/resist/mc85/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/resist/mc85/ruler.obj",
+    maneuver = { { "I" }, { "I", "I" },{"-","I","I"} },
+    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+    shields = { 5, 4, 4, 4 }, -- Front, left, right, rear
+    cost = 140,
+    command = 3,
+    aliases = { "MC85 Star Cruiser {Resist} [Legends]" }
+})
+
+bsf17 = {
+    mesh = CUSTOM_ASSETS .. "squadrons/resist/bsf17/mesh.obj",
+    health = 8,
+    move = 2,
+    defense_tokens = {}
+}
+Squadron:new(bsf17, RESIST_L_SQUAD, {
+    name = "B/SF-17 Starfortress",
+    front = CUSTOM_ASSETS .. "squadrons/resist/bsf17/bsf17.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/bsf17/diffuse.jpg",
+    cost = 21,
+    aliases = { "B/SF-17 Starfortress {Resist} [Legends]" }
+})
+Squadron:new(bsf17, RESIST_L_SQUAD, {
+    name = "Paige Tico",
+    front = CUSTOM_ASSETS .. "squadrons/resist/bsf17/paige-tico.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/bsf17/ace_diffuse.jpg",
+    cost = 25,
+    aliases = { "Paige Tico - B/SF-17 Starfortress {Resist} [Legends]" },
+    defense_tokens = {DEF_BRACE}
+})
+
 ----proxy ships/squadrons
-    PROXY_SHIP = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
-    PROXY_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
     
     diy_squad = {
         front =     CUSTOM_ASSETS.."diy/DIY_squad_card.jpg",
@@ -6466,9 +6544,9 @@ Squadron:new(awing, NR_L_SQUAD, {
     Ship:new(ShortHugeShip,PROXY_SHIP,{
         name = "Homebrew Short-Huge Ship",
         front =     CUSTOM_ASSETS.."diy/DIY_ship_card.jpg",
-        mesh =      CUSTOM_ASSETS.."diy/huge/mesh.obj",
-        diffuse =   CUSTOM_ASSETS.."diy/huge/diffuse.jpg",
-        ruler =     CUSTOM_ASSETS.."diy/huge/ruler.obj",
+        mesh =      CUSTOM_ASSETS.."diy/shorthuge/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."diy/shorthuge/diffuse.jpg",
+        ruler =     CUSTOM_ASSETS.."diy/shorthuge/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"I","I","I"},{"I","I","I","I"}},
         defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_EVADE,DEF_SALVO,DEF_SCATTER},
         shields = {1,1,1,1,1,1},
@@ -6479,9 +6557,9 @@ Squadron:new(awing, NR_L_SQUAD, {
     Ship:new(WideHugeShip,PROXY_SHIP,{
         name = "Homebrew Wide-Huge Ship",
         front =     CUSTOM_ASSETS.."diy/DIY_ship_card.jpg",
-        mesh =      CUSTOM_ASSETS.."diy/huge/mesh.obj",
-        diffuse =   CUSTOM_ASSETS.."diy/huge/diffuse.jpg",
-        ruler =     CUSTOM_ASSETS.."diy/huge/ruler.obj",
+        mesh =      CUSTOM_ASSETS.."diy/widehuge/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."diy/widehuge/diffuse.jpg",
+        ruler =     CUSTOM_ASSETS.."diy/widehuge/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"I","I","I"},{"I","I","I","I"}},
         defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_EVADE,DEF_SALVO,DEF_SCATTER},
         shields = {1,1,1,1,1,1},
@@ -6492,9 +6570,9 @@ Squadron:new(awing, NR_L_SQUAD, {
     Ship:new(MegaWideHugeShip,PROXY_SHIP,{
         name = "Homebrew Mega-Wide-Huge Ship",
         front =     CUSTOM_ASSETS.."diy/DIY_ship_card.jpg",
-        mesh =      CUSTOM_ASSETS.."diy/huge/mesh.obj",
-        diffuse =   CUSTOM_ASSETS.."diy/huge/diffuse.jpg",
-        ruler =     CUSTOM_ASSETS.."diy/huge/ruler.obj",
+        mesh =      CUSTOM_ASSETS.."diy/megawidehuge/mesh.obj",
+        diffuse =   CUSTOM_ASSETS.."diy/megawidehuge/diffuse.jpg",
+        ruler =     CUSTOM_ASSETS.."diy/megawidehuge/ruler.obj",
         maneuver = {{"I"},{"I","I"},{"I","I","I"},{"I","I","I","I"}},
         defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_EVADE,DEF_SALVO,DEF_SCATTER},
         shields = {1,1,1,1,1,1},
