@@ -1292,7 +1292,8 @@ end
 
 ----#include gameReporter
 ----#include upgradeSpawner
-ALL_FACTIONS = {"Rebellion","Empire","Republic","Separatist"}
+--ALL_FACTIONS = {"Rebellion","Empire","Republic","Separatist"}
+ALL_FACTIONS = {"Rebellion","Empire","Republic","Separatist","!Rebellion","!Empire","!Republic","!Separatist","Scum","New Republic","First Order","Resistance","UNSC","Covenant","Colonial","Cylon","!Proxy"}
 faction_index = 1
 
 function onClick_selectShipSpawnerTab(player, _, idValue)
@@ -6402,25 +6403,119 @@ Ship:new(LargeShip, FO_L_SHIP, {
     aliases = { "Resurgent I-class Star Destroyer {FO} [Legends]" }
 })
 
+Ship:new(MediumShip, FO_L_SHIP, {
+    name = "Maxima A-class Heavy Cruiser",
+    front = CUSTOM_ASSETS .. "ships/first_order/maxima/maxima.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/first_order/maxima/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/first_order/maxima/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/first_order/maxima/ruler.obj",
+    maneuver = { { "II" }, { "I", "I" },{"I","I","-"} },
+    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE},
+    shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
+    cost = 78,
+    command = 3,
+    aliases = { "Maxima A-class Heavy Cruiser {FO} [Legends]" }
+})
+
+Ship:new(SmallShip, FO_L_SHIP, {
+    name = "Dissident-class Light Cruiser",
+    front = CUSTOM_ASSETS .. "ships/first_order/dissident/dissident.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/first_order/dissident/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/first_order/dissident/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/first_order/dissident/ruler.obj",
+    maneuver = { { "II" }, { "II", "I" },{"II","I","-"},{"II","I","-","-"} },
+    defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_EVADE},
+    shields = { 2, 2, 2, 1 }, -- Front, left, right, rear
+    cost = 45,
+    command = 1,
+    aliases = { "Dissident-class Light Cruiser {FO} [Legends]" }
+})
+
 tie_fo = {
-    mesh = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/mesh.obj",
+    mesh = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo/mesh.obj",
     health = 4,
     move = 4,
     defense_tokens = {}
 }
 Squadron:new(tie_fo, FO_L_SQUAD, {
     name = "TIE/fo Fighter Squadron",
-    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/tie_fo.jpg",
-    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/diffuse.jpg",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo/tie_fo.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo/diffuse.jpg",
     cost = 9,
     aliases = { "TIE/fo Fighter Squadron {FO} [Legends]" }
 })
 Squadron:new(tie_fo, FO_L_SQUAD, {
     name = "Commander Malarus",
-    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/malarus.jpg",
-    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo_fighter/ace_diffuse.jpg",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo/malarus.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_fo/ace_diffuse.jpg",
     cost = 16,
     aliases = { "Commander Malarus - TIE/fo Fighter Squadron {FO} [Legends]" },
+    defense_tokens = {DEF_SCATTER, DEF_BRACE}
+})
+
+tie_se = {
+    mesh = CUSTOM_ASSETS .. "squadrons/first_order/tie_se/mesh.obj",
+    health = 5,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(tie_se, FO_L_SQUAD, {
+    name = "TIE/se Fighter Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_se/tie_se.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_se/diffuse.jpg",
+    cost = 10,
+    aliases = { "TIE/se Fighter Squadron {FO} [Legends]" }
+})
+Squadron:new(tie_se, FO_L_SQUAD, {
+    name = "Jul Jerjerrod",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_se/malarus.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_se/ace_diffuse.jpg",
+    cost = 16,
+    aliases = { "Jul Jerjerrod - TIE/se Fighter Squadron {FO} [Legends]" },
+    defense_tokens = {DEF_BRACE, DEF_BRACE}
+})
+
+tie_vn = {
+    mesh = CUSTOM_ASSETS .. "squadrons/first_order/tie_vn/mesh.obj",
+    health = 6,
+    move = 5,
+    defense_tokens = {}
+}
+Squadron:new(tie_vn, FO_L_SQUAD, {
+    name = "TIE/vn Silencer Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_vn/tie_vn.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_vn/diffuse.jpg",
+    cost = 17,
+    aliases = { "TIE/vn Silencer Squadron {FO} [Legends]" }
+})
+Squadron:new(tie_vn, FO_L_SQUAD, {
+    name = "Kylo Ren",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_vn/malarus.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_vn/ace_diffuse.jpg",
+    cost = 26,
+    aliases = { "Kylo Ren - TIE/vn Silencer Squadron {FO} [Legends]" },
+    defense_tokens = {DEF_BRACE, DEF_BRACE}
+})
+
+tie_wi = {
+    mesh = CUSTOM_ASSETS .. "squadrons/first_order/tie_wi/mesh.obj",
+    health = 3,
+    move = 5,
+    defense_tokens = {}
+}
+Squadron:new(tie_wi, FO_L_SQUAD, {
+    name = "TIE/wi Whisper Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_wi/tie_wi.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_wi/diffuse.jpg",
+    cost = 12,
+    aliases = { "TIE/wi Whisper Squadron {FO} [Legends]" }
+})
+Squadron:new(tie_wi, FO_L_SQUAD, {
+    name = "Wrath",
+    front = CUSTOM_ASSETS .. "squadrons/first_order/tie_wi/malarus.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/first_order/tie_wi/ace_diffuse.jpg",
+    cost = 16,
+    aliases = { "Wrath - TIE/wi Whisper Squadron {FO} [Legends]" },
     defense_tokens = {DEF_SCATTER, DEF_BRACE}
 })
 
@@ -6438,6 +6533,34 @@ Ship:new(LargeShip, RESIST_L_SHIP, {
     cost = 140,
     command = 3,
     aliases = { "MC85 Star Cruiser {Resist} [Legends]" }
+})
+
+Ship:new(SmallShip, RESIST_L_SHIP, {
+    name = "Free Virgillia-class Bunkerbuster",
+    front = CUSTOM_ASSETS .. "ships/resist/free-virgillia/free-virgillia.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/resist/free-virgillia/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/resist/free-virgillia/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/resist/free-virgillia/ruler.obj",
+    maneuver = { { "II" }, { "I", "II" },{"-","I","II"} },
+    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT},
+    shields = { 4, 2, 2, 3 }, -- Front, left, right, rear
+    cost = 65,
+    command = 2,
+    aliases = { "Free Virgillia-class Bunkerbuster {Resist} [Legends]" }
+})
+
+Ship:new(SmallShip, RESIST_L_SHIP, {
+    name = "Nebulon-C Escort Frigate",
+    front = CUSTOM_ASSETS .. "ships/resist/neb-c/neb-c.jpg",
+    mesh = CUSTOM_ASSETS .. "ships/resist/neb-c/mesh.obj",
+    diffuse = CUSTOM_ASSETS .. "ships/resist/neb-c/diffuse.jpg",
+    ruler = CUSTOM_ASSETS .. "ships/resist/neb-c/ruler.obj",
+    maneuver = { { "I" }, { "I", "II" },{"-","I","II"} },
+    defense_tokens = { DEF_EVADE, DEF_BRACE, DEF_BRACE},
+    shields = { 3, 2, 2, 2 }, -- Front, left, right, rear
+    cost = 58,
+    command = 2,
+    aliases = { "Nebulon-C Escort Frigate {Resist} [Legends]" }
 })
 
 bsf17 = {
@@ -6459,6 +6582,72 @@ Squadron:new(bsf17, RESIST_L_SQUAD, {
     diffuse = CUSTOM_ASSETS .. "squadrons/resist/bsf17/ace_diffuse.jpg",
     cost = 25,
     aliases = { "Paige Tico - B/SF-17 Starfortress {Resist} [Legends]" },
+    defense_tokens = {DEF_BRACE}
+})
+
+t70_xwing = {
+    mesh = CUSTOM_ASSETS .. "squadrons/resist/t70_xwing/mesh.obj",
+    health = 5,
+    move = 3,
+    defense_tokens = {}
+}
+Squadron:new(t70_xwing, RESIST_L_SQUAD, {
+    name = "T-70 X-wing Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/resist/t70_xwing/t70_xwing.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/t70_xwing/diffuse.jpg",
+    cost = 13,
+    aliases = { "T-70 X-wing Squadron {Resist} [Legends]" }
+})
+Squadron:new(t70_xwing, RESIST_L_SQUAD, {
+    name = "Poe Dameron",
+    front = CUSTOM_ASSETS .. "squadrons/resist/t70_xwing/paige-tico.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/t70_xwing/ace_diffuse.jpg",
+    cost = 20,
+    aliases = { "Poe Dameron - T-70 X-wing Squadron {Resist} [Legends]" },
+    defense_tokens = {DEF_BRACE, DEF_BRACE}
+})
+
+nr2_ywing = {
+    mesh = CUSTOM_ASSETS .. "squadrons/resist/nr2_ywing/mesh.obj",
+    health = 6,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(nr2_ywing, RESIST_L_SQUAD, {
+    name = "BTA-NR2 Y-wing Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/resist/nr2_ywing/nr2_ywing.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/nr2_ywing/diffuse.jpg",
+    cost = 12,
+    aliases = { "BTA-NR2 Y-wing Squadron {Resist} [Legends]" }
+})
+Squadron:new(nr2_ywing, RESIST_L_SQUAD, {
+    name = "Zorii Bliss",
+    front = CUSTOM_ASSETS .. "squadrons/resist/nr2_ywing/paige-tico.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/nr2_ywing/ace_diffuse.jpg",
+    cost = 19,
+    aliases = { "Zorii Bliss - BTA-NR2 Y-wing Squadron {Resist} [Legends]" },
+    defense_tokens = {DEF_BRACE, DEF_BRACE}
+})
+
+rz2_awing = {
+    mesh = CUSTOM_ASSETS .. "squadrons/resist/rz2_awing/mesh.obj",
+    health = 4,
+    move = 5,
+    defense_tokens = {}
+}
+Squadron:new(rz2_awing, RESIST_L_SQUAD, {
+    name = "RZ-2 A-wing Squadron",
+    front = CUSTOM_ASSETS .. "squadrons/resist/rz2_awing/rz2_awing.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/rz2_awing/diffuse.jpg",
+    cost = 11,
+    aliases = { "RZ-2 A-wing Squadron {Resist} [Legends]" }
+})
+Squadron:new(rz2_awing, RESIST_L_SQUAD, {
+    name = "Tallissan Lintra",
+    front = CUSTOM_ASSETS .. "squadrons/resist/rz2_awing/paige-tico.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/resist/rz2_awing/ace_diffuse.jpg",
+    cost = 16,
+    aliases = { "Tallissan Lintra - RZ-2 A-wing Squadron {Resist} [Legends]" },
     defense_tokens = {DEF_BRACE}
 })
 
