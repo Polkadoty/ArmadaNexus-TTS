@@ -23,7 +23,7 @@ local SHIPS = {
     {ASSETS_ROOT..'misc/bases/medium.obj',"http://paste.ee/r/6LYTT"},
     {ASSETS_ROOT..'misc/bases/large.obj',"http://paste.ee/r/a7mfW"},
     {ASSETS_ROOT..'misc/bases/huge.obj',"http://paste.ee/r/ClCL3"},
-    {CUSTOM_ASSETS..'misc/bases/shorthuge_collider.obj',"https://pastebin.com/raw/EnRBX4Lb"}, --custom shortHuge
+    {CUSTOM_ASSETS..'misc/bases/shorthuge_collider.obj'}, --custom shortHuge
     {CUSTOM_ASSETS..'misc/bases/widehuge_collider.obj'}, --custom wideHuge
     {CUSTOM_ASSETS..'misc/bases/megawidehuge_collider.obj'}} --custom megaWideHuge
 
@@ -47,8 +47,8 @@ CMD_COLORS[ASSETS_ROOT.."misc/command_dials/confire.jpg"] = {0.8,0.4,0.4} --conc
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/nav.jpg"] = {0.2, 0.4, 0.8} --navigate
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/squad.jpg"] = {0.8,0.4,0.8} --squadron
 SUMMA_IMG = "https://i.imgur.com/nhLQ82T.png"
-SUMMA_MESH = "https://pastebin.com/raw/vsufjyT7"
-SUMMA_RULER = "https://pastebin.com/raw/aTRg2KcU"
+SUMMA_MESH = "https://github.com/spacenavy90/SNCustomTTS-IncludeDir/raw/refs/heads/master/SW_armada/assets/misc/summa.obj"
+SUMMA_RULER = "https://github.com/spacenavy90/SNCustomTTS-IncludeDir/raw/refs/heads/master/SW_armada/assets/misc/rulers/ship/small/mesh.obj" --TODO
 local TARGETING_MESHES = {
     "http://i.imgur.com/mFwOs6T.jpg"
 }

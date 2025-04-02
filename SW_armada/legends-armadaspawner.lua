@@ -4239,7 +4239,7 @@ PROXY_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
 -- Armada Legacy (Old) Ships/Squadrons
 
 Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "Arquitens-class Command Cruiser (OldLegacy)",
+    name = "Arquitens-class Command Cruiser [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/arquitens-class-command-cruiser-republic-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/republic/rep_arq/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/republic/rep_arq/reparq_command_texture.jpg",
@@ -4253,7 +4253,7 @@ Ship:new(SmallShip, REPUBLIC_L_SHIP, {
 })
 
 Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "Arquitens-class Light Cruiser (OldLegacy)",
+    name = "Arquitens-class Light Cruiser [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/arquitens-class-light-cruiser-republic-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/republic/rep_arq/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/republic/rep_arq/reparq_light_texture.jpg",
@@ -4267,7 +4267,7 @@ Ship:new(SmallShip, REPUBLIC_L_SHIP, {
 })
 
 Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "IPV-2C Stealth Corvette (OldLegacy)",
+    name = "IPV-2C Stealth Corvette [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/ipv-2c-stealth-corvette-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/republic/ipv2/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/republic/ipv2/ipv2-stealth-texture.jpg",
@@ -4281,7 +4281,7 @@ Ship:new(SmallShip, REPUBLIC_L_SHIP, {
 })
 
 Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "IPV-2C Support Corvette (OldLegacy)",
+    name = "IPV-2C Support Corvette [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/ipv-2c-support-corvette-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/republic/ipv2/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/republic/ipv2/ipv2-support-texture.jpg",
@@ -4302,13 +4302,13 @@ eta2 = {
     defense_tokens = {}
 }
 Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "ETA-2 Actis Squadron (OldLegacy)",
+    name = "ETA-2 Actis Squadron [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/eta-2-actis-squadron-old-legacy.jpg",
     cost = 15,
     aliases = { "ETA-2 Actis Squadron [OldLegacy]", "ETA-2", "ETA2" }
 })
 Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Anakin Skywalker (ETA-2) (OldLegacy)",
+    name = "Anakin Skywalker (ETA-2) [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-eta-2-actis-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_anakin_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_SCATTER },
@@ -4316,7 +4316,7 @@ Squadron:new(eta2, REPUBLIC_L_SQUAD, {
     aliases = { "Anakin Skywalker - ETA-2 Actis Squadron [OldLegacy]" }
 })
 Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Obi-Wan Kenobi (ETA-2) (OldLegacy)",
+    name = "Obi-Wan Kenobi (ETA-2) [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/obi-wan-kenobi-eta-2-actis-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_obiwan_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_SCATTER },
@@ -4324,7 +4324,7 @@ Squadron:new(eta2, REPUBLIC_L_SQUAD, {
     aliases = { "Obi-Wan Kenobi - ETA-2 Actis Squadron [OldLegacy]" }
 })
 Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Aayla Secura (ETA-2) (OldLegacy)",
+    name = "Aayla Secura (ETA-2) [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/aayla-secura-eta-2-actis-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_SCATTER },
@@ -4332,7 +4332,7 @@ Squadron:new(eta2, REPUBLIC_L_SQUAD, {
     aliases = { "Aayla Secura - ETA-2 Actis Squadron [OldLegacy]" }
 })
 Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Shaak Ti (ETA-2) (OldLegacy)",
+    name = "Shaak Ti (ETA-2) [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/shaak-ti-eta-2-actis-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_SCATTER },
@@ -4348,13 +4348,13 @@ clone_z95 = {
     defense_tokens = {}
 }
 Squadron:new(clone_z95, REPUBLIC_L_SQUAD, {
-    name = "Clone Z-95 Squadron (OldLegacy)",
+    name = "Clone Z-95 Squadron [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/clone-z-95-squadron-old-legacy.jpg",
     cost = 10,
     aliases = { "Clone Z-95 Squadron [OldLegacy]", "Clone Z-95" }
 })
 Squadron:new(clone_z95, REPUBLIC_L_SQUAD, {
-    name = "Stub (OldLegacy)",
+    name = "Stub [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/stub-clone-z-95-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/clone-z95/cz95_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE },
@@ -4370,13 +4370,13 @@ laat_i_old = {
     defense_tokens = {}
 }
 Squadron:new(laat_i_old, REPUBLIC_L_SQUAD, {
-    name = "LAAT/i Gunship (OldLegacy)",
+    name = "LAAT/i Gunship [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/laat-i-gunship-old-legacy.jpg",
     cost = 17,
     aliases = { "LAAT/i Gunship [OldLegacy]", "LAAT/i" }
 })
 Squadron:new(laat_i_old, REPUBLIC_L_SQUAD, {
-    name = "Hawk (OldLegacy)",
+    name = "Hawk [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/hawk-laat-i-gunship-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
@@ -4392,13 +4392,13 @@ g9_rigger_old = {
     defense_tokens = {}
 }
 Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
-    name = "G9 Rigger-class Freighter (OldLegacy)",
+    name = "G9 Rigger-class Freighter [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/g9-rigger-old-old-legacy.jpg",
     cost = 13,
     aliases = { "G9 Rigger-class Freighter [OldLegacy]" }
 })
 Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
-    name = "Anakin Skywalker (G9) (OldLegacy)",
+    name = "Anakin Skywalker (G9) [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-twilight-old-legacy.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_ace_texture.jpg",
     defense_tokens = { DEF_BRACE },
@@ -4407,7 +4407,7 @@ Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
 })
 
 Ship:new(SmallShip, SEPARATIST_L_SHIP, {
-    name = "Trident-class Assault Ships (OldLegacy)",
+    name = "Trident-class Assault Ships [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/trident-class-assault-ships-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/separatist/trident/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/separatist/trident/trident_a_texture.jpg",
@@ -4421,7 +4421,7 @@ Ship:new(SmallShip, SEPARATIST_L_SHIP, {
 })
 
 Ship:new(SmallShip, SEPARATIST_L_SHIP, {
-    name = "Trident-class Assault Carriers (OldLegacy)",
+    name = "Trident-class Assault Carriers [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/trident-class-assault-carriers-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/separatist/trident/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/separatist/trident/trident_c_texture.jpg",
@@ -4435,7 +4435,7 @@ Ship:new(SmallShip, SEPARATIST_L_SHIP, {
 })
 
 Ship:new(LargeShip, SEPARATIST_L_SHIP, {
-    name = "Lucrehulk-class Battleship (OldLegacy)",
+    name = "Lucrehulk-class Battleship [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/lucrehulk-class-battleship-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-bs-texture.jpg",
@@ -4444,12 +4444,12 @@ Ship:new(LargeShip, SEPARATIST_L_SHIP, {
     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
     shields = { 5, 5, 5, 3 }, -- Front, left, right, rear
     cost = 144,
-    aliases = { "Lucrehulk Battleship [OldLegacy]" },
+    aliases = {"Lucrehulk-class Battleship [OldLegacy]", "Lucrehulk Battleship [OldLegacy]" },
     command = 4
 })
 
 Ship:new(LargeShip, SEPARATIST_L_SHIP, {
-    name = "Lucrehulk-class Droid Control Ship (OldLegacy)",
+    name = "Lucrehulk-class Droid Control Ship [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/lucrehulk-class-droid-control-ship-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-dcs-texture.jpg",
@@ -4458,7 +4458,7 @@ Ship:new(LargeShip, SEPARATIST_L_SHIP, {
     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
     shields = { 5, 5, 5, 3 }, -- Front, left, right, rear
     cost = 136,
-    aliases = { "Lucrehulk Droid Control [OldLegacy]" },
+    aliases = {"Lucrehulk-class Droid Control Ship [OldLegacy]", "Lucrehulk Droid Control [OldLegacy]" },
     command = 4
 })
 
@@ -4470,13 +4470,13 @@ nantex = {
     defense_tokens = {}
 }
 Squadron:new(nantex, SEPARATIST_L_SQUAD, {
-    name = "Nantex Starfighter Squadron (OldLegacy)",
+    name = "Nantex Starfighter Squadron [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/nantex-starfighter-squadron-old-legacy.jpg",
     cost = 11,
     aliases = { "Nantex Starfighter Squadron [OldLegacy]" }
 })
 Squadron:new(nantex, SEPARATIST_L_SQUAD, {
-    name = "Sun Fac (OldLegacy)",
+    name = "Sun Fac [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/sun-fac-nantex-starfighter-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_SCATTER },
@@ -4484,7 +4484,7 @@ Squadron:new(nantex, SEPARATIST_L_SQUAD, {
     aliases = { "Sun Fac - Nantex Starfighter Squadron [OldLegacy]" }
 })
 Squadron:new(nantex, SEPARATIST_L_SQUAD, {
-    name = "Gorgol (OldLegacy)",
+    name = "Gorgol [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/gorgol-nantex-starfighter-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_SCATTER },
@@ -4500,13 +4500,13 @@ hmp_gunship_old = {
     defense_tokens = {}
 }
 Squadron:new(hmp_gunship_old, SEPARATIST_L_SQUAD, {
-    name = "HMP Droid Gunship (OldLegacy)",
+    name = "HMP Droid Gunship [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/hmp-droid-gunship-old-legacy.jpg",
     cost = 16,
     aliases = { "HMP Droid Gunship [OldLegacy]" }
 })
 Squadron:new(hmp_gunship_old, SEPARATIST_L_SQUAD, {
-    name = "Geonosian Prototype (OldLegacy)",
+    name = "Geonosian Prototype [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/geonosian-prototype-hmp-droid-gunship-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/hmp/hmp_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
@@ -4514,7 +4514,7 @@ Squadron:new(hmp_gunship_old, SEPARATIST_L_SQUAD, {
     aliases = { "Geonosian Prototype - HMP Droid Gunship [OldLegacy]" }
 })
 Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
-    name = "DGS-047 (OldLegacy)",
+    name = "DGS-047 [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/dgs-047-hmp-droid-gunship-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/hmp/hmp_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
@@ -4530,13 +4530,13 @@ sith_infil = {
     defense_tokens = {}
 }
 Squadron:new(sith_infil, SEPARATIST_L_SQUAD, {
-    name = "Sith Infiltrator (OldLegacy)",
+    name = "Sith Infiltrator [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/sith-infiltrator-scimitar-old-legacy.jpg",
     cost = 17,
     aliases = { "Sith Infiltrator [OldLegacy]" }
 })
 Squadron:new(sith_infil, SEPARATIST_L_SQUAD, {
-    name = "Count Dooku (OldLegacy)",
+    name = "Count Dooku [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/count-dooku-scimitar-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/sith-infil/sithinfil_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
@@ -4552,13 +4552,13 @@ rogue_fighter = {
     defense_tokens = {}
 }
 Squadron:new(rogue_fighter, SEPARATIST_L_SQUAD, {
-    name = "Rogue Starfighter Squadron (OldLegacy)",
+    name = "Rogue Starfighter Squadron [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/rogue-class-starfighter-squadron-old-legacy.jpg",
     cost = 15,
     aliases = { "Rogue Starfighter Squadron [OldLegacy]" }
 })
 Squadron:new(rogue_fighter, SEPARATIST_L_SQUAD, {
-    name = "Magnaguard Protectors (OldLegacy)",
+    name = "Magnaguard Protectors [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/magnaguard-protectors-rogue-class-starfighter-squadron-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/rogue/rogue_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
@@ -4566,7 +4566,7 @@ Squadron:new(rogue_fighter, SEPARATIST_L_SQUAD, {
     aliases = { "Magnaguard Protectors - Rogue Starfighter Squadron [OldLegacy]" }
 })
 Squadron:new(rogue_fighter, SEPARATIST_L_SQUAD, {
-    name = "Cad Bane (OldLegacy)",
+    name = "Cad Bane [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/cad-bane-xanadu-blood-old-legacy.jpg",
     diffuse = LEGACY_ASSETS .. "squadrons/separatist/rogue/rogue_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
@@ -4575,7 +4575,7 @@ Squadron:new(rogue_fighter, SEPARATIST_L_SQUAD, {
 })
 
 Ship:new(MediumShip, EMPIRE_L_SHIP, {
-    name = "Dreadnaught-class Imperial Refit (OldLegacy)",
+    name = "Dreadnaught-class Imperial Refit [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-imperial-refit-old-legacy.jpg",
     mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_imp_texture.jpg",
@@ -4589,7 +4589,7 @@ Ship:new(MediumShip, EMPIRE_L_SHIP, {
 })
 
 Ship:new(MediumShip, EMPIRE_L_SHIP, {
-    name = "Dreadnaught-class Katana Refit (OldLegacy)",
+    name = "Dreadnaught-class Katana Refit [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-katana-refit-old-legacy.jpg",
     mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_katana_texture.jpg",
@@ -4603,7 +4603,7 @@ Ship:new(MediumShip, EMPIRE_L_SHIP, {
 })
 
 Ship:new(LargeShip, EMPIRE_L_SHIP, {
-    name = "Interdictor-class Star Destroyer (OldLegacy)",
+    name = "Interdictor-class Star Destroyer [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/interdictor-class-star-destroyer-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/empire/interdictor-sd/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/empire/interdictor-sd/interdictorsd-sd-texture.jpg",
@@ -4617,7 +4617,7 @@ Ship:new(LargeShip, EMPIRE_L_SHIP, {
 })
 
 Ship:new(LargeShip, EMPIRE_L_SHIP, {
-    name = "Interdictor-class Prototype (OldLegacy)",
+    name = "Interdictor-class Prototype [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/interdictor-class-prototype-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/empire/interdictor-sd/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/empire/interdictor-sd/interdictorsd-proto-texture.jpg",
@@ -4631,7 +4631,7 @@ Ship:new(LargeShip, EMPIRE_L_SHIP, {
 })
 
 Squadron:new(TIE_ADV, EMPIRE_L_SQUAD, {
-    name = "Maarek Stele (TIE/x1) (OldLegacy)",
+    name = "Maarek Stele (TIE/x1) [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/maarek-stele-tie-advanced-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/empire/adv/ace_diffuse.jpg",
@@ -4641,7 +4641,7 @@ Squadron:new(TIE_ADV, EMPIRE_L_SQUAD, {
 })
 
 Squadron:new(TIE_FIG, EMPIRE_L_SQUAD, {
-    name = "Iden Versio (OldLegacy)",
+    name = "Iden Versio [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/iden-versio-tie-fighter-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/empire/tie/ace_diffuse.jpg",
@@ -4651,7 +4651,7 @@ Squadron:new(TIE_FIG, EMPIRE_L_SQUAD, {
 })
 
 Squadron:new(TIE_BOM, EMPIRE_L_SQUAD, {
-    name = "Tomax Bren (OldLegacy)",
+    name = "Tomax Bren [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/tomax-bren-tie-bomber-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/empire/bom/ace_diffuse.jpg",
@@ -4661,7 +4661,7 @@ Squadron:new(TIE_BOM, EMPIRE_L_SQUAD, {
 })
 
 Squadron:new(TIE_INT, EMPIRE_L_SQUAD, {
-    name = "Turr Phennir (OldLegacy)",
+    name = "Turr Phennir [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/turr-phennir-tie-interceptor-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/empire/int/ace_diffuse.jpg",
@@ -4671,7 +4671,7 @@ Squadron:new(TIE_INT, EMPIRE_L_SQUAD, {
 })
 
 Ship:new(MediumShip, REBEL_L_SHIP, {
-    name = "Assault Frigate Mark I A (OldLegacy)",
+    name = "Assault Frigate Mark I A [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/assault-frigate-mark-i-a-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1a_mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_a_texture.jpg",
@@ -4685,7 +4685,7 @@ Ship:new(MediumShip, REBEL_L_SHIP, {
 })
 
 Ship:new(MediumShip, REBEL_L_SHIP, {
-    name = "Assault Frigate Mark I B (OldLegacy)",
+    name = "Assault Frigate Mark I B [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/assault-frigate-mark-i-b-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1b_mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_b_texture.jpg",
@@ -4699,7 +4699,7 @@ Ship:new(MediumShip, REBEL_L_SHIP, {
 })
 
 Ship:new(LargeShip, REBEL_L_SHIP, {
-    name = "MC80B Command Cruiser (OldLegacy)",
+    name = "MC80B Command Cruiser [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/mc80b-command-cruiser-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/rebel/mc80b/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/rebel/mc80b/mc80b-command-texture.jpg",
@@ -4713,7 +4713,7 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
 })
 
 Ship:new(LargeShip, REBEL_L_SHIP, {
-    name = "MC80B Heavy Cruiser (OldLegacy)",
+    name = "MC80B Heavy Cruiser [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/mc80b-heavy-cruiser-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/rebel/mc80b/mesh.obj",
     diffuse = LEGACY_ASSETS .. "ships/rebel/mc80b/mc80b-heavy-texture.jpg",
@@ -4727,7 +4727,7 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
 })
 
 Squadron:new(awing, REBEL_L_SQUAD, {
-    name = "Arvel Crynyo (OldLegacy)",
+    name = "Arvel Crynyo [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/arvel-crynyd-a-wing-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/rebel/awing/ace_diffuse.jpg",
@@ -4737,7 +4737,7 @@ Squadron:new(awing, REBEL_L_SQUAD, {
 })
 
 Squadron:new(bwing, REBEL_L_SQUAD, {
-    name = "Braylen Stramm (OldLegacy)",
+    name = "Braylen Stramm [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/braylen-stramm-b-wing-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/rebel/bwing/ace_diffuse.jpg",
@@ -4747,7 +4747,7 @@ Squadron:new(bwing, REBEL_L_SQUAD, {
 })
 
 Squadron:new(xwing, REBEL_L_SQUAD, {
-    name = "Corran Horn (X-Wing) (OldLegacy)",
+    name = "Corran Horn (X-Wing) [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/corran-horn-x-wing-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/rebel/xwing/ace_diffuse.jpg",
@@ -4757,7 +4757,7 @@ Squadron:new(xwing, REBEL_L_SQUAD, {
 })
 
 Squadron:new(ywing, REBEL_L_SQUAD, {
-    name = "Horton Salm (OldLegacy)",
+    name = "Horton Salm [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/horton-salm-y-wing-squadron-old-legacy.jpg",
     --mesh = LEGACY_ASSETS..".obj",
     diffuse = LEGACY_ASSETS .. "squadrons/rebel/ywing/ace_diffuse.jpg",
@@ -4776,17 +4776,25 @@ star_courier = {
 }
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Star Courier",
-    front = CUSTOM_ASSETS .. "cards/.legacy/star_courier.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/Star Courier.jpg",
     cost = 17,
     aliases = { "Star Courier [Legacy]" }
 })
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Darth Maul",
-    front = CUSTOM_ASSETS .. "cards/.legacy/darth_maul.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/Darth Maul.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE},
-    cost = 25,
+    cost = 24,
     aliases = { "Darth Maul - Scimitar [Legacy]" }
+})
+Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
+    name = "Count Dooku",
+    front = CUSTOM_ASSETS .. "cards/.legacy/Count Dooku.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
+    defense_tokens = { DEF_BRACE, DEF_EVADE},
+    cost = 23,
+    aliases = { "Count Dooku - Scimitar [Legacy]" }
 })
 
 sheathipede = {
@@ -4844,8 +4852,8 @@ g9_rigger = {
 }
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "G9 Rigger-class Freighter",
-    front = CUSTOM_ASSETS .. "cards/.legacy/g9.jpg",
-    cost = 15,
+    front = CUSTOM_ASSETS .. "cards/.legacy/G9 Rigger-class Freighter.jpg",
+    cost = 14,
     aliases = { "G9 Rigger-class Freighter [Legacy]" }
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
@@ -4855,6 +4863,14 @@ Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     defense_tokens = { DEF_BRACE, DEF_EVADE },
     cost = 24,
     aliases = { "Anakin Skywalker - Twilight [Legacy]" }
+})
+Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
+    name = "R2-D2 (Twilight)",
+    front = CUSTOM_ASSETS .. "cards/.legacy/Twilight-1.jpg",
+    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
+    defense_tokens = { DEF_BRACE, DEF_EVADE },
+    cost = 22,
+    aliases = { "R2-D2 - Twilight [Legacy]" }
 })
 
 hmp_gunship = {
@@ -4866,16 +4882,16 @@ hmp_gunship = {
 }
 Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
     name = "HMP Droid Gunship",
-    front = CUSTOM_ASSETS .. "cards/.legacy/hmp.jpg",
-    cost = 15,
+    front = CUSTOM_ASSETS .. "cards/.legacy/HMP Droid Gunship.jpg",
+    cost = 14,
     aliases = { "HMP Droid Gunship [Legacy]" }
 })
 Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
     name = "DGS-047",
-    front = CUSTOM_ASSETS .. "cards/.legacy/dgs_047.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/DGS-047.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/hmp/hmp_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
-    cost = 22,
+    cost = 20,
     aliases = { "DGS-047 - HMP Droid Gunship [Legacy]" }
 })
 
@@ -4888,13 +4904,13 @@ laat_i = {
 }
 Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     name = "LAAT/i Gunship",
-    front = CUSTOM_ASSETS .. "cards/.legacy/laat.jpg",
-    cost = 15,
+    front = CUSTOM_ASSETS .. "cards/.legacy/LAATi Gunship.jpg",
+    cost = 14,
     aliases = { "LAAT/i Gunship [Legacy]"}
 })
 Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     name = "Five-Seven",
-    front = CUSTOM_ASSETS .. "cards/.legacy/five_seven.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/Five-Seven.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
     cost = 21,
@@ -5143,6 +5159,35 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         defense_tokens = { DEF_BRACE, DEF_BRACE },
         cost = 21,
         aliases = { "Lieutenant Karsabi - Alpha-class Star Wing Squadron [Legends]" }
+    })
+    --porax-38
+    porax38 = {
+        mesh = CUSTOM_ASSETS .. "squadrons/separatist/porax38/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse.jpg",
+        health = 5,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(porax38, SEPARATIST_L_SQUAD, {
+        name = "Porax-38 Starfighter",
+        front = CUSTOM_ASSETS .. "cards/.legends/porax38.jpg",
+        cost = 13,
+        aliases = { "Porax-38 Starfighter [Legends]" }
+    })
+    Squadron:new(porax38, SEPARATIST_L_SQUAD, {
+        name = "IG-100 MagnaGuards",
+        front = CUSTOM_ASSETS .. "cards/.legends/porax38_magnaguards.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
+        cost = 16,
+        aliases = { "IG-100 MagnaGuards - Porax-38 Starfighter [Legends]" }
+    })
+    Squadron:new(porax38, SEPARATIST_L_SQUAD, {
+        name = "Cad Bane",
+        front = CUSTOM_ASSETS .. "cards/.legends/porax38_cadbane.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
+        cost = 21,
+        defense_tokens = { DEF_BRACE, DEF_BRACE },
+        aliases = { "Cad Bane - Xanandu Blood [Legends]" }
     })
 
     --unapproved legends squadrons
@@ -7373,33 +7418,20 @@ Card:new(ExperimentalRetrofit,{name="G7-X Grav Well Projector [Legends]", front=
 Card:new(ExperimentalRetrofit,{name="Grav Shift Reroute [Legends]", front=CUSTOM_ASSETS.."cards/.legends/grav-shift-interdictor-fix.jpg", cost=2, aliases = { "Grav Shift Reroute [Legends]" }})
 
 --11-2024 dev cycle
-Card:new(SuperWeapon, Separatist_L,
-    { name = "Ion Pulse Emitter", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ion_Pulse_Emitter.jpg", cost = 7, aliases = { "Ion Pulse Emitter [Legends]" } })
-Card:new(SuperWeapon, Separatist_L,
-    { name = "Ionic Plasma Rotors", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ionic_plasma_rotors.jpg", cost = 6, aliases = { "Ionic Plasma Rotors [Legends]" } })
-Card:new(SuperWeapon, Separatist_L,
-    { name = "Kyber Beam Cannon", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Kyber_beam_cannon.jpg", cost = 5, aliases = { "Kyber Beam Cannon [Legends]" } })
-Card:new(Title, Separatist_L,
-    { name = "Devastation", front = CUSTOM_ASSETS .. "cards/title/Title_Devastation.jpg", cost = 5, aliases = { "Devastation [Legends]" } })
-Card:new(Title, Separatist_L,
-    { name = "Malevolence", front = CUSTOM_ASSETS .. "cards/title/Title_Malevolence.jpg", cost = 7, aliases = { "Malevolence [Legends]" } })
-Card:new(Title, Separatist_L,
-    { name = "Subjugator", front = CUSTOM_ASSETS .. "cards/title/Title_Subjugator.jpg", cost = 5, aliases = { "Subjugator [Legends]" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Ion Pulse Emitter", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ion_Pulse_Emitter.jpg", cost = 7, aliases = { "Ion Pulse Emitter [Legends]" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Ionic Plasma Rotors", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ionic_plasma_rotors.jpg", cost = 6, aliases = { "Ionic Plasma Rotors [Legends]" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Kyber Beam Cannon", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Kyber_beam_cannon.jpg", cost = 5, aliases = { "Kyber Beam Cannon [Legends]" } })
+Card:new(Title, Separatist_L,{ name = "Devastation", front = CUSTOM_ASSETS .. "cards/title/Title_Devastation.jpg", cost = 5, aliases = { "Devastation [Legends]" } })
+Card:new(Title, Separatist_L,{ name = "Malevolence", front = CUSTOM_ASSETS .. "cards/title/Title_Malevolence.jpg", cost = 7, aliases = { "Malevolence [Legends]" } })
+Card:new(Title, Separatist_L,{ name = "Subjugator", front = CUSTOM_ASSETS .. "cards/title/Title_Subjugator.jpg", cost = 5, aliases = { "Subjugator [Legends]" } })
 --12-2024 dev cycle
-Card:new(Title, Republic_L,
-    { name = "Judicial Fleet", front = CUSTOM_ASSETS .. "cards/title/judicial-fleet-title.jpg", cost = 4, aliases = { "Judicial Fleet [Legends]" } })
-Card:new(Title, Republic_L,
-    { name = "Katana Fleet", front = CUSTOM_ASSETS .. "cards/title/katana-fleet-title.jpg", cost = 2, aliases = { "Katana Fleet [Legends]" } })
-Card:new(Title, Republic_L,
-    { name = "Rendili Defender", front = CUSTOM_ASSETS .. "cards/title/rendili-defender-title.jpg", cost = 1, aliases = { "Rendili Defender [Legends]" } })
-Card:new(Title, Rebel_L,
-    { name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
-Card:new(Officer, Empire_L,
-    { name = "General Romodi (Officer)", front = CUSTOM_ASSETS .. "cards/.legends/General-Romodi.jpg", cost = 3, aliases = { "General Romodi [Legends]" } })
-Card:new(OffensiveRetrofit, Separatist_L,
-    { name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/.legends/ext-droid-storage.jpg", cost = 5, aliases = { "External Droid Storage [Legends]" } })
-Card:new(OffensiveRetrofit, Republic_L,
-    { name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
+Card:new(Title, Republic_L,{ name = "Judicial Fleet", front = CUSTOM_ASSETS .. "cards/title/judicial-fleet-title.jpg", cost = 4, aliases = { "Judicial Fleet [Legends]" } })
+Card:new(Title, Republic_L,{ name = "Katana Fleet", front = CUSTOM_ASSETS .. "cards/title/katana-fleet-title.jpg", cost = 2, aliases = { "Katana Fleet [Legends]" } })
+Card:new(Title, Republic_L,{ name = "Rendili Defender", front = CUSTOM_ASSETS .. "cards/title/rendili-defender-title.jpg", cost = 1, aliases = { "Rendili Defender [Legends]" } })
+Card:new(Title, Rebel_L,{ name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
+Card:new(Officer, Empire_L,{ name = "General Romodi (Officer)", front = CUSTOM_ASSETS .. "cards/.legends/General-Romodi.jpg", cost = 3, aliases = { "General Romodi [Legends]" } })
+Card:new(OffensiveRetrofit, Separatist_L,{ name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/.legends/ext-droid-storage.jpg", cost = 5, aliases = { "External Droid Storage [Legends]" } })
+Card:new(OffensiveRetrofit, Republic_L,{ name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
 --02-2024 dev cycle
 Card:new(Turbolaser, Empire_L,{ name = "Precision Turbolaser Turrets", front = CUSTOM_ASSETS .. "cards/turbo/precision-tls.jpg", cost = 5, aliases = { "Precision Turbolaser Turrets [Legends]" } })
 Card:new(Title, Rebel_L,{ name = "Condor", front = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a-condor-title.jpg", cost = 8, aliases = { "Condor [Legends]" } })
@@ -7408,197 +7440,115 @@ Card:new(Title, Rebel_L,{ name = "Shadow", front = CUSTOM_ASSETS .. "ships/rebel
 Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "cards/.legends/Furious-title-legends-2.jpg", cost = 4, aliases = { "Furious [Legends]" } })
 Card:new(Title, Empire_L,{ name = "Blue Hawk", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-bluehawk-title.jpg", cost = 2, aliases = { "Blue Hawk [Legends]" } })
 Card:new(Title, Empire_L,{ name = "Pulsar", front = CUSTOM_ASSETS .. "cards/.legends/pulsar-title-legends.jpg", cost = 4, aliases = { "Pulsar [Legends]" } })
+--04-2024 dev cycle
+Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.legends/depa.jpg", cost = 4, aliases = { "Depa Billaba [Legends]" } })
 
     ----non-approved
-Card:new(Title, Rebel,
-    { name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Legends]" } })
-Card:new(Title, Rebel,
-    { name = "Phoenix Nest", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_pn.jpg", cost = 6, aliases = { "Phoenix Nest [Legends]" } })
-Card:new(Title, Republic,
-    { name = "Righteous Indignation", front = CUSTOM_ASSETS .. "ships/republic/rothana/right_indig.jpg", cost = 4, aliases = { "Righteous Indignation [Legends]" } })
-Card:new(Title, Separatist,
-    { name = "Reaver", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_reaver.jpg", cost = 5, aliases = { "Reaver [Legends]" } })
-Card:new(Title, Separatist,
-    { name = "Parting Handshake", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_parthand.jpg", cost = 5, aliases = { "Parting Handshake [Legends]" } })
+Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Legends]" } })
+Card:new(Title, Rebel_L,{ name = "Phoenix Nest", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_pn.jpg", cost = 6, aliases = { "Phoenix Nest [Legends]" } })
+Card:new(Title, Republic_L,{ name = "Righteous Indignation", front = CUSTOM_ASSETS .. "ships/republic/rothana/right_indig.jpg", cost = 4, aliases = { "Righteous Indignation [Legends]" } })
+Card:new(Title, Separatist_L,{ name = "Reaver", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_reaver.jpg", cost = 5, aliases = { "Reaver [Legends]" } })
+Card:new(Title, Separatist_L,{ name = "Parting Handshake", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_parthand.jpg", cost = 5, aliases = { "Parting Handshake [Legends]" } })
 
 
 -- Halo Legends Upgrades
-Card:new(Commander, UNSC,
-{ name = "Captain Keyes", front = CUSTOM_ASSETS .. "cards/.halo/com_capt_keyes.jpg", cost = 30, aliases = { "Captain Keyes [Legends]" } })
-Card:new(Commander, UNSC,
-{ name = "Captain Wallace", front = CUSTOM_ASSETS .. "cards/.halo/com_capt_wallace.jpg", cost = 20, aliases = { "Captain Wallace [Legends]" } })
-Card:new(Commander, UNSC,
-{ name = "Commander Keyes", front = CUSTOM_ASSETS .. "cards/.halo/com_cmdr_keyes.jpg", cost = 27, aliases = { "Commander Keyes [Legends]" } })
-Card:new(Commander, UNSC,
-{ name = "Lord Hood", front = CUSTOM_ASSETS .. "cards/.halo/com_lordhood.jpg", cost = 30, aliases = { "Lord Hood [Legends]" } })
-Card:new(Commander, Covenant,
-{ name = "Ardo Moretumee", front = CUSTOM_ASSETS .. "cards/.halo/com_ardomoretumee.jpg", cost = 20, aliases = { "Ardo Moretumee [Legends]" } })
-Card:new(Commander, Covenant,
-{ name = "Atriox", front = CUSTOM_ASSETS .. "cards/.halo/com_atriox.jpg", cost = 35, aliases = { "Atriox [Legends]" } })
-Card:new(Commander, Covenant,
-{ name = "Prophet of Truth", front = CUSTOM_ASSETS .. "cards/.halo/com_prophettruth.jpg", cost = 30, aliases = { "Prophet of Truth [Legends]" } })
-Card:new(Commander, Covenant,
-{ name = "Thel Vadamee", front = CUSTOM_ASSETS .. "cards/.halo/com_thelvadamee.jpg", cost = 25, aliases = { "Thel Vadamee [Legends]" } })
+Card:new(Commander, UNSC,{ name = "Captain Keyes", front = CUSTOM_ASSETS .. "cards/.halo/com_capt_keyes.jpg", cost = 30, aliases = { "Captain Keyes [Legends]" } })
+Card:new(Commander, UNSC,{ name = "Captain Wallace", front = CUSTOM_ASSETS .. "cards/.halo/com_capt_wallace.jpg", cost = 20, aliases = { "Captain Wallace [Legends]" } })
+Card:new(Commander, UNSC,{ name = "Commander Keyes", front = CUSTOM_ASSETS .. "cards/.halo/com_cmdr_keyes.jpg", cost = 27, aliases = { "Commander Keyes [Legends]" } })
+Card:new(Commander, UNSC,{ name = "Lord Hood", front = CUSTOM_ASSETS .. "cards/.halo/com_lordhood.jpg", cost = 30, aliases = { "Lord Hood [Legends]" } })
+Card:new(Commander, Covenant,{ name = "Ardo Moretumee", front = CUSTOM_ASSETS .. "cards/.halo/com_ardomoretumee.jpg", cost = 20, aliases = { "Ardo Moretumee [Legends]" } })
+Card:new(Commander, Covenant,{ name = "Atriox", front = CUSTOM_ASSETS .. "cards/.halo/com_atriox.jpg", cost = 35, aliases = { "Atriox [Legends]" } })
+Card:new(Commander, Covenant,{ name = "Prophet of Truth", front = CUSTOM_ASSETS .. "cards/.halo/com_prophettruth.jpg", cost = 30, aliases = { "Prophet of Truth [Legends]" } })
+Card:new(Commander, Covenant,{ name = "Thel Vadamee", front = CUSTOM_ASSETS .. "cards/.halo/com_thelvadamee.jpg", cost = 25, aliases = { "Thel Vadamee [Legends]" } })
 
-Card:new(DefensiveRetrofit, UNSC,
-{ name = "Emergency Thrusters", front = CUSTOM_ASSETS .. "cards/.halo/dr_emergthrusters.jpg", cost = 6, aliases = { "Emergency Thrusters [Legends]" } })
-Card:new(DefensiveRetrofit, UNSC,
-{ name = "Titanium Armor Plating", front = CUSTOM_ASSETS .. "cards/.halo/dr_titarmor.jpg", cost = 4, aliases = { "Titanium Armor Plating [Legends]" } })
-Card:new(DefensiveRetrofit, Covenant,
-{ name = "Reliable Shields", front = CUSTOM_ASSETS .. "cards/.halo/dr_reliableshields.jpg", cost = 9, aliases = { "Reliable Shields [Legends]" } })
+Card:new(DefensiveRetrofit, UNSC,{ name = "Emergency Thrusters", front = CUSTOM_ASSETS .. "cards/.halo/dr_emergthrusters.jpg", cost = 6, aliases = { "Emergency Thrusters [Legends]" } })
+Card:new(DefensiveRetrofit, UNSC,{ name = "Titanium Armor Plating", front = CUSTOM_ASSETS .. "cards/.halo/dr_titarmor.jpg", cost = 4, aliases = { "Titanium Armor Plating [Legends]" } })
+Card:new(DefensiveRetrofit, Covenant,{ name = "Reliable Shields", front = CUSTOM_ASSETS .. "cards/.halo/dr_reliableshields.jpg", cost = 9, aliases = { "Reliable Shields [Legends]" } })
 
-Card:new(FleetCommand, Covenant,
-{ name = "Jiralhanae Brutality", front = CUSTOM_ASSETS .. "cards/.halo/fc_jirabrutal.jpg", cost = 7, aliases = { "Jiralhanae Brutality [Legends]" } })
-Card:new(FleetCommand, Covenant,
-{ name = "Sangheili Honor", front = CUSTOM_ASSETS .. "cards/.halo/fc_sanghonor.jpg", cost = 6, aliases = { "Sangehili Honor [Legends]" } })
-Card:new(FleetCommand, Covenant,
-{ name = "Will of the Prophets", front = CUSTOM_ASSETS .. "cards/.halo/fc_wotp.jpg", cost = 8, aliases = { "Will of the Prophets [Legends]" } })
+Card:new(FleetCommand, Covenant,{ name = "Jiralhanae Brutality", front = CUSTOM_ASSETS .. "cards/.halo/fc_jirabrutal.jpg", cost = 7, aliases = { "Jiralhanae Brutality [Legends]" } })
+Card:new(FleetCommand, Covenant,{ name = "Sangheili Honor", front = CUSTOM_ASSETS .. "cards/.halo/fc_sanghonor.jpg", cost = 6, aliases = { "Sangehili Honor [Legends]" } })
+Card:new(FleetCommand, Covenant,{ name = "Will of the Prophets", front = CUSTOM_ASSETS .. "cards/.halo/fc_wotp.jpg", cost = 8, aliases = { "Will of the Prophets [Legends]" } })
 
-Card:new(IonCannons, Covenant,
-{ name = "Overcharged Plasma Cells", front = CUSTOM_ASSETS .. "cards/.halo/ic_overplascells.jpg", cost = 9, aliases = { "Overcharged Plasma Cells [Legends]" } })
-Card:new(IonCannons, UNSC,
-{ name = "Sustain Motor Missiles", front = CUSTOM_ASSETS .. "cards/.halo/ic_sustainmissiles.jpg", cost = 6, aliases = { "Sustain Motor Missiles [Legends]" } })
+Card:new(IonCannons, Covenant,{ name = "Overcharged Plasma Cells", front = CUSTOM_ASSETS .. "cards/.halo/ic_overplascells.jpg", cost = 9, aliases = { "Overcharged Plasma Cells [Legends]" } })
+Card:new(IonCannons, UNSC,{ name = "Sustain Motor Missiles", front = CUSTOM_ASSETS .. "cards/.halo/ic_sustainmissiles.jpg", cost = 6, aliases = { "Sustain Motor Missiles [Legends]" } })
 
-Card:new(OffensiveRetrofit, Covenant,
-{ name = "Plasma Lance", front = CUSTOM_ASSETS .. "cards/.halo/or_plasmalance.jpg", cost = 10, aliases = { "Plasma Lance [Legends]" } })
+Card:new(OffensiveRetrofit, Covenant,{ name = "Plasma Lance", front = CUSTOM_ASSETS .. "cards/.halo/or_plasmalance.jpg", cost = 10, aliases = { "Plasma Lance [Legends]" } })
 
-Card:new(Officer, Halo,
-{ name = "Combat Coordinator", front = CUSTOM_ASSETS .. "cards/.halo/off_combatcoord.jpg", cost = 5, aliases = { "Combat Coordinator [Legends]" } })
-Card:new(Officer, Halo,
-{ name = "Logistics Coordinator", front = CUSTOM_ASSETS .. "cards/.halo/off_logicoord.jpg", cost = 5, aliases = { "Logistics Coordinator [Legends]" } })
-Card:new(Officer, UNSC,
-{ name = "Cortana (Officer)", front = CUSTOM_ASSETS .. "cards/.halo/off_cortana.jpg", cost = 8, aliases = { "Cortana (Officer) [Legends]" } })
-Card:new(Officer, UNSC,
-{ name = "Avery Johnson (Officer)", front = CUSTOM_ASSETS .. "cards/.halo/off_johnson.jpg", cost = 5, aliases = { "Avery Johnson (Officer) [Legends]" } })
-Card:new(Officer, UNSC,
-{ name = "Kristof Jen", front = CUSTOM_ASSETS .. "cards/.halo/off_kristofjen.jpg", cost = 5, aliases = { "Kristof Jen [Legends]" } })
-Card:new(Officer, UNSC,
-{ name = "Master Chief (Officer)", front = CUSTOM_ASSETS .. "cards/.halo/off_masterchief.jpg", cost = 3, aliases = { "Master Chief (Officer) [Legends]" } })
-Card:new(Officer, UNSC,
-{ name = "Antonio Silva", front = CUSTOM_ASSETS .. "cards/.halo/off_silva.jpg", cost = 6, aliases = { "Antonio Silva [Legends]" } })
-Card:new(Officer, UNSC,
-{ name = "Smart AI", front = CUSTOM_ASSETS .. "cards/.halo/off_smartai.jpg", cost = 5, aliases = { "Smart AI [Legends]" } })
-Card:new(Officer, Covenant,
-{ name = "Lat Ravamee", front = CUSTOM_ASSETS .. "cards/.halo/off_latravamee.jpg", cost = 9, aliases = { "Lat Ravamee [Legends]" } })
-Card:new(Officer, Covenant,
-{ name = "Maccabeus", front = CUSTOM_ASSETS .. "cards/.halo/off_maccabeus.jpg", cost = 9, aliases = { "Maccabeus [Legends]" } })
-Card:new(Officer, Covenant,
-{ name = "Prophet of Stewardship", front = CUSTOM_ASSETS .. "cards/.halo/off_prophetsteward.jpg", cost = 2, aliases = { "Prophet of Stewardship [Legends]" } })
-Card:new(Officer, Covenant,
-{ name = "Rtas Vadumee", front = CUSTOM_ASSETS .. "cards/.halo/off_rtasvadumee.jpg", cost = 4, aliases = { "Rtas Vadumee [Legends]" } })
+Card:new(Officer, Halo,{ name = "Combat Coordinator", front = CUSTOM_ASSETS .. "cards/.halo/off_combatcoord.jpg", cost = 5, aliases = { "Combat Coordinator [Legends]" } })
+Card:new(Officer, Halo,{ name = "Logistics Coordinator", front = CUSTOM_ASSETS .. "cards/.halo/off_logicoord.jpg", cost = 5, aliases = { "Logistics Coordinator [Legends]" } })
+Card:new(Officer, UNSC,{ name = "Cortana (Officer)", front = CUSTOM_ASSETS .. "cards/.halo/off_cortana.jpg", cost = 8, aliases = { "Cortana (Officer) [Legends]" } })
+Card:new(Officer, UNSC,{ name = "Avery Johnson (Officer)", front = CUSTOM_ASSETS .. "cards/.halo/off_johnson.jpg", cost = 5, aliases = { "Avery Johnson (Officer) [Legends]" } })
+Card:new(Officer, UNSC,{ name = "Kristof Jen", front = CUSTOM_ASSETS .. "cards/.halo/off_kristofjen.jpg", cost = 5, aliases = { "Kristof Jen [Legends]" } })
+Card:new(Officer, UNSC,{ name = "Master Chief (Officer)", front = CUSTOM_ASSETS .. "cards/.halo/off_masterchief.jpg", cost = 3, aliases = { "Master Chief (Officer) [Legends]" } })
+Card:new(Officer, UNSC,{ name = "Antonio Silva", front = CUSTOM_ASSETS .. "cards/.halo/off_silva.jpg", cost = 6, aliases = { "Antonio Silva [Legends]" } })
+Card:new(Officer, UNSC,{ name = "Smart AI", front = CUSTOM_ASSETS .. "cards/.halo/off_smartai.jpg", cost = 5, aliases = { "Smart AI [Legends]" } })
+Card:new(Officer, Covenant,{ name = "Lat Ravamee", front = CUSTOM_ASSETS .. "cards/.halo/off_latravamee.jpg", cost = 9, aliases = { "Lat Ravamee [Legends]" } })
+Card:new(Officer, Covenant,{ name = "Maccabeus", front = CUSTOM_ASSETS .. "cards/.halo/off_maccabeus.jpg", cost = 9, aliases = { "Maccabeus [Legends]" } })
+Card:new(Officer, Covenant,{ name = "Prophet of Stewardship", front = CUSTOM_ASSETS .. "cards/.halo/off_prophetsteward.jpg", cost = 2, aliases = { "Prophet of Stewardship [Legends]" } })
+Card:new(Officer, Covenant,{ name = "Rtas Vadumee", front = CUSTOM_ASSETS .. "cards/.halo/off_rtasvadumee.jpg", cost = 4, aliases = { "Rtas Vadumee [Legends]" } })
 
-Card:new(SuperWeapon, UNSC,
-{ name = "Quick-Charge Capacitors", front = CUSTOM_ASSETS .. "cards/.halo/sw_qccaps.jpg", cost = 6, aliases = { "Quick-Charge Capacitors [Legends]" } })
+Card:new(SuperWeapon, UNSC,{ name = "Quick-Charge Capacitors", front = CUSTOM_ASSETS .. "cards/.halo/sw_qccaps.jpg", cost = 6, aliases = { "Quick-Charge Capacitors [Legends]" } })
 
-Card:new(SupportTeam, Covenant,
-{ name = "Huragok Engineer Team", front = CUSTOM_ASSETS .. "cards/.halo/st_huragokeng.jpg", cost = 3, aliases = { "Huragok Engineer Team [Legends]" } })
+Card:new(SupportTeam, Covenant,{ name = "Huragok Engineer Team", front = CUSTOM_ASSETS .. "cards/.halo/st_huragokeng.jpg", cost = 3, aliases = { "Huragok Engineer Team [Legends]" } })
 
-Card:new(Title, UNSC,
-{ name = "UNSC Pillar of Autumn", front = CUSTOM_ASSETS .. "ships/unsc/halcyon/title_halcyon_poa.jpg", cost = 7, aliases = { "UNSC Pillar of Autumn [Legends]" } })
-Card:new(Title, UNSC,
-{ name = "UNSC Constantinople", front = CUSTOM_ASSETS .. "ships/unsc/halcyon/title_halcyon_const.jpg", cost = 3, aliases = { "UNSC Constantinople [Legends]" } })
-Card:new(Title, UNSC,
-{ name = "UNSC Roman Blue", front = CUSTOM_ASSETS .. "ships/unsc/halcyon/title_halcyon_roman.jpg", cost = 2, aliases = { "UNSC Roman Blue [Legends]" } })
-Card:new(Title, UNSC,
-{ name = "UNSC Savannah", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_savannah.jpg", cost = 8, aliases = { "UNSC Savannah [Legends]" } })
-Card:new(Title, UNSC,
-{ name = "UNSC Commonwealth", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_commonwealth.jpg", cost = 7, aliases = { "UNSC Commonwealth [Legends]" } })
-Card:new(Title, UNSC,
-{ name = "UNSC In Amber Clad", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_iac.jpg", cost = 10, aliases = { "UNSC In Amber Clad [Legends]" } })
-Card:new(Title, UNSC,
-{ name = "UNSC Meriweather Lewis", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_merilew.jpg", cost = 3, aliases = { "UNSC Meriweather Lewis [Legends]" } })
-Card:new(Title, Covenant,
-{ name = "Truth and Reconciliation", front = CUSTOM_ASSETS .. "ships/covenant/ccs/title_ccs_truthandreco.jpg", cost = 6, aliases = { "Truth and Reconciliation [Legends]" } })
-Card:new(Title, Covenant,
-{ name = "Purity of Spirit", front = CUSTOM_ASSETS .. "ships/covenant/ccs/title_ccs_purityspirit.jpg", cost = 5, aliases = { "Purity of Spirit [Legends]" } })
-Card:new(Title, Covenant,
-{ name = "Ardent Prayer", front = CUSTOM_ASSETS .. "ships/covenant/sdv/title_sdv_ardentprayer.jpg", cost = 4, aliases = { "Ardent Prayer [Legends]" } })
-Card:new(Title, Covenant,
-{ name = "Elegy's Lament", front = CUSTOM_ASSETS .. "ships/covenant/sdv/title_sdv_elegylament.jpg", cost = 3, aliases = { "Elegy's Lament [Legends]" } })
+Card:new(Title, UNSC,{ name = "UNSC Pillar of Autumn", front = CUSTOM_ASSETS .. "ships/unsc/halcyon/title_halcyon_poa.jpg", cost = 7, aliases = { "UNSC Pillar of Autumn [Legends]" } })
+Card:new(Title, UNSC,{ name = "UNSC Constantinople", front = CUSTOM_ASSETS .. "ships/unsc/halcyon/title_halcyon_const.jpg", cost = 3, aliases = { "UNSC Constantinople [Legends]" } })
+Card:new(Title, UNSC,{ name = "UNSC Roman Blue", front = CUSTOM_ASSETS .. "ships/unsc/halcyon/title_halcyon_roman.jpg", cost = 2, aliases = { "UNSC Roman Blue [Legends]" } })
+Card:new(Title, UNSC,{ name = "UNSC Savannah", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_savannah.jpg", cost = 8, aliases = { "UNSC Savannah [Legends]" } })
+Card:new(Title, UNSC,{ name = "UNSC Commonwealth", front = CUSTOM_ASSETS .. "ships/unsc/paris/title_paris_commonwealth.jpg", cost = 7, aliases = { "UNSC Commonwealth [Legends]" } })
+Card:new(Title, UNSC,{ name = "UNSC In Amber Clad", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_iac.jpg", cost = 10, aliases = { "UNSC In Amber Clad [Legends]" } })
+Card:new(Title, UNSC,{ name = "UNSC Meriweather Lewis", front = CUSTOM_ASSETS .. "ships/unsc/stalwart/title_stalwart_merilew.jpg", cost = 3, aliases = { "UNSC Meriweather Lewis [Legends]" } })
+Card:new(Title, Covenant,{ name = "Truth and Reconciliation", front = CUSTOM_ASSETS .. "ships/covenant/ccs/title_ccs_truthandreco.jpg", cost = 6, aliases = { "Truth and Reconciliation [Legends]" } })
+Card:new(Title, Covenant,{ name = "Purity of Spirit", front = CUSTOM_ASSETS .. "ships/covenant/ccs/title_ccs_purityspirit.jpg", cost = 5, aliases = { "Purity of Spirit [Legends]" } })
+Card:new(Title, Covenant,{ name = "Ardent Prayer", front = CUSTOM_ASSETS .. "ships/covenant/sdv/title_sdv_ardentprayer.jpg", cost = 4, aliases = { "Ardent Prayer [Legends]" } })
+Card:new(Title, Covenant,{ name = "Elegy's Lament", front = CUSTOM_ASSETS .. "ships/covenant/sdv/title_sdv_elegylament.jpg", cost = 3, aliases = { "Elegy's Lament [Legends]" } })
 
-Card:new(WeaponsTeam, UNSC,
-{ name = "Cortana (WT)", front = CUSTOM_ASSETS .. "cards/.halo/wt_cortana.jpg", cost = 7, aliases = { "Cortana (WT) [Legends]" } })
-Card:new(WeaponsTeam, UNSC,
-{ name = "UNSC Gunners", front = CUSTOM_ASSETS .. "cards/.halo/wt_unscgunners.jpg", cost = 6, aliases = { "UNSC Gunners [Legends]" } })
+Card:new(WeaponsTeam, UNSC,{ name = "Cortana (WT)", front = CUSTOM_ASSETS .. "cards/.halo/wt_cortana.jpg", cost = 7, aliases = { "Cortana (WT) [Legends]" } })
+Card:new(WeaponsTeam, UNSC,{ name = "UNSC Gunners", front = CUSTOM_ASSETS .. "cards/.halo/wt_unscgunners.jpg", cost = 6, aliases = { "UNSC Gunners [Legends]" } })
 
     -- BSG Legends Upgrades
-Card:new(Commander, Colonial,
-{ name = "William Adama", front = CUSTOM_ASSETS .. "cards/.bsg/com_william_adama.jpg", cost = 28, aliases = { "William Adama [Legends]" } })
-Card:new(Commander, Colonial,
-{ name = "Lucinda Cain", front = CUSTOM_ASSETS .. "cards/.bsg/com_luci_cain.jpg", cost = 38, aliases = { "Lucinda Cain [Legends]" } })
-Card:new(Commander, Colonial,
-{ name = "Helena Agathon", front = CUSTOM_ASSETS .. "cards/.bsg/com_helena_agathon.jpg", cost = 26, aliases = { "Helena Agathon [Legends]" } })
-Card:new(Commander, Cylon,
-{ name = "Atropos", front = CUSTOM_ASSETS .. "cards/.bsg/com_atropos.jpg", cost = 30, aliases = { "Atropos [Legends]" } })
-Card:new(Commander, Cylon,
-{ name = "Clothos", front = CUSTOM_ASSETS .. "cards/.bsg/com_clothos.jpg", cost = 26, aliases = { "Clothos [Legends]" } })
-Card:new(Commander, Cylon,
-{ name = "Lachesis", front = CUSTOM_ASSETS .. "cards/.bsg/com_lachesis.jpg", cost = 24, aliases = { "Lachesis [Legends]" } })
+Card:new(Commander, Colonial,{ name = "William Adama", front = CUSTOM_ASSETS .. "cards/.bsg/com_william_adama.jpg", cost = 28, aliases = { "William Adama [Legends]" } })
+Card:new(Commander, Colonial,{ name = "Lucinda Cain", front = CUSTOM_ASSETS .. "cards/.bsg/com_luci_cain.jpg", cost = 38, aliases = { "Lucinda Cain [Legends]" } })
+Card:new(Commander, Colonial,{ name = "Helena Agathon", front = CUSTOM_ASSETS .. "cards/.bsg/com_helena_agathon.jpg", cost = 26, aliases = { "Helena Agathon [Legends]" } })
+Card:new(Commander, Cylon,{ name = "Atropos", front = CUSTOM_ASSETS .. "cards/.bsg/com_atropos.jpg", cost = 30, aliases = { "Atropos [Legends]" } })
+Card:new(Commander, Cylon,{ name = "Clothos", front = CUSTOM_ASSETS .. "cards/.bsg/com_clothos.jpg", cost = 26, aliases = { "Clothos [Legends]" } })
+Card:new(Commander, Cylon,{ name = "Lachesis", front = CUSTOM_ASSETS .. "cards/.bsg/com_lachesis.jpg", cost = 24, aliases = { "Lachesis [Legends]" } })
 
-Card:new(Officer, Colonial,
-{ name = "Felix Gaeta", front = CUSTOM_ASSETS .. "cards/.bsg/off_gaeta.jpg", cost = 8, aliases = { "Felix Gaeta [Legends]" } })
-Card:new(Officer, Colonial,
-{ name = "Lee \"Apollo\" Adama", front = CUSTOM_ASSETS .. "cards/.bsg/off_lee_adama.jpg", cost = 12, aliases = { "Lee \"Apollo\" Adama [Legends]" } })
-Card:new(Officer, Colonial,
-{ name = "Galen Tyrol", front = CUSTOM_ASSETS .. "cards/.bsg/off_galen.jpg", cost = 5, aliases = { "Galen Tyrol [Legends]" } })
-Card:new(Officer, Colonial,
-{ name = "Saul Tigh", front = CUSTOM_ASSETS .. "cards/.bsg/off_saul_tigh.jpg", cost = 8, aliases = { "Saul Tigh [Legends]" } })
-Card:new(Officer, Cylon,
-{ name = "Centurion D-7", front = CUSTOM_ASSETS .. "cards/.bsg/off_cent_d7.jpg", cost = 6, aliases = { "Centurion D-7 [Legends]" } })
-Card:new(Officer, Cylon,
-{ name = "Epsilon Y16", front = CUSTOM_ASSETS .. "cards/.bsg/off_epsilon_y16.jpg", cost = 6, aliases = { "Epsilon Y16 [Legends]" } })
-Card:new(Officer, Cylon,
-{ name = "Talos-13", front = CUSTOM_ASSETS .. "cards/.bsg/off_talos_13.jpg", cost = 3, aliases = { "Talos-13 [Legends]" } })
+Card:new(Officer, Colonial,{ name = "Felix Gaeta", front = CUSTOM_ASSETS .. "cards/.bsg/off_gaeta.jpg", cost = 8, aliases = { "Felix Gaeta [Legends]" } })
+Card:new(Officer, Colonial,{ name = "Lee \"Apollo\" Adama", front = CUSTOM_ASSETS .. "cards/.bsg/off_lee_adama.jpg", cost = 12, aliases = { "Lee \"Apollo\" Adama [Legends]" } })
+Card:new(Officer, Colonial,{ name = "Galen Tyrol", front = CUSTOM_ASSETS .. "cards/.bsg/off_galen.jpg", cost = 5, aliases = { "Galen Tyrol [Legends]" } })
+Card:new(Officer, Colonial,{ name = "Saul Tigh", front = CUSTOM_ASSETS .. "cards/.bsg/off_saul_tigh.jpg", cost = 8, aliases = { "Saul Tigh [Legends]" } })
+Card:new(Officer, Cylon,{ name = "Centurion D-7", front = CUSTOM_ASSETS .. "cards/.bsg/off_cent_d7.jpg", cost = 6, aliases = { "Centurion D-7 [Legends]" } })
+Card:new(Officer, Cylon,{ name = "Epsilon Y16", front = CUSTOM_ASSETS .. "cards/.bsg/off_epsilon_y16.jpg", cost = 6, aliases = { "Epsilon Y16 [Legends]" } })
+Card:new(Officer, Cylon,{ name = "Talos-13", front = CUSTOM_ASSETS .. "cards/.bsg/off_talos_13.jpg", cost = 3, aliases = { "Talos-13 [Legends]" } })
 
-Card:new(DefensiveRetrofit, Colonial,
-{ name = "DRADIS", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_dradis.jpg", cost = 4, aliases = { "DRADIS [Legends]" } })
-Card:new(DefensiveRetrofit, Colonial,
-{ name = "Suppression Barrage", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_supp_barrage.jpg", cost = 8, aliases = { "Suppression Barrage [Legends]" } })
-Card:new(DefensiveRetrofit, Colonial,
-{ name = "System Reset", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_sys_reset.jpg", cost = 3, aliases = { "System Reset [Legends]" } })
+Card:new(DefensiveRetrofit, Colonial,{ name = "DRADIS", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_dradis.jpg", cost = 4, aliases = { "DRADIS [Legends]" } })
+Card:new(DefensiveRetrofit, Colonial,{ name = "Suppression Barrage", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_supp_barrage.jpg", cost = 8, aliases = { "Suppression Barrage [Legends]" } })
+Card:new(DefensiveRetrofit, Colonial,{ name = "System Reset", front = CUSTOM_ASSETS .. "cards/.bsg/defretro_sys_reset.jpg", cost = 3, aliases = { "System Reset [Legends]" } })
 
-Card:new(Title, Colonial,
-{ name = "Galactica", front = CUSTOM_ASSETS .. "cards/.bsg/title_galactica.jpg", cost = 4, aliases = { "Galactica [Legends]" } })
-Card:new(Title, Colonial,
-{ name = "Columbia", front = CUSTOM_ASSETS .. "cards/.bsg/title_columbia.jpg", cost = 5, aliases = { "Columbia [Legends]" } })
-Card:new(Title, Colonial,
-{ name = "Adamant", front = CUSTOM_ASSETS .. "cards/.bsg/title_adamant.jpg", cost = 6, aliases = { "Adamant [Legends]" } })
-Card:new(Title, Colonial,
-{ name = "Hyperion", front = CUSTOM_ASSETS .. "cards/.bsg/title_hyperion.jpg", cost = 7, aliases = { "Hyperion [Legends]" } })
-Card:new(Title, Colonial,
-{ name = "Hesperides", front = CUSTOM_ASSETS .. "cards/.bsg/title_hesperides.jpg", cost = 1, aliases = { "Hesperides [Legends]" } })
-Card:new(Title, Colonial,
-{ name = "Herald", front = CUSTOM_ASSETS .. "cards/.bsg/title_herald.jpg", cost = 6, aliases = { "Herald [Legends]" } })
-Card:new(Title, Colonial,
-{ name = "Icarus", front = CUSTOM_ASSETS .. "cards/.bsg/title_icarus.jpg", cost = 8, aliases = { "Icarus [Legends]" } })
+Card:new(Title, Colonial,{ name = "Galactica", front = CUSTOM_ASSETS .. "cards/.bsg/title_galactica.jpg", cost = 4, aliases = { "Galactica [Legends]" } })
+Card:new(Title, Colonial,{ name = "Columbia", front = CUSTOM_ASSETS .. "cards/.bsg/title_columbia.jpg", cost = 5, aliases = { "Columbia [Legends]" } })
+Card:new(Title, Colonial,{ name = "Adamant", front = CUSTOM_ASSETS .. "cards/.bsg/title_adamant.jpg", cost = 6, aliases = { "Adamant [Legends]" } })
+Card:new(Title, Colonial,{ name = "Hyperion", front = CUSTOM_ASSETS .. "cards/.bsg/title_hyperion.jpg", cost = 7, aliases = { "Hyperion [Legends]" } })
+Card:new(Title, Colonial,{ name = "Hesperides", front = CUSTOM_ASSETS .. "cards/.bsg/title_hesperides.jpg", cost = 1, aliases = { "Hesperides [Legends]" } })
+Card:new(Title, Colonial,{ name = "Herald", front = CUSTOM_ASSETS .. "cards/.bsg/title_herald.jpg", cost = 6, aliases = { "Herald [Legends]" } })
+Card:new(Title, Colonial,{ name = "Icarus", front = CUSTOM_ASSETS .. "cards/.bsg/title_icarus.jpg", cost = 8, aliases = { "Icarus [Legends]" } })
 
-Card:new(Title, Cylon,
-{ name = "Arachnid", front = CUSTOM_ASSETS .. "cards/.bsg/title_arachnid.jpg", cost = 6, aliases = { "Arachnid [Legends]" } })
-Card:new(Title, Cylon,
-{ name = "Defiant", front = CUSTOM_ASSETS .. "cards/.bsg/title_defiant.jpg", cost = 4, aliases = { "Defiant [Legends]" } })
-Card:new(Title, Cylon,
-{ name = "Crucible", front = CUSTOM_ASSETS .. "cards/.bsg/title_crucible.jpg", cost = 5, aliases = { "Crucible [Legends]" } })
-Card:new(Title, Cylon,
-{ name = "Thanatos", front = CUSTOM_ASSETS .. "cards/.bsg/title_thanatos.jpg", cost = 5, aliases = { "Thanatos [Legends]" } })
-Card:new(Title, Cylon,
-{ name = "Dagger", front = CUSTOM_ASSETS .. "cards/.bsg/title_dagger.jpg", cost = 3, aliases = { "Dagger [Legends]" } })
-Card:new(Title, Cylon,
-{ name = "Falchion", front = CUSTOM_ASSETS .. "cards/.bsg/title_falchion.jpg", cost = 3, aliases = { "Falchion [Legends]" } })
+Card:new(Title, Cylon,{ name = "Arachnid", front = CUSTOM_ASSETS .. "cards/.bsg/title_arachnid.jpg", cost = 6, aliases = { "Arachnid [Legends]" } })
+Card:new(Title, Cylon,{ name = "Defiant", front = CUSTOM_ASSETS .. "cards/.bsg/title_defiant.jpg", cost = 4, aliases = { "Defiant [Legends]" } })
+Card:new(Title, Cylon,{ name = "Crucible", front = CUSTOM_ASSETS .. "cards/.bsg/title_crucible.jpg", cost = 5, aliases = { "Crucible [Legends]" } })
+Card:new(Title, Cylon,{ name = "Thanatos", front = CUSTOM_ASSETS .. "cards/.bsg/title_thanatos.jpg", cost = 5, aliases = { "Thanatos [Legends]" } })
+Card:new(Title, Cylon,{ name = "Dagger", front = CUSTOM_ASSETS .. "cards/.bsg/title_dagger.jpg", cost = 3, aliases = { "Dagger [Legends]" } })
+Card:new(Title, Cylon,{ name = "Falchion", front = CUSTOM_ASSETS .. "cards/.bsg/title_falchion.jpg", cost = 3, aliases = { "Falchion [Legends]" } })
 
-Card:new(OffensiveRetrofit, Colonial,
-{ name = "Magnetic Launch Tubes", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_mag_tubes.jpg", cost = 9, aliases = { "Magnetic Launch Tubes [Legends]" } })
-Card:new(OffensiveRetrofit, Colonial,
-{ name = "Long Range Salvo", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_long_salvo.jpg", cost = 6, aliases = { "Long Range Salvo [Legends]" } })
-Card:new(OffensiveRetrofit, Cylon,
-{ name = "Cylon Virus", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_cylon_virus.jpg", cost = 8, aliases = { "Cylon Virus [Legends]" } })
+Card:new(OffensiveRetrofit, Colonial,{ name = "Magnetic Launch Tubes", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_mag_tubes.jpg", cost = 9, aliases = { "Magnetic Launch Tubes [Legends]" } })
+Card:new(OffensiveRetrofit, Colonial,{ name = "Long Range Salvo", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_long_salvo.jpg", cost = 6, aliases = { "Long Range Salvo [Legends]" } })
+Card:new(OffensiveRetrofit, Cylon,{ name = "Cylon Virus", front = CUSTOM_ASSETS .. "cards/.bsg/offretro_cylon_virus.jpg", cost = 8, aliases = { "Cylon Virus [Legends]" } })
 
-Card:new(Turbolaser, Cylon,
-{ name = "Cluster Munitions", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_cluster_munitions.jpg", cost = 7, aliases = { "Cluster Munitions [Legends]" } })
-Card:new(Turbolaser, Cylon,
-{ name = "Curved Trajectory Launch", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_curved_launch.jpg", cost = 6, aliases = { "Curved Trajectory Launch [Legends]" } })
+Card:new(Turbolaser, Cylon,{ name = "Cluster Munitions", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_cluster_munitions.jpg", cost = 7, aliases = { "Cluster Munitions [Legends]" } })
+Card:new(Turbolaser, Cylon,{ name = "Curved Trajectory Launch", front = CUSTOM_ASSETS .. "cards/.bsg/turbo_curved_launch.jpg", cost = 6, aliases = { "Curved Trajectory Launch [Legends]" } })
 
-Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,
-{ name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Legends]" } })
+Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,{ name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Legends]" } })
 
 ----Scum Upgrades
 Card:new(Commander, Scum_L,{ name = "Hondo Ohnaka (Commander)", front = CUSTOM_ASSETS .. "cards/.scum/hondo-commander.jpg", cost = 22, aliases = { "Hondo Ohnaka {SCUM} [Legends]" } })
@@ -7648,127 +7598,69 @@ Card:new(Title, NR_L,{ name = "Boldheart {NR}", front = CUSTOM_ASSETS .. "cards/
 Card:new(Title, NR_L,{ name = "Resolve {NR}", front = CUSTOM_ASSETS .. "cards/.nr/resolve.jpg", cost = 3, aliases = { "Resolve {NR} [Legends]" } })
 
     -- Armada Legacy (New) Upgrades
-Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/daultay_dofine.jpg", cost=29, aliases={"Daultay Dofine [Legacy]"}})
-Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/.legacy/ki_adi_mundi.jpg", cost=31, aliases={"Ki-Adi-Mundi [Legacy]"}})
+Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/Daultay Dofine.jpg", cost=29, aliases={"Daultay Dofine [Legacy]"}})
+Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/.legacy/Ki-Adi-Mundi.jpg", cost=30, aliases={"Ki-Adi-Mundi [Legacy]"}})
 
 
     -- Armada Legacy (Old) Upgrades
-Card:new(Commander, Republic_L,
-    { name = "Admiral Coburn (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-coburn-commander-old-legacy.jpg", cost = 25, aliases = { "Admiral Coburn [OldLegacy]" } })
-Card:new(Commander, Republic_L,
-    { name = "Yoda (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/yoda-commander-old-legacy.jpg", cost = 27, aliases = { "Yoda [OldLegacy]" } })
-Card:new(Commander, Separatist_L,
-    { name = "Riff Tamson (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/riff-tamson-commander-old-legacy.jpg", cost = 32, aliases = { "Riff Tamson [OldLegacy]" } })
-Card:new(Commander, Separatist_L,
-    { name = "Nute Gunray (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/nute-gunray-commander-old-legacy.jpg", cost = 20, aliases = { "Nute Gunray [OldLegacy]" } })
-Card:new(Commander, Empire_L,
-    { name = "Gilad Pellaeon (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/gilad-pellaeon-commander-old-legacy.jpg", cost = 20, aliases = { "Gilad Pellaeon [OldLegacy]" } })
-Card:new(Commander, Empire_L,
-    { name = "Admiral Rogriss (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-rogriss-commander-old-legacy.jpg", cost = 25, aliases = { "Admiral Rogriss [OldLegacy]" } })
-Card:new(Commander, Rebel_L,
-    { name = "Admiral Nantz (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-nantz-commander-old-legacy.jpg", cost = 26, aliases = { "Admiral Nantz [OldLegacy]" } })
-Card:new(Commander, Rebel_L,
-    { name = "Han Solo (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/han-solo-commander-old-legacy.jpg", cost = 30, aliases = { "Han Solo [OldLegacy]" } })
-Card:new(DefensiveRetrofit,
-    { name = "Cloaking Device (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/defensive-retro/cloaking-device-old-legacy.jpg", cost = 10, aliases = { "Cloaking Device [OldLegacy]" } })
-Card:new(DefensiveRetrofit,
-    { name = "Flares (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/defensive-retro/flares-old-legacy.jpg", cost = 5, aliases = { "Flares [OldLegacy]" } })
-Card:new(ExperimentalRetrofit,
-    { name = "Cloaking Field (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/experimental-retro/cloaking-field-old-legacy.jpg", cost = 5, aliases = { "Cloaking Field [OldLegacy]" } })
-Card:new(ExperimentalRetrofit,
-    { name = "Grav Cone Projector (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/experimental-retro/grav-cone-projector-old-legacy.jpg", cost = 10, aliases = { "Grav Cone Projector [OldLegacy]" } })
-Card:new(ExperimentalRetrofit,
-    { name = "Reversed Grav Well Projector (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/experimental-retro/reversed-grav-well-projector-old-legacy.jpg", cost = 2, aliases = { "Reversed Grav Well Projector [OldLegacy]" } })
-Card:new(OffensiveRetrofit,
-    { name = "Advanced Guidance System (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/advanced-guidance-system-old-legacy.jpg", cost = 4, aliases = { "Advanced Guidance System [OldLegacy]" } })
-Card:new(OffensiveRetrofit,
-    { name = "Drill Beak (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/drill-beak-old-legacy.jpg", cost = 5, aliases = { "Drill Beak [OldLegacy]" } })
-Card:new(OffensiveRetrofit,
-    { name = "Enhanced Propulsion (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/enhanced-propulsion-old-legacy.jpg", cost = 2, aliases = { "Enhanced Propulsion [OldLegacy]" } })
-Card:new(OffensiveRetrofit,
-    { name = "Reserve Bulk Hangar (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/reserve-bulk-hangar-old-legacy.jpg", cost = 9, aliases = { "Reserve Bulk Hangar [OldLegacy]" } })
-Card:new(OffensiveRetrofit,
-    { name = "Tractor Tentacles (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/tractor-tentacles-old-legacy.jpg", cost = 3, aliases = { "Tractor Tentacles [OldLegacy]" } })
-Card:new(Officer, Republic_L,
-    { name = "Aayla Secura (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/aayla-secura-officer-old-legacy.jpg", cost = 5, aliases = { "Aayla Secura [OldLegacy]" } })
-Card:new(Officer, Republic_L,
-    { name = "Admiral Yularen (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/admiral-yularen-officer-old-legacy.jpg", cost = 7, aliases = { "Admiral Yularen [OldLegacy]" } })
-Card:new(Officer, Separatist_L,
-    { name = "K2-B4 (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/k2-b4-officer-old-legacy.jpg", cost = 6, aliases = { "K2-B4 [OldLegacy]" } })
-Card:new(Officer, Separatist_L,
-    { name = "Poggle the Lesser (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/poggle-the-lesser-officer-old-legacy.jpg", cost = 6, aliases = { "Poggle the Lesser [OldLegacy]" } })
-Card:new(Officer, Empire_L,
-    { name = "Prince Admiral Krennel (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/prince-admiral-krennel-officer-old-legacy.jpg", cost = 6, aliases = { "Prince Admiral Krennel [OldLegacy]" } })
-Card:new(Officer, Empire_L,
-    { name = "Joruus C'baoth (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/joruus-cbaoth-officer-old-legacy.jpg", cost = 8, aliases = { "Joruus C'baoth [OldLegacy]" } })
-Card:new(Officer, Rebel_L,
-    { name = "Captain Onoma (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/captain-onoma-officer-old-legacy.jpg", cost = 4, aliases = { "Captain Onoma [OldLegacy]" } })
-Card:new(Officer, Rebel_L,
-    { name = "Borsk Fey'lya (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/borsk-feylya-officer-old-legacy.jpg", cost = 7, aliases = { "Borsk Fey'lya [OldLegacy]" } })
-Card:new(Ordnance,
-    { name = "Long Range Concussion Missiles (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/ordnance/long-range-concussion-missiles-old-legacy.jpg", cost = 4, aliases = { "Long Range Concussion Missiles [OldLegacy]" } })
-Card:new(Ordnance,
-    { name = "Tracking Torpedoes (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/ordnance/tracking-torpedoes-old-legacy.jpg", cost = 6, aliases = { "Tracking Torpedoes [OldLegacy]" } })
-Card:new(SuperWeapon, Separatist_L,
-    { name = "Interception Protocols (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/super-weapon/interception-protocols-old-legacy.jpg", cost = 5, aliases = { "Interception Protocols [OldLegacy]" } })
-Card:new(SuperWeapon, Separatist_L,
-    { name = "Rogue Protocols (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/super-weapon/rogue-protocols-old-legacy.jpg", cost = 10, aliases = { "Rogue Protocols [OldLegacy]" } })
-Card:new(SuperWeapon, Separatist_L,
-    { name = "Targeting Protocols (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/super-weapon/targeting-protocols-old-legacy.jpg", cost = 7, aliases = { "Targeting Protocols [OldLegacy]" } })
-Card:new(SupportTeam, Republic_L,
-    { name = "Clone Engineers (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/support-team/clone-engineers-old-legacy.jpg", cost = 3, aliases = { "Clone Engineers [OldLegacy]" } })
-Card:new(SupportTeam,
-    { name = "Mon Calamari Shield Techs (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/support-team/mon-calamari-shield-techs-old-legacy.jpg", cost = 5, aliases = { "Mon Calamari Shield Techs [OldLegacy]" } })
-Card:new(SupportTeam,
-    { name = "Repair Team (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/support/repair-team-old-legacy.jpg", cost = 2, aliases = { "Repair Team [OldLegacy]" } })
-Card:new(Title, Republic_L,
-    { name = "Carrion Spike (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/carrion-spike-title-old-legacy.jpg", cost = 6, aliases = { "Carrion Spike [OldLegacy]" } })
-Card:new(Title, Republic_L,
-    { name = "Stellar Rise (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/stellar-rise-title-old-legacy.jpg", cost = 3, aliases = { "Stellar Rise [OldLegacy]" } })
-Card:new(Title, Republic_L,
-    { name = "Surrogator (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/surrogator-title-old-legacy.jpg", cost = 5, aliases = { "Surrogator [OldLegacy]" } })
-Card:new(Title, Separatist_L,
-    { name = "Neimoidian Grasp (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/neimoidian-grasp-title-old-legacy.jpg", cost = 2, aliases = { "Neimoidian Grasp [OldLegacy]" } })
-Card:new(Title, Separatist_L,
-    { name = "Grappler (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/grappler-title-old-legacy.jpg", cost = 3, aliases = { "Grappler [OldLegacy]" } })
-Card:new(Title, Separatist_L,
-    { name = "Procurer (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/procurer-title-old-legacy.jpg", cost = 5, aliases = { "Procurer [OldLegacy]" } })
-Card:new(Title, Separatist_L,
-    { name = "Profusion (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/profusion-title-old-legacy.jpg", cost = 4, aliases = { "Profusion [OldLegacy]" } })
-Card:new(Title, Separatist_L,
-    { name = "Vuuntun Palaa (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/vuuntun-palaa-title-old-legacy.jpg", cost = 7, aliases = { "Vuuntun Palaa [OldLegacy]" } })
-Card:new(Title, Empire_L,
-    { name = "Abrogator (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/abrogator-title-old-legacy.jpg", cost = 5, aliases = { "Abrogator [OldLegacy]" } })
-Card:new(Title, Empire_L,
-    { name = "Binder (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/binder-title-old-legacy.jpg", cost = 5, aliases = { "Binder [OldLegacy]" } })
-Card:new(Title, Empire_L,
-    { name = "Eternal Wrath (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/eternal-wrath-title-old-legacy.jpg", cost = 6, aliases = { "Eternal Wrath [OldLegacy]" } })
-Card:new(Title, Empire_L,
-    { name = "Isolator (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/isolator-title-old-legacy.jpg", cost = 6, aliases = { "Isolator [OldLegacy]" } })
-Card:new(Title, Empire_L,
-    { name = "Katana Fleet Dreadnaught (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/katana-fleet-dreadnaught-old-legacy.jpg", cost = 2, aliases = { "Katana Fleet Dreadnaught [OldLegacy]" } })
-Card:new(Title, Empire_L,
-    { name = "Vendetta (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/vendetta-title-old-legacy.jpg", cost = 6, aliases = { "Vendetta [OldLegacy]" } })
-Card:new(Title, Rebel_L,
-    { name = "Allegiant (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/allegiant-title-old-legacy.jpg", cost = 5, aliases = { "Allegiant [OldLegacy]" } })
-Card:new(Title, Rebel_L,
-    { name = "Liberty Star (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/liberty-star-title-old-legacy.jpg", cost = 6, aliases = { "Liberty Star [OldLegacy]" } })
-Card:new(Title, Rebel_L,
-    { name = "Mon Remonda (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/mon-remonda-title-old-legacy.jpg", cost = 7, aliases = { "Mon Remonda [OldLegacy]" } })
-Card:new(Title, Rebel_L,
-    { name = "Remember Alderaan (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/remember-alderaan-title-old-legacy.jpg", cost = 3, aliases = { "Remember Alderaan [OldLegacy]" } })
-Card:new(Title, Rebel_L,
-    { name = "Tyrant's Bane (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/tyrants-bane-title-old-legacy.jpg", cost = 8, aliases = { "Tyrant's Bane [OldLegacy]" } })
-Card:new(Turbolaser,
-    { name = "Light Turbolaser Cannons (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/turbolaser/light-turbolaser-cannons-old-legacy.jpg", cost = 6, aliases = { "Light Turbolaser Cannons [OldLegacy]" } })
-Card:new(Turbolaser,
-    { name = "XV9 Turbolasers (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/turbolaser/xv9-turbolasers-old-legacy.jpg", cost = 5, aliases = { "XV9 Turbolasers [OldLegacy]" } })
-Card:new(WeaponsTeamAndOffensiveRetrofit, Separatist_L,
-    { name = "Asajj Ventress (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/weapons-team-offensive-retro/asajj-ventress-boarding-team-old-legacy.jpg", cost = 7, aliases = { "Asajj Ventress [OldLegacy]" } })
-Card:new(WeaponsTeamAndOffensiveRetrofit, Separatist_L,
-    { name = "BX Commando Droids (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/weapons-team-offensive-retro/bx-commando-droids-boarding-team-old-legacy.jpg", cost = 2, aliases = { "BX Commando Droids [OldLegacy]" } })
-Card:new(WeaponsTeam,
-    { name = "Targeting Team (OldLegacy)", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/weapons-team/targeting-team-old-legacy.jpg", cost = 5, aliases = { "Targeting Team [OldLegacy]" } })
+Card:new(Commander, Republic_L,{ name = "Admiral Coburn [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-coburn-commander-old-legacy.jpg", cost = 25, aliases = { "Admiral Coburn [OldLegacy]" } })
+Card:new(Commander, Republic_L,{ name = "Yoda [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/yoda-commander-old-legacy.jpg", cost = 27, aliases = { "Yoda [OldLegacy]" } })
+Card:new(Commander, Separatist_L,{ name = "Riff Tamson [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/riff-tamson-commander-old-legacy.jpg", cost = 32, aliases = { "Riff Tamson [OldLegacy]" } })
+Card:new(Commander, Separatist_L,{ name = "Nute Gunray [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/nute-gunray-commander-old-legacy.jpg", cost = 20, aliases = { "Nute Gunray [OldLegacy]" } })
+Card:new(Commander, Empire_L,{ name = "Gilad Pellaeon [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/gilad-pellaeon-commander-old-legacy.jpg", cost = 20, aliases = { "Gilad Pellaeon [OldLegacy]" } })
+Card:new(Commander, Empire_L,{ name = "Admiral Rogriss [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-rogriss-commander-old-legacy.jpg", cost = 25, aliases = { "Admiral Rogriss [OldLegacy]" } })
+Card:new(Commander, Rebel_L,{ name = "Admiral Nantz [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-nantz-commander-old-legacy.jpg", cost = 26, aliases = { "Admiral Nantz [OldLegacy]" } })
+Card:new(Commander, Rebel_L,{ name = "Han Solo [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/han-solo-commander-old-legacy.jpg", cost = 30, aliases = { "Han Solo [OldLegacy]" } })
+Card:new(DefensiveRetrofit, Republic_L,{ name = "Cloaking Device [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/defensive-retro/cloaking-device-old-legacy.jpg", cost = 10, aliases = { "Cloaking Device [OldLegacy]" } })
+Card:new(DefensiveRetrofit, Republic_L,{ name = "Flares [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/defensive-retro/flares-old-legacy.jpg", cost = 5, aliases = { "Flares [OldLegacy]" } })
+Card:new(ExperimentalRetrofit, Empire_L,{ name = "Cloaking Field [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/experimental-retro/cloaking-field-old-legacy.jpg", cost = 5, aliases = { "Cloaking Field [OldLegacy]" } })
+Card:new(ExperimentalRetrofit, Empire_L,{ name = "Grav Cone Projector [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/experimental-retro/grav-cone-projector-old-legacy.jpg", cost = 10, aliases = { "Grav Cone Projector [OldLegacy]" } })
+Card:new(ExperimentalRetrofit, Empire_L,{ name = "Reversed Grav Well Projector [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/experimental-retro/reversed-grav-well-projector-old-legacy.jpg", cost = 2, aliases = { "Reversed Grav Well Projector [OldLegacy]" } })
+Card:new(OffensiveRetrofit,{ name = "Advanced Guidance System [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/advanced-guidance-system-old-legacy.jpg", cost = 4, aliases = { "Advanced Guidance System [OldLegacy]" } })
+Card:new(OffensiveRetrofit,Separatist_L,{ name = "Drill Beak [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/drill-beak-old-legacy.jpg", cost = 5, aliases = { "Drill Beak [OldLegacy]" } })
+Card:new(OffensiveRetrofit,Separatist_L,{ name = "Enhanced Propulsion [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/enhanced-propulsion-old-legacy.jpg", cost = 2, aliases = { "Enhanced Propulsion [OldLegacy]" } })
+Card:new(OffensiveRetrofit,Separatist_L,{ name = "Reserve Bulk Hangar [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/reserve-bulk-hangar-old-legacy.jpg", cost = 9, aliases = { "Reserve Bulk Hangar [OldLegacy]" } })
+Card:new(OffensiveRetrofit,Separatist_L,{ name = "Tractor Tentacles [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/offensive-retro/tractor-tentacles-old-legacy.jpg", cost = 3, aliases = { "Tractor Tentacles [OldLegacy]" } })
+Card:new(Officer, Republic_L,{ name = "Aayla Secura [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/aayla-secura-officer-old-legacy.jpg", cost = 5, aliases = { "Aayla Secura [OldLegacy]" } })
+Card:new(Officer, Republic_L,{ name = "Admiral Yularen [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/admiral-yularen-officer-old-legacy.jpg", cost = 7, aliases = { "Admiral Yularen [OldLegacy]" } })
+Card:new(Officer, Separatist_L,{ name = "K2-B4 [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/k2-b4-officer-old-legacy.jpg", cost = 6, aliases = { "K2-B4 [OldLegacy]" } })
+Card:new(Officer, Separatist_L,{ name = "Poggle the Lesser [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/poggle-the-lesser-officer-old-legacy.jpg", cost = 6, aliases = { "Poggle the Lesser [OldLegacy]" } })
+Card:new(Officer, Empire_L,{ name = "Prince Admiral Krennel [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/prince-admiral-krennel-officer-old-legacy.jpg", cost = 6, aliases = { "Prince Admiral Krennel [OldLegacy]" } })
+Card:new(Officer, Empire_L,{ name = "Joruus C'baoth [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/joruus-cbaoth-officer-old-legacy.jpg", cost = 8, aliases = { "Joruus C'baoth [OldLegacy]" } })
+Card:new(Officer, Rebel_L,{ name = "Captain Onoma [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/captain-onoma-officer-old-legacy.jpg", cost = 4, aliases = { "Captain Onoma [OldLegacy]" } })
+Card:new(Officer, Rebel_L,{ name = "Borsk Fey'lya [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/officer/borsk-feylya-officer-old-legacy.jpg", cost = 7, aliases = { "Borsk Fey'lya [OldLegacy]" } })
+Card:new(Ordnance,{ name = "Long Range Concussion Missiles [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/ordnance/long-range-concussion-missiles-old-legacy.jpg", cost = 4, aliases = { "Long Range Concussion Missiles [OldLegacy]" } })
+Card:new(Ordnance,{ name = "Tracking Torpedoes [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/ordnance/tracking-torpedoes-old-legacy.jpg", cost = 6, aliases = { "Tracking Torpedoes [OldLegacy]" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Interception Protocols [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/super-weapon/interception-protocols-old-legacy.jpg", cost = 5, aliases = { "Interception Protocols [OldLegacy]" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Rogue Protocols [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/super-weapon/rogue-protocols-old-legacy.jpg", cost = 10, aliases = { "Rogue Protocols [OldLegacy]" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Targeting Protocols [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/super-weapon/targeting-protocols-old-legacy.jpg", cost = 7, aliases = { "Targeting Protocols [OldLegacy]" } })
+Card:new(SupportTeam, Republic_L,{ name = "Clone Engineers [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/support-team/clone-engineers-old-legacy.jpg", cost = 3, aliases = { "Clone Engineers [OldLegacy]" } })
+Card:new(SupportTeam, Rebel_L,{ name = "Mon Calamari Shield Techs [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/support-team/mon-calamari-shield-techs-old-legacy.jpg", cost = 5, aliases = { "Mon Calamari Shield Techs [OldLegacy]" } })
+Card:new(SupportTeam,{ name = "Repair Team [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/support/repair-team-old-legacy.jpg", cost = 2, aliases = { "Repair Team [OldLegacy]" } })
+Card:new(Title, Republic_L,{ name = "Carrion Spike [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/carrion-spike-title-old-legacy.jpg", cost = 6, aliases = { "Carrion Spike [OldLegacy]" } })
+Card:new(Title, Republic_L,{ name = "Stellar Rise [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/stellar-rise-title-old-legacy.jpg", cost = 3, aliases = { "Stellar Rise [OldLegacy]" } })
+Card:new(Title, Republic_L,{ name = "Surrogator [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/surrogator-title-old-legacy.jpg", cost = 5, aliases = { "Surrogator [OldLegacy]" } })
+Card:new(Title, Separatist_L,{ name = "Neimoidian Grasp [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/neimoidian-grasp-title-old-legacy.jpg", cost = 2, aliases = { "Neimoidian Grasp [OldLegacy]" } })
+Card:new(Title, Separatist_L,{ name = "Grappler [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/grappler-title-old-legacy.jpg", cost = 3, aliases = { "Grappler [OldLegacy]" } })
+Card:new(Title, Separatist_L,{ name = "Procurer [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/procurer-title-old-legacy.jpg", cost = 5, aliases = { "Procurer [OldLegacy]" } })
+Card:new(Title, Separatist_L,{ name = "Profusion [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/profusion-title-old-legacy.jpg", cost = 4, aliases = { "Profusion [OldLegacy]" } })
+Card:new(Title, Separatist_L,{ name = "Vuuntun Palaa [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/vuuntun-palaa-title-old-legacy.jpg", cost = 7, aliases = { "Vuuntun Palaa [OldLegacy]" } })
+Card:new(Title, Empire_L,{ name = "Abrogator [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/abrogator-title-old-legacy.jpg", cost = 5, aliases = { "Abrogator [OldLegacy]" } })
+Card:new(Title, Empire_L,{ name = "Binder [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/binder-title-old-legacy.jpg", cost = 5, aliases = { "Binder [OldLegacy]" } })
+Card:new(Title, Empire_L,{ name = "Eternal Wrath [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/eternal-wrath-title-old-legacy.jpg", cost = 6, aliases = { "Eternal Wrath [OldLegacy]" } })
+Card:new(Title, Empire_L,{ name = "Isolator [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/isolator-title-old-legacy.jpg", cost = 6, aliases = { "Isolator [OldLegacy]" } })
+Card:new(Title, Empire_L,{ name = "Katana Fleet Dreadnaught [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/katana-fleet-dreadnaught-old-legacy.jpg", cost = 2, aliases = { "Katana Fleet Dreadnaught [OldLegacy]" } })
+Card:new(Title, Empire_L,{ name = "Vendetta [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/vendetta-title-old-legacy.jpg", cost = 6, aliases = { "Vendetta [OldLegacy]" } })
+Card:new(Title, Rebel_L,{ name = "Allegiant [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/allegiant-title-old-legacy.jpg", cost = 5, aliases = { "Allegiant [OldLegacy]" } })
+Card:new(Title, Rebel_L,{ name = "Liberty Star [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/liberty-star-title-old-legacy.jpg", cost = 6, aliases = { "Liberty Star [OldLegacy]" } })
+Card:new(Title, Rebel_L,{ name = "Mon Remonda [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/mon-remonda-title-old-legacy.jpg", cost = 7, aliases = { "Mon Remonda [OldLegacy]" } })
+Card:new(Title, Rebel_L,{ name = "Remember Alderaan [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/remember-alderaan-title-old-legacy.jpg", cost = 3, aliases = { "Remember Alderaan [OldLegacy]" } })
+Card:new(Title, Rebel_L,{ name = "Tyrant's Bane [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/title/tyrants-bane-title-old-legacy.jpg", cost = 8, aliases = { "Tyrant's Bane [OldLegacy]" } })
+Card:new(Turbolaser,{ name = "Light Turbolaser Cannons [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/turbolaser/light-turbolaser-cannons-old-legacy.jpg", cost = 6, aliases = { "Light Turbolaser Cannons [OldLegacy]" } })
+Card:new(Turbolaser,{ name = "XV9 Turbolasers [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/turbolaser/xv9-turbolasers-old-legacy.jpg", cost = 5, aliases = { "XV9 Turbolasers [OldLegacy]" } })
+Card:new(WeaponsTeamAndOffensiveRetrofit, Separatist_L,{ name = "Asajj Ventress [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/weapons-team-offensive-retro/asajj-ventress-boarding-team-old-legacy.jpg", cost = 7, aliases = { "Asajj Ventress [OldLegacy]" } })
+Card:new(WeaponsTeamAndOffensiveRetrofit, Separatist_L,{ name = "BX Commando Droids [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/weapons-team-offensive-retro/bx-commando-droids-boarding-team-old-legacy.jpg", cost = 2, aliases = { "BX Commando Droids [OldLegacy]" } })
+Card:new(WeaponsTeam,{ name = "Targeting Team [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/weapons-team/targeting-team-old-legacy.jpg", cost = 5, aliases = { "Targeting Team [OldLegacy]" } })
 
 
 ----#include defs/cards/weapons_team
