@@ -1611,6 +1611,7 @@ end
 
 CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
 LEGACY_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
+--ASSETS_ROOT = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 
 DEF_BRACE = '79d121'
@@ -4107,7 +4108,7 @@ Squadron:new(hyena, SEPARATIST_SQUAD, {
     aliases = {'Hyena-class Droid Bomber Squadrons','Hyena Droid Bomber Squadron','Hyena Droid Bomber Squadrons', 'Hyena Droid Bomber', 'Hyena','Hyena Bomber Squadron'}
 })
 --ALIAS
-hyena.diffuse = ASSETS_ROOT.."squadrons/separatist/hyena/ace_diffuse.jpg"
+hyena.diffuse = CUSTOM_ASSETS.."squadrons/separatist/hyena/ace_diffuse.jpg"
 hyena.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 --  AI: Battery, Bomber, Heavy
 Squadron:new(hyena, SEPARATIST_SQUAD, {
@@ -4125,8 +4126,8 @@ Squadron:new(hyena, SEPARATIST_SQUAD, {
 })
 
 tri = {
-    diffuse =   ASSETS_ROOT.."squadrons/separatist/tri/base_diffuse.jpg",
-    mesh =      ASSETS_ROOT.."squadrons/separatist/tri/ai_co_sw_model.obj",
+    diffuse =   CUSTOM_ASSETS.."squadrons/separatist/tri/base_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."squadrons/separatist/tri/ai_co_sw_model.obj",
     health = 3,
     move = 5,
     defense_tokens = {}}
@@ -4137,7 +4138,7 @@ Squadron:new(tri, SEPARATIST_SQUAD, {
     cost = 11,
     aliases = {'Droid Tri-Fighter Squadrons', "Droid Tri-Fighter", "Tri-Fighter"}
 })
-tri.diffuse =   ASSETS_ROOT.."squadrons/separatist/tri/ace_diffuse.jpg"
+tri.diffuse =   CUSTOM_ASSETS.."squadrons/separatist/tri/ace_diffuse.jpg"
 tri.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 --  Counter, Swarm, AI:Anti-squadron
 Squadron:new(tri, SEPARATIST_SQUAD, {
@@ -4150,14 +4151,14 @@ Squadron:new(tri, SEPARATIST_SQUAD, {
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "DIS-T81",
     front =     CUSTOM_ASSETS.."cards/.updated/squadrons/dis-t81-droid-tri-fighter-squadron.jpg",
-    mesh =      ASSETS_ROOT.."squadrons/separatist/tri/ai_co_sn_sw_model.obj",
+    mesh =      CUSTOM_ASSETS.."squadrons/separatist/tri/ai_co_sn_sw_model.obj",
     cost = 17,
     aliases = {"DIS-T81 - Droid Tri-Fighter Squadron"}
 })
 
 belbullab = {
-    diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/base_diffuse.jpg",
-    mesh =      ASSETS_ROOT.."squadrons/separatist/belbullab/re_sc_model.obj",
+    diffuse =   CUSTOM_ASSETS.."squadrons/separatist/belbullab/base_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."squadrons/separatist/belbullab/re_sc_model.obj",
     health = 5,
     move = 4,
     defense_tokens = {}}
@@ -4172,7 +4173,7 @@ Squadron:new(belbullab, SEPARATIST_SQUAD, {
 Squadron:new(belbullab, SEPARATIST_SQUAD, {
 	name = "General Grievous",
     front =     CUSTOM_ASSETS.."cards/.updated/squadrons/general-grievous-belbullab-22-squadron.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/separatist/belbullab/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 22,
     aliases = {'General Grievous - Belbullab-22 Starfighter Squadron'}
@@ -4181,8 +4182,8 @@ Squadron:new(belbullab, SEPARATIST_SQUAD, {
 Squadron:new(belbullab, SEPARATIST_SQUAD, {
 	name = "Wat Tambor",
     front =     CUSTOM_ASSETS.."cards/.updated/squadrons/wat-tambor-belbullab-22-squadron.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/separatist/belbullab/ace_diffuse.jpg",
-    mesh =      ASSETS_ROOT.."squadrons/separatist/belbullab/es_re_sc_model.obj",
+    diffuse =   CUSTOM_ASSETS.."squadrons/separatist/belbullab/ace_diffuse.jpg",
+    mesh =      CUSTOM_ASSETS.."squadrons/separatist/belbullab/es_re_sc_model.obj",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 18,
     aliases = {'Wat Tambor - Belbullab-22 Starfighter Squadron'}
@@ -4858,7 +4859,7 @@ Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "Anakin Skywalker (Twilight)",
-    front = CUSTOM_ASSETS .. "cards/.legacy/twilight.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/Anakin Skywalker.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE },
     cost = 24,
@@ -4866,7 +4867,7 @@ Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "R2-D2 (Twilight)",
-    front = CUSTOM_ASSETS .. "cards/.legacy/Twilight-1.jpg",
+    front = CUSTOM_ASSETS .. "cards/.legacy/R2D2.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE },
     cost = 22,
@@ -4876,7 +4877,7 @@ Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
 hmp_gunship = {
     mesh = CUSTOM_ASSETS .. "squadrons/separatist/hmp/plain_mesh.obj",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/hmp/hmp_texture.jpg",
-    health = 4,
+    health = 5,
     move = 3,
     defense_tokens = {}
 }
@@ -4913,7 +4914,7 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     front = CUSTOM_ASSETS .. "cards/.legacy/Five-Seven.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
-    cost = 21,
+    cost = 22,
     aliases = { "Five-Seven - LAAT/i Gunship [Legacy]"}
 })
 
@@ -5043,9 +5044,9 @@ Ship:new(SmallShip, EMPIRE_L_SHIP, {
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
-    mesh = ASSETS_ROOT .. "ships/empire/quasar/mesh.obj",
+    mesh = CUSTOM_ASSETS .. "ships/empire/quasar/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/rebel_II_diffuse.jpg",
-    ruler = ASSETS_ROOT .. "ships/rebel/reb_quasar/ruler.obj",
+    ruler = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/ruler.obj",
     maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
     defense_tokens = { DEF_BRACE, DEF_REDIRECT },
     shields = { 2, 2, 2, 1 },
@@ -5881,7 +5882,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         mesh = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/diffuse_assault.jpg",
         --ruler = CUSTOM_ASSETS.."ships/cylon/basestar_modern/ruler.obj",
-        ruler = ASSETS_ROOT .. "ships/empire/imperial/ruler.obj",
+        ruler = CUSTOM_ASSETS .. "ships/empire/imperial/ruler.obj",
         maneuver = { { "II" }, { "-", "I" } },
         defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_EVADE },
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
@@ -5895,7 +5896,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         mesh = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/cylon/basestar_modern/diffuse_def.jpg",
         --ruler = CUSTOM_ASSETS.."ships/cylon/basestar_modern/ruler.obj",
-        ruler = ASSETS_ROOT .. "ships/empire/imperial/ruler.obj",
+        ruler = CUSTOM_ASSETS .. "ships/empire/imperial/ruler.obj",
         maneuver = { { "II" }, { "-", "I" } },
         defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_BRACE, DEF_EVADE },
         shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
@@ -7598,7 +7599,7 @@ Card:new(Title, NR_L,{ name = "Boldheart {NR}", front = CUSTOM_ASSETS .. "cards/
 Card:new(Title, NR_L,{ name = "Resolve {NR}", front = CUSTOM_ASSETS .. "cards/.nr/resolve.jpg", cost = 3, aliases = { "Resolve {NR} [Legends]" } })
 
     -- Armada Legacy (New) Upgrades
-Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/Daultay Dofine.jpg", cost=29, aliases={"Daultay Dofine [Legacy]"}})
+Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/Daultay Dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
 Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/.legacy/Ki-Adi-Mundi.jpg", cost=30, aliases={"Ki-Adi-Mundi [Legacy]"}})
 
 

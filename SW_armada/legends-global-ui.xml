@@ -1254,7 +1254,7 @@ width="400" -->
             <Text alignment="MiddleLeft"> Join the Armada Legends discord : https://discord.gg/gyCxmDDdJH </Text>
         </HorizontalLayout>
         <HorizontalLayout preferredHeight="20" padding="20 0 0 0">
-            <Text alignment="MiddleLeft"> Recommended Legacy Fleet Builder: https://builder.swarmada.wiki </Text>
+            <Text alignment="MiddleLeft"> Recommended Star Forge Fleet Builder: https://star-forge.tools/ </Text>
         </HorizontalLayout>
         <Text fontStyle="bold" fontSize="24" alignment="MiddleLeft" color="yellow" padding="20 20 3 3"> How to get started? </Text>
         <HorizontalLayout preferredHeight="20" padding="20 0 0 0">
