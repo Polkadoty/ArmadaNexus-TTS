@@ -4870,7 +4870,7 @@ Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     front = CUSTOM_ASSETS .. "cards/.legacy/R2D2.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE },
-    cost = 22,
+    cost = 19,
     aliases = { "R2-D2 - Twilight [Legacy]" }
 })
 
@@ -5172,14 +5172,14 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
         name = "Porax-38 Starfighter",
         front = CUSTOM_ASSETS .. "cards/.legends/porax38.jpg",
-        cost = 13,
+        cost = 12,
         aliases = { "Porax-38 Starfighter [Legends]" }
     })
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
         name = "IG-100 MagnaGuards",
         front = CUSTOM_ASSETS .. "cards/.legends/porax38_magnaguards.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
-        cost = 16,
+        cost = 14,
         aliases = { "IG-100 MagnaGuards - Porax-38 Starfighter [Legends]" }
     })
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
@@ -5188,7 +5188,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
         cost = 21,
         defense_tokens = { DEF_BRACE, DEF_BRACE },
-        aliases = { "Cad Bane - Xanandu Blood [Legends]" }
+        aliases = { "Cad Bane - Xanadu Blood [Legends]" }
     })
 
     --unapproved legends squadrons
