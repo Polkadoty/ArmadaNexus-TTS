@@ -5186,8 +5186,8 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         name = "Cad Bane",
         front = CUSTOM_ASSETS .. "cards/.legends/porax38_cadbane.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
-        cost = 21,
-        defense_tokens = { DEF_BRACE, DEF_BRACE },
+        cost = 20,
+        defense_tokens = { DEF_BRACE, DEF_SCATTER },
         aliases = { "Cad Bane - Xanadu Blood [Legends]" }
     })
 
@@ -6406,7 +6406,7 @@ Squadron:new(bwing, NR_L_SQUAD, {
     front =     CUSTOM_ASSETS.."cards/.nr/b-wing-squadron-b.jpg",
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing_diffuse.jpg",
     cost = 14,
-    aliases = {'B-wing Squadron {NR} [Legends]'}
+    aliases = {'B-Wing/E2 Squadron {NR} [Legends]'}
 })
 Squadron:new(bwing, NR_L_SQUAD, {
 	name = "Keyan Farlander {NR}",
@@ -6414,7 +6414,7 @@ Squadron:new(bwing, NR_L_SQUAD, {
     diffuse =   CUSTOM_ASSETS.."squadrons/new_rep/dup/bwing_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 18,
-    aliases = {'Keyan Farlander - B-wing/E2 Squadron {NR} [Legends]'}
+    aliases = {'Keyan Farlander - B-Wing/E2 Squadron {NR} [Legends]'}
 })
 
 Squadron:new(awing, NR_L_SQUAD, {
@@ -7442,7 +7442,7 @@ Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "cards/.le
 Card:new(Title, Empire_L,{ name = "Blue Hawk", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-bluehawk-title.jpg", cost = 2, aliases = { "Blue Hawk [Legends]" } })
 Card:new(Title, Empire_L,{ name = "Pulsar", front = CUSTOM_ASSETS .. "cards/.legends/pulsar-title-legends.jpg", cost = 4, aliases = { "Pulsar [Legends]" } })
 --04-2024 dev cycle
-Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.legends/depa.jpg", cost = 4, aliases = { "Depa Billaba [Legends]" } })
+Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.legends/depa.jpg", cost = 2, aliases = { "Depa Billaba [Legends]" } })
 
     ----non-approved
 Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Legends]" } })
