@@ -7442,7 +7442,7 @@ Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "cards/.le
 Card:new(Title, Empire_L,{ name = "Blue Hawk", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-bluehawk-title.jpg", cost = 2, aliases = { "Blue Hawk [Legends]" } })
 Card:new(Title, Empire_L,{ name = "Pulsar", front = CUSTOM_ASSETS .. "cards/.legends/pulsar-title-legends.jpg", cost = 4, aliases = { "Pulsar [Legends]" } })
 --04-2024 dev cycle
-Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.legends/depa.jpg", cost = 2, aliases = { "Depa Billaba [Legends]" } })
+Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.legends/depa.jpg", cost = 3, aliases = { "Depa Billaba [Legends]" } })
 
     ----non-approved
 Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Legends]" } })
