@@ -1,7 +1,7 @@
 ----#include TTS_armada/src/Global
 --italia table: https://i.imgur.com/ZH3BOIY.jpg
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
-CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
+CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/master/SW_armada/assets/'
 
 local SQUAD_MOVE_RULER = 1
 local SQUAD_ATTACK_RULER = 2
@@ -47,8 +47,8 @@ CMD_COLORS[ASSETS_ROOT.."misc/command_dials/confire.jpg"] = {0.8,0.4,0.4} --conc
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/nav.jpg"] = {0.2, 0.4, 0.8} --navigate
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/squad.jpg"] = {0.8,0.4,0.8} --squadron
 SUMMA_IMG = "https://i.imgur.com/nhLQ82T.png"
-SUMMA_MESH = "https://github.com/spacenavy90/SNCustomTTS-IncludeDir/raw/refs/heads/master/SW_armada/assets/misc/summa.obj"
-SUMMA_RULER = "https://github.com/spacenavy90/SNCustomTTS-IncludeDir/raw/refs/heads/master/SW_armada/assets/misc/rulers/ship/small/mesh.obj" --TODO
+SUMMA_MESH = "https://github.com/spacenavy90/ArmadaNexus-TTS/raw/refs/heads/master/SW_armada/assets/misc/summa.obj"
+SUMMA_RULER = "https://github.com/spacenavy90/ArmadaNexus-TTS/raw/refs/heads/master/SW_armada/assets/misc/rulers/ship/small/mesh.obj" --TODO
 local TARGETING_MESHES = {
     "http://i.imgur.com/mFwOs6T.jpg"
 }
@@ -764,7 +764,7 @@ function onload(save_string)
 end
 function isDatacard(object)
     custom = object.getCustomObject()
-    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
+    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
 end
 function drawDatacardButtons(obj)
     Wait.time(|| delayed_drawDatacardButtons(obj), 1, 0)

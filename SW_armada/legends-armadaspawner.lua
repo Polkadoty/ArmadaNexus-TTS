@@ -1609,9 +1609,9 @@ end
 
 ----#include ui/fleetSpawner
 
-CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
+CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/master/SW_armada/assets/'
 LEGACY_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaLegacyTTS-IncludeDir/master/assets/'
---ASSETS_ROOT = '{verifycache}https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/master/SW_armada/assets/'
+--ASSETS_ROOT = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/master/SW_armada/assets/'
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 
 DEF_BRACE = '79d121'
@@ -5190,6 +5190,20 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         defense_tokens = { DEF_BRACE, DEF_SCATTER },
         aliases = { "Cad Bane - Xanadu Blood [Legends]" }
     })
+    -- vwing
+    vwing = {
+        mesh = CUSTOM_ASSETS .. "squadrons/republic/vwing/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse.jpg",
+        health = 3,
+        move = 5,
+        defense_tokens = {}
+    }
+    Squadron:new(vwing, REPUBLIC_L_SQUAD, {
+        name = "V-wing Squadron",
+        front = CUSTOM_ASSETS .. "cards/.legends/vwing.jpg",
+        cost = 11,
+        aliases = { "V-wing Squadron [Legends]" }
+    })
 
     --unapproved legends squadrons
     --cx dagger
@@ -7830,7 +7844,7 @@ function clearSpawnArea(listSpawner)
 end
 function isDatacard(object)
     custom = object.getCustomObject()
-    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/SNCustomTTS-IncludeDir/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
+    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
 end
 function Action_SpawnListSpawner(player, _, idValue) --listSpawner
     print(player.color)
