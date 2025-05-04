@@ -1251,7 +1251,7 @@ width="400" -->
             <Text alignment="MiddleLeft"> Click the page numbers below to explore recent features </Text>
         </HorizontalLayout>
         <HorizontalLayout preferredHeight="20" padding="20 0 0 0">
-            <Text alignment="MiddleLeft"> Join the Armada Legends discord : https://discord.gg/gyCxmDDdJH </Text>
+            <Text alignment="MiddleLeft"> Join the Armada Nexus discord : https://discord.gg/gyCxmDDdJH </Text>
         </HorizontalLayout>
         <HorizontalLayout preferredHeight="20" padding="20 0 0 0">
             <Text alignment="MiddleLeft"> Recommended Star Forge Fleet Builder: https://star-forge.tools/ </Text>

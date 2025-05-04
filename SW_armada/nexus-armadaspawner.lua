@@ -4918,7 +4918,7 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     aliases = { "Five-Seven - LAAT/i Gunship [Legacy]"}
 })
 
-----------armada legends ships
+----------armada Nexus ships
 Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
     name = "Subjugator-class Prototype",
     front = CUSTOM_ASSETS .. "ships/separatist/subjugator/Subjugator_prototype.jpg",
@@ -4961,7 +4961,7 @@ Ship:new(ShortHugeShip, SEPARATIST_L_SHIP, {
 
 Ship:new(MediumShip, REPUBLIC_L_SHIP, {
     name = "Dreadnaught-class Heavy Cruiser",
-    front = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-heavy-legends.jpg",
+    front = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-heavy-Nexus.jpg",
     mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-heavy-diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
@@ -4974,7 +4974,7 @@ Ship:new(MediumShip, REPUBLIC_L_SHIP, {
 })
 Ship:new(MediumShip, REPUBLIC_L_SHIP, {
     name = "Dreadnaught-class Judicial Cruiser",
-    front = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-judicial-legends.jpg",
+    front = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-judicial-Nexus.jpg",
     mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-judicial-diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
@@ -5040,7 +5040,7 @@ Ship:new(SmallShip, EMPIRE_L_SHIP, {
 --     command = 1
 -- })
 
--------- unapproved unofficial legends ships
+-------- unapproved unofficial Nexus ships
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
@@ -5138,7 +5138,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     command = 4
 })
 
--- Armada Legends squadrons
+-- Armada Nexus squadrons
     --alpha starwing
     alpha_sw = {
         mesh = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/mesh.obj",
@@ -5149,17 +5149,24 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     }
     Squadron:new(alpha_sw, EMPIRE_L_SQUAD, {
         name = "Alpha-class Star Wing Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/alpha-starwing.jpg",
+        front = CUSTOM_ASSETS .. "cards/.nexus/starwing.jpg",
         cost = 14,
         aliases = { "Alpha-class Star Wing Squadron [Legends]" }
     })
     Squadron:new(alpha_sw, EMPIRE_L_SQUAD, {
         name = "Lieutenant Karsabi",
-        front = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/alpha-starwing-karsabi.jpg",
+        front = CUSTOM_ASSETS .. "cards/.nexus/starwing-karsabi.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/diffuse_ace.jpg",
         defense_tokens = { DEF_BRACE, DEF_BRACE },
-        cost = 21,
+        cost = 19,
         aliases = { "Lieutenant Karsabi - Alpha-class Star Wing Squadron [Legends]" }
+    })
+    Squadron:new(alpha_sw, EMPIRE_L_SQUAD, {
+        name = "Rho Squadron",
+        front = CUSTOM_ASSETS .. "cards/.nexus/starwing-rho.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/diffuse_ace.jpg",
+        cost = 17,
+        aliases = { "Rho Squadron - Alpha-class Star Wing Squadron [Legends]" }
     })
     --porax-38
     porax38 = {
@@ -5171,23 +5178,23 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     }
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
         name = "Porax-38 Starfighter",
-        front = CUSTOM_ASSETS .. "cards/.legends/porax38.jpg",
+        front = CUSTOM_ASSETS .. "cards/.nexus/porax38.jpg",
         cost = 12,
         aliases = { "Porax-38 Starfighter [Legends]" }
     })
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
         name = "IG-100 MagnaGuards",
-        front = CUSTOM_ASSETS .. "cards/.legends/porax38_magnaguards.jpg",
+        front = CUSTOM_ASSETS .. "cards/.nexus/porax38_magnaguards.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
         cost = 14,
         aliases = { "IG-100 MagnaGuards - Porax-38 Starfighter [Legends]" }
     })
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
         name = "Cad Bane",
-        front = CUSTOM_ASSETS .. "cards/.legends/porax38_cadbane.jpg",
+        front = CUSTOM_ASSETS .. "cards/.nexus/porax38_cadbane.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
         cost = 20,
-        defense_tokens = { DEF_BRACE, DEF_SCATTER },
+        defense_tokens = { DEF_SCATTER, DEF_BRACE },
         aliases = { "Cad Bane - Xanadu Blood [Legends]" }
     })
     -- vwing
@@ -5200,12 +5207,25 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     }
     Squadron:new(vwing, REPUBLIC_L_SQUAD, {
         name = "V-wing Squadron",
-        front = CUSTOM_ASSETS .. "cards/.legends/vwing.jpg",
+        front = CUSTOM_ASSETS .. "cards/.nexus/vwing.jpg",
         cost = 11,
         aliases = { "V-wing Squadron [Legends]" }
     })
+    Squadron:new(vwing, REPUBLIC_L_SQUAD, {
+        name = "Klick",
+        front = CUSTOM_ASSETS .. "cards/.nexus/vwing-klick.jpg",
+        cost = 14,
+        defense_tokens = { DEF_SCATTER, DEF_BRACE },
+        aliases = { "Klick - V-wing Squadron [Legends]" }
+    })
+    Squadron:new(vwing, REPUBLIC_L_SQUAD, {
+        name = "Shadow Squadron",
+        front = CUSTOM_ASSETS .. "cards/.nexus/vwing-shadow.jpg",
+        cost = 10,
+        aliases = { "Shadow Squadron - V-wing Squadron [Legends]" }
+    })
 
-    --unapproved legends squadrons
+    --unapproved Nexus squadrons
     --cx dagger
     cx_dagger = {
         mesh = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/mesh.obj",
@@ -5537,7 +5557,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     -- jupiter battlestar
     Ship:new(LargeShip, COL_L_SHIP, {
         name = "Jupiter-class Battlestar Mark I",
-        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk1-legends.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk1-Nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk1_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/jupiter/ruler.obj",
@@ -5550,7 +5570,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(LargeShip, COL_L_SHIP, {
         name = "Jupiter-class Battlestar Mark II",
-        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk2-legends.jpg",
+        front = CUSTOM_ASSETS .. "ships/colonial/jupiter/jupiter-mk2-Nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/colonial/jupiter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/colonial/jupiter/mk2_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/colonial/jupiter/ruler.obj",
@@ -7426,11 +7446,11 @@ BSG = { factions = { "Colonial", "Cylon" } }
 -- WeaponsTeam = { type = "WeaponsTeam", back = CUSTOM_ASSETS .. "cards/wepteam/back.jpg" }
 
 
------------ Armada Legends Upgrades
+----------- Armada Nexus Upgrades
 --interdictor fixes
-Card:new(ExperimentalRetrofit,{name="G-8 Experimental Projector [Legends]", front=CUSTOM_ASSETS.."cards/.legends/g8-interdictor-fix.jpg", cost=8, aliases = { "G-8 Experimental Projector [Legends]" }})
-Card:new(ExperimentalRetrofit,{name="G7-X Grav Well Projector [Legends]", front=CUSTOM_ASSETS.."cards/.legends/g7x-interdictor-fix.jpg", cost=2, aliases = { "G7-X Grav Well Projector [Legends]" }})
-Card:new(ExperimentalRetrofit,{name="Grav Shift Reroute [Legends]", front=CUSTOM_ASSETS.."cards/.legends/grav-shift-interdictor-fix.jpg", cost=2, aliases = { "Grav Shift Reroute [Legends]" }})
+Card:new(ExperimentalRetrofit,{name="G-8 Experimental Projector [Legends]", front=CUSTOM_ASSETS.."cards/.nexus/g8-interdictor-fix.jpg", cost=8, aliases = { "G-8 Experimental Projector [Legends]" }})
+Card:new(ExperimentalRetrofit,{name="G7-X Grav Well Projector [Legends]", front=CUSTOM_ASSETS.."cards/.nexus/g7x-interdictor-fix.jpg", cost=2, aliases = { "G7-X Grav Well Projector [Legends]" }})
+Card:new(ExperimentalRetrofit,{name="Grav Shift Reroute [Legends]", front=CUSTOM_ASSETS.."cards/.nexus/grav-shift-interdictor-fix.jpg", cost=2, aliases = { "Grav Shift Reroute [Legends]" }})
 
 --11-2024 dev cycle
 Card:new(SuperWeapon, Separatist_L,{ name = "Ion Pulse Emitter", front = CUSTOM_ASSETS .. "cards/super/Superweapon_Ion_Pulse_Emitter.jpg", cost = 7, aliases = { "Ion Pulse Emitter [Legends]" } })
@@ -7444,19 +7464,19 @@ Card:new(Title, Republic_L,{ name = "Judicial Fleet", front = CUSTOM_ASSETS .. "
 Card:new(Title, Republic_L,{ name = "Katana Fleet", front = CUSTOM_ASSETS .. "cards/title/katana-fleet-title.jpg", cost = 2, aliases = { "Katana Fleet [Legends]" } })
 Card:new(Title, Republic_L,{ name = "Rendili Defender", front = CUSTOM_ASSETS .. "cards/title/rendili-defender-title.jpg", cost = 1, aliases = { "Rendili Defender [Legends]" } })
 Card:new(Title, Rebel_L,{ name = "Rebel One", front = CUSTOM_ASSETS .. "cards/title/rebel-one-title.jpg", cost = 6, aliases = { "Rebel One [Legends]" } })
-Card:new(Officer, Empire_L,{ name = "General Romodi (Officer)", front = CUSTOM_ASSETS .. "cards/.legends/General-Romodi.jpg", cost = 3, aliases = { "General Romodi [Legends]" } })
-Card:new(OffensiveRetrofit, Separatist_L,{ name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/.legends/ext-droid-storage.jpg", cost = 5, aliases = { "External Droid Storage [Legends]" } })
+Card:new(Officer, Empire_L,{ name = "General Romodi (Officer)", front = CUSTOM_ASSETS .. "cards/.nexus/General-Romodi.jpg", cost = 3, aliases = { "General Romodi [Legends]" } })
+Card:new(OffensiveRetrofit, Separatist_L,{ name = "External Droid Storage", front = CUSTOM_ASSETS .. "cards/.nexus/ext-droid-storage.jpg", cost = 5, aliases = { "External Droid Storage [Legends]" } })
 Card:new(OffensiveRetrofit, Republic_L,{ name = "AT-TE Ambush", front = CUSTOM_ASSETS .. "cards/offretro/atte-boarding-team.jpg", cost = 5, aliases = { "AT-TE Ambush [Legends]" } })
 --02-2024 dev cycle
 Card:new(Turbolaser, Empire_L,{ name = "Precision Turbolaser Turrets", front = CUSTOM_ASSETS .. "cards/turbo/precision-tls.jpg", cost = 5, aliases = { "Precision Turbolaser Turrets [Legends]" } })
 Card:new(Title, Rebel_L,{ name = "Condor", front = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a-condor-title.jpg", cost = 8, aliases = { "Condor [Legends]" } })
 Card:new(Title, Rebel_L,{ name = "Shadow", front = CUSTOM_ASSETS .. "ships/rebel/mc40a/mc40a-shadow-title.jpg", cost = 3, aliases = { "Shadow [Legends]" } })
 --03-2024 dev cycle
-Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "cards/.legends/Furious-title-legends-2.jpg", cost = 4, aliases = { "Furious [Legends]" } })
+Card:new(Title, Empire_L,{ name = "Furious", front = CUSTOM_ASSETS .. "cards/.nexus/Furious-title-Nexus-2.jpg", cost = 4, aliases = { "Furious [Legends]" } })
 Card:new(Title, Empire_L,{ name = "Blue Hawk", front = CUSTOM_ASSETS .. "ships/empire/lancer/lancer-bluehawk-title.jpg", cost = 2, aliases = { "Blue Hawk [Legends]" } })
-Card:new(Title, Empire_L,{ name = "Pulsar", front = CUSTOM_ASSETS .. "cards/.legends/pulsar-title-legends.jpg", cost = 4, aliases = { "Pulsar [Legends]" } })
+Card:new(Title, Empire_L,{ name = "Pulsar", front = CUSTOM_ASSETS .. "cards/.nexus/pulsar-title-Nexus.jpg", cost = 4, aliases = { "Pulsar [Legends]" } })
 --04-2024 dev cycle
-Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.legends/depa.jpg", cost = 3, aliases = { "Depa Billaba [Legends]" } })
+Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.nexus/depa.jpg", cost = 3, aliases = { "Depa Billaba [Legends]" } })
 
     ----non-approved
 Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Legends]" } })
@@ -7466,7 +7486,7 @@ Card:new(Title, Separatist_L,{ name = "Reaver", front = CUSTOM_ASSETS .. "ships/
 Card:new(Title, Separatist_L,{ name = "Parting Handshake", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_parthand.jpg", cost = 5, aliases = { "Parting Handshake [Legends]" } })
 
 
--- Halo Legends Upgrades
+-- Halo Nexus Upgrades
 Card:new(Commander, UNSC,{ name = "Captain Keyes", front = CUSTOM_ASSETS .. "cards/.halo/com_capt_keyes.jpg", cost = 30, aliases = { "Captain Keyes [Legends]" } })
 Card:new(Commander, UNSC,{ name = "Captain Wallace", front = CUSTOM_ASSETS .. "cards/.halo/com_capt_wallace.jpg", cost = 20, aliases = { "Captain Wallace [Legends]" } })
 Card:new(Commander, UNSC,{ name = "Commander Keyes", front = CUSTOM_ASSETS .. "cards/.halo/com_cmdr_keyes.jpg", cost = 27, aliases = { "Commander Keyes [Legends]" } })
@@ -7521,7 +7541,7 @@ Card:new(Title, Covenant,{ name = "Elegy's Lament", front = CUSTOM_ASSETS .. "sh
 Card:new(WeaponsTeam, UNSC,{ name = "Cortana (WT)", front = CUSTOM_ASSETS .. "cards/.halo/wt_cortana.jpg", cost = 7, aliases = { "Cortana (WT) [Legends]" } })
 Card:new(WeaponsTeam, UNSC,{ name = "UNSC Gunners", front = CUSTOM_ASSETS .. "cards/.halo/wt_unscgunners.jpg", cost = 6, aliases = { "UNSC Gunners [Legends]" } })
 
-    -- BSG Legends Upgrades
+    -- BSG Nexus Upgrades
 Card:new(Commander, Colonial,{ name = "William Adama", front = CUSTOM_ASSETS .. "cards/.bsg/com_william_adama.jpg", cost = 28, aliases = { "William Adama [Legends]" } })
 Card:new(Commander, Colonial,{ name = "Lucinda Cain", front = CUSTOM_ASSETS .. "cards/.bsg/com_luci_cain.jpg", cost = 38, aliases = { "Lucinda Cain [Legends]" } })
 Card:new(Commander, Colonial,{ name = "Helena Agathon", front = CUSTOM_ASSETS .. "cards/.bsg/com_helena_agathon.jpg", cost = 26, aliases = { "Helena Agathon [Legends]" } })
