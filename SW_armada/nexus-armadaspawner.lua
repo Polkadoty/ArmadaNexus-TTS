@@ -5171,23 +5171,23 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     --porax-38
     porax38 = {
         mesh = CUSTOM_ASSETS .. "squadrons/separatist/porax38/mesh.obj",
-        diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse.jpg",
         health = 5,
         move = 3,
         defense_tokens = {}
     }
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
-        name = "Porax-38 Starfighter",
+        name = "Porax-38 Squadron",
         front = CUSTOM_ASSETS .. "cards/.nexus/porax38.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse.jpg",
         cost = 12,
-        aliases = { "Porax-38 Starfighter [Legends]" }
+        aliases = { "Porax-38 Squadron [Legends]" }
     })
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
         name = "IG-100 MagnaGuards",
         front = CUSTOM_ASSETS .. "cards/.nexus/porax38_magnaguards.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/separatist/porax38/diffuse_ace.jpg",
         cost = 14,
-        aliases = { "IG-100 MagnaGuards - Porax-38 Starfighter [Legends]" }
+        aliases = { "IG-100 MagnaGuards - Porax-38 Squadron [Legends]" }
     })
     Squadron:new(porax38, SEPARATIST_L_SQUAD, {
         name = "Cad Bane",
@@ -5200,7 +5200,6 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     -- vwing
     vwing = {
         mesh = CUSTOM_ASSETS .. "squadrons/republic/vwing/mesh.obj",
-        diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse.jpg",
         health = 3,
         move = 5,
         defense_tokens = {}
@@ -5208,12 +5207,14 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     Squadron:new(vwing, REPUBLIC_L_SQUAD, {
         name = "V-wing Squadron",
         front = CUSTOM_ASSETS .. "cards/.nexus/vwing.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse.jpg",
         cost = 11,
         aliases = { "V-wing Squadron [Legends]" }
     })
     Squadron:new(vwing, REPUBLIC_L_SQUAD, {
         name = "Klick",
         front = CUSTOM_ASSETS .. "cards/.nexus/vwing-klick.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse_ace.jpg",
         cost = 14,
         defense_tokens = { DEF_SCATTER, DEF_BRACE },
         aliases = { "Klick - V-wing Squadron [Legends]" }
@@ -5221,6 +5222,8 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     Squadron:new(vwing, REPUBLIC_L_SQUAD, {
         name = "Shadow Squadron",
         front = CUSTOM_ASSETS .. "cards/.nexus/vwing-shadow.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse_ace.jpg",
+
         cost = 10,
         aliases = { "Shadow Squadron - V-wing Squadron [Legends]" }
     })
@@ -7477,6 +7480,8 @@ Card:new(Title, Empire_L,{ name = "Blue Hawk", front = CUSTOM_ASSETS .. "ships/e
 Card:new(Title, Empire_L,{ name = "Pulsar", front = CUSTOM_ASSETS .. "cards/.nexus/pulsar-title-Nexus.jpg", cost = 4, aliases = { "Pulsar [Legends]" } })
 --04-2024 dev cycle
 Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "cards/.nexus/depa.jpg", cost = 3, aliases = { "Depa Billaba [Legends]" } })
+--05-2024 dev cycle
+Card:new(Commander, Republic_L,{ name = "Admiral Kilian", front = CUSTOM_ASSETS .. "cards/.nexus/admiral-kilian.jpg", cost = 28, aliases = { "Admiral Kilian [Legends]" } })
 
     ----non-approved
 Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Legends]" } })
