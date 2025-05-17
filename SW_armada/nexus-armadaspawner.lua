@@ -5201,14 +5201,14 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     vwing = {
         mesh = CUSTOM_ASSETS .. "squadrons/republic/vwing/mesh.obj",
         health = 3,
-        move = 5,
+        move = 4,
         defense_tokens = {}
     }
     Squadron:new(vwing, REPUBLIC_L_SQUAD, {
         name = "V-wing Squadron",
         front = CUSTOM_ASSETS .. "cards/.nexus/vwing.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse.jpg",
-        cost = 11,
+        cost = 10,
         aliases = { "V-wing Squadron [Nexus]" }
     })
     Squadron:new(vwing, REPUBLIC_L_SQUAD, {
@@ -5224,7 +5224,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         front = CUSTOM_ASSETS .. "cards/.nexus/vwing-shadow.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse_ace.jpg",
 
-        cost = 10,
+        cost = 11,
         aliases = { "Shadow Squadron - V-wing Squadron [Nexus]" }
     })
 
