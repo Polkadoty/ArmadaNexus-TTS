@@ -3202,14 +3202,14 @@ Squadron:new(lancer, REBEL_SQUAD, {
 })
 
 gauntlet = {
-    mesh =      ASSETS_ROOT.."squadrons/rebel/guantlet/as_es_model.obj",
+    mesh =      CUSTOM_ASSETS.."squadrons/scum/gauntlet/mesh.obj",
     health = 7,
     move = 4,
     defense_tokens = {}}
 Squadron:new(gauntlet, REBEL_SQUAD, {
 	name = 'Fenn Rau',
     front =     ASSETS_ROOT.."squadrons/rebel/guantlet/fenn_card_v2_1.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/rebel/guantlet/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/scum/gauntlet/fenn_rau.jpg",
     defense_tokens = {DEF_BRACE},
     cost = 24,
     aliases = {"Fenn Rau - Mandalorian Gauntlet Fighter"}
@@ -3594,21 +3594,21 @@ Squadron:new(decimator, EMPIRE_SQUAD, {
     aliases = {"Morna Kee - VT-49 Decimator"}
 })
 gauntlet = {
-    mesh =      ASSETS_ROOT.."squadrons/empire/guantlet/as_ro_model.obj",
+    mesh =      CUSTOM_ASSETS.."squadrons/scum/gauntlet/mesh.obj",
     health = 7,
     move = 4,
     defense_tokens = {}}
 Squadron:new(gauntlet, EMPIRE_SQUAD, {
 	name = 'Mandalorian Gauntlet Fighter',
     front =     CUSTOM_ASSETS.."cards/.amg2025/mando-gaunt.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/empire/guantlet/base_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/scum/gauntlet/gauntlet_imp.jpg",
     cost = 18,
     aliases = {'Mandalorian Gauntlet Fighters'}
 })
 Squadron:new(gauntlet, EMPIRE_SQUAD, {
 	name = 'Gar Saxon',
     front =     CUSTOM_ASSETS.."cards/.amg2025/saxon.jpg",
-    diffuse =   ASSETS_ROOT.."squadrons/empire/guantlet/ace_diffuse.jpg",
+    diffuse =   CUSTOM_ASSETS.."squadrons/scum/gauntlet/gauntlet_imp_ace.jpg",
     defense_tokens = {DEF_BRACE},
     cost = 20,
     aliases = {"Gar Saxon - Mandalorian Gauntlet Fighter"}
