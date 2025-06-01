@@ -4385,27 +4385,27 @@ Squadron:new(laat_i_old, REPUBLIC_L_SQUAD, {
     aliases = { "Hawk -LAAT/i Gunship [OldLegacy]" }
 })
 
-g9_rigger_old = {
-    mesh = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/plain_mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_texture.jpg",
-    health = 7,
-    move = 2,
-    defense_tokens = {}
-}
-Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
-    name = "G9 Rigger-class Freighter [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/g9-rigger-old-old-legacy.jpg",
-    cost = 13,
-    aliases = { "G9 Rigger-class Freighter [OldLegacy]" }
-})
-Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
-    name = "Anakin Skywalker (G9) [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-twilight-old-legacy.jpg",
-    diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_ace_texture.jpg",
-    defense_tokens = { DEF_BRACE },
-    cost = 27,
-    aliases = { "Anakin Skywalker - G9 Rigger-class Freighter [OldLegacy]" }
-})
+-- g9_rigger_old = {
+--     mesh = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/plain_mesh.obj",
+--     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_texture.jpg",
+--     health = 7,
+--     move = 2,
+--     defense_tokens = {}
+-- }
+-- Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
+--     name = "G9 Rigger-class Freighter [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/g9-rigger-old-old-legacy.jpg",
+--     cost = 13,
+--     aliases = { "G9 Rigger-class Freighter [OldLegacy]" }
+-- })
+-- Squadron:new(g9_rigger_old, REPUBLIC_L_SQUAD, {
+--     name = "Anakin Skywalker (G9) [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-twilight-old-legacy.jpg",
+--     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9-rigger/g9rigger_ace_texture.jpg",
+--     defense_tokens = { DEF_BRACE },
+--     cost = 27,
+--     aliases = { "Anakin Skywalker - G9 Rigger-class Freighter [OldLegacy]" }
+-- })
 
 Ship:new(SmallShip, SEPARATIST_L_SHIP, {
     name = "Trident-class Assault Ships [OldLegacy]",
@@ -4793,9 +4793,9 @@ Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Count Dooku",
     front = CUSTOM_ASSETS .. "cards/.legacy/Count Dooku.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
-    defense_tokens = { DEF_BRACE, DEF_EVADE},
-    cost = 23,
-    aliases = { "Count Dooku - Scimitar [Legacy]" }
+    defense_tokens = { DEF_BRACE },
+    cost = 21,
+    aliases = { "Count Dooku - Sith Infiltrator [Legacy]" }
 })
 
 sheathipede = {
@@ -4809,7 +4809,7 @@ Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
     front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/sheathipede.jpg",
     cost = 15,
     move = 2,
-    aliases = {"Sheathipede-class Shuttle [Legacy]"}
+    aliases = {"Sheathipede-class Shuttle [Nexus]"}
 })
 Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
     name = "Kalani",
@@ -4818,7 +4818,7 @@ Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
     defense_tokens = {DEF_BRACE, DEF_BRACE},
     cost = 24,
     move = 3,
-    aliases = {"Kalani - Sheathipede-class Shuttle [Legacy]"}
+    aliases = {"Kalani - Sheathipede-class Shuttle [Nexus]"}
 })
 
 nu_shuttle = {
@@ -4832,7 +4832,7 @@ Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
     front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/nu_shuttle.jpg",
     cost = 15,
     move = 2,
-    aliases = {"Nu-class Transport Shuttle [Legacy]"}
+    aliases = {"Nu-class Transport Shuttle [Nexus]"}
 })
 Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
     name = "Delta Squad",
@@ -4841,7 +4841,7 @@ Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
     defense_tokens = {DEF_BRACE},
     cost = 24,
     move = 3,
-    aliases = {"Delta Squad - Nu-class Transport Shuttle [Legacy]"}
+    aliases = {"Delta Squad - Nu-class Transport Shuttle [Nexus]"}
 })
 
 g9_rigger = {
@@ -4869,8 +4869,8 @@ Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "R2-D2 (Twilight)",
     front = CUSTOM_ASSETS .. "cards/.legacy/R2D2.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
-    defense_tokens = { DEF_BRACE, DEF_EVADE },
-    cost = 19,
+    defense_tokens = { DEF_BRACE },
+    cost = 17,
     aliases = { "R2-D2 - Twilight [Legacy]" }
 })
 
@@ -4884,7 +4884,7 @@ hmp_gunship = {
 Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
     name = "HMP Droid Gunship",
     front = CUSTOM_ASSETS .. "cards/.legacy/HMP Droid Gunship.jpg",
-    cost = 14,
+    cost = 13,
     aliases = { "HMP Droid Gunship [Legacy]" }
 })
 Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
@@ -4914,7 +4914,7 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     front = CUSTOM_ASSETS .. "cards/.legacy/Five-Seven.jpg",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
-    cost = 22,
+    cost = 21,
     aliases = { "Five-Seven - LAAT/i Gunship [Legacy]"}
 })
 
