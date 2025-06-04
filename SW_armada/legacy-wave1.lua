@@ -119,7 +119,7 @@ function onload()
         name = "Pinnance-class Corsair",
         front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corsair-legacy-beta.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/pinnance/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/pinnance_a_texture.jpg",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/corsair_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/pinnance/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
@@ -130,10 +130,10 @@ function onload()
         })
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
-        name = "Pinnance-class Corsair",
+        name = "Pinnance-class Corvette",
         front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corvette-legacy-beta.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/pinnance/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/pinnance_a_texture.jpg",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/corvette_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/pinnance/ruler.obj", 
         maneuver = {{"II"},{"-","II"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
@@ -235,7 +235,7 @@ SupportTeam = { type = "SupportTeam", back = CUSTOM_ASSETS .. "cards/support/bac
 Title = { type = "Title", back = CUSTOM_ASSETS .. "cards/title/back.jpg" }
 WeaponsTeam = { type = "WeaponsTeam", back = CUSTOM_ASSETS .. "cards/wepteam/back.jpg" }
 
-Card:new(Commander,Republic,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=25, aliases={"Admiral Coburn [LegacyBeta]"}})
+Card:new(Commander,Republic,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=23, aliases={"Admiral Coburn [LegacyBeta]"}})
 Card:new(Commander,Separatist,{name="Poggle the Lesser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/poggle-the-lesser-commander-legacy-beta.jpg", cost=32, aliases={"Poggle the Lesser [LegacyBeta]"}})
 
 Card:new(Title,Republic,{name="Arlionne",  front = CUSTOM_ASSETS.."cards/.legacy/beta/arlionne-title-legacy-beta.jpg", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [Legacy]"}})
