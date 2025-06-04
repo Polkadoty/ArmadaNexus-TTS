@@ -1,0 +1,23 @@
+# Save File
+cardsx=4
+cardsy=4
+card-width=744
+card-height=1038
+zoom=0.3
+background-color=-16777216
+0_0=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Distress_Call.jpg
+1_0=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Chance_Encounter.jpg
+2_0=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Prospectors_Gambit.jpg
+3_0=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Supply_Convoy.jpg
+0_1=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Brother_In_Arms.jpg
+1_1=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Jedi_Master.jpg
+2_1=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Inspiring_Leader.jpg
+3_1=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Skilled_Bombardier.jpg
+0_2=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Weapons_System_Expert.jpg
+1_2=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Callous_Tactician.jpg
+2_2=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Linked_Neural_Network.jpg
+3_2=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Buzz_Droids.jpg
+0_3=E\:\\code\\ArmadaNexus-TTS\\SW_armada\\assets\\misc\\fighter_group\\Disabled_Vessel.jpg
+1_3=null
+2_3=null
+3_3=null
