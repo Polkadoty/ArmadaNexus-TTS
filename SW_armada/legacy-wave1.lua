@@ -89,7 +89,7 @@ function onload()
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_EVADE},
         shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 55,
+        cost = 52,
         aliases = {"Arquitens-class Assault Cruiser [LegacyBeta]", "Arquitens-class Assault Cruiser [Legacy]"},
         command = 2
     })
@@ -103,7 +103,7 @@ function onload()
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_EVADE},
         shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 60,
+        cost = 55,
         aliases = {"Arquitens-class Escort Cruiser [LegacyBeta]", "Arquitens-class Escort Cruiser [Legacy]"},
         command = 2
     })
@@ -116,12 +116,12 @@ function onload()
     }
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
-        name = "Pinnance-class Corsair",
+        name = "Pinnace-class Corsair",
         front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corsair-legacy-beta.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/pinnance/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/corsair_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/pinnance/ruler.obj", 
-        maneuver = {{"II"},{"-","II"},{"-","II","I"},{"-","II","-","I"}},
+        maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 41,
@@ -130,12 +130,12 @@ function onload()
         })
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
-        name = "Pinnance-class Corvette",
+        name = "Pinnace-class Corvette",
         front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corvette-legacy-beta.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/pinnance/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/corvette_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/pinnance/ruler.obj", 
-        maneuver = {{"II"},{"-","II"},{"-","II","I"},{"-","II","-","I"}},
+        maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 44,
@@ -246,7 +246,7 @@ Card:new(Title,Separatist,{name="Insatiable",  front = CUSTOM_ASSETS.."cards/.le
 Card:new(Title,Empire,{name="Intrepid",  front = CUSTOM_ASSETS.."cards/.legacy/beta/intrepid-title-legacy-beta.jpg", cost=7, aliases={"Intrepid [LegacyBeta]", "Intrepid [Legacy]"}})
 Card:new(Title,Empire,{name="Battle Cruiser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/battle-cruiser-title-legacy-beta.jpg", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [Legacy]"}})
 Card:new(Title,Rebel,{name="Nautilian",  front = CUSTOM_ASSETS.."cards/.legacy/beta/nautilian-title-legacy-beta.jpg", cost=5, aliases={"Nautilian [LegacyBeta]", "Nautilian [Legacy]"}})
-Card:new(Title,Rebel,{name="Rebel One",  front = CUSTOM_ASSETS.."cards/.legacy/beta/rebel-one-title-legacy-beta.jpg", cost=4, aliases={"Rebel One [LegacyBeta]", "Rebel One [Legacy]"}})
+Card:new(Title,Rebel,{name="Rebel One",  front = CUSTOM_ASSETS.."cards/.legacy/beta/rebel-one-title-legacy-beta.jpg", cost=8, aliases={"Rebel One [LegacyBeta]", "Rebel One [Legacy]"}})
 
 printToAll("Finished loading Armada Legacy wave 1 beta content!",{1,0.5,0})
 
