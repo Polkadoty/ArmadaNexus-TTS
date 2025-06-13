@@ -235,14 +235,18 @@ SupportTeam = { type = "SupportTeam", back = CUSTOM_ASSETS .. "cards/support/bac
 Title = { type = "Title", back = CUSTOM_ASSETS .. "cards/title/back.jpg" }
 WeaponsTeam = { type = "WeaponsTeam", back = CUSTOM_ASSETS .. "cards/wepteam/back.jpg" }
 
-Card:new(Commander,Republic,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=23, aliases={"Admiral Coburn [LegacyBeta]"}})
+Card:new(Commander,Republic,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=20, aliases={"Admiral Coburn [LegacyBeta]"}})
 Card:new(Commander,Separatist,{name="Poggle the Lesser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/poggle-the-lesser-commander-legacy-beta.jpg", cost=32, aliases={"Poggle the Lesser [LegacyBeta]"}})
 
 Card:new(Title,Republic,{name="Arlionne",  front = CUSTOM_ASSETS.."cards/.legacy/beta/arlionne-title-legacy-beta.jpg", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [Legacy]"}})
 Card:new(Title,Republic,{name="Open Circle Fleet",  front = CUSTOM_ASSETS.."cards/.legacy/beta/open-circle-fleet-title-legacy-beta.jpg", cost=5, aliases={"Open Circle Fleet [LegacyBeta]", "Open Circle Fleet [Legacy]"}})
+Card:new(Title,Republic,{name="Stellar Rise",  front = CUSTOM_ASSETS.."cards/.legacy/beta/stellar-rise-title-legacy-beta.jpg", cost=2, aliases={"Stellar Rise [LegacyBeta]", "Stellar Rise [Legacy]"}})
+Card:new(Title,Republic,{name="Surrogator",  front = CUSTOM_ASSETS.."cards/.legacy/beta/surrogator-title-legacy-beta.jpg", cost=8, aliases={"Surrogator [LegacyBeta]", "Surrogator [Legacy]"}})
 Card:new(Title,Separatist,{name="Baktoid Combat Vessel",  front = CUSTOM_ASSETS.."cards/.legacy/beta/baktoid-combat-vessel-title-legacy-beta.jpg", cost=3, aliases={"Baktoid Combat Vessel [LegacyBeta]", "Baktoid Combat Vessel [Legacy]"}})
 Card:new(Title,Separatist,{name="Corsair of Liberty",  front = CUSTOM_ASSETS.."cards/.legacy/beta/corsair-of-liberty-title-legacy-beta.jpg", cost=3, aliases={"Corsair of Liberty [LegacyBeta]", "Corsair of Liberty [Legacy]"}})
 Card:new(Title,Separatist,{name="Insatiable",  front = CUSTOM_ASSETS.."cards/.legacy/beta/insatiable-title-legacy-beta.jpg", cost=3, aliases={"Insatiable [LegacyBeta]", "Insatiable [Legacy]"}})
+Card:new(Title,Separatist,{name="Petranaki",  front = CUSTOM_ASSETS.."cards/.legacy/beta/petranaki.jpg", cost=3, aliases={"Petranaki [LegacyBeta]", "Petranaki [Legacy]"}})
+Card:new(Title,Separatist,{name="Kolivex",  front = CUSTOM_ASSETS.."cards/.legacy/beta/kolivex.jpg", cost=4, aliases={"Kolivex [LegacyBeta]", "Kolivex [Legacy]"}})
 Card:new(Title,Empire,{name="Intrepid",  front = CUSTOM_ASSETS.."cards/.legacy/beta/intrepid-title-legacy-beta.jpg", cost=7, aliases={"Intrepid [LegacyBeta]", "Intrepid [Legacy]"}})
 Card:new(Title,Empire,{name="Battle Cruiser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/battle-cruiser-title-legacy-beta.jpg", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [Legacy]"}})
 Card:new(Title,Rebel,{name="Nautilian",  front = CUSTOM_ASSETS.."cards/.legacy/beta/nautilian-title-legacy-beta.jpg", cost=5, aliases={"Nautilian [LegacyBeta]", "Nautilian [Legacy]"}})

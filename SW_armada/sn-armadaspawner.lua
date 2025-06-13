@@ -5040,7 +5040,7 @@ Ship:new(SmallShip, EMPIRE_L_SHIP, {
 --     command = 1
 -- })
 
--------- unapproved unofficial Nexus ships
+-------- non-approved un-approved un-official Nexus ships and squadrons
 Ship:new(MediumShip, REBEL_L_SHIP, {
     name = "Quasar Fire II-class Cruiser-Carrier (Rebel)",
     front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/Rebel_QuasarII.jpg",
@@ -5228,7 +5228,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         aliases = { "Shadow Squadron - V-wing Squadron [Nexus]" }
     })
 
-    --unapproved Nexus squadrons
+    --non-approved un-approved un-official Nexus squadrons
     --cx dagger
     cx_dagger = {
         mesh = CUSTOM_ASSETS .. "squadrons/empire/cx_dagger/mesh.obj",
@@ -5251,6 +5251,29 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         cost = 24,
         aliases = { "CX-2 - CX Dagger Vessel [Nexus]" }
     })
+
+    --n1 naboo starfighter
+    naboo_n1 = {
+        mesh = CUSTOM_ASSETS .. "squadrons/republic/naboo_n1/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/republic/naboo_n1/naboon1-texture.jpg",
+        health = 5,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(naboo_n1, REPUBLIC_L_SQUAD, {
+        name = "Naboo N-1 Squadron",
+        front = CUSTOM_ASSETS .. "squadrons/republic/naboo_n1/naboo_n1_nexus.jpg",
+        cost = 15,
+        aliases = { "Naboo N-1 Squadron [Nexus]" }
+    })
+    -- Squadron:new(naboo_n1, REPUBLIC_L_SQUAD, {
+    --     name = "Anakin Skywalker (N-1)",
+    --     front = CUSTOM_ASSETS .. "squadrons/republic/naboo_n1/naboo_n1_nexus.jpg",
+    --     diffuse = CUSTOM_ASSETS .. "squadrons/republic/naboo_n1/naboon1-ace-texture.jpg",
+    --     cost = 15,
+    --     aliases = { "Anakin Skywalker - Naboo N-1 Squadron [Nexus]" },
+    --     defense_tokens = { DEF_BRACE, DEF_EVADE }
+    --  })
 
 ----halo ships/squadrons
 --unsc ships
@@ -7483,7 +7506,7 @@ Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "
 --05-2024 dev cycle
 Card:new(Commander, Republic_L,{ name = "Admiral Kilian", front = CUSTOM_ASSETS .. "cards/.nexus/admiral-kilian.jpg", cost = 33, aliases = { "Admiral Kilian [Nexus]" } })
 
-    ----non-approved
+    ----non-approved un-approved un-official Nexus upgrades
 Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Nexus]" } })
 Card:new(Title, Rebel_L,{ name = "Phoenix Nest", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_pn.jpg", cost = 6, aliases = { "Phoenix Nest [Nexus]" } })
 Card:new(Title, Republic_L,{ name = "Righteous Indignation", front = CUSTOM_ASSETS .. "ships/republic/rothana/right_indig.jpg", cost = 4, aliases = { "Righteous Indignation [Nexus]" } })
