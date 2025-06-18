@@ -546,7 +546,7 @@ function spawnDataCard(fleet, pos, rot, name)
     local custom = {}
     -- custom.image = "http://i.imgur.com/EUi3Wog.png"
     -- custom.stackable = true
-    custom.mesh = ASSETS_ROOT.."misc/datacard.obj"
+    custom.mesh = "http://paste.ee/r/uY3YX" --ASSETS_ROOT.."misc/datacard.obj"
     custom.diffuse = ASSETS_ROOT.."misc/datacard_diffuse.png"
     custom.type = 0 --generic
     custom.material = 3 --cardboard
@@ -6048,27 +6048,27 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --neutron star
     Ship:new(MediumShip, SCUM_L_SHIP, {
         name = "Neutron Star-class Bulk Cruiser",
-        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron-cruiser.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron-star-class-bulk-cruiser-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/neutron_star/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/neutron_star/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/neutron_star/ruler.obj",
         maneuver = { { "I" }, { "I", "I" }, { "I", "-", "-" } },
         defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT },
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
-        cost = 87,
+        cost = 79,
         command = 3,
         aliases = { "Neutron Star-class Bulk Cruiser {Scum} [Nexus]" }
     })
     Ship:new(MediumShip, SCUM_L_SHIP, {
         name = "Neutron Star-class Bulk Carrier",
-        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron-carrier.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/neutron_star/neutron-star-class-bulk-carrier-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/neutron_star/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/neutron_star/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/neutron_star/ruler.obj",
         maneuver = { { "I" }, { "I", "I" }, { "I", "-", "-" } },
         defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT },
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
-        cost = 83,
+        cost = 77,
         command = 3,
         aliases = { "Neutron Star-class Bulk Carrier {Scum} [Nexus]" }
     })
@@ -6076,7 +6076,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --marauder
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Artillery Corvette",
-        front = CUSTOM_ASSETS .. "ships/scum/marauder/marauder_arty.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/marauder/marauder-artillery-corvette-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
@@ -6089,7 +6089,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Picket Corvette",
-        front = CUSTOM_ASSETS .. "ships/scum/marauder/marauder_picket.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/marauder/marauder-picket-corvette-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
@@ -6104,11 +6104,11 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --interceptor iv
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Attack Frigate",
-        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor-iv-attack.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor-iv-class-attack-frigate-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
-        maneuver = { { "II" }, { "I", "-" }, { "I", "-", "II" } },
+        maneuver = { { "II" }, { "I", "I" }, { "I", "-", "II" } },
         defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 65,
@@ -6117,11 +6117,11 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Missile Frigate",
-        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor-iv-missile.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/interceptor-iv-class-missile-frigate-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
-        maneuver = { { "II" }, { "I", "-" }, { "I", "-", "II" } },
+        maneuver = { { "II" }, { "I", "I" }, { "I", "-", "II" } },
         defense_tokens = { DEF_BRACE, DEF_EVADE, DEF_REDIRECT },
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
         cost = 62,
@@ -6132,7 +6132,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --action vi
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Action VI Bulk Transports",
-        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi_bulk.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action-vi-bulk-transports-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
@@ -6145,7 +6145,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Action VI Armed Transports",
-        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action_vi_armed.jpg",
+        front = CUSTOM_ASSETS .. "ships/scum/action_vi/action-vi-armed-transports-scum-nexus.jpg",
         mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
@@ -6155,6 +6155,90 @@ Squadron:new(seraph, COV_L_SQUAD, {
         cost = 26,
         command = 1,
         aliases = { "Action VI Armed Transports {Scum} [Nexus]" }
+    })
+
+    --kandosii
+    Ship:new(LargeShip, SCUM_L_SHIP, {
+        name = "Kandosii-type Battlecarrier",
+        front = CUSTOM_ASSETS .. "ships/scum/kandosii/kandosii-battlecarrier-scum-nexus.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/kandosii/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/kandosii/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/kandosii/ruler.obj",
+        maneuver = { { "I" }, { "I", "-" }, { "I", "-", "I" } },
+        defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN },
+        shields = { 3, 3, 3, 3 }, -- Front, left, right, rear
+        cost = 98,
+        command = 3,
+        aliases = { "Kandosii-type Battlecarrier {Scum} [Nexus]" }
+    })
+    Ship:new(LargeShip, SCUM_L_SHIP, {
+        name = "Kandosii-type Carrier",
+        front = CUSTOM_ASSETS .. "ships/scum/kandosii/kandosii-carrier-scum-nexus.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/kandosii/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/kandosii/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/kandosii/ruler.obj",
+        maneuver = { { "I" }, { "I", "-" }, { "I", "-", "I" } },
+        defense_tokens = { DEF_BRACE, DEF_BRACE, DEF_REDIRECT, DEF_CONTAIN },
+        shields = { 3, 3, 3, 3 }, -- Front, left, right, rear
+        cost = 93,
+        command = 3,
+        aliases = { "Kandosii-type Carrier {Scum} [Nexus]" }
+    })
+
+    --keldabe
+    Ship:new(LargeShip, SCUM_L_SHIP, {
+        name = "Keldabe-class Battleship",
+        front = CUSTOM_ASSETS .. "ships/scum/keldabe/keldabe-battleship-scum-nexus.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/keldabe/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/keldabe/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/keldabe/ruler.obj",
+        maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO },
+        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+        cost = 115,
+        command = 3,
+        aliases = { "Keldabe-class Battleship {Scum} [Nexus]" }
+    })
+    Ship:new(LargeShip, SCUM_L_SHIP, {
+        name = "Keldabe-class Cruiser",
+        front = CUSTOM_ASSETS .. "ships/scum/keldabe/keldabe-cruiser-scum-nexus.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/keldabe/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/keldabe/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/keldabe/ruler.obj",
+        maneuver = { { "I" }, { "I", "I" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_BRACE, DEF_REDIRECT, DEF_REDIRECT, DEF_SALVO },
+        shields = { 4, 3, 3, 2 }, -- Front, left, right, rear        
+        cost = 112,
+        command = 3,
+        aliases = { "Keldabe-class Cruiser {Scum} [Nexus]" }
+    })
+
+    --crusader
+    Ship:new(LargeShip, SCUM_L_SHIP, {
+        name = "Crusader-class Flak Corvette",
+        front = CUSTOM_ASSETS .. "ships/scum/crusader/crusader-class-flak-corvette-scum-nexus.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/crusader/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/crusader/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/crusader/ruler.obj",
+        maneuver = { { "II" }, { "I", "II" }, { "II", "I", "I" }, { "I", "-", "I", "I" } },
+        defense_tokens = { DEF_EVADE, DEF_EVADE, DEF_REDIRECT },
+        shields = { 2, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 43,
+        command = 1,
+        aliases = { "Crusader-class Flak Corvette {Scum} [Nexus]" }
+    })
+    Ship:new(LargeShip, SCUM_L_SHIP, {
+        name = "Crusader-class Flak Corvette",
+        front = CUSTOM_ASSETS .. "ships/scum/crusader/crusader-class-flak-corvette-scum-nexus.jpg",
+        mesh = CUSTOM_ASSETS .. "ships/scum/crusader/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/scum/crusader/diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/scum/crusader/ruler.obj",
+        maneuver = { { "II" }, { "I", "II" }, { "II", "I", "I" }, { "I", "-", "I", "I" } },
+        defense_tokens = { DEF_EVADE, DEF_EVADE, DEF_REDIRECT },
+        shields = { 2, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 43,
+        command = 1,
+        aliases = { "Crusader-class Flak Corvette {Scum} [Nexus]" }
     })
 
 
@@ -6169,17 +6253,24 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(kihraxz, SCUM_L_SQUAD, {
         name = "Kihraxz Fighter Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/kihraxz.jpg",
-        cost = 12,
+        front = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/kihraxz-fighter-squadron-scum-nexus.jpg",
+        cost = 11,
         aliases = { "Kihraxz Fighter Squadron {SCUM} [Nexus]" }
     })
     Squadron:new(kihraxz, SCUM_L_SQUAD, {
         name = "Captain Jostero (Scum)",
-        front =     CUSTOM_ASSETS.."squadrons/scum/kihraxz/kihraxz-jostero.jpg",
+        front =     CUSTOM_ASSETS.."squadrons/scum/kihraxz/captain-jostero-kihraxz-fighter-squadron-scum-nexus.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/diffuse_ace.jpg",
-        defense_tokens = {DEF_BRACE,DEF_EVADE},
-        cost = 15,
+        defense_tokens = {DEF_BRACE,DEF_SCATTER},
+        cost = 17,
         aliases = {"Captain Jostero - Kihraxz Fighter Squadron {SCUM} [Nexus]"}
+    })
+    Squadron:new(kihraxz, SCUM_L_SQUAD, {
+        name = "Vaksai (Scum)",
+        front =     CUSTOM_ASSETS.."squadrons/scum/kihraxz/vaksai-kihraxz-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/kihraxz/diffuse_ace.jpg",
+        cost = 13,
+        aliases = {"Vaksai - Kihraxz Fighter Squadron {SCUM} [Nexus]"}
     })
 
     --rihkxyrk
@@ -6192,17 +6283,24 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
         name = "Rihkxyrk Assault Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk.jpg",
-        cost = 13,
+        front = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/rihkxyrk-assault-squadron-scum-nexus.jpg",
+        cost = 12,
         aliases = { "Rihkxyrk Assault Squadron {SCUM} [Nexus]" }
     })
     Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
         name = "Talonbane Cobra (Scum)",
-        front =     CUSTOM_ASSETS.."squadrons/scum/rihkxyrk/Rihkxyrk-talonbane.jpg",
+        front =     CUSTOM_ASSETS.."squadrons/scum/rihkxyrk/talonbane-cobra-rihkxyrk-assault-squadron-scum-nexus.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse_ace.jpg",
         defense_tokens = {DEF_BRACE,DEF_BRACE},
-        cost = 15,
+        cost = 16,
         aliases = {"Talonbane Cobra - Rihkxyrk Assault Squadron {SCUM} [Nexus]"}
+    })
+    Squadron:new(rihkxyrk, SCUM_L_SQUAD, {
+        name = "Blood Razor Gang (Scum)",
+        front =     CUSTOM_ASSETS.."squadrons/scum/rihkxyrk/blood-razor-gang-rihkxyrk-assault-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/rihkxyrk/diffuse_ace.jpg",
+        cost = 14,
+        aliases = {"Blood Razor Gang - Rihkxyrk Assault Squadron {SCUM} [Nexus]"}
     })
 
     --aeg-77 vigo
@@ -6215,17 +6313,24 @@ Squadron:new(seraph, COV_L_SQUAD, {
     }
     Squadron:new(aeg77, SCUM_L_SQUAD, {
         name = "AEG-77 Vigo",
-        front = CUSTOM_ASSETS .. "squadrons/scum/aeg77/aeg77.jpg",
-        cost = 23,
+        front = CUSTOM_ASSETS .. "squadrons/scum/aeg77/aeg-77-vigo-scum-nexus.jpg",
+        cost = 22,
         aliases = { "AEG-77 Vigo {SCUM} [Nexus]" }
     })
     Squadron:new(aeg77, SCUM_L_SQUAD, {
         name = "Consigliere",
-        front =     CUSTOM_ASSETS.."squadrons/scum/aeg77/aeg77-Consigliere.jpg",
+        front =     CUSTOM_ASSETS.."squadrons/scum/aeg77/consigliere-aeg-77-vigo-scum-nexus.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77/diffuse_ace.jpg",
         defense_tokens = {DEF_BRACE},
-        cost = 27,
+        cost = 26,
         aliases = {"Consigliere - AEG-77 Vigo {SCUM} [Nexus]"}
+    })
+    Squadron:new(aeg77, SCUM_L_SQUAD, {
+        name = "Halycon",
+        front =     CUSTOM_ASSETS.."squadrons/scum/aeg77/halcyon-aeg-77-vigo-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/aeg77/diffuse_ace.jpg",
+        cost = 18,
+        aliases = {"Halycon - AEG-77 Vigo {SCUM} [Nexus]"}
     })
 
     --ugly squadrons
@@ -6233,19 +6338,19 @@ Squadron:new(seraph, COV_L_SQUAD, {
         mesh = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/diffuse.jpg",
         health = 6,
-        move = 4,
+        move = 3,
     }
     Squadron:new(ugly_sqd, SCUM_L_SQUAD, {
         name = "Ugly Squadrons",
-        front = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/ugly_squadrons.jpg",
-        cost = 21,
-        defense_tokens = {DEF_SCATTER, DEF_EVADE},
+        front = CUSTOM_ASSETS .. "squadrons/scum/ugly_sqd/ugly-squadrons-scum-nexus.jpg",
+        cost = 19,
+        defense_tokens = {DEF_BRACE, DEF_EVADE},
         aliases = { "Ugly Squadrons {SCUM} [Nexus]" }
     })
 
     Squadron:new(firespray, SCUM_L_SQUAD, {
         name = "Boba Fett (Scum)",
-        front =     CUSTOM_ASSETS.."squadrons/scum/dup/boba-scum.jpg",
+        front =     CUSTOM_ASSETS.."squadrons/scum/dup/boba-fett-slave-i-scum-nexus.jpg",
         diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
         defense_tokens = {DEF_BRACE,DEF_BRACE},
         cost = 24,
@@ -6253,7 +6358,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Squadron:new(firespray, SCUM_L_SQUAD, {
         name = "Hondo Ohnaka (Scum)",
-        front =     CUSTOM_ASSETS.."squadrons/scum/dup/hondo-scum.jpg",
+        front =     CUSTOM_ASSETS.."squadrons/scum/dup/hondo-ohnaka-slave-i-scum-nexus.jpg",
         diffuse =   ASSETS_ROOT.."squadrons/empire/firespray/fett_diffuse.jpg",
         mesh =      ASSETS_ROOT.."squadrons/empire/firespray/bo_gr_ro_model.obj",
         defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -6262,7 +6367,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Squadron:new(jumpmaster, SCUM_L_SQUAD, {
         name = "Dengar (Scum)",
-        front =     CUSTOM_ASSETS.."squadrons/scum/dup/dengar-scum.jpg",
+        front =     CUSTOM_ASSETS.."squadrons/scum/dup/dengar-punishing-one-scum-nexus.jpg",
         diffuse =   ASSETS_ROOT.."squadrons/empire/jumpmaster/ace_diffuse.jpg",
         defense_tokens = {DEF_BRACE,DEF_SCATTER},
         cost = 20,
@@ -6270,7 +6375,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Squadron:new(yv666, SCUM_L_SQUAD, {
         name = "Bossk (Scum)",
-        front =     CUSTOM_ASSETS.."squadrons/scum/dup/bossk-scum.jpg",
+        front =     CUSTOM_ASSETS.."squadrons/scum/dup/bossk-hounds-tooth-scum-nexus.jpg",
         mesh =      ASSETS_ROOT.."squadrons/empire/yv666/gr_ro_model.obj",
         diffuse =   ASSETS_ROOT.."squadrons/empire/yv666/ace_diffuse.jpg",
         move = 3,
@@ -6279,6 +6384,129 @@ Squadron:new(seraph, COV_L_SQUAD, {
         aliases = {"Bossk - Hound's Tooth {SCUM} [Nexus]"}
     })
 
+    --starviper
+    starviper = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/starviper/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/starviper/diffuse.jpg",
+        health = 6,
+        move = 5,
+        defense_tokens = {}
+    }
+    Squadron:new(starviper, SCUM_L_SQUAD, {
+        name = "StarViper Squadron",
+        front = CUSTOM_ASSETS .. "squadrons/scum/starviper/starviper-squadron-scum-nexus.jpg",
+        cost = 14,
+        aliases = { "StarViper Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(starviper, SCUM_L_SQUAD, {
+        name = "Tyber Zann (Scum)",
+        front = CUSTOM_ASSETS.."squadrons/scum/starviper/tyber-zann-twilek-dancer-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/starviper/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 22,
+        aliases = {"Tyber Zann - Twilek Dancer {SCUM} [Nexus]"}
+    })
+    Squadron:new(starviper, SCUM_L_SQUAD, {
+        name = "Guri (Scum)",
+        front = CUSTOM_ASSETS.."squadrons/scum/starviper/tyber-zann-twilek-dancer-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/starviper/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 22,
+        aliases = {"Guri - Virago {SCUM} [Nexus]"}
+    })
+    Squadron:new(starviper, SCUM_L_SQUAD, {
+        name = "Black Sun Assasin (Scum)",
+        front = CUSTOM_ASSETS.."squadrons/scum/starviper/black-sun-assassin-starviper-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/starviper/diffuse_ace.jpg",
+        cost = 16,
+        aliases = {"Black Sun Assassin - StarViper Squadron {SCUM} [Nexus]"}
+    })
+
+    --skipray
+    skipray = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/skipray/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/skipray/diffuse.jpg",
+        health = 7,
+        move = 2,
+        defense_tokens = {}
+    }
+    Squadron:new(skipray, SCUM_L_SQUAD, {
+        name = "GAT-12 Skipray Blastboat",
+        front = CUSTOM_ASSETS .. "squadrons/scum/skipray/gat-12-skipray-blastboat-scum-nexus.jpg",
+        cost = 18,
+        aliases = { "GAT-12 Skipray Blastboat {SCUM} [Nexus]" }
+    })
+    Squadron:new(skipray, SCUM_L_SQUAD, {
+        name = "Miktiss (Scum)",
+        front = CUSTOM_ASSETS.."squadrons/scum/skipray/miktiss-gat-12-skipray-blastboat-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/skipray/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 24,
+        aliases = {"Miktiss - GAT-12 Skipray Blastboat {SCUM} [Nexus]"}
+    })
+    Squadron:new(skipray, SCUM_L_SQUAD, {
+        name = "GAT-12P (Scum)",
+        front = CUSTOM_ASSETS.."squadrons/scum/skipray/gat-12p-gat-12-skipray-blastboat-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/skipray/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 24,
+        aliases = {"GAT-12P - GAT-12 Skipray Blastboat {SCUM} [Nexus]"}
+    })
+
+    --st70 razor crest
+    st70 = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/st70/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/st70/diffuse.jpg",
+        health = 6,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(st70, SCUM_L_SQUAD, {
+        name = "ST-70 Assault Ship",
+        front = CUSTOM_ASSETS .. "squadrons/scum/st70/st-70-assault-ship-scum-nexus.jpg",
+        cost = 18,
+        aliases = { "ST-70 Assault Ship {SCUM} [Nexus]" }
+    })
+    Squadron:new(st70, SCUM_L_SQUAD, {
+        name = 'Din Djarin (Scum)',
+        front = CUSTOM_ASSETS.."squadrons/scum/st70/din-djarin-razor-crest-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/st70/diffuse_ace.jpg",
+        defense_tokens = {DEF_BRACE,DEF_BRACE},
+        cost = 24,
+        aliases = {'Din Djarin - ST-70 Assault Ship {SCUM} [Nexus]'}
+    })
+
+    --mando gauntlet
+    mando_gauntlet = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/gauntlet_scum.jpg",
+        health = 7,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Mandalorian Gauntlet Fighter",
+        front = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/mandalorian-gauntlet-fighter-scum-nexus.jpg",
+        cost = 18,
+        aliases = { "Mandalorian Gauntlet Fighter {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = 'Bo-Katan Kryze (Scum)',
+        front = CUSTOM_ASSETS.."squadrons/scum/gauntlet/bo-katan-kryze-mandalorian-gauntlet-fighter-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/gauntlet_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE},
+        cost = 21,
+        aliases = {'Bo-Katan Kryze - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = 'Death Watch (Scum)',
+        front = CUSTOM_ASSETS.."squadrons/scum/gauntlet/death-watch-mandalorian-gauntlet-fighter-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/gauntlet_scum_ace.jpg",
+        cost = 20,
+        aliases = {'Death Watch - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
+    })
+
+    
 ----new republic ships
 Ship:new(SmallShip, NR_L_SHIP, {
     name = "CR90 Corvette A {NR}",
@@ -7614,27 +7842,42 @@ Card:new(Turbolaser, Cylon,{ name = "Curved Trajectory Launch", front = CUSTOM_A
 Card:new(WeaponsTeamAndOffensiveRetrofit, Cylon,{ name = "Centurion Boarding Unit", front = CUSTOM_ASSETS .. "cards/.bsg/wepoff_centurrion.jpg", cost = 3, aliases = { "Centurion Boarding Unit [Nexus]" } })
 
 ----Scum Upgrades
-Card:new(Commander, Scum_L,{ name = "Hondo Ohnaka (Commander)", front = CUSTOM_ASSETS .. "cards/.scum/hondo-commander.jpg", cost = 22, aliases = { "Hondo Ohnaka {SCUM} [Nexus]" } })
-Card:new(Commander, Scum_L,{ name = "Darth Maul (Commander)", front = CUSTOM_ASSETS .. "cards/.scum/maul-commander.jpg", cost = 25, aliases = { "Darth Maul {SCUM} [Nexus]" } })
-Card:new(Commander, Scum_L,{ name = "Prince Xizor", front = CUSTOM_ASSETS .. "cards/.scum/xizor-commander.jpg", cost = 30, aliases = { "Prince Xizor {SCUM} [Nexus]" } })
+Card:new(Commander, Scum_L,{ name = "Hondo Ohnaka (Commander)", front = CUSTOM_ASSETS .. "cards/.scum/hondo-ohnaka-commander-scum-nexus.jpg", cost = 22, aliases = { "Hondo Ohnaka {SCUM} [Nexus]" } })
+Card:new(Commander, Scum_L,{ name = "Darth Maul (Commander)", front = CUSTOM_ASSETS .. "cards/.scum/darth-maul-commander-scum-nexus.jpg", cost = 25, aliases = { "Darth Maul {SCUM} [Nexus]" } })
+Card:new(Commander, Scum_L,{ name = "Prince Xizor", front = CUSTOM_ASSETS .. "cards/.scum/prince-xizor-commander-scum-nexus.jpg", cost = 30, aliases = { "Prince Xizor {SCUM} [Nexus]" } })
+Card:new(Commander, Scum_L,{ name = "Jerid Sykes", front = CUSTOM_ASSETS .. "cards/.scum/jerid-sykes-commander-scum-nexus.jpg", cost = 28, aliases = { "Jerid Sykes {SCUM} [Nexus]" } })
+Card:new(Commander, Scum_L,{ name = "Tyber Zann", front = CUSTOM_ASSETS .. "cards/.scum/tyber-zann-commander-scum-nexus.jpg", cost = 30, aliases = { "Tyber Zann {SCUM} [Nexus]" } })
+Card:new(Commander, Scum_L,{ name = "Pre Vizsla", front = CUSTOM_ASSETS .. "cards/.scum/pre-vizsla-commander-scum-nexus.jpg", cost = 34, aliases = { "Pre Vizsla {SCUM} [Nexus]" } })
 
-Card:new(Officer, Scum_L,{ name = "Jiro", front = CUSTOM_ASSETS .. "cards/.scum/jiro-officer.jpg", cost = 7, aliases = { "Jiro {SCUM} [Nexus]" } })
-Card:new(Officer, Scum_L,{ name = "Savage Oppress", front = CUSTOM_ASSETS .. "cards/.scum/savage-oppress.jpg", cost = 7, aliases = { "Savage Oppress {SCUM} [Nexus]" } })
-Card:new(Officer, Scum_L,{ name = "Ziton Moj", front = CUSTOM_ASSETS .. "cards/.scum/ziton-officer.jpg", cost = 5, aliases = { "Ziton Moj {SCUM} [Nexus]" } })
+Card:new(Officer, Scum_L,{ name = "Jiro", front = CUSTOM_ASSETS .. "cards/.scum/jiro-officer-scum-nexus.jpg", cost = 6, aliases = { "Jiro {SCUM} [Nexus]" } })
+Card:new(Officer, Scum_L,{ name = "Savage Oppress", front = CUSTOM_ASSETS .. "cards/.scum/savage-oppress-officer-scum-nexus.jpg", cost = 5, aliases = { "Savage Oppress {SCUM} [Nexus]" } })
+Card:new(Officer, Scum_L,{ name = "Ziton Moj", front = CUSTOM_ASSETS .. "cards/.scum/ziton-moj-officer-scum-nexus.jpg", cost = 5, aliases = { "Ziton Moj {SCUM} [Nexus]" } })
+Card:new(Officer, Scum_L,{ name = "Urai Fen", front = CUSTOM_ASSETS .. "cards/.scum/urai-fen-officer-scum-nexus.jpg", cost = 3, aliases = { "Urai Fen {SCUM} [Nexus]" } })
+Card:new(Officer, Scum_L,{ name = "Silri", front = CUSTOM_ASSETS .. "cards/.scum/silri-officer-scum-nexus.jpg", cost = 2, aliases = { "Silri {SCUM} [Nexus]" } })
 
-Card:new(DefensiveRetrofit, Scum_L,{ name = "Smuggler's Cache", front = CUSTOM_ASSETS .. "cards/.scum/smuggler-cache.jpg", cost = 5, aliases = { "Smuggler's Cache {SCUM} [Nexus]" } })
-Card:new(OffensiveRetrofit, Scum_L,{ name = "Boarding Grapples", front = CUSTOM_ASSETS .. "cards/.scum/boarding-grapples.jpg", cost = 2, aliases = { "Boarding Grapples {SCUM} [Nexus]" } })
-Card:new(Turbolaser, Scum_L,{ name = "Tibanna Disruptors", front = CUSTOM_ASSETS .. "cards/.scum/tibanna-disruptors.jpg", cost = 5, aliases = { "Tibanna Disruptors {SCUM} [Nexus]" } })
-Card:new(SupportTeam, Scum_L,{ name = "Pirate Crew", front = CUSTOM_ASSETS .. "cards/.scum/pirate-crew.jpg", cost = 5, aliases = { "Pirate Crew {SCUM} [Nexus]" } })
+Card:new(DefensiveRetrofit, Scum_L,{ name = "Smuggler's Cache", front = CUSTOM_ASSETS .. "cards/.scum/smugglers-cache-scum-nexus.jpg", cost = 5, aliases = { "Smuggler's Cache {SCUM} [Nexus]" } })
+Card:new(OffensiveRetrofit, Scum_L,{ name = "Boarding Grapples", front = CUSTOM_ASSETS .. "cards/.scum/boarding-grapples-scum-nexus.jpg", cost = 2, aliases = { "Boarding Grapples {SCUM} [Nexus]" } })
+Card:new(Turbolaser, Scum_L,{ name = "Tibanna Disruptors", front = CUSTOM_ASSETS .. "cards/.scum/tibanna-disruptors-scum-nexus.jpg", cost = 5, aliases = { "Tibanna Disruptors {SCUM} [Nexus]" } })
+Card:new(Ordnance, Scum_L,{ name = "Super-Heavy Concussion Missiles", front = CUSTOM_ASSETS .. "cards/.scum/super-heavy-concussion-missiles-scum-nexus.jpg", cost = 6, aliases = { "Super-Heavy Concussion Missiles {SCUM} [Nexus]" } })
+Card:new(FleetCommand, Scum_L,{ name = "The Big Score", front = CUSTOM_ASSETS .. "cards/.scum/the-big-score-scum-nexus.jpg", cost = 4, aliases = { "The Big Score {SCUM} [Nexus]" } })
+Card:new(OffensiveRetrofit, Scum_L,{ name = "Shield Leecher", front = CUSTOM_ASSETS .. "cards/.scum/shield-leecher-scum-nexus.jpg", cost = 4, aliases = { "Shield Leecher {SCUM} [Nexus]" } })
+Card:new(OffensiveRetrofit, Scum_L,{ name = "Ambush (Scum)", front = CUSTOM_ASSETS .. "cards/.scum/ambush-scum-nexus.jpg", cost = 3, aliases = { "Ambush {SCUM} [Nexus]" } })
+Card:new(WeaponsTeam, Scum_L,{ name = "Gun Captains", front = CUSTOM_ASSETS .. "cards/.scum/gun-captains-scum-nexus.jpg", cost = 5, aliases = { "gun Captains {SCUM} [Nexus]" } })
 
-Card:new(Title, Scum_L,{ name = "Charybdis", front = CUSTOM_ASSETS .. "cards/.scum/charybdis-title.jpg", cost = 5, aliases = { "Charybdis {SCUM} [Nexus]" } })
-Card:new(Title, Scum_L,{ name = "Flatline", front = CUSTOM_ASSETS .. "cards/.scum/flatline-title.jpg", cost = 5, aliases = { "Flatline {SCUM} [Nexus]" } })
-Card:new(Title, Scum_L,{ name = "Omze's Incredible Traveling Starport", front = CUSTOM_ASSETS .. "cards/.scum/omze-starport.jpg", cost = 7, aliases = { "Omze's Incredible Traveling Starport {SCUM} [Nexus]" } })
-Card:new(Title, Scum_L,{ name = "Poison Moon", front = CUSTOM_ASSETS .. "cards/.scum/poison-moon-title.jpg", cost = 5, aliases = { "Poison Moon {SCUM} [Nexus]" } })
-Card:new(Title, Scum_L,{ name = "Redhawk", front = CUSTOM_ASSETS .. "cards/.scum/redhawk-title.jpg", cost = 2, aliases = { "Redhawk {SCUM} [Nexus]" } })
-Card:new(Title, Scum_L,{ name = "Savrip", front = CUSTOM_ASSETS .. "cards/.scum/savrip-title.jpg", cost = 6, aliases = { "Savrip {SCUM} [Nexus]" } })
-Card:new(Title, Scum_L,{ name = "Vanity Price", front = CUSTOM_ASSETS .. "cards/.scum/vanity-price-title.jpg", cost = 6, aliases = { "Vanity Price {SCUM} [Nexus]" } })
-Card:new(Title, Scum_L,{ name = "Wild Karrde", front = CUSTOM_ASSETS .. "cards/.scum/wild-karrde-title.jpg", cost = 5, aliases = { "Wild Karrde {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Charybdis", front = CUSTOM_ASSETS .. "cards/.scum/charybdis-title-scum-nexus.jpg", cost = 5, aliases = { "Charybdis {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Flatline", front = CUSTOM_ASSETS .. "cards/.scum/flatline-title-scum-nexus.jpg", cost = 2, aliases = { "Flatline {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Omze's Incredible Traveling Starport", front = CUSTOM_ASSETS .. "cards/.scum/omzes-incredible-traveling-starport-title-scum-nexus.jpg", cost = 7, aliases = { "Omze's Incredible Traveling Starport {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Poison Moon", front = CUSTOM_ASSETS .. "cards/.scum/poison-moon-title-scum-nexus.jpg", cost = 5, aliases = { "Poison Moon {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Redhawk", front = CUSTOM_ASSETS .. "cards/.scum/redhawk-title-scum-nexus.jpg", cost = 2, aliases = { "Redhawk {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Savrip", front = CUSTOM_ASSETS .. "cards/.scum/savrip-title-scum-nexus.jpg", cost = 7, aliases = { "Savrip {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Vanity Price", front = CUSTOM_ASSETS .. "cards/.scum/vanity-price-title-scum-nexus.jpg", cost = 6, aliases = { "Vanity Price {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Wild Karrde", front = CUSTOM_ASSETS .. "cards/.scum/wild-karrde-title-scum-nexus.jpg", cost = 5, aliases = { "Wild Karrde {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "A'Den", front = CUSTOM_ASSETS .. "cards/.scum/aden-title-scum-nexus.jpg", cost = 2, aliases = { "A'Den {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Anvil", front = CUSTOM_ASSETS .. "cards/.scum/anvil-title-scum-nexus.jpg", cost = 5, aliases = { "Anvil {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Di'Kut", front = CUSTOM_ASSETS .. "cards/.scum/dikut-title-scum-nexus.jpg", cost = 4, aliases = { "Di'Kut {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "End of Days", front = CUSTOM_ASSETS .. "cards/.scum/end-of-days-title-scum-nexus.jpg", cost = 2, aliases = { "End of Days {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Gratua", front = CUSTOM_ASSETS .. "cards/.scum/gratua-title-scum-nexus.jpg", cost = 7, aliases = { "Gratua {SCUM} [Nexus]" } })
+Card:new(Title, Scum_L,{ name = "Parjai IV", front = CUSTOM_ASSETS .. "cards/.scum/parjai-iv-title-scum-nexus.jpg", cost = 7, aliases = { "Parjai IV {SCUM} [Nexus]" } })
 
 ----New Republic Upgrades
 Card:new(Commander, NR_L,{ name = "Admiral Ackbar {NR}", front = CUSTOM_ASSETS .. "cards/.nr/admiral-ackbar-nr.jpg", cost = 32, aliases = { "Admiral Ackbar {NR} [Nexus]" } })

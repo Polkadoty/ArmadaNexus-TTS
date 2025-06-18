@@ -118,28 +118,28 @@ function onload()
     Ship:new(SmallShip,SEPARATIST_SHIP, {
         name = "Pinnace-class Corsair",
         front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corsair-legacy-beta.jpg",
-        mesh = CUSTOM_ASSETS.."ships/separatist/pinnance/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/corsair_diffuse.jpg",
-        ruler = CUSTOM_ASSETS.."ships/separatist/pinnance/ruler.obj", 
+        mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corsair_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
         maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 41,
-        aliases = {"Pinnance-class Corsair [LegacyBeta]", "Pinnance-class Corsair [Legacy]"},
+        aliases = {"Pinnace-class Corsair [LegacyBeta]", "Pinnace-class Corsair [Legacy]"},
         command = 1
         })
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
         name = "Pinnace-class Corvette",
         front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corvette-legacy-beta.jpg",
-        mesh = CUSTOM_ASSETS.."ships/separatist/pinnance/mesh.obj",
-        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnance/corvette_diffuse.jpg",
-        ruler = CUSTOM_ASSETS.."ships/separatist/pinnance/ruler.obj", 
+        mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
+        diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corvette_diffuse.jpg",
+        ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
         maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
         cost = 44,
-        aliases = {"Pinnance-class Corsair [LegacyBeta]", "Pinnance-class Corsair [Legacy]"},
+        aliases = {"Pinnace-class Corsair [LegacyBeta]", "Pinnace-class Corsair [Legacy]"},
         command = 1
         })
 
