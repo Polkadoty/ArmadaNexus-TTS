@@ -5262,9 +5262,9 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     }
     Squadron:new(naboo_n1, REPUBLIC_L_SQUAD, {
         name = "Naboo N-1 Squadron",
-        front = CUSTOM_ASSETS .. "squadrons/republic/naboo_n1/naboo_n1_nexus.jpg",
+        front = CUSTOM_ASSETS .. "cards/.nexus/naboo_n1.jpg",
         cost = 15,
-        aliases = { "Naboo N-1 Squadron [Nexus]" }
+        aliases = { "Naboo N-1 Squadron [Nexus]", "Naboo N-1 Squadron [Naboo]" }
     })
     -- Squadron:new(naboo_n1, REPUBLIC_L_SQUAD, {
     --     name = "Anakin Skywalker (N-1)",
