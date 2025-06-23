@@ -8044,6 +8044,22 @@ Card:new(Special, Objective, {name="Low Fuel", front="https://i.imgur.com/L5Vpk1
 Card:new(Special, Objective, {name="Low Morale", front="https://i.imgur.com/pVL0ttA.jpeg"})
 Card:new(Special, Objective, {name="Low Supplies", front="https://i.imgur.com/TdrrOqs.jpeg"})
 
+--Fighter Group Skirmish
+Card:new(Special, Objective, {name="Skirmish: Chance Encounter", front= CUSTOM_ASSETS.."misc/fighter_group/Chance_Encounter.jpg"})
+Card:new(Special, Objective, {name="Skirmish: Distress Call", front= CUSTOM_ASSETS.."misc/fighter_group/Distress_Call.jpg", victory=15})
+Card:new(Special, Objective, {name="Skirmish: Prosepctor's Gambit", front= CUSTOM_ASSETS.."misc/fighter_group/Prospectors_Gambit.jpg", victory=5})
+Card:new(Special, Objective, {name="Skirmish: Supply Convoy", front= CUSTOM_ASSETS.."misc/fighter_group/Supply_Convoy.jpg", victory=5})
+Card:new(Special, Objective, {name="[Ship Card] Skirmish: Disabled Vessel", front= CUSTOM_ASSETS.."misc/fighter_group/Disabled_Vessel.jpg", aliases = { "Skirmish: Disabled Vessel" }})
+Card:new(SuperWeapon, Republic_L,{ name = "Brother in Arms", front = CUSTOM_ASSETS .. "misc/fighter_group/Brother_In_Arms.jpg", cost = 5, aliases = { "Brother in Arms - Leader" } })
+Card:new(SuperWeapon, Republic_L,{ name = "Jedi Master", front = CUSTOM_ASSETS .. "misc/fighter_group/Jedi_Master.jpg", cost = 4, aliases = { "Jedi Master - Leader" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Buzz Droids", front = CUSTOM_ASSETS .. "misc/fighter_group/Buzz_Droids.jpg", cost = 4, aliases = { "Buzz Droids - Leader" } })
+Card:new(SuperWeapon, Separatist_L,{ name = "Linked Neural Network", front = CUSTOM_ASSETS .. "misc/fighter_group/Linked_Neural_Network.jpg", cost = 7, aliases = { "Linked Neural Network - Leader" } })
+Card:new(SuperWeapon, Empire_L,{ name = "Callous Tactician", front = CUSTOM_ASSETS .. "misc/fighter_group/Callous_Tactician.jpg", cost = 4, aliases = { "Callous Tactician - Leader" } })
+Card:new(SuperWeapon, Empire_L,{ name = "Weapons System Expert", front = CUSTOM_ASSETS .. "misc/fighter_group/Weapons_System_Expert.jpg", cost = 6, aliases = { "Weapons System Expert - Leader" } })
+Card:new(SuperWeapon, Rebel_L,{ name = "Inspiring Leader", front = CUSTOM_ASSETS .. "misc/fighter_group/Inspiring_Leader.jpg", cost = 5, aliases = { "Inspiring Leader - Leader" } })
+Card:new(SuperWeapon, Rebel_L,{ name = "Skilled Bombardier", front = CUSTOM_ASSETS .. "misc/fighter_group/Skilled_Bombardier.jpg", cost = 4, aliases = { "Skilled Bombardier - Leader" } })
+
+
 ----#include defs/cards/objectives
     setRulerMeshes()
     findObjective(true)
