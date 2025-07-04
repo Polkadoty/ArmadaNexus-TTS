@@ -5228,6 +5228,36 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         aliases = { "Shadow Squadron - V-wing Squadron [Nexus]" }
     })
 
+    -- uwing
+    uwing = {
+        mesh = CUSTOM_ASSETS .. "squadrons/rebel/uwing/mesh.obj",
+        health = 5,
+        move = 3,
+        defense_tokens = {}
+    }
+    Squadron:new(uwing, REPUBLIC_L_SQUAD, {
+        name = "U-wing",
+        front = CUSTOM_ASSETS .. "cards/.nexus/uwing.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/rebel/uwing/diffuse.jpg",
+        cost = 10,
+        aliases = { "U-wing [Nexus]" }
+    })
+    Squadron:new(uwing, REPUBLIC_L_SQUAD, {
+        name = "Cassian Andor",
+        front = CUSTOM_ASSETS .. "cards/.nexus/uwing-andor.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/rebel/uwing/diffuse_ace.jpg",
+        cost = 20,
+        defense_tokens = { DEF_BRACE, DEF_BRACE },
+        aliases = { "Cassian Andor - U-wing [Nexus]" }
+    })
+    Squadron:new(uwing, REPUBLIC_L_SQUAD, {
+        name = "Cavern Angel",
+        front = CUSTOM_ASSETS .. "cards/.nexus/uwing-cavern.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/rebel/uwing/diffuse_squad.jpg",
+        cost = 11,
+        aliases = { "Cavern Angel - U-wing [Nexus]" }
+    })
+
     --non-approved un-approved un-official Nexus squadrons
     --cx dagger
     cx_dagger = {
