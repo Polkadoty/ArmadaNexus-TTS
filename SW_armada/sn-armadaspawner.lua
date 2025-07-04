@@ -5235,14 +5235,14 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         move = 3,
         defense_tokens = {}
     }
-    Squadron:new(uwing, REPUBLIC_L_SQUAD, {
+    Squadron:new(uwing, REBEL_L_SQUAD, {
         name = "U-wing",
         front = CUSTOM_ASSETS .. "cards/.nexus/uwing.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/rebel/uwing/diffuse.jpg",
         cost = 10,
         aliases = { "U-wing [Nexus]" }
     })
-    Squadron:new(uwing, REPUBLIC_L_SQUAD, {
+    Squadron:new(uwing, REBEL_L_SQUAD, {
         name = "Cassian Andor",
         front = CUSTOM_ASSETS .. "cards/.nexus/uwing-andor.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/rebel/uwing/diffuse_ace.jpg",
@@ -5250,7 +5250,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         defense_tokens = { DEF_BRACE, DEF_BRACE },
         aliases = { "Cassian Andor - U-wing [Nexus]" }
     })
-    Squadron:new(uwing, REPUBLIC_L_SQUAD, {
+    Squadron:new(uwing, REBEL_L_SQUAD, {
         name = "Cavern Angel",
         front = CUSTOM_ASSETS .. "cards/.nexus/uwing-cavern.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/rebel/uwing/diffuse_squad.jpg",
