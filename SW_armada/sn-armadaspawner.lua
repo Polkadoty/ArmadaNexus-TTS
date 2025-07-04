@@ -4798,52 +4798,6 @@ Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     aliases = { "Count Dooku - Sith Infiltrator [Legacy]" }
 })
 
-sheathipede = {
-    mesh = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/mesh.obj",
-    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse.jpg",
-    health = 5,
-    defense_tokens = {}
-}
-Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
-    name = "Sheathipede-class Shuttle",
-    front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/sheathipede.jpg",
-    cost = 15,
-    move = 2,
-    aliases = {"Sheathipede-class Shuttle [Nexus]"}
-})
-Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
-    name = "Kalani",
-    front = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/Kalani.jpg",
-    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse_ace.jpg", 
-    defense_tokens = {DEF_BRACE, DEF_BRACE},
-    cost = 24,
-    move = 3,
-    aliases = {"Kalani - Sheathipede-class Shuttle [Nexus]"}
-})
-
-nu_shuttle = {
-    mesh = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/mesh.obj",
-    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse.jpg",
-    health = 7,
-    defense_tokens = {}
-}
-Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
-    name = "Nu-class Transport Shuttle",
-    front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/nu_shuttle.jpg",
-    cost = 15,
-    move = 2,
-    aliases = {"Nu-class Transport Shuttle [Nexus]"}
-})
-Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
-    name = "Delta Squad",
-    front = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/delta_squad.jpg",
-    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse_ace.jpg", 
-    defense_tokens = {DEF_BRACE},
-    cost = 24,
-    move = 3,
-    aliases = {"Delta Squad - Nu-class Transport Shuttle [Nexus]"}
-})
-
 g9_rigger = {
     mesh = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse.jpg",
@@ -5215,7 +5169,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         name = "Klick",
         front = CUSTOM_ASSETS .. "cards/.nexus/vwing-klick.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/republic/vwing/diffuse_ace.jpg",
-        cost = 14,
+        cost = 15,
         defense_tokens = { DEF_SCATTER, DEF_BRACE },
         aliases = { "Klick - V-wing Squadron [Nexus]" }
     })
@@ -5257,6 +5211,52 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         cost = 11,
         aliases = { "Cavern Angel - U-wing [Nexus]" }
     })
+
+    sheathipede = {
+    mesh = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse.jpg",
+    health = 5,
+    defense_tokens = {}
+}
+Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
+    name = "Sheathipede-class Shuttle",
+    front = CUSTOM_ASSETS.."cards/.nexus/sheathipede-class-shuttle-nexus.jpg",
+    cost = 15,
+    move = 2,
+    aliases = {"Sheathipede-class Shuttle [Nexus]"}
+})
+Squadron:new(sheathipede, SEPARATIST_L_SQUAD, {
+    name = "Kalani",
+    front = CUSTOM_ASSETS.."cards/.nexus/kalani-sheathipede-class-shuttle-nexus.jpg",
+    diffuse = CUSTOM_ASSETS.."squadrons/separatist/sheathipede/diffuse_ace.jpg", 
+    defense_tokens = {DEF_BRACE, DEF_BRACE},
+    cost = 24,
+    move = 3,
+    aliases = {"Kalani - Sheathipede-class Shuttle [Nexus]"}
+})
+
+nu_shuttle = {
+    mesh = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse.jpg",
+    health = 7,
+    defense_tokens = {}
+}
+Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
+    name = "Nu-class Transport Shuttle",
+    front = CUSTOM_ASSETS.."cards/.nexus/nu-class-transport-shuttle-nexus.jpg",
+    cost = 15,
+    move = 2,
+    aliases = {"Nu-class Transport Shuttle [Nexus]"}
+})
+Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
+    name = "Delta Squad",
+    front = CUSTOM_ASSETS.."cards/.nexus/delta-squad-nu-class-transport-shuttle-nexus.jpg",
+    diffuse = CUSTOM_ASSETS.."squadrons/republic/nu_shuttle/diffuse_ace.jpg", 
+    defense_tokens = {DEF_BRACE},
+    cost = 23,
+    move = 3,
+    aliases = {"Delta Squad - Nu-class Transport Shuttle [Nexus]"}
+})
 
     --non-approved un-approved un-official Nexus squadrons
     --cx dagger
