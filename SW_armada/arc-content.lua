@@ -52,6 +52,7 @@
 --         cost = 20
 --     })
 --
+--test
 
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 function onload()
