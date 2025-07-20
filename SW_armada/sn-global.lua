@@ -764,7 +764,7 @@ function onload(save_string)
 end
 function isDatacard(object)
     custom = object.getCustomObject()
-    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
+    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "https://pastebin.com/raw/SfxVnnbz")
 end
 function drawDatacardButtons(obj)
     Wait.time(|| delayed_drawDatacardButtons(obj), 1, 0)

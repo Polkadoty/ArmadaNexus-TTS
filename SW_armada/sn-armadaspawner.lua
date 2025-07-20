@@ -546,7 +546,7 @@ function spawnDataCard(fleet, pos, rot, name)
     local custom = {}
     -- custom.image = "http://i.imgur.com/EUi3Wog.png"
     -- custom.stackable = true
-    custom.mesh = "http://paste.ee/r/uY3YX" --ASSETS_ROOT.."misc/datacard.obj"
+    custom.mesh = "https://pastebin.com/raw/SfxVnnbz" --ASSETS_ROOT.."misc/datacard.obj"
     custom.diffuse = ASSETS_ROOT.."misc/datacard_diffuse.png"
     custom.type = 0 --generic
     custom.material = 3 --cardboard
@@ -5066,7 +5066,7 @@ Ship:new(LargeShip, REPUBLIC_L_SHIP, {
 
 Ship:new(WideHugeShip, SEPARATIST_L_SHIP, {
     name = "Lucrehulk-class Droid Control Ship (WideHuge)",
-    front = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-dcs-card.jpg",
+    front = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-naboo-card.jpg",
     mesh = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/diffuse.jpg",
     ruler = CUSTOM_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
@@ -5074,12 +5074,12 @@ Ship:new(WideHugeShip, SEPARATIST_L_SHIP, {
     defense_tokens = { DEF_REDIRECT, DEF_REDIRECT, DEF_BRACE, DEF_BRACE, DEF_SALVO },
     shields = { 3, 4, 4, 3, 4, 4 }, --Front, back-left, back-right, rear, front-left, front-right
     cost = 175,
-    aliases = { "Lucrehulk-class Droid Control Ship [Nexus]" },
+    aliases = { "Lucrehulk-class Droid Control Ship [Nexus]", "Lucrehulk-class Droid Control Ship [Naboo]" },
     command = 4
 })
 
 Ship:new(MegaWideHugeShip, FO_L_SHIP, {
-    name = "Mega-class Star Dreadnought (WideHuge)",
+    name = "Mega-class Star Dreadnought (MegaWideHuge)",
     front = CUSTOM_ASSETS .. "ships/first_order/supremacy/mega-card.jpg",
     mesh = CUSTOM_ASSETS .. "ships/first_order/supremacy/mesh.obj", --TODO
     diffuse = CUSTOM_ASSETS .. "ships/first_order/supremacy/diffuse.jpg", --TODO
@@ -5294,7 +5294,7 @@ Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
         name = "Naboo N-1 Squadron",
         front = CUSTOM_ASSETS .. "cards/.nexus/naboo_n1.jpg",
         cost = 15,
-        aliases = { "Naboo N-1 Squadron [Nexus]", "Naboo N-1 Squadron [Naboo]" }
+        aliases = { "Naboo N-1 Squadron [Nexus]", "Naboo N-1 Squadron [Naboo]", "Naboo N-1 Squadron - [Naboo]" }
     })
     -- Squadron:new(naboo_n1, REPUBLIC_L_SQUAD, {
     --     name = "Anakin Skywalker (N-1)",
@@ -8180,7 +8180,7 @@ function clearSpawnArea(listSpawner)
 end
 function isDatacard(object)
     custom = object.getCustomObject()
-    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "http://paste.ee/r/uY3YX")
+    return custom ~= nil and (custom.mesh == "https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/refs/heads/master/SW_armada/assets/misc/datacard.obj" or custom.mesh == ASSETS_ROOT.."misc/datacard.obj" or custom.mesh == "https://pastebin.com/raw/SfxVnnbz")
 end
 function Action_SpawnListSpawner(player, _, idValue) --listSpawner
     print(player.color)
