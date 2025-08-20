@@ -5294,7 +5294,7 @@ Squadron:new(nu_shuttle, REPUBLIC_L_SQUAD, {
         name = "Naboo N-1 Squadron",
         front = CUSTOM_ASSETS .. "cards/.nexus/naboo_n1.jpg",
         cost = 15,
-        aliases = { "Naboo N-1 Squadron [Nexus]", "Naboo N-1 Squadron [Naboo]", "Naboo N-1 Squadron - [Naboo]" }
+        aliases = { "Naboo N-1 Squadron [Nexus]", "Naboo N-1 Squadron [Naboo]", "Naboo N-1 Squadron - [Naboo]", "Naboo N-1 Squadron - Naboo N-1 Squadron [Naboo]" }
     })
     -- Squadron:new(naboo_n1, REPUBLIC_L_SQUAD, {
     --     name = "Anakin Skywalker (N-1)",
@@ -7727,6 +7727,130 @@ BSG = { factions = { "Colonial", "Cylon" } }
 -- SupportTeam = { type = "SupportTeam", back = CUSTOM_ASSETS .. "cards/support/back.jpg" }
 -- Title = { type = "Title", back = CUSTOM_ASSETS .. "cards/title/back.jpg" }
 -- WeaponsTeam = { type = "WeaponsTeam", back = CUSTOM_ASSETS .. "cards/wepteam/back.jpg" }
+
+----------- ARC Content
+
+Ship:new(LargeShip,REPUBLIC_L_SHIP,{
+	name = "Venator Star Destroyer Imperator Refit [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/venator-class-star-destroyer-imperator-refit-arc.jpg",
+    mesh =      ASSETS_ROOT.."ships/republic/venator/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/republic/venator/I_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/republic/venator/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","-"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_SALVO},
+    shields = {4,3,3,2},
+    cost = 100,
+	aliases = {},
+    command = 3
+})
+
+Ship:new(MediumShip,SEPARATIST_L_SHIP,{
+	name = "Munificent-class Command Frigate [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/munificent-class-command-frigate-arc.jpg",
+    mesh =      ASSETS_ROOT.."ships/separatist/munificent/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/separatist/munificent/comms_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/separatist/munificent/ruler.obj",
+    maneuver = {{"I"},{"I","II"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_SALVO},
+    shields = {4,3,3,2},
+    cost = 74,
+	aliases = {},
+    command = 2
+})
+
+Ship:new(SmallShip,SEPARATIST_L_SHIP,{
+	name = "Quarren Prototype Gunship [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/quarren-prototype-gunship-cis-arc.jpg",
+    mesh =      ASSETS_ROOT.."ships/rebel/mc30/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/rebel/mc30/scout_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/rebel/mc30/ruler.obj",
+    maneuver = {{"I"},{"I","I"},{"-","I","II"},{"-","I","I","-"}},
+    defense_tokens = {DEF_EVADE, DEF_EVADE, DEF_REDIRECT, DEF_REDIRECT},
+    shields = {3,3,3,2},
+    cost = 63,
+    aliases = {},
+    command = 2
+})
+
+Ship:new(SmallShip,REPUBLIC_L_SHIP,{
+	name = "Arquitens-class Light Cruiser [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/arquitens-class-light-cruiser-republic-arc.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/arquitens/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/arquitens/light_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/arquitens/ruler.obj",
+    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    defense_tokens = {DEF_EVADE,DEF_EVADE,DEF_REDIRECT,DEF_CONTAIN},
+    shields = {2,2,2,2},
+    cost = 52,
+    aliases = {},
+    command = 2
+})
+
+Ship:new(SmallShip,REBEL_L_SHIP,{
+	name = "Modified Pelta-class Assault Ship [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/modified-pelta-class-assault-ship-errata-arc.jpg",
+    mesh =      ASSETS_ROOT.."ships/rebel/pelta/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/rebel/pelta/assault_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/rebel/pelta/ruler.obj",
+    maneuver = {{"II"},{"I","I"}},
+    defense_tokens = {DEF_EVADE, DEF_BRACE, DEF_REDIRECT},
+    shields = {3,2,2,1},
+    cost = 52,
+    aliases = {},
+    command = 2
+})
+
+Ship:new(MediumShip,EMPIRE_SHIP,{
+	name = "Interdictor Combat Refit [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/interdictor-combat-refit-errata-arc.jpg",
+    mesh =      ASSETS_ROOT.."ships/empire/interdictor/mesh.obj",
+    diffuse =   ASSETS_ROOT.."ships/empire/interdictor/combat_diffuse.jpg",
+    ruler =     ASSETS_ROOT.."ships/empire/interdictor/ruler.obj",
+    maneuver = {{"I"},{"I","I"}},
+    defense_tokens = {DEF_BRACE,DEF_REDIRECT,DEF_CONTAIN,DEF_CONTAIN},
+    shields = {3,2,2,2},
+    cost = 85,
+    aliases = {},
+    command = 2
+})
+
+Squadron:new(xwing, REBEL_L_SQUAD, {
+	name = "Luke Skywalker [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/luke-skywalker-x-wing-squadron-errata-arc.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 20,
+    aliases = {"Luke Skywalker - X-wing Squadron [ARC]"}
+})
+
+Squadron:new(yt1300, REBEL_L_SQUAD, {
+	name = "Han Solo [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/han-solo-millennium-falcon-errata-arc.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/rebel/yt1300/ace_diffuse.jpg",
+    mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
+    move = 3,
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 24,
+    aliases = {"Han Solo - Millennium Falcon [ARC]"}
+})
+
+Squadron:new(adv, EMPIRE_L_SQUAD, {
+	name = "Darth Vader - TIE Adv [ARC]",
+    front =     CUSTOM_ASSETS.."cards/.arc/darth-vader-tie-advanced-squadron-errata-arc.jpg",
+    diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
+    defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 20,
+    aliases = {'Darth Vader - TIE Advanced Squadron [ARC]'}
+})
+
+Card:new(Commander,{name="Mon Mothma [ARC]", front=CUSTOM_ASSETS.."cards/.arc/mon-mothma-commander-errata-arc.jpg", cost=27, aliases = { "Mon Mothma [ARC]" }})
+Card:new(Commander,{name="Leia Organa [ARC]", front=CUSTOM_ASSETS.."cards/.arc/leia-organa-commander-errata-arc.jpg", cost=28, aliases = { "Leia Organa [ARC]" }})
+Card:new(Commander,{name="General Draven [ARC]", front=CUSTOM_ASSETS.."cards/.arc/general-draven-commander-errata-arc.jpg", cost=22, aliases = { "General Draven [ARC]" }})
+Card:new(Commander,{name="Emperor Palpatine [ARC]", front=CUSTOM_ASSETS.."cards/.arc/emperor-palpatine-commander-errata-arc.jpg", cost=32, aliases = { "Emperor Palpatine [ARC]" }})
+Card:new(Commander,{name="Darth Vader [ARC]", front=CUSTOM_ASSETS.."cards/.arc/cardfilendarth-vader-commander-errata-arcame.jpg", cost=28, aliases = { "Darth Vader [ARC]" }})
+Card:new(Commander,{name="Commander Sato [ARC]", front=CUSTOM_ASSETS.."cards/.arc/commander-sato-commander-errata-arc.jpg", cost=25, aliases = { "Commander Sato [ARC]" }})
+Card:new(Commander,{name="Admiral Screed [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-screed-commander-errata-arc.jpg", cost=26, aliases = { "Admiral Screed [ARC]" }})
+Card:new(Commander,{name="Admiral Motti [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-motti-commander-errata-arc.jpg", cost=20, aliases = { "Admiral Motti [ARC]" }})
 
 
 ----------- Armada Nexus Upgrades
