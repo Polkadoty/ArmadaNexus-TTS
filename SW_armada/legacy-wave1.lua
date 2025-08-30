@@ -89,7 +89,7 @@ function onload()
         maneuver = {{"II"},{"-","II"},{"-","-","II"}},
         defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_EVADE},
         shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 52,
+        cost = 50,
         aliases = {"Arquitens-class Assault Cruiser [LegacyBeta]", "Arquitens-class Assault Cruiser [Legacy]"},
         command = 2
     })
@@ -117,28 +117,28 @@ function onload()
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
         name = "Pinnace-class Corsair",
-        front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corsair-legacy-beta.jpg",
+        front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corsair-legacy-beta.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corsair_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
         maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 41,
+        cost = 42,
         aliases = {"Pinnace-class Corsair [LegacyBeta]", "Pinnace-class Corsair [Legacy]"},
         command = 1
         })
 
     Ship:new(SmallShip,SEPARATIST_SHIP, {
         name = "Pinnace-class Corvette",
-        front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnance-class-corvette-legacy-beta.jpg",
+        front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corvette-legacy-beta.jpg",
         mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
         diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corvette_diffuse.jpg",
         ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
         maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
         defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
         shields = {2,2,2,2}, -- Front, left, right, rear
-        cost = 44,
+        cost = 46,
         aliases = {"Pinnace-class Corsair [LegacyBeta]", "Pinnace-class Corsair [Legacy]"},
         command = 1
         })
@@ -156,7 +156,7 @@ function onload()
 
     Squadron:new(defender, EMPIRE_SQUAD, {
         name = "Dark Squadron",
-        front = CUSTOM_ASSETS.."cards/.legacy/beta/Dark_Squadron.jpg",
+        front = CUSTOM_ASSETS.."cards/.legacy/beta/dark-squadron-tie-defender-squadron-legacy-beta.jpg",
         --mesh = CUSTOM_ASSETS..".obj",
         diffuse = CUSTOM_ASSETS.."squadrons/empire/def/squad_diffuse.jpg",
         --defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -166,11 +166,11 @@ function onload()
 
     Squadron:new(phantom, EMPIRE_SQUAD, {
         name = "Shadow Squadron",
-        front = CUSTOM_ASSETS.."cards/.legacy/beta/Shadow_Squadron.jpg",
+        front = CUSTOM_ASSETS.."cards/.legacy/beta/shadow-squadron-tie-phantom-squadron-legacy-beta.jpg",
         --mesh = CUSTOM_ASSETS..".obj",
         diffuse = CUSTOM_ASSETS.."squadrons/empire/pha/squad_diffuse.jpg",
         --defense_tokens = {DEF_BRACE,DEF_BRACE},
-        cost = 16,
+        cost = 15,
         aliases = {"Shadow Squadron [LegacyBeta]", "Shadow Squadron [Legacy]"}
     })
 
@@ -186,17 +186,17 @@ function onload()
 
     Squadron:new(ewing, REBEL_SQUAD, {
         name = "Nightmare Squadron",
-        front = CUSTOM_ASSETS.."cards/.legacy/beta/Nightmare_Squadron.jpg",
+        front = CUSTOM_ASSETS.."cards/.legacy/beta/nightmare-squadron-e-wing-squadron-legacy-beta.jpg",
         --mesh = CUSTOM_ASSETS..".obj",
         diffuse = CUSTOM_ASSETS.."squadrons/rebel/ewing/squad_diffuse.jpg",
         --defense_tokens = {DEF_BRACE,DEF_SCATTER},
-        cost = 16,
+        cost = 15,
         aliases = {"Nightmare Squadron [LegacyBeta]", "Nightmare Squadron [LegacyBeta]"}
     })
 
     Squadron:new(z95, REBEL_SQUAD, {
         name = "Bandit Squadron",
-        front = CUSTOM_ASSETS.."cards/.legacy/beta/Bandit_Squadron.jpg",
+        front = CUSTOM_ASSETS.."cards/.legacy/beta/bandit-squadron-z-95-headhunter-squadron-legacy-beta.jpg",
         --mesh = CUSTOM_ASSETS..".obj",
         diffuse = CUSTOM_ASSETS.."squadrons/rebel/z95/squad_diffuse.jpg",
         --defense_tokens = {DEF_BRACE,DEF_SCATTER},
@@ -235,22 +235,24 @@ SupportTeam = { type = "SupportTeam", back = CUSTOM_ASSETS .. "cards/support/bac
 Title = { type = "Title", back = CUSTOM_ASSETS .. "cards/title/back.jpg" }
 WeaponsTeam = { type = "WeaponsTeam", back = CUSTOM_ASSETS .. "cards/wepteam/back.jpg" }
 
-Card:new(Commander,Republic,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=20, aliases={"Admiral Coburn [LegacyBeta]"}})
-Card:new(Commander,Separatist,{name="Poggle the Lesser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/poggle-the-lesser-commander-legacy-beta.jpg", cost=32, aliases={"Poggle the Lesser [LegacyBeta]"}})
+Card:new(Commander,Republic,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=25, aliases={"Admiral Coburn [LegacyBeta]"}})
+Card:new(Commander,Separatist,{name="Poggle the Lesser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/poggle-the-lesser-commander-legacy-beta.jpg", cost=27, aliases={"Poggle the Lesser [LegacyBeta]"}})
 
 Card:new(Title,Republic,{name="Arlionne",  front = CUSTOM_ASSETS.."cards/.legacy/beta/arlionne-title-legacy-beta.jpg", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [Legacy]"}})
-Card:new(Title,Republic,{name="Open Circle Fleet",  front = CUSTOM_ASSETS.."cards/.legacy/beta/open-circle-fleet-title-legacy-beta.jpg", cost=5, aliases={"Open Circle Fleet [LegacyBeta]", "Open Circle Fleet [Legacy]"}})
+--Card:new(Title,Republic,{name="Open Circle Fleet",  front = CUSTOM_ASSETS.."cards/.legacy/beta/open-circle-fleet-title-legacy-beta.jpg", cost=5, aliases={"Open Circle Fleet [LegacyBeta]", "Open Circle Fleet [Legacy]"}})
 Card:new(Title,Republic,{name="Stellar Rise",  front = CUSTOM_ASSETS.."cards/.legacy/beta/stellar-rise-title-legacy-beta.jpg", cost=2, aliases={"Stellar Rise [LegacyBeta]", "Stellar Rise [Legacy]"}})
-Card:new(Title,Republic,{name="Surrogator",  front = CUSTOM_ASSETS.."cards/.legacy/beta/surrogator-title-legacy-beta.jpg", cost=8, aliases={"Surrogator [LegacyBeta]", "Surrogator [Legacy]"}})
-Card:new(Title,Separatist,{name="Baktoid Combat Vessel",  front = CUSTOM_ASSETS.."cards/.legacy/beta/baktoid-combat-vessel-title-legacy-beta.jpg", cost=3, aliases={"Baktoid Combat Vessel [LegacyBeta]", "Baktoid Combat Vessel [Legacy]"}})
-Card:new(Title,Separatist,{name="Corsair of Liberty",  front = CUSTOM_ASSETS.."cards/.legacy/beta/corsair-of-liberty-title-legacy-beta.jpg", cost=3, aliases={"Corsair of Liberty [LegacyBeta]", "Corsair of Liberty [Legacy]"}})
+Card:new(Title,Republic,{name="Surrogator",  front = CUSTOM_ASSETS.."cards/.legacy/beta/surrogator-title-legacy-beta.jpg", cost=3, aliases={"Surrogator [LegacyBeta]", "Surrogator [Legacy]"}})
+Card:new(Title,Republic,{name="Thunder Wasp",  front = CUSTOM_ASSETS.."cards/.legacy/beta/thunder-wasp-title-legacy-beta.jpg", cost=5, aliases={"Thunder Wasp [LegacyBeta]", "Thunder Wasp [Legacy]"}})
+--Card:new(Title,Separatist,{name="Baktoid Combat Vessel",  front = CUSTOM_ASSETS.."cards/.legacy/beta/baktoid-combat-vessel-title-legacy-beta.jpg", cost=3, aliases={"Baktoid Combat Vessel [LegacyBeta]", "Baktoid Combat Vessel [Legacy]"}})
+--Card:new(Title,Separatist,{name="Corsair of Liberty",  front = CUSTOM_ASSETS.."cards/.legacy/beta/corsair-of-liberty-title-legacy-beta.jpg", cost=3, aliases={"Corsair of Liberty [LegacyBeta]", "Corsair of Liberty [Legacy]"}})
 Card:new(Title,Separatist,{name="Insatiable",  front = CUSTOM_ASSETS.."cards/.legacy/beta/insatiable-title-legacy-beta.jpg", cost=3, aliases={"Insatiable [LegacyBeta]", "Insatiable [Legacy]"}})
-Card:new(Title,Separatist,{name="Petranaki",  front = CUSTOM_ASSETS.."cards/.legacy/beta/petranaki.jpg", cost=3, aliases={"Petranaki [LegacyBeta]", "Petranaki [Legacy]"}})
-Card:new(Title,Separatist,{name="Kolivex",  front = CUSTOM_ASSETS.."cards/.legacy/beta/kolivex.jpg", cost=4, aliases={"Kolivex [LegacyBeta]", "Kolivex [Legacy]"}})
-Card:new(Title,Empire,{name="Intrepid",  front = CUSTOM_ASSETS.."cards/.legacy/beta/intrepid-title-legacy-beta.jpg", cost=7, aliases={"Intrepid [LegacyBeta]", "Intrepid [Legacy]"}})
+Card:new(Title,Separatist,{name="Petranaki",  front = CUSTOM_ASSETS.."cards/.legacy/beta/petranaki-title-legacy-beta.jpg", cost=2, aliases={"Petranaki [LegacyBeta]", "Petranaki [Legacy]"}})
+Card:new(Title,Separatist,{name="Koklivex",  front = CUSTOM_ASSETS.."cards/.legacy/beta/koklivex-title-legacy-beta.jpg", cost=3, aliases={"Koklivex [LegacyBeta]", "Koklivex [Legacy]"}})
+Card:new(Title,Separatist,{name="Visgura",  front = CUSTOM_ASSETS.."cards/.legacy/beta/visgura-title-legacy-beta.jpg", cost=2, aliases={"Visgura [LegacyBeta]", "Visgura [Legacy]"}})
+Card:new(Title,Empire,{name="Intrepid",  front = CUSTOM_ASSETS.."cards/.legacy/beta/intrepid-title-legacy-beta.jpg", cost=6, aliases={"Intrepid [LegacyBeta]", "Intrepid [Legacy]"}})
 Card:new(Title,Empire,{name="Battle Cruiser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/battle-cruiser-title-legacy-beta.jpg", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [Legacy]"}})
 Card:new(Title,Rebel,{name="Nautilian",  front = CUSTOM_ASSETS.."cards/.legacy/beta/nautilian-title-legacy-beta.jpg", cost=5, aliases={"Nautilian [LegacyBeta]", "Nautilian [Legacy]"}})
-Card:new(Title,Rebel,{name="Rebel One",  front = CUSTOM_ASSETS.."cards/.legacy/beta/rebel-one-title-legacy-beta.jpg", cost=8, aliases={"Rebel One [LegacyBeta]", "Rebel One [Legacy]"}})
+Card:new(Title,Rebel,{name="Rebel One",  front = CUSTOM_ASSETS.."cards/.legacy/beta/rebel-one-title-legacy-beta.jpg", cost=6, aliases={"Rebel One [LegacyBeta]", "Rebel One [Legacy]"}})
 
 printToAll("Finished loading Armada Legacy wave 1 beta content!",{1,0.5,0})
 

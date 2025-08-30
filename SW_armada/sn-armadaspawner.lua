@@ -7800,7 +7800,7 @@ Ship:new(SmallShip,REBEL_L_SHIP,{
     command = 2
 })
 
-Ship:new(MediumShip,EMPIRE_SHIP,{
+Ship:new(MediumShip,EMPIRE_L_SHIP,{
 	name = "Interdictor Combat Refit [ARC]",
     front =     CUSTOM_ASSETS.."cards/.arc/interdictor-combat-refit-errata-arc.jpg",
     mesh =      ASSETS_ROOT.."ships/empire/interdictor/mesh.obj",
@@ -7843,14 +7843,14 @@ Squadron:new(adv, EMPIRE_L_SQUAD, {
     aliases = {'Darth Vader - TIE Advanced Squadron [ARC]'}
 })
 
-Card:new(Commander,{name="Mon Mothma [ARC]", front=CUSTOM_ASSETS.."cards/.arc/mon-mothma-commander-errata-arc.jpg", cost=27, aliases = { "Mon Mothma [ARC]" }})
-Card:new(Commander,{name="Leia Organa [ARC]", front=CUSTOM_ASSETS.."cards/.arc/leia-organa-commander-errata-arc.jpg", cost=28, aliases = { "Leia Organa [ARC]" }})
-Card:new(Commander,{name="General Draven [ARC]", front=CUSTOM_ASSETS.."cards/.arc/general-draven-commander-errata-arc.jpg", cost=22, aliases = { "General Draven [ARC]" }})
-Card:new(Commander,{name="Emperor Palpatine [ARC]", front=CUSTOM_ASSETS.."cards/.arc/emperor-palpatine-commander-errata-arc.jpg", cost=32, aliases = { "Emperor Palpatine [ARC]" }})
-Card:new(Commander,{name="Darth Vader [ARC]", front=CUSTOM_ASSETS.."cards/.arc/cardfilendarth-vader-commander-errata-arcame.jpg", cost=28, aliases = { "Darth Vader [ARC]" }})
-Card:new(Commander,{name="Commander Sato [ARC]", front=CUSTOM_ASSETS.."cards/.arc/commander-sato-commander-errata-arc.jpg", cost=25, aliases = { "Commander Sato [ARC]" }})
-Card:new(Commander,{name="Admiral Screed [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-screed-commander-errata-arc.jpg", cost=26, aliases = { "Admiral Screed [ARC]" }})
-Card:new(Commander,{name="Admiral Motti [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-motti-commander-errata-arc.jpg", cost=20, aliases = { "Admiral Motti [ARC]" }})
+Card:new(Commander,Rebel_L,{name="Mon Mothma [ARC]", front=CUSTOM_ASSETS.."cards/.arc/mon-mothma-commander-errata-arc.jpg", cost=27, aliases = { "Mon Mothma [ARC]" }})
+Card:new(Commander,Rebel_L,{name="Leia Organa [ARC]", front=CUSTOM_ASSETS.."cards/.arc/leia-organa-commander-errata-arc.jpg", cost=28, aliases = { "Leia Organa [ARC]" }})
+Card:new(Commander,Rebel_L,{name="General Draven [ARC]", front=CUSTOM_ASSETS.."cards/.arc/general-draven-commander-errata-arc.jpg", cost=22, aliases = { "General Draven [ARC]" }})
+Card:new(Commander,Rebel_L,{name="Commander Sato [ARC]", front=CUSTOM_ASSETS.."cards/.arc/commander-sato-commander-errata-arc.jpg", cost=25, aliases = { "Commander Sato [ARC]" }})
+Card:new(Commander,Empire_L,{name="Emperor Palpatine [ARC]", front=CUSTOM_ASSETS.."cards/.arc/emperor-palpatine-commander-errata-arc.jpg", cost=32, aliases = { "Emperor Palpatine [ARC]" }})
+Card:new(Commander,Empire_L,{name="Darth Vader [ARC]", front=CUSTOM_ASSETS.."cards/.arc/darth-vader-commander-errata-arc.jpg", cost=28, aliases = { "Darth Vader [ARC]" }})
+Card:new(Commander,Empire_L,{name="Admiral Screed [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-screed-commander-errata-arc.jpg", cost=26, aliases = { "Admiral Screed [ARC]" }})
+Card:new(Commander,Empire_L,{name="Admiral Motti [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-motti-commander-errata-arc.jpg", cost=20, aliases = { "Admiral Motti [ARC]" }})
 
 
 ----------- Armada Nexus Upgrades
