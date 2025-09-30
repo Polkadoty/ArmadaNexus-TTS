@@ -6514,7 +6514,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         defense_tokens = {}
     }
     Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
-        name = "Mandalorian Gauntlet Fighter",
+        name = "Mandalorian Gauntlet Fighter (Scum)",
         front = CUSTOM_ASSETS .. "cards/.scum/mandalorian-gauntlet-fighter-scum-nexus.jpg",
         cost = 18,
         aliases = { "Mandalorian Gauntlet Fighter {SCUM} [Nexus]" }
