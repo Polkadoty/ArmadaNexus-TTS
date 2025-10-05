@@ -4240,34 +4240,6 @@ PROXY_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
 -- Armada Legacy (Old) Ships/Squadrons
 
 Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "Arquitens-class Command Cruiser [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/arquitens-class-command-cruiser-republic-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/republic/rep_arq/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/republic/rep_arq/reparq_command_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/republic/rep_arq/ruler.obj",
-    maneuver = { { "II" }, { "-", "II" }, { "-", "-", "II" } },
-    defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT },
-    shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
-    cost = 60,
-    aliases = { "Arquitens Command Cruiser [OldLegacy]" },
-    command = 2
-})
-
-Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "Arquitens-class Light Cruiser [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/arquitens-class-light-cruiser-republic-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/republic/rep_arq/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/republic/rep_arq/reparq_light_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/republic/rep_arq/ruler.obj",
-    maneuver = { { "II" }, { "-", "II" }, { "-", "-", "II" } },
-    defense_tokens = { DEF_CONTAIN, DEF_SALVO, DEF_EVADE, DEF_REDIRECT },
-    shields = { 2, 2, 2, 2 }, -- Front, left, right, rear
-    cost = 58,
-    aliases = { "Arquitens Light Cruiser [OldLegacy]" },
-    command = 2
-})
-
-Ship:new(SmallShip, REPUBLIC_L_SHIP, {
     name = "IPV-2C Stealth Corvette [OldLegacy]",
     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/ipv-2c-stealth-corvette-old-legacy.jpg",
     mesh = LEGACY_ASSETS .. "ships/republic/ipv2/mesh.obj",
@@ -4769,7 +4741,7 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
 
 -- Armada Legacy (New) ships/squadrons
 Ship:new(SmallShip,REPUBLIC_L_SHIP, {
-    name = "Arquitens-class Assault Cruiser",
+    name = "Arquitens-class Assault Cruiser (GAR)",
     front = CUSTOM_ASSETS.."cards/.legacy/beta/arquitens-class-assault-cruiser-republic-legacy-beta.jpg",
     mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/assault_diffuse.jpg",
@@ -4783,7 +4755,7 @@ Ship:new(SmallShip,REPUBLIC_L_SHIP, {
 })
 
 Ship:new(SmallShip,REPUBLIC_L_SHIP, {
-    name = "Arquitens-class Escort Cruiser",
+    name = "Arquitens-class Escort Cruiser (GAR)",
     front = CUSTOM_ASSETS.."cards/.legacy/beta/arquitens-class-escort-cruiser-republic-legacy-beta.jpg",
     mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/escort_diffuse.jpg",
@@ -6658,7 +6630,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
 
     --mando fang fighters
     mando_fang_fighters = {
-        mesh = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/ship-base.obj",
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum.jpg",
         health = 4,
         move = 5,
