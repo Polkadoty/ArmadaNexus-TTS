@@ -4782,7 +4782,7 @@ Ship:new(SmallShip,REPUBLIC_L_SHIP, {
     command = 2
 })
 
-Ship:new(SmallShip,REPUBLIC_SHIP, {
+Ship:new(SmallShip,REPUBLIC_L_SHIP, {
     name = "Arquitens-class Escort Cruiser",
     front = CUSTOM_ASSETS.."cards/.legacy/beta/arquitens-class-escort-cruiser-republic-legacy-beta.jpg",
     mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
@@ -4796,7 +4796,7 @@ Ship:new(SmallShip,REPUBLIC_SHIP, {
     command = 2
 })
 
-Ship:new(SmallShip,SEPARATIST_SHIP, {
+Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     name = "Pinnace-class Corsair",
     front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corsair-legacy-beta.jpg",
     mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
@@ -4810,7 +4810,7 @@ Ship:new(SmallShip,SEPARATIST_SHIP, {
     command = 1
     })
 
-Ship:new(SmallShip,SEPARATIST_SHIP, {
+Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     name = "Pinnace-class Corvette",
     front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corvette-legacy-beta.jpg",
     mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
