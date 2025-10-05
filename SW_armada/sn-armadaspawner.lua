@@ -4768,6 +4768,63 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
 -- })
 
 -- Armada Legacy (New) ships/squadrons
+Ship:new(SmallShip,REPUBLIC_L_SHIP, {
+    name = "Arquitens-class Assault Cruiser",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/arquitens-class-assault-cruiser-republic-legacy-beta.jpg",
+    mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/assault_diffuse.jpg",
+    ruler = CUSTOM_ASSETS.."ships/republic/arq_gar/ruler.obj", 
+    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_EVADE},
+    shields = {2,2,2,2}, -- Front, left, right, rear
+    cost = 50,
+    aliases = {"Arquitens-class Assault Cruiser [LegacyBeta]", "Arquitens-class Assault Cruiser [LegacyBeta]"},
+    command = 2
+})
+
+Ship:new(SmallShip,REPUBLIC_L_SHIP, {
+    name = "Arquitens-class Escort Cruiser",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/arquitens-class-escort-cruiser-republic-legacy-beta.jpg",
+    mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/escort_diffuse.jpg",
+    ruler = CUSTOM_ASSETS.."ships/republic/arq_gar/ruler.obj", 
+    maneuver = {{"II"},{"-","II"},{"-","-","II"}},
+    defense_tokens = {DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_EVADE},
+    shields = {2,2,2,2}, -- Front, left, right, rear
+    cost = 54,
+    aliases = {"Arquitens-class Escort Cruiser [LegacyBeta]", "Arquitens-class Escort Cruiser [LegacyBeta]"},
+    command = 2
+})
+
+Ship:new(SmallShip,SEPARATIST_L_SHIP, {
+    name = "Pinnace-class Corsair",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corsair-legacy-beta.jpg",
+    mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corsair_diffuse.jpg",
+    ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
+    maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
+    defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+    shields = {2,2,2,1}, -- Front, left, right, rear
+    cost = 42,
+    aliases = {"Pinnace-class Corsair [LegacyBeta]", "Pinnace-class Corsair [LegacyBeta]"},
+    command = 1
+    })
+
+Ship:new(SmallShip,SEPARATIST_L_SHIP, {
+    name = "Pinnace-class Corvette",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corvette-legacy-beta.jpg",
+    mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
+    diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corvette_diffuse.jpg",
+    ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
+    maneuver = {{"II"},{"II","-"},{"-","II","I"},{"-","II","-","I"}},
+    defense_tokens = {DEF_SALVO, DEF_EVADE, DEF_REDIRECT},
+    shields = {2,2,2,1}, -- Front, left, right, rear
+    cost = 46,
+    aliases = {"Pinnace-class Corsair [LegacyBeta]", "Pinnace-class Corsair [LegacyBeta]"},
+    command = 1
+    })
+
+
 star_courier = {
     mesh = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/mesh.obj",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse.jpg",
@@ -4870,6 +4927,47 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     defense_tokens = { DEF_BRACE, DEF_BRACE },
     cost = 21,
     aliases = { "Five-Seven - LAAT/i Gunship [Legacy]"}
+})
+
+
+Squadron:new(defender, EMPIRE_L_SQUAD, {
+    name = "Dark Squadron",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/dark-squadron-tie-defender-squadron-legacy-beta.jpg",
+    --mesh = CUSTOM_ASSETS..".obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/empire/def/squad_diffuse.jpg",
+    --defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 17,
+    aliases = {"Dark Squadron [LegacyBeta]", "Dark Squadron [Legacy]"}
+})
+
+Squadron:new(phantom, EMPIRE_L_SQUAD, {
+    name = "Shadow Squadron",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/shadow-squadron-tie-phantom-squadron-legacy-beta.jpg",
+    --mesh = CUSTOM_ASSETS..".obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/empire/pha/squad_diffuse.jpg",
+    --defense_tokens = {DEF_BRACE,DEF_BRACE},
+    cost = 15,
+    aliases = {"Shadow Squadron [LegacyBeta]", "Shadow Squadron [Legacy]"}
+})
+
+Squadron:new(ewing, REBEL_L_SQUAD, {
+    name = "Nightmare Squadron",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/nightmare-squadron-e-wing-squadron-legacy-beta.jpg",
+    --mesh = CUSTOM_ASSETS..".obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/rebel/ewing/squad_diffuse.jpg",
+    --defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 15,
+    aliases = {"Nightmare Squadron [LegacyBeta]", "Nightmare Squadron [LegacyBeta]", "Nightmare Squadron - E-wing Squadron [LegacyBeta]"}
+})
+
+Squadron:new(z95, REBEL_L_SQUAD, {
+    name = "Bandit Squadron",
+    front = CUSTOM_ASSETS.."cards/.legacy/beta/bandit-squadron-z-95-headhunter-squadron-legacy-beta.jpg",
+    --mesh = CUSTOM_ASSETS..".obj",
+    diffuse = CUSTOM_ASSETS.."squadrons/rebel/z95/squad_diffuse.jpg",
+    --defense_tokens = {DEF_BRACE,DEF_SCATTER},
+    cost = 9,
+    aliases = {"Bandit Squadron [LegacyBeta]", "Bandit Squadron [Legacy]", "Bandit Squadron - Z-95 Headhunter Squadron [LegacyBeta]"}
 })
 
 ----------armada Nexus ships
@@ -6373,9 +6471,16 @@ Squadron:new(seraph, COV_L_SQUAD, {
     Squadron:new(ugly_sqd, SCUM_L_SQUAD, {
         name = "Ugly Squadrons",
         front = CUSTOM_ASSETS .. "cards/.scum/ugly-squadrons-scum-nexus.jpg",
-        cost = 19,
-        defense_tokens = {DEF_BRACE, DEF_EVADE},
-        aliases = { "Ugly Squadrons {SCUM} [Nexus]" }
+        cost = 7,
+        -- defense_tokens = {DEF_BRACE, DEF_EVADE},
+        aliases = { "Ugly Squadrons {Scum} [Nexus]" }
+    })
+    Squadron:new(ugly_sqd, SCUM_L_SQUAD, {
+        name = "Kavil",
+        front = CUSTOM_ASSETS .. "cards/.scum/kavil-ugly-squadrons-scum-nexus.jpg",
+        cost = 13,
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        aliases = { "Kavil - Ugly Squadrons {Scum} [Nexus]" }
     })
 
     Squadron:new(firespray, SCUM_L_SQUAD, {
@@ -6534,7 +6639,68 @@ Squadron:new(seraph, COV_L_SQUAD, {
         cost = 20,
         aliases = {'Death Watch - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
     })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = 'The Armorer (Scum)',
+        front = CUSTOM_ASSETS.."cards/.scum/the-armorer-mandalorian-gauntlet-fighter-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/gauntlet_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE},
+        cost = 22,
+        aliases = {'The Armorer - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = 'Maul (Scum)',
+        front = CUSTOM_ASSETS.."cards/.scum/maul-mandalorian-gauntlet-fighter-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/gauntlet_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE},
+        cost = 22,
+        aliases = {'Maul - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
+    })
 
+    --mando fang fighters
+    mando_fang_fighters = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/ship-base.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum.jpg",
+        health = 4,
+        move = 5,
+        defense_tokens = {}
+    }
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Mandalorian Fang Fighter Squadron(Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        cost = 17,
+        aliases = { "Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Clan Rook (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/clan-rook-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_genique.jpg",
+        cost = 18,
+        aliases = { "Clan Rook - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Fenn Rau (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/fenn-rau-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        cost = 21,
+        aliases = { "Fenn Rau - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Gar Saxon (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/gar-saxon-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        cost = 22,
+        aliases = { "Gar Saxon - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Kad Solus (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/kad-solus-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        cost = 22,
+        aliases = { "Kad Solus - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
     
 ----new republic ships
 Ship:new(SmallShip, NR_L_SHIP, {
@@ -8059,6 +8225,21 @@ Card:new(Title, NR_L,{ name = "Resolve {NR}", front = CUSTOM_ASSETS .. "cards/.n
     -- Armada Legacy (New) Upgrades
 Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/Daultay Dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
 Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/.legacy/Ki-Adi-Mundi.jpg", cost=30, aliases={"Ki-Adi-Mundi [Legacy]"}})
+Card:new(Commander,Republic_L,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=25, aliases={"Admiral Coburn [LegacyBeta]"}})
+Card:new(Commander,Separatist_L,{name="Poggle the Lesser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/poggle-the-lesser-commander-legacy-beta.jpg", cost=25, aliases={"Poggle the Lesser [LegacyBeta]"}})
+Card:new(Title,Republic_L,{name="Arlionne",  front = CUSTOM_ASSETS.."cards/.legacy/beta/arlionne-title-legacy-beta.jpg", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [LegacyBeta]"}})
+--Card:new(Title,Republic,{name="Open Circle Fleet",  front = CUSTOM_ASSETS.."cards/.legacy/beta/open-circle-fleet-title-legacy-beta.jpg", cost=5, aliases={"Open Circle Fleet [LegacyBeta]", "Open Circle Fleet [Legacy]"}})
+Card:new(Title,Republic_L,{name="Stellar Rise",  front = CUSTOM_ASSETS.."cards/.legacy/beta/stellar-rise-title-legacy-beta.jpg", cost=2, aliases={"Stellar Rise [LegacyBeta]", "Stellar Rise [LegacyBeta]"}})
+Card:new(Title,Republic_L,{name="Surrogator",  front = CUSTOM_ASSETS.."cards/.legacy/beta/surrogator-title-legacy-beta.jpg", cost=3, aliases={"Surrogator [LegacyBeta]", "Surrogator [LegacyBeta]"}})
+Card:new(Title,Republic_L,{name="Thunder Wasp",  front = CUSTOM_ASSETS.."cards/.legacy/beta/thunder-wasp-title-legacy-beta.jpg", cost=3, aliases={"Thunder Wasp [LegacyBeta]", "Thunder Wasp [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Insatiable",  front = CUSTOM_ASSETS.."cards/.legacy/beta/insatiable-title-legacy-beta.jpg", cost=3, aliases={"Insatiable [LegacyBeta]", "Insatiable [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Petranaki",  front = CUSTOM_ASSETS.."cards/.legacy/beta/petranaki-title-legacy-beta.jpg", cost=3, aliases={"Petranaki [LegacyBeta]", "Petranaki [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Koklivex",  front = CUSTOM_ASSETS.."cards/.legacy/beta/koklivex-title-legacy-beta.jpg", cost=3, aliases={"Koklivex [LegacyBeta]", "Koklivex [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Visgura",  front = CUSTOM_ASSETS.."cards/.legacy/beta/visgura-title-legacy-beta.jpg", cost=2, aliases={"Visgura [LegacyBeta]", "Visgura [LegacyBeta]"}})
+Card:new(Title,Empire_L,{name="Intrepid",  front = CUSTOM_ASSETS.."cards/.legacy/beta/intrepid-title-legacy-beta.jpg", cost=6, aliases={"Intrepid [LegacyBeta]", "Intrepid [LegacyBeta]"}})
+Card:new(Title,Empire_L,{name="Battle Cruiser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/battle-cruiser-title-legacy-beta.jpg", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [LegacyBeta]"}})
+Card:new(Title,Rebel_L,{name="Nautilian",  front = CUSTOM_ASSETS.."cards/.legacy/beta/nautilian-title-legacy-beta.jpg", cost=5, aliases={"Nautilian [LegacyBeta]", "Nautilian [LegacyBeta]"}})
+Card:new(Title,Rebel_L,{name="Rebel One",  front = CUSTOM_ASSETS.."cards/.legacy/beta/rebel-one-title-legacy-beta.jpg", cost=6, aliases={"Rebel One [LegacyBeta]", "Rebel One [LegacyBeta]"}})
 
 
     -- Armada Legacy (Old) Upgrades
