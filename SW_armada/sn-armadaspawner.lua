@@ -6471,9 +6471,16 @@ Squadron:new(seraph, COV_L_SQUAD, {
     Squadron:new(ugly_sqd, SCUM_L_SQUAD, {
         name = "Ugly Squadrons",
         front = CUSTOM_ASSETS .. "cards/.scum/ugly-squadrons-scum-nexus.jpg",
-        cost = 19,
-        defense_tokens = {DEF_BRACE, DEF_EVADE},
-        aliases = { "Ugly Squadrons {SCUM} [Nexus]" }
+        cost = 7,
+        -- defense_tokens = {DEF_BRACE, DEF_EVADE},
+        aliases = { "Ugly Squadrons {Scum} [Nexus]" }
+    })
+    Squadron:new(ugly_sqd, SCUM_L_SQUAD, {
+        name = "Kavil",
+        front = CUSTOM_ASSETS .. "cards/.scum/kavil-ugly-squadrons-scum-nexus.jpg",
+        cost = 13,
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        aliases = { "Kavil - Ugly Squadrons {Scum} [Nexus]" }
     })
 
     Squadron:new(firespray, SCUM_L_SQUAD, {
@@ -6632,7 +6639,68 @@ Squadron:new(seraph, COV_L_SQUAD, {
         cost = 20,
         aliases = {'Death Watch - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
     })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = 'The Armorer (Scum)',
+        front = CUSTOM_ASSETS.."cards/.scum/the-armorer-mandalorian-gauntlet-fighter-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/gauntlet_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE},
+        cost = 22,
+        aliases = {'The Armorer - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = 'Maul (Scum)',
+        front = CUSTOM_ASSETS.."cards/.scum/maul-mandalorian-gauntlet-fighter-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/gauntlet/gauntlet_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE},
+        cost = 22,
+        aliases = {'Maul - Mandalorian Gauntlet Fighter {SCUM} [Nexus]'}
+    })
 
+    --mando fang fighters
+    mando_fang_fighters = {
+        mesh = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/ship-base.obj",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum.jpg",
+        health = 4,
+        move = 5,
+        defense_tokens = {}
+    }
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Mandalorian Fang Fighter Squadron(Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        cost = 17,
+        aliases = { "Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Clan Rook (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/clan-rook-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_genique.jpg",
+        cost = 18,
+        aliases = { "Clan Rook - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Fenn Rau (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/fenn-rau-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        cost = 21,
+        aliases = { "Fenn Rau - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Gar Saxon (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/gar-saxon-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        cost = 22,
+        aliases = { "Gar Saxon - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
+    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+        name = "Kad Solus (Scum)",
+        front = CUSTOM_ASSETS .. "cards/.scum/kad-solus-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
+        diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
+        defense_tokens = {DEF_BRACE, DEF_SCATTER},
+        cost = 22,
+        aliases = { "Kad Solus - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
+    })
     
 ----new republic ships
 Ship:new(SmallShip, NR_L_SHIP, {
