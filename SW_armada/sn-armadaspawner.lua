@@ -6636,20 +6636,20 @@ Squadron:new(seraph, COV_L_SQUAD, {
         move = 5,
         defense_tokens = {}
     }
-    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+    Squadron:new(mando_fang_fighters, SCUM_L_SQUAD, {
         name = "Mandalorian Fang Fighter Squadron(Scum)",
         front = CUSTOM_ASSETS .. "cards/.scum/mandalorian-fang-fighter-squadron-scum-nexus.jpg",
         cost = 17,
         aliases = { "Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
     })
-    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+    Squadron:new(mando_fang_fighters, SCUM_L_SQUAD, {
         name = "Clan Rook (Scum)",
         front = CUSTOM_ASSETS .. "cards/.scum/clan-rook-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_genique.jpg",
         cost = 18,
         aliases = { "Clan Rook - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
     })
-    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+    Squadron:new(mando_fang_fighters, SCUM_L_SQUAD, {
         name = "Fenn Rau (Scum)",
         front = CUSTOM_ASSETS .. "cards/.scum/fenn-rau-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
@@ -6657,7 +6657,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         cost = 21,
         aliases = { "Fenn Rau - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
     })
-    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+    Squadron:new(mando_fang_fighters, SCUM_L_SQUAD, {
         name = "Gar Saxon (Scum)",
         front = CUSTOM_ASSETS .. "cards/.scum/gar-saxon-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
@@ -6665,7 +6665,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         cost = 22,
         aliases = { "Gar Saxon - Mandalorian Fang Fighter Squadron {SCUM} [Nexus]" }
     })
-    Squadron:new(mando_gauntlet, SCUM_L_SQUAD, {
+    Squadron:new(mando_fang_fighters, SCUM_L_SQUAD, {
         name = "Kad Solus (Scum)",
         front = CUSTOM_ASSETS .. "cards/.scum/kad-solus-mandalorian-fang-fighter-squadron-scum-nexus.jpg",
         diffuse = CUSTOM_ASSETS .. "squadrons/scum/fang_fighter/fang_fighter_scum_ace.jpg",
