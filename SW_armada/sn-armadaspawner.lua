@@ -4742,7 +4742,7 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
 -- Armada Legacy (New) ships/squadrons
 Ship:new(SmallShip,REPUBLIC_L_SHIP, {
     name = "Arquitens-class Assault Cruiser (GAR)",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/arquitens-class-assault-cruiser-republic-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/arquitens-class-assault-cruiser-republic-legacy-beta.webp",
     mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/assault_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/republic/arq_gar/ruler.obj", 
@@ -4756,7 +4756,7 @@ Ship:new(SmallShip,REPUBLIC_L_SHIP, {
 
 Ship:new(SmallShip,REPUBLIC_L_SHIP, {
     name = "Arquitens-class Escort Cruiser (GAR)",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/arquitens-class-escort-cruiser-republic-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/arquitens-class-escort-cruiser-republic-legacy-beta.webp",
     mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/escort_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/republic/arq_gar/ruler.obj", 
@@ -4770,7 +4770,7 @@ Ship:new(SmallShip,REPUBLIC_L_SHIP, {
 
 Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     name = "Pinnace-class Corsair",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corsair-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/pinnace-class-corsair-legacy-beta.webp",
     mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corsair_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
@@ -4784,7 +4784,7 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
 
 Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     name = "Pinnace-class Corvette",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/pinnace-class-corvette-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/pinnace-class-corvette-legacy-beta.webp",
     mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corvette_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
@@ -4806,13 +4806,13 @@ star_courier = {
 }
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Star Courier",
-    front = CUSTOM_ASSETS .. "cards/.legacy/Star Courier.jpg",
+    front = "https://images.swarmada.wiki/images/star-courier-legacy.webp",
     cost = 17,
     aliases = { "Star Courier [Legacy]" }
 })
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Darth Maul",
-    front = CUSTOM_ASSETS .. "cards/.legacy/Darth Maul.jpg",
+    front = "https://images.swarmada.wiki/images/darth-maul-scimitar-legacy.webp",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE},
     cost = 24,
@@ -4820,7 +4820,7 @@ Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
 })
 Squadron:new(star_courier, SEPARATIST_L_SQUAD, {
     name = "Count Dooku",
-    front = CUSTOM_ASSETS .. "cards/.legacy/Count Dooku.jpg",
+    front = "https://images.swarmada.wiki/images/count-dooku-scimitar-legacy.webp",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE },
     cost = 21,
@@ -4836,13 +4836,13 @@ g9_rigger = {
 }
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "G9 Rigger-class Freighter",
-    front = CUSTOM_ASSETS .. "cards/.legacy/G9 Rigger-class Freighter.jpg",
+    front = "https://images.swarmada.wiki/images/g9-rigger-class-freighter-legacy.webp",
     cost = 14,
     aliases = { "G9 Rigger-class Freighter [Legacy]" }
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "Anakin Skywalker (Twilight)",
-    front = CUSTOM_ASSETS .. "cards/.legacy/Anakin Skywalker.jpg",
+    front = "https://images.swarmada.wiki/images/anakin-skywalker-twilight-legacy.webp",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE, DEF_EVADE },
     cost = 24,
@@ -4850,7 +4850,7 @@ Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
 })
 Squadron:new(g9_rigger, REPUBLIC_L_SQUAD, {
     name = "R2-D2 (Twilight)",
-    front = CUSTOM_ASSETS .. "cards/.legacy/R2D2.jpg",
+    front = "https://images.swarmada.wiki/images/r2-d2-twilight-legacy.webp",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/g9_rigger/diffuse_ace.jpg",
     defense_tokens = { DEF_BRACE },
     cost = 17,
@@ -4866,13 +4866,13 @@ hmp_gunship = {
 }
 Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
     name = "HMP Droid Gunship",
-    front = CUSTOM_ASSETS .. "cards/.legacy/HMP Droid Gunship.jpg",
+    front = "https://images.swarmada.wiki/images/hmp-droid-gunship-legacy.webp",
     cost = 13,
     aliases = { "HMP Droid Gunship [Legacy]" }
 })
 Squadron:new(hmp_gunship, SEPARATIST_L_SQUAD, {
     name = "DGS-047",
-    front = CUSTOM_ASSETS .. "cards/.legacy/DGS-047.jpg",
+    front = "https://images.swarmada.wiki/images/dgs-047-hmp-droid-gunship-legacy.webp",
     diffuse = CUSTOM_ASSETS .. "squadrons/separatist/hmp/hmp_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
     cost = 20,
@@ -4888,13 +4888,13 @@ laat_i = {
 }
 Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     name = "LAAT/i Gunship",
-    front = CUSTOM_ASSETS .. "cards/.legacy/LAATi Gunship.jpg",
+    front = "https://images.swarmada.wiki/images/laat-i-gunship-legacy.webp",
     cost = 14,
     aliases = { "LAAT/i Gunship [Legacy]"}
 })
 Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
     name = "Five-Seven",
-    front = CUSTOM_ASSETS .. "cards/.legacy/Five-Seven.jpg",
+    front = "https://images.swarmada.wiki/images/five-seven-laat-i-gunship-legacy.webp",
     diffuse = CUSTOM_ASSETS .. "squadrons/republic/laati/laati_ace_texture.jpg",
     defense_tokens = { DEF_BRACE, DEF_BRACE },
     cost = 21,
@@ -4904,7 +4904,7 @@ Squadron:new(laat_i, REPUBLIC_L_SQUAD, {
 
 Squadron:new(defender, EMPIRE_L_SQUAD, {
     name = "Dark Squadron",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/dark-squadron-tie-defender-squadron-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/dark-squadron-tie-defender-squadron-legacy.webp",
     --mesh = CUSTOM_ASSETS..".obj",
     diffuse = CUSTOM_ASSETS.."squadrons/empire/def/squad_diffuse.jpg",
     --defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -4914,7 +4914,7 @@ Squadron:new(defender, EMPIRE_L_SQUAD, {
 
 Squadron:new(phantom, EMPIRE_L_SQUAD, {
     name = "Shadow Squadron",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/shadow-squadron-tie-phantom-squadron-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/shadow-squadron-tie-phantom-squadron-legacy.webp",
     --mesh = CUSTOM_ASSETS..".obj",
     diffuse = CUSTOM_ASSETS.."squadrons/empire/pha/squad_diffuse.jpg",
     --defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -4924,7 +4924,7 @@ Squadron:new(phantom, EMPIRE_L_SQUAD, {
 
 Squadron:new(ewing, REBEL_L_SQUAD, {
     name = "Nightmare Squadron",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/nightmare-squadron-e-wing-squadron-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/nightmare-squadron-e-wing-squadron-legacy.webp",
     --mesh = CUSTOM_ASSETS..".obj",
     diffuse = CUSTOM_ASSETS.."squadrons/rebel/ewing/squad_diffuse.jpg",
     --defense_tokens = {DEF_BRACE,DEF_SCATTER},
@@ -4934,7 +4934,7 @@ Squadron:new(ewing, REBEL_L_SQUAD, {
 
 Squadron:new(z95, REBEL_L_SQUAD, {
     name = "Bandit Squadron",
-    front = CUSTOM_ASSETS.."cards/.legacy/beta/bandit-squadron-z-95-headhunter-squadron-legacy-beta.jpg",
+    front = "https://images.swarmada.wiki/images/bandit-squadron-z-95-headhunter-squadron-legacy.webp",
     --mesh = CUSTOM_ASSETS..".obj",
     diffuse = CUSTOM_ASSETS.."squadrons/rebel/z95/squad_diffuse.jpg",
     --defense_tokens = {DEF_BRACE,DEF_SCATTER},
@@ -7870,7 +7870,7 @@ BSG = { factions = { "Colonial", "Cylon" } }
 
 Ship:new(LargeShip,REPUBLIC_L_SHIP,{
 	name = "Venator Star Destroyer Imperator Refit [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/venator-class-star-destroyer-imperator-refit-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/venator-class-star-destroyer-imperator-refit-arc.webp",
     mesh =      ASSETS_ROOT.."ships/republic/venator/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/republic/venator/I_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/republic/venator/ruler.obj",
@@ -7884,7 +7884,7 @@ Ship:new(LargeShip,REPUBLIC_L_SHIP,{
 
 Ship:new(MediumShip,SEPARATIST_L_SHIP,{
 	name = "Munificent-class Command Frigate [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/munificent-class-command-frigate-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/munificent-class-command-frigate-arc.webp",
     mesh =      ASSETS_ROOT.."ships/separatist/munificent/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/munificent/comms_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/separatist/munificent/ruler.obj",
@@ -7898,7 +7898,7 @@ Ship:new(MediumShip,SEPARATIST_L_SHIP,{
 
 Ship:new(SmallShip,SEPARATIST_L_SHIP,{
 	name = "Quarren Prototype Gunship [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/quarren-prototype-gunship-cis-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/quarren-prototype-gunship-cis-arc.webp",
     mesh =      ASSETS_ROOT.."ships/rebel/mc30/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/mc30/scout_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/mc30/ruler.obj",
@@ -7912,7 +7912,7 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP,{
 
 Ship:new(SmallShip,REPUBLIC_L_SHIP,{
 	name = "Arquitens-class Light Cruiser [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/arquitens-class-light-cruiser-republic-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/arquitens-class-light-cruiser-republic-arc.webp",
     mesh =      ASSETS_ROOT.."ships/empire/arquitens/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/empire/arquitens/light_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/arquitens/ruler.obj",
@@ -7926,7 +7926,7 @@ Ship:new(SmallShip,REPUBLIC_L_SHIP,{
 
 Ship:new(SmallShip,REBEL_L_SHIP,{
 	name = "Modified Pelta-class Assault Ship [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/modified-pelta-class-assault-ship-errata-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/modified-pelta-class-assault-ship-errata-arc.webp",
     mesh =      ASSETS_ROOT.."ships/rebel/pelta/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/pelta/assault_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/rebel/pelta/ruler.obj",
@@ -7940,7 +7940,7 @@ Ship:new(SmallShip,REBEL_L_SHIP,{
 
 Ship:new(MediumShip,EMPIRE_L_SHIP,{
 	name = "Interdictor Combat Refit [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/interdictor-combat-refit-errata-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/interdictor-combat-refit-errata-arc.webp",
     mesh =      ASSETS_ROOT.."ships/empire/interdictor/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/empire/interdictor/combat_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/empire/interdictor/ruler.obj",
@@ -7954,7 +7954,7 @@ Ship:new(MediumShip,EMPIRE_L_SHIP,{
 
 Squadron:new(xwing, REBEL_L_SQUAD, {
 	name = "Luke Skywalker [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/luke-skywalker-x-wing-squadron-errata-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/luke-skywalker-x-wing-squadron-errata-arc.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 20,
@@ -7963,7 +7963,7 @@ Squadron:new(xwing, REBEL_L_SQUAD, {
 
 Squadron:new(yt1300, REBEL_L_SQUAD, {
 	name = "Han Solo [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/han-solo-millennium-falcon-errata-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/han-solo-millennium-falcon-errata-arc.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/yt1300/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/yt1300/gr_ro_model.obj",
     move = 3,
@@ -7974,21 +7974,21 @@ Squadron:new(yt1300, REBEL_L_SQUAD, {
 
 Squadron:new(adv, EMPIRE_L_SQUAD, {
 	name = "Darth Vader - TIE Adv [ARC]",
-    front =     CUSTOM_ASSETS.."cards/.arc/darth-vader-tie-advanced-squadron-errata-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/darth-vader-tie-advanced-squadron-errata-arc.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 20,
     aliases = {'Darth Vader - TIE Advanced Squadron [ARC]'}
 })
 
-Card:new(Commander,Rebel_L,{name="Mon Mothma [ARC]", front=CUSTOM_ASSETS.."cards/.arc/mon-mothma-commander-errata-arc.jpg", cost=27, aliases = { "Mon Mothma [ARC]" }})
-Card:new(Commander,Rebel_L,{name="Leia Organa [ARC]", front=CUSTOM_ASSETS.."cards/.arc/leia-organa-commander-errata-arc.jpg", cost=28, aliases = { "Leia Organa [ARC]" }})
-Card:new(Commander,Rebel_L,{name="General Draven [ARC]", front=CUSTOM_ASSETS.."cards/.arc/general-draven-commander-errata-arc.jpg", cost=22, aliases = { "General Draven [ARC]" }})
-Card:new(Commander,Rebel_L,{name="Commander Sato [ARC]", front=CUSTOM_ASSETS.."cards/.arc/commander-sato-commander-errata-arc.jpg", cost=25, aliases = { "Commander Sato [ARC]" }})
-Card:new(Commander,Empire_L,{name="Emperor Palpatine [ARC]", front=CUSTOM_ASSETS.."cards/.arc/emperor-palpatine-commander-errata-arc.jpg", cost=32, aliases = { "Emperor Palpatine [ARC]" }})
-Card:new(Commander,Empire_L,{name="Darth Vader [ARC]", front=CUSTOM_ASSETS.."cards/.arc/darth-vader-commander-errata-arc.jpg", cost=28, aliases = { "Darth Vader [ARC]" }})
-Card:new(Commander,Empire_L,{name="Admiral Screed [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-screed-commander-errata-arc.jpg", cost=26, aliases = { "Admiral Screed [ARC]" }})
-Card:new(Commander,Empire_L,{name="Admiral Motti [ARC]", front=CUSTOM_ASSETS.."cards/.arc/admiral-motti-commander-errata-arc.jpg", cost=20, aliases = { "Admiral Motti [ARC]" }})
+Card:new(Commander,Rebel_L,{name="Mon Mothma [ARC]", front="https://images.swarmada.wiki/images/mon-mothma-commander-errata-arc.webp", cost=27, aliases = { "Mon Mothma [ARC]" }})
+Card:new(Commander,Rebel_L,{name="Leia Organa [ARC]", front="https://images.swarmada.wiki/images/leia-organa-commander-errata-arc.webp", cost=28, aliases = { "Leia Organa [ARC]" }})
+Card:new(Commander,Rebel_L,{name="General Draven [ARC]", front="https://images.swarmada.wiki/images/general-draven-commander-errata-arc.webp", cost=22, aliases = { "General Draven [ARC]" }})
+Card:new(Commander,Rebel_L,{name="Commander Sato [ARC]", front="https://images.swarmada.wiki/images/commander-sato-commander-errata-arc.webp", cost=25, aliases = { "Commander Sato [ARC]" }})
+Card:new(Commander,Empire_L,{name="Emperor Palpatine [ARC]", front="https://images.swarmada.wiki/images/emperor-palpatine-commander-errata-arc.webp", cost=32, aliases = { "Emperor Palpatine [ARC]" }})
+Card:new(Commander,Empire_L,{name="Darth Vader [ARC]", front="https://images.swarmada.wiki/images/darth-vader-commander-errata-arc.webp", cost=28, aliases = { "Darth Vader [ARC]" }})
+Card:new(Commander,Empire_L,{name="Admiral Screed [ARC]", front="https://images.swarmada.wiki/images/admiral-screed-commander-errata-arc.webp", cost=26, aliases = { "Admiral Screed [ARC]" }})
+Card:new(Commander,Empire_L,{name="Admiral Motti [ARC]", front="https://images.swarmada.wiki/images/admiral-motti-commander-errata-arc.webp", cost=20, aliases = { "Admiral Motti [ARC]" }})
 
 
 ----------- Armada Nexus Upgrades
@@ -8197,21 +8197,21 @@ Card:new(Title, NR_L,{ name = "Resolve {NR}", front = CUSTOM_ASSETS .. "cards/.n
     -- Armada Legacy (New) Upgrades
 Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/Daultay Dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
 Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/.legacy/Ki-Adi-Mundi.jpg", cost=30, aliases={"Ki-Adi-Mundi [Legacy]"}})
-Card:new(Commander,Republic_L,{name="Admiral Coburn",  front = CUSTOM_ASSETS.."cards/.legacy/beta/admiral-coburn-commander-legacy-beta.jpg", cost=25, aliases={"Admiral Coburn [LegacyBeta]"}})
-Card:new(Commander,Separatist_L,{name="Poggle the Lesser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/poggle-the-lesser-commander-legacy-beta.jpg", cost=25, aliases={"Poggle the Lesser [LegacyBeta]"}})
-Card:new(Title,Republic_L,{name="Arlionne",  front = CUSTOM_ASSETS.."cards/.legacy/beta/arlionne-title-legacy-beta.jpg", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [LegacyBeta]"}})
+Card:new(Commander,Republic_L,{name="Admiral Coburn",  front = "https://images.swarmada.wiki/images/admiral-coburn-commander-legacy-beta.webp", cost=25, aliases={"Admiral Coburn [LegacyBeta]"}})
+Card:new(Commander,Separatist_L,{name="Poggle the Lesser",  front = "https://images.swarmada.wiki/images/poggle-the-lesser-commander-legacy-beta.webp", cost=25, aliases={"Poggle the Lesser [LegacyBeta]"}})
+Card:new(Title,Republic_L,{name="Arlionne",  front = "https://images.swarmada.wiki/images/arlionne-title-legacy-beta.webp", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [LegacyBeta]"}})
 --Card:new(Title,Republic,{name="Open Circle Fleet",  front = CUSTOM_ASSETS.."cards/.legacy/beta/open-circle-fleet-title-legacy-beta.jpg", cost=5, aliases={"Open Circle Fleet [LegacyBeta]", "Open Circle Fleet [Legacy]"}})
-Card:new(Title,Republic_L,{name="Stellar Rise",  front = CUSTOM_ASSETS.."cards/.legacy/beta/stellar-rise-title-legacy-beta.jpg", cost=2, aliases={"Stellar Rise [LegacyBeta]", "Stellar Rise [LegacyBeta]"}})
-Card:new(Title,Republic_L,{name="Surrogator",  front = CUSTOM_ASSETS.."cards/.legacy/beta/surrogator-title-legacy-beta.jpg", cost=3, aliases={"Surrogator [LegacyBeta]", "Surrogator [LegacyBeta]"}})
-Card:new(Title,Republic_L,{name="Thunder Wasp",  front = CUSTOM_ASSETS.."cards/.legacy/beta/thunder-wasp-title-legacy-beta.jpg", cost=3, aliases={"Thunder Wasp [LegacyBeta]", "Thunder Wasp [LegacyBeta]"}})
-Card:new(Title,Separatist_L,{name="Insatiable",  front = CUSTOM_ASSETS.."cards/.legacy/beta/insatiable-title-legacy-beta.jpg", cost=3, aliases={"Insatiable [LegacyBeta]", "Insatiable [LegacyBeta]"}})
-Card:new(Title,Separatist_L,{name="Petranaki",  front = CUSTOM_ASSETS.."cards/.legacy/beta/petranaki-title-legacy-beta.jpg", cost=3, aliases={"Petranaki [LegacyBeta]", "Petranaki [LegacyBeta]"}})
-Card:new(Title,Separatist_L,{name="Koklivex",  front = CUSTOM_ASSETS.."cards/.legacy/beta/koklivex-title-legacy-beta.jpg", cost=3, aliases={"Koklivex [LegacyBeta]", "Koklivex [LegacyBeta]"}})
-Card:new(Title,Separatist_L,{name="Visgura",  front = CUSTOM_ASSETS.."cards/.legacy/beta/visgura-title-legacy-beta.jpg", cost=2, aliases={"Visgura [LegacyBeta]", "Visgura [LegacyBeta]"}})
-Card:new(Title,Empire_L,{name="Intrepid",  front = CUSTOM_ASSETS.."cards/.legacy/beta/intrepid-title-legacy-beta.jpg", cost=6, aliases={"Intrepid [LegacyBeta]", "Intrepid [LegacyBeta]"}})
-Card:new(Title,Empire_L,{name="Battle Cruiser",  front = CUSTOM_ASSETS.."cards/.legacy/beta/battle-cruiser-title-legacy-beta.jpg", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [LegacyBeta]"}})
-Card:new(Title,Rebel_L,{name="Nautilian",  front = CUSTOM_ASSETS.."cards/.legacy/beta/nautilian-title-legacy-beta.jpg", cost=5, aliases={"Nautilian [LegacyBeta]", "Nautilian [LegacyBeta]"}})
-Card:new(Title,Rebel_L,{name="Rebel One",  front = CUSTOM_ASSETS.."cards/.legacy/beta/rebel-one-title-legacy-beta.jpg", cost=6, aliases={"Rebel One [LegacyBeta]", "Rebel One [LegacyBeta]"}})
+Card:new(Title,Republic_L,{name="Stellar Rise",  front = "https://images.swarmada.wiki/images/stellar-rise-title-legacy-beta.webp", cost=2, aliases={"Stellar Rise [LegacyBeta]", "Stellar Rise [LegacyBeta]"}})
+Card:new(Title,Republic_L,{name="Surrogator",  front = "https://images.swarmada.wiki/images/surrogator-title-legacy-beta.webp", cost=3, aliases={"Surrogator [LegacyBeta]", "Surrogator [LegacyBeta]"}})
+Card:new(Title,Republic_L,{name="Thunder Wasp",  front = "https://images.swarmada.wiki/images/thunder-wasp-title-legacy-beta.webp", cost=3, aliases={"Thunder Wasp [LegacyBeta]", "Thunder Wasp [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Insatiable",  front = "https://images.swarmada.wiki/images/insatiable-title-legacy-beta.webp", cost=3, aliases={"Insatiable [LegacyBeta]", "Insatiable [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Petranaki",  front = "https://images.swarmada.wiki/images/petranaki-title-legacy-beta.webp", cost=3, aliases={"Petranaki [LegacyBeta]", "Petranaki [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Koklivex",  front = "https://images.swarmada.wiki/images/koklivex-title-legacy-beta.webp", cost=3, aliases={"Koklivex [LegacyBeta]", "Koklivex [LegacyBeta]"}})
+Card:new(Title,Separatist_L,{name="Visgura",  front = "https://images.swarmada.wiki/images/visgura-title-legacy-beta.webp", cost=2, aliases={"Visgura [LegacyBeta]", "Visgura [LegacyBeta]"}})
+Card:new(Title,Empire_L,{name="Intrepid",  front = "https://images.swarmada.wiki/images/intrepid-title-legacy-beta.webp", cost=6, aliases={"Intrepid [LegacyBeta]", "Intrepid [LegacyBeta]"}})
+Card:new(Title,Empire_L,{name="Battle Cruiser",  front = "https://images.swarmada.wiki/images/battle-cruiser-title-legacy-beta.webp", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [LegacyBeta]"}})
+Card:new(Title,Rebel_L,{name="Nautilian",  front = "https://images.swarmada.wiki/images/nautilian-title-legacy-beta.webp", cost=5, aliases={"Nautilian [LegacyBeta]", "Nautilian [LegacyBeta]"}})
+Card:new(Title,Rebel_L,{name="Rebel One",  front = "https://images.swarmada.wiki/images/rebel-one-title-legacy-beta.webp", cost=6, aliases={"Rebel One [LegacyBeta]", "Rebel One [LegacyBeta]"}})
 
 
     -- Armada Legacy (Old) Upgrades
