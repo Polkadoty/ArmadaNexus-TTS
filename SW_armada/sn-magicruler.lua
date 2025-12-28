@@ -15,8 +15,8 @@ stable_count = 0
 --     "http://pastebin.com/raw/ZUZuC55E"
 -- }
 -- local ASTEROID_TOKENS = {
---     "http://i.imgur.com/KWkWB6p.png",
---     "http://i.imgur.com/Zdz7dZF.png"
+--     "https://images.swarmada.wiki/images/KWkWB6p.webp",
+--     "https://images.swarmada.wiki/images/Zdz7dZF.webp"
 -- }
 --real_rot = 0
 function onload()
@@ -523,21 +523,21 @@ function isCmd(cmd)
     local dir = tonumber(cmd)
     return table.contains({-2,-1,0,1,2},dir)
 end
-diffuse = "http://i.imgur.com/YNFhQi0.png"
+diffuse = "https://images.swarmada.wiki/images/YNFhQi0.webp"
 start_model = ASSETS_ROOT.."misc/navruler/start.obj"
 mid_model = ASSETS_ROOT.."misc/navruler/mid.obj"
 end_model = ASSETS_ROOT.."misc/navruler/end.obj"
 ruler_diffuse = {
-    'http://i.imgur.com/Y8LTHC2.png',
-    'http://i.imgur.com/PbrGnQm.png',
-    'http://i.imgur.com/rZPSomm.png',
-    'http://i.imgur.com/WiZESBp.png'
+    'https://images.swarmada.wiki/images/Y8LTHC2.webp',
+    'https://images.swarmada.wiki/images/PbrGnQm.webp',
+    'https://images.swarmada.wiki/images/rZPSomm.webp',
+    'https://images.swarmada.wiki/images/WiZESBp.webp'
 }
 end_diffuse = {
-    'http://i.imgur.com/WH1KHQf.png',
-    'http://i.imgur.com/ihm03Vm.png',
-    'http://i.imgur.com/1q9uCVs.png',
-    'http://i.imgur.com/eMbDz3j.png'
+    'https://images.swarmada.wiki/images/WH1KHQf.webp',
+    'https://images.swarmada.wiki/images/ihm03Vm.webp',
+    'https://images.swarmada.wiki/images/1q9uCVs.webp',
+    'https://images.swarmada.wiki/images/eMbDz3j.webp'
 }
 function extendSelf(this, index, new_cmds)
     --printToAll("--EXTEND--",{0,0,1})

@@ -1,5 +1,5 @@
 ----#include TTS_armada/src/Global
---italia table: https://i.imgur.com/ZH3BOIY.jpg
+--italia table: https://images.swarmada.wiki/images/ZH3BOIY.webp
 ASSETS_ROOT = 'https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/'
 CUSTOM_ASSETS = '{verifycache}https://raw.githubusercontent.com/spacenavy90/ArmadaNexus-TTS/master/SW_armada/assets/'
 
@@ -38,19 +38,19 @@ CMD_NAMES[ASSETS_ROOT.."misc/command_dials/confire.jpg"] = "Concentrate Fire" --
 CMD_NAMES[ASSETS_ROOT.."misc/command_dials/nav.jpg"] = "Navigate" --navigate
 CMD_NAMES[ASSETS_ROOT.."misc/command_dials/squad.jpg"] = "Squadron" --squadron
 local CMD_COLORS = {}
--- CMD_COLORS["http://i.imgur.com/IHXy7k7.jpg"] = {0,0.8,0} --repair
--- CMD_COLORS["http://i.imgur.com/ip3tJaN.jpg"] = {0.8,0,0} --concentrate
--- CMD_COLORS["http://i.imgur.com/hGXCVQo.jpg"] = {0, 0.2, 0.8} --navigate
--- CMD_COLORS["http://i.imgur.com/XbJbScU.jpg"] = {0.5,0,0.5} --squadron
+-- CMD_COLORS["https://images.swarmada.wiki/images/IHXy7k7.webp"] = {0,0.8,0} --repair
+-- CMD_COLORS["https://images.swarmada.wiki/images/ip3tJaN.webp"] = {0.8,0,0} --concentrate
+-- CMD_COLORS["https://images.swarmada.wiki/images/hGXCVQo.webp"] = {0, 0.2, 0.8} --navigate
+-- CMD_COLORS["https://images.swarmada.wiki/images/XbJbScU.webp"] = {0.5,0,0.5} --squadron
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/eng.jpg"] = {0.4,0.8,0.4} --repair
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/confire.jpg"] = {0.8,0.4,0.4} --concentrate
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/nav.jpg"] = {0.2, 0.4, 0.8} --navigate
 CMD_COLORS[ASSETS_ROOT.."misc/command_dials/squad.jpg"] = {0.8,0.4,0.8} --squadron
-SUMMA_IMG = "https://i.imgur.com/nhLQ82T.png"
+SUMMA_IMG = "https://images.swarmada.wiki/images/nhLQ82T.webp"
 SUMMA_MESH = "https://github.com/spacenavy90/ArmadaNexus-TTS/raw/refs/heads/master/SW_armada/assets/misc/summa.obj"
 SUMMA_RULER = "https://github.com/spacenavy90/ArmadaNexus-TTS/raw/refs/heads/master/SW_armada/assets/misc/rulers/ship/small/mesh.obj" --TODO
 local TARGETING_MESHES = {
-    "http://i.imgur.com/mFwOs6T.jpg"
+    "https://images.swarmada.wiki/images/mFwOs6T.webp"
 }
 local SQUAD_COLLIDERS = {ASSETS_ROOT.."misc/bases/squad.obj","http://paste.ee/r/nAMCQ", "https://paste.ee/r/nAMCQ", "http://paste.ee/r/ZKM7E", "https://paste.ee/r/ZKM7E"}
 -- local SQUAD = "http://paste.ee/r/ZKM7E"--"http://paste.ee/r/nAMCQ"
@@ -209,7 +209,7 @@ function onObjectSpawn(obj)
             -- print("No hover color for: "..math.floor(pos[1])..","..math.floor(pos[3]))
         end
     end
-    -- if custom ~= nil and custom.image=="http://i.imgur.com/EUi3Wog.png" then
+    -- if custom ~= nil and custom.image=="https://images.swarmada.wiki/images/EUi3Wog.webp" then
     drawDatacardButtons(obj)
     onObjectSpawn_asteroid(obj)
 end
@@ -773,7 +773,7 @@ function delayed_drawDatacardButtons(obj)
     if obj~=nil and isDatacard(obj) then
         if obj.getDescription()~=nil and #obj.getDescription()>0 then
             obj.clearButtons()
-        -- if custom ~= nil and custom.image=="http://i.imgur.com/EUi3Wog.png" then
+        -- if custom ~= nil and custom.image=="https://images.swarmada.wiki/images/EUi3Wog.webp" then
             obj.createButton({
                 ['click_function'] = "Action_fleet_spawn",
                 ['function_owner'] = SPAWNER,
@@ -1078,13 +1078,13 @@ end
 dial = {}
 function dial.name(dial)
     local mesh = dial.getCustomObject().diffuse
-    if mesh == "http://i.imgur.com/IHXy7k7.jpg" then
+    if mesh == "https://images.swarmada.wiki/images/IHXy7k7.webp" then
         return "Repair"
-    elseif mesh == "http://i.imgur.com/hGXCVQo.jpg" then
+    elseif mesh == "https://images.swarmada.wiki/images/hGXCVQo.webp" then
         return "Navigate"
-    elseif mesh == "http://i.imgur.com/ip3tJaN.jpg" then
+    elseif mesh == "https://images.swarmada.wiki/images/ip3tJaN.webp" then
             return "Concentrate Fire"
-    elseif mesh == "http://i.imgur.com/XbJbScU.jpg" then
+    elseif mesh == "https://images.swarmada.wiki/images/XbJbScU.webp" then
             return "Squadron"
     end
     return ""
@@ -1221,7 +1221,7 @@ function fixshieldheight(object, params)
 --            obj.lock()
 --        end
 --    end
-    --http://i.imgur.com/WQJNmkt.png
+    --https://images.swarmada.wiki/images/WQJNmkt.webp
 end
 --function spawnShieldsCorout()
 --    local size = getSize(shieldedShip)

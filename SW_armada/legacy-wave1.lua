@@ -19,18 +19,18 @@
 --
 --     Commander = {
 --         type="Commander",
---         back = "https://i.imgur.com/fMJMaYo.png" } -- card back
+--         back = "https://images.swarmada.wiki/images/fMJMaYo.webp" } -- card back
 --     Rebel = { factions={"Rebellion"} } -- factions must be a table for cards, since multi faction upgrades exist
---     Card:new(Commander,Rebel,{name="Admiral Ackbar",  front="http://i.imgur.com/HFVv48K.jpg", cost=38})
+--     Card:new(Commander,Rebel,{name="Admiral Ackbar",  front="https://images.swarmada.wiki/images/HFVv48K.webp", cost=38})
 --
 --     REBEL_SHIP = {
---         back = "https://i.imgur.com/vUaQViH.png",  -- card back
+--         back = "https://images.swarmada.wiki/images/vUaQViH.webp",  -- card back
 --         faction = "Rebellion" }
 --     Ship:new(SmallShip,REBEL_SHIP,{
 --         name = "GR-75 Medium Transports",
---         front = "https://i.imgur.com/vMgbQB3.png", --Card front image
+--         front = "https://images.swarmada.wiki/images/vMgbQB3.webp", --Card front image
 --         mesh = "http://paste.ee/p/XZLIh",
---         diffuse = "http://i.imgur.com/2A2pAEI.png", -- model texture
+--         diffuse = "https://images.swarmada.wiki/images/2A2pAEI.webp", -- model texture
 --         ruler = "http://paste.ee/r/FSip2", -- custom ruler mesh
 --         maneuver = {{"II"},{"I","II"},{"-","I","II"}},
 --         defense_tokens = {DEF_SCATTER, DEF_EVADE},
@@ -41,25 +41,25 @@
 --     })
 --
 --     REBEL_SQUAD = {
---         back = "https://i.imgur.com/8s63Ngl.png", --card back
+--         back = "https://images.swarmada.wiki/images/8s63Ngl.webp", --card back
 --         faction = "Rebellion"
 --     }
 --     ship = {
 --         mesh = "http://paste.ee/r/ZqCC6",
---         diffuse = "http://i.imgur.com/QSLaqgW.png", --model texture
+--         diffuse = "https://images.swarmada.wiki/images/QSLaqgW.webp", --model texture
 --         health = 5,
 --         move = 2,
 --         defense_tokens = {}}
 --     Squadron:new(ship, REBEL_SQUAD, {
 -- 	       name = "B-wing Squadron",
---         front = "https://i.imgur.com/bB11RGw.png", --card front
+--         front = "https://images.swarmada.wiki/images/bB11RGw.webp", --card front
 --         cost = 14,
 --         aliases = {'B-wing Squadrons', "B-wing"}
 --     })
 --     Squadron:new(ship, REBEL_SQUAD, {
 -- 	       name = "Keyan Farlander",
---         front = "https://i.imgur.com/r4bx4xg.png", --card front
---         diffuse = "http://i.imgur.com/r7YB80F.png", --model texture
+--         front = "https://images.swarmada.wiki/images/r4bx4xg.webp", --card front
+--         diffuse = "https://images.swarmada.wiki/images/r7YB80F.webp", --model texture
 --         defense_tokens = {DEF_BRACE,DEF_BRACE},
 --         cost = 20
 --     })
@@ -261,16 +261,16 @@ printToAll("Finished loading Armada Legacy wave 1 beta content!",{1,0.5,0})
 --objectives
 -- Objective = {
 --     type="Objective",
---     back = "https://i.imgur.com/6mOLyyo.jpeg"
+--     back = "https://images.swarmada.wiki/images/6mOLyyo.webp"
 -- }
 -- Assault = { category = "Assault" }
--- Card:new(Assault, Objective, {name="Advanced Gunnery", front="https://i.imgur.com/3dV3CQL.png"})
+-- Card:new(Assault, Objective, {name="Advanced Gunnery", front="https://images.swarmada.wiki/images/3dV3CQL.webp"})
 -- Defense = { category = "Defense" }
--- Card:new(Defense, Objective, {name="Abandoned Mining Facility", front="https://i.imgur.com/FisDnrA.png", victory=10})
+-- Card:new(Defense, Objective, {name="Abandoned Mining Facility", front="https://images.swarmada.wiki/images/FisDnrA.webp", victory=10})
 -- Navigation = { category = "Navigation" }
--- Card:new(Navigation, Objective, {name="Dangerous Territory", front="https://i.imgur.com/DIlMCHD.png", victory=15})
+-- Card:new(Navigation, Objective, {name="Dangerous Territory", front="https://images.swarmada.wiki/images/DIlMCHD.webp", victory=15})
 -- Special = { category = "Special" }
--- Card:new(Special, Objective, {name="Base Defense: Armed Station", front="https://i.imgur.com/uuS6Bgr.png"})
+-- Card:new(Special, Objective, {name="Base Defense: Armed Station", front="https://images.swarmada.wiki/images/uuS6Bgr.webp"})
 
 
 end
