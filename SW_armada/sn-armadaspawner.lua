@@ -7350,59 +7350,59 @@ Commander = {
 Rebel = {
     factions={"Rebellion"}
 }
-Card:new(Commander,Rebel,{name="Admiral Ackbar",  front="http://i.imgur.com/HFVv48K.jpg", cost=38})
-Card:new(Commander,Rebel,{name="Admiral Raddus",  front=CUSTOM_ASSETS.."cards/.amg2025/raddus.jpg", cost=26})
-Card:new(Commander,Rebel,{name="Commander Sato",  front=CUSTOM_ASSETS.."cards/.amg2025/sato.jpg", cost=27})
-Card:new(Commander,Rebel,{name="Garm Bel Iblis",  front=CUSTOM_ASSETS.."cards/.amg2025/garm-commander.jpg", cost=25})
-Card:new(Commander,Rebel,{name="General Cracken",  front="http://i.imgur.com/0NHwrEL.jpg", cost=26})
-Card:new(Commander,Rebel,{name="General Dodonna",  front="http://i.imgur.com/MsS9AN8.jpg", cost=20})
-Card:new(Commander,Rebel,{name="General Madine",  front=CUSTOM_ASSETS.."cards/.amg2025/madine.jpg", cost=30})
-Card:new(Commander,Rebel,{name="General Rieekan",  front=CUSTOM_ASSETS.."cards/.amg2025/rieekan-commander.jpg", cost=34})
-Card:new(Commander,Rebel,{name="Kyrsta Agate",  front=CUSTOM_ASSETS.."cards/.amg2025/agate-commander.jpg", cost=25})
-Card:new(Commander,Rebel,{name="Leia Organa",  front=CUSTOM_ASSETS.."cards/.amg2025/leia-commander.jpg", cost=28})
-Card:new(Commander,Rebel,{name="Mon Mothma",  front=CUSTOM_ASSETS.."cards/.amg2025/mon-mothma.jpg", cost=27})
-Card:new(Commander,Rebel,{name="General Draven",  front=CUSTOM_ASSETS.."cards/.amg2025/draven-commander.jpg", cost=20})
+Card:new(Commander,Rebel,{name="Admiral Ackbar",  front="https://images.swarmada.wiki/images/admiral-ackbar-commander.webp", cost=38})
+Card:new(Commander,Rebel,{name="Admiral Raddus",  front="https://images.swarmada.wiki/images/admiral-raddus-commander.webp", cost=26})
+Card:new(Commander,Rebel,{name="Commander Sato",  front="https://images.swarmada.wiki/images/commander-sato-commander.webp", cost=27})
+Card:new(Commander,Rebel,{name="Garm Bel Iblis",  front="https://images.swarmada.wiki/images/garm-bel-iblis-commander.webp", cost=25})
+Card:new(Commander,Rebel,{name="General Cracken",  front="https://images.swarmada.wiki/images/general-cracken-commander.webp", cost=26})
+Card:new(Commander,Rebel,{name="General Dodonna",  front="https://images.swarmada.wiki/images/general-dodonna-commander.webp", cost=20})
+Card:new(Commander,Rebel,{name="General Madine",  front="https://images.swarmada.wiki/images/general-madine-commander-errata.webp", cost=30})
+Card:new(Commander,Rebel,{name="General Rieekan",  front="https://images.swarmada.wiki/images/general-rieekan-commander.webp", cost=34})
+Card:new(Commander,Rebel,{name="Kyrsta Agate",  front="https://images.swarmada.wiki/images/kyrsta-agate-commander.webp", cost=25})
+Card:new(Commander,Rebel,{name="Leia Organa",  front="https://images.swarmada.wiki/images/leia-organa-commander.webp", cost=28})
+Card:new(Commander,Rebel,{name="Mon Mothma",  front="https://images.swarmada.wiki/images/mon-mothma-commander.webp", cost=27})
+Card:new(Commander,Rebel,{name="General Draven",  front="https://images.swarmada.wiki/images/general-draven-commander-errata.webp", cost=20})
 
 Empire = {
     factions={"Empire"}
 }
 --imperial
-Card:new(Commander,Empire,{name="Admiral Konstantine",  front=CUSTOM_ASSETS.."cards/.amg2025/kosnt.jpg", cost=23})
-Card:new(Commander,Empire,{name="Admiral Motti",  front="http://i.imgur.com/rkMe17G.jpg", cost=24})
-Card:new(Commander,Empire,{name="Admiral Ozzel",  front="http://i.imgur.com/v0nThwx.jpg", cost=20})
-Card:new(Commander,Empire,{name="Admiral Piett",  front="http://i.imgur.com/2D3DgQS.jpg", cost=22})
-Card:new(Commander,Empire,{name="Admiral Screed",  front=CUSTOM_ASSETS.."cards/.amg2025/screed.jpg", cost=24})
-Card:new(Commander,Empire,{name="Admiral Sloane",  front="http://i.imgur.com/rzZtf8B.jpg", cost=24})
-Card:new(Commander,Empire,{name="Darth Vader",  front=CUSTOM_ASSETS.."cards/.amg2025/vader-commander.jpg", cost=34})
-Card:new(Commander,Empire,{name="Emperor Palpatine",  front="http://i.imgur.com/KBY36Qs.jpg", cost=35})
-Card:new(Commander,Empire,{name="General Romodi",  front=CUSTOM_ASSETS.."cards/commander/general_romodi_v2_1.jpg", cost=28})
-Card:new(Commander,Empire,{name="General Tagge",  front=CUSTOM_ASSETS.."cards/.amg2025/tagge.jpg", cost=25})
-Card:new(Commander,Empire,{name="Grand Admiral Thrawn",  front=CUSTOM_ASSETS.."cards/.amg2025/thrawn-commander.jpg", cost=32})
-Card:new(Commander,Empire,{name="Grand Moff Tarkin",  front=CUSTOM_ASSETS.."cards/.amg2025/tarkin-commander.jpg", cost=28})
-Card:new(Commander,Empire,{name="Moff Jerjerrod",  front=CUSTOM_ASSETS.."cards/.amg2025/jerjerrod-commander.jpg", cost=23})
+Card:new(Commander,Empire,{name="Admiral Konstantine",  front="https://images.swarmada.wiki/images/admiral-konstantine-commander.webp", cost=23})
+Card:new(Commander,Empire,{name="Admiral Motti",  front="https://images.swarmada.wiki/images/admiral-motti-commander.webp", cost=24})
+Card:new(Commander,Empire,{name="Admiral Ozzel",  front="https://images.swarmada.wiki/images/admiral-ozzel-commander.webp", cost=20})
+Card:new(Commander,Empire,{name="Admiral Piett",  front="https://images.swarmada.wiki/images/admiral-piett-commander.webp", cost=22})
+Card:new(Commander,Empire,{name="Admiral Screed",  front="https://images.swarmada.wiki/images/admiral-screed-commander-errata.webp", cost=24})
+Card:new(Commander,Empire,{name="Admiral Sloane",  front="https://images.swarmada.wiki/images/admiral-sloane-commander.webp", cost=24})
+Card:new(Commander,Empire,{name="Darth Vader",  front="https://images.swarmada.wiki/images/darth-vader-commander-errata.webp", cost=34})
+Card:new(Commander,Empire,{name="Emperor Palpatine",  front="https://images.swarmada.wiki/images/emperor-palpatine-commander.webp", cost=35})
+Card:new(Commander,Empire,{name="General Romodi",  front="https://images.swarmada.wiki/images/general-romodi-commander.webp", cost=28})
+Card:new(Commander,Empire,{name="General Tagge",  front="https://images.swarmada.wiki/images/general-tagge-commander.webp", cost=25})
+Card:new(Commander,Empire,{name="Grand Admiral Thrawn",  front="https://images.swarmada.wiki/images/grand-admiral-thrawn-commander.webp", cost=32})
+Card:new(Commander,Empire,{name="Grand Moff Tarkin",  front="https://images.swarmada.wiki/images/grand-moff-tarkin-commander.webp", cost=28})
+Card:new(Commander,Empire,{name="Moff Jerjerrod",  front="https://images.swarmada.wiki/images/moff-jerjerrod-commander.webp", cost=23})
 
 Republic = {
     factions={"Republic"}
 }
 --republic
-Card:new(Commander,Republic,{name="Bail Organa",  front="https://i.imgur.com/SBYa2yD.jpeg", cost=28})
-Card:new(Commander,Republic,{name="Obi-Wan Kenobi",  front=CUSTOM_ASSETS.."cards/.amg2025/obi-wan-commander.jpg", cost=22, aliases = {"Obi Wan Kenobi"}})
-Card:new(Commander,Republic,{name="Luminara Unduli",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/luminara-unduli-commander.jpg", cost=25})
-Card:new(Commander,Republic,{name="Admiral Tarkin",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-tarkin-commander.jpg", cost=30})
-Card:new(Commander,Republic,{name="Admiral Yularen", front=CUSTOM_ASSETS.."cards/.updated/upgrades/admiral-yularen-commander.jpg", cost=24})
-Card:new(Commander,Republic,{name="Plo Koon", front=CUSTOM_ASSETS.."cards/.updated/upgrades/plo-koon-commander.jpg", cost=26})
-Card:new(Commander,Republic,{name="Anakin Skywalker",  front=CUSTOM_ASSETS.."cards/.amg2025/anakin-commander.jpg", cost=27})
+Card:new(Commander,Republic,{name="Bail Organa",  front="https://images.swarmada.wiki/images/bail-organa-commander.webp", cost=28})
+Card:new(Commander,Republic,{name="Obi-Wan Kenobi",  front="https://images.swarmada.wiki/images/obi-wan-kenobi-commander-errata.webp", cost=22, aliases = {"Obi Wan Kenobi"}})
+Card:new(Commander,Republic,{name="Luminara Unduli",  front="https://images.swarmada.wiki/images/luminara-unduli-commander.webp", cost=25})
+Card:new(Commander,Republic,{name="Admiral Tarkin",  front="https://images.swarmada.wiki/images/admiral-tarkin-commander.webp", cost=30})
+Card:new(Commander,Republic,{name="Admiral Yularen", front="https://images.swarmada.wiki/images/admiral-yularen-commander.webp", cost=24})
+Card:new(Commander,Republic,{name="Plo Koon", front="https://images.swarmada.wiki/images/plo-koon-commander.webp", cost=26})
+Card:new(Commander,Republic,{name="Anakin Skywalker",  front="https://images.swarmada.wiki/images/anakin-skywalker-commander-errata.webp", cost=27})
 
 Separatist = {
     factions={"Separatist"}
 }
 --separatist
-Card:new(Commander,Separatist,{name="Count Dooku",  front=CUSTOM_ASSETS.."cards/.amg2025/dooku-commander.jpg", cost=27})
-Card:new(Commander,Separatist,{name="Kraken",  front="https://i.imgur.com/zLNsrOo.jpeg", cost=30})
-Card:new(Commander,Separatist,{name="General Grievous",  front=CUSTOM_ASSETS.."cards/.updated/upgrades/general-grievous-commander.jpg", cost=20})
-Card:new(Commander,Separatist,{name="Admiral Trench", front=CUSTOM_ASSETS.."cards/.amg2025/trench.jpg", cost=32})
-Card:new(Commander,Separatist,{name="Mar Tuuk", front=CUSTOM_ASSETS.."cards/.updated/upgrades/mar-tuuk-commander.jpg", cost=28})
-Card:new(Commander,Separatist,{name="TF-1726", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tf-1726-commander.jpg", cost=26})
+Card:new(Commander,Separatist,{name="Count Dooku",  front="https://images.swarmada.wiki/images/count-dooku-commander-errata.webp", cost=27})
+Card:new(Commander,Separatist,{name="Kraken",  front="https://images.swarmada.wiki/images/kraken-commander.webp", cost=30})
+Card:new(Commander,Separatist,{name="General Grievous",  front="https://images.swarmada.wiki/images/general-grievous-commander.webp", cost=20})
+Card:new(Commander,Separatist,{name="Admiral Trench", front="https://images.swarmada.wiki/images/admiral-trench-commander-errata.webp", cost=32})
+Card:new(Commander,Separatist,{name="Mar Tuuk", front="https://images.swarmada.wiki/images/mar-tuuk-commander.webp", cost=28})
+Card:new(Commander,Separatist,{name="TF-1726", front="https://images.swarmada.wiki/images/tf-1726-commander.webp", cost=26})
 
 ----#include defs/cards/commander
 ----#include defs/cards/defensive_retrofit
