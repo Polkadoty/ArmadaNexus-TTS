@@ -7413,15 +7413,15 @@ DefensiveRetrofit = {
 CloneWars = {
     factions={"Republic","Separatist"}
 }
-Card:new(DefensiveRetrofit,CloneWars,{name="Thermal Shields", front=CUSTOM_ASSETS.."cards/.updated/upgrades/thermal-shields.jpg", cost=5})
+Card:new(DefensiveRetrofit,CloneWars,{name="Thermal Shields", front="https://images.swarmada.wiki/images/thermal-shields.webp", cost=5})
 
-Card:new(DefensiveRetrofit,{name="Advanced Projectors", front="https://i.imgur.com/fREeP77.jpg", cost=6})
-Card:new(DefensiveRetrofit,{name="Cluster Bombs", front="https://i.imgur.com/Ngqc1s9.jpg", cost=5})
-Card:new(DefensiveRetrofit,{name="Early Warning System", front="https://i.imgur.com/PBh5gdb.jpg", cost=7})
-Card:new(DefensiveRetrofit,{name="Electronic Countermeasures", front=CUSTOM_ASSETS.."cards/.amg2025/ecm.jpg", cost=7})
-Card:new(DefensiveRetrofit,{name="Reactive Gunnery", front="https://i.imgur.com/rKp36un.jpg", cost=4})
-Card:new(DefensiveRetrofit,{name="Redundant Shields", front="https://i.imgur.com/3CmOh4B.jpg", cost=8})
-Card:new(DefensiveRetrofit,{name="Reinforced Blast Doors", front="https://i.imgur.com/OVWDAVK.jpg", cost=5})
+Card:new(DefensiveRetrofit,{name="Advanced Projectors", front="https://images.swarmada.wiki/images/advanced-projectors.webp", cost=6})
+Card:new(DefensiveRetrofit,{name="Cluster Bombs", front="https://images.swarmada.wiki/images/cluster-bombs.webp", cost=5})
+Card:new(DefensiveRetrofit,{name="Early Warning System", front="https://images.swarmada.wiki/images/early-warning-system.webp", cost=7})
+Card:new(DefensiveRetrofit,{name="Electronic Countermeasures", front="https://images.swarmada.wiki/images/electronic-countermeasures.webp", cost=7})
+Card:new(DefensiveRetrofit,{name="Reactive Gunnery", front="https://images.swarmada.wiki/images/reactive-gunnery.webp", cost=4})
+Card:new(DefensiveRetrofit,{name="Redundant Shields", front="https://images.swarmada.wiki/images/redundant-shields.webp", cost=8})
+Card:new(DefensiveRetrofit,{name="Reinforced Blast Doors", front="https://images.swarmada.wiki/images/reinforced-blast-doors.webp", cost=5})
 
 ----#include defs/cards/defensive_retrofit
 ----#include defs/cards/experimental_retrofit
@@ -7443,15 +7443,15 @@ FleetCommand = {
 CloneWars = {
     factions={"Republic","Separatist"}
 }
-Card:new(FleetCommand,{name="All Fighters, Follow Me!", front="https://i.imgur.com/pRqJy8Z.jpg", cost=5})
-Card:new(FleetCommand,{name="Entrapment Formation!", front="https://i.imgur.com/7ipOGiT.jpg", cost=5})
-Card:new(FleetCommand,{name="Intensify Firepower!", front="https://i.imgur.com/X4Pkv96.jpg", cost=6})
-Card:new(FleetCommand,{name="Shields to Maximum!", front="https://i.imgur.com/2I3JN7G.jpg", cost=6})
-Card:new(FleetCommand,{name="Take Evasive Action!", front="https://i.imgur.com/Grqrp2Y.jpg", cost=6})
+Card:new(FleetCommand,{name="All Fighters, Follow Me!", front="https://images.swarmada.wiki/images/all-fighters-follow-me.webp", cost=5})
+Card:new(FleetCommand,{name="Entrapment Formation!", front="https://images.swarmada.wiki/images/entrapment-formation.webp", cost=5})
+Card:new(FleetCommand,{name="Intensify Firepower!", front="https://images.swarmada.wiki/images/intensify-firepower.webp", cost=6})
+Card:new(FleetCommand,{name="Shields to Maximum!", front="https://images.swarmada.wiki/images/shields-to-maximum.webp", cost=6})
+Card:new(FleetCommand,{name="Take Evasive Action!", front="https://images.swarmada.wiki/images/take-evasive-action.webp", cost=6})
 
-Card:new(FleetCommand,Republic,{name="Mercy Mission", front=CUSTOM_ASSETS.."cards/.amg2025/mercy-mission.jpg", cost=5})
-Card:new(FleetCommand,Separatist,{name="Jedi Hostage", front="https://i.imgur.com/rtdHtYX.png", cost=3})
-Card:new(FleetCommand,CloneWars,{name="Hot Landing", front=CUSTOM_ASSETS.."cards/.updated/upgrades/hot-landing.jpg", cost=3})
+Card:new(FleetCommand,Republic,{name="Mercy Mission", front="https://images.swarmada.wiki/images/mercy-mission-errata.webp", cost=5})
+Card:new(FleetCommand,Separatist,{name="Jedi Hostage", front="https://images.swarmada.wiki/images/jedi-hostage.webp", cost=3})
+Card:new(FleetCommand,CloneWars,{name="Hot Landing", front="https://images.swarmada.wiki/images/hot-landing.webp", cost=3})
 
 ----#include defs/cards/fleet_command
 ----#include defs/cards/fleet_support
@@ -7459,13 +7459,13 @@ FleetSupport = {
     type="FleetSupport",
     back = CUSTOM_ASSETS.."cards/fleetsup/back.jpg"
 }
-Card:new(FleetSupport,{name="Bomber Command Center", front=CUSTOM_ASSETS.."cards/.amg2025/bcc.jpg", cost=8})
-Card:new(FleetSupport,{name="Comms Net", front="https://i.imgur.com/56EgYe9.jpg", cost=2})
-Card:new(FleetSupport,{name="Jamming Field", front=CUSTOM_ASSETS.."cards/.amg2025/jamming-field.jpg", cost=2})
-Card:new(FleetSupport,{name="Munitions Resupply", front="https://i.imgur.com/IEHG2uc.jpeg", cost=3})
-Card:new(FleetSupport,{name="Parts Resupply", front="https://i.imgur.com/trKTRFt.jpg", cost=3})
-Card:new(FleetSupport,{name="Repair Crews", front=CUSTOM_ASSETS.."cards/.amg2025/repair-crews.jpg", cost=3})
-Card:new(FleetSupport,{name="Slicer Tools", front=CUSTOM_ASSETS.."cards/.amg2025/slicer-tools.jpg", cost=7})
+Card:new(FleetSupport,{name="Bomber Command Center", front="https://images.swarmada.wiki/images/bomber-command-center.webp", cost=8})
+Card:new(FleetSupport,{name="Comms Net", front="https://images.swarmada.wiki/images/comms-net.webp", cost=2})
+Card:new(FleetSupport,{name="Jamming Field", front="https://images.swarmada.wiki/images/jamming-field.webp", cost=2})
+Card:new(FleetSupport,{name="Munitions Resupply", front="https://images.swarmada.wiki/images/munitions-resupply.webp", cost=3})
+Card:new(FleetSupport,{name="Parts Resupply", front="https://images.swarmada.wiki/images/parts-resupply.webp", cost=3})
+Card:new(FleetSupport,{name="Repair Crews", front="https://images.swarmada.wiki/images/repair-crews-errata.webp", cost=3})
+Card:new(FleetSupport,{name="Slicer Tools", front="https://images.swarmada.wiki/images/slicer-tools-errata.webp", cost=7})
 
 ----#include defs/cards/fleet_support
 ----#include defs/cards/ion_cannons
@@ -7473,15 +7473,15 @@ IonCannons = {
     type="IonCannons",
     back = CUSTOM_ASSETS.."cards/ion/back.jpg"
 }
-Card:new(IonCannons,{name="Heavy Ion Emplacements", front=CUSTOM_ASSETS.."cards/.amg2025/hie.jpg", cost=9})
-Card:new(IonCannons,{name="High-Capacity Ion Turbines", front=CUSTOM_ASSETS.."cards/.amg2025/hcit.jpg", cost=6})
-Card:new(IonCannons,{name="Ion Cannon Batteries", front="https://i.imgur.com/ygkNbuk.jpg", cost=5})
-Card:new(IonCannons,{name="Leading Shots", front=CUSTOM_ASSETS.."cards/.amg2025/leading-shots.jpg", cost=5})
+Card:new(IonCannons,{name="Heavy Ion Emplacements", front="https://images.swarmada.wiki/images/heavy-ion-emplacements.webp", cost=9})
+Card:new(IonCannons,{name="High-Capacity Ion Turbines", front="https://images.swarmada.wiki/images/high-capacity-ion-turbines-errata.webp", cost=6})
+Card:new(IonCannons,{name="Ion Cannon Batteries", front="https://images.swarmada.wiki/images/ion-cannon-batteries.webp", cost=5})
+Card:new(IonCannons,{name="Leading Shots", front="https://images.swarmada.wiki/images/leading-shots-errata.webp", cost=5})
 Card:new(IonCannons,{name="MS-1 Ion Cannons", front="https://i.imgur.com/WJpPDTH.jpg", cost=2, aliases={"MS-1 Ion Cannon"}})
-Card:new(IonCannons,{name="NK-7 Ion Cannons", front=CUSTOM_ASSETS.."cards/.amg2025/nk7-ion.jpg", cost=6})
-Card:new(IonCannons,{name="Overload Pulse", front=CUSTOM_ASSETS.."cards/.amg2025/overload-pulse.jpg", cost=6})
-Card:new(IonCannons,{name="SW-7 Ion Batteries", front="https://i.imgur.com/rL77eki.jpg", cost=5})
-Card:new(IonCannons,{name="Point Defense Ion Cannons", front=CUSTOM_ASSETS.."cards/.amg2025/pdic.jpg", cost=6})
+Card:new(IonCannons,{name="NK-7 Ion Cannons", front="https://images.swarmada.wiki/images/nk-7-ion-cannons-errata.webp", cost=6})
+Card:new(IonCannons,{name="Overload Pulse", front="https://images.swarmada.wiki/images/overload-pulse-errata.webp", cost=6})
+Card:new(IonCannons,{name="SW-7 Ion Batteries", front="https://images.swarmada.wiki/images/sw-7-ion-batteries.webp", cost=5})
+Card:new(IonCannons,{name="Point Defense Ion Cannons", front="https://images.swarmada.wiki/images/point-defense-ion-cannons-errata.webp", cost=6})
 
 ----#include defs/cards/ion_cannons
 ----#include defs/cards/offensive_retrofit
@@ -7490,27 +7490,27 @@ OffensiveRetrofit = {
     back = CUSTOM_ASSETS.."cards/offretro/back.jpg"
 }
 --republic
-Card:new(OffensiveRetrofit,Republic,{name="Hyperspace Rings", front="https://i.imgur.com/GCSZ4Wy.jpeg", cost=3})
-Card:new(OffensiveRetrofit,Republic,{name="SPHA-T", front=CUSTOM_ASSETS.."cards/.updated/upgrades/spha-t.jpg", cost=7})
+Card:new(OffensiveRetrofit,Republic,{name="Hyperspace Rings", front="https://images.swarmada.wiki/images/hyperspace-rings.webp", cost=3})
+Card:new(OffensiveRetrofit,Republic,{name="SPHA-T", front="https://images.swarmada.wiki/images/spha-t.webp", cost=7})
 
 --separatist
-Card:new(OffensiveRetrofit,Separatist,{name="Hyperwave Signal Boost", front="https://i.imgur.com/NJQuMpr.jpeg", cost=3})
-Card:new(OffensiveRetrofit,Separatist,{name="B2 Rocket Troopers", front=CUSTOM_ASSETS.."cards/.updated/upgrades/b2-rocket-troopers.jpg", cost=7})
+Card:new(OffensiveRetrofit,Separatist,{name="Hyperwave Signal Boost", front="https://images.swarmada.wiki/images/hyperwave-signal-boost.webp", cost=3})
+Card:new(OffensiveRetrofit,Separatist,{name="B2 Rocket Troopers", front="https://images.swarmada.wiki/images/b2-rocket-troopers.webp", cost=7})
 
 --generic
-Card:new(OffensiveRetrofit,{name="Advanced Transponder Net", front="https://i.imgur.com/vm6HKV1.jpg", cost=5}) --modification)
-Card:new(OffensiveRetrofit,{name="Boosted Comms", front="https://i.imgur.com/pq9oDK2.jpg", cost=4})
-Card:new(OffensiveRetrofit,{name="Disposable Capacitors", front="https://i.imgur.com/sujhLdx.jpg", cost=3})
-Card:new(OffensiveRetrofit,{name="Expanded Hangar Bay", front="https://i.imgur.com/uHXkIP2.jpg", cost=5})
-Card:new(OffensiveRetrofit,{name="Flag Bridge", front="https://i.imgur.com/qJksgmR.jpg", cost=0}) --modification)
-Card:new(OffensiveRetrofit,{name="Hardened Bulkheads", front="https://i.imgur.com/Cz9oxBt.jpg", cost=5})
-Card:new(OffensiveRetrofit,{name="Phylon Q7 Tractor Beams", front="https://i.imgur.com/x7VhJXM.jpg", cost=6})
-Card:new(OffensiveRetrofit,{name="Point-Defense Reroute", front="https://i.imgur.com/IAIYK4H.jpg", cost=5})
-Card:new(OffensiveRetrofit,{name="Proximity Mines", front="https://i.imgur.com/e93H1wf.jpg", cost=4})
-Card:new(OffensiveRetrofit,{name="Quad Laser Turrets", front="https://i.imgur.com/HKfQx0O.jpg", cost=5})
-Card:new(OffensiveRetrofit,{name="Rapid Launch Bays", front=CUSTOM_ASSETS.."cards/.amg2025/rlb.jpg", cost=6})
-Card:new(OffensiveRetrofit,{name="Reserve Hangar Deck", front=CUSTOM_ASSETS.."cards/.amg2025/rhd.jpg", cost=4})
-Card:new(OffensiveRetrofit,{name="Flak Guns", front=CUSTOM_ASSETS.."cards/.updated/upgrades/flak-guns.jpg", cost=3})
+Card:new(OffensiveRetrofit,{name="Advanced Transponder Net", front="https://images.swarmada.wiki/images/advanced-transponder-net.webp", cost=5}) --modification)
+Card:new(OffensiveRetrofit,{name="Boosted Comms", front="https://images.swarmada.wiki/images/boosted-comms.webp", cost=4})
+Card:new(OffensiveRetrofit,{name="Disposable Capacitors", front="https://images.swarmada.wiki/images/disposable-capacitors.webp", cost=3})
+Card:new(OffensiveRetrofit,{name="Expanded Hangar Bay", front="https://images.swarmada.wiki/images/expanded-hangar-bay.webp", cost=5})
+Card:new(OffensiveRetrofit,{name="Flag Bridge", front="https://images.swarmada.wiki/images/flag-bridge.webp", cost=0}) --modification)
+Card:new(OffensiveRetrofit,{name="Hardened Bulkheads", front="https://images.swarmada.wiki/images/hardened-bulkheads.webp", cost=5})
+Card:new(OffensiveRetrofit,{name="Phylon Q7 Tractor Beams", front="https://images.swarmada.wiki/images/phylon-q7-tractor-beams.webp", cost=6})
+Card:new(OffensiveRetrofit,{name="Point-Defense Reroute", front="https://images.swarmada.wiki/images/point-defense-reroute.webp", cost=5})
+Card:new(OffensiveRetrofit,{name="Proximity Mines", front="https://images.swarmada.wiki/images/proximity-mines.webp", cost=4})
+Card:new(OffensiveRetrofit,{name="Quad Laser Turrets", front="https://images.swarmada.wiki/images/quad-laser-turrets.webp", cost=5})
+Card:new(OffensiveRetrofit,{name="Rapid Launch Bays", front="https://images.swarmada.wiki/images/rapid-launch-bays-errata.webp", cost=6})
+Card:new(OffensiveRetrofit,{name="Reserve Hangar Deck", front="https://images.swarmada.wiki/images/reserve-hangar-deck-errata.webp", cost=4})
+Card:new(OffensiveRetrofit,{name="Flak Guns", front="https://images.swarmada.wiki/images/flak-guns.webp", cost=3})
 
 ----#include defs/cards/offensive_retrofit
 ----#include defs/cards/officer
@@ -7519,87 +7519,87 @@ Officer = {
     back = CUSTOM_ASSETS.."cards/officer/back.jpg"
 }
 -- Rebels
-Card:new(Officer,Rebel,{name="Adar Tallon", front="http://i.imgur.com/htbjXKu.jpg", cost=10})
-Card:new(Officer,Rebel,{name="Ahsoka Tano", front="http://i.imgur.com/Qu7q6hP.jpg", cost=2})
+Card:new(Officer,Rebel,{name="Adar Tallon", front="https://images.swarmada.wiki/images/adar-tallon-officer.webp", cost=10})
+Card:new(Officer,Rebel,{name="Ahsoka Tano", front="https://images.swarmada.wiki/images/ahsoka-tano-officer-republic.webp", cost=2})
 -- Card:new(Officer,Rebel,{name="Bail Organa", front=""})
-Card:new(Officer,Rebel,{name="Captain Rex", front="https://i.imgur.com/AEeHqHn.jpeg", cost=5})
-Card:new(Officer,Rebel,{name="Ezra Bridger", front="https://i.imgur.com/7K3X4Po.jpeg", cost=3})
-Card:new(Officer,Rebel,{name="General Draven", front="https://i.imgur.com/d3Qyp8a.jpeg", cost=3})
-Card:new(Officer,Rebel,{name="Kyrsta Agate", front="https://i.imgur.com/Fwdfoev.jpeg", cost=5})
-Card:new(Officer,Rebel,{name="Lando Calrissian", front="https://i.imgur.com/fw8Qm7S.jpeg", cost=4})
-Card:new(Officer,Rebel,{name="Leia Organa", front="https://i.imgur.com/bJcJynH.jpg", cost=3})
-Card:new(Officer,Rebel,{name="Major Derlin", front="https://i.imgur.com/Q8rOdcb.jpeg", cost=7})
-Card:new(Officer,Rebel,{name="Raymus Antilles", front="https://i.imgur.com/1Ae4QfL.jpg", cost=7, aliases={"Ray Antilles"}})
-Card:new(Officer,Rebel,{name="Sabine Wren", front="https://i.imgur.com/s6dTW50.jpg", cost=4})
-Card:new(Officer,Rebel,{name="Toryn Farr", front="https://i.imgur.com/kjyMTLq.jpeg", cost=7})
-Card:new(Officer,Rebel,{name="Walex Blissex", front="https://i.imgur.com/X0OgdJp.jpeg", cost=5})
-Card:new(Officer,Rebel,{name="Wedge Antilles", front="https://i.imgur.com/OSOELtb.jpeg", cost=4})
+Card:new(Officer,Rebel,{name="Captain Rex", front="https://images.swarmada.wiki/images/captain-rex-officer.webp", cost=5})
+Card:new(Officer,Rebel,{name="Ezra Bridger", front="https://images.swarmada.wiki/images/ezra-bridger-officer.webp", cost=3})
+Card:new(Officer,Rebel,{name="General Draven", front="https://images.swarmada.wiki/images/general-draven-officer.webp", cost=3})
+Card:new(Officer,Rebel,{name="Kyrsta Agate", front="https://images.swarmada.wiki/images/kyrsta-agate-officer.webp", cost=5})
+Card:new(Officer,Rebel,{name="Lando Calrissian", front="https://images.swarmada.wiki/images/lando-calrissian-officer.webp", cost=4})
+Card:new(Officer,Rebel,{name="Leia Organa", front="https://images.swarmada.wiki/images/leia-organa-officer.webp", cost=3})
+Card:new(Officer,Rebel,{name="Major Derlin", front="https://images.swarmada.wiki/images/major-derlin-officer.webp", cost=7})
+Card:new(Officer,Rebel,{name="Raymus Antilles", front="https://images.swarmada.wiki/images/raymus-antilles-officer.webp", cost=7, aliases={"Ray Antilles"}})
+Card:new(Officer,Rebel,{name="Sabine Wren", front="https://images.swarmada.wiki/images/sabine-wren-officer.webp", cost=4})
+Card:new(Officer,Rebel,{name="Toryn Farr", front="https://images.swarmada.wiki/images/toryn-farr-officer.webp", cost=7})
+Card:new(Officer,Rebel,{name="Walex Blissex", front="https://images.swarmada.wiki/images/walex-blissex-officer.webp", cost=5})
+Card:new(Officer,Rebel,{name="Wedge Antilles", front="https://images.swarmada.wiki/images/wedge-antilles-officer.webp", cost=4})
 
 --Imperial
-Card:new(Officer,Empire,{name="Admiral Chiraneau", front="https://i.imgur.com/MnfDupy.jpg", cost=10})
-Card:new(Officer,Empire,{name="Admiral Montferrat", front="https://i.imgur.com/Y7lJDlF.jpg", cost=5})
-Card:new(Officer,Empire,{name="Admiral Ozzel", front="https://i.imgur.com/hPkP4Nf.jpeg", cost=2})
-Card:new(Officer,Empire,{name="Admiral Titus", front="https://i.imgur.com/Rm0hVoL.jpeg", cost=2})
-Card:new(Officer,Empire,{name="Agent Kallus", front="https://i.imgur.com/Wuz7UVA.jpeg", cost=3})
-Card:new(Officer,Empire,{name="Captain Brunson", front=CUSTOM_ASSETS.."cards/.amg2025/brunson.jpg", cost=9})
-Card:new(Officer,Empire,{name="Captain Needa", front="https://i.imgur.com/qeUR8rK.jpeg", cost=2})
-Card:new(Officer,Empire,{name="Commandant Aresko", front="https://i.imgur.com/3md8wnE.jpeg", cost=7})
-Card:new(Officer,Empire,{name="Commander Beck", front="https://i.imgur.com/VPsl8a9.jpeg", cost=3})
-Card:new(Officer,Empire,{name="Commander Gherant", front="https://i.imgur.com/IAt9Puz.jpeg", cost=2})
-Card:new(Officer,Empire,{name="Commander Vanto", front="https://i.imgur.com/vyMS9Vl.jpeg", cost=7})
-Card:new(Officer,Empire,{name="Commander Woldar", front="https://i.imgur.com/nsUrWcO.jpeg", cost=4})
-Card:new(Officer,Empire,{name="Darth Vader", front=CUSTOM_ASSETS.."cards/.amg2025/vader-officer.jpg", cost=4})
-Card:new(Officer,Empire,{name="Director Isard", front="https://i.imgur.com/2OKtNz1.jpg", cost=3})
-Card:new(Officer,Empire,{name="Director Krennic", front="https://i.imgur.com/MWbTBAg.jpg", cost=8})
-Card:new(Officer,Empire,{name="Emperor Palpatine", front="https://i.imgur.com/SAJT8HA.jpg", cost=3})
--- Card:new(Officer,Empire,{name="Governor Pryce", front=""})
-Card:new(Officer,Empire,{name="Iden Versio", front="https://i.imgur.com/GspJT2q.jpg", cost=6})
-Card:new(Officer,Empire,{name="Instructor Goran", front="https://i.imgur.com/ZpxS19K.jpg", cost=7})
-Card:new(Officer,Empire,{name="Lira Wessex", front="https://i.imgur.com/A9ZQ2mz.jpg", cost=2})
-Card:new(Officer,Empire,{name="Minister Tua", front="https://i.imgur.com/oBLlFVB.jpg", cost=2})
-Card:new(Officer,Empire,{name="Reeva Demesne", front="https://i.imgur.com/hPWCUbI.jpg", cost=4})
-Card:new(Officer,Empire,{name="Taskmaster Grint", front=CUSTOM_ASSETS.."cards/.amg2025/grint.jpg", cost=5})
-Card:new(Officer,Empire,{name="The Grand Inquisitor", front="https://i.imgur.com/xzcI49o.jpg", cost=4})
+Card:new(Officer,Empire,{name="Admiral Chiraneau", front="https://images.swarmada.wiki/images/admiral-chiraneau-officer.webp", cost=10})
+Card:new(Officer,Empire,{name="Admiral Montferrat", front="https://images.swarmada.wiki/images/admiral-montferrat-officer.webp", cost=5})
+Card:new(Officer,Empire,{name="Admiral Ozzel", front="https://images.swarmada.wiki/images/admiral-ozzel-officer.webp", cost=2})
+Card:new(Officer,Empire,{name="Admiral Titus", front="https://images.swarmada.wiki/images/admiral-titus-officer.webp", cost=2})
+Card:new(Officer,Empire,{name="Agent Kallus", front="https://images.swarmada.wiki/images/agent-kallus-officer.webp", cost=3})
+Card:new(Officer,Empire,{name="Captain Brunson", front="https://images.swarmada.wiki/images/captain-brunson-officer.webp", cost=9})
+Card:new(Officer,Empire,{name="Captain Needa", front="https://images.swarmada.wiki/images/captain-needa-officer.webp", cost=2})
+Card:new(Officer,Empire,{name="Commandant Aresko", front="https://images.swarmada.wiki/images/commandant-aresko-officer.webp", cost=7})
+Card:new(Officer,Empire,{name="Commander Beck", front="https://images.swarmada.wiki/images/commander-beck-officer.webp", cost=3})
+Card:new(Officer,Empire,{name="Commander Gherant", front="https://images.swarmada.wiki/images/commander-gherant-officer.webp", cost=2})
+Card:new(Officer,Empire,{name="Commander Vanto", front="https://images.swarmada.wiki/images/commander-vanto-officer.webp", cost=7})
+Card:new(Officer,Empire,{name="Commander Woldar", front="https://images.swarmada.wiki/images/commander-woldar-officer.webp", cost=4})
+Card:new(Officer,Empire,{name="Darth Vader", front="https://images.swarmada.wiki/images/darth-vader-officer-errata.webp", cost=4})
+Card:new(Officer,Empire,{name="Director Isard", front="https://images.swarmada.wiki/images/director-isard-officer.webp", cost=3})
+Card:new(Officer,Empire,{name="Director Krennic", front="https://images.swarmada.wiki/images/director-krennic-officer.webp", cost=8})
+Card:new(Officer,Empire,{name="Emperor Palpatine", front="https://images.swarmada.wiki/images/emperor-palpatine-officer.webp", cost=3})
+-- Card:new(Officer,Empire,{name="Governor Pryce", front="https://images.swarmada.wiki/images/governor-pryce-officer-errata.webp"})
+Card:new(Officer,Empire,{name="Iden Versio", front="https://images.swarmada.wiki/images/iden-versio-officer.webp", cost=6})
+Card:new(Officer,Empire,{name="Instructor Goran", front="https://images.swarmada.wiki/images/instructor-goran-officer.webp", cost=7})
+Card:new(Officer,Empire,{name="Lira Wessex", front="https://images.swarmada.wiki/images/lira-wessex-officer.webp", cost=2})
+Card:new(Officer,Empire,{name="Minister Tua", front="https://images.swarmada.wiki/images/minister-tua-officer.webp", cost=2})
+Card:new(Officer,Empire,{name="Reeva Demesne", front="https://images.swarmada.wiki/images/reeva-demesne-officer.webp", cost=4})
+Card:new(Officer,Empire,{name="Taskmaster Grint", front="https://images.swarmada.wiki/images/taskmaster-grint-officer.webp", cost=5})
+Card:new(Officer,Empire,{name="The Grand Inquisitor", front="https://images.swarmada.wiki/images/the-grand-inquisitor-officer.webp", cost=4})
 Card:new(Officer,Empire,{name="Wulff Yularen", front="https://i.imgur.com/dvWsOm8.jpg", cost=7})
-Card:new(Officer,Empire,{name="Governor Pryce", front=CUSTOM_ASSETS.."cards/.amg2025/pryce.jpg", cost=6})
+Card:new(Officer,Empire,{name="Governor Pryce", front="https://images.swarmada.wiki/images/governor-pryce-officer-errata.webp", cost=6})
 
 --republic
-Card:new(Officer,Republic,{name="Clone Captain Zak", front="https://i.imgur.com/A1FePh3.jpeg", cost=5})
-Card:new(Officer,Republic,{name="Clone Navigation Officer", front="https://i.imgur.com/Mt2SoH7.jpg", cost=4})
-Card:new(Officer,Republic,{name="Barriss Offee", front="https://i.imgur.com/TK5hk9G.png", cost=6})
-Card:new(Officer,Republic,{name="Adi Gallia", front="https://i.imgur.com/NtfCKwG.jpeg", cost=3})
-Card:new(Officer,Republic,{name="Clone Captain Silver", front="https://i.imgur.com/VzHNQTY.jpg", cost=4})
+Card:new(Officer,Republic,{name="Clone Captain Zak", front="https://images.swarmada.wiki/images/clone-captain-zak-officer.webp", cost=5})
+Card:new(Officer,Republic,{name="Clone Navigation Officer", front="https://images.swarmada.wiki/images/clone-navigation-officer.webp", cost=4})
+Card:new(Officer,Republic,{name="Barriss Offee", front="https://images.swarmada.wiki/images/barriss-offee-officer.webp", cost=6})
+Card:new(Officer,Republic,{name="Adi Gallia", front="https://images.swarmada.wiki/images/adi-gallia-officer.webp", cost=3})
+Card:new(Officer,Republic,{name="Clone Captain Silver", front="https://images.swarmada.wiki/images/clone-captain-silver-officer.webp", cost=4})
 Card:new(Officer,Republic,{name="Clone Cmdr. Wolffe", front=CUSTOM_ASSETS.."cards/.amg2025/wolffe.jpg", cost=6, aliases={"Clone Commander Wolffe"}})
-Card:new(Officer,Republic,{name="Ahsoka Tano", front="https://i.imgur.com/SVAWnrZ.jpeg", cost=6})
+Card:new(Officer,Republic,{name="Ahsoka Tano", front="https://images.swarmada.wiki/images/ahsoka-tano-officer-republic.webp", cost=6})
 
 --separatist
-Card:new(Officer,Separatist,{name="Rune Haako", front="https://i.imgur.com/aEgMSwp.jpg", cost=4})
-Card:new(Officer,Separatist,{name="Wat Tambor", front=CUSTOM_ASSETS.."cards/.amg2025/tambor-officer.jpg", cost=9})
-Card:new(Officer,Separatist,{name="T-Series Tactical Droid", front="https://i.imgur.com/8H1wATK.jpeg", cost=4})
-Card:new(Officer,Separatist,{name="Shu Mai", front=CUSTOM_ASSETS.."cards/.updated/upgrades/shu-mai-officer.jpg", cost=4})
-Card:new(Officer,Separatist,{name="TI-99", front=CUSTOM_ASSETS.."cards/.updated/upgrades/ti-99-officer.jpg", cost=4})
-Card:new(Officer,Separatist,{name="Tikkes", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tikkes-officer.jpg", cost=2})
-Card:new(Officer,Separatist,{name="San Hill", front=CUSTOM_ASSETS.."cards/.amg2025/san-hill.jpg", cost=3})
-Card:new(Officer,Separatist,{name="Passel Argente", front=CUSTOM_ASSETS.."cards/.updated/upgrades/passel-argente-officer.jpg", cost=6})
-Card:new(Officer,Separatist,{name="Asajj Ventress", front=CUSTOM_ASSETS.."cards/.amg2025/ventress-officer.jpg", cost=2})
+Card:new(Officer,Separatist,{name="Rune Haako", front="https://images.swarmada.wiki/images/rune-haako-officer.webp", cost=4})
+Card:new(Officer,Separatist,{name="Wat Tambor", front="https://images.swarmada.wiki/images/wat-tambor-officer.webp", cost=9})
+Card:new(Officer,Separatist,{name="T-Series Tactical Droid", front="https://images.swarmada.wiki/images/t-series-tactical-droid-officer.webp", cost=4})
+Card:new(Officer,Separatist,{name="Shu Mai", front="https://images.swarmada.wiki/images/shu-mai-officer.webp", cost=4})
+Card:new(Officer,Separatist,{name="TI-99", front="https://images.swarmada.wiki/images/ti-99-officer.webp", cost=4})
+Card:new(Officer,Separatist,{name="Tikkes", front="https://images.swarmada.wiki/images/tikkes-officer.webp", cost=2})
+Card:new(Officer,Separatist,{name="San Hill", front="https://images.swarmada.wiki/images/san-hill-officer-errata.webp", cost=3})
+Card:new(Officer,Separatist,{name="Passel Argente", front="https://images.swarmada.wiki/images/passel-argente-officer.webp", cost=6})
+Card:new(Officer,Separatist,{name="Asajj Ventress", front="https://images.swarmada.wiki/images/asajj-ventress-officer-errata.webp", cost=2})
 
 --generic
-Card:new(Officer,{name="Chart Officer", front="https://i.imgur.com/HVWr1Ru.jpg", cost=2})
-Card:new(Officer,{name="Damage Control Officer", front=CUSTOM_ASSETS.."cards/.amg2025/dco.jpg", cost=3})
-Card:new(Officer,{name="Defense Liaison", front="https://i.imgur.com/FqhDYBp.jpg", cost=3})
-Card:new(Officer,{name="Engineering Captain", front="https://i.imgur.com/gOLEgHZ.jpg", cost=6})
-Card:new(Officer,{name="Expert Shield Tech", front="https://i.imgur.com/bB1tz0h.jpg", cost=5})
-Card:new(Officer,{name="Flight Commander", front="https://i.imgur.com/IqzvNR7.jpg", cost=3})
-Card:new(Officer,{name="Hondo Ohnaka", front="https://i.imgur.com/ka4vK2h.jpg", cost=2})
-Card:new(Officer,{name="Intel Officer", front="https://i.imgur.com/VvdtHvv.jpg", cost=7})
-Card:new(Officer,{name="Navigation Officer", front="https://i.imgur.com/VKrSVRL.jpg", cost=6})
-Card:new(Officer,{name="Skilled First Officer", front="https://i.imgur.com/6ipZf4i.jpg", cost=1})
+Card:new(Officer,{name="Chart Officer", front="https://images.swarmada.wiki/images/chart-officer.webp", cost=2})
+Card:new(Officer,{name="Damage Control Officer", front="https://images.swarmada.wiki/images/damage-control-officer-errata.webp", cost=3})
+Card:new(Officer,{name="Defense Liaison", front="https://images.swarmada.wiki/images/defense-liaison-officer.webp", cost=3})
+Card:new(Officer,{name="Engineering Captain", front="https://images.swarmada.wiki/images/engineering-captain-officer.webp", cost=6})
+Card:new(Officer,{name="Expert Shield Tech", front="https://images.swarmada.wiki/images/expert-shield-tech-officer.webp", cost=5})
+Card:new(Officer,{name="Flight Commander", front="https://images.swarmada.wiki/images/flight-commander-officer.webp", cost=3})
+Card:new(Officer,{name="Hondo Ohnaka", front="https://images.swarmada.wiki/images/hondo-ohnaka-officer.webp", cost=2})
+Card:new(Officer,{name="Intel Officer", front="https://images.swarmada.wiki/images/intel-officer.webp", cost=7})
+Card:new(Officer,{name="Navigation Officer", front="https://images.swarmada.wiki/images/navigation-officer.webp", cost=6})
+Card:new(Officer,{name="Skilled First Officer", front="https://images.swarmada.wiki/images/skilled-first-officer.webp", cost=1})
 -- Card:new(Officer,{name="Strategic Adviser", front=""})
-Card:new(Officer,{name="Support Officer", front=CUSTOM_ASSETS.."cards/.amg2025/support-officer.jpg", cost=2})
-Card:new(Officer,{name="Tactical Expert", front="https://i.imgur.com/aAvvHM6.jpg", cost=6})
-Card:new(Officer,{name="Veteran Captain", front=CUSTOM_ASSETS.."cards/.amg2025/veteran-captain.jpg", cost=2})
-Card:new(Officer,{name="Weapons Liaison", front="https://i.imgur.com/XxbObBi.jpg", cost=3})
-Card:new(Officer,{name="Wing Commander", front="https://i.imgur.com/FjHlkZC.jpg", cost=6})
+Card:new(Officer,{name="Support Officer", front="https://images.swarmada.wiki/images/support-officer-errata.webp", cost=2})
+Card:new(Officer,{name="Tactical Expert", front="https://images.swarmada.wiki/images/tactical-expert-officer.webp", cost=6})
+Card:new(Officer,{name="Veteran Captain", front="https://images.swarmada.wiki/images/veteran-captain-officer-errata.webp", cost=2})
+Card:new(Officer,{name="Weapons Liaison", front="https://images.swarmada.wiki/images/weapons-liaison-officer.webp", cost=3})
+Card:new(Officer,{name="Wing Commander", front="https://images.swarmada.wiki/images/wing-commander-officer.webp", cost=6})
 
 ----#include defs/cards/officer
 ----#include defs/cards/ordnance
@@ -7607,14 +7607,14 @@ Ordnance = {
     type="Ordnance",
     back = CUSTOM_ASSETS.."cards/ord/back.jpg"
 }
-Card:new(Ordnance,{name="Assault Concussion Missiles", front=CUSTOM_ASSETS.."cards/.amg2025/acm.jpg", cost=5})
-Card:new(Ordnance,{name="Assault Proton Torpedoes", front=CUSTOM_ASSETS.."cards/.amg2025/apt.jpg", cost=4})
-Card:new(Ordnance,{name="Expanded Launchers", front=CUSTOM_ASSETS.."cards/.amg2025/expanded-launchers.jpg", cost=8})
-Card:new(Ordnance,{name="External Racks", front=CUSTOM_ASSETS.."cards/.amg2025/external-racks.jpg", cost=4})
-Card:new(Ordnance,{name="Flechette Torpedoes", front="https://i.imgur.com/ENBODz0.jpg", cost=3})
-Card:new(Ordnance,{name="Ordnance Pods", front="https://i.imgur.com/bxshsaj.jpg", cost=3})
-Card:new(Ordnance,{name="Rapid Reload", front=CUSTOM_ASSETS.."cards/.amg2025/rapid-reload.jpg", cost=4})
-Card:new(Ordnance,{name="Wide-Area Barrage", front="https://i.imgur.com/HA96Xmz.jpg", cost=2})
+Card:new(Ordnance,{name="Assault Concussion Missiles", front="https://images.swarmada.wiki/images/assault-concussion-missiles.webp", cost=5})
+Card:new(Ordnance,{name="Assault Proton Torpedoes", front="https://images.swarmada.wiki/images/assault-proton-torpedoes.webp", cost=4})
+Card:new(Ordnance,{name="Expanded Launchers", front="https://images.swarmada.wiki/images/expanded-launchers-errata.webp", cost=8})
+Card:new(Ordnance,{name="External Racks", front="https://images.swarmada.wiki/images/external-racks.webp", cost=4})
+Card:new(Ordnance,{name="Flechette Torpedoes", front="https://images.swarmada.wiki/images/flechette-torpedoes.webp", cost=3})
+Card:new(Ordnance,{name="Ordnance Pods", front="https://images.swarmada.wiki/images/ordnance-pods.webp", cost=3})
+Card:new(Ordnance,{name="Rapid Reload", front="https://images.swarmada.wiki/images/rapid-reload-errata.webp", cost=4})
+Card:new(Ordnance,{name="Wide-Area Barrage", front="https://images.swarmada.wiki/images/wide-area-barrage.webp", cost=2})
 
 ----#include defs/cards/ordnance
 ----#include defs/cards/superweapon
@@ -7633,16 +7633,16 @@ SupportTeam = {
     back = CUSTOM_ASSETS.."cards/support/back.jpg"
 }
 --separatist
-Card:new(SupportTeam,Separatist,{name="Battle Droid Reserves", front="https://i.imgur.com/ffhsdrO.jpeg", cost=4})
+Card:new(SupportTeam,Separatist,{name="Battle Droid Reserves", front="https://images.swarmada.wiki/images/battle-droid-reserves.webp", cost=4})
 
 --generic
-Card:new(SupportTeam,{name="Auxiliary Shields Team", front=CUSTOM_ASSETS.."cards/.amg2025/ast.jpg", cost=3})
-Card:new(SupportTeam,{name="Engine Techs", front=CUSTOM_ASSETS.."cards/.amg2025/engine-techs.jpg", cost=8})
-Card:new(SupportTeam,{name="Engineering Team", front=CUSTOM_ASSETS.."cards/.amg2025/engineering-team.jpg", cost=3})
-Card:new(SupportTeam,{name="Fighter Coordination Team", front="https://i.imgur.com/wKI96Sb.jpg", cost=3})
-Card:new(SupportTeam,{name="Medical Team", front="https://i.imgur.com/jwf6kLG.jpg", cost=1})
-Card:new(SupportTeam,{name="Nav Team", front=CUSTOM_ASSETS.."cards/.amg2025/navteam.jpg", cost=4})
-Card:new(SupportTeam,{name="Projection Experts", front="https://i.imgur.com/0hPAHTI.jpg", cost=6})
+Card:new(SupportTeam,{name="Auxiliary Shields Team", front="https://images.swarmada.wiki/images/auxiliary-shields-team.webp", cost=3})
+Card:new(SupportTeam,{name="Engine Techs", front="https://images.swarmada.wiki/images/engine-techs.webp", cost=8})
+Card:new(SupportTeam,{name="Engineering Team", front="https://images.swarmada.wiki/images/engineering-team-errata.webp", cost=3})
+Card:new(SupportTeam,{name="Fighter Coordination Team", front="https://images.swarmada.wiki/images/fighter-coordination-team.webp", cost=3})
+Card:new(SupportTeam,{name="Medical Team", front="https://images.swarmada.wiki/images/medical-team.webp", cost=1})
+Card:new(SupportTeam,{name="Nav Team", front="https://images.swarmada.wiki/images/nav-team-errata.webp", cost=4})
+Card:new(SupportTeam,{name="Projection Experts", front="https://images.swarmada.wiki/images/projection-experts.webp", cost=6})
 
 ----#include defs/cards/support_team
 ----#include defs/cards/title
@@ -7651,117 +7651,117 @@ Title = {
     back = CUSTOM_ASSETS.."cards/title/back.jpg"
 }
 --rebel
-Card:new(Title,Rebel,{name="Bright Hope", front="https://i.imgur.com/ppRWBhH.jpg", cost=2})
-Card:new(Title,Rebel,{name="Quantum Storm", front="https://i.imgur.com/Zvki0aa.jpg", cost=1})
+Card:new(Title,Rebel,{name="Bright Hope", front="https://images.swarmada.wiki/images/bright-hope-title.webp", cost=2})
+Card:new(Title,Rebel,{name="Quantum Storm", front="https://images.swarmada.wiki/images/quantum-storm-title.webp", cost=1})
 
-Card:new(Title,Rebel,{name="Dodonna's Pride", front=CUSTOM_ASSETS.."cards/.amg2025/dodonna-pride.jpg", cost=4, aliases={"Dodonnas Pride"}})
-Card:new(Title,Rebel,{name="Jaina's Light", front=CUSTOM_ASSETS.."cards/.amg2025/jainas-light.jpg", cost=5, aliases={"Jainas Light"}})
-Card:new(Title,Rebel,{name="Liberator", front="https://i.imgur.com/zPLLjv2.jpg", cost=2})
-Card:new(Title,Rebel,{name="Tantive IV", front="https://i.imgur.com/THWav9j.jpg", cost=3})
+Card:new(Title,Rebel,{name="Dodonna's Pride", front="https://images.swarmada.wiki/images/dodonnas-pride-title-errata.webp", cost=4, aliases={"Dodonnas Pride"}})
+Card:new(Title,Rebel,{name="Jaina's Light", front="https://images.swarmada.wiki/images/jainas-light-title-errata.webp", cost=5, aliases={"Jainas Light"}})
+Card:new(Title,Rebel,{name="Liberator", front="https://images.swarmada.wiki/images/liberator-title.webp", cost=2})
+Card:new(Title,Rebel,{name="Tantive IV", front="https://images.swarmada.wiki/images/tantive-iv-title.webp", cost=3})
 
-Card:new(Title,Rebel,{name="Garel's Honor", front="https://i.imgur.com/tl2VV0J.jpg", cost=4, aliases={"Garels Honor"}})
-Card:new(Title,Rebel,{name="Task Force Antilles", front="https://i.imgur.com/NWw9f29.jpg", cost=3})
-Card:new(Title,Rebel,{name="Task Force Organa", front="https://i.imgur.com/FwbIwpU.jpg", cost=1})
+Card:new(Title,Rebel,{name="Garel's Honor", front="https://images.swarmada.wiki/images/garels-honor-title.webp", cost=4, aliases={"Garels Honor"}})
+Card:new(Title,Rebel,{name="Task Force Antilles", front="https://images.swarmada.wiki/images/task-force-antilles-title.webp", cost=3})
+Card:new(Title,Rebel,{name="Task Force Organa", front="https://images.swarmada.wiki/images/task-force-organa-title.webp", cost=1})
 
-Card:new(Title,Rebel,{name="Redemption", front=CUSTOM_ASSETS.."cards/.amg2025/redemeption.jpg", cost=5})
-Card:new(Title,Rebel,{name="Salvation", front="https://i.imgur.com/xjIXfVD.jpg", cost=7})
-Card:new(Title,Rebel,{name="Vanguard", front="https://i.imgur.com/4a6la8P.jpg", cost=4})
-Card:new(Title,Rebel,{name="Yavaris", front=CUSTOM_ASSETS.."cards/.amg2025/yavaris.jpg", cost=5})
+Card:new(Title,Rebel,{name="Redemption", front="https://images.swarmada.wiki/images/redemption-title-errata.webp", cost=5})
+Card:new(Title,Rebel,{name="Salvation", front="https://images.swarmada.wiki/images/salvation-title.webp", cost=7})
+Card:new(Title,Rebel,{name="Vanguard", front="https://images.swarmada.wiki/images/vanguard-title.webp", cost=4})
+Card:new(Title,Rebel,{name="Yavaris", front="https://images.swarmada.wiki/images/yavaris-title.webp", cost=5})
 
-Card:new(Title,Rebel,{name="Phoenix Home", front="https://i.imgur.com/4pKVy0F.jpg", cost=3})
+Card:new(Title,Rebel,{name="Phoenix Home", front="https://images.swarmada.wiki/images/phoenix-home-title.webp", cost=3})
 
-Card:new(Title,Rebel,{name="Admonition", front=CUSTOM_ASSETS.."cards/.amg2025/admonition.jpg", cost=10})
-Card:new(Title,Rebel,{name="Foresight", front=CUSTOM_ASSETS.."cards/.amg2025/foresight.jpg", cost=10})
+Card:new(Title,Rebel,{name="Admonition", front="https://images.swarmada.wiki/images/admonition-title-errata.webp", cost=10})
+Card:new(Title,Rebel,{name="Foresight", front="https://images.swarmada.wiki/images/foresight-title-errata.webp", cost=10})
 
-Card:new(Title,Rebel,{name="Gallant Haven", front=CUSTOM_ASSETS.."cards/.amg2025/gallant-haven.jpg", cost=8})
-Card:new(Title,Rebel,{name="Paragon", front="https://i.imgur.com/1lMOUvu.jpg", cost=5})
+Card:new(Title,Rebel,{name="Gallant Haven", front="https://images.swarmada.wiki/images/gallant-haven-title.webp", cost=8})
+Card:new(Title,Rebel,{name="Paragon", front="https://images.swarmada.wiki/images/paragon-title.webp", cost=5})
 
-Card:new(Title,Rebel,{name="Defiance", front="https://i.imgur.com/cBm6bOA.jpg", cost=5})
-Card:new(Title,Rebel,{name="Home One", front=CUSTOM_ASSETS.."cards/.amg2025/homeone.jpg", cost=5})
-Card:new(Title,Rebel,{name="Independence", front="https://i.imgur.com/eeJ4K4e.jpg", cost=8})
+Card:new(Title,Rebel,{name="Defiance", front="https://images.swarmada.wiki/images/defiance-title.webp", cost=5})
+Card:new(Title,Rebel,{name="Home One", front="https://images.swarmada.wiki/images/home-one-title-errata.webp", cost=5})
+Card:new(Title,Rebel,{name="Independence", front="https://images.swarmada.wiki/images/independence-title.webp", cost=8})
 
-Card:new(Title,Rebel,{name="Endeavor", front="https://i.imgur.com/YQO9jve.jpg", cost=4})
-Card:new(Title,Rebel,{name="Liberty", front="https://i.imgur.com/gnoxT5J.jpg", cost=3})
-Card:new(Title,Rebel,{name="Mon Karren", front=CUSTOM_ASSETS.."cards/.amg2025/mon-karren.jpg", cost=6})
+Card:new(Title,Rebel,{name="Endeavor", front="https://images.swarmada.wiki/images/endeavor-title.webp", cost=4})
+Card:new(Title,Rebel,{name="Liberty", front="https://images.swarmada.wiki/images/liberty-title.webp", cost=3})
+Card:new(Title,Rebel,{name="Mon Karren", front="https://images.swarmada.wiki/images/mon-karren-title.webp", cost=6})
 
-Card:new(Title,Rebel,{name="Aspiration", front="https://i.imgur.com/O0n3gY9.jpg", cost=3})
-Card:new(Title,Rebel,{name="Profundity", front="https://i.imgur.com/P0LQ9NC.jpg", cost=7})
+Card:new(Title,Rebel,{name="Aspiration", front="https://images.swarmada.wiki/images/aspiration-title.webp", cost=3})
+Card:new(Title,Rebel,{name="Profundity", front="https://images.swarmada.wiki/images/profundity-title.webp", cost=7})
 
-Card:new(Title,Rebel,{name="Mon Calamari Exodus Fleet", front="https://i.imgur.com/Gi02xgi.jpg", cost=5})
+Card:new(Title,Rebel,{name="Mon Calamari Exodus Fleet", front="https://images.swarmada.wiki/images/mon-calamari-exodus-fleet-title.webp", cost=5})
 
-Card:new(Title,Rebel,{name="Amity", front="https://i.imgur.com/BcOXgXM.jpg", cost=6})
-Card:new(Title,Rebel,{name="Concord", front="https://i.imgur.com/76LdzqR.jpg", cost=12})
-Card:new(Title,Rebel,{name="Unity", front="https://i.imgur.com/RP1KPrl.jpg", cost=10})
+Card:new(Title,Rebel,{name="Amity", front="https://images.swarmada.wiki/images/amity-title.webp", cost=6})
+Card:new(Title,Rebel,{name="Concord", front="https://images.swarmada.wiki/images/concord-title.webp", cost=12})
+Card:new(Title,Rebel,{name="Unity", front="https://images.swarmada.wiki/images/unity-title.webp", cost=10})
 --imperial
-Card:new(Title,Empire,{name="Suppressor", front="https://i.imgur.com/11G4bE0.jpg", cost=4})
-Card:new(Title,Empire,{name="Vector", front="https://i.imgur.com/h7NhmMa.jpg", cost=2})
+Card:new(Title,Empire,{name="Suppressor", front="https://images.swarmada.wiki/images/suppressor-title.webp", cost=4})
+Card:new(Title,Empire,{name="Vector", front="https://images.swarmada.wiki/images/vector-title.webp", cost=2})
 
-Card:new(Title,Empire,{name="Impetuous", front="https://i.imgur.com/3fOmzlk.jpg", cost=4})
-Card:new(Title,Empire,{name="Instigator", front="https://i.imgur.com/dht3fJ6.jpg", cost=4})
-Card:new(Title,Empire,{name="Corvus", front="https://i.imgur.com/huKZyhu.jpg", cost=2})
+Card:new(Title,Empire,{name="Impetuous", front="https://images.swarmada.wiki/images/impetuous-title.webp", cost=4})
+Card:new(Title,Empire,{name="Instigator", front="https://images.swarmada.wiki/images/instigator-title.webp", cost=4})
+Card:new(Title,Empire,{name="Corvus", front="https://images.swarmada.wiki/images/corvus-title.webp", cost=2})
 
-Card:new(Title,Empire,{name="Centicore", front="https://i.imgur.com/y41PoZy.jpg", cost=3})
-Card:new(Title,Empire,{name="Hand of Justice", front=CUSTOM_ASSETS.."cards/.amg2025/handofjustice.jpg", cost=2})
+Card:new(Title,Empire,{name="Centicore", front="https://images.swarmada.wiki/images/centicore-title.webp", cost=3})
+Card:new(Title,Empire,{name="Hand of Justice", front="https://images.swarmada.wiki/images/hand-of-justice-title-errata.webp", cost=2})
 
-Card:new(Title,Empire,{name="Demolisher", front=CUSTOM_ASSETS.."cards/.amg2025/demolisher.jpg", cost=10})
-Card:new(Title,Empire,{name="Insidious", front="https://i.imgur.com/lJU1Qr0.jpg", cost=3})
+Card:new(Title,Empire,{name="Demolisher", front="https://images.swarmada.wiki/images/demolisher-title.webp", cost=10})
+Card:new(Title,Empire,{name="Insidious", front="https://images.swarmada.wiki/images/insidious-title.webp", cost=3})
 
-Card:new(Title,Empire,{name="Pursuant", front="https://i.imgur.com/8971Me7.jpg", cost=2})
-Card:new(Title,Empire,{name="Squall", front=CUSTOM_ASSETS.."cards/.amg2025/squall.jpg", cost=7})
-Card:new(Title,Empire,{name="Stronghold", front=CUSTOM_ASSETS.."cards/.amg2025/stronghold.jpg", cost=3})
+Card:new(Title,Empire,{name="Pursuant", front="https://images.swarmada.wiki/images/pursuant-title.webp", cost=2})
+Card:new(Title,Empire,{name="Squall", front="https://images.swarmada.wiki/images/squall-title-errata.webp", cost=7})
+Card:new(Title,Empire,{name="Stronghold", front="https://images.swarmada.wiki/images/stronghold-title-errata.webp", cost=3})
 
-Card:new(Title,Empire,{name="Corrupter", front=CUSTOM_ASSETS.."cards/.amg2025/corrupter.jpg", cost=3})
-Card:new(Title,Empire,{name="Dominator", front=CUSTOM_ASSETS.."cards/.amg2025/dominator.jpg", cost=7})
-Card:new(Title,Empire,{name="Harrow", front="https://i.imgur.com/2j7zspi.jpg", cost=3})
-Card:new(Title,Empire,{name="Warlord", front="https://i.imgur.com/E8oYSJj.jpg", cost=8})
+Card:new(Title,Empire,{name="Corrupter", front="https://images.swarmada.wiki/images/corrupter-title-errata.webp", cost=3})
+Card:new(Title,Empire,{name="Dominator", front="https://images.swarmada.wiki/images/dominator-title-errata.webp", cost=7})
+Card:new(Title,Empire,{name="Harrow", front="https://images.swarmada.wiki/images/harrow-title.webp", cost=3})
+Card:new(Title,Empire,{name="Warlord", front="https://images.swarmada.wiki/images/warlord-title.webp", cost=8})
 
-Card:new(Title,Empire,{name="Interdictor", front="https://i.imgur.com/sIO1x2W.jpg", cost=3})
+Card:new(Title,Empire,{name="Interdictor", front="https://images.swarmada.wiki/images/interdictor-title.webp", cost=3})
 
-Card:new(Title,Empire,{name="Cataclysm", front="https://i.imgur.com/BJwwHvW.jpg", cost=5})
-Card:new(Title,Empire,{name="Rakehell", front="https://i.imgur.com/R3NVdce.jpg", cost=4})
-Card:new(Title,Empire,{name="Sunder", front="https://i.imgur.com/qs97P5O.jpg", cost=10})
+Card:new(Title,Empire,{name="Cataclysm", front="https://images.swarmada.wiki/images/cataclysm-title.webp", cost=5})
+Card:new(Title,Empire,{name="Rakehell", front="https://images.swarmada.wiki/images/rakehell-title.webp", cost=4})
+Card:new(Title,Empire,{name="Sunder", front="https://images.swarmada.wiki/images/sunder-title.webp", cost=10})
 
-Card:new(Title,Empire,{name="Avenger", front=CUSTOM_ASSETS.."cards/.amg2025/avenger.jpg", cost=5})
-Card:new(Title,Empire,{name="Chimaera", front="https://i.imgur.com/o5AtxcG.jpg", cost=4})
-Card:new(Title,Empire,{name="Devastator", front="https://i.imgur.com/nKieVmI.jpg", cost=10})
-Card:new(Title,Empire,{name="Relentless", front="https://i.imgur.com/AT9rKe4.jpg", cost=3})
-Card:new(Title,Empire,{name="Sovereign", front="https://i.imgur.com/AnJZEFb.jpg", cost=4})
+Card:new(Title,Empire,{name="Avenger", front="https://images.swarmada.wiki/images/avenger-title.webp", cost=5})
+Card:new(Title,Empire,{name="Chimaera", front="https://images.swarmada.wiki/images/chimaera-title.webp", cost=4})
+Card:new(Title,Empire,{name="Devastator", front="https://images.swarmada.wiki/images/devastator-title.webp", cost=10})
+Card:new(Title,Empire,{name="Relentless", front="https://images.swarmada.wiki/images/relentless-title.webp", cost=3})
+Card:new(Title,Empire,{name="Sovereign", front="https://images.swarmada.wiki/images/sovereign-title.webp", cost=4})
 
-Card:new(Title,Empire,{name="Seventh Fleet Star Destroyer", front="https://i.imgur.com/G90ZE7x.jpg", cost=5})
+Card:new(Title,Empire,{name="Seventh Fleet Star Destroyer", front="https://images.swarmada.wiki/images/seventh-fleet-star-destroyer-title.webp", cost=5})
 
-Card:new(Title,Empire,{name="Annihilator", front="https://i.imgur.com/R9rr8vA.jpg", cost=8})
-Card:new(Title,Empire,{name="Eclipse", front="https://i.imgur.com/Vnmp8CR.jpg", cost=3})
-Card:new(Title,Empire,{name="Executor", front="https://i.imgur.com/OGaToRQ.jpg", cost=2})
-Card:new(Title,Empire,{name="Ravager", front="https://i.imgur.com/AcTzTTY.jpg", cost=4})
+Card:new(Title,Empire,{name="Annihilator", front="https://images.swarmada.wiki/images/annihilator-title.webp", cost=8})
+Card:new(Title,Empire,{name="Eclipse", front="https://images.swarmada.wiki/images/eclipse-title.webp", cost=3})
+Card:new(Title,Empire,{name="Executor", front="https://images.swarmada.wiki/images/executor-title.webp", cost=2})
+Card:new(Title,Empire,{name="Ravager", front="https://images.swarmada.wiki/images/ravager-title.webp", cost=4})
 
 --republic
-Card:new(Title,Republic,{name="Radiant VII", front="https://i.imgur.com/kTBiAsS.jpg", cost=1})
-Card:new(Title,Republic,{name="Swift Return", front="https://i.imgur.com/lVSb7xQ.jpeg", cost=3})
+Card:new(Title,Republic,{name="Radiant VII", front="https://images.swarmada.wiki/images/radiant-vii-title.webp", cost=1})
+Card:new(Title,Republic,{name="Swift Return", front="https://images.swarmada.wiki/images/swift-return-title.webp", cost=3})
 
-Card:new(Title,Republic,{name="Implacable", front="https://i.imgur.com/Y8uSW2V.jpeg", cost=4})
-Card:new(Title,Republic,{name="Nevoota Bee", front="https://i.imgur.com/bBFNBzc.jpeg", cost=5})
+Card:new(Title,Republic,{name="Implacable", front="https://images.swarmada.wiki/images/implacable-title.webp", cost=4})
+Card:new(Title,Republic,{name="Nevoota Bee", front="https://images.swarmada.wiki/images/nevoota-bee-title.webp", cost=5})
 
 --separatist
-Card:new(Title,Separatist,{name="Beast of Burden", front="https://i.imgur.com/0dOnlMq.jpeg", cost=6})
-Card:new(Title,Separatist,{name="Foreman's Labor", front=CUSTOM_ASSETS.."cards/.amg2025/foremans-labor.jpg", cost=5, aliases = {"Foremans Labor"}})
+Card:new(Title,Separatist,{name="Beast of Burden", front="https://images.swarmada.wiki/images/beast-of-burden-title.webp", cost=6})
+Card:new(Title,Separatist,{name="Foreman's Labor", front="https://images.swarmada.wiki/images/foremans-labor-title.webp", cost=5, aliases = {"Foremans Labor"}})
 
-Card:new(Title,Separatist,{name="Sa Nalaor", front="https://i.imgur.com/o0RS5kE.jpg", cost=5})
-Card:new(Title,Separatist,{name="Tide of Progress XII", front="https://i.imgur.com/rcXW6sg.jpeg", cost=2})
+Card:new(Title,Separatist,{name="Sa Nalaor", front="https://images.swarmada.wiki/images/sa-nalaor-title.webp", cost=5})
+Card:new(Title,Separatist,{name="Tide of Progress XII", front="https://images.swarmada.wiki/images/tide-of-progress-xii-title.webp", cost=2})
 
-Card:new(Title,Separatist,{name="Invisible Hand", front=CUSTOM_ASSETS.."cards/.amg2025/invisible-hand.jpg", cost=8, aliases = {"Invisible-hand"}})
-Card:new(Title,Separatist,{name="Invincible", front=CUSTOM_ASSETS.."cards/.updated/upgrades/invincible-title.jpg", cost=5})
-Card:new(Title,Separatist,{name="Lucid Voice", front=CUSTOM_ASSETS.."cards/.amg2025/lucid-voice.jpg", cost=6})
+Card:new(Title,Separatist,{name="Invisible Hand", front="https://images.swarmada.wiki/images/invisible-hand-title-errata.webp", cost=8, aliases = {"Invisible-hand"}})
+Card:new(Title,Separatist,{name="Invincible", front="https://images.swarmada.wiki/images/invincible-title.webp", cost=5})
+Card:new(Title,Separatist,{name="Lucid Voice", front="https://images.swarmada.wiki/images/lucid-voice-title-errata.webp", cost=6})
 
-Card:new(Title,Separatist,{name="Patriot Fist", front=CUSTOM_ASSETS.."cards/.updated/upgrades/patriot-fist-title.jpg", cost=6})
-Card:new(Title,Separatist,{name="Nova Defiant", front=CUSTOM_ASSETS.."cards/.updated/upgrades/nova-defiant-title.jpg", cost=4})
-Card:new(Title,Separatist,{name="Gilded Aegis", front=CUSTOM_ASSETS.."cards/.updated/upgrades/gilded-aegis-title.jpg", cost=5})
+Card:new(Title,Separatist,{name="Patriot Fist", front="https://images.swarmada.wiki/images/patriot-fist-title.webp", cost=6})
+Card:new(Title,Separatist,{name="Nova Defiant", front="https://images.swarmada.wiki/images/nova-defiant-title.webp", cost=4})
+Card:new(Title,Separatist,{name="Gilded Aegis", front="https://images.swarmada.wiki/images/gilded-aegis-title.webp", cost=5})
 
-Card:new(Title,Republic,{name="TB-73", front=CUSTOM_ASSETS.."cards/.updated/upgrades/tb-73-title.jpg", cost=5})
-Card:new(Title,Republic,{name="FB-88", front=CUSTOM_ASSETS.."cards/.updated/upgrades/fb-88-title.jpg", cost=4})
+Card:new(Title,Republic,{name="TB-73", front="https://images.swarmada.wiki/images/tb-73-title.webp", cost=5})
+Card:new(Title,Republic,{name="FB-88", front="https://images.swarmada.wiki/images/fb-88-title.webp", cost=4})
 
-Card:new(Title,Republic,{name="Tranquility", front=CUSTOM_ASSETS.."cards/.amg2025/tranq.jpg", cost=7})
-Card:new(Title,Republic,{name="Triumphant", front=CUSTOM_ASSETS.."cards/.updated/upgrades/triumphant-title.jpg", cost=5})
-Card:new(Title,Republic,{name="Resolute", front=CUSTOM_ASSETS.."cards/.amg2025/resolute.jpg", cost=4})
+Card:new(Title,Republic,{name="Tranquility", front="https://images.swarmada.wiki/images/tranquility-title.webp", cost=7})
+Card:new(Title,Republic,{name="Triumphant", front="https://images.swarmada.wiki/images/triumphant-title.webp", cost=5})
+Card:new(Title,Republic,{name="Resolute", front="https://images.swarmada.wiki/images/resolute-title-errata.webp", cost=4})
 
 ----#include defs/cards/title
 ----#include defs/cards/turbolaser
@@ -7773,22 +7773,22 @@ CloneWars = {
     factions={"Republic","Separatist"}
 }
 --Republic/Separatist
-Card:new(Turbolaser,CloneWars,{name="Swivel-Mount Batteries", front="https://i.imgur.com/QyfrQ24.jpeg", cost=8}) --modification)
+Card:new(Turbolaser,CloneWars,{name="Swivel-Mount Batteries", front="https://images.swarmada.wiki/images/swivel-mount-batteries.webp", cost=8}) --modification)
 
 --generic
-Card:new(Turbolaser,{name="Dual Turbolaser Turrets", front=CUSTOM_ASSETS.."cards/.amg2025/dtt.jpg", cost=4}) --modification)
-Card:new(Turbolaser,{name="Enhanced Armament", front="https://i.imgur.com/fixRACB.jpg", cost=10}) --modification)
-Card:new(Turbolaser,{name="H9 Turbolasers", front=CUSTOM_ASSETS.."cards/.amg2025/h9-tl.jpg", cost=8}) --modification)
-Card:new(Turbolaser,{name="Heavy Fire Zone", front=CUSTOM_ASSETS.."cards/.amg2025/hfz.jpg", cost=2})
-Card:new(Turbolaser,{name="Heavy Turbolaser Turrets", front=CUSTOM_ASSETS.."cards/.amg2025/htt.jpg", cost=4})
-Card:new(Turbolaser,{name="Linked Turbolaser Towers", front=CUSTOM_ASSETS.."cards/.amg2025/ltt.jpg", cost=7})
-Card:new(Turbolaser,{name="Quad Battery Turrets", front="https://i.imgur.com/OpE4elu.jpg", cost=5}) --modification)
-Card:new(Turbolaser,{name="Quad Turbolaser Cannons", front=CUSTOM_ASSETS.."cards/.amg2025/qtc.jpg", cost=10}) --modification)
-Card:new(Turbolaser,{name="Slaved Turrets", front="https://i.imgur.com/J9NmUDb.jpg", cost=6}) --modification)
-Card:new(Turbolaser,{name="Spinal Armament", front="https://i.imgur.com/0eLX7ML.jpg", cost=9}) --modification)
-Card:new(Turbolaser,{name="Turbolaser Reroute Circuits", front=CUSTOM_ASSETS.."cards/.amg2025/trc.jpg", cost=7})
-Card:new(Turbolaser,{name="XI7 Turbolasers", front=CUSTOM_ASSETS.."cards/.amg2025/xi7.jpg", cost=6})
-Card:new(Turbolaser,{name="XX-9 Turbolasers", front=CUSTOM_ASSETS.."cards/.amg2025/xx9.jpg", cost=2})
+Card:new(Turbolaser,{name="Dual Turbolaser Turrets", front="https://images.swarmada.wiki/images/dual-turbolaser-turrets-errata.webp", cost=4}) --modification)
+Card:new(Turbolaser,{name="Enhanced Armament", front="https://images.swarmada.wiki/images/enhanced-armament.webp", cost=10}) --modification)
+Card:new(Turbolaser,{name="H9 Turbolasers", front="https://images.swarmada.wiki/images/h9-turbolasers.webp", cost=8}) --modification)
+Card:new(Turbolaser,{name="Heavy Fire Zone", front="https://images.swarmada.wiki/images/heavy-fire-zone-errata.webp", cost=2})
+Card:new(Turbolaser,{name="Heavy Turbolaser Turrets", front="https://images.swarmada.wiki/images/heavy-turbolaser-turrets-errata.webp", cost=4})
+Card:new(Turbolaser,{name="Linked Turbolaser Towers", front="https://images.swarmada.wiki/images/linked-turbolaser-towers-errata.webp", cost=7})
+Card:new(Turbolaser,{name="Quad Battery Turrets", front="https://images.swarmada.wiki/images/quad-battery-turrets.webp", cost=5}) --modification)
+Card:new(Turbolaser,{name="Quad Turbolaser Cannons", front="https://images.swarmada.wiki/images/quad-turbolaser-cannons.webp", cost=10}) --modification)
+Card:new(Turbolaser,{name="Slaved Turrets", front="https://images.swarmada.wiki/images/slaved-turrets.webp", cost=6}) --modification)
+Card:new(Turbolaser,{name="Spinal Armament", front="https://images.swarmada.wiki/images/spinal-armament.webp", cost=9}) --modification)
+Card:new(Turbolaser,{name="Turbolaser Reroute Circuits", front="https://images.swarmada.wiki/images/turbolaser-reroute-circuits.webp", cost=7})
+Card:new(Turbolaser,{name="XI7 Turbolasers", front="https://images.swarmada.wiki/images/xi7-turbolasers.webp", cost=6})
+Card:new(Turbolaser,{name="XX-9 Turbolasers", front="https://images.swarmada.wiki/images/xx-9-turbolasers-errata.webp", cost=2})
 Card:new(Turbolaser,{name="DBY-827 Heavy Turbolaser", front=CUSTOM_ASSETS.."cards/.updated/upgrades/dby-827-heavy-turbolasers.jpg", cost=3, aliases = {"DBY-827 Heavy Turbolasers"}})
 
 ----#include defs/cards/turbolaser
@@ -7817,24 +7817,24 @@ WeaponsTeam = {
 }
 
 --rebel
-Card:new(WeaponsTeam,Rebel,{name="Caitken and Shollan", front="https://i.imgur.com/5msklkl.jpg", cost=6})
+Card:new(WeaponsTeam,Rebel,{name="Caitken and Shollan", front="https://images.swarmada.wiki/images/caitken-and-shollan.webp", cost=6})
 
 --imperial
-Card:new(WeaponsTeam,Empire,{name="Gunnery Chief Varnillian", front="https://i.imgur.com/JG9I88l.jpg", cost=6})
+Card:new(WeaponsTeam,Empire,{name="Gunnery Chief Varnillian", front="https://images.swarmada.wiki/images/gunnery-chief-varnillian.webp", cost=6})
 
 --republic
-Card:new(WeaponsTeam,Republic,{name="Clone Gunners", front=CUSTOM_ASSETS.."cards/.amg2025/clonegunners.jpg", cost=4})
+Card:new(WeaponsTeam,Republic,{name="Clone Gunners", front="https://images.swarmada.wiki/images/clone-gunners.webp", cost=4})
 
 --generic
-Card:new(WeaponsTeam,{name="Fire-Control Team", front="https://i.imgur.com/VFlRiDL.jpg", cost=2})
-Card:new(WeaponsTeam,{name="Flight Controllers", front=CUSTOM_ASSETS.."cards/.amg2025/flight-controllers.jpg", cost=6})
-Card:new(WeaponsTeam,{name="Gunnery Team", front=CUSTOM_ASSETS.."cards/.amg2025/gunnery-team.jpg", cost=7})
-Card:new(WeaponsTeam,{name="Local Fire Control", front="https://i.imgur.com/OepfCdw.jpg", cost=4})
-Card:new(WeaponsTeam,{name="Ordnance Experts", front=CUSTOM_ASSETS.."cards/.amg2025/ordnance-experts.jpg", cost=4})
-Card:new(WeaponsTeam,{name="Ruthless Strategists", front="https://i.imgur.com/2mDorqh.jpg", cost=4})
-Card:new(WeaponsTeam,{name="Sensor Team", front="https://i.imgur.com/pnn0pOz.jpg", cost=5})
-Card:new(WeaponsTeam,{name="Veteran Gunners", front="https://i.imgur.com/mYGP8R6.jpg", cost=5})
-Card:new(WeaponsTeam,{name="Weapons Battery Techs", front=CUSTOM_ASSETS.."cards/.amg2025/wbt.jpg", cost=4})
+Card:new(WeaponsTeam,{name="Fire-Control Team", front="https://images.swarmada.wiki/images/fire-control-team.webp", cost=2})
+Card:new(WeaponsTeam,{name="Flight Controllers", front="https://images.swarmada.wiki/images/flight-controllers.webp", cost=6})
+Card:new(WeaponsTeam,{name="Gunnery Team", front="https://images.swarmada.wiki/images/gunnery-team.webp", cost=7})
+Card:new(WeaponsTeam,{name="Local Fire Control", front="https://images.swarmada.wiki/images/local-fire-control.webp", cost=4})
+Card:new(WeaponsTeam,{name="Ordnance Experts", front="https://images.swarmada.wiki/images/ordnance-experts.webp", cost=4})
+Card:new(WeaponsTeam,{name="Ruthless Strategists", front="https://images.swarmada.wiki/images/ruthless-strategists.webp", cost=4})
+Card:new(WeaponsTeam,{name="Sensor Team", front="https://images.swarmada.wiki/images/sensor-team.webp", cost=5})
+Card:new(WeaponsTeam,{name="Veteran Gunners", front="https://images.swarmada.wiki/images/veteran-gunners.webp", cost=5})
+Card:new(WeaponsTeam,{name="Weapons Battery Techs", front="https://images.swarmada.wiki/images/weapons-battery-techs-errata.webp", cost=4})
 
 -- CUSTOM CONTENT
 
@@ -8026,7 +8026,7 @@ Card:new(Officer, Republic_L,{ name = "Depa Billaba", front = CUSTOM_ASSETS .. "
 Card:new(Commander, Republic_L,{ name = "Admiral Kilian", front = CUSTOM_ASSETS .. "cards/.nexus/admiral-kilian.jpg", cost = 33, aliases = { "Admiral Kilian [Nexus]" } })
 
     ----non-approved un-approved un-official Nexus upgrades
-Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_ph.jpg", cost = 4, aliases = { "Phoenix Home [Nexus]" } })
+Card:new(Title, Rebel_L,{ name = "Phoenix Home", front = "https://images.swarmada.wiki/images/phoenix-home-title.webp", cost = 4, aliases = { "Phoenix Home [Nexus]" } })
 Card:new(Title, Rebel_L,{ name = "Phoenix Nest", front = CUSTOM_ASSETS .. "ships/rebel/reb_quasar/title_rebquasar_pn.jpg", cost = 6, aliases = { "Phoenix Nest [Nexus]" } })
 Card:new(Title, Republic_L,{ name = "Righteous Indignation", front = CUSTOM_ASSETS .. "ships/republic/rothana/right_indig.jpg", cost = 4, aliases = { "Righteous Indignation [Nexus]" } })
 Card:new(Title, Separatist_L,{ name = "Reaver", front = CUSTOM_ASSETS .. "ships/separatist/sabaoth/title_sabaoth_reaver.jpg", cost = 5, aliases = { "Reaver [Nexus]" } })
