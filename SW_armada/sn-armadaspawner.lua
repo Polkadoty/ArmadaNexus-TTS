@@ -2475,7 +2475,7 @@ Ship:new(LargeShip,REBEL_SHIP,{
 })
 Ship:new(LargeShip,REBEL_SHIP,{
 	name = "Providence-class Carrier (REB)",
-    front =     ASSETS_ROOT.."ships/rebel/providence/carrier_card.jpg",
+    front =     "https://images.swarmada.wiki/images/providence-class-carrier-rebel.webp",
     -- back =      ASSETS_ROOT.."ships/rebel/providence/carrier_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/providence/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/rebel/providence/carrier_diffuse.jpg",
@@ -2815,7 +2815,7 @@ Ship:new(LargeShip,EMPIRE_SHIP,{
 })
 Ship:new(LargeShip,EMPIRE_SHIP,{
 	name = "Venator II-class Star Destroyer (Empire)",
-    front =     ASSETS_ROOT.."ships/empire/venator/II_card.jpg",
+    front =     "https://images.swarmada.wiki/images/venator-ii-class-star-destroyer-empire.webp",
     mesh =      ASSETS_ROOT.."ships/republic/venator/mesh.obj",
     diffuse =   CUSTOM_ASSETS.."ships/empire/venator/ven_update_diffuse.jpg",
     ruler =     ASSETS_ROOT.."ships/republic/venator/ruler.obj",
@@ -2843,7 +2843,7 @@ bwing = {
     defense_tokens = {}}
 Squadron:new(bwing, REBEL_SQUAD, {
 	name = "B-wing Squadron",
-    front =     "https://images.swarmada.wiki/images/dagger-squadron-b-wing-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/b-wing-squadron.webp",
     diffuse =   CUSTOM_ASSETS.."squadrons/rebel/bwing/base_diffuse.jpg",
     cost = 14,
     aliases = {'B-wing Squadrons', "B-wing"}
@@ -2879,14 +2879,14 @@ ywing = {
     defense_tokens = {}}
 Squadron:new(ywing, REBEL_SQUAD, {
 	name = "Y-wing Squadron",
-    front =     "https://images.swarmada.wiki/images/gold-squadron-y-wing-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/y-wing-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/base_diffuse.jpg",
     cost = 10,
     aliases = {'Y-wing Squadrons', "Y-wing"}
 })
 Squadron:new(ywing, REBEL_SQUAD, {
 	name = '"Dutch" Vander',
-    front =     ASSETS_ROOT.."squadrons/rebel/ywing/dutch_card.jpg",
+    front =     "https://images.swarmada.wiki/images/dutch-vander-y-wing-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 16,
@@ -2894,7 +2894,7 @@ Squadron:new(ywing, REBEL_SQUAD, {
 })
 Squadron:new(ywing, REBEL_SQUAD, {
 	name = 'Norra Wexley',
-    front =     ASSETS_ROOT.."squadrons/rebel/ywing/norra_card.jpg",
+    front =     "https://images.swarmada.wiki/images/norra-wexley-y-wing-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -2903,7 +2903,7 @@ Squadron:new(ywing, REBEL_SQUAD, {
 })
 Squadron:new(ywing, REBEL_SQUAD, {
 	name = 'Gold Squadron',
-    front =     ASSETS_ROOT.."squadrons/rebel/ywing/gold_card.jpg",
+    front =     "https://images.swarmada.wiki/images/gold-squadron-y-wing-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/ywing/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/rebel/ywing/bo_model.obj",
     cost = 12,
@@ -2916,7 +2916,7 @@ awing = {
     defense_tokens = {}}
 Squadron:new(awing, REBEL_SQUAD, {
 	name = "A-wing Squadron",
-    front =     "https://images.swarmada.wiki/images/green-squadron-a-wing-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/a-wing-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/awing/base_diffuse.jpg",
     cost = 11,
     aliases = {'A-wing Squadrons', "A-wing"}
@@ -2952,7 +2952,7 @@ xwing = {
     defense_tokens = {}}
 Squadron:new(xwing, REBEL_SQUAD, {
 	name = "X-wing Squadron",
-    front =     "https://images.swarmada.wiki/images/rogue-squadron-x-wing-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/x-wing-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/rebel/xwing/base_diffuse.jpg",
     cost = 13,
     aliases = {'X-wing Squadrons', "X-wing"}
@@ -3208,7 +3208,7 @@ gauntlet = {
     defense_tokens = {}}
 Squadron:new(gauntlet, REBEL_SQUAD, {
 	name = 'Fenn Rau',
-    front =     ASSETS_ROOT.."squadrons/rebel/guantlet/fenn_card_v2_1.jpg",
+    front =     "https://images.swarmada.wiki/images/fenn-rau-mandalorian-gauntlet-fighter.webp",
     diffuse =   CUSTOM_ASSETS.."squadrons/scum/gauntlet/fenn_rau.jpg",
     defense_tokens = {DEF_BRACE},
     cost = 24,
@@ -3228,14 +3228,14 @@ tie = {
     defense_tokens = {}}
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = "TIE Fighter Squadron",
-    front =     "https://images.swarmada.wiki/images/black-squadron-tie-fighter-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/tie-fighter-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/base_diffuse.jpg",
     cost = 8,
     aliases = {"TIE Fighter Squadrons", "TIE Fighter"}
 })
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = '"Mauler" Mithel',
-    front =     ASSETS_ROOT.."squadrons/empire/tie/mauler_card.jpg",
+    front =     "https://images.swarmada.wiki/images/mauler-mithel-tie-fighter-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 15,
@@ -3243,7 +3243,7 @@ Squadron:new(tie, EMPIRE_SQUAD, {
 })
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = '"Howlrunner"',
-    front =     ASSETS_ROOT.."squadrons/empire/tie/howlrunner_card.jpg",
+    front =     "https://images.swarmada.wiki/images/howlrunner-tie-fighter-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 16,
@@ -3251,7 +3251,7 @@ Squadron:new(tie, EMPIRE_SQUAD, {
 })
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = 'Valen Rudor',
-    front =     ASSETS_ROOT.."squadrons/empire/tie/valen_card.jpg",
+    front =     "https://images.swarmada.wiki/images/valen-rudor-tie-fighter-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 13,
@@ -3259,7 +3259,7 @@ Squadron:new(tie, EMPIRE_SQUAD, {
 })
 Squadron:new(tie, EMPIRE_SQUAD, {
 	name = 'Black Squadron',
-    front =     ASSETS_ROOT.."squadrons/empire/tie/black_card.jpg",
+    front =     "https://images.swarmada.wiki/images/black-squadron-tie-fighter-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/tie/unique_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/tie/co_es_model.obj",
     cost = 9,
@@ -3272,7 +3272,7 @@ int = {
     defense_tokens = {}}
 Squadron:new(int, EMPIRE_SQUAD, {
 	name = "TIE Interceptor Squadron",
-    front =     "https://images.swarmada.wiki/images/saber-squadron-tie-interceptor-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/tie-interceptor-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/int/base_diffuse.jpg",
     cost = 11,
     aliases = {"TIE Interceptor Squadrons", "TIE Interceptor"}
@@ -3316,7 +3316,7 @@ bom = {
     defense_tokens = {}}
 Squadron:new(bom, EMPIRE_SQUAD, {
 	name = "TIE Bomber Squadron",
-    front =     "https://images.swarmada.wiki/images/gamma-squadron-tie-bomber-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/tie-bomber-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/bom/base_diffuse.jpg",
     cost = 9,
     aliases = {"TIE Bomber Squadrons", "TIE Bomber"}
@@ -3353,14 +3353,14 @@ adv = {
     defense_tokens = {}}
 Squadron:new(adv, EMPIRE_SQUAD, {
 	name = "TIE Advanced Squadron",
-    front =     "https://images.swarmada.wiki/images/tempest-squadron-tie-advanced-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/tie-advanced-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/adv/base_diffuse.jpg",
     cost = 12,
     aliases = {"TIE Advanced Squadrons", "TIE Advanced"}
 })
 Squadron:new(adv, EMPIRE_SQUAD, {
 	name = "Darth Vader",
-    front =     "https://images.swarmada.wiki/images/darth-vader-tie-defender-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/darth-vader-tie-advanced-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 21,
@@ -3508,14 +3508,14 @@ phantom = {
     defense_tokens = {}}
 Squadron:new(phantom, EMPIRE_SQUAD, {
 	name = 'TIE Phantom Squadron',
-    front =     ASSETS_ROOT.."squadrons/empire/pha/base_card.jpg",
+    front =     "https://images.swarmada.wiki/images/tie-phantom-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/pha/base_diffuse.jpg",
     cost = 14,
     aliases = {"TIE Phantom Squadrons", "TIE Phantom"}
 })
 Squadron:new(phantom, EMPIRE_SQUAD, {
 	name = '"Whisper"',
-    front =     CUSTOM_ASSETS.."cards/.amg2025/whisper-tiephan.jpg",
+    front =     "https://images.swarmada.wiki/images/whisper-tie-phantom-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/pha/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_SCATTER},
     cost = 18,
@@ -3528,14 +3528,14 @@ defender = {
     defense_tokens = {}}
 Squadron:new(defender, EMPIRE_SQUAD, {
 	name = 'TIE Defender Squadron',
-    front =     ASSETS_ROOT.."squadrons/empire/def/base_card.jpg",
+    front =     "https://images.swarmada.wiki/images/tie-defender-squadron.webp",
     diffuse = "http://i.imgur.com/pXxfv23.png",
     cost = 16,
     aliases = {"TIE Defender Squadrons", "TIE Defender"}
 })
 Squadron:new(defender, EMPIRE_SQUAD, {
 	name = 'Maarek Stele',
-    front =     ASSETS_ROOT.."squadrons/empire/def/maarek_card.jpg",
+    front =     "https://images.swarmada.wiki/images/maarek-stele-tie-defender-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/def/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/def/bo_gr_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -3544,7 +3544,7 @@ Squadron:new(defender, EMPIRE_SQUAD, {
 })
 Squadron:new(defender, EMPIRE_SQUAD, {
 	name = 'Darth Vader',
-    front =     ASSETS_ROOT.."squadrons/empire/def/vader_card.jpg",
+    front =     "https://images.swarmada.wiki/images/darth-vader-tie-defender-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/def/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/def/ad_bo_ro_model.obj",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
@@ -3558,14 +3558,14 @@ lambda = {
     defense_tokens = {}}
 Squadron:new(lambda, EMPIRE_SQUAD, {
 	name = 'Lambda-class Shuttle',
-    front =     ASSETS_ROOT.."squadrons/empire/lambda/base_card.jpg",
+    front =     "https://images.swarmada.wiki/images/lambda-class-shuttle.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/lambda/base_diffuse.jpg",
     cost = 15,
     aliases = {'Lambda Shuttle', 'Lambda Shuttles', 'Lambda-class Shuttles'}
 })
 Squadron:new(lambda, EMPIRE_SQUAD, {
 	name = 'Colonel Jendon',
-    front =     CUSTOM_ASSETS.."cards/.amg2025/jendon.jpg",
+    front =     "https://images.swarmada.wiki/images/colonel-jendon-lambda-class-shuttle.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/lambda/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/lambda/he_re_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -3579,14 +3579,14 @@ decimator = {
     defense_tokens = {}}
 Squadron:new(decimator, EMPIRE_SQUAD, {
 	name = 'VT-49 Decimator',
-    front =     ASSETS_ROOT.."squadrons/empire/decimator/base_card.jpg",
+    front =     "https://images.swarmada.wiki/images/vt-49-decimator.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/decimator/base_diffuse.jpg",
     cost = 22,
     aliases = {'VT-49 Decimators'}
 })
 Squadron:new(decimator, EMPIRE_SQUAD, {
 	name = 'Morna Kee',
-    front =     ASSETS_ROOT.."squadrons/empire/decimator/morna_card.jpg",
+    front =     "https://images.swarmada.wiki/images/morna-kee-vt-49-decimator.webp",
     diffuse =   ASSETS_ROOT.."squadrons/empire/decimator/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/empire/decimator/co_ro_model.obj",
     defense_tokens = {DEF_BRACE},
@@ -3600,14 +3600,14 @@ gauntlet = {
     defense_tokens = {}}
 Squadron:new(gauntlet, EMPIRE_SQUAD, {
 	name = 'Mandalorian Gauntlet Fighter',
-    front =     CUSTOM_ASSETS.."cards/.amg2025/mando-gaunt.jpg",
+    front =     "https://images.swarmada.wiki/images/mandalorian-gauntlet-fighter.webp",
     diffuse =   CUSTOM_ASSETS.."squadrons/scum/gauntlet/gauntlet_imp.jpg",
     cost = 18,
     aliases = {'Mandalorian Gauntlet Fighters'}
 })
 Squadron:new(gauntlet, EMPIRE_SQUAD, {
 	name = 'Gar Saxon',
-    front =     CUSTOM_ASSETS.."cards/.amg2025/saxon.jpg",
+    front =     "https://images.swarmada.wiki/images/gar-saxon-mandalorian-gauntlet-fighter.webp",
     diffuse =   CUSTOM_ASSETS.."squadrons/scum/gauntlet/gauntlet_imp_ace.jpg",
     defense_tokens = {DEF_BRACE},
     cost = 20,
@@ -3745,7 +3745,7 @@ Ship:new(SmallShip,REPUBLIC_SHIP,{
 })
 Ship:new(MediumShip,REPUBLIC_SHIP,{
 	name = "Victory I-class Star Destroyer (GAR)",
-    front =     CUSTOM_ASSETS.."cards/.amg2025/vic1-gar.jpg",
+    front =     "https://images.swarmada.wiki/images/victory-i-class-star-destroyer-republic.webp",
     -- back =      ASSETS_ROOT.."ships/republic/victory/I_card_orig_back.jpg",
     mesh =      CUSTOM_ASSETS.."ships/empire/victory_update/mesh.obj",
     diffuse =   CUSTOM_ASSETS.."ships/republic/victory/I_diffuse_GAR.jpg",
@@ -3882,7 +3882,7 @@ Ship:new(LargeShip,SEPARATIST_SHIP,{
 })
 Ship:new(SmallShip,SEPARATIST_SHIP,{
 	name = "Gozanti-class Cruisers (CIS)",
-    front =     CUSTOM_ASSETS.."cards/.amg2025/gozanti-cis.jpg",
+    front =     "https://images.swarmada.wiki/images/gozanti-class-cruisers-separatist.webp",
     -- back =      ASSETS_ROOT.."ships/separatist/gozanti/cruiser_card_orig_back.jpg",
     mesh =      ASSETS_ROOT.."ships/separatist/gozanti/mesh.obj",
     diffuse =   ASSETS_ROOT.."ships/separatist/gozanti/cruiser_diffuse.jpg",
@@ -3919,7 +3919,7 @@ Squadron:new(v19, REPUBLIC_SQUAD, {
 -- Escort, Swarm
 Squadron:new(v19, REPUBLIC_SQUAD, {
 	name = '\"Axe\"',
-    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/axe-v-19-torrent-squadron.jpg",
+    front =     "https://images.swarmada.wiki/images/axe-v-19-torrent-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 17,
@@ -3929,7 +3929,7 @@ Squadron:new(v19, REPUBLIC_SQUAD, {
 -- Escort, Swarm
 Squadron:new(v19, REPUBLIC_SQUAD, {
 	name = '\"Kickback\"',
-    front =     CUSTOM_ASSETS.."cards/.updated/squadrons/kickback-v-19-torrent-squadron.jpg",
+    front =     "https://images.swarmada.wiki/images/kickback-v-19-torrent-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/republic/v19/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
     cost = 16,
@@ -4017,7 +4017,7 @@ Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 -- Adept, Bomber, Heavy
 Squadron:new(ywing_gar, REPUBLIC_SQUAD, {
 	name = "Anakin Skywalker",
-    front =     "https://images.swarmada.wiki/images/anakin-skywalker-delta-7-aethersprite-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/anakin-skywalker-btl-b-y-wing-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/republic/ywing/ace_diffuse.jpg",
     mesh =      ASSETS_ROOT.."squadrons/republic/ywing/ad_bo_he_model.obj",
     defense_tokens = {DEF_BRACE,DEF_BRACE},
@@ -4050,7 +4050,7 @@ Squadron:new(arc, REPUBLIC_SQUAD, {
 -- Bomber, Counter
 Squadron:new(arc, REPUBLIC_SQUAD, {
 	name = '\"Odd Ball\"',
-    front =     CUSTOM_ASSETS.."cards/.amg2025/oddball-arc.jpg",
+    front =     "https://images.swarmada.wiki/images/odd-ball-arc-170-starfighter-squadron.webp",
     diffuse =   ASSETS_ROOT.."squadrons/republic/arc/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 20,
@@ -4143,7 +4143,7 @@ tri.defense_tokens = {DEF_BRACE,DEF_SCATTER}
 --  Counter, Swarm, AI:Anti-squadron
 Squadron:new(tri, SEPARATIST_SQUAD, {
 	name = "Phlac-Arphocc Prototypes",
-    front =     "https://images.swarmada.wiki/images/phlac-arphocc-droid-tri-fighter-squadron.webp",
+    front =     "https://images.swarmada.wiki/images/phlac-arphocc-prototypes-droid-tri-fighter-squadron.webp",
     cost = 18,
     aliases = {"Phlac-Arphocc Prototype - Droid Tri-Fighter Squadron","Phlac-Arphocc Prototypes - Droid Tri-Fighter Squadron"}
 })
@@ -7520,7 +7520,7 @@ Officer = {
 }
 -- Rebels
 Card:new(Officer,Rebel,{name="Adar Tallon", front="https://images.swarmada.wiki/images/adar-tallon-officer.webp", cost=10})
-Card:new(Officer,Rebel,{name="Ahsoka Tano", front="https://images.swarmada.wiki/images/ahsoka-tano-officer-republic.webp", cost=2})
+Card:new(Officer,Rebel,{name="Ahsoka Tano", front="https://images.swarmada.wiki/images/ahsoka-tano-officer-rebel.webp", cost=2})
 -- Card:new(Officer,Rebel,{name="Bail Organa", front=""})
 Card:new(Officer,Rebel,{name="Captain Rex", front="https://images.swarmada.wiki/images/captain-rex-officer.webp", cost=5})
 Card:new(Officer,Rebel,{name="Ezra Bridger", front="https://images.swarmada.wiki/images/ezra-bridger-officer.webp", cost=3})
