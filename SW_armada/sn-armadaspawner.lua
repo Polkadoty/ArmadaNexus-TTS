@@ -4796,6 +4796,61 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     command = 1
     })
 
+    Ship:new(MediumShip, REBEL_L_SHIP, {
+        name = "Assault Frigate Mark I A [LegacyAlpha]",
+        front = "https://images.swarmada.wiki/images/assault-frigate-mark-i-a-legacy-alpha.webp",
+        mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1a_mesh.obj",
+        diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_a_texture.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+        maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_BRACE },
+        shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
+        cost = 68,
+        aliases = { "Assault Frigate Mark I A [LegacyAlpha]", "Assault Frig. Mk.I A [LegacyAlpha]" },
+        command = 3
+    })
+    
+    Ship:new(MediumShip, REBEL_L_SHIP, {
+        name = "Assault Frigate Mark I B [LegacyAlpha]",
+        front = "https://images.swarmada.wiki/images/assault-frigate-mark-i-b-legacy-alpha.webp",
+        mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1b_mesh.obj",
+        diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_b_texture.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+        maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
+        defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_BRACE },
+        shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
+        cost = 68,
+        aliases = { "Assault Frigate Mark I B [LegacyAlpha]", "Assault Frig. Mk.I B [LegacyAlpha]" },
+        command = 3
+    })
+
+    Ship:new(MediumShip, EMPIRE_L_SHIP, {
+        name = "Dreadnaught-class Imperial Refit [LegacyAlpha]",
+        front = "https://images.swarmada.wiki/images/dreadnaught-class-imperial-refit-legacy-alpha.webp",
+        mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-imperial-diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+        maneuver = { { "I" }, { "I", "I" } },
+        defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+        shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 64,
+        aliases = { "Dreadnaught Imperial Refit [LegacyAlpha]" },
+        command = 3
+    })
+    
+    Ship:new(MediumShip, EMPIRE_L_SHIP, {
+        name = "Dreadnaught-class Katana Refit [LegacyAlpha]",
+        front = "https://images.swarmada.wiki/images/dreadnaught-class-katana-refit-legacy-alpha.webp",
+        mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-katana-diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+        maneuver = { { "I" }, { "I", "I" } },
+        defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+        shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
+        cost = 62,
+        aliases = { "Dreadnaught Katana Refit [LegacyAlpha]" },
+        command = 3
+    })
 
 star_courier = {
     mesh = CUSTOM_ASSETS .. "squadrons/separatist/sith-infil/mesh.obj",
