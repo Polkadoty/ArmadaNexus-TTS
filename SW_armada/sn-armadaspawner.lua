@@ -5303,6 +5303,24 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         cost = 17,
         aliases = { "Rho Squadron - Alpha-class Star Wing Squadron [Nexus]" }
     })
+
+    Squadron:new(adv, EMPIRE_L_SQUAD, {
+        name = "The Grand Inquisitor",
+        front =     "https://images.swarmada.wiki/images/the-grand-inquisitor-tie-advanced-v1-nexus.webp",
+        diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 15,
+        aliases = {'The Grand Inquisitor - TIE Advanced V1 [Nexus]'}
+    })
+    Squadron:new(adv, EMPIRE_L_SQUAD, {
+        name = "Second Sister",
+        front =     "https://images.swarmada.wiki/images/second-sister-tie-advanced-v1-nexus.webp",
+        diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
+        defense_tokens = {DEF_BRACE,DEF_EVADE},
+        cost = 15,
+        aliases = {'Second Sister - TIE Advanced V1 [Nexus]'}
+    })
+
     --porax-38
     porax38 = {
         mesh = CUSTOM_ASSETS .. "squadrons/separatist/porax38/mesh.obj",
