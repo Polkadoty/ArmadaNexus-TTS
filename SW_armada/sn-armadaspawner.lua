@@ -6328,7 +6328,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --marauder
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Artillery Corvette",
-        front = "https://images.swarmada.wiki/images/marauder-class-corvette-artillery-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/marauder-artillery-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
@@ -6341,7 +6341,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Picket Corvette",
-        front = "https://images.swarmada.wiki/images/marauder-class-corvette-picket-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/marauder-picket-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
@@ -6356,7 +6356,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --interceptor iv
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Attack Frigate",
-        front = "https://images.swarmada.wiki/images/interceptor-iv-class-frigate-attack-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/interceptor-iv-class-attack-frigate-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
@@ -6369,7 +6369,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Missile Frigate",
-        front = "https://images.swarmada.wiki/images/interceptor-iv-class-frigate-missile-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/interceptor-iv-class-missile-frigate-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
@@ -6384,7 +6384,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --action vi
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Action VI Armed Transports",
-        front = "https://images.swarmada.wiki/images/action-vi-transport-armed-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/action-vi-armed-transports-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
@@ -6399,7 +6399,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --kandosii
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Kandosii-type Battlecarrier",
-        front = "https://images.swarmada.wiki/images/kandosii-type-battlecarrier-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/kandosii-battlecarrier-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/kandosii/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/kandosii/kandosii_battle_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/kandosii/ruler.obj",
@@ -6412,7 +6412,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Kandosii-type Carrier",
-        front = "https://images.swarmada.wiki/images/kandosii-type-carrier-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/kandosii-carrier-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/kandosii/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/kandosii/kandosii_carrier_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/kandosii/ruler.obj",
@@ -6427,7 +6427,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --keldabe
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Keldabe-class Battleship",
-        front = "https://images.swarmada.wiki/images/keldabe-class-battleship-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/keldabe-battleship-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/keldabe/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/keldabe/keldabe_battle_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/keldabe/ruler.obj",
@@ -6440,7 +6440,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Keldabe-class Cruiser",
-        front = "https://images.swarmada.wiki/images/keldabe-class-cruiser-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/keldabe-cruiser-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/keldabe/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/keldabe/keldabe_cruiser_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/keldabe/ruler.obj",
@@ -6455,7 +6455,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --crusader
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Crusader-class Flak Corvette",
-        front = "https://images.swarmada.wiki/images/crusader-class-corvette-flak-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/crusader-class-flak-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/crusader/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/crusader/crusader_flak_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/crusader/ruler.obj",
@@ -6468,7 +6468,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Crusader-class Support Corvette",
-        front = "https://images.swarmada.wiki/images/crusader-class-corvette-support-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/crusader-class-support-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/crusader/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/crusader/crusader_supp_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/crusader/ruler.obj",
@@ -6490,7 +6490,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {1,1,1,1},
         cost = 26,
-        aliases = {"C-ROC Gozanti-class Cruisers {Scum}"},
+        aliases = {"C-ROC Gozanti-class Cruisers {Scum}", "C-ROC Gozanti-class Cruisers {Scum} [Nexus]"},
         command = 1
     })
 
@@ -8317,6 +8317,7 @@ Card:new(Officer, Republic_L,{ name = "Depa Billaba (Officer)", front = "https:/
 Card:new(Officer, Republic_L,{ name = "Padme Amidala (Officer)", front = "https://images.swarmada.wiki/images/padme-amidala-officer-nexus.webp", cost = 3, aliases = { "Padme Amidala [Nexus]" } })
 Card:new(Title, Republic_L,{ name = "Deliverance", front = "https://images.swarmada.wiki/images/deliverance-title-nexus.webp", cost = 5, aliases = { "Deliverance [Nexus]" } })
 
+Card:new(Turbolaser, { name = "AG-2G Quad Laser Cannons", front = "https://images.swarmada.wiki/images/ag-2g-quad-laser-cannons-nexus.webp", cost = 6, aliases = { "AG-2G Quad Laser Cannons [Nexus]" } })
 
 
 -- Halo Nexus Upgrades
