@@ -4742,7 +4742,7 @@ Ship:new(LargeShip, REBEL_L_SHIP, {
 -- Armada Legacy (New) ships/squadrons
 Ship:new(SmallShip,REPUBLIC_L_SHIP, {
     name = "Arquitens-class Assault Cruiser (GAR)",
-    front = "https://images.swarmada.wiki/images/arquitens-class-assault-cruiser-republic-legacy-beta.webp",
+    front = "https://images.swarmada.wiki/images/arquitens-class-assault-cruiser-republic-legacy.webp",
     mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/assault_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/republic/arq_gar/ruler.obj", 
@@ -4756,7 +4756,7 @@ Ship:new(SmallShip,REPUBLIC_L_SHIP, {
 
 Ship:new(SmallShip,REPUBLIC_L_SHIP, {
     name = "Arquitens-class Escort Cruiser (GAR)",
-    front = "https://images.swarmada.wiki/images/arquitens-class-escort-cruiser-republic-legacy-beta.webp",
+    front = "https://images.swarmada.wiki/images/arquitens-class-escort-cruiser-republic-legacy.webp",
     mesh = CUSTOM_ASSETS.."ships/republic/arq_gar/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/republic/arq_gar/escort_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/republic/arq_gar/ruler.obj", 
@@ -4770,7 +4770,7 @@ Ship:new(SmallShip,REPUBLIC_L_SHIP, {
 
 Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     name = "Pinnace-class Corsair",
-    front = "https://images.swarmada.wiki/images/pinnace-class-corsair-legacy-beta.webp",
+    front = "https://images.swarmada.wiki/images/pinnace-class-corsair-legacy.webp",
     mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corsair_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
@@ -4784,7 +4784,7 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
 
 Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     name = "Pinnace-class Corvette",
-    front = "https://images.swarmada.wiki/images/pinnace-class-corvette-legacy-beta.webp",
+    front = "https://images.swarmada.wiki/images/pinnace-class-corvette-legacy.webp",
     mesh = CUSTOM_ASSETS.."ships/separatist/pinnace/mesh.obj",
     diffuse = CUSTOM_ASSETS.."ships/separatist/pinnace/corvette_diffuse.jpg",
     ruler = CUSTOM_ASSETS.."ships/separatist/pinnace/ruler.obj", 
@@ -6328,7 +6328,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --marauder
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Artillery Corvette",
-        front = "https://images.swarmada.wiki/images/marauder-class-corvette-artillery-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/marauder-artillery-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
@@ -6341,7 +6341,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Marauder Picket Corvette",
-        front = "https://images.swarmada.wiki/images/marauder-class-corvette-picket-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/marauder-picket-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/marauder/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/marauder/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/marauder/ruler.obj",
@@ -6356,7 +6356,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --interceptor iv
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Attack Frigate",
-        front = "https://images.swarmada.wiki/images/interceptor-iv-class-frigate-attack-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/interceptor-iv-class-attack-frigate-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
@@ -6369,7 +6369,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Interceptor IV-class Missile Frigate",
-        front = "https://images.swarmada.wiki/images/interceptor-iv-class-frigate-missile-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/interceptor-iv-class-missile-frigate-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/interceptor_iv/ruler.obj",
@@ -6384,7 +6384,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --action vi
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Action VI Armed Transports",
-        front = "https://images.swarmada.wiki/images/action-vi-transport-armed-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/action-vi-armed-transports-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/action_vi/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/action_vi/diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/action_vi/ruler.obj",
@@ -6399,7 +6399,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --kandosii
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Kandosii-type Battlecarrier",
-        front = "https://images.swarmada.wiki/images/kandosii-type-battlecarrier-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/kandosii-battlecarrier-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/kandosii/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/kandosii/kandosii_battle_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/kandosii/ruler.obj",
@@ -6412,7 +6412,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Kandosii-type Carrier",
-        front = "https://images.swarmada.wiki/images/kandosii-type-carrier-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/kandosii-carrier-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/kandosii/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/kandosii/kandosii_carrier_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/kandosii/ruler.obj",
@@ -6427,7 +6427,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --keldabe
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Keldabe-class Battleship",
-        front = "https://images.swarmada.wiki/images/keldabe-class-battleship-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/keldabe-battleship-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/keldabe/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/keldabe/keldabe_battle_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/keldabe/ruler.obj",
@@ -6440,7 +6440,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(LargeShip, SCUM_L_SHIP, {
         name = "Keldabe-class Cruiser",
-        front = "https://images.swarmada.wiki/images/keldabe-class-cruiser-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/keldabe-cruiser-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/keldabe/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/keldabe/keldabe_cruiser_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/keldabe/ruler.obj",
@@ -6455,7 +6455,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     --crusader
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Crusader-class Flak Corvette",
-        front = "https://images.swarmada.wiki/images/crusader-class-corvette-flak-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/crusader-class-flak-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/crusader/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/crusader/crusader_flak_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/crusader/ruler.obj",
@@ -6468,7 +6468,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
     })
     Ship:new(SmallShip, SCUM_L_SHIP, {
         name = "Crusader-class Support Corvette",
-        front = "https://images.swarmada.wiki/images/crusader-class-corvette-support-scum-nexus.webp",
+        front = "https://images.swarmada.wiki/images/crusader-class-support-corvette-scum-nexus.webp",
         mesh = CUSTOM_ASSETS .. "ships/scum/crusader/mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/scum/crusader/crusader_supp_diffuse.jpg",
         ruler = CUSTOM_ASSETS .. "ships/scum/crusader/ruler.obj",
@@ -6490,7 +6490,7 @@ Squadron:new(seraph, COV_L_SQUAD, {
         defense_tokens = {DEF_SCATTER, DEF_EVADE},
         shields = {1,1,1,1},
         cost = 26,
-        aliases = {"C-ROC Gozanti-class Cruisers {Scum}"},
+        aliases = {"C-ROC Gozanti-class Cruisers {Scum}", "C-ROC Gozanti-class Cruisers {Scum} [Nexus]"},
         command = 1
     })
 
@@ -8317,6 +8317,7 @@ Card:new(Officer, Republic_L,{ name = "Depa Billaba (Officer)", front = "https:/
 Card:new(Officer, Republic_L,{ name = "Padme Amidala (Officer)", front = "https://images.swarmada.wiki/images/padme-amidala-officer-nexus.webp", cost = 3, aliases = { "Padme Amidala [Nexus]" } })
 Card:new(Title, Republic_L,{ name = "Deliverance", front = "https://images.swarmada.wiki/images/deliverance-title-nexus.webp", cost = 5, aliases = { "Deliverance [Nexus]" } })
 
+Card:new(Turbolaser, { name = "AG-2G Quad Laser Cannons", front = "https://images.swarmada.wiki/images/ag-2g-quad-laser-cannons-nexus.webp", cost = 6, aliases = { "AG-2G Quad Laser Cannons [Nexus]" } })
 
 
 -- Halo Nexus Upgrades
@@ -8478,7 +8479,7 @@ Card:new(Commander, NR_L,{ name = "Etahn A'baht {NR}", front = "https://images.s
 Card:new(Commander, NR_L,{ name = "Garm Bel Iblis {NR}", front = "https://images.swarmada.wiki/images/garm-bel-iblis-commander-new-republic-nexus.webp", cost = 30, aliases = { "Garm Bel Iblis {NR} [Nexus]" } })
 Card:new(Commander, NR_L,{ name = "Wedge Antilles {NR}", front = "https://images.swarmada.wiki/images/wedge-antilles-commander-new-republic-nexus.webp", cost = 23, aliases = { "Wedge Antilles {NR} [Nexus]" } })
 Card:new(Commander, NR_L,{ name = "General Cracken {NR}", front = "https://images.swarmada.wiki/images/general-cracken-commander-new-republic-nexus.webp", cost = 20, aliases = { "General Cracken {NR} [Nexus]" } })
-Card:new(Commander, NR_L,{ name = "Traest Ke'fey {NR}", front = "https://images.swarmada.wiki/images/traest-kefey-commander-new-republic-nexus.webp", cost = 22, aliases = { "Traest Ke'fey {NR} [Nexus]" } })
+Card:new(Commander, NR_L,{ name = "Traest Ke'fey {NR}", front = "https://images.swarmada.wiki/images/traest-krefey-commander-new-republic-nexus.webp", cost = 22, aliases = { "Traest Ke'fey {NR} [Nexus]" } })
 
 Card:new(Officer, NR_L,{ name = "Areta Bell {NR}", front = "https://images.swarmada.wiki/images/areta-bell-officer-new-republic-nexus.webp", cost = 6, aliases = { "Areta Bell {NR} [Nexus]" } })
 Card:new(Officer, NR_L,{ name = "Commodore Turk Brand {NR}", front = "https://images.swarmada.wiki/images/commodore-turk-brand-officer-new-republic-nexus.webp", cost = 5, aliases = { "Commodore Turk Brand {NR} [Nexus]" } })
@@ -8516,21 +8517,21 @@ Card:new(Title, NR_L,{ name = "Ralroost {NR}", front = "https://images.swarmada.
     -- Armada Legacy (New) Upgrades
 Card:new(Commander,Separatist_L,{name="Daultay Dofine",  front = CUSTOM_ASSETS.."cards/.legacy/Daultay Dofine.jpg", cost=28, aliases={"Daultay Dofine [Legacy]"}})
 Card:new(Commander,Republic_L,{name="Ki-Adi-Mundi",  front = CUSTOM_ASSETS.."cards/.legacy/Ki-Adi-Mundi.jpg", cost=30, aliases={"Ki-Adi-Mundi [Legacy]"}})
-Card:new(Commander,Republic_L,{name="Admiral Coburn",  front = "https://images.swarmada.wiki/images/admiral-coburn-commander-legacy-beta.webp", cost=25, aliases={"Admiral Coburn [LegacyBeta]", "Admiral Coburn [Legacy]"}})
-Card:new(Commander,Separatist_L,{name="Poggle the Lesser",  front = "https://images.swarmada.wiki/images/poggle-the-lesser-commander-legacy-beta.webp", cost=20, aliases={"Poggle the Lesser [LegacyBeta]", "Poggle the Lesser [Legacy]"}})
+Card:new(Commander,Republic_L,{name="Admiral Coburn",  front = "https://images.swarmada.wiki/images/admiral-coburn-commander-legacy.webp", cost=25, aliases={"Admiral Coburn [LegacyBeta]", "Admiral Coburn [Legacy]"}})
+Card:new(Commander,Separatist_L,{name="Poggle the Lesser",  front = "https://images.swarmada.wiki/images/poggle-the-lesser-commander-legacy.webp", cost=20, aliases={"Poggle the Lesser [LegacyBeta]", "Poggle the Lesser [Legacy]"}})
 
-Card:new(Title,Republic_L,{name="Arlionne",  front = "https://images.swarmada.wiki/images/arlionne-title-legacy-beta.webp", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [LegacyBeta]", "Arlionne [Legacy]"}})
-Card:new(Title,Republic_L,{name="Stellar Rise",  front = "https://images.swarmada.wiki/images/stellar-rise-title-legacy-beta.webp", cost=2, aliases={"Stellar Rise [LegacyBeta]", "Stellar Rise [LegacyBeta]", "Stellar Rise [Legacy]"}})
-Card:new(Title,Republic_L,{name="Surrogator",  front = "https://images.swarmada.wiki/images/surrogator-title-legacy-beta.webp", cost=2, aliases={"Surrogator [LegacyBeta]", "Surrogator [LegacyBeta]", "Surrogator [Legacy]"}})
-Card:new(Title,Republic_L,{name="Thunder Wasp",  front = "https://images.swarmada.wiki/images/thunder-wasp-title-legacy-beta.webp", cost=3, aliases={"Thunder Wasp [LegacyBeta]", "Thunder Wasp [LegacyBeta]", "Thunder Wasp [Legacy]"}})
-Card:new(Title,Separatist_L,{name="Insatiable",  front = "https://images.swarmada.wiki/images/insatiable-title-legacy-beta.webp", cost=3, aliases={"Insatiable [LegacyBeta]", "Insatiable [LegacyBeta]", "Insatiable [Legacy]"}})
-Card:new(Title,Separatist_L,{name="Petranaki",  front = "https://images.swarmada.wiki/images/petranaki-title-legacy-beta.webp", cost=2, aliases={"Petranaki [LegacyBeta]", "Petranaki [LegacyBeta]", "Petranaki [Legacy]"}})
-Card:new(Title,Separatist_L,{name="Koklivex",  front = "https://images.swarmada.wiki/images/koklivex-title-legacy-beta.webp", cost=3, aliases={"Koklivex [LegacyBeta]", "Koklivex [LegacyBeta]", "Koklivex [Legacy]"}})
-Card:new(Title,Separatist_L,{name="Visgura",  front = "https://images.swarmada.wiki/images/visgura-title-legacy-beta.webp", cost=2, aliases={"Visgura [LegacyBeta]", "Visgura [LegacyBeta]", "Visgura [Legacy]"}})
-Card:new(Title,Empire_L,{name="Intrepid",  front = "https://images.swarmada.wiki/images/intrepid-title-legacy-beta.webp", cost=4, aliases={"Intrepid [LegacyBeta]", "Intrepid [LegacyBeta]", "Intrepid [Legacy]"}})
-Card:new(Title,Empire_L,{name="Battle Cruiser",  front = "https://images.swarmada.wiki/images/battle-cruiser-title-legacy-beta.webp", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [LegacyBeta]", "Battle Cruiser [Legacy]"}})
-Card:new(Title,Rebel_L,{name="Nautilian",  front = "https://images.swarmada.wiki/images/nautilian-title-legacy-beta.webp", cost=4, aliases={"Nautilian [LegacyBeta]", "Nautilian [LegacyBeta]", "Nautilian [Legacy]"}})
-Card:new(Title,Rebel_L,{name="Rebel One",  front = "https://images.swarmada.wiki/images/rebel-one-title-legacy-beta.webp", cost=6, aliases={"Rebel One [LegacyBeta]", "Rebel One [LegacyBeta]", "Rebel One [Legacy]"}})
+Card:new(Title,Republic_L,{name="Arlionne",  front = "https://images.swarmada.wiki/images/arlionne-title-legacy.webp", cost=7, aliases={"Arlionne [LegacyBeta]", "Arlionne [LegacyBeta]", "Arlionne [Legacy]"}})
+Card:new(Title,Republic_L,{name="Stellar Rise",  front = "https://images.swarmada.wiki/images/stellar-rise-title-legacy.webp", cost=2, aliases={"Stellar Rise [LegacyBeta]", "Stellar Rise [LegacyBeta]", "Stellar Rise [Legacy]"}})
+Card:new(Title,Republic_L,{name="Surrogator",  front = "https://images.swarmada.wiki/images/surrogator-title-legacy.webp", cost=2, aliases={"Surrogator [LegacyBeta]", "Surrogator [LegacyBeta]", "Surrogator [Legacy]"}})
+Card:new(Title,Republic_L,{name="Thunder Wasp",  front = "https://images.swarmada.wiki/images/thunder-wasp-title-legacy.webp", cost=3, aliases={"Thunder Wasp [LegacyBeta]", "Thunder Wasp [LegacyBeta]", "Thunder Wasp [Legacy]"}})
+Card:new(Title,Separatist_L,{name="Insatiable",  front = "https://images.swarmada.wiki/images/insatiable-title-legacy.webp", cost=3, aliases={"Insatiable [LegacyBeta]", "Insatiable [LegacyBeta]", "Insatiable [Legacy]"}})
+Card:new(Title,Separatist_L,{name="Petranaki",  front = "https://images.swarmada.wiki/images/petranaki-title-legacy.webp", cost=2, aliases={"Petranaki [LegacyBeta]", "Petranaki [LegacyBeta]", "Petranaki [Legacy]"}})
+Card:new(Title,Separatist_L,{name="Koklivex",  front = "https://images.swarmada.wiki/images/koklivex-title-legacy.webp", cost=3, aliases={"Koklivex [LegacyBeta]", "Koklivex [LegacyBeta]", "Koklivex [Legacy]"}})
+Card:new(Title,Separatist_L,{name="Visgura",  front = "https://images.swarmada.wiki/images/visgura-title-legacy.webp", cost=2, aliases={"Visgura [LegacyBeta]", "Visgura [LegacyBeta]", "Visgura [Legacy]"}})
+Card:new(Title,Empire_L,{name="Intrepid",  front = "https://images.swarmada.wiki/images/intrepid-title-legacy.webp", cost=4, aliases={"Intrepid [LegacyBeta]", "Intrepid [LegacyBeta]", "Intrepid [Legacy]"}})
+Card:new(Title,Empire_L,{name="Battle Cruiser",  front = "https://images.swarmada.wiki/images/battle-cruiser-title-legacy.webp", cost=2, aliases={"Battle Cruiser [LegacyBeta]", "Battle Cruiser [LegacyBeta]", "Battle Cruiser [Legacy]"}})
+Card:new(Title,Rebel_L,{name="Nautilian",  front = "https://images.swarmada.wiki/images/nautilian-title-legacy.webp", cost=4, aliases={"Nautilian [LegacyBeta]", "Nautilian [LegacyBeta]", "Nautilian [Legacy]"}})
+Card:new(Title,Rebel_L,{name="Rebel One",  front = "https://images.swarmada.wiki/images/rebel-one-title-legacy.webp", cost=6, aliases={"Rebel One [LegacyBeta]", "Rebel One [LegacyBeta]", "Rebel One [Legacy]"}})
 
 
     -- Armada Legacy (Old) Upgrades
