@@ -4805,8 +4805,8 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
         maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
         defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_BRACE },
         shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
-        cost = 68,
-        aliases = { "Assault Frigate Mark I A [LegacyAlpha]", "Assault Frig. Mk.I A [LegacyAlpha]" },
+        cost = 62,
+        aliases = { "Assault Frigate Mark I A [LegacyAlpha]", "Assault Frig. Mk.I A [LegacyAlpha]", "Assault Frigate Mark I Type V [LegacyAlpha]" },
         command = 3
     })
     
@@ -4819,8 +4819,8 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
         maneuver = { { "II" }, { "I", "I" }, { "-", "I", "I" } },
         defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_BRACE },
         shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
-        cost = 68,
-        aliases = { "Assault Frigate Mark I B [LegacyAlpha]", "Assault Frig. Mk.I B [LegacyAlpha]" },
+        cost = 66,
+        aliases = { "Assault Frigate Mark I B [LegacyAlpha]", "Assault Frig. Mk.I B [LegacyAlpha]", "Assault Frigate Mark I Type VI [LegacyAlpha]" },
         command = 3
     })
 
