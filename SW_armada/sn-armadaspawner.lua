@@ -5073,7 +5073,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     Squadron:new(adv_v1, EMPIRE_L_SQUAD, {
         name = "The Grand Inquisitor",
         front =     "https://images.swarmada.wiki/images/the-grand-inquisitor-tie-advanced-v1-nexus.webp",
-        diffuse =   ASSETS_ROOT.."squadrons/empire/adv_v1/adv_v1_diffuse.webp",
+        diffuse =   ASSETS_ROOT.."squadrons/empire/adv_v1/v1_ace_diffuse.webp",
         defense_tokens = {DEF_BRACE,DEF_EVADE},
         cost = 15,
         aliases = {'The Grand Inquisitor - TIE Advanced V1 [Nexus]'}
@@ -5081,7 +5081,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     Squadron:new(adv_v1, EMPIRE_L_SQUAD, {
         name = "Seventh Sister",
         front =     "https://images.swarmada.wiki/images/seventh-sister-tie-advanced-v1-nexus.webp",
-        diffuse =   ASSETS_ROOT.."squadrons/empire/adv_v1/adv_v1_diffuse.webp",
+        diffuse =   ASSETS_ROOT.."squadrons/empire/adv_v1/v1_ace_diffuse.webp",
         defense_tokens = {DEF_BRACE,DEF_EVADE},
         cost = 15,
         aliases = {'Seventh Sister - TIE Advanced V1 [Nexus]'}
@@ -6771,7 +6771,7 @@ Ship:new(MediumShip, NR_L_SHIP, {
 
 ----new republic squadrons
 defender_NR = {
-    mesh = CUSTOM_ASSETS .. "squadrons/squadrons/new_rep/defender/mesh.obj",
+    mesh = CUSTOM_ASSETS .. "squadrons/new_rep/defender/mesh.obj",
     health = 3,
     move = 4,
     defense_tokens = {}
@@ -6779,14 +6779,14 @@ defender_NR = {
 Squadron:new(defender_NR, NR_L_SQUAD, {
     name = "Defender Starfighter Squadron",
     front = "https://images.swarmada.wiki/images/defender-starfighter-squadron-new-republic-nexus.webp",
-    diffuse = CUSTOM_ASSETS .. "squadrons/squadrons/new_rep/defender_base_texture.webp",
+    diffuse = CUSTOM_ASSETS .. "squadrons/new_rep/defender_base_texture.webp",
     cost = 8,
     aliases = {"Defender Starfighter Squadron {NR} [Nexus]" }
 })
 Squadron:new(defender_NR, NR_L_SQUAD, {
     name = "Mara Jade",
     front = "https://images.swarmada.wiki/images/mara-jade-defender-starfighter-squadron-new-republic-nexus.webp",
-    diffuse = CUSTOM_ASSETS .. "squadrons/squadrons/new_rep/defender_ace_texture.webp",
+    diffuse = CUSTOM_ASSETS .. "squadrons/new_rep/defender_ace_texture.webp",
     cost = 15,
     aliases = {"Mara Jade - Defender Starfighter Squadron {NR} [Nexus]" },
     defense_tokens = {DEF_BRACE, DEF_SCATTER}
@@ -8475,7 +8475,7 @@ Squadron:new(arc, REPUBLIC_L_SQUAD, {
     diffuse =   ASSETS_ROOT.."squadrons/republic/arc/ace_diffuse.jpg",
     defense_tokens = {DEF_BRACE,DEF_EVADE},
     cost = 20,
-    aliases = {"Odd Ball - ARC-170 Starfighter Squadron [Community]", "Odd Ball [Community]", ""Odd Ball" [Community]"}
+    aliases = {"Odd Ball - ARC-170 Starfighter Squadron [Community]", "Odd Ball [Community]", "\"Odd Ball\" [Community]"}
 })
 Squadron:new(ywing_gar, REPUBLIC_L_SQUAD, {
 	name = "Matchstick [Community]",
