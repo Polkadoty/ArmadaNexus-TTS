@@ -4239,79 +4239,79 @@ PROXY_SQUAD = { back = CUSTOM_ASSETS .. "card_back.jpg", faction = "!Proxy" }
 
 -- Armada Legacy (Old) Ships/Squadrons
 
-Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "IPV-2C Stealth Corvette [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/ipv-2c-stealth-corvette-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/republic/ipv2/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/republic/ipv2/ipv2-stealth-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/republic/ipv2/ruler.obj",
-    maneuver = { { "II" }, { "II", "I" }, { "II", "I", "II" }, { "I", "II", "I", "II" } },
-    defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_EVADE },
-    shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 34,
-    aliases = { "IPV-2C Stealth Corvette [OldLegacy]" },
-    command = 1
-})
+-- Ship:new(SmallShip, REPUBLIC_L_SHIP, {
+--     name = "IPV-2C Stealth Corvette [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/ipv-2c-stealth-corvette-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/republic/ipv2/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/republic/ipv2/ipv2-stealth-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/republic/ipv2/ruler.obj",
+--     maneuver = { { "II" }, { "II", "I" }, { "II", "I", "II" }, { "I", "II", "I", "II" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_EVADE },
+--     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
+--     cost = 34,
+--     aliases = { "IPV-2C Stealth Corvette [OldLegacy]" },
+--     command = 1
+-- })
 
-Ship:new(SmallShip, REPUBLIC_L_SHIP, {
-    name = "IPV-2C Support Corvette [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/ipv-2c-support-corvette-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/republic/ipv2/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/republic/ipv2/ipv2-support-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/republic/ipv2/ruler.obj",
-    maneuver = { { "II" }, { "II", "I" }, { "II", "I", "II" }, { "I", "II", "I", "II" } },
-    defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_EVADE },
-    shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 34,
-    aliases = { "IPV-2C Support Corvette [OldLegacy]" },
-    command = 1
-})
+-- Ship:new(SmallShip, REPUBLIC_L_SHIP, {
+--     name = "IPV-2C Support Corvette [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/ipv-2c-support-corvette-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/republic/ipv2/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/republic/ipv2/ipv2-support-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/republic/ipv2/ruler.obj",
+--     maneuver = { { "II" }, { "II", "I" }, { "II", "I", "II" }, { "I", "II", "I", "II" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_EVADE, DEF_EVADE },
+--     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
+--     cost = 34,
+--     aliases = { "IPV-2C Support Corvette [OldLegacy]" },
+--     command = 1
+-- })
 
-eta2 = {
-    mesh = LEGACY_ASSETS .. "squadrons/republic/eta2/plain_mesh.obj",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_red_texture.jpg",
-    health = 3,
-    move = 5,
-    defense_tokens = {}
-}
-Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "ETA-2 Actis Squadron [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/eta-2-actis-squadron-old-legacy.jpg",
-    cost = 15,
-    aliases = { "ETA-2 Actis Squadron [OldLegacy]", "ETA-2", "ETA2" }
-})
-Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Anakin Skywalker (ETA-2) [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-eta-2-actis-squadron-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_anakin_texture.jpg",
-    defense_tokens = { DEF_BRACE, DEF_SCATTER },
-    cost = 24,
-    aliases = { "Anakin Skywalker - ETA-2 Actis Squadron [OldLegacy]" }
-})
-Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Obi-Wan Kenobi (ETA-2) [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/obi-wan-kenobi-eta-2-actis-squadron-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_obiwan_texture.jpg",
-    defense_tokens = { DEF_BRACE, DEF_SCATTER },
-    cost = 24,
-    aliases = { "Obi-Wan Kenobi - ETA-2 Actis Squadron [OldLegacy]" }
-})
-Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Aayla Secura (ETA-2) [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/aayla-secura-eta-2-actis-squadron-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_ace_texture.jpg",
-    defense_tokens = { DEF_BRACE, DEF_SCATTER },
-    cost = 23,
-    aliases = { "Aayla Secura - ETA-2 Actis Squadron [OldLegacy]" }
-})
-Squadron:new(eta2, REPUBLIC_L_SQUAD, {
-    name = "Shaak Ti (ETA-2) [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/shaak-ti-eta-2-actis-squadron-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_ace_texture.jpg",
-    defense_tokens = { DEF_BRACE, DEF_SCATTER },
-    cost = 22,
-    aliases = { "Shaak Ti - ETA-2 Actis Squadron [OldLegacy]" }
-})
+-- eta2 = {
+--     mesh = LEGACY_ASSETS .. "squadrons/republic/eta2/plain_mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_red_texture.jpg",
+--     health = 3,
+--     move = 5,
+--     defense_tokens = {}
+-- }
+-- Squadron:new(eta2, REPUBLIC_L_SQUAD, {
+--     name = "ETA-2 Actis Squadron [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/eta-2-actis-squadron-old-legacy.jpg",
+--     cost = 15,
+--     aliases = { "ETA-2 Actis Squadron [OldLegacy]", "ETA-2", "ETA2" }
+-- })
+-- Squadron:new(eta2, REPUBLIC_L_SQUAD, {
+--     name = "Anakin Skywalker (ETA-2) [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/anakin-skywalker-eta-2-actis-squadron-old-legacy.jpg",
+--     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_anakin_texture.jpg",
+--     defense_tokens = { DEF_BRACE, DEF_SCATTER },
+--     cost = 24,
+--     aliases = { "Anakin Skywalker - ETA-2 Actis Squadron [OldLegacy]" }
+-- })
+-- Squadron:new(eta2, REPUBLIC_L_SQUAD, {
+--     name = "Obi-Wan Kenobi (ETA-2) [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/obi-wan-kenobi-eta-2-actis-squadron-old-legacy.jpg",
+--     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_obiwan_texture.jpg",
+--     defense_tokens = { DEF_BRACE, DEF_SCATTER },
+--     cost = 24,
+--     aliases = { "Obi-Wan Kenobi - ETA-2 Actis Squadron [OldLegacy]" }
+-- })
+-- Squadron:new(eta2, REPUBLIC_L_SQUAD, {
+--     name = "Aayla Secura (ETA-2) [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/aayla-secura-eta-2-actis-squadron-old-legacy.jpg",
+--     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_ace_texture.jpg",
+--     defense_tokens = { DEF_BRACE, DEF_SCATTER },
+--     cost = 23,
+--     aliases = { "Aayla Secura - ETA-2 Actis Squadron [OldLegacy]" }
+-- })
+-- Squadron:new(eta2, REPUBLIC_L_SQUAD, {
+--     name = "Shaak Ti (ETA-2) [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/shaak-ti-eta-2-actis-squadron-old-legacy.jpg",
+--     diffuse = LEGACY_ASSETS .. "squadrons/republic/eta2/eta2_ace_texture.jpg",
+--     defense_tokens = { DEF_BRACE, DEF_SCATTER },
+--     cost = 22,
+--     aliases = { "Shaak Ti - ETA-2 Actis Squadron [OldLegacy]" }
+-- })
 
 -- clone_z95 = {
 --     mesh = LEGACY_ASSETS .. "squadrons/republic/clone-z95/plain_mesh.obj",
@@ -4379,91 +4379,91 @@ Squadron:new(eta2, REPUBLIC_L_SQUAD, {
 --     aliases = { "Anakin Skywalker - G9 Rigger-class Freighter [OldLegacy]" }
 -- })
 
-Ship:new(SmallShip, SEPARATIST_L_SHIP, {
-    name = "Trident-class Assault Ships [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/trident-class-assault-ships-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/separatist/trident/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/separatist/trident/trident_a_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/separatist/trident/ruler.obj",
-    maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
-    defense_tokens = { DEF_SCATTER, DEF_EVADE },
-    shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 30,
-    aliases = { "Trident Assault Ships [OldLegacy]" },
-    command = 1
-})
+-- Ship:new(SmallShip, SEPARATIST_L_SHIP, {
+--     name = "Trident-class Assault Ships [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/trident-class-assault-ships-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/separatist/trident/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/separatist/trident/trident_a_texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/separatist/trident/ruler.obj",
+--     maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
+--     defense_tokens = { DEF_SCATTER, DEF_EVADE },
+--     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
+--     cost = 30,
+--     aliases = { "Trident Assault Ships [OldLegacy]" },
+--     command = 1
+-- })
 
-Ship:new(SmallShip, SEPARATIST_L_SHIP, {
-    name = "Trident-class Assault Carriers [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/trident-class-assault-carriers-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/separatist/trident/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/separatist/trident/trident_c_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/separatist/trident/ruler.obj",
-    maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
-    defense_tokens = { DEF_SCATTER, DEF_EVADE },
-    shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
-    cost = 32,
-    aliases = { "Trident Assault Carriers [OldLegacy]" },
-    command = 1
-})
+-- Ship:new(SmallShip, SEPARATIST_L_SHIP, {
+--     name = "Trident-class Assault Carriers [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/trident-class-assault-carriers-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/separatist/trident/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/separatist/trident/trident_c_texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/separatist/trident/ruler.obj",
+--     maneuver = { { "II" }, { "I", "I" }, { "-", "II", "I" } },
+--     defense_tokens = { DEF_SCATTER, DEF_EVADE },
+--     shields = { 2, 1, 1, 1 }, -- Front, left, right, rear
+--     cost = 32,
+--     aliases = { "Trident Assault Carriers [OldLegacy]" },
+--     command = 1
+-- })
 
-Ship:new(LargeShip, SEPARATIST_L_SHIP, {
-    name = "Lucrehulk-class Battleship [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/lucrehulk-class-battleship-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-bs-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
-    maneuver = { { "-" }, { "I", "-" } },
-    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
-    shields = { 5, 5, 5, 3 }, -- Front, left, right, rear
-    cost = 144,
-    aliases = {"Lucrehulk-class Battleship [OldLegacy]", "Lucrehulk Battleship [OldLegacy]" },
-    command = 4
-})
+-- Ship:new(LargeShip, SEPARATIST_L_SHIP, {
+--     name = "Lucrehulk-class Battleship [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/lucrehulk-class-battleship-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-bs-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
+--     maneuver = { { "-" }, { "I", "-" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
+--     shields = { 5, 5, 5, 3 }, -- Front, left, right, rear
+--     cost = 144,
+--     aliases = {"Lucrehulk-class Battleship [OldLegacy]", "Lucrehulk Battleship [OldLegacy]" },
+--     command = 4
+-- })
 
-Ship:new(LargeShip, SEPARATIST_L_SHIP, {
-    name = "Lucrehulk-class Droid Control Ship [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/lucrehulk-class-droid-control-ship-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-dcs-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
-    maneuver = { { "-" }, { "I", "-" } },
-    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
-    shields = { 5, 5, 5, 3 }, -- Front, left, right, rear
-    cost = 136,
-    aliases = {"Lucrehulk-class Droid Control Ship [OldLegacy]", "Lucrehulk Droid Control [OldLegacy]" },
-    command = 4
-})
+-- Ship:new(LargeShip, SEPARATIST_L_SHIP, {
+--     name = "Lucrehulk-class Droid Control Ship [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/lucrehulk-class-droid-control-ship-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/separatist/lucrehulk/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/separatist/lucrehulk/lucrehulk-dcs-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/separatist/lucrehulk/ruler.obj",
+--     maneuver = { { "-" }, { "I", "-" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_BRACE },
+--     shields = { 5, 5, 5, 3 }, -- Front, left, right, rear
+--     cost = 136,
+--     aliases = {"Lucrehulk-class Droid Control Ship [OldLegacy]", "Lucrehulk Droid Control [OldLegacy]" },
+--     command = 4
+-- })
 
-nantex = {
-    mesh = LEGACY_ASSETS .. "squadrons/separatist/nantex/plain_mesh.obj",
-    diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_texture.jpg",
-    health = 4,
-    move = 4,
-    defense_tokens = {}
-}
-Squadron:new(nantex, SEPARATIST_L_SQUAD, {
-    name = "Nantex Starfighter Squadron [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/nantex-starfighter-squadron-old-legacy.jpg",
-    cost = 11,
-    aliases = { "Nantex Starfighter Squadron [OldLegacy]" }
-})
-Squadron:new(nantex, SEPARATIST_L_SQUAD, {
-    name = "Sun Fac [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/sun-fac-nantex-starfighter-squadron-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_ace_texture.jpg",
-    defense_tokens = { DEF_BRACE, DEF_SCATTER },
-    cost = 19,
-    aliases = { "Sun Fac - Nantex Starfighter Squadron [OldLegacy]" }
-})
-Squadron:new(nantex, SEPARATIST_L_SQUAD, {
-    name = "Gorgol [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/gorgol-nantex-starfighter-squadron-old-legacy.jpg",
-    diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_ace_texture.jpg",
-    defense_tokens = { DEF_BRACE, DEF_SCATTER },
-    cost = 16,
-    aliases = { "Gorgol - Nantex Starfighter Squadron [OldLegacy]" }
-})
+-- nantex = {
+--     mesh = LEGACY_ASSETS .. "squadrons/separatist/nantex/plain_mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_texture.jpg",
+--     health = 4,
+--     move = 4,
+--     defense_tokens = {}
+-- }
+-- Squadron:new(nantex, SEPARATIST_L_SQUAD, {
+--     name = "Nantex Starfighter Squadron [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/nantex-starfighter-squadron-old-legacy.jpg",
+--     cost = 11,
+--     aliases = { "Nantex Starfighter Squadron [OldLegacy]" }
+-- })
+-- Squadron:new(nantex, SEPARATIST_L_SQUAD, {
+--     name = "Sun Fac [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/sun-fac-nantex-starfighter-squadron-old-legacy.jpg",
+--     diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_ace_texture.jpg",
+--     defense_tokens = { DEF_BRACE, DEF_SCATTER },
+--     cost = 19,
+--     aliases = { "Sun Fac - Nantex Starfighter Squadron [OldLegacy]" }
+-- })
+-- Squadron:new(nantex, SEPARATIST_L_SQUAD, {
+--     name = "Gorgol [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/squadrons/gorgol-nantex-starfighter-squadron-old-legacy.jpg",
+--     diffuse = LEGACY_ASSETS .. "squadrons/separatist/nantex/nantex_ace_texture.jpg",
+--     defense_tokens = { DEF_BRACE, DEF_SCATTER },
+--     cost = 16,
+--     aliases = { "Gorgol - Nantex Starfighter Squadron [OldLegacy]" }
+-- })
 
 -- hmp_gunship_old = {
 --     mesh = LEGACY_ASSETS .. "squadrons/separatist/hmp/plain_mesh.obj",
@@ -4547,61 +4547,61 @@ Squadron:new(nantex, SEPARATIST_L_SQUAD, {
 --     aliases = { "Cad Bane - Rogue Starfighter Squadron [OldLegacy]" }
 -- })
 
-Ship:new(MediumShip, EMPIRE_L_SHIP, {
-    name = "Dreadnaught-class Imperial Refit [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-imperial-refit-old-legacy.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_imp_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/empire/dread/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
-    shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
-    cost = 64,
-    aliases = { "Dreadnaught Imperial Refit [OldLegacy]" },
-    command = 3
-})
+-- Ship:new(MediumShip, EMPIRE_L_SHIP, {
+--     name = "Dreadnaught-class Imperial Refit [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-imperial-refit-old-legacy.jpg",
+--     mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
+--     diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_imp_texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/empire/dread/ruler.obj",
+--     maneuver = { { "I" }, { "I", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+--     shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
+--     cost = 64,
+--     aliases = { "Dreadnaught Imperial Refit [OldLegacy]" },
+--     command = 3
+-- })
 
-Ship:new(MediumShip, EMPIRE_L_SHIP, {
-    name = "Dreadnaught-class Katana Refit [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-katana-refit-old-legacy.jpg",
-    mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
-    diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_katana_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/empire/dread/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
-    shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
-    cost = 62,
-    aliases = { "Dreadnaught Katana Refit [OldLegacy]" },
-    command = 3
-})
+-- Ship:new(MediumShip, EMPIRE_L_SHIP, {
+--     name = "Dreadnaught-class Katana Refit [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/dreadnaught-class-katana-refit-old-legacy.jpg",
+--     mesh = CUSTOM_ASSETS .. "ships/empire/dread/mesh.obj",
+--     diffuse = CUSTOM_ASSETS .. "ships/empire/dread/dread_katana_texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/empire/dread/ruler.obj",
+--     maneuver = { { "I" }, { "I", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+--     shields = { 3, 3, 3, 1 }, -- Front, left, right, rear
+--     cost = 62,
+--     aliases = { "Dreadnaught Katana Refit [OldLegacy]" },
+--     command = 3
+-- })
 
-Ship:new(LargeShip, EMPIRE_L_SHIP, {
-    name = "Interdictor-class Star Destroyer [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/interdictor-class-star-destroyer-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/empire/interdictor-sd/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/empire/interdictor-sd/interdictorsd-sd-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/empire/interdictor-sd/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" }, { "I", "-", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
-    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 110,
-    aliases = { "Interdictor Star Destroyer [OldLegacy]" },
-    command = 3
-})
+-- Ship:new(LargeShip, EMPIRE_L_SHIP, {
+--     name = "Interdictor-class Star Destroyer [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/interdictor-class-star-destroyer-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/empire/interdictor-sd/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/empire/interdictor-sd/interdictorsd-sd-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/empire/interdictor-sd/ruler.obj",
+--     maneuver = { { "I" }, { "I", "I" }, { "I", "-", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
+--     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+--     cost = 110,
+--     aliases = { "Interdictor Star Destroyer [OldLegacy]" },
+--     command = 3
+-- })
 
-Ship:new(LargeShip, EMPIRE_L_SHIP, {
-    name = "Interdictor-class Prototype [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/interdictor-class-prototype-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/empire/interdictor-sd/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/empire/interdictor-sd/interdictorsd-proto-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/empire/interdictor-sd/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" }, { "I", "-", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
-    shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 100,
-    aliases = { "Interdictor Prototype [OldLegacy]" },
-    command = 3
-})
+-- Ship:new(LargeShip, EMPIRE_L_SHIP, {
+--     name = "Interdictor-class Prototype [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/interdictor-class-prototype-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/empire/interdictor-sd/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/empire/interdictor-sd/interdictorsd-proto-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/empire/interdictor-sd/ruler.obj",
+--     maneuver = { { "I" }, { "I", "I" }, { "I", "-", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
+--     shields = { 4, 3, 3, 2 }, -- Front, left, right, rear
+--     cost = 100,
+--     aliases = { "Interdictor Prototype [OldLegacy]" },
+--     command = 3
+-- })
 
 -- Squadron:new(TIE_ADV, EMPIRE_L_SQUAD, {
 --     name = "Maarek Stele (TIE/x1) [OldLegacy]",
@@ -4643,61 +4643,61 @@ Ship:new(LargeShip, EMPIRE_L_SHIP, {
 --     aliases = { "Turr Phennir - TIE Interceptor Squadron [OldLegacy]" }
 -- })
 
-Ship:new(MediumShip, REBEL_L_SHIP, {
-    name = "Assault Frigate Mark I A [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/assault-frigate-mark-i-a-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1a_mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_a_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/rebel/afm1/ruler.obj",
-    maneuver = { { "II" }, { "I", "I" }, { "I", "I", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE },
-    shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 72,
-    aliases = { "Assault Frigate Mark I A [OldLegacy]", "Assault Frig. Mk.I A [OldLegacy]" },
-    command = 2
-})
+-- Ship:new(MediumShip, REBEL_L_SHIP, {
+--     name = "Assault Frigate Mark I A [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/assault-frigate-mark-i-a-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1a_mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_a_texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/rebel/afm1/ruler.obj",
+--     maneuver = { { "II" }, { "I", "I" }, { "I", "I", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE },
+--     shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
+--     cost = 72,
+--     aliases = { "Assault Frigate Mark I A [OldLegacy]", "Assault Frig. Mk.I A [OldLegacy]" },
+--     command = 2
+-- })
 
-Ship:new(MediumShip, REBEL_L_SHIP, {
-    name = "Assault Frigate Mark I B [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/assault-frigate-mark-i-b-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1b_mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_b_texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/rebel/afm1/ruler.obj",
-    maneuver = { { "II" }, { "I", "I" }, { "I", "I", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE },
-    shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
-    cost = 68,
-    aliases = { "Assault Frigate Mark I B [OldLegacy]", "Assault Frig. Mk.I B [OldLegacy]" },
-    command = 2
-})
+-- Ship:new(MediumShip, REBEL_L_SHIP, {
+--     name = "Assault Frigate Mark I B [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/assault-frigate-mark-i-b-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/rebel/afm1/afm1b_mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/rebel/afm1/afm1_b_texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/rebel/afm1/ruler.obj",
+--     maneuver = { { "II" }, { "I", "I" }, { "I", "I", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_SALVO, DEF_EVADE, DEF_BRACE },
+--     shields = { 3, 3, 3, 2 }, -- Front, left, right, rear
+--     cost = 68,
+--     aliases = { "Assault Frigate Mark I B [OldLegacy]", "Assault Frig. Mk.I B [OldLegacy]" },
+--     command = 2
+-- })
 
-Ship:new(LargeShip, REBEL_L_SHIP, {
-    name = "MC80B Command Cruiser [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/mc80b-command-cruiser-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/rebel/mc80b/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/rebel/mc80b/mc80b-command-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/rebel/mc80b/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
-    shields = { 4, 4, 4, 3 }, -- Front, left, right, rear
-    cost = 110,
-    aliases = { "MC80B Command Cruiser [OldLegacy]", "Command Cruiser [OldLegacy]" },
-    command = 3
-})
+-- Ship:new(LargeShip, REBEL_L_SHIP, {
+--     name = "MC80B Command Cruiser [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/mc80b-command-cruiser-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/rebel/mc80b/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/rebel/mc80b/mc80b-command-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/rebel/mc80b/ruler.obj",
+--     maneuver = { { "I" }, { "I", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
+--     shields = { 4, 4, 4, 3 }, -- Front, left, right, rear
+--     cost = 110,
+--     aliases = { "MC80B Command Cruiser [OldLegacy]", "Command Cruiser [OldLegacy]" },
+--     command = 3
+-- })
 
-Ship:new(LargeShip, REBEL_L_SHIP, {
-    name = "MC80B Heavy Cruiser [OldLegacy]",
-    front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/mc80b-heavy-cruiser-old-legacy.jpg",
-    mesh = LEGACY_ASSETS .. "ships/rebel/mc80b/mesh.obj",
-    diffuse = LEGACY_ASSETS .. "ships/rebel/mc80b/mc80b-heavy-texture.jpg",
-    ruler = LEGACY_ASSETS .. "ships/rebel/mc80b/ruler.obj",
-    maneuver = { { "I" }, { "I", "I" } },
-    defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
-    shields = { 4, 4, 4, 3 }, -- Front, left, right, rear
-    cost = 114,
-    aliases = { "MC80B Heavy Cruiser [OldLegacy]", "Heavy Cruiser [OldLegacy]" },
-    command = 3
-})
+-- Ship:new(LargeShip, REBEL_L_SHIP, {
+--     name = "MC80B Heavy Cruiser [OldLegacy]",
+--     front = CUSTOM_ASSETS .. "cards/.oldlegacy/ships/mc80b-heavy-cruiser-old-legacy.jpg",
+--     mesh = LEGACY_ASSETS .. "ships/rebel/mc80b/mesh.obj",
+--     diffuse = LEGACY_ASSETS .. "ships/rebel/mc80b/mc80b-heavy-texture.jpg",
+--     ruler = LEGACY_ASSETS .. "ships/rebel/mc80b/ruler.obj",
+--     maneuver = { { "I" }, { "I", "I" } },
+--     defense_tokens = { DEF_REDIRECT, DEF_CONTAIN, DEF_BRACE, DEF_REDIRECT },
+--     shields = { 4, 4, 4, 3 }, -- Front, left, right, rear
+--     cost = 114,
+--     aliases = { "MC80B Heavy Cruiser [OldLegacy]", "Heavy Cruiser [OldLegacy]" },
+--     command = 3
+-- })
 
 -- Squadron:new(awing, REBEL_L_SQUAD, {
 --     name = "Arvel Crynyo [OldLegacy]",
@@ -5018,10 +5018,24 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
 })
 
 -- Armada Nexus squadrons
+    --tie brute
+    tie_brute = {
+        mesh = CUSTOM_ASSETS .. "squadrons/empire/brute/mesh.obj",
+        health = 4,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(tie_brute, EMPIRE_L_SQUAD, {
+        name = "TIE Brute",
+        diffuse = CUSTOM_ASSETS .. "squadrons/empire/brute/brute_base_diffuse.webp",
+        front = "https://images.swarmada.wiki/images/tie-brute-nexus.webp",
+        cost = 11,
+        aliases = { "TIE Brute [Nexus]" }
+    })
+
     --alpha starwing
     alpha_sw = {
         mesh = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/mesh.obj",
-        diffuse = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/diffuse.jpg",
         health = 5,
         move = 3,
         defense_tokens = {}
@@ -5029,6 +5043,7 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
     Squadron:new(alpha_sw, EMPIRE_L_SQUAD, {
         name = "Alpha-class Star Wing Squadron",
         front = "https://images.swarmada.wiki/images/alpha-class-star-wing-squadron-nexus.webp",
+        diffuse = CUSTOM_ASSETS .. "squadrons/empire/alpha_sw/diffuse.jpg",
         cost = 14,
         aliases = { "Alpha-class Star Wing Squadron [Nexus]" }
     })
@@ -5048,18 +5063,25 @@ Ship:new(MegaWideHugeShip, FO_L_SHIP, {
         aliases = { "Rho Squadron - Alpha-class Star Wing Squadron [Nexus]" }
     })
 
-    Squadron:new(adv, EMPIRE_L_SQUAD, {
+    --tie adv v1
+    adv_v1 = {
+        mesh = CUSTOM_ASSETS .. "squadrons/empire/adv_v1/mesh.obj",
+        health = 5,
+        move = 4,
+        defense_tokens = {}
+    }
+    Squadron:new(adv_v1, EMPIRE_L_SQUAD, {
         name = "The Grand Inquisitor",
         front =     "https://images.swarmada.wiki/images/the-grand-inquisitor-tie-advanced-v1-nexus.webp",
-        diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
+        diffuse =   ASSETS_ROOT.."squadrons/empire/adv_v1/adv_v1_diffuse.webp",
         defense_tokens = {DEF_BRACE,DEF_EVADE},
         cost = 15,
         aliases = {'The Grand Inquisitor - TIE Advanced V1 [Nexus]'}
     })
-    Squadron:new(adv, EMPIRE_L_SQUAD, {
+    Squadron:new(adv_v1, EMPIRE_L_SQUAD, {
         name = "Seventh Sister",
-        front =     "https://images.swarmada.wiki/images/second-sister-tie-advanced-v1-nexus.webp",
-        diffuse =   ASSETS_ROOT.."squadrons/empire/adv/ace_diffuse.jpg",
+        front =     "https://images.swarmada.wiki/images/seventh-sister-tie-advanced-v1-nexus.webp",
+        diffuse =   ASSETS_ROOT.."squadrons/empire/adv_v1/adv_v1_diffuse.webp",
         defense_tokens = {DEF_BRACE,DEF_EVADE},
         cost = 15,
         aliases = {'Seventh Sister - TIE Advanced V1 [Nexus]'}
@@ -6748,6 +6770,28 @@ Ship:new(MediumShip, NR_L_SHIP, {
 })
 
 ----new republic squadrons
+defender_NR = {
+    mesh = CUSTOM_ASSETS .. "squadrons/squadrons/new_rep/defender/mesh.obj",
+    health = 3,
+    move = 4,
+    defense_tokens = {}
+}
+Squadron:new(defender_NR, NR_L_SQUAD, {
+    name = "Defender Starfighter Squadron",
+    front = "https://images.swarmada.wiki/images/defender-starfighter-squadron-new-republic-nexus.webp",
+    diffuse = CUSTOM_ASSETS .. "squadrons/squadrons/new_rep/defender_base_texture.webp",
+    cost = 8,
+    aliases = {"Defender Starfighter Squadron {NR} [Nexus]" }
+})
+Squadron:new(defender_NR, NR_L_SQUAD, {
+    name = "Mara Jade",
+    front = "https://images.swarmada.wiki/images/mara-jade-defender-starfighter-squadron-new-republic-nexus.webp",
+    diffuse = CUSTOM_ASSETS .. "squadrons/squadrons/new_rep/defender_ace_texture.webp",
+    cost = 15,
+    aliases = {"Mara Jade - Defender Starfighter Squadron {NR} [Nexus]" },
+    defense_tokens = {DEF_BRACE, DEF_SCATTER}
+})
+
 kwing = {
     mesh = CUSTOM_ASSETS .. "squadrons/new_rep/kwing/mesh.obj",
     health = 7,
