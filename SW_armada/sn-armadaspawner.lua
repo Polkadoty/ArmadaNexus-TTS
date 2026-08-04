@@ -1391,7 +1391,7 @@ function onClick_loadCategory(player, _, idValue)
     selected_category = idValue
     -- UI.setAttribute(idValue,"colors","#040404|#A0A0A0|white|#040404")
     -- UI.setAttribute(idValue,"color","#A0A0A0")
-    for i,v in ipairs({"Objective","Commander","DefensiveRetrofit","ExperimentalRetrofit","FleetCommand","FleetSupport","IonCannons","Objectives","Ordnance","OffensiveRetrofit","Officer","SuperWeapon","SupportTeam","Title","Turbolaser","WeaponsTeam","WeaponsTeamAndOffensiveRetrofit"}) do
+    for i,v in ipairs({"Objective","Commander","DefensiveRetrofit","ExperimentalRetrofit","FleetCommand","FleetSupport","IonCannons","Objectives","Ordnance","OffensiveRetrofit","Officer","SuperWeapon","SupportTeam","Title","Turbolaser","Veteran","WeaponsTeam","WeaponsTeamAndOffensiveRetrofit"}) do
         UI.setAttribute(v,"iconColor","#FFFFFF")
     end
     if idValue=="Objective" and selected_special_objectives then
@@ -8276,7 +8276,7 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     })
     Ship:new(MediumShip, REBEL_L_SHIP, {
         name = "Assault Frigate Mark I A [ContentPlaytest]",
-        front = "https://images.swarmada.wiki/images/assault-frigate-mark-i-a-content-playtest.webp",
+        front = "https://images.swarmada.wiki/images/assault-frigate-mark-i-type-v-content-playtest.webp",
         mesh = CUSTOM_ASSETS .. "ships/rebel/afm1/afm1a_mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/rebel/afm1/afm1a_texture.jpg",
         ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
@@ -8289,7 +8289,7 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
     })
     Ship:new(MediumShip, REBEL_L_SHIP, {
         name = "Assault Frigate Mark I B [ContentPlaytest]",
-        front = "https://images.swarmada.wiki/images/assault-frigate-mark-i-b-content-playtest.webp",
+        front = "https://images.swarmada.wiki/images/assault-frigate-mark-i-type-vi-content-playtest.webp",
         mesh = CUSTOM_ASSETS .. "ships/rebel/afm1/afm1b_mesh.obj",
         diffuse = CUSTOM_ASSETS .. "ships/rebel/afm1/afm1b_texture.jpg",
         ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
@@ -8322,10 +8322,88 @@ Ship:new(SmallShip,SEPARATIST_L_SHIP, {
         maneuver = { { "I" }, { "I", "I" } },
         defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
         shields = { 3, 2, 2, 1 }, -- Front, left, right, rear
-        cost = 62,
+        cost = 64,
         aliases = { "Dreadnaught-class Katana Refit [ContentPlaytest]", "Dreadnaught Katana Refit [ContentPlaytest]" },
         command = 3
     })
+
+    Ship:new(MediumShip, REPUBLIC_L_SHIP, {
+        name = "Dreadnaught-class Judicial Cruiser [ContentPlaytest]",
+        front = "https://images.swarmada.wiki/images/dreadnaught-class-judicial-cruiser-republic-content-playtest.webp",
+        mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-judicial-diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+        maneuver = { { "I" }, { "I", "I" } },
+        defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+        shields = { 3, 2, 2, 1 },
+        cost = 62,
+        aliases = { "Dreadnaught-class Judicial Cruiser [ContentPlaytest]", "Dreadnaught Judicial Cruiser [ContentPlaytest]" },
+        command = 3
+    })
+    Ship:new(MediumShip, REPUBLIC_L_SHIP, {
+        name = "Dreadnaught-class Katana Cruiser [ContentPlaytest]",
+        front = "https://images.swarmada.wiki/images/dreadnaught-class-katana-cruiser-republic-content-playtest.webp",
+        mesh = CUSTOM_ASSETS .. "ships/republic/dread_gar/mesh.obj",
+        diffuse = CUSTOM_ASSETS .. "ships/republic/dread_gar/dread-gar-heavy-diffuse.jpg",
+        ruler = CUSTOM_ASSETS .. "ships/republic/dread_gar/ruler.obj",
+        maneuver = { { "I" }, { "I", "I" } },
+        defense_tokens = { DEF_REDIRECT, DEF_BRACE, DEF_BRACE },
+        shields = { 3, 2, 2, 1 },
+        cost = 63,
+        aliases = { "Dreadnaught-class Katana Cruiser [ContentPlaytest]", "Dreadnaught Katana Cruiser [ContentPlaytest]" },
+        command = 3
+    })
+
+----------- Content Playtest Upgrades
+Veteran = {
+    type = "Veteran",
+    back = CUSTOM_ASSETS.."cards/officer/back.jpg"
+}
+EmpireRepublic_L = { factions = { "!Empire", "!Republic" } }
+
+-- Commander
+Card:new(Commander, Rebel_L, {name="Admiral Nantz [ContentPlaytest]", front="https://images.swarmada.wiki/images/admiral-nantz-commander-content-playtest.webp", cost=32, aliases = { "Admiral Nantz [ContentPlaytest]", "Nantz [ContentPlaytest]", "Nantz Admiral [ContentPlaytest]" }})
+Card:new(Commander, Empire_L, {name="Captain Pellaeon [ContentPlaytest]", front="https://images.swarmada.wiki/images/captain-pellaeon-commander-content-playtest.webp", cost=20, aliases = { "Captain Pellaeon [ContentPlaytest]", "Pellaeon [ContentPlaytest]" }})
+
+-- DefensiveRetrofit
+Card:new(DefensiveRetrofit, Rebel_L, {name="Evasive Stabilizers [ContentPlaytest]", front="https://images.swarmada.wiki/images/evasive-stabilizers-content-playtest.webp", cost=2, aliases = { "Evasive Stabilizers [ContentPlaytest]" }})
+
+-- FleetSupport
+Card:new(FleetSupport, {name="Combat Information Center [ContentPlaytest]", front="https://images.swarmada.wiki/images/combat-information-center-content-playtest.webp", cost=8, aliases = { "Combat Information Center [ContentPlaytest]" }})
+
+-- IonCannons
+Card:new(IonCannons, {name="Overcharged Ion Emitters [ContentPlaytest]", front="https://images.swarmada.wiki/images/overcharged-ion-emitters-content-playtest.webp", cost=8, aliases = { "Overcharged Ion Emitters [ContentPlaytest]" }})
+
+-- OffensiveRetrofit
+Card:new(OffensiveRetrofit, Empire_L, {name="Fighter Ops Center [ContentPlaytest]", front="https://images.swarmada.wiki/images/fighter-ops-center-content-playtest.webp", cost=5, aliases = { "Fighter Ops Center [ContentPlaytest]" }})
+Card:new(OffensiveRetrofit, Rebel_L, {name="Maneuverability Fins [ContentPlaytest]", front="https://images.swarmada.wiki/images/maneuverability-fins-content-playtest.webp", cost=4, aliases = { "Maneuverability Fins [ContentPlaytest]" }})
+
+-- Title
+Card:new(Title, Empire_L, {name="Abrogator [ContentPlaytest]", front="https://images.swarmada.wiki/images/abrogator-title-content-playtest.webp", cost=6, aliases = { "Abrogator [ContentPlaytest]" }})
+Card:new(Title, Empire_L, {name="Assailer [ContentPlaytest]", front="https://images.swarmada.wiki/images/assailer-title-content-playtest.webp", cost=5, aliases = { "Assailer [ContentPlaytest]" }})
+Card:new(Title, Empire_L, {name="Cerastes [ContentPlaytest]", front="https://images.swarmada.wiki/images/cerastes-title-content-playtest.webp", cost=4, aliases = { "Cerastes [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Duchess Senna [ContentPlaytest]", front="https://images.swarmada.wiki/images/duchess-senna-title-content-playtest.webp", cost=6, aliases = { "Duchess Senna [ContentPlaytest]" }})
+Card:new(Title, Empire_L, {name="Falchion [ContentPlaytest]", front="https://images.swarmada.wiki/images/falchion-title-content-playtest.webp", cost=2, aliases = { "Falchion [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Fleet Group Two [ContentPlaytest]", front="https://images.swarmada.wiki/images/fleet-group-two-title-content-playtest.webp", cost=3, aliases = { "Fleet Group Two [ContentPlaytest]" }})
+Card:new(Title, Empire_L, {name="Hoplite [ContentPlaytest]", front="https://images.swarmada.wiki/images/hoplite-title-content-playtest.webp", cost=4, aliases = { "Hoplite [ContentPlaytest]" }})
+Card:new(Title, Empire_L, {name="Ironclad [ContentPlaytest]", front="https://images.swarmada.wiki/images/ironclad-title-content-playtest.webp", cost=4, aliases = { "Ironclad [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Kalleran Pride [ContentPlaytest]", front="https://images.swarmada.wiki/images/kalleran-pride-title-content-playtest.webp", cost=5, aliases = { "Kalleran Pride [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Liberty Star [ContentPlaytest]", front="https://images.swarmada.wiki/images/liberty-star-title-content-playtest.webp", cost=5, aliases = { "Liberty Star [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Lightmaker [ContentPlaytest]", front="https://images.swarmada.wiki/images/lightmaker-title-content-playtest.webp", cost=5, aliases = { "Lightmaker [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Peregrine [ContentPlaytest]", front="https://images.swarmada.wiki/images/peregrine-title-content-playtest.webp", cost=3, aliases = { "Peregrine [ContentPlaytest]" }})
+Card:new(Title, EmpireRepublic_L, {name="Reactor Power Reroute [ContentPlaytest]", front="https://images.swarmada.wiki/images/reactor-power-reroute-title-content-playtest.webp", cost=4, aliases = { "Reactor Power Reroute [ContentPlaytest]" }})
+Card:new(Title, Empire_L, {name="Scimitar [ContentPlaytest]", front="https://images.swarmada.wiki/images/scimitar-title-content-playtest.webp", cost=3, aliases = { "Scimitar [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Sharu's Luck [ContentPlaytest]", front="https://images.swarmada.wiki/images/sharus-luck-title-content-playtest.webp", cost=4, aliases = { "Sharu's Luck [ContentPlaytest]" }})
+Card:new(Title, Empire_L, {name="Spatha [ContentPlaytest]", front="https://images.swarmada.wiki/images/spatha-title-content-playtest.webp", cost=6, aliases = { "Spatha [ContentPlaytest]" }})
+Card:new(Title, Rebel_L, {name="Virtue's Reward [ContentPlaytest]", front="https://images.swarmada.wiki/images/virtues-reward-title-content-playtest.webp", cost=4, aliases = { "Virtue's Reward [ContentPlaytest]" }})
+
+-- Veteran
+Card:new(Veteran, Empire_L, {name="Seventh Fleet Chief [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-chief-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Chief [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Seventh Fleet Engineer [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-engineer-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Engineer [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Seventh Fleet Gunner [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-gunner-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Gunner [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Seventh Fleet Navigator [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-navigator-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Navigator [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Seventh Fleet Sergeant [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-sergeant-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Sergeant [ContentPlaytest]" }})
+
 
 -- Squadrons
 Squadron:new(xwing, REBEL_L_SQUAD, {

@@ -96,7 +96,7 @@ function onClick_loadCategory(player, _, idValue)
     selected_category = idValue
     -- UI.setAttribute(idValue,"colors","#040404|#A0A0A0|white|#040404")
     -- UI.setAttribute(idValue,"color","#A0A0A0")
-    for i,v in ipairs({"Objective","Commander","DefensiveRetrofit","ExperimentalRetrofit","FleetCommand","FleetSupport","IonCannons","Objectives","Ordnance","OffensiveRetrofit","Officer","SuperWeapon","SupportTeam","Title","Turbolaser","WeaponsTeam","WeaponsTeamAndOffensiveRetrofit"}) do
+    for i,v in ipairs({"Objective","Commander","DefensiveRetrofit","ExperimentalRetrofit","FleetCommand","FleetSupport","IonCannons","Objectives","Ordnance","OffensiveRetrofit","Officer","SuperWeapon","SupportTeam","Title","Turbolaser","Veteran","WeaponsTeam","WeaponsTeamAndOffensiveRetrofit"}) do
         UI.setAttribute(v,"iconColor","#FFFFFF")
     end
     if idValue=="Objective" and selected_special_objectives then
