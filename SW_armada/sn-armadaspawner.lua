@@ -8706,19 +8706,6 @@ Card:new(Title,Empire_L,{name="Battle Cruiser [Community]",  front = "https://im
 Card:new(Title,Rebel_L,{name="Nautilian [Community]",  front = "https://images.swarmada.wiki/images/nautilian-title-community.webp", cost=4, aliases={"Nautilian [LegacyBeta]", "Nautilian [LegacyBeta]", "Nautilian [Legacy]", "Nautilian [Community]"}})
 Card:new(Title,Rebel_L,{name="Rebel One [Community]",  front = "https://images.swarmada.wiki/images/rebel-one-title-community.webp", cost=6, aliases={"Rebel One [LegacyBeta]", "Rebel One [LegacyBeta]", "Rebel One [Legacy]", "Rebel One [Community]"}})
 
--- Objectives
-Card:new(Assault, Objective, {name="Advanced Gunnery [Community]", front="https://images.swarmada.wiki/images/advanced-gunnery-errata-community.webp", aliases = {"Advanced Gunnery [Community]"}})
-Card:new(Assault, Objective, {name="Marked for Destruction [Community]", front="https://images.swarmada.wiki/images/marked-for-destruction-errata-community.webp", victory=20, aliases = {"Marked for Destruction [Community]"}})
-Card:new(Assault, Objective, {name="Most Wanted [Community]", front="https://images.swarmada.wiki/images/most-wanted-errata-community.webp", aliases = {"Most Wanted [Community]"}})
-Card:new(Assault, Objective, {name="Opening Salvo [Community]", front="https://images.swarmada.wiki/images/opening-salvo-errata-community.webp", victory=20, aliases = {"Opening Salvo [Community]"}})
-Card:new(Assault, Objective, {name="Targeting Beacons [Community]", front="https://images.swarmada.wiki/images/targeting-beacons-errata-community.webp", aliases = {"Targeting Beacons [Community]"}})
-Card:new(Defense, Objective, {name="Fire Lanes [Community]", front="https://images.swarmada.wiki/images/fire-lanes-errata-community.webp", victory=10, aliases = {"Fire Lanes [Community]"}})
-Card:new(Defense, Objective, {name="Jamming Barrier [Community]", front="https://images.swarmada.wiki/images/jamming-barrier-errata-community.webp", victory=15, aliases = {"Jamming Barrier [Community]"}})
-Card:new(Navigation, Objective, {name="Dangerous Territory [Community]", front="https://images.swarmada.wiki/images/dangerous-territory-errata-community.webp", victory=15, aliases = {"Dangerous Territory [Community]"}})
-Card:new(Navigation, Objective, {name="Hyperspace Migration [Community]", front="https://images.swarmada.wiki/images/hyperspace-migration-errata-community.webp", victory=20, aliases = {"Hyperspace Migration [Community]"}})
-Card:new(Navigation, Objective, {name="Intel Sweep [Community]", front="https://images.swarmada.wiki/images/intel-sweep-errata-community.webp", aliases = {"Intel Sweep [Community]"}})
-Card:new(Navigation, Objective, {name="Navigational Hazards [Community]", front="https://images.swarmada.wiki/images/navigational-hazards-errata-community.webp", victory=15, aliases = {"Navigational Hazards [Community]"}})
-
     -- Armada Legacy (Old) Upgrades
 -- Card:new(Commander, Republic_L,{ name = "Admiral Coburn [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/admiral-coburn-commander-old-legacy.jpg", cost = 25, aliases = { "Admiral Coburn [OldLegacy]" } })
 -- Card:new(Commander, Republic_L,{ name = "Yoda [OldLegacy]", front = CUSTOM_ASSETS .. "cards/.oldlegacy/upgrades/commander/yoda-commander-old-legacy.jpg", cost = 27, aliases = { "Yoda [OldLegacy]" } })
@@ -8872,6 +8859,19 @@ Card:new(SuperWeapon, Empire_L,{ name = "Callous Tactician", front = CUSTOM_ASSE
 Card:new(SuperWeapon, Empire_L,{ name = "Weapons System Expert", front = CUSTOM_ASSETS .. "misc/fighter_group/Weapons_System_Expert.jpg", cost = 6, aliases = { "Weapons System Expert - Leader" } })
 Card:new(SuperWeapon, Rebel_L,{ name = "Inspiring Leader", front = CUSTOM_ASSETS .. "misc/fighter_group/Inspiring_Leader.jpg", cost = 5, aliases = { "Inspiring Leader - Leader" } })
 Card:new(SuperWeapon, Rebel_L,{ name = "Skilled Bombardier", front = CUSTOM_ASSETS .. "misc/fighter_group/Skilled_Bombardier.jpg", cost = 4, aliases = { "Skilled Bombardier - Leader" } })
+
+-- Community Objectives
+Card:new(Assault, Objective, {name="Advanced Gunnery [Community]", front="https://images.swarmada.wiki/images/advanced-gunnery-errata-community.webp", aliases = {"Advanced Gunnery [Community]"}})
+Card:new(Assault, Objective, {name="Marked for Destruction [Community]", front="https://images.swarmada.wiki/images/marked-for-destruction-errata-community.webp", victory=20, aliases = {"Marked for Destruction [Community]"}})
+Card:new(Assault, Objective, {name="Most Wanted [Community]", front="https://images.swarmada.wiki/images/most-wanted-errata-community.webp", aliases = {"Most Wanted [Community]"}})
+Card:new(Assault, Objective, {name="Opening Salvo [Community]", front="https://images.swarmada.wiki/images/opening-salvo-errata-community.webp", victory=20, aliases = {"Opening Salvo [Community]"}})
+Card:new(Assault, Objective, {name="Targeting Beacons [Community]", front="https://images.swarmada.wiki/images/targeting-beacons-errata-community.webp", aliases = {"Targeting Beacons [Community]"}})
+Card:new(Defense, Objective, {name="Fire Lanes [Community]", front="https://images.swarmada.wiki/images/fire-lanes-errata-community.webp", victory=10, aliases = {"Fire Lanes [Community]"}})
+Card:new(Defense, Objective, {name="Jamming Barrier [Community]", front="https://images.swarmada.wiki/images/jamming-barrier-errata-community.webp", victory=15, aliases = {"Jamming Barrier [Community]"}})
+Card:new(Navigation, Objective, {name="Dangerous Territory [Community]", front="https://images.swarmada.wiki/images/dangerous-territory-errata-community.webp", victory=15, aliases = {"Dangerous Territory [Community]"}})
+Card:new(Navigation, Objective, {name="Hyperspace Migration [Community]", front="https://images.swarmada.wiki/images/hyperspace-migration-errata-community.webp", victory=20, aliases = {"Hyperspace Migration [Community]"}})
+Card:new(Navigation, Objective, {name="Intel Sweep [Community]", front="https://images.swarmada.wiki/images/intel-sweep-errata-community.webp", aliases = {"Intel Sweep [Community]"}})
+Card:new(Navigation, Objective, {name="Navigational Hazards [Community]", front="https://images.swarmada.wiki/images/navigational-hazards-errata-community.webp", victory=15, aliases = {"Navigational Hazards [Community]"}})
 
 
 ----#include defs/cards/objectives
