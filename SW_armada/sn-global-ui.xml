@@ -847,6 +847,7 @@ width="400" -->
             <Button id="SupportTeam" class="upgradeCategory" icon="SupportTeam" tooltip="Support Team"/>
             <Button id="Title" class="upgradeCategory" icon="Title" tooltip="Title"/>
             <Button id="Turbolaser" class="upgradeCategory" icon="Turbolaser" tooltip="Turbolaser"/>
+            <Button id="Veteran" class="upgradeCategory" icon="Officer" tooltip="Veteran"/>
             <Button id="WeaponsTeam" class="upgradeCategory" icon="WeaponsTeam" tooltip="Weapons Team"/>
             <Button id="WeaponsTeamAndOffensiveRetrofit" class="upgradeCategory" icon="WeaponsTeamAndOffensiveRetrofit" tooltip="Boarding Team"/>
             <Button id="Objective" class="upgradeCategory" icon="Objective" tooltip="Objectives (Click again for Special)"/>
