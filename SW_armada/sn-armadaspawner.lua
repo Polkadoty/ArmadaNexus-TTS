@@ -8442,11 +8442,11 @@ Card:new(Title, Empire_L, {name="Spatha [ContentPlaytest]", front="https://image
 Card:new(Title, Rebel_L, {name="Virtue's Reward [ContentPlaytest]", front="https://images.swarmada.wiki/images/virtues-reward-title-content-playtest.webp", cost=4, aliases = { "Virtue's Reward [ContentPlaytest]" }})
 
 -- Veteran
-Card:new(Veteran, Empire_L, {name="Seventh Fleet Chief [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-chief-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Chief [ContentPlaytest]" }})
-Card:new(Veteran, Empire_L, {name="Seventh Fleet Engineer [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-engineer-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Engineer [ContentPlaytest]" }})
-Card:new(Veteran, Empire_L, {name="Seventh Fleet Gunner [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-gunner-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Gunner [ContentPlaytest]" }})
-Card:new(Veteran, Empire_L, {name="Seventh Fleet Navigator [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-navigator-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Navigator [ContentPlaytest]" }})
-Card:new(Veteran, Empire_L, {name="Seventh Fleet Sergeant [ContentPlaytest]", front="https://images.swarmada.wiki/images/seventh-fleet-sergeant-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Sergeant [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Quartermaster [ContentPlaytest]", front="https://images.swarmada.wiki/images/quartermaster-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Chief [ContentPlaytest]", "Quartermaster [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Chief Engineer [ContentPlaytest]", front="https://images.swarmada.wiki/images/chief-engineer-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Engineer [ContentPlaytest]", "Chief Engineer [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Gunnery Sergeant [ContentPlaytest]", front="https://images.swarmada.wiki/images/gunnery-sergeant-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Gunner [ContentPlaytest]", "Gunnery Sergeant [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Head Navigator [ContentPlaytest]", front="https://images.swarmada.wiki/images/head-navigator-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Navigator [ContentPlaytest]", "Head Navigator [ContentPlaytest]" }})
+Card:new(Veteran, Empire_L, {name="Petty Chief [ContentPlaytest]", front="https://images.swarmada.wiki/images/petty-chief-content-playtest.webp", cost=0, aliases = { "Seventh Fleet Sergeant [ContentPlaytest]", "Petty Chief [ContentPlaytest]" }})
 
 
 -- Squadrons
